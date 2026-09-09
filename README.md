@@ -28,10 +28,10 @@ exactly one doc; others link to it rather than copy it.
 ## Source material (Google Drive)
 
 - Primary planning doc (multi-tab: Overview/notes, Concepts, Inputs, Questions):
-  https://docs.google.com/document/d/1SLUYDZNG0iUk_LF5u4G4xG9ew2siHhOQugmVj9m-eCA/edit
+  [LLM Curriculum notes](https://docs.google.com/document/d/1SLUYDZNG0iUk_LF5u4G4xG9ew2siHhOQugmVj9m-eCA/edit)
 - Magic/game handoff doc — SECONDARY, take with a grain of salt; it over-relies on
   the prior magic-and-game framing and can pollute context:
-  https://docs.google.com/document/d/1qFsvkzzJvPJkaxQlZTAn3Ou4w_B502uDl8lvDE7YWwY/edit
+  [LLM Mental Models - Participatory Presentation (Seed Doc)](https://docs.google.com/document/d/1qFsvkzzJvPJkaxQlZTAn3Ou4w_B502uDl8lvDE7YWwY/edit)
 
 ## Related work
 
