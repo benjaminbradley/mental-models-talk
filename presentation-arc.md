@@ -58,9 +58,7 @@ verbal "directions without landmarks" as the materials-free fallback. They gener
 the failure themselves, so it cannot be dismissed as rigged. Two payloads at once:
 the **limit** (tacit knowledge does not transmit; "it cannot tell you it
 misunderstood") and the **power** (an astonishing amount genuinely *is* specifiable).
-The power side is the spine claim. Related idea to place here: it holds worlds of
-latent knowledge but does not apply them unless you know what to ask for (see the
-pink-elephant / Theory-of-Mind anecdote in open-questions).
+The power side is the spine claim. Placed here - the pink-elephant / Theory-of-Mind anecdote (see open-questions): it holds worlds of latent knowledge but does not apply them unless you know what to ask for.
 Methods: specification - examples over adjectives, constraints generate quality,
 explicit output formats, few-shot.
 
