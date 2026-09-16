@@ -13,13 +13,6 @@ shown; by the end, the capability multiplier has been demonstrated. Counter: "po
 but dangerous" is itself a good mental model and could work early. The gradient *claim*
 stays at station 2 regardless; only the magic *imagery* is in question.
 
-**Q2. Does the goldfish carry jaggedness?** Station 4 needs a model that shows jaggedness
-(errors uncorrelated with difficulty) natively. "Read every book but never lived" handles
-confabulation and book-vs-experience well; jaggedness is the weak spot. Options: (a)
-goldfish alone, leaning on book-vs-lived-experience to explain weird failures; (b)
-goldfish + a spatial "jagged frontier / map with no markings" for that one property.
-Top audition priority.
-
 **Q3. Describe-and-draw figure.** Need a source figure that is dignified for adults and
 fails through honest ambiguity (not a gotcha). To prototype/test.
 
@@ -34,6 +27,21 @@ run-through. Deferred, needs real timing.
 amplifier) or as a recurring thread.
 
 ## Resolved decisions
+
+**Q2. Station 4 metaphor architecture.** RESOLVED (map vs. territory). Station 4 is built
+on three layers, revealed in order: (1) **the territory** - the landscape of knowledge /
+reality; shown to set the metaphor but deliberately not detailed (nobody holds the true
+map); its job is to be the referent verification appeals to. (2) **the human map** -
+imperfect and different from the territory, but calibrated by lived contact; carries
+honest "here be dragons" shading; exemplifies a human's relationship to knowledge. (3)
+**the fish/LLM map** - compiled entirely from books (others' descriptions), never surveyed
+in person; errors track source-text density not human difficulty (jaggedness), blanks are
+inked with the same confident hand (confabulation), and it lacks the "unsure here" shading
+the human map has. Split: the fish (people-pleaser) carries confabulation; jaggedness =
+the fish-map's fidelity varying region to region. Map content = anatomy; uniform confident
+ink = temperament. Verification = leaving the map to check the territory (station 5); tools
+= extending contact with the territory. Remaining is production only (see todo: build the
+three-layer visual, pick jaggedness cases, decide reveal mechanics).
 
 **Q5. Pink-elephant anecdote placement.** RESOLVED - placed at **station 3**
 (latent-knowledge-needs-eliciting). The negation-poisoning angle can still be referenced
@@ -54,11 +62,17 @@ lightly at 6a if useful, but its home is station 3.
   professional audience; "beneficial" implication may alienate skeptics early.
 
 - **The goldfish who has read every book** (LEADING for station 4; evolves through 6a and
-  6b). Fluent from reading, no lived experience, no long-term memory. Extensions: the
-  fishbowl = the context window (items in context are visually present; the water can be
-  poisoned); tools connect to the bowl to extend capability; the fish's only knowledge of
-  the outside world is the books it has read. Strong visual potential; can evolve over
-  time. Open: whether it carries jaggedness (Q2).
+  6b). A **people-pleaser**: fluent from reading, eager to be a good conversationalist, and
+  unwilling to admit it is out of its depth - so its confidence is a symptom of eagerness,
+  not intent to deceive (ties to sycophancy). No lived experience, no long-term memory. It
+  navigates by a **map it drew entirely from books**, never surveying the territory (Q2,
+  map vs. territory). **Temperament vs. anatomy** via the training story: reading the
+  library = pretraining = the map's content and its jagged fidelity (anatomy: structural,
+  durable); an apprenticeship of practice conversations with feedback = post-training/RLHF
+  = its manners and the uniform confident ink it draws with (temperament: trained,
+  model-specific, softening over time). Extensions: the fishbowl = the context window
+  (items visually present; water can be poisoned); tools connect to the bowl to extend the
+  fish's reach / contact with the territory (6b).
 
 - **The drunk intern** (from source docs). A smart intern who has read everything, has
   memory problems, and occasionally comes to work drunk and destroys or steals everything
@@ -72,9 +86,11 @@ lightly at 6a if useful, but its home is station 3.
   friend's framing) - powered augmentation the human still drives. Both are
   capability-multiplier images.
 
-- **Jagged frontier / map with no markings** (spatial). Not a character metaphor - a
-  property of the terrain the model walks. Candidate pairing with the goldfish to carry
-  jaggedness specifically (Q2).
+- **Map vs. territory (three layers)** (spatial; WORKING carrier for jaggedness, fused
+  with the fish as a segue; see Q2). Territory = reality (shown, not detailed); human map =
+  calibrated by contact, honestly shaded; fish map = drawn from books, never surveyed,
+  inked confidently everywhere. Jaggedness and confabulation both fall out of "the fish has
+  only ever seen maps." Revealed in three beats: territory -> human map -> fish map.
 
 ## Content ideas / stories not yet fully placed
 
@@ -94,3 +110,30 @@ lightly at 6a if useful, but its home is station 3.
 - **Levels of memory** (from Inputs tab). System instructions (global to account) ->
   per-project instructions (you maintain) -> agent/Claude memory (it maintains from
   conversations). Candidate: supports station 6a context/craft.
+
+- **Training stages in the metaphor.** Reading the whole library = pretraining (a fluent
+  text-continuer; knows the words, not yet the job). Apprenticeship of practice
+  conversations with feedback = post-training / RLHF (learns the helpful-assistant role,
+  the manners, and the eager/confident temperament - where sycophancy is instilled). This
+  is the mechanism behind temperament vs. anatomy. Rhymes with human language acquisition
+  (exposure then feedback) with one decisive disanalogy: a child's words are grounded in
+  lived experience; the fish's are not. On-ramp only - do not claim developmental
+  equivalence.
+
+- **Temperament vs. anatomy** (accepted distinction). Temperament = trained, varies by
+  model, actively changing (confidence, agreeableness, refusals, willingness to say "I
+  don't know"). Anatomy = structural, durable (no grounding / cannot check reality itself;
+  jagged competence). Answers "how much is model-specific vs. inherent" and future-proofs
+  the talk. Home: station 4; also feeds station 7 (it is a product).
+
+- **The citations ladder** (demo idea, station 4). "Tell me about X" -> "...with sources"
+  (citations can be fabricated; the appearance of sourcing manufactures unearned trust) ->
+  "...with verified sources" (the model uses tools to check the URLs against reality). The
+  danger lives in the gap between the second and third: unverified sourcing is more
+  dangerous than none. Shows self-assessment is jagged and that the fix requires touching
+  reality (tools), not asking nicely.
+
+- **Self-reflection = a lever, not an oracle** (capability). It can grade confidence, flag
+  knowledge-cutoff gaps, or search when unsure - but only if you ask (pink elephant), and
+  the self-assessment is itself jagged. Reduces the problem; does not remove the obligation
+  to verify (station 5).

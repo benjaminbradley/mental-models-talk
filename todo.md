@@ -7,8 +7,8 @@ ideas also live there. The take-home card content lives in `take-home.md`.
 
 ## Now
 
-- [ ] Resolve **Q2** - goldfish vs. jaggedness (does the goldfish carry it, or pair it
-      with the jagged-frontier image?).
+- [ ] Build the three-layer **map/territory** visual (territory -> human map -> fish map);
+      pick 4-5 jaggedness cases to render in map terms; decide the reveal mechanics. (Q2 resolved.)
 - [ ] Find & test the **describe-and-draw** source figure for station 3 (resolves
       **Q3**); confirm it works with adults and fails via honest ambiguity.
 - [ ] Resolve **Q1** - where the magic metaphor lives.
@@ -34,7 +34,7 @@ ideas also live there. The take-home card content lives in `take-home.md`.
 - [ ] Firm up audience specifics (context, size, sent-vs-chose) - awaiting organizer reply.
 - [ ] Decide slides vs. facilitated exercises with minimal projection.
 - [ ] Break the arc down into individual slides.
-- [ ] Find / create images (goldfish visuals, etc. - depends on Q2).
+- [ ] Find / create images (goldfish visuals; the three-layer map/territory diagram).
 - [ ] Assemble slideshow with speaker notes per slide.
 - [ ] Print the one-page takeaway card.
 - [ ] Get wegeekout.com ready for follow-up.

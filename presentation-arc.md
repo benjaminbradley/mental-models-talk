@@ -65,20 +65,56 @@ explicit output formats, few-shot.
 ## Station 4 - Install the working model (and let it misbehave)
 *Cognitive: "my instincts about people transfer" -> "my instincts actively mislead me here."*
 
-The pivotal unlearning moment. One durable handle for what the thing is, which must
-carry **jaggedness** (errors do not correlate with difficulty; trivial failures sit
-beside expert successes) and **confabulation** (confident, fluent, wrong; fluency and
-accuracy are independent axes; not lying, just the mechanism running unanchored).
-No install-then-break - we want a model that shows these natively.
-**Working metaphor: the goldfish who has read every book.** Chosen for its visual
-potential and because it evolves across later stations: the fishbowl becomes the
-context window (station 6a), tools connect to the bowl (6b), and the fish knows the
-outside world only through the books it has read. Full spec and the open jaggedness
-question in open-questions.
-Methods: reliability levers - chain-of-thought / "show your work" (doubles as a peek
-under the hood).
-Delivery: pre-capture anything that must land; never live-demo confabulation.
-Live-demo only where any outcome teaches (e.g. same prompt run 3x for non-determinism).
+The pivotal unlearning moment. Two properties, carried by two composed images:
+
+- **Confidence decoupled from knowledge (confabulation).** The goldfish is a
+  **people-pleaser**: it desperately wants to be a good conversationalist and will never
+  admit it is out of its depth. The unwarranted confidence is a symptom of
+  eagerness-to-please, NOT intent to deceive - it is not lying, the mechanism is just
+  running unanchored. Connects straight to sycophancy.
+- **Competence has no map (jaggedness).** Errors do not correlate with human difficulty;
+  trivial failures sit beside expert successes. Carried by the **map vs. territory** model
+  (open-questions Q2): the fish drew its map entirely from books, never surveying the
+  territory, so the map is accurate in some regions and confidently wrong in others and it
+  cannot see the difference. Blanks get inked with the same confident hand - which is also
+  confabulation.
+
+Fused image (segue into 6b): *an eager guide who read every travel book but never left
+home, navigating by a map it drew from those books - confidently, and it will never say it
+is unsure unless you ask.*
+
+**Three-beat reveal (map vs. territory).** (1) The **territory** - the landscape of
+knowledge itself; shown to set the metaphor but deliberately not detailed (nobody holds
+the true map); it exists as the referent verification appeals to. (2) The **human map** -
+imperfect and different from the territory, but calibrated by lived contact; carries
+honest "here be dragons" shading. (3) The **fish/LLM map** - compiled from books, never
+surveyed: errors track source-text density not difficulty (jaggedness), blanks inked
+confidently (confabulation), no "unsure here" shading. The teaching engine is the
+comparison; verification = leaving the map to check the territory (station 5); tools =
+extending contact with the territory.
+
+**Temperament vs. anatomy**, built in via the training story: the fish first *reads the
+whole library* (pretraining -> its knowledge and its jagged competence = anatomy:
+structural, durable), then goes through an *apprenticeship of practice conversations with
+feedback* (post-training / RLHF -> its manners, confidence and eagerness = temperament:
+trained, model-specific, softening over time). Rhymes with human language acquisition
+(exposure then feedback) with one decisive disanalogy: a child's words are grounded in
+lived experience; the fish's are not. On-ramp only - do not claim developmental
+equivalence (reopens the "does it understand" question we do not adjudicate). In map terms: the map's *content* is anatomy; the uniform confident *ink* (no "unsure here" shading) is temperament.
+
+Beat that surfaces the jagged self-assessment - the **citations ladder**: "tell me about
+X" -> "...with sources" (fabricable; the appearance of sourcing manufactures unearned
+trust) -> "...with verified sources" (the model uses tools to check the URLs against
+reality). The danger is the gap between the second and third: unverified sourcing is more
+dangerous than none.
+
+Methods: reliability levers - chain-of-thought / "show your work"; and self-reflection
+(ask it to grade its confidence, flag knowledge-cutoff gaps, or search when unsure) - a
+lever, not an oracle: the self-assessment is itself jagged, so it reduces the problem
+without removing your obligation to verify (station 5), and you must still know to ask
+(pink elephant, station 3).
+Delivery: pre-capture anything that must land; never live-demo confabulation. Live-demo
+only where any outcome teaches (e.g. same prompt run 3x for non-determinism).
 
 ## Station 5 - Equip: the verification asymmetry
 *Stance: disoriented -> holding one durable, stance-neutral tool.*
@@ -177,8 +213,9 @@ Everything else is enrichment.
 
 - St.2 - capability-as-gradient, non-triumphalist. (Magic/Clarke; placement open.)
 - St.3 - language as instruction-set with a tacit residue. (The spine.)
-- St.4 - jaggedness + confident confabulation + no self-knowledge of error.
-  (Goldfish is the working choice; jaggedness is the hard seam to verify.)
+- St.4 - people-pleaser goldfish (confidence decoupled from knowledge) + the map/territory
+  model (territory -> human map -> fish map) carrying jaggedness, fused as a segue.
+  Temperament vs. anatomy via the training story. (Q2 resolved.)
 - St.6a - a bounded container, inside exists / outside does not. (Goldfish bowl.)
 - St.6b/c - agency as amplifier; injection as outside voices; least privilege as
   "don't give the intern the keys."
