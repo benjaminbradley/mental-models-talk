@@ -23,7 +23,11 @@ exactly one doc; others link to it rather than copy it.
   and content ideas/stories not yet placed on the arc. High volatility; the working
   scratchpad. The arc links here for anything still being chosen.
 - `materials.md` — physical and technical materials to bring or provide. Low volatility.
-- `todo.md` — active task list for developing the talk. High volatility.
+- `todo.md` — active task list, organized by timeline week (talk: Oct 13). High volatility.
+- `take-home.md` — draft take-home reference: the capability-track and principles lists
+  (memory-jogging phrases) that feed the one-page participant card. Medium volatility.
+- `handoff.md` — optional resume bridge for continuing this project in a fresh chat; read it (and
+  this README) first when picking the work back up, when it exists.
 
 ## Source material (Google Drive)
 

@@ -41,6 +41,8 @@ explanations. To be trimmed and prioritized later (a real card fits far fewer th
 - **Context is a bounded window** - what is in it exists; it can be poisoned, including
   by you.
 - **Attaching is not understanding** - a document in context is not comprehension.
+- **Client vs. model** - the bowl vs. the fish; the interface is not the intelligence, and
+  each client wires up different capabilities.
 - **Injection** - instructions are just text that arrived earlier; it cannot tell yours
   from the material's.
 - **The lethal trifecta** - private data + untrusted content + outbound channel = exploitable.

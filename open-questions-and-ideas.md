@@ -16,15 +16,14 @@ stays at station 2 regardless; only the magic *imagery* is in question.
 **Q3. Describe-and-draw figure.** Need a source figure that is dignified for adults and
 fails through honest ambiguity (not a gotcha). To prototype/test.
 
-**Q4. Intention-economy placement.** Candidate: a short practitioner beat after station 7,
-feeding accountability.
-
-**Q6. 6a/6b/6c compression.** Keep as three beats for now; revisit only after a timed
-run-through. Deferred, needs real timing.
-
 **Q7. Augmentation-metaphor usage.** Whether and where to use "bicycle for the mind" /
 "iron man suit" (see Candidate metaphors). Candidate homes: near stations 3/6b (the
 amplifier) or as a recurring thread.
+
+**Q8. Presentation tech / assembly format.** Leaning: hand-built **HTML/CSS slides**
+(Claude's out-of-box slideshow support is weak; HTML/CSS is flexible and publishes to
+**GitHub Pages**). Reqs: per-slide **speaker notes**, and a way to load/show them in
+parallel (presenter view). Not designing now - noted; revisit at assembly (week of Sep 21+).
 
 ## Resolved decisions
 
@@ -42,6 +41,23 @@ the fish-map's fidelity varying region to region. Map content = anatomy; uniform
 ink = temperament. Verification = leaving the map to check the territory (station 5); tools
 = extending contact with the territory. Remaining is production only (see todo: build the
 three-layer visual, pick jaggedness cases, decide reveal mechanics).
+
+**Q4. Intention-economy placement.** RESOLVED - its own short beat, **Station 7b "The
+practitioner: intention is the input"**, between stations 7 and 8, feeding accountability.
+Holds: amplifies what you bring, taste/intention as the bottleneck, "it will agree with
+you," atrophy (specific). On-stage phrase "intention is the input" (avoid the loaded term
+"intention economy"). Framed descriptively, not a nudge to adopt (advocacy guard).
+
+**Q6. 6a/6b/6c compression.** RESOLVED (deferred by design) - keep three beats; the
+compression decision is folded into the full timing review during the week-of-Oct-5
+run-through, not decided in the abstract.
+
+**Q9. Client vs. model.** RESOLVED - opens the **Station 6 cluster**. Metaphor: **model =
+the fish**, **client = the bowl** (simple / fancy / mobile) and its fittings; **water =
+context** (poisonable); the window = how much water the bowl holds; tools, memory, projects,
+multimodal = fittings on the bowl. Vendors bundle a fish-in-a-bowl; the two are separable.
+Diagnostic: "is it the fish or the bowl?" Callback at Station 7 (choose the fish AND the
+bowl). Verify product names before the talk.
 
 **Q5. Pink-elephant anecdote placement.** RESOLVED - placed at **station 3**
 (latent-knowledge-needs-eliciting). The negation-poisoning angle can still be referenced
@@ -70,9 +86,10 @@ lightly at 6a if useful, but its home is station 3.
   library = pretraining = the map's content and its jagged fidelity (anatomy: structural,
   durable); an apprenticeship of practice conversations with feedback = post-training/RLHF
   = its manners and the uniform confident ink it draws with (temperament: trained,
-  model-specific, softening over time). Extensions: the fishbowl = the context window
-  (items visually present; water can be poisoned); tools connect to the bowl to extend the
-  fish's reach / contact with the territory (6b).
+  model-specific, softening over time). Extensions: the **bowl = the client**
+  (simple/fancy/mobile; Station 6), the **water = context** (poisonable), the window = how
+  much water the bowl holds; tools and other fittings on the bowl extend the fish's reach /
+  contact with the territory (6b).
 
 - **The drunk intern** (from source docs). A smart intern who has read everything, has
   memory problems, and occasionally comes to work drunk and destroys or steals everything
@@ -97,7 +114,7 @@ lightly at 6a if useful, but its home is station 3.
 - **The intention economy.** Your projects are bounded, and therefore defined, by how much
   intention you put into them. "Use best practices" is a valid default, but the judgment
   calls - what matters, how you want it - are your real input. Ties to taste as the
-  bottleneck and to accountability. Candidate home: practitioner beat (Q4).
+  bottleneck and to accountability. PLACED: Station 7b - "intention is the input" (Q4 resolved).
 
 - **Pink elephant / Theory of Mind (real anecdote).** PLACED: station 3. In chat 1, an LLM
   was asked to write prompts to seed a fresh chat 2, but the prompts included *negative*

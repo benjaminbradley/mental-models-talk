@@ -126,6 +126,20 @@ Personally useful regardless of stance - which is what earns a skeptic's trust.
 Methods: verification asymmetry + iteration - first output is material not product,
 decomposition, critique loops, knowing when to abandon a thread.
 
+## Station 6 - The bowl and the fish (client vs. model)
+*Cognitive: "the AI is one thing" -> "a model (the fish) reached through a client (the bowl); the interface is not the intelligence."*
+
+You never talk to the raw fish - you talk through a **client**, the **bowl** it sits in: a
+simple one, a fancy one, or a mobile one. The **model** (the fish) is the intelligence; the
+**client** (the bowl and its fittings) decides what is wired up - the **water** it holds
+(**context**), tubes to the outside (tools/web, 6b), a persistent notepad (memory), a camera
+(multimodal). Big vendors sell a fish already installed in a bowl, so people conflate them -
+but they are separable, and the useful diagnostic is *"is that the fish or the bowl?"* (a
+reasoning failure is usually the model; a missing capability like search or memory is
+usually the client). Callback at Station 7: choosing well means choosing the fish AND the
+bowl - benchmarks test the fish, not your bowl. NOTE: verify current product names before
+the talk.
+
 ## Station 6a - Context: the window
 *Cognitive: "it just knows things / remembers me" -> "a bounded window; what is in the circle exists, what is outside does not."*
 
@@ -173,12 +187,21 @@ reason. Matters most for skeptics; hands them a sharper knife.
 Methods: model selection - the frontier runs across models too, benchmarks mislead,
 keep private probes.
 
-> **Candidate beat - the practitioner & the intention economy (placement OPEN).**
-> It amplifies what you bring; taste becomes the bottleneck; it will agree with you.
-> The "intention economy" idea: your projects are bounded, and therefore defined, by
-> how much intention you put in - "use best practices" is the default; your judgment
-> calls about what matters and how you want it are your real input. Candidate home:
-> a short beat here, feeding directly into accountability. See open-questions.
+## Station 7b - The practitioner: intention is the input
+*Stance/cognitive: "the tool is the story" -> "I am the variable; what I bring is the bottleneck."*
+
+The human-side mirror of the spine: if anything you can specify can be done, the scarce
+input becomes what you bring - **intention**, taste, judgment. "Use best practices" is a
+fine default; the judgment calls (what matters, how you want it) are your real input, and
+they cannot be delegated. Gathers the loose practitioner threads: it amplifies what you
+bring; it will agree with you (sycophancy callback); atrophy is real but specific - some
+capacities are load-bearing and you find out which only after they are gone. Feeds straight
+into accountability: the intention was yours, so is the ownership.
+Framing guard: descriptive, not a nudge to adopt (advocacy is the main failure mode);
+stance-neutral - a refuser also exercises intention, by choosing not to use it. On-stage
+phrase: "intention is the input" (avoid the loaded term "intention economy").
+Methods: knowing what you want / writing the spec; callbacks to specification (station 3)
+and the operator todo list (6b) - you delegated the doing, not the deciding.
 
 ## Station 8 - Land: accountability is the new bottleneck
 *Stance: "who is responsible for this?" -> "I am."*
@@ -216,7 +239,8 @@ Everything else is enrichment.
 - St.4 - people-pleaser goldfish (confidence decoupled from knowledge) + the map/territory
   model (territory -> human map -> fish map) carrying jaggedness, fused as a segue.
   Temperament vs. anatomy via the training story. (Q2 resolved.)
-- St.6a - a bounded container, inside exists / outside does not. (Goldfish bowl.)
+- St.6 - client vs. model: the bowl (client, simple/fancy/mobile) and the fish (model).
+- St.6a - a bounded container, inside exists / outside does not. (The water in the bowl.)
 - St.6b/c - agency as amplifier; injection as outside voices; least privilege as
   "don't give the intern the keys."
 - St.8 - accountability that does not transfer to the operator.
