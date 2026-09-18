@@ -9,8 +9,10 @@ Sections are the timeline weeks (talk: Oct 13). "Now" = anything before the firs
 
 ## Now (through ~Sep 20 - design & decisions)
 
-- [ ] Review security / threat-model coverage; fill gaps (least privilege; enforcement is
-      architectural, not guideline-based; blast radius + remote backups; what else?).
+- handoff / new chat
+- load all docs; review all open Qs about placement / candidate metaphors / content ideas - against presentation arc and consider integration/placement of everything all at once; propose inclusion/placement/deferral/exclusion/etc
+- [ ] Comprehensive review of station order and placement (after security review).
+- [ ] Source blast-radius recovery stories from Reddit/HN (screenshots for talk).
 - [ ] Arc as a table - one column per track (cognitive / stance / capability).
 - [ ] Resolve **Q1** - where the magic metaphor lives.
 - [ ] Resolve **Q7** - augmentation-metaphor usage ("bicycle for the mind," "iron man suit").
@@ -29,6 +31,8 @@ Sections are the timeline weeks (talk: Oct 13). "Now" = anything before the firs
 
 - [ ] Identify & describe the desired imagery for each slide.
 - [ ] Create images (goldfish visuals; the three-layer map/territory diagram).
+- [ ] Prepare comparison demos: plain vs. role vs. knowledge-domain prompts; with/without
+      "think about criteria" preamble; email draft vs. send (HITL).
 - [ ] Source pre-captured transcripts/recordings (confabulation, jaggedness, guardrail
       probe) - never live-demo confabulation.
 - [ ] Decide slides vs. facilitated exercises with minimal projection.

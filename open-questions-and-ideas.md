@@ -20,17 +20,12 @@ fails through honest ambiguity (not a gotcha). To prototype/test.
 "iron man suit" (see Candidate metaphors). Candidate homes: near stations 3/6b (the
 amplifier) or as a recurring thread.
 
-**Q10. Hosting / infrastructure layer ("where does the fish live?").** Where the
-model's compute runs and where your data goes. Three tiers: (1) **local** - on your own
-computer (Ollama, llama.cpp, etc.; private but limited capability); (2) **private cloud /
-VPS** - your own server or rented instance (more power, you control the data path);
-(3) **frontier cloud** - the vendor's infrastructure (most capable models, but your data
-transits and may be stored by the provider). Each tier trades capability for data
-control. Candidate homes: station 6 cluster (fits naturally with bowl/fish - "where is
-the bowl?") or station 6c (blast radius / security). Also feeds station 7 ("it is a
-product" - whose infrastructure are you on?). To decide: how deep to go (a slide? a
-beat? a mention?), and whether data-residency / privacy policy literacy belongs in scope
-or is left to the takeaway card.
+**Q10. Hosting / infrastructure layer.** RESOLVED - placed at the top of
+**station 6c** as "where does the fish live?" Three tiers visualized as a data-flow
+diagram: local (your computer) -> private cloud/VPS (your server) -> frontier cloud
+(vendor infrastructure). Each trades capability for data control. Credential/API key
+exposure covered here. Training-data opt-out mentioned as a guideline (not an
+architectural boundary). Feeds the enforcement hierarchy.
 
 **Q11. Decomposition demonstration.** Need a concrete exercise or prepared example
 that shows decomposition as distinct from iteration. Decomposition = breaking the task
@@ -218,3 +213,18 @@ lightly at 6a if useful, but its home is station 3.
   this email" and "send this email" is the entire accountability question in one toggle.
   Demo: email drafting vs. sending. Callback to station 6b (tool use introduced the
   capability; station 8 asks who is responsible for using it).
+
+- **Blast-radius recovery stories** (station 6c). Source real stories from Reddit/HN
+  of LLMs deleting files, resetting databases, sending wrong emails, etc. Pre-capture
+  screenshots for the talk. The question: if everything goes as badly as it could, how
+  would you recover and what would you have lost?
+
+- **The B&W artist review analogy** (station 4 -> 8 callback). Asking the fish to review
+  its own work is like asking a black-and-white artist to judge "someone else's" B&W art -
+  it shares the same blind spots. A color artist judging a range of pictures (both color
+  and B&W) is a genuinely independent reviewer. Surfaces why self-review and correlated
+  agent review fail.
+
+- **Memory oversharing / resume inflation** (station 6a, personal story). Memory system
+  inflating claims from a resume-drafting session into persistent "facts" about the user's
+  experience. Demonstrates how memory can go wrong and why memory audit matters.

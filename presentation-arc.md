@@ -83,7 +83,12 @@ The pivotal unlearning moment. Two properties, carried by two composed images:
   **people-pleaser**: it desperately wants to be a good conversationalist and will never
   admit it is out of its depth. The unwarranted confidence is a symptom of
   eagerness-to-please, NOT intent to deceive - it is not lying, the mechanism is just
-  running unanchored. Connects straight to sycophancy.
+  running unanchored. Connects straight to sycophancy. Security implication (callback
+  at 6c): it will also eagerly comply with injected instructions. Review implication
+  (callback at 8): asking the fish to review its own work is like asking a black-and-white
+  artist to judge "someone else's" black-and-white art - it shares the same blind spots.
+  A color artist judging a range of pictures (both color and B&W) is a genuinely
+  independent reviewer.
 - **Competence has no map (jaggedness).** Errors do not correlate with human difficulty;
   trivial failures sit beside expert successes. Carried by the **map vs. territory** model
   (open-questions Q2): the fish drew its map entirely from books, never surveying the
@@ -190,12 +195,18 @@ Comparing: conversation A+B -> "not B" -> C (the salt is still in there, and now
 is also in the water) versus starting fresh: A -> D. A poisoned thread is often cheaper
 to abandon than repair. Demonstrate with a context-management example.
 
+**Memory oversharing.** If memory is on, the fish is taking notes about you between
+conversations - and it may store things you did not intend to persist. Memory audit as
+a practice: review what it has stored, delete what should not be there. Real-world
+example: memory inflating claims from a resume-drafting session into persistent
+"facts" about the user's experience (personal story).
+
 Vulnerability half: context can be poisoned, including by your own earlier missteps;
 attaching a document is not understanding it. Goldfish extension: the fishbowl water can
 be poisoned. Candidate example: the pink-elephant / negation poisoning story
 (open-questions).
 Methods: context engineering, memory/instruction hierarchy, projects/RAG, document
-hygiene, restart vs. repair.
+hygiene, restart vs. repair, memory audit.
 
 ## Station 6b - Agency: tool use
 *Cognitive: "a chatbot that says things" -> "a system that does things."*
@@ -226,15 +237,58 @@ use, delegation/subagents, scheduled tasks, skills/playbooks.
 ## Station 6c - Blast radius: security & data
 *Cognitive/stance: "a handy tool" -> "a system with a blast radius I have to bound."*
 
-Injection: instructions are just text that arrived earlier, so it cannot cleanly
-separate yours from ones embedded in the material it handles; no parameterized-query
-equivalent, so the fix is architectural. The **lethal trifecta** (Willison): private
-data + untrusted content + outbound channel - any two survivable, all three
-exploitable. And the professional's real question: *am I even permitted to paste
-this?* Small-group exercise: an assistant with mailbox access that reads attachments
-and can send mail - what goes wrong? Groups find the trifecta themselves.
-Methods: architectural limits - least privilege, separate accounts, read/write scoping
-(from the Inputs-tab recommendations).
+**Where does the fish live? (Hosting & data flow.)** Three tiers, visualized as a
+plain diagram of where your data goes: (1) **local** - the fish lives on your computer;
+your data never leaves (private, but limited capability); (2) **private cloud / VPS** -
+the fish lives on a server you control (more power, you control the data path);
+(3) **frontier cloud** - the fish lives on the vendor's infrastructure (most capable
+models, but your data transits their servers and may be stored). Each tier trades
+capability for data control. Credential / API key exposure: do not paste secrets into
+a conversation that transits someone else's servers.
+
+**Training data opt-out.** Related: does the provider train on your conversations?
+Where is the toggle? Note: this is a **guideline** - you are trusting a policy promise,
+not an architectural boundary. The provider *could* use your data; they promise not to.
+(If convenient, draw the parallel: LLM "guidelines" like "do not hallucinate" vs.
+deterministic checks and architectural boundaries - the same hierarchy applies to
+your trust in the provider.)
+
+**Confidentiality vs. capability.** The core daily tension: the more context you give
+the fish, the better it performs AND the more you expose. This is not a problem to
+solve; it is a tradeoff to navigate consciously. (Footnote on this whole section, not
+a standalone beat.)
+
+**Injection: the poisoned water.** Instructions are just text that arrived earlier, so
+the fish cannot cleanly separate yours from ones embedded in the material it handles;
+no parameterized-query equivalent, so the fix is architectural. Sycophancy callback
+(station 4): the people-pleaser fish will say "sure, I will do that" to an injected
+instruction just as eagerly as it says it to you. The **lethal trifecta** (Willison):
+private data + untrusted content + outbound channel - any two survivable, all three
+exploitable. And the professional's real question: *am I even permitted to paste this?*
+
+**When it goes wrong: the blast radius.** Callback to 6b (agency): a hallucinated
+*action* is worse than a hallucinated *answer*. When tools are connected, the fish
+can send the wrong email, delete a file, make an API call - the people-pleaser with
+the jagged map can now *do things.* The question becomes: if everything goes as badly
+as it could, how would you recover and what would you have lost? Gather real stories:
+"LLM erased all my files," "reset my database," etc. (source from Reddit/HN; see
+open-questions). Backups, version control, and sandbox/staging environments as
+architectural safety nets.
+
+**The enforcement hierarchy.** Three layers of protection, in order of reliability:
+(1) **Architecture** - the system *cannot* reach the thing (no access granted, sandboxed
+environment, air-gapped data). The only reliable layer. (2) **Policy** - org-level
+settings, access controls, admin-enforced rules. Better than guidelines but still
+circumventable. (3) **Guidelines** - "do not paste secrets," "always review before
+sending." Relies on human discipline; fails under pressure, fatigue, or habit. The
+lesson: if you are relying on a guideline for something that matters, you have a
+vulnerability, not a control.
+
+Small-group exercise: an assistant with mailbox access that reads attachments and can
+send mail - what goes wrong? Groups find the trifecta themselves.
+Methods: architectural limits - least privilege, separate accounts, read/write scoping,
+the enforcement hierarchy (architecture > policy > guideline), hosting awareness,
+backups/reversibility.
 
 ## Station 7 - Restore agency to the critic
 *Stance: "a neutral oracle / inscrutable force" -> "someone's product, and I am allowed to interrogate whose."*
@@ -316,6 +370,9 @@ Everything else is enrichment.
 - St.6a - a bounded container, inside exists / outside does not. (The water in the bowl.)
   The cooking metaphor for restart-vs-repair: you decide the ingredients, the model cooks;
   salt in the water cannot be taken out.
-- St.6b/c - agency as amplifier; provider tools vs. MCPs; injection as outside voices;
-  least privilege as "don't give the intern the keys."
+- St.6b - agency as amplifier; provider tools vs. MCPs.
+- St.6c - hosting as "where does the fish live?"; injection as poisoned water (the fish
+  is a people-pleaser, so it eagerly complies); the enforcement hierarchy (architecture >
+  policy > guideline); blast radius + recovery; least privilege as "don't give the intern
+  the keys."
 - St.8 - accountability that does not transfer to the operator.

@@ -28,6 +28,8 @@ explanations. To be trimmed and prioritized later (a real card fits far fewer th
 - **Context engineering** - curate what is in the window; garbage in, garbage out.
 - **Memory & instruction hierarchy** - provider instructions (invisible) -> your custom
   instructions -> project instructions -> your prompt. Know the stack.
+- **Memory audit** - review what the model has stored about you; delete what should
+  not persist. It may store things you did not intend.
 - **Restart vs. repair** - a derailed thread is often cheaper to abandon than to fix.
   The whole conversation is re-read every turn; you cannot "take out the salt."
 - **Projects / RAG** - pull the right reference material into context on demand.
@@ -70,15 +72,21 @@ explanations. To be trimmed and prioritized later (a real card fits far fewer th
 - **Injection** - instructions are just text that arrived earlier; it cannot tell yours
   from the material's.
 - **The lethal trifecta** - private data + untrusted content + outbound channel = exploitable.
+- **The enforcement hierarchy** - architecture (cannot reach it) > policy (admin
+  rules) > guidelines (human discipline). If a guideline is your only protection,
+  you have a vulnerability, not a control.
 - **Agency is the amplifier** - a chatbot says; an agent does. Bound the blast radius;
   least privilege.
 - **Hosting matters** - local, private cloud, or frontier cloud; each tier trades
-  capability for data control. Know where your data goes.
+  capability for data control. Know where your data goes. Do not paste credentials
+  into a conversation that transits someone else's servers.
 - **It is a product** - refusals, tone, agreeableness are design decisions with
   commercial interests behind them.
 - **Frontier instability** - the models change without notice; a workflow that worked
   yesterday can break tomorrow. You are building on someone else's fish.
 - **It amplifies what you bring** - taste and intention become the bottleneck.
+- **Blast radius and recovery** - if everything goes wrong, what would you lose?
+  Backups, version control, sandbox environments are architectural safety nets.
 - **Draft vs. send** - human-in-the-loop is a deliberate design choice, not an
   afterthought. The accountability question in one toggle.
 - **Accountability is the new bottleneck** - do you stand behind it? The review ladder
