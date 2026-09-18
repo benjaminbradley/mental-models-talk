@@ -9,7 +9,6 @@ Sections are the timeline weeks (talk: Oct 13). "Now" = anything before the firs
 
 ## Now (through ~Sep 20 - design & decisions)
 
-- [ ] Comprehensive review of station order and placement (after security review).
 - [ ] Arc as a table - one column per track (cognitive / stance / capability).
 - [ ] Source blast-radius recovery stories from Reddit/HN (screenshots for talk).
 - [ ] Spec the three-layer **map/territory** visual: pick 4-5 jaggedness cases; decide the
@@ -48,7 +47,9 @@ Sections are the timeline weeks (talk: Oct 13). "Now" = anything before the firs
 ## Week of Oct 5 - practice
 
 - [ ] Full run-through for real timing; then the larger review vs. actual timing, including
-      whether stations 7/8/9 compress (**Q6**) and any trims.
+      whether stations 7/8/9 compress (**Q6**) and any trims. Also assess
+      station 3 density - it carries the exercise, spine claim, and four technique families;
+      confirm it fits its time slot or identify what to defer.
 - [ ] Rehearse; refine speaker notes; adjust pacing.
 - [ ] Confirm final logistics with organizer (resources, room, devices).
 

@@ -155,6 +155,13 @@ Knowing when to abandon a thread (callback: restart vs. repair, station 7).
 ## Station 6 - The bowl and the fish (client vs. model)
 *Cognitive: "the AI is one thing" -> "a model (the fish) reached through a client (the bowl); the interface is not the intelligence."*
 
+**Opening hook (bridge from station 5).** The strawberry problem: ask the fish "how many
+Rs in strawberry?" and it gets it wrong - a verification-asymmetry case where checking is
+trivial. But instead of checking it yourself, ask: "write a script that counts the letters."
+Now the fish reaches outside itself and produces a verifiable answer. You just crossed from
+"a chatbot that says things" to "a system that does things" - and to understand how, you
+need to see the architecture: the fish is not the whole system.
+
 You never talk to the raw fish - you talk through a **client**, the **bowl** it sits in: a
 simple one, a fancy one, or a mobile one. The **model** (the fish) is the intelligence; the
 **client** (the bowl) decides what is wired up. The bowl's **fittings**:
