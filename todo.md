@@ -9,7 +9,6 @@ Sections are the timeline weeks (talk: Oct 13). "Now" = anything before the firs
 
 ## Now (through ~Sep 20 - design & decisions)
 
-- [ ] Arc as a table - one column per track (cognitive / stance / capability).
 - [ ] Source blast-radius recovery stories from Reddit/HN (screenshots for talk).
 - [ ] Spec the three-layer **map/territory** visual: pick 4-5 jaggedness cases; decide the
       reveal mechanics.
