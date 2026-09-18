@@ -9,18 +9,18 @@ Sections are the timeline weeks (talk: Oct 13). "Now" = anything before the firs
 
 ## Now (through ~Sep 20 - design & decisions)
 
-- handoff / new chat
-- load all docs; review all open Qs about placement / candidate metaphors / content ideas - against presentation arc and consider integration/placement of everything all at once; propose inclusion/placement/deferral/exclusion/etc
 - [ ] Comprehensive review of station order and placement (after security review).
 - [ ] Source blast-radius recovery stories from Reddit/HN (screenshots for talk).
 - [ ] Arc as a table - one column per track (cognitive / stance / capability).
-- [ ] Resolve **Q1** - where the magic metaphor lives.
-- [ ] Resolve **Q7** - augmentation-metaphor usage ("bicycle for the mind," "iron man suit").
-- [ ] Resolve **Q9** - client vs. model placement + metaphor.
 - [ ] Spec the three-layer **map/territory** visual: pick 4-5 jaggedness cases; decide the
       reveal mechanics.
-- [ ] Find & test the **describe-and-draw** figure for station 3 (resolves **Q3**); confirm
-      it works with adults and fails via honest ambiguity.
+- [ ] Find & test the **describe-and-draw** figure for station 3 (**Q3** resolved as a
+      prototyping task). Criteria: spatial relationships (not artistic skill), dignified for
+      adults, honest ambiguity (partners disagree about the result and both have a point).
+      Leading candidate: simple architectural floor plan.
+- [ ] Prototype the **decomposition demonstration** for station 5 (**Q11** resolved as a
+      prototyping task). Leading candidate: "plan a team offsite" monolithic prompt vs.
+      decomposed sub-tasks.
 - [ ] Design entry & exit polls (Google Forms? QR codes; measure model accuracy / stance
       movement, not satisfaction).
 - [ ] Draft the one-page takeaway card (source: `take-home.md`).
@@ -48,7 +48,7 @@ Sections are the timeline weeks (talk: Oct 13). "Now" = anything before the firs
 ## Week of Oct 5 - practice
 
 - [ ] Full run-through for real timing; then the larger review vs. actual timing, including
-      whether 6a/6b/6c compress (**Q6**) and any trims.
+      whether stations 7/8/9 compress (**Q6**) and any trims.
 - [ ] Rehearse; refine speaker notes; adjust pacing.
 - [ ] Confirm final logistics with organizer (resources, room, devices).
 

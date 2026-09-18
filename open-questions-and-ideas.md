@@ -7,38 +7,17 @@ or renumbered; resolved ones move to "Resolved decisions" keeping their ID.
 
 ## Open design questions
 
-**Q1. Magic metaphor placement.** Up front (station 2) vs. later in the talk. Concern:
-skeptics may reject the "beneficial" implication of magic before any capability has been
-shown; by the end, the capability multiplier has been demonstrated. Counter: "powerful
-but dangerous" is itself a good mental model and could work early. The gradient *claim*
-stays at station 2 regardless; only the magic *imagery* is in question.
-
-**Q3. Describe-and-draw figure.** Need a source figure that is dignified for adults and
-fails through honest ambiguity (not a gotcha). To prototype/test.
-
-**Q7. Augmentation-metaphor usage.** Whether and where to use "bicycle for the mind" /
-"iron man suit" (see Candidate metaphors). Candidate homes: near stations 3/6b (the
-amplifier) or as a recurring thread.
-
-**Q10. Hosting / infrastructure layer.** RESOLVED - placed at the top of
-**station 6c** as "where does the fish live?" Three tiers visualized as a data-flow
-diagram: local (your computer) -> private cloud/VPS (your server) -> frontier cloud
-(vendor infrastructure). Each trades capability for data control. Credential/API key
-exposure covered here. Training-data opt-out mentioned as a guideline (not an
-architectural boundary). Feeds the enforcement hierarchy.
-
-**Q11. Decomposition demonstration.** Need a concrete exercise or prepared example
-that shows decomposition as distinct from iteration. Decomposition = breaking the task
-into sub-tasks *before* starting (so each piece can be verified independently); iteration
-= refining output *after*. Candidate: a multi-part request that fails as one prompt but
-succeeds when broken into steps. To prototype.
-
-**Q8. Presentation tech / assembly format.** Leaning: hand-built **HTML/CSS slides**
-(Claude's out-of-box slideshow support is weak; HTML/CSS is flexible and publishes to
-**GitHub Pages**). Reqs: per-slide **speaker notes**, and a way to load/show them in
-parallel (presenter view). Not designing now - noted; revisit at assembly (week of Sep 21+).
+None remaining.
 
 ## Resolved decisions
+
+**Q1. Magic metaphor placement.** RESOLVED - Clarke's third law as a light-touch
+one-liner at **station 2** to set up the binary-to-gradient reframe ("pop culture frames
+this as magic - wizards vs. muggles - but capability is a gradient, refined by effort").
+Not themed, not a recurring motif. Callback at **station 13** (the closer) as earned
+wonder: "the birth of magic" - descriptive, not prescriptive; comes after accountability
+has landed. Framing guard: the callback is inspirational coda, not advocacy (the whole
+talk must have earned it by then).
 
 **Q2. Station 4 metaphor architecture.** RESOLVED (map vs. territory). Station 4 is built
 on three layers, revealed in order: (1) **the territory** - the landscape of knowledge /
@@ -55,68 +34,88 @@ ink = temperament. Verification = leaving the map to check the territory (statio
 = extending contact with the territory. Remaining is production only (see todo: build the
 three-layer visual, pick jaggedness cases, decide reveal mechanics).
 
-**Q4. Intention-economy placement.** RESOLVED - its own short beat, **Station 7b "The
-practitioner: intention is the input"**, between stations 7 and 8, feeding accountability.
+**Q3. Describe-and-draw figure.** RESOLVED as a design question - placement is confirmed
+at station 3. Figure selection is a prototyping task, moved to `todo.md`.
+
+**Q4. Intention-economy placement.** RESOLVED - its own short beat, **Station 11 "The
+practitioner: intention is the input"**, between stations 10 and 12, feeding accountability.
 Holds: amplifies what you bring, taste/intention as the bottleneck, "it will agree with
 you," atrophy (specific). On-stage phrase "intention is the input" (avoid the loaded term
 "intention economy"). Framed descriptively, not a nudge to adopt (advocacy guard).
 
-**Q6. 6a/6b/6c compression.** RESOLVED (deferred by design) - keep three beats; the
+**Q5. Pink-elephant anecdote placement.** RESOLVED - placed at **station 3**
+(latent-knowledge-needs-eliciting). The negation-poisoning angle can still be referenced
+lightly at station 7 if useful, but its home is station 3.
+
+**Q6. Station 7/8/9 compression.** RESOLVED (deferred by design) - keep three beats; the
 compression decision is folded into the full timing review during the week-of-Oct-5
 run-through, not decided in the abstract.
+
+**Q7. Augmentation-metaphor usage.** RESOLVED - exclude as standalone. "Bicycle for the
+mind" and "iron man suit" don't do teaching work the spine + goldfish/bowl aren't already
+doing, and they tilt toward advocacy. Allowed as a passing one-liner (e.g. at station 11)
+but no dedicated beat, no recurring thread. One useful insight preserved: the bicycle
+does nothing on its own, matching how LLMs only wake when prompted (or on a schedule).
+This is folded into the goldfish metaphor as the "sleeping fish" - the fish sleeps most
+of the time and only wakes when you talk to it (or if the bowl has an alarm clock).
 
 **Q9. Client vs. model.** RESOLVED - opens the **Station 6 cluster**. Metaphor: **model =
 the fish**, **client = the bowl** (simple / fancy / mobile) and its fittings; **water =
 context** (poisonable); the window = how much water the bowl holds; tools, memory, projects,
 multimodal = fittings on the bowl. Vendors bundle a fish-in-a-bowl; the two are separable.
-Diagnostic: "is it the fish or the bowl?" Callback at Station 7 (choose the fish AND the
+Diagnostic: "is it the fish or the bowl?" Callback at Station 10 (choose the fish AND the
 bowl). Verify product names before the talk.
 
-**Q5. Pink-elephant anecdote placement.** RESOLVED - placed at **station 3**
-(latent-knowledge-needs-eliciting). The negation-poisoning angle can still be referenced
-lightly at 6a if useful, but its home is station 3.
+**Q10. Hosting / infrastructure layer.** RESOLVED - placed at the top of
+**station 9** as "where does the fish live?" Three tiers visualized as a data-flow
+diagram: local (your computer) -> private cloud/VPS (your server) -> frontier cloud
+(vendor infrastructure). Each trades capability for data control. Credential/API key
+exposure covered here. Training-data opt-out mentioned as a guideline (not an
+architectural boundary). Feeds the enforcement hierarchy.
+
+**Q11. Decomposition demonstration.** RESOLVED - placed at station 5. Concrete exercise
+moved to `todo.md` for prototyping (leading candidate: "plan a team offsite" monolithic
+vs. decomposed).
+
+**Drunk intern metaphor.** RETIRED - replaced by the poisoned-water metaphor extension
+at station 9. The intern's useful contribution (least-privilege punchline) survives as a
+standalone one-liner; the full character is dropped to avoid competing with the goldfish
+as the talk's primary anthropomorphic carrier.
 
 ## Bookmarks
 
 - **Entry & exit polls / surveys.** Definitely include. Anonymous. Entry poll at station 1
-  (stance + usage), exit poll at station 9. Design later. Note: "literacy, not conversion"
+  (stance + usage), exit poll at station 13. Design later. Note: "literacy, not conversion"
   makes standard satisfaction surveys actively misleading - a session that leaves people
   accurately unimpressed should not score as a failure. Measure model accuracy / stance
   movement, not satisfaction. (Delivery idea: Google Forms + QR codes on slides.)
 
 ## Candidate metaphors
 
-- **Magic / Clarke's gradient** (station 2, placement = Q1). Does real work: reframes
-  capability as a learnable discipline, not a caste. Risk: theming reads as whimsy to a
-  professional audience; "beneficial" implication may alienate skeptics early.
+- **Magic / Clarke's gradient** (station 2; Q1 resolved). Light-touch one-liner to set up
+  the binary-to-gradient reframe. Callback at station 13 (closer) as earned wonder.
 
-- **The goldfish who has read every book** (LEADING for station 4; evolves through 6a and
-  6b). A **people-pleaser**: fluent from reading, eager to be a good conversationalist, and
-  unwilling to admit it is out of its depth - so its confidence is a symptom of eagerness,
-  not intent to deceive (ties to sycophancy). No lived experience, no long-term memory. It
-  navigates by a **map it drew entirely from books**, never surveying the territory (Q2,
-  map vs. territory). **Temperament vs. anatomy** via the training story: reading the
-  library = pretraining = the map's content and its jagged fidelity (anatomy: structural,
-  durable); an apprenticeship of practice conversations with feedback = post-training/RLHF
-  = its manners and the uniform confident ink it draws with (temperament: trained,
-  model-specific, softening over time). Extensions: the **bowl = the client**
-  (simple/fancy/mobile; Station 6), the **water = context** (poisonable), the window = how
-  much water the bowl holds; tools and other fittings on the bowl extend the fish's reach /
-  contact with the territory (6b).
+- **The goldfish who has read every book** (PRIMARY for station 4; evolves through stations
+  7 and 8). A **people-pleaser**: fluent from reading, eager to be a good conversationalist,
+  and unwilling to admit it is out of its depth - so its confidence is a symptom of
+  eagerness, not intent to deceive (ties to sycophancy). No lived experience, no long-term
+  memory. **Sleeps most of the time** - the fish only wakes up when you talk to it, or if
+  the bowl has an alarm clock (scheduled tasks). This matches how LLMs work: they do nothing
+  on their own. It navigates by a **map it drew entirely from books**, never surveying the
+  territory (Q2, map vs. territory). **Temperament vs. anatomy** via the training story:
+  reading the library = pretraining = the map's content and its jagged fidelity (anatomy:
+  structural, durable); an apprenticeship of practice conversations with feedback =
+  post-training/RLHF = its manners and the uniform confident ink it draws with
+  (temperament: trained, model-specific, softening over time). Extensions: the **bowl =
+  the client** (simple/fancy/mobile; Station 6), the **water = context** (poisonable),
+  the window = how much water the bowl holds; tools and other fittings on the bowl extend
+  the fish's reach / contact with the territory (station 8).
 
-- **The drunk intern** (from source docs). A smart intern who has read everything, has
-  memory problems, and occasionally comes to work drunk and destroys or steals everything
-  they can touch. Useful and deliberately wrong: an intern's errors correlate with
-  difficulty; these do not - which is exactly the jaggedness lesson. Also carries
-  least-privilege ("don't give the intern the keys," station 6c). May coexist with the
-  goldfish or be folded in.
+- **Augmentation metaphors** (retired as standalone; Q7 resolved). "Bicycle for the mind"
+  / "iron man suit" allowed as passing references only. The sleeping-fish insight (does
+  nothing on its own) is folded into the goldfish.
 
-- **Augmentation metaphors** (usage = Q7). "Bicycle for the mind" (Jobs, on the PC; also
-  seen in a recent LLM talk) - amplifies human effort/efficiency. "Iron man suit" (a
-  friend's framing) - powered augmentation the human still drives. Both are
-  capability-multiplier images.
-
-- **The cooking metaphor** (station 6a, restart-vs-repair). You are deciding the
+- **The cooking metaphor** (station 7, restart-vs-repair). You are deciding the
   ingredients; the model does the cooking to combine them. If you accidentally add salt
   instead of sugar, you cannot take out the salt - it is in the dish now. The entire
   conversation history is re-read with every request, so a mistake early on persists
@@ -135,7 +134,7 @@ lightly at 6a if useful, but its home is station 3.
 - **The intention economy.** Your projects are bounded, and therefore defined, by how much
   intention you put into them. "Use best practices" is a valid default, but the judgment
   calls - what matters, how you want it - are your real input. Ties to taste as the
-  bottleneck and to accountability. PLACED: Station 7b - "intention is the input" (Q4 resolved).
+  bottleneck and to accountability. PLACED: Station 11 - "intention is the input" (Q4 resolved).
 
 - **Pink elephant / Theory of Mind (real anecdote).** PLACED: station 3. In chat 1, an LLM
   was asked to write prompts to seed a fresh chat 2, but the prompts included *negative*
@@ -143,11 +142,12 @@ lightly at 6a if useful, but its home is station 3.
   effect that risked poisoning chat 2's context. Asking the model to use Theory of Mind and
   rewrite the prompt fixed it. Primary lesson (station 3): the model holds worlds of
   knowledge but does not apply them unless you know what to ask for. Secondary (optional at
-  6a): negation can poison context.
+  station 7): negation can poison context.
 
 - **Levels of memory** (from Inputs tab). System instructions (global to account) ->
   per-project instructions (you maintain) -> agent/Claude memory (it maintains from
-  conversations). Candidate: supports station 6a context/craft.
+  conversations). PLACED: supports station 7 context/craft (integrated into memory &
+  instruction hierarchy).
 
 - **Training stages in the metaphor.** Reading the whole library = pretraining (a fluent
   text-continuer; knows the words, not yet the job). Apprenticeship of practice
@@ -162,7 +162,7 @@ lightly at 6a if useful, but its home is station 3.
   model, actively changing (confidence, agreeableness, refusals, willingness to say "I
   don't know"). Anatomy = structural, durable (no grounding / cannot check reality itself;
   jagged competence). Answers "how much is model-specific vs. inherent" and future-proofs
-  the talk. Home: station 4; also feeds station 7 (it is a product).
+  the talk. Home: station 4; also feeds station 10 (it is a product).
 
 - **The citations ladder** (demo idea, station 4). "Tell me about X" -> "...with sources"
   (citations can be fabricated; the appearance of sourcing manufactures unearned trust) ->
@@ -194,37 +194,53 @@ lightly at 6a if useful, but its home is station 3.
   prompt. Prepared comparison: same query with and without a "think about the criteria"
   preamble.
 
-- **Provider-specific tools vs. MCPs** (distinction, station 6b). Proprietary tools
+- **Provider-specific tools vs. MCPs** (distinction, station 8). Proprietary tools
   (ChatGPT plugins, Claude web search, Gemini Google integrations) only work with one
   vendor's tank. MCP (Model Context Protocol) is an industry-standard connector that works
   across compatible tanks. Also: tool discovery/description - the model reads a tool's
   description to decide when and how to use it.
 
-- **Skills / reusable playbooks** (capability, station 6b). Packaged instructions for
+- **Skills / reusable playbooks** (capability, station 8). Packaged instructions for
   recurring tasks - recipe cards for the fish. Saves re-specifying the same constraints
   every time.
 
-- **Frontier instability** (risk, station 7). Models change without notice and without
+- **Frontier instability** (risk, station 10). Models change without notice and without
   recourse. A workflow that worked yesterday can break because the provider updated the
   model. Implication: building reliable business processes on someone else's fish is a risk
   to name. Feeds "it is a product."
 
-- **HITL as deliberate pattern** (accountability, station 8). The difference between "draft
+- **HITL as deliberate pattern** (accountability, station 12). The difference between "draft
   this email" and "send this email" is the entire accountability question in one toggle.
-  Demo: email drafting vs. sending. Callback to station 6b (tool use introduced the
-  capability; station 8 asks who is responsible for using it).
+  Demo: email drafting vs. sending. Callback to station 8 (tool use introduced the
+  capability; station 12 asks who is responsible for using it).
 
-- **Blast-radius recovery stories** (station 6c). Source real stories from Reddit/HN
+- **Blast-radius recovery stories** (station 9). Source real stories from Reddit/HN
   of LLMs deleting files, resetting databases, sending wrong emails, etc. Pre-capture
   screenshots for the talk. The question: if everything goes as badly as it could, how
   would you recover and what would you have lost?
 
-- **The B&W artist review analogy** (station 4 -> 8 callback). Asking the fish to review
+- **The B&W artist review analogy** (station 4 -> 12 callback). Asking the fish to review
   its own work is like asking a black-and-white artist to judge "someone else's" B&W art -
   it shares the same blind spots. A color artist judging a range of pictures (both color
   and B&W) is a genuinely independent reviewer. Surfaces why self-review and correlated
   agent review fail.
 
-- **Memory oversharing / resume inflation** (station 6a, personal story). Memory system
+- **Memory oversharing / resume inflation** (station 7, personal story). Memory system
   inflating claims from a resume-drafting session into persistent "facts" about the user's
   experience. Demonstrates how memory can go wrong and why memory audit matters.
+
+- **Poisoned-water effects taxonomy** (station 9, extends the goldfish/injection metaphor).
+  Three categories of what happens when the water is poisoned: (1) **Destruction** - the
+  compromised fish deletes files, resets databases, sends wrong messages (blast radius);
+  (2) **Exfiltration** - the fish sends private data outward through its tools (the lethal
+  trifecta); (3) **Sleeper / incubation** - poison persists via memory and activates later,
+  like traumatic memories triggering undesired behavior in future sessions. The third
+  category is the subtlest and hardest to detect: the attack surface extends across time
+  through the memory system. Replaces the "drunk intern" as the security-risk carrier.
+
+## Presentation / format
+
+**Q8. Presentation tech / assembly format.** Leaning: hand-built **HTML/CSS slides**
+(Claude's out-of-box slideshow support is weak; HTML/CSS is flexible and publishes to
+**GitHub Pages**). Reqs: per-slide **speaker notes**, and a way to load/show them in
+parallel (presenter view). Not designing now - noted; revisit at assembly (week of Sep 21+).

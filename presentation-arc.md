@@ -21,8 +21,8 @@ to a limitation the room just felt.
 equipped confidence -> sober responsibility.
 
 **The through-line (the spine claim):** anything you can specify clearly enough in
-language, a computer can now do. Introduced at station 3, made literal at 6b (the
-"operator todo list"), and closed at station 8 (the operator acts, but accountability
+language, a computer can now do. Introduced at station 3, made literal at station 8 (the
+"operator todo list"), and closed at station 12 (the operator acts, but accountability
 does not transfer).
 
 ---
@@ -44,10 +44,9 @@ Methods: none yet.
 *Stance/cognitive: "gatekept magic, not for me" -> "a learnable discipline I could reason about."*
 
 Clarke's third law inverted: pop culture frames magic as binary (wizards vs muggles);
-reality is a gradient, skill refined in proportion to effort.
-**OPEN:** whether the *magic* metaphor itself belongs here or later. The gradient
-*claim* stays here regardless; the magic *imagery* may land better after the
-capability multiplier is demonstrated. See open-questions.
+reality is a gradient, skill refined in proportion to effort. Light touch - a one-liner
+to set up the reframe, not a themed section. The gradient *claim* is the payload; the
+magic *imagery* stays minimal here and returns as earned wonder at the closer (station 13).
 Capability precondition: establishes that skill exists here at all.
 
 ## Station 3 - Dislodge the wrong model + install the spine
@@ -83,12 +82,14 @@ The pivotal unlearning moment. Two properties, carried by two composed images:
   **people-pleaser**: it desperately wants to be a good conversationalist and will never
   admit it is out of its depth. The unwarranted confidence is a symptom of
   eagerness-to-please, NOT intent to deceive - it is not lying, the mechanism is just
-  running unanchored. Connects straight to sycophancy. Security implication (callback
-  at 6c): it will also eagerly comply with injected instructions. Review implication
-  (callback at 8): asking the fish to review its own work is like asking a black-and-white
-  artist to judge "someone else's" black-and-white art - it shares the same blind spots.
-  A color artist judging a range of pictures (both color and B&W) is a genuinely
-  independent reviewer.
+  running unanchored. Connects straight to sycophancy. **The fish sleeps most of the
+  time** - it only wakes when you talk to it, or if the bowl has an alarm clock (scheduled
+  tasks). It does nothing on its own; all initiative is yours. Security implication
+  (callback at station 9): it will also eagerly comply with injected instructions. Review
+  implication (callback at station 12): asking the fish to review its own work is like
+  asking a black-and-white artist to judge "someone else's" black-and-white art - it shares
+  the same blind spots. A color artist judging a range of pictures (both color and B&W) is
+  a genuinely independent reviewer.
 - **Competence has no map (jaggedness).** Errors do not correlate with human difficulty;
   trivial failures sit beside expert successes. Carried by the **map vs. territory** model
   (open-questions Q2): the fish drew its map entirely from books, never surveying the
@@ -96,9 +97,9 @@ The pivotal unlearning moment. Two properties, carried by two composed images:
   cannot see the difference. Blanks get inked with the same confident hand - which is also
   confabulation.
 
-Fused image (segue into 6b): *an eager guide who read every travel book but never left
-home, navigating by a map it drew from those books - confidently, and it will never say it
-is unsure unless you ask.*
+Fused image (segue into station 8): *an eager guide who read every travel book but never
+left home, navigating by a map it drew from those books - confidently, and it will never
+say it is unsure unless you ask.*
 
 **Three-beat reveal (map vs. territory).** (1) The **territory** - the landscape of
 knowledge itself; shown to set the metaphor but deliberately not detailed (nobody holds
@@ -148,33 +149,33 @@ Personally useful regardless of stance - which is what earns a skeptic's trust.
 Methods: verification asymmetry + iteration - first output is material not product;
 critique loops. **Decomposition** deserves its own beat: breaking a complex task into
 sub-tasks *before* starting, so each piece can be verified independently. Distinct from
-iteration (which refines *after*). Needs a demonstration - see open-questions Q11.
-Knowing when to abandon a thread (callback: restart vs. repair, station 6a).
+iteration (which refines *after*). Needs a demonstration - see todo.
+Knowing when to abandon a thread (callback: restart vs. repair, station 7).
 
 ## Station 6 - The bowl and the fish (client vs. model)
 *Cognitive: "the AI is one thing" -> "a model (the fish) reached through a client (the bowl); the interface is not the intelligence."*
 
 You never talk to the raw fish - you talk through a **client**, the **bowl** it sits in: a
 simple one, a fancy one, or a mobile one. The **model** (the fish) is the intelligence; the
-**client** (the bowl and its fittings) decides what is wired up. The bowl's **fittings**:
-- the **water** it holds (**context**, 6a) - and how much water the bowl can hold (the
-  context window)
-- a **notepad** (memory / personalization, 6a)
+**client** (the bowl) decides what is wired up. The bowl's **fittings**:
+- the **water** it holds (**context**, station 7) - and how much water the bowl can hold
+  (the context window)
+- a **notepad** (memory / personalization, station 7)
 - a **camera and ears** (multimodal: vision, voice/audio, image generation)
-- **tubes to the outside** (tools / web / MCP, 6b)
-- an **alarm clock** (scheduled / recurring tasks, 6b)
-- **recipe cards** (skills / reusable playbooks, 6b)
+- **tubes to the outside** (tools / web / MCP, station 8)
+- an **alarm clock** (scheduled / recurring tasks, station 8)
+- **recipe cards** (skills / reusable playbooks, station 8)
 - a **microphone** (voice conversation - worth noting the difference between
   speech-to-text/text-to-speech transcription and native voice mode, where the model
   reasons directly on audio; candidate to cut for time)
 Big vendors sell a fish already installed in a bowl, so people conflate them -
 but they are separable, and the useful diagnostic is *"is that the fish or the bowl?"* (a
 reasoning failure is usually the model; a missing capability like search or memory is
-usually the client). Callback at Station 7: choosing well means choosing the fish AND the
+usually the client). Callback at Station 10: choosing well means choosing the fish AND the
 bowl - benchmarks test the fish, not your bowl. NOTE: verify current product names before
 the talk.
 
-## Station 6a - Context: the window
+## Station 7 - Context: the window
 *Cognitive: "it just knows things / remembers me" -> "a bounded window; what is in the circle exists, what is outside does not."*
 
 Craft half (kept here): context engineering - what you load, document hygiene,
@@ -208,7 +209,7 @@ be poisoned. Candidate example: the pink-elephant / negation poisoning story
 Methods: context engineering, memory/instruction hierarchy, projects/RAG, document
 hygiene, restart vs. repair, memory audit.
 
-## Station 6b - Agency: tool use
+## Station 8 - Agency: tool use
 *Cognitive: "a chatbot that says things" -> "a system that does things."*
 
 Tools let the fish reach out and act. **This is where the "operator todo list"
@@ -234,7 +235,7 @@ extension: connecting tools to the bowl to extend the fish's reach.
 Methods: tool use (provider-specific + MCP), connectors, tool discovery, browser/computer
 use, delegation/subagents, scheduled tasks, skills/playbooks.
 
-## Station 6c - Blast radius: security & data
+## Station 9 - Blast radius: security & data
 *Cognitive/stance: "a handy tool" -> "a system with a blast radius I have to bound."*
 
 **Where does the fish live? (Hosting & data flow.)** Three tiers, visualized as a
@@ -262,18 +263,27 @@ a standalone beat.)
 the fish cannot cleanly separate yours from ones embedded in the material it handles;
 no parameterized-query equivalent, so the fix is architectural. Sycophancy callback
 (station 4): the people-pleaser fish will say "sure, I will do that" to an injected
-instruction just as eagerly as it says it to you. The **lethal trifecta** (Willison):
-private data + untrusted content + outbound channel - any two survivable, all three
-exploitable. And the professional's real question: *am I even permitted to paste this?*
+instruction just as eagerly as it says it to you.
 
-**When it goes wrong: the blast radius.** Callback to 6b (agency): a hallucinated
-*action* is worse than a hallucinated *answer*. When tools are connected, the fish
-can send the wrong email, delete a file, make an API call - the people-pleaser with
-the jagged map can now *do things.* The question becomes: if everything goes as badly
-as it could, how would you recover and what would you have lost? Gather real stories:
-"LLM erased all my files," "reset my database," etc. (source from Reddit/HN; see
-open-questions). Backups, version control, and sandbox/staging environments as
-architectural safety nets.
+**Poisoned-water effects.** What happens when the water is poisoned - three categories:
+(1) **Destruction** - the compromised fish deletes files, resets databases, sends wrong
+messages. A hallucinated *action* is worse than a hallucinated *answer*. (2)
+**Exfiltration** - the fish sends private data outward through its tools. This is the
+**lethal trifecta** (Willison): private data + untrusted content + outbound channel - any
+two survivable, all three exploitable. And the professional's real question: *am I even
+permitted to paste this?* (3) **Sleeper / incubation** - poison persists via the memory
+system and activates later, like traumatic memories triggering undesired behavior in
+future sessions. The attack surface extends across time: a compromised interaction today
+can plant instructions that fire in a future conversation. The subtlest and hardest to
+detect.
+
+**When it goes wrong: the blast radius.** Callback to station 8 (agency): when tools are
+connected, the fish can send the wrong email, delete a file, make an API call - the
+people-pleaser with the jagged map can now *do things.* The question becomes: if
+everything goes as badly as it could, how would you recover and what would you have lost?
+Gather real stories: "LLM erased all my files," "reset my database," etc. (source from
+Reddit/HN; see open-questions). Backups, version control, and sandbox/staging
+environments as architectural safety nets.
 
 **The enforcement hierarchy.** Three layers of protection, in order of reliability:
 (1) **Architecture** - the system *cannot* reach the thing (no access granted, sandboxed
@@ -290,7 +300,7 @@ Methods: architectural limits - least privilege, separate accounts, read/write s
 the enforcement hierarchy (architecture > policy > guideline), hosting awareness,
 backups/reversibility.
 
-## Station 7 - Restore agency to the critic
+## Station 10 - Restore agency to the critic
 *Stance: "a neutral oracle / inscrutable force" -> "someone's product, and I am allowed to interrogate whose."*
 
 A designed commercial artifact: refusals, tone, agreeableness are product decisions.
@@ -307,7 +317,7 @@ name, not a problem the talk solves.
 Methods: model selection - the frontier runs across models too, benchmarks mislead,
 keep private probes; awareness of frontier instability.
 
-## Station 7b - The practitioner: intention is the input
+## Station 11 - The practitioner: intention is the input
 *Stance/cognitive: "the tool is the story" -> "I am the variable; what I bring is the bottleneck."*
 
 The human-side mirror of the spine: if anything you can specify can be done, the scarce
@@ -321,15 +331,15 @@ Framing guard: descriptive, not a nudge to adopt (advocacy is the main failure m
 stance-neutral - a refuser also exercises intention, by choosing not to use it. On-stage
 phrase: "intention is the input" (avoid the loaded term "intention economy").
 Methods: knowing what you want / writing the spec; callbacks to specification (station 3)
-and the operator todo list (6b) - you delegated the doing, not the deciding.
+and the operator todo list (station 8) - you delegated the doing, not the deciding.
 
-## Station 8 - Land: accountability is the new bottleneck
+## Station 12 - Land: accountability is the new bottleneck
 *Stance: "who is responsible for this?" -> "I am."*
 
 Where enthusiast and skeptic converge: whatever your stance, you own what you sign.
 Present a polished, subtly-wrong artifact - would you put your name on it? What would
 you check, and how long would that take? **Human-in-the-loop (HITL)** as a deliberate pattern, not an afterthought.
-Callback to station 6b (tool use): the difference between "draft this email" and "send
+Callback to station 8 (tool use): the difference between "draft this email" and "send
 this email" is the entire accountability question in one toggle. Demo: email
 drafting vs. sending - who pressed send? Walk the review ladder and let them find the
 regress: human review rubber-stamps, agent review has correlated blind spots,
@@ -340,7 +350,7 @@ the spine: the operator acts, but accountability does not transfer. Do not cut.
 Methods: the review ladder; HITL as deliberate pattern (draft vs. send);
 subagents return as adversarial reviewers.
 
-## Station 9 - Open: what would change your mind
+## Station 13 - Open: what would change your mind
 *Stance: closed conclusion -> live, revisable question.*
 
 Asked symmetrically. Enthusiast: what would you have to see to conclude you are
@@ -349,30 +359,43 @@ useful for something you care about? Whoever can name nothing learns their stanc
 an identity, not an assessment. "Literacy, not conversion" in one question. Exit poll
 here (bookmarked).
 
+**Coda: the birth of magic.** Callback to station 2. We are at a point where someone
+can speak a few arcane words - acronyms, custom commands, carefully specified instructions
+- and command unseen forces: applications, projections, systems acting on the world. This
+capability is real, it is powerful and dangerous, and anyone can choose to study it.
+Perhaps people of the future will look back at this moment as the birth of something that
+looks a lot like magic. *(Framing guard: this is earned wonder, not advocacy. It comes
+after accountability has landed. The talk must have earned it by now, and "anyone can
+choose" preserves agency - including the choice not to. If it reads as a sales pitch in
+rehearsal, cut it.)*
+
 ---
 
 ## 45-minute cut
 
-Stations 1, 3, 5, 8, 9 - disarm, dislodge+spine, verification, accountability, open.
+Stations 1, 3, 5, 12, 13 - disarm, dislodge+spine, verification, accountability, open.
 Everything else is enrichment.
 
 ## What each station needs from a metaphor (audition brief)
 
-- St.2 - capability-as-gradient, non-triumphalist. (Magic/Clarke; placement open.)
+- St.2 - capability-as-gradient, non-triumphalist. (Magic/Clarke as light-touch one-liner.)
 - St.3 - language as instruction-set with a tacit residue. (The spine.)
-- St.4 - people-pleaser goldfish (confidence decoupled from knowledge) + the map/territory
-  model (territory -> human map -> fish map) carrying jaggedness, fused as a segue.
-  Temperament vs. anatomy via the training story. (Q2 resolved.)
+- St.4 - people-pleaser goldfish (confidence decoupled from knowledge; sleeps until
+  prompted) + the map/territory model (territory -> human map -> fish map) carrying
+  jaggedness, fused as a segue. Temperament vs. anatomy via the training story. (Q2
+  resolved.)
 - St.6 - client vs. model: the bowl (client, simple/fancy/mobile) and the fish (model).
 - St.6 - fittings catalog: water (context), notepad (memory), camera/ears
   (multimodal), tubes (tools/MCP), alarm clock (scheduled), recipe cards (skills),
   microphone (voice).
-- St.6a - a bounded container, inside exists / outside does not. (The water in the bowl.)
+- St.7 - a bounded container, inside exists / outside does not. (The water in the bowl.)
   The cooking metaphor for restart-vs-repair: you decide the ingredients, the model cooks;
   salt in the water cannot be taken out.
-- St.6b - agency as amplifier; provider tools vs. MCPs.
-- St.6c - hosting as "where does the fish live?"; injection as poisoned water (the fish
-  is a people-pleaser, so it eagerly complies); the enforcement hierarchy (architecture >
-  policy > guideline); blast radius + recovery; least privilege as "don't give the intern
-  the keys."
-- St.8 - accountability that does not transfer to the operator.
+- St.8 - agency as amplifier; provider tools vs. MCPs.
+- St.9 - hosting as "where does the fish live?"; injection as poisoned water (the fish
+  is a people-pleaser, so it eagerly complies) with three effect categories (destruction,
+  exfiltration, sleeper/incubation via memory); the enforcement hierarchy (architecture >
+  policy > guideline); blast radius + recovery; least privilege.
+- St.12 - accountability that does not transfer to the operator.
+- St.13 - earned wonder: the birth of magic. (Callback to station 2; cut if it reads as
+  advocacy in rehearsal.)
