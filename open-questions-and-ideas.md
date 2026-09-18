@@ -20,6 +20,24 @@ fails through honest ambiguity (not a gotcha). To prototype/test.
 "iron man suit" (see Candidate metaphors). Candidate homes: near stations 3/6b (the
 amplifier) or as a recurring thread.
 
+**Q10. Hosting / infrastructure layer ("where does the fish live?").** Where the
+model's compute runs and where your data goes. Three tiers: (1) **local** - on your own
+computer (Ollama, llama.cpp, etc.; private but limited capability); (2) **private cloud /
+VPS** - your own server or rented instance (more power, you control the data path);
+(3) **frontier cloud** - the vendor's infrastructure (most capable models, but your data
+transits and may be stored by the provider). Each tier trades capability for data
+control. Candidate homes: station 6 cluster (fits naturally with bowl/fish - "where is
+the bowl?") or station 6c (blast radius / security). Also feeds station 7 ("it is a
+product" - whose infrastructure are you on?). To decide: how deep to go (a slide? a
+beat? a mention?), and whether data-residency / privacy policy literacy belongs in scope
+or is left to the takeaway card.
+
+**Q11. Decomposition demonstration.** Need a concrete exercise or prepared example
+that shows decomposition as distinct from iteration. Decomposition = breaking the task
+into sub-tasks *before* starting (so each piece can be verified independently); iteration
+= refining output *after*. Candidate: a multi-part request that fails as one prompt but
+succeeds when broken into steps. To prototype.
+
 **Q8. Presentation tech / assembly format.** Leaning: hand-built **HTML/CSS slides**
 (Claude's out-of-box slideshow support is weak; HTML/CSS is flexible and publishes to
 **GitHub Pages**). Reqs: per-slide **speaker notes**, and a way to load/show them in
@@ -103,6 +121,14 @@ lightly at 6a if useful, but its home is station 3.
   friend's framing) - powered augmentation the human still drives. Both are
   capability-multiplier images.
 
+- **The cooking metaphor** (station 6a, restart-vs-repair). You are deciding the
+  ingredients; the model does the cooking to combine them. If you accidentally add salt
+  instead of sugar, you cannot take out the salt - it is in the dish now. The entire
+  conversation history is re-read with every request, so a mistake early on persists
+  through every subsequent turn. Comparing A+B -> "not B" -> C (salt still in the water,
+  plus "not B" is now another ingredient) versus starting fresh A -> D. Personally felt
+  by Benji working with LLMs; grounded in real experience.
+
 - **Map vs. territory (three layers)** (spatial; WORKING carrier for jaggedness, fused
   with the fish as a segue; see Q2). Territory = reality (shown, not detailed); human map =
   calibrated by contact, honestly shaded; fish map = drawn from books, never surveyed,
@@ -155,14 +181,40 @@ lightly at 6a if useful, but its home is station 3.
   the self-assessment is itself jagged. Reduces the problem; does not remove the obligation
   to verify (station 5).
 
-**Q10. Hosting / infrastructure layer ("where does the fish live?").** Where the
-model's compute runs and where your data goes. Three tiers: (1) **local** - on your own
-computer (Ollama, llama.cpp, etc.; private but limited capability); (2) **private cloud /
-VPS** - your own server or rented instance (more power, you control the data path);
-(3) **frontier cloud** - the vendor's infrastructure (most capable models, but your data
-transits and may be stored by the provider). Each tier trades capability for data
-control. Candidate homes: station 6 cluster (fits naturally with bowl/fish - "where is
-the bowl?") or station 6c (blast radius / security). Also feeds station 7 ("it is a
-product" - whose infrastructure are you on?). To decide: how deep to go (a slide? a
-beat? a mention?), and whether data-residency / privacy policy literacy belongs in scope
-or is left to the takeaway card.
+- **Knowledge-domain elicitation** (technique, station 3). Instead of assigning a single
+  role ("you are a financial analyst"), ask: "what domains of knowledge are relevant to
+  this project? what perspectives and best practices does each contribute?" A generalized
+  form of role prompting that surfaces expertise the model holds but would not apply
+  unprompted (callback: pink elephant). Prepared comparison: plain prompt vs. role-prompted
+  vs. knowledge-domain-prompted.
+
+- **Meta-prompting across platforms** (technique, station 3). Write a prompt in one model
+  to run in another (e.g. have Claude write a research prompt for Gemini). Requires Theory
+  of Mind: the target model will not have this chat's context (callback: pink elephant /
+  ToM anecdote). Real workflow from Benji's practice.
+
+- **Extended thinking / thinking levels** (technique, station 4). User-facing control:
+  low/medium/high thinking depth. More thinking = deeper analysis, but diminishing returns
+  and over-thinking are real. Useful to direct "think about X" as part of a multi-step
+  prompt. Prepared comparison: same query with and without a "think about the criteria"
+  preamble.
+
+- **Provider-specific tools vs. MCPs** (distinction, station 6b). Proprietary tools
+  (ChatGPT plugins, Claude web search, Gemini Google integrations) only work with one
+  vendor's tank. MCP (Model Context Protocol) is an industry-standard connector that works
+  across compatible tanks. Also: tool discovery/description - the model reads a tool's
+  description to decide when and how to use it.
+
+- **Skills / reusable playbooks** (capability, station 6b). Packaged instructions for
+  recurring tasks - recipe cards for the fish. Saves re-specifying the same constraints
+  every time.
+
+- **Frontier instability** (risk, station 7). Models change without notice and without
+  recourse. A workflow that worked yesterday can break because the provider updated the
+  model. Implication: building reliable business processes on someone else's fish is a risk
+  to name. Feeds "it is a product."
+
+- **HITL as deliberate pattern** (accountability, station 8). The difference between "draft
+  this email" and "send this email" is the entire accountability question in one toggle.
+  Demo: email drafting vs. sending. Callback to station 6b (tool use introduced the
+  capability; station 8 asks who is responsible for using it).

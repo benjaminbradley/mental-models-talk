@@ -9,7 +9,6 @@ Sections are the timeline weeks (talk: Oct 13). "Now" = anything before the firs
 
 ## Now (through ~Sep 20 - design & decisions)
 
-- [ ] Review capability-track coverage; fill gaps.
 - [ ] Review security / threat-model coverage; fill gaps (least privilege; enforcement is
       architectural, not guideline-based; blast radius + remote backups; what else?).
 - [ ] Arc as a table - one column per track (cognitive / stance / capability).
