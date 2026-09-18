@@ -154,3 +154,15 @@ lightly at 6a if useful, but its home is station 3.
   knowledge-cutoff gaps, or search when unsure - but only if you ask (pink elephant), and
   the self-assessment is itself jagged. Reduces the problem; does not remove the obligation
   to verify (station 5).
+
+**Q10. Hosting / infrastructure layer ("where does the fish live?").** Where the
+model's compute runs and where your data goes. Three tiers: (1) **local** - on your own
+computer (Ollama, llama.cpp, etc.; private but limited capability); (2) **private cloud /
+VPS** - your own server or rented instance (more power, you control the data path);
+(3) **frontier cloud** - the vendor's infrastructure (most capable models, but your data
+transits and may be stored by the provider). Each tier trades capability for data
+control. Candidate homes: station 6 cluster (fits naturally with bowl/fish - "where is
+the bowl?") or station 6c (blast radius / security). Also feeds station 7 ("it is a
+product" - whose infrastructure are you on?). To decide: how deep to go (a slide? a
+beat? a mention?), and whether data-residency / privacy policy literacy belongs in scope
+or is left to the takeaway card.

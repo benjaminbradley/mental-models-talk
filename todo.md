@@ -9,6 +9,10 @@ Sections are the timeline weeks (talk: Oct 13). "Now" = anything before the firs
 
 ## Now (through ~Sep 20 - design & decisions)
 
+- [ ] Review capability-track coverage; fill gaps.
+- [ ] Review security / threat-model coverage; fill gaps (least privilege; enforcement is
+      architectural, not guideline-based; blast radius + remote backups; what else?).
+- [ ] Arc as a table - one column per track (cognitive / stance / capability).
 - [ ] Resolve **Q1** - where the magic metaphor lives.
 - [ ] Resolve **Q7** - augmentation-metaphor usage ("bicycle for the mind," "iron man suit").
 - [ ] Resolve **Q9** - client vs. model placement + metaphor.
@@ -18,10 +22,6 @@ Sections are the timeline weeks (talk: Oct 13). "Now" = anything before the firs
       it works with adults and fails via honest ambiguity.
 - [ ] Design entry & exit polls (Google Forms? QR codes; measure model accuracy / stance
       movement, not satisfaction).
-- [ ] Review capability-track coverage; fill gaps.
-- [ ] Review security / threat-model coverage; fill gaps (least privilege; enforcement is
-      architectural, not guideline-based; blast radius + remote backups; what else?).
-- [ ] Arc as a table - one column per track (cognitive / stance / capability).
 - [ ] Draft the one-page takeaway card (source: `take-home.md`).
 - [ ] (Waiting) Organizer reply on resources / audience / interaction - feeds polls,
       materials, and format decisions.
