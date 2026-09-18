@@ -10,8 +10,8 @@ Sections are the timeline weeks (talk: Oct 13). "Now" = anything before the firs
 ## Now (through ~Sep 20 - design & decisions)
 
 - [ ] Comprehensive review of station order and placement (after security review).
-- [ ] Source blast-radius recovery stories from Reddit/HN (screenshots for talk).
 - [ ] Arc as a table - one column per track (cognitive / stance / capability).
+- [ ] Source blast-radius recovery stories from Reddit/HN (screenshots for talk).
 - [ ] Spec the three-layer **map/territory** visual: pick 4-5 jaggedness cases; decide the
       reveal mechanics.
 - [ ] Find & test the **describe-and-draw** figure for station 3 (**Q3** resolved as a
@@ -60,3 +60,6 @@ Sections are the timeline weeks (talk: Oct 13). "Now" = anything before the firs
 
 - [ ] Get wegeekout.com ready for follow-up.
 - [ ] Capture feedback / lessons; consider a reusable recording or write-up.
+- [ ] re-imagine the talk experience as an improv comedy show. what would it look like to map the step1/step2 features in the presentation's narrative into an analogous setup/reveal joke rythym? would a scripted show make more sense than improv?
+
+
