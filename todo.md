@@ -29,7 +29,6 @@ Sections are the timeline weeks (talk: Oct 13). "Now" = anything before the firs
 
       I guess the only other thing I will say is that our meetups can attract a wide variety of people across the political spectrum, so be prepared for smart people asking hard questions, some of which you may not 100% agree with politically, just depends on who decides to show up! Obviously, AI remains a very controversial topic that people have very strong feelings on, so it is both possible you might get people who are very morally against using AI for anything, period, and you might also get people on the other end who simply think it's all awesome and don't care about any of the dangers or the harms. I know your talk is primarily focused on educating people on how to use AI as a coding tool, and it sounds like you're going to be taking a nuanced approach, and frankly most of our attendees take a nuanced approach as well, but it's good to be prepared for everything.
 
-- [ ] Source blast-radius recovery stories from Reddit/HN (screenshots for talk).
 - [ ] Find & test the **describe-and-draw** figure for station 3 (**Q3** resolved as a
       prototyping task). Criteria: spatial relationships (not artistic skill), dignified for
       adults, honest ambiguity (partners disagree about the result and both have a point).
