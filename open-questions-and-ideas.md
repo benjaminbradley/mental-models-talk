@@ -7,7 +7,12 @@ or renumbered; resolved ones move to "Resolved decisions" keeping their ID.
 
 ## Open design questions
 
-None remaining.
+**Q12. Station 4 confidence calibration exercise.** A structured pair or individual
+activity where participants calibrate their confidence: given a set of LLM outputs, rate
+how confident they are each is correct, then reveal which are wrong. Would reinforce the
+jaggedness/confabulation mental models experientially. Candidate if time allows; not
+strongly felt as necessary - the citations ladder demo may cover enough ground. Revisit
+during timing review (week of Oct 5).
 
 ## Resolved decisions
 
