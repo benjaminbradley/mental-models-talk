@@ -11,7 +11,6 @@ Sections are the timeline weeks (talk: Oct 13). "Now" = anything before the firs
 
 ### What's important to determine imagery needs
 
-- [ ] Identify & describe the desired imagery for each slide.
 - [ ] Spec the three-layer **map/territory** visual: pick 4-5 jaggedness cases; decide the
       reveal mechanics.
 - [ ] Break the arc down into individual slides.
