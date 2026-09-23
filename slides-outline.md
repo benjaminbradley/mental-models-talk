@@ -54,6 +54,7 @@ a closed box that remains visible in the corner as a persistent reminder.
 wrong with it." Name each harm briefly as its image appears. Then: "These are
 real problems. I am not going to tell you they aren't. But that is not what this
 talk is about." The box closes.
+Metaphor for station 1: Cars are in accidents and pollute the environment everyday; this is a driving lesson.
 
 **Notes:** Tone is matter-of-fact, not dismissive. The box stays visible as a
 footer/corner element -- these were named, not hidden. Do not linger or
@@ -105,6 +106,15 @@ the magic *imagery* stays minimal here. It returns at station 13 as earned wonde
 
 ## Station 3 - Dislodge the wrong model + install the spine
 
+### Slide: Computers can understand and speak language
+
+**Visual:** *(illustrate)* A computer with a speech bubble.
+
+Up until 2020, we made fun of their bad poetry.
+Now: https://www.reddit.com/r/ClaudeAI/comments/1gn4u8y/i_hade_a_nice_night_with_claude_and_asked_for_a/
+
+*TBD*
+
 ### Slide: Describe-and-draw exercise
 
 **Visual:** *(illustrate)* Instructions for the pair exercise. Printed source
@@ -115,7 +125,8 @@ something with spatial relationships that are hard to convey in words alone).
 
 **Narration:** "Find a partner. One of you gets a picture -- you describe it in
 words only. Your partner draws what they hear. You cannot look at each other's
-paper." Give 3-4 minutes.
+paper. The describer is NOT ALLOWED to see the result until its finished."
+Give 3-4 minutes.
 
 **Notes:** *Exercise: pair.* Have printed figures face-down on tables or ready to
 hand out. The exercise must generate the failure itself so it cannot be dismissed
@@ -989,6 +1000,12 @@ birth of something that looks a lot like magic."
 accountability has landed. "Anyone can choose" preserves agency -- including
 the choice not to. If it reads as a sales pitch in rehearsal, cut it. The talk
 must have earned this by now.
+
+### Contact info for closing screen
+
+- Benjamin Bradley
+- email via education at wegeekout - com (can be displayed visually on screen, but should not be scrapable in code)
+
 
 ---
 

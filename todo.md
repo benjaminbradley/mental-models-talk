@@ -13,7 +13,7 @@ Sections are the timeline weeks (talk: Oct 13). "Now" = anything before the firs
 
 - [ ] Spec the three-layer **map/territory** visual: pick 4-5 jaggedness cases; decide the
       reveal mechanics.
-- [ ] Break the arc down into individual slides.
+- [ ] Full review on slides-outline.md
 
 ### Work needed once imagery is decided
 
@@ -33,7 +33,7 @@ Sections are the timeline weeks (talk: Oct 13). "Now" = anything before the firs
 - [ ] Find & test the **describe-and-draw** figure for station 3 (**Q3** resolved as a
       prototyping task). Criteria: spatial relationships (not artistic skill), dignified for
       adults, honest ambiguity (partners disagree about the result and both have a point).
-      Leading candidate: simple architectural floor plan.
+      Leading candidate: simple architectural floor plan. Maybe 2 samples - overhead view vs PoV.
 - [ ] Prototype the **decomposition demonstration** for station 5 (**Q11** resolved as a
       prototyping task). Leading candidate: "plan a team offsite" monolithic prompt vs.
       decomposed sub-tasks.
@@ -56,6 +56,7 @@ Sections are the timeline weeks (talk: Oct 13). "Now" = anything before the firs
 ## Week of Sep 28 - Oct 2 - assembly complete
 
 - [ ] Assemble the full slideshow with speaker notes per slide (Q8).
+- [ ] Review for audience interaction - add intro question at the beginning to initiate pairs
 - [ ] Print the one-page takeaway card.
 - [ ] Lock the materials list (`materials.md`).
 
