@@ -35,6 +35,7 @@ design is a later pass.
 - **Narration:** "There are a lot of problems with the AI industry right now."
   Name each one briefly as the image appears. Then: "That is not what this talk
   is about." The box closes.
+  Metaphor for station 1: Do cars kill people everyday yes do they pollute the s*** out of the environment everyday but I'm still going to teach you how to drive.
 - **Tone:** Matter-of-fact, not dismissive. The box stays visible (corner? footer?)
   as a reminder that these were named, not hidden.
 
