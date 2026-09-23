@@ -41,11 +41,17 @@ Sections are the timeline weeks (talk: Oct 13). "Now" = anything before the firs
 - [ ] Design entry & exit polls (Google Forms? QR codes; measure model accuracy / stance
       movement, not satisfaction).
 - [ ] Draft the one-page takeaway card (source: `take-home.md`).
-- [ ] Create images (goldfish visuals; the three-layer map/territory diagram).
-- [ ] Prepare comparison demos: plain vs. role vs. knowledge-domain prompts; with/without
-      "think about criteria" preamble; email draft vs. send (HITL).
-- [ ] Source pre-captured transcripts/recordings (confabulation, jaggedness, guardrail
-      probe) - never live-demo confabulation.
+- [ ] Create images
+   - [ ] goldfish visuals
+   - [ ] the three-layer map/territory diagram
+- [ ] Prepare comparison demos
+   - [ ] plain vs. role vs. knowledge-domain prompts
+   - [ ] with/without "think about criteria" preamble
+   - [ ] email draft vs. send (HITL)
+- [ ] Source pre-captured transcripts/recordings
+   - [ ] confabulation
+   - [ ] jaggedness
+   - [ ] guardrail probe
 - [ ] Stand up the HTML/CSS slide setup + speaker-notes / presenter view (Q8); GitHub Pages.
 
 ## Week of Sep 28 - Oct 2 - assembly complete
@@ -57,10 +63,12 @@ Sections are the timeline weeks (talk: Oct 13). "Now" = anything before the firs
 ## Week of Oct 5 - practice
 
 - [ ] Review final logistics - slide control remote ?
-- [ ] Full run-through for real timing; then the larger review vs. actual timing, including
-      whether stations 7/8/9 compress (**Q6**) and any trims. Also assess
-      station 3 density - it carries the exercise, spine claim, and four technique families;
-      confirm it fits its time slot or identify what to defer.
+- [ ] Full run-through for real timing
+   - [ ] measure overall timing
+   - [ ] compare estimated timing vs. actual timing
+   - [ ] assess whether stations 7/8/9 compress (**Q6**)
+   - [ ] identify any trims needed
+   - [ ] assess station 3 density - it carries the exercise, spine claim, and four technique families - confirm it fits or identify what to defer
 - [ ] Rehearse; refine speaker notes; adjust pacing.
 
 ## Oct 13 - deliver
