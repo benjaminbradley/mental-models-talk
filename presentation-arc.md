@@ -120,12 +120,6 @@ trained, model-specific, softening over time). Rhymes with human language acquis
 lived experience; the fish's are not. On-ramp only - do not claim developmental
 equivalence (reopens the "does it understand" question we do not adjudicate). In map terms: the map's *content* is anatomy; the uniform confident *ink* (no "unsure here" shading) is temperament.
 
-Beat that surfaces the jagged self-assessment - the **citations ladder**: "tell me about
-X" -> "...with sources" (fabricable; the appearance of sourcing manufactures unearned
-trust) -> "...with verified sources" (the model uses tools to check the URLs against
-reality). The danger is the gap between the second and third: unverified sourcing is more
-dangerous than none.
-
 Methods: reliability levers - chain-of-thought / "show your work"; **extended
 thinking** - directing the model to "think about X" as part of a multi-step prompt (e.g.
 "think about what criteria are most helpful to evaluate this" before a ranking query).
@@ -146,11 +140,13 @@ The most useful takeaway: it pays off where checking is cheaper than producing, 
 dangerous where it is not. Individual-then-pair: each person lists ~5 real work tasks
 and sorts each on "is checking cheaper than doing?", then challenges a partner.
 Personally useful regardless of stance - which is what earns a skeptic's trust.
-Methods: verification asymmetry + iteration - first output is material not product;
-critique loops. **Decomposition** deserves its own beat: breaking a complex task into
-sub-tasks *before* starting, so each piece can be verified independently. Distinct from
-iteration (which refines *after*). Needs a demonstration - see todo.
-Knowing when to abandon a thread (callback: restart vs. repair, station 7).
+Methods: verification asymmetry. **Decomposition** deserves its own beat: breaking a
+complex task into sub-tasks *before* starting, so each piece can be verified
+independently - distinct from iteration (which refines *after*; the full iteration /
+critique-loop discussion lives at station 7, folded into restart vs. repair). Needs a
+demonstration - see todo.
+Knowing when to abandon a thread is the same question restart vs. repair (station 7)
+answers - covered there rather than twice.
 
 ## Station 6 - The bowl and the fish (client vs. model)
 *Cognitive: "the AI is one thing" -> "a model (the fish) reached through a client (the bowl); the interface is not the intelligence."*
@@ -175,6 +171,15 @@ simple one, a fancy one, or a mobile one. The **model** (the fish) is the intell
 - a **microphone** (voice conversation - worth noting the difference between
   speech-to-text/text-to-speech transcription and native voice mode, where the model
   reasons directly on audio; candidate to cut for time)
+
+**Citations ladder demo** (moved here from station 4 - it needs the tubes fitting to
+mean anything): "tell me about X" -> "...with sources" (fabricable; the appearance of
+sourcing manufactures unearned trust) -> "...with verified sources" (the model reaches
+through the tubes to check the URLs against reality). The danger is the gap between the
+second and third: unverified sourcing is more dangerous than none. This is the fittings
+catalog put to work - the first beat where a fitting visibly changes what the fish can
+know, not just what it can do.
+
 Big vendors sell a fish already installed in a bowl, so people conflate them -
 but they are separable, and the useful diagnostic is *"is that the fish or the bowl?"* (a
 reasoning failure is usually the model; a missing capability like search or memory is
@@ -202,6 +207,11 @@ add salt instead of sugar, you cannot "take out the salt" - the salt is in the w
 Comparing: conversation A+B -> "not B" -> C (the salt is still in there, and now "not B"
 is also in the water) versus starting fresh: A -> D. A poisoned thread is often cheaper
 to abandon than repair. Demonstrate with a context-management example.
+**Iteration and critique loops live here too** (moved from station 5): the first output
+is material, not product - refine it, or have the fish critique itself. Repairing in
+place (iterating) only pays off when the thread is not poisoned; once it is, restarting
+beats repairing. "Is this thread salted?" is the practical test for choosing between
+iteration and abandonment.
 
 **Memory oversharing.** If memory is on, the fish is taking notes about you between
 conversations - and it may store things you did not intend to persist. Memory audit as
@@ -214,7 +224,7 @@ attaching a document is not understanding it. Goldfish extension: the fishbowl w
 be poisoned. Candidate example: the pink-elephant / negation poisoning story
 (open-questions).
 Methods: context engineering, memory/instruction hierarchy, projects/RAG, document
-hygiene, restart vs. repair, memory audit.
+hygiene, restart vs. repair, iteration, critique loops, memory audit.
 
 ## Station 8 - Agency: tool use
 *Cognitive: "a chatbot that says things" -> "a system that does things."*
@@ -394,10 +404,11 @@ Everything else is enrichment.
 - St.6 - client vs. model: the bowl (client, simple/fancy/mobile) and the fish (model).
 - St.6 - fittings catalog: water (context), notepad (memory), camera/ears
   (multimodal), tubes (tools/MCP), alarm clock (scheduled), recipe cards (skills),
-  microphone (voice).
+  microphone (voice). Citations ladder demo puts the tubes fitting to work.
 - St.7 - a bounded container, inside exists / outside does not. (The water in the bowl.)
-  The cooking metaphor for restart-vs-repair: you decide the ingredients, the model cooks;
-  salt in the water cannot be taken out.
+  The cooking metaphor for restart-vs-repair (and the folded-in iteration/critique-loop
+  discussion): you decide the ingredients, the model cooks; salt in the water cannot be
+  taken out.
 - St.8 - agency as amplifier; provider tools vs. MCPs.
 - St.9 - hosting as "where does the fish live?"; injection as poisoned water (the fish
   is a people-pleaser, so it eagerly complies) with three effect categories (destruction,

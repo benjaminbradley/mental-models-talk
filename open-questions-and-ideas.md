@@ -82,6 +82,17 @@ architectural boundary). Feeds the enforcement hierarchy.
 moved to `todo.md` for prototyping (leading candidate: "plan a team offsite" monolithic
 vs. decomposed).
 
+**Q13. Citations ladder placement.** RESOLVED - moved from station 4 to **station 6**.
+At station 4 the fish has no way to check itself yet; station 6 introduces the tubes
+fitting (tools/web/MCP), so the ladder's third rung ("...with verified sources") has
+something to point to. It becomes the first demonstration of a fitting actually changing
+what the fish can know, not just what it can do.
+
+**Q14. Iteration / critique loops placement.** RESOLVED - moved from station 5 into
+station 7's restart-vs-repair beat. "Knowing when to abandon a thread" was already a
+station-5-to-station-7 callback; folding iteration in avoids answering the same question
+(repair vs. restart) twice.
+
 **Drunk intern metaphor.** RETIRED - replaced by the poisoned-water metaphor extension
 at station 9. The intern's useful contribution (least-privilege punchline) survives as a
 standalone one-liner; the full character is dropped to avoid competing with the goldfish
@@ -120,13 +131,14 @@ as the talk's primary anthropomorphic carrier.
   / "iron man suit" allowed as passing references only. The sleeping-fish insight (does
   nothing on its own) is folded into the goldfish.
 
-- **The cooking metaphor** (station 7, restart-vs-repair). You are deciding the
-  ingredients; the model does the cooking to combine them. If you accidentally add salt
-  instead of sugar, you cannot take out the salt - it is in the dish now. The entire
-  conversation history is re-read with every request, so a mistake early on persists
-  through every subsequent turn. Comparing A+B -> "not B" -> C (salt still in the water,
-  plus "not B" is now another ingredient) versus starting fresh A -> D. Personally felt
-  by Benji working with LLMs; grounded in real experience.
+- **The cooking metaphor** (station 7, restart-vs-repair; also now carries iteration vs.
+  abandonment, Q14). You are deciding the ingredients; the model does the cooking to
+  combine them. If you accidentally add salt instead of sugar, you cannot take out the
+  salt - it is in the dish now. The entire conversation history is re-read with every
+  request, so a mistake early on persists through every subsequent turn. Comparing
+  A+B -> "not B" -> C (salt still in the water, plus "not B" is now another ingredient)
+  versus starting fresh A -> D. Personally felt by Benji working with LLMs; grounded in
+  real experience.
 
 - **Map vs. territory (three layers)** (spatial; WORKING carrier for jaggedness, fused
   with the fish as a segue; see Q2). Territory = reality (shown, not detailed); human map =
@@ -169,17 +181,19 @@ as the talk's primary anthropomorphic carrier.
   jagged competence). Answers "how much is model-specific vs. inherent" and future-proofs
   the talk. Home: station 4; also feeds station 10 (it is a product).
 
-- **The citations ladder** (demo idea, station 4). "Tell me about X" -> "...with sources"
-  (citations can be fabricated; the appearance of sourcing manufactures unearned trust) ->
-  "...with verified sources" (the model uses tools to check the URLs against reality). The
-  danger lives in the gap between the second and third: unverified sourcing is more
-  dangerous than none. Shows self-assessment is jagged and that the fix requires touching
-  reality (tools), not asking nicely.
+- **The citations ladder** (demo idea, station 6; Q13 resolved). "Tell me about X" ->
+  "...with sources" (citations can be fabricated; the appearance of sourcing manufactures
+  unearned trust) -> "...with verified sources" (the model uses tools to check the URLs
+  against reality). The danger lives in the gap between the second and third: unverified
+  sourcing is more dangerous than none. Moved from station 4 because it needs the tubes
+  fitting (station 6) to mean anything - shows self-assessment is jagged and that the fix
+  requires touching reality (tools), not asking nicely.
 
-- **Self-reflection = a lever, not an oracle** (capability). It can grade confidence, flag
-  knowledge-cutoff gaps, or search when unsure - but only if you ask (pink elephant), and
-  the self-assessment is itself jagged. Reduces the problem; does not remove the obligation
-  to verify (station 5).
+- **Self-reflection = a lever, not an oracle** (capability, station 4). It can grade
+  confidence, flag knowledge-cutoff gaps, or search when unsure - but only if you ask
+  (pink elephant), and the self-assessment is itself jagged. Reduces the problem; does not
+  remove the obligation to verify (station 5). Distinct from the citations ladder (station
+  6): this is the fish grading itself; the ladder is the fish checking against reality.
 
 - **Knowledge-domain elicitation** (technique, station 3). Instead of assigning a single
   role ("you are a financial analyst"), ask: "what domains of knowledge are relevant to
