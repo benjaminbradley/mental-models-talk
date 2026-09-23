@@ -19,6 +19,12 @@ exactly one doc; others link to it rather than copy it.
 - `presentation-arc.md` — the scoped presentation flow: the stations of the audience
   journey across three tracks (cognitive / stance / capability). The backbone.
   Medium volatility.
+- `arc-table.md` — intermediate per-beat/per-track table bridging the station
+  narratives (`presentation-arc.md`) and the per-slide content (`slides-outline.md`).
+  Medium volatility.
+- `slides-outline.md` — per-slide visual and narration content, organized by station;
+  slide numbering is deferred until the deck is assembled. High volatility; currently
+  only the pre-talk and station 1 slides are drafted.
 - `open-questions-and-ideas.md` — unresolved design questions, candidate metaphors,
   and content ideas/stories not yet placed on the arc. High volatility; the working
   scratchpad. The arc links here for anything still being chosen.
