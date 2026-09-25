@@ -9,26 +9,12 @@ Sections are the timeline weeks (talk: Oct 13). "Now" = anything before the firs
 
 ## Now - design & decisions, begin assembly (imagery + assets)
 
-### What's important to determine imagery needs
+### Finish the slides
+
+#### Design & spec work
 
 - [ ] Spec the three-layer **map/territory** visual: pick 4-5 jaggedness cases; decide the
       reveal mechanics.
-- [ ] Full review on slides-outline.md
-
-### Work needed once imagery is decided
-
-- [ ] (Waiting) Organizer reply on resources / audience / interaction - feeds polls,
-      materials, and format decisions.
-      Organizer response:
-
-      Yes, there's a projector, and it can work with both HDMI and USB-C with an adapter. It can be a little complicated to operate, but I'm mostly in the swing of running it now. Your basic approach for the talk sounds great. I do have a wireless mic or  on-site that you can use.
-
-      As far as audience size, it can very a great deal from month to month, but we've always had at least ten-ish people since we've moved to the new space, and once or twice it's been as many as thirty.
-
-      Flow is basically I kick things off, tell people what EFF-Austin is, talk about upcoming meetups/events/news in town related to our issues, then introduce your bio and turn things over to you. We strongly encourage audience participation/interaction, so yes, small groups for discussion is often done and can definitely be done by you! There are also a bunch of tables people can easily write on.
-
-      I guess the only other thing I will say is that our meetups can attract a wide variety of people across the political spectrum, so be prepared for smart people asking hard questions, some of which you may not 100% agree with politically, just depends on who decides to show up! Obviously, AI remains a very controversial topic that people have very strong feelings on, so it is both possible you might get people who are very morally against using AI for anything, period, and you might also get people on the other end who simply think it's all awesome and don't care about any of the dangers or the harms. I know your talk is primarily focused on educating people on how to use AI as a coding tool, and it sounds like you're going to be taking a nuanced approach, and frankly most of our attendees take a nuanced approach as well, but it's good to be prepared for everything.
-
 - [ ] Find & test the **describe-and-draw** figure for station 3 (**Q3** resolved as a
       prototyping task). Criteria: spatial relationships (not artistic skill), dignified for
       adults, honest ambiguity (partners disagree about the result and both have a point).
@@ -36,47 +22,100 @@ Sections are the timeline weeks (talk: Oct 13). "Now" = anything before the firs
 - [ ] Prototype the **decomposition demonstration** for station 5 (**Q11** resolved as a
       prototyping task). Leading candidate: "plan a team offsite" monolithic prompt vs.
       decomposed sub-tasks.
-- [ ] Design entry & exit polls (Google Forms? QR codes; measure model accuracy / stance
-      movement, not satisfaction).
-- [ ] Draft the one-page takeaway card (source: `take-home.md`).
-- [ ] Create images
-   - [ ] goldfish visuals
-   - [ ] the three-layer map/territory diagram
+- [ ] Craft the **polished-but-wrong artifact** handout for station 12 (needs a real,
+      findable error -- not a typo; a wrong number, misattributed claim, or flawed
+      recommendation).
+
+#### Pre-capture demos & transcripts
+
 - [ ] Prepare comparison demos
-   - [ ] plain vs. role vs. knowledge-domain prompts
-   - [ ] with/without "think about criteria" preamble
-   - [ ] email draft vs. send (HITL)
+   - [ ] plain vs. role vs. knowledge-domain prompts (station 3)
+   - [ ] reliability-levers side-by-side: same query with/without thinking instructions (station 4)
+   - [ ] email draft vs. send -- HITL toggle (station 12)
 - [ ] Source pre-captured transcripts/recordings
-   - [ ] confabulation
-   - [ ] jaggedness
-   - [ ] guardrail probe
+   - [ ] confabulation example (station 4)
+   - [ ] jaggedness example (station 4)
+   - [ ] guardrail-probe transcript: real cross-model comparison (station 10)
+- [ ] Pre-capture the **citations-ladder demo**: three real outputs -- no sources /
+      unverified sources / verified sources (station 6)
+
+#### Image creation
+
+- [ ] Prototype image creation approach -- svg / canvas?
+      Aesthetic: cartoon style, reminiscent of Red Fish Blue Fish ~ heavy black outline
+      on light background; bold colors (pick a palette).
+- [ ] Create images
+   - [ ] goldfish visuals (sleeping/waking, people-pleaser)
+   - [ ] the three-layer map/territory diagram
+   - [ ] bowl + fish + fittings (station 6)
+
+#### Slide tech
+
 - [ ] Stand up the HTML/CSS slide setup + speaker-notes / presenter view (Q8); GitHub Pages.
+
+#### Full review
+
+- [ ] Full review pass on `slides-outline.md` (after all above are done)
+
+### Other pre-talk work
+
+- [x] ~~(Waiting) Organizer reply on resources / audience / interaction.~~
+      RECEIVED -- see details below; `materials.md` updated.
+- [ ] Design entry & exit polls (Google Forms + QR codes; measure model accuracy / stance
+      movement, not satisfaction). Phone-based (projector confirmed, QR on screen works).
+- [ ] Draft the one-page takeaway card (source: `take-home.md`).
+
+#### Organizer reply (EFF-Austin, received)
+
+Venue & equipment:
+- Projector: yes, HDMI + USB-C (with adapter). Can be finicky but organizer is practiced.
+- Wireless mic: yes, available on-site.
+- Tables: yes, writable surfaces -- participants can write at them.
+
+Audience:
+- Size: 10-30 (varies month to month; at least ~10 since new space, up to ~30).
+- Politically diverse across the spectrum. Smart people, hard questions.
+- Strong feelings about AI in both directions -- morally opposed AND uncritical enthusiasts
+  are both possible. Most attendees are nuanced.
+- Small groups / pair work: encouraged, done regularly.
+
+Format:
+- Organizer does EFF-Austin intro (what EFF-Austin is, upcoming events, news), then
+  introduces Benji's bio and hands off.
+- Audience participation / interaction strongly encouraged.
+
+Note: organizer described the talk as "educating people on how to use AI as a coding tool"
+-- the actual scope is broader (mental models for working with LLMs generally). Worth
+clarifying in pre-talk coordination, or the intro will set wrong expectations.
 
 ## Week of Sep 28 - Oct 2 - assembly complete
 
 - [ ] Assemble the full slideshow with speaker notes per slide (Q8).
-- [ ] Review for audience interaction - add intro question at the beginning to initiate pairs
+- [ ] Review for audience interaction -- add intro question at the beginning to initiate pairs.
 - [ ] Print the one-page takeaway card.
 - [ ] Lock the materials list (`materials.md`).
 
 ## Week of Oct 5 - practice
 
-- [ ] Review final logistics - slide control remote ?
+- [ ] Review final logistics -- slide control remote? Adapter for projector (USB-C)?
 - [ ] Full run-through for real timing
    - [ ] measure overall timing
    - [ ] compare estimated timing vs. actual timing
    - [ ] assess whether stations 7/8/9 compress (**Q6**)
    - [ ] identify any trims needed
-   - [ ] assess station 3 density - it carries the exercise, spine claim, and four technique families - confirm it fits or identify what to defer
+   - [ ] assess station 3 density -- it carries the exercise, spine claim, and four technique families; confirm it fits or identify what to defer
 - [ ] Rehearse; refine speaker notes; adjust pacing.
+- [ ] Get wegeekout.com ready for follow-up?
 
 ## Oct 13 - deliver
 
 - [ ] Deliver the talk. Entry poll at the open, exit poll at the close.
+- [ ] Bring: USB-C adapter (in case venue's is flaky), slide control remote, printed materials.
 
 ## After initial presentation
 
-- [ ] Get wegeekout.com ready for follow-up.
+- [ ] Review entry/exit polls, summarize for notes
 - [ ] Capture feedback / lessons
-- [ ] consider a reusable recording or write-up - or publish to github pages?
-- [ ] re-imagine the talk experience as an improv comedy show. what would it look like to map the step1/step2 features in the presentation's narrative into an analogous setup/reveal joke rythym? would a scripted show make more sense than improv?
+- [ ] station 11 alt example -- default vs custom
+- [ ] consider a reusable recording or write-up -- or publish to GitHub Pages?
+- [ ] re-imagine the talk experience as an improv comedy show: what would it look like to map the step1/step2 features in the presentation's narrative into an analogous setup/reveal joke rhythm? would a scripted show make more sense than improv?
