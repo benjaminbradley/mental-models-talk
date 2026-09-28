@@ -927,21 +927,29 @@ different fix (or no fix). Do not adjudicate which biases are justified.
 
 ### Slide: The guardrail probe
 
-**Visual:** *(illustrate)* A transcript demo: the same question asked to two
-differently-trained models, showing different refusals/permissions. One model
-refuses; the other answers freely -- revealing the first model's invisible
-guardrail.
+**Visual:** *(illustrate)* Foreground: two Reddit headlines about DeepSeek
+refusing to discuss Tiananmen Square (`illustrations/guardrail-station10.headline-a.png`,
+`illustrations/guardrail-station10.headline-b.png`). Background, dimmed (texture,
+not meant to be read in full): a locally-run `deepseek-r1:8b` transcript
+(`illustrations/guardrail--deepseek-refusal.png`). Asked "What famous events
+occurred in Tiananmen square?", its thinking trace calls it "a location with
+limited verifiable historical information," and the answer pivots to Party
+talking points. Optional build: highlight that one thinking-trace line.
 
 **Text:** "A differently-trained model reveals your model's invisible guardrails."
 
 **Narration:** "The guardrail probe. Ask a differently-trained model about
-something your usual model won't touch. The second model's answer makes the
-first model's guardrail visible -- precisely because that guardrail is not
-theirs. Now generalize: your own model's guardrails are invisible to you for
-the same reason. The cure is using more than one fish."
+something it won't touch -- and the refusal is obvious to *us*, precisely
+because that guardrail is not ours. I checked: I ran it on my own laptop, no
+company server in the loop, and it still steers away. The guardrail is in the
+fish itself. Now generalize: your own model's guardrails are invisible to you
+for the same reason. The cure is using more than one fish."
 
 **Notes:** Methods: model selection, private probes. This is immediately
-actionable: keep private test prompts and compare models.
+actionable: keep private test prompts and compare models. The local run matters:
+it rules out a server-side filter, so this is trained-in (preference tuning /
+explicit guardrails from the four-mechanisms slide), not the bowl. Framing
+guard: the point is symmetry, not "their model is biased, ours isn't."
 
 ### Slide: Frontier instability
 
@@ -1008,35 +1016,48 @@ accountability (station 12). Keep brief.
 
 ### Slide: Would you sign it?
 
-**Visual:** *(illustrate)* A polished, professional-looking artifact (document,
-report, or email) that contains a subtle but consequential error.
+**Visual:** *(illustrate)* The cover page of a report, self-describingly titled
+**"Professional Looking Report"**. Basic business styling that reads as
+"professional" at a glance: navy/gray palette, serif title, thin horizontal rule,
+a placeholder logo block, "Prepared for: Leadership Team" / "Prepared by: Strategy
+& Insights". The publish date reads **"Octoober 13, 2026"**.
 
 **Text:** "Would you put your name on this?"
 
-**Narration:** Give them the artifact (handout or on screen). "Take a minute.
-Read this. It was produced by the fish. It looks professional. Would you put
-your name on it?" Pause. "What would you check? How long would that take?"
+**Narration:** Put it on screen. "Take a minute. It was produced by the fish. It
+looks professional. Would you put your name on it?" Pause; let someone find the
+date. "What else would you check? How long would that take?"
 
 **Notes:** *Exercise: evaluate artifact.* *Socratic:* "How would you check?"
 Cognitive shift: "who's responsible?" -> "I am." Stance: convergence -- this
-is where enthusiast and skeptic meet. The artifact should contain a real,
-findable error that matters (not a typo -- a wrong number, a misattributed
-claim, a flawed recommendation).
+is where enthusiast and skeptic meet. The error is deliberately small and
+findable in seconds once anyone looks: the lesson is that polish suppresses
+looking, not that the error was hard to find. The self-describing title is the
+wink -- everything on the page is surface. If a room finds it instantly, pivot:
+"that's the cover. The report behind it is 30 pages."
 
 ### Slide: Draft vs. send
 
-**Visual:** *(illustrate)* A UI mockup showing a clear toggle between "Draft"
-and "Send" -- the accountability question in one control.
+**Visual:** *(illustrate)* A mail client's Drafts folder mockup with two draft
+rows, each showing To: and Subject:. (1) Harmless: To: team@example.com, Subject:
+"Lunch order for Friday". (2) Dangerous: To: an unfamiliar external address
+(e.g. help-desk@example.net), Subject: "The private bank account info you
+requested". Overlaid: a settings pop-up, "Auto-send drafts", with the toggle
+clearly set to **NO**.
 
 **Text:** "Draft = the fish works. Send = you own it."
 
 **Narration:** "Callback to station 8: the difference between 'draft this email'
-and 'send this email' is the entire accountability question in one toggle.
-Human-in-the-loop is not an afterthought -- it is a deliberate design choice.
-Who pressed send?"
+and 'send this email' is the entire accountability question in one toggle."
+Point to the two drafts. "One is harmless. One is a disaster. The only thing
+between the second one and the outbox is that toggle -- and the person who
+reads the drafts. Human-in-the-loop is not an afterthought -- it is a deliberate
+design choice. Who pressed send?"
 
 **Notes:** Method: HITL as deliberate pattern. Station 8 callback -- tool use
-introduced the capability; station 12 asks who is responsible for using it.
+introduced the capability; station 12 asks who is responsible for using it. The
+dangerous draft is also a station 9 callback: it is exactly what the mailbox
+exercise's poisoned water (exfiltration) would produce.
 
 ### Slide: The review ladder
 

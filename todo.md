@@ -24,18 +24,13 @@ Image specs for all metaphors: `metaphor-imagery.md` (single source of truth).
 - [ ] Prototype the **decomposition demonstration** for station 5 (**Q11** resolved as a
       prototyping task). Leading candidate: "plan a team offsite" monolithic prompt vs.
       decomposed sub-tasks.
-- [ ] Craft the **polished-but-wrong artifact** handout for station 12 (needs a real,
-      findable error -- not a typo; a wrong number, misattributed claim, or flawed
-      recommendation).
 
 #### Pre-capture demos & transcripts
 
 - [ ] Prepare comparison demos
    - [ ] plain vs. role vs. knowledge-domain prompts (station 4)
    - [ ] reliability-levers side-by-side: same query with/without thinking instructions (station 4)
-   - [ ] email draft vs. send -- HITL toggle (station 12)
 - [ ] Source pre-captured transcripts/recordings
-   - [ ] guardrail-probe transcript: real cross-model comparison (station 10)
    - [ ] capture better confabulation example for C4 (recent events)
 - [ ] Pre-capture the **citations-ladder demo**: three real outputs -- no sources /
       unverified sources / verified sources (station 7)
