@@ -7,6 +7,18 @@ or renumbered; resolved ones move to "Resolved decisions" keeping their ID.
 
 ## Open design questions
 
+**Q3. Describe-and-draw: keep or cut?** REOPENED (2026-09-28 reorder). Its original job
+(dislodging the "smart person / search engine" model) now belongs to the goldfish at
+station 3. What remains unique: it is the only moment the audience *feels* the prompter's
+side of the gap (you thought you were clear; your partner did exactly what the words
+said) - the demos only *tell* them. Keep only if reframed as **"B plays the fish"** (draw
+exactly what you hear, no questions), placed at the head of station 4 as the felt limit
+that motivates specification. Its debrief can add a cheap technique: "B could not ask
+questions; the fish can, if you invite it - 'ask me clarifying questions before you
+start.'" Cost: ~8-10 min + printed figures; first cut if time is tight; the verbal
+"directions without landmarks" fallback gets most of the benefit. Decide at the timing
+review. If kept, figure selection stays in `todo.md`.
+
 **Q12. Station 4 confidence calibration exercise.** A structured pair or individual
 activity where participants calibrate their confidence: given a set of LLM outputs, rate
 how confident they are each is correct, then reveal which are wrong. Would reinforce the
@@ -24,6 +36,15 @@ wonder: "the birth of magic" - descriptive, not prescriptive; comes after accoun
 has landed. Framing guard: the callback is inspirational coda, not advocacy (the whole
 talk must have earned it by then).
 
+**Q15. Stations 3-8 reorder.** RESOLVED (2026-09-28). The goldfish moves to station 3
+right after the "computers can speak language" premise, followed by the training story;
+the prompting techniques and reliability levers follow in station 4, ending on map vs.
+territory. Stations 6-8 grow the image piece by piece: bowl + water (context only) ->
+first fittings that extend what the fish can *know* (web search/citations, notepad) ->
+fittings that let it *do* (strawberry/code, tools/MCP, alarm clock, recipe cards) with
+the fittings catalog moved to the end as a recap. Rationale and beat-level tension
+chaining live in `presentation-arc.md`.
+
 **Q2. Station 4 metaphor architecture.** RESOLVED (map vs. territory). Station 4 is built
 on three layers, revealed in order: (1) **the territory** - the landscape of knowledge /
 reality; shown to set the metaphor but deliberately not detailed (nobody holds the true
@@ -39,18 +60,15 @@ ink = temperament. Verification = leaving the map to check the territory (statio
 = extending contact with the territory. Remaining is production only (see todo: build the
 three-layer visual, pick jaggedness cases, decide reveal mechanics).
 
-**Q3. Describe-and-draw figure.** RESOLVED as a design question - placement is confirmed
-at station 3. Figure selection is a prototyping task, moved to `todo.md`.
-
 **Q4. Intention-economy placement.** RESOLVED - its own short beat, **Station 11 "The
 practitioner: intention is the input"**, between stations 10 and 12, feeding accountability.
 Holds: amplifies what you bring, taste/intention as the bottleneck, "it will agree with
 you," atrophy (specific). On-stage phrase "intention is the input" (avoid the loaded term
 "intention economy"). Framed descriptively, not a nudge to adopt (advocacy guard).
 
-**Q5. Pink-elephant anecdote placement.** RESOLVED - placed at **station 3**
-(latent-knowledge-needs-eliciting). The negation-poisoning angle can still be referenced
-lightly at station 7 if useful, but its home is station 3.
+**Q5. Pink-elephant anecdote placement.** RESOLVED - placed at **station 4** (moved from
+3 in the Q15 reorder; latent-knowledge-needs-eliciting). The negation-poisoning angle can
+still be referenced lightly at station 6 (context) if useful, but its home is station 4.
 
 **Q6. Station 7/8/9 compression.** RESOLVED (deferred by design) - keep three beats; the
 compression decision is folded into the full timing review during the week-of-Oct-5
@@ -64,7 +82,8 @@ does nothing on its own, matching how LLMs only wake when prompted (or on a sche
 This is folded into the goldfish metaphor as the "sleeping fish" - the fish sleeps most
 of the time and only wakes when you talk to it (or if the bowl has an alarm clock).
 
-**Q9. Client vs. model.** RESOLVED - opens the **Station 6 cluster**. Metaphor: **model =
+**Q9. Client vs. model.** RESOLVED - opens the **Station 6 cluster** (bare bowl + water
+first; fittings arrive one at a time in stations 7-8, per Q15). Metaphor: **model =
 the fish**, **client = the bowl** (simple / fancy / mobile) and its fittings; **water =
 context** (poisonable); the window = how much water the bowl holds; tools, memory, projects,
 multimodal = fittings on the bowl. Vendors bundle a fish-in-a-bowl; the two are separable.
@@ -82,15 +101,15 @@ architectural boundary). Feeds the enforcement hierarchy.
 moved to `todo.md` for prototyping (leading candidate: "plan a team offsite" monolithic
 vs. decomposed).
 
-**Q13. Citations ladder placement.** RESOLVED - moved from station 4 to **station 6**.
-At station 4 the fish has no way to check itself yet; station 6 introduces the tubes
-fitting (tools/web/MCP), so the ladder's third rung ("...with verified sources") has
+**Q13. Citations ladder placement.** RESOLVED - moved from station 4 to station 6, then
+to **station 7** (Q15). At station 4 the fish has no way to check itself yet; station 7
+introduces the tubes fitting (web search first), so the ladder's third rung ("...with verified sources") has
 something to point to. It becomes the first demonstration of a fitting actually changing
 what the fish can know, not just what it can do.
 
 **Q14. Iteration / critique loops placement.** RESOLVED - moved from station 5 into
-station 7's restart-vs-repair beat. "Knowing when to abandon a thread" was already a
-station-5-to-station-7 callback; folding iteration in avoids answering the same question
+the restart-vs-repair beat (now station 6). "Knowing when to abandon a thread" was
+already a station-5-to-restart-vs-repair callback; folding iteration in avoids answering the same question
 (repair vs. restart) twice.
 
 **Drunk intern metaphor.** RETIRED - replaced by the poisoned-water metaphor extension
@@ -111,8 +130,8 @@ as the talk's primary anthropomorphic carrier.
 - **Magic / Clarke's gradient** (station 2; Q1 resolved). Light-touch one-liner to set up
   the binary-to-gradient reframe. Callback at station 13 (closer) as earned wonder.
 
-- **The goldfish who has read every book** (PRIMARY for station 4; evolves through stations
-  7 and 8). A **people-pleaser**: fluent from reading, eager to be a good conversationalist,
+- **The goldfish who has read every book** (PRIMARY; introduced at station 3; evolves through stations
+  6-8). A **people-pleaser**: fluent from reading, eager to be a good conversationalist,
   and unwilling to admit it is out of its depth - so its confidence is a symptom of
   eagerness, not intent to deceive (ties to sycophancy). No lived experience, no long-term
   memory. **Sleeps most of the time** - the fish only wakes up when you talk to it, or if
@@ -125,13 +144,13 @@ as the talk's primary anthropomorphic carrier.
   (temperament: trained, model-specific, softening over time). Extensions: the **bowl =
   the client** (simple/fancy/mobile; Station 6), the **water = context** (poisonable),
   the window = how much water the bowl holds; tools and other fittings on the bowl extend
-  the fish's reach / contact with the territory (station 8).
+  the fish's reach / contact with the territory (stations 7-8).
 
 - **Augmentation metaphors** (retired as standalone; Q7 resolved). "Bicycle for the mind"
   / "iron man suit" allowed as passing references only. The sleeping-fish insight (does
   nothing on its own) is folded into the goldfish.
 
-- **The cooking metaphor** (station 7, restart-vs-repair; also now carries iteration vs.
+- **The cooking metaphor** (station 6, restart-vs-repair; also now carries iteration vs.
   abandonment, Q14). You are deciding the ingredients; the model does the cooking to
   combine them. If you accidentally add salt instead of sugar, you cannot take out the
   salt - it is in the dish now. The entire conversation history is re-read with every
@@ -153,17 +172,17 @@ as the talk's primary anthropomorphic carrier.
   calls - what matters, how you want it - are your real input. Ties to taste as the
   bottleneck and to accountability. PLACED: Station 11 - "intention is the input" (Q4 resolved).
 
-- **Pink elephant / Theory of Mind (real anecdote).** PLACED: station 3. In chat 1, an LLM
+- **Pink elephant / Theory of Mind (real anecdote).** PLACED: station 4. In chat 1, an LLM
   was asked to write prompts to seed a fresh chat 2, but the prompts included *negative*
   references to ideas from chat 1 ("don't do X") - a "don't think of a pink elephant"
   effect that risked poisoning chat 2's context. Asking the model to use Theory of Mind and
-  rewrite the prompt fixed it. Primary lesson (station 3): the model holds worlds of
+  rewrite the prompt fixed it. Primary lesson (station 4): the model holds worlds of
   knowledge but does not apply them unless you know what to ask for. Secondary (optional at
-  station 7): negation can poison context.
+  station 6): negation can poison context.
 
 - **Levels of memory** (from Inputs tab). System instructions (global to account) ->
   per-project instructions (you maintain) -> agent/Claude memory (it maintains from
-  conversations). PLACED: supports station 7 context/craft (integrated into memory &
+  conversations). PLACED: supports station 6 context/craft (agent memory itself = the notepad, station 7) (integrated into memory &
   instruction hierarchy).
 
 - **Training stages in the metaphor.** Reading the whole library = pretraining (a fluent
@@ -179,30 +198,30 @@ as the talk's primary anthropomorphic carrier.
   model, actively changing (confidence, agreeableness, refusals, willingness to say "I
   don't know"). Anatomy = structural, durable (no grounding / cannot check reality itself;
   jagged competence). Answers "how much is model-specific vs. inherent" and future-proofs
-  the talk. Home: station 4; also feeds station 10 (it is a product).
+  the talk. Home: station 3; also feeds station 10 (it is a product).
 
-- **The citations ladder** (demo idea, station 6; Q13 resolved). "Tell me about X" ->
+- **The citations ladder** (demo idea, station 7; Q13/Q15 resolved). "Tell me about X" ->
   "...with sources" (citations can be fabricated; the appearance of sourcing manufactures
   unearned trust) -> "...with verified sources" (the model uses tools to check the URLs
   against reality). The danger lives in the gap between the second and third: unverified
   sourcing is more dangerous than none. Moved from station 4 because it needs the tubes
-  fitting (station 6) to mean anything - shows self-assessment is jagged and that the fix
+  fitting (station 7) to mean anything - shows self-assessment is jagged and that the fix
   requires touching reality (tools), not asking nicely.
 
 - **Self-reflection = a lever, not an oracle** (capability, station 4). It can grade
   confidence, flag knowledge-cutoff gaps, or search when unsure - but only if you ask
   (pink elephant), and the self-assessment is itself jagged. Reduces the problem; does not
   remove the obligation to verify (station 5). Distinct from the citations ladder (station
-  6): this is the fish grading itself; the ladder is the fish checking against reality.
+  7): this is the fish grading itself; the ladder is the fish checking against reality.
 
-- **Knowledge-domain elicitation** (technique, station 3). Instead of assigning a single
+- **Knowledge-domain elicitation** (technique, station 4). Instead of assigning a single
   role ("you are a financial analyst"), ask: "what domains of knowledge are relevant to
   this project? what perspectives and best practices does each contribute?" A generalized
   form of role prompting that surfaces expertise the model holds but would not apply
   unprompted (callback: pink elephant). Prepared comparison: plain prompt vs. role-prompted
   vs. knowledge-domain-prompted.
 
-- **Meta-prompting across platforms** (technique, station 3). Write a prompt in one model
+- **Meta-prompting across platforms** (technique, station 4). Write a prompt in one model
   to run in another (e.g. have Claude write a research prompt for Gemini). Requires Theory
   of Mind: the target model will not have this chat's context (callback: pink elephant /
   ToM anecdote). Real workflow from Benji's practice.
@@ -238,13 +257,13 @@ as the talk's primary anthropomorphic carrier.
   screenshots for the talk. The question: if everything goes as badly as it could, how
   would you recover and what would you have lost?
 
-- **The B&W artist review analogy** (station 4 -> 12 callback). Asking the fish to review
+- **The B&W artist review analogy** (station 3 -> 12 callback). Asking the fish to review
   its own work is like asking a black-and-white artist to judge "someone else's" B&W art -
   it shares the same blind spots. A color artist judging a range of pictures (both color
   and B&W) is a genuinely independent reviewer. Surfaces why self-review and correlated
   agent review fail.
 
-- **Memory oversharing / resume inflation** (station 7, personal story). Memory system
+- **Memory oversharing / resume inflation** (station 7 notepad beat, personal story). Memory system
   inflating claims from a resume-drafting session into persistent "facts" about the user's
   experience. Demonstrates how memory can go wrong and why memory audit matters.
 

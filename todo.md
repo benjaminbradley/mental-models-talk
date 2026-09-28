@@ -17,8 +17,8 @@ Completed items are REMOVED (not marked complete) - tracked by git history.
 
 Image specs for all metaphors: `metaphor-imagery.md` (single source of truth).
 
-- [ ] Find & test the **describe-and-draw** figure for station 3 (**Q3** resolved as a
-      prototyping task). Criteria: spatial relationships (not artistic skill), dignified for
+- [ ] Decide keep/cut for **describe-and-draw** ("B plays the fish", station 4; **Q3**
+      reopened). If kept: find & test the figure. Criteria: spatial relationships (not artistic skill), dignified for
       adults, honest ambiguity (partners disagree about the result and both have a point).
       Leading candidate: simple architectural floor plan. Maybe 2 samples - overhead view vs PoV.
 - [ ] Prototype the **decomposition demonstration** for station 5 (**Q11** resolved as a
@@ -31,13 +31,14 @@ Image specs for all metaphors: `metaphor-imagery.md` (single source of truth).
 #### Pre-capture demos & transcripts
 
 - [ ] Prepare comparison demos
-   - [ ] plain vs. role vs. knowledge-domain prompts (station 3)
+   - [ ] plain vs. role vs. knowledge-domain prompts (station 4)
    - [ ] reliability-levers side-by-side: same query with/without thinking instructions (station 4)
    - [ ] email draft vs. send -- HITL toggle (station 12)
 - [ ] Source pre-captured transcripts/recordings
    - [ ] guardrail-probe transcript: real cross-model comparison (station 10)
+   - [ ] capture better confabulation example for C4 (recent events)
 - [ ] Pre-capture the **citations-ladder demo**: three real outputs -- no sources /
-      unverified sources / verified sources (station 6)
+      unverified sources / verified sources (station 7)
 
 #### Image creation
 
@@ -50,7 +51,8 @@ Image specs for all metaphors: `metaphor-imagery.md` (single source of truth).
    - [ ] per-case map-comparison images: zoomed region on human vs. fish map for
          each jaggedness case (see `metaphor-imagery.md` § Per-case walkthrough)
    - [ ] decide case ordering and whether map-first or example-first
-   - [ ] bowl + fish + fittings (station 6)
+   - [ ] bowl + fish, water only (station 6); fittings attaching one at a time
+         (stations 7-8); full-tank recap (end of station 8)
 
 #### Slide tech
 
@@ -106,7 +108,8 @@ clarifying in pre-talk coordination, or the intro will set wrong expectations.
    - [ ] compare estimated timing vs. actual timing
    - [ ] assess whether stations 7/8/9 compress (**Q6**)
    - [ ] identify any trims needed
-   - [ ] assess station 3 density -- it carries the exercise, spine claim, and four technique families; confirm it fits or identify what to defer
+   - [ ] assess station 4 density -- after the reorder it carries the (pending) exercise, four technique families, and the map/territory reveal + walkthrough; confirm it fits or identify what to defer
+   - [ ] re-check the 45-minute cut (`presentation-arc.md`) after the reorder
 - [ ] Rehearse; refine speaker notes; adjust pacing.
 - [ ] Get wegeekout.com ready for follow-up?
 

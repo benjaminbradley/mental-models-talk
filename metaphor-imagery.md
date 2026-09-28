@@ -35,11 +35,14 @@ muggles) and transforms into a continuous gradient of skill refined by effort.
 
 ---
 
-## The goldfish (Station 4; evolves through Stations 6-9)
+## The goldfish (Station 3; evolves through Stations 6-10)
 
-**Introduced:** Station 4 — the people-pleaser who has read every book.
-**Extended:** Station 6 (bowl + fittings), Station 7 (context/water), Station 8
-(agency/tools), Station 9 (poisoned water, hosting tiers), Station 10 (version change).
+**Introduced:** Station 3 — the people-pleaser who has read every book, right after
+the "computers can speak language" premise; the training-story origin images follow
+immediately.
+**Extended:** Station 6 (bowl + water/context), Station 7 (first fittings: tubes,
+notepad), Station 8 (tools/agency; full tank), Station 9 (poisoned water, hosting
+tiers), Station 10 (version change).
 
 **Description:** A goldfish — the talk's primary anthropomorphic carrier for LLMs.
 
@@ -54,12 +57,14 @@ muggles) and transforms into a continuous gradient of skill refined by effort.
   stupid — earnest and well-read but ungrounded.
 
 **Evolution through the talk:**
-- Station 4: Fish alone (sleeping → waking). Establishes character.
-- Station 6: Fish in the bowl. Bowl = client; water = context; fittings added.
+- Station 3: Fish alone (sleeping → waking). Establishes character. Then the origin
+  story: reading the library (pretraining) → apprenticeship of conversations (RLHF).
+- Station 6: Fish in a bare bowl. Bowl = client; water = context; water level
+  visible (context window). No fittings yet. Cooking metaphor is separate (see below).
   (See "The bowl and the fish" below.)
-- Station 7: Water level visible (context window). Cooking metaphor is separate
-  (see below).
-- Station 8: Fish reaching through tubes (tools/agency).
+- Station 7: First fittings attach one at a time: tubes (web search), notepad (memory).
+- Station 8: Fish reaching through tubes (tools/agency); alarm clock and recipe cards
+  attach; pull back to reveal the full tank.
 - Station 9: Water turns murky/poisoned (injection). Three effect icons overlay.
 - Station 10: Fish visibly changes appearance between versions (frontier instability).
 
@@ -206,8 +211,9 @@ Each case needs two image assets:
 - **Counting & Tracking (B4):** Human map: trivially familiar territory (everyone
   counts). Fish map: confident features that don't match the territory. Screencap
   captured.
-- **Letter Counting (B1, maybe):** Similar to B4. May overlap with Station 6
-  strawberry hook. Screencap captured.
+- **Letter Counting (B1):** Moved out of the walkthrough; the screencap is reused by
+  the Station 8 strawberry demo, which resolves the Counting region with code
+  execution.
 - **Recent Events (C4):** Human map: recently walked territory (current awareness).
   Fish map: the region is filled in from pattern — the books ended before this
   territory existed. Screencap captured.
@@ -218,11 +224,17 @@ Each case needs two image assets:
 
 ---
 
-## The bowl and the fish (Station 6; extends through Stations 7-9)
+## The bowl and the fish (Station 6; grows into the tank through Stations 7-8; extends to 9)
 
-**Introduced:** Station 6 — client vs. model architecture.
-**Extended:** Station 6 (fittings catalog), Station 7 (water level = context window),
-Station 8 (fish reaching through tubes), Station 9 (poisoned water, hosting tiers).
+**Introduced:** Station 6 — client vs. model architecture; a bare bowl holding only
+water (context).
+**Extended:** Station 7 (tubes, notepad), Station 8 (tubes carrying actions out;
+alarm clock, recipe cards; full-tank reveal), Station 9 (poisoned water, hosting tiers).
+
+**Growth principle:** the image grows piece by piece: fish → fish + bowl (water only)
+→ fish + tank (bowl + fittings). Each fitting attaches on the beat where the room has
+just felt the limitation it addresses; the full assembly is shown only at the end of
+Station 8 as a recap. "Tank" is the name for the fully fitted bowl.
 
 **Description:** The goldfish in its bowl. The fish = the model; the bowl = the
 client (simple/fancy/mobile); the water = the context.
@@ -230,20 +242,22 @@ client (simple/fancy/mobile); the water = the context.
 **Visual properties:**
 - Bowl types: simple round bowl, fancy aquarium with features, mobile/portable tank.
   Represent different clients (basic chat, full IDE, mobile app).
-- Fittings on the bowl (each added at its narrative beat):
-  - Water = context (pourable, poisonable, has a level/surface line)
-  - Notepad = memory (attached to the bowl)
-  - Camera/ears = multimodal inputs
-  - Tubes = tools / MCP connectors (reach outside the bowl)
-  - Alarm clock = scheduled/recurring tasks
-  - Recipe cards = skills / reusable playbooks
+- Fittings on the bowl (each added at its narrative beat, in this order):
+  - Water = context (pourable, poisonable, has a level/surface line) — Station 6
+  - Tubes = web search first (information in), then tools / MCP connectors (actions
+    out) — Stations 7, 8
+  - Notepad = memory (attached to the bowl) — Station 7
+  - Alarm clock = scheduled/recurring tasks — Station 8
+  - Recipe cards = skills / reusable playbooks — Station 8
+  - Camera/ears = multimodal inputs; microphone = voice — Station 8 tank reveal only
 
 **Evolution:**
-- Station 6: Bowl + fish established. Fittings added one by one. Diagnostic: "is
-  it the fish or the bowl?" Citations ladder uses the tubes fitting.
-- Station 7: Water level visible = context window. Water can be murky (bad context
+- Station 6: Bowl + fish established, water only. Diagnostic: "is it the fish or
+  the bowl?" Water level visible = context window. Water can be murky (bad context
   hygiene).
-- Station 8: Fish reaching through tubes = agency. The tubes let it act, not just say.
+- Station 7: Tubes attach (web search; citations ladder), then the notepad (memory).
+- Station 8: Fish reaching through tubes = agency; the tubes let it act, not just say.
+  Alarm clock and recipe cards attach. Pull back: the bowl is now a tank.
 - Station 9: Water turns poisoned (injection/prompt injection). Three overlay effects:
   destruction, exfiltration, sleeper/incubation via memory.
 
@@ -251,9 +265,9 @@ client (simple/fancy/mobile); the water = the context.
 
 ---
 
-## The cooking metaphor (Station 7)
+## The cooking metaphor (Station 6)
 
-**Introduced:** Station 7 — restart vs. repair.
+**Introduced:** Station 6 — restart vs. repair.
 
 **Description:** Standalone metaphor (not part of the fish/bowl system). You decide
 the ingredients; the model does the cooking. If you add salt instead of sugar, you
@@ -267,7 +281,7 @@ cannot remove the salt — it's in the dish now.
 - Visual makes clear: the entire conversation history is re-read every turn, so
   a mistake early on persists.
 
-**Detail spec:** See `slides-outline.md` Station 7 for narration and slide content.
+**Detail spec:** See `slides-outline.md` Station 6 for narration and slide content.
 
 ---
 
@@ -313,10 +327,11 @@ Quick reference: which metaphor images appear or change at each station.
 | Station | New images | Extended images |
 |---------|-----------|-----------------|
 | 2 | The gradient (light touch) | |
-| 4 | The goldfish (sleeping/waking); Three-layer map/territory; Temperament origin story | |
-| 6 | The bowl and the fish | Fittings added to bowl |
-| 7 | The cooking metaphor (salt in the water) | Water level in bowl (context window) |
-| 8 | | Fish reaching through tubes (agency) |
+| 3 | The goldfish (sleeping/waking); Temperament origin story | |
+| 4 | Three-layer map/territory; pink elephant | |
+| 6 | The bowl and the fish (water only); The cooking metaphor (salt in the water) | Water level in bowl (context window) |
+| 7 | | Tubes fitting (web search); notepad fitting (memory) |
+| 8 | | Fish reaching through tubes (agency); alarm clock + recipe cards; full-tank reveal |
 | 9 | Enforcement hierarchy; Three-tier hosting | Water turns poisoned; effect icons |
 | 10 | | Fish changes appearance (version instability) |
 | 13 | | Gradient returns (full treatment; earned wonder) |

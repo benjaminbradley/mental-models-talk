@@ -105,7 +105,7 @@ the magic *imagery* stays minimal here. It returns at station 13 as earned wonde
 
 ---
 
-## Station 3 - Dislodge the wrong model + install the spine
+## Station 3 - Meet the fish
 
 ### Slide: Computers can understand and speak language
 
@@ -114,104 +114,16 @@ the magic *imagery* stays minimal here. It returns at station 13 as earned wonde
 Up until 2020, we made fun of their bad poetry.
 Now: https://www.reddit.com/r/ClaudeAI/comments/1gn4u8y/i_hade_a_nice_night_with_claude_and_asked_for_a/
 
-*TBD*
+**Narration:** "Until about 2020, we made fun of computers' bad poetry. Now they
+write good poems in seconds." Then introduce the spine claim plainly: "Here's the
+claim this whole talk hangs on: anything you can specify clearly enough in language,
+a computer can now do." Beat. "So if it speaks our language this well -- is it like
+us?"
 
-### Slide: Describe-and-draw exercise
-
-**Visual:** *(illustrate)* Instructions for the pair exercise. Printed source
-figure visible only to the "A" partner (candidate: architectural floor plan --
-something with spatial relationships that are hard to convey in words alone).
-
-**Text:** "Pair up. A describes. B draws. No peeking."
-
-**Narration:** "Find a partner. One of you gets a picture -- you describe it in
-words only. Your partner draws what they hear. You cannot look at each other's
-paper. The describer is NOT ALLOWED to see the result until its finished."
-Give 3-4 minutes.
-
-**Notes:** *Exercise: pair.* Have printed figures face-down on tables or ready to
-hand out. The exercise must generate the failure itself so it cannot be dismissed
-as rigged. Fallback if no printed materials: "give directions to your house
-without using any landmarks or street names."
-
-### Slide: Debrief -- the tacit bound
-
-**Visual:** Reveal the source figure alongside a few audience drawings (if
-willing to share). The gap between intent and result is the lesson.
-
-**Text:** "What went wrong? Whose fault was it?"
-
-**Narration:** "What went wrong?" Let them answer. "Whose fault was it -- the
-describer or the drawer?" Push toward: neither. The problem is that some
-knowledge is tacit -- it does not survive the translation into language. The
-drawer did exactly what the words said. That is how a language model works: it
-runs on language, and language carries more than you think -- but it also leaks
-more than you think."
-
-**Notes:** *Socratic:* "What went wrong? Whose fault?" This is where the spine
-claim is introduced: anything you can specify clearly enough in language, a
-computer can now do. The exercise shows both sides -- the astonishing power
-(how much DID transmit) and the limit (tacit knowledge does not).
-
-### Slide: Specification -- plain vs. specified
-
-**Visual:** *(illustrate)* Side-by-side output comparison. Left: a plain prompt
-("give me a list of sushi restaurants"). Right: a fully specified prompt (near
-78757, ranked by Yelp review, with price range and wait time for Tuesday dinner).
-
-**Text:** Left header: "Plain prompt." Right header: "Specified prompt." Below:
-"Examples beat adjectives. Constraints generate quality."
-
-**Narration:** "Here's the same question asked two different ways. On the left,
-a vague ask -- you get a vague answer. On the right, I've specified what I
-actually want: location, ranking criteria, format. The output is dramatically
-better, not because the model is smarter, but because the input was clearer.
-Examples beat adjectives. Constraints generate quality."
-
-**Notes:** *Demo: side-by-side comparison.* This is the first capability method:
-specification, output formats, few-shot examples.
-
-### Slide: Knowledge-domain elicitation
-
-**Visual:** *(illustrate)* Three-way output comparison. Left: plain prompt.
-Center: role-prompted ("you are a financial analyst"). Right:
-knowledge-domain-prompted ("what domains of knowledge are relevant here? what
-perspectives and best practices does each contribute?").
-
-**Text:** Three column headers: "Plain" / "Role prompt" / "Knowledge-domain prompt."
-
-**Narration:** "Role prompting -- 'you are a financial analyst' -- shapes the
-response. But knowledge-domain elicitation goes further: instead of assigning one
-role, you ask 'what domains of expertise are relevant here?' The model surfaces
-knowledge it already holds but would not apply unless you ask for it." Beat.
-"Remember: it holds worlds of knowledge but does not apply them unprompted."
-
-**Notes:** *Demo: three-way comparison.* The callback to the describe-and-draw
-lesson: the model has the knowledge; the bottleneck is whether you know to ask.
-Methods introduced: role prompting, knowledge-domain elicitation.
-
-### Slide: Meta-prompting + pink elephant
-
-**Visual:** *(new)* Pink elephant callback image -- a memorable visual of a pink
-elephant that will recur whenever the "don't think of X" principle surfaces.
-
-**Text:** "Help me write a better prompt for this task."
-
-**Narration:** "Meta-prompting: ask the model to help you write a better prompt.
-You can even write a prompt in one model to run in another. But here's the trap
---" Tell the pink elephant / Theory of Mind anecdote: asking a model to write
-prompts for a fresh chat, and it included negative references to ideas from the
-first chat ('don't do X') -- a 'don't think of a pink elephant' effect that
-poisoned the second chat's context. "Asking it to use Theory of Mind and rewrite
-the prompt fixed it. The model knew how to do that -- I just had to know to ask."
-
-**Notes:** The pink elephant is the station 3 mascot for "it has the knowledge;
-you have to know to ask." Method: meta-prompting. The ToM anecdote is a personal
-story -- keep it brief and concrete.
-
----
-
-## Station 4 - Install the working model
+**Notes:** The spine claim is introduced here (it is felt from the inside at the
+describe-and-draw debrief in station 4, if kept; made literal at station 8; closed
+at station 12). End on the question -- the goldfish is the answer. *TBD:* final
+visual and example.
 
 ### Slide: The goldfish
 
@@ -233,10 +145,168 @@ admit it is out of its depth. Its confidence is not intent to deceive -- it is
 eagerness. And one more thing: it sleeps most of the time. It does nothing on its
 own. It only wakes up when you talk to it."
 
-**Notes:** *Socratic:* "How would you know when it's wrong?" Let them sit with
+**Notes:** Answers the premise slide's "is it like us?" -- no: well-read, eager,
+ungrounded. *Socratic:* "How would you know when it's wrong?" Let them sit with
 this. Tone: productive disorientation -- their instincts about people (confident
 = knowledgeable) actively mislead here. Cognitive shift: "my instincts about
-people transfer" -> "my instincts actively mislead me."
+people transfer" -> "my instincts actively mislead me." Leave the question
+open: "why is it like this?" -- the training story answers it next.
+
+### Slide: Temperament vs. anatomy -- the training story
+
+**Visual:** *(extend)* The goldfish origin story, shown as two phases. Phase 1:
+the fish reading an enormous library (pretraining). Phase 2: the fish in an
+apprenticeship of conversations with feedback (RLHF/post-training).
+
+**Text:** "Phase 1: Read the library (anatomy -- what it knows)." "Phase 2:
+Apprenticeship with feedback (temperament -- how it acts)."
+
+**Narration:** "How did the fish get this way? Two phases. First, it read the
+entire library -- every book, every website. That's pretraining: it's where the
+map's content comes from, including the jagged fidelity. That's anatomy --
+structural, durable. Then it went through an apprenticeship: practice
+conversations with human feedback. That's where it learned its manners -- the
+helpfulness, the confidence, the eagerness to please. That's temperament --
+trained, model-specific, and it varies between fish." Beat. "So how do you talk
+to something like that?"
+
+**Notes:** Bridge: ends on "how do you talk to something like that?", which
+opens station 4. The map/territory callback ("the map's content is anatomy; the
+confident ink is temperament") now lands on the fish-map slide in station 4.
+"Why does this matter?" -- it answers "how much of this is fixable?"
+Anatomy is structural; temperament is model-specific and changing. Rhymes with
+human language acquisition (exposure then feedback) with one decisive disanalogy:
+a child's words are grounded in lived experience; the fish's are not. Do not
+claim developmental equivalence.
+
+---
+
+## Station 4 - Talking to the fish (and how far to trust it)
+
+### Slide: Describe-and-draw exercise -- "B plays the fish" (PENDING: keep or cut)
+
+**Visual:** *(illustrate)* Instructions for the pair exercise. Printed source
+figure visible only to the "A" partner (candidate: architectural floor plan --
+something with spatial relationships that are hard to convey in words alone).
+
+**Text:** "Pair up. A describes. B plays the fish: draw exactly what you hear. No
+peeking, no questions."
+
+**Narration:** "Find a partner. One of you gets a picture -- you describe it in
+words only. Your partner plays the fish: they draw exactly what they hear, and
+they are not allowed to ask questions. You cannot look at each other's
+paper. The describer is NOT ALLOWED to see the result until its finished."
+Give 3-4 minutes.
+
+**Notes:** PENDING decision (open-questions Q3): its original job (dislodging the
+"smart person" model) now belongs to the goldfish. What remains unique is that the
+audience *feels* the prompter's side of the gap. Keep only in this framing; first cut
+if time is tight. *Exercise: pair.* Have printed figures face-down on tables or ready to
+hand out. The exercise must generate the failure itself so it cannot be dismissed
+as rigged. Fallback if no printed materials: "give directions to your house
+without using any landmarks or street names."
+
+### Slide: Debrief -- the tacit bound (PENDING, with the exercise)
+
+**Visual:** Reveal the source figure alongside a few audience drawings (if
+willing to share). The gap between intent and result is the lesson.
+
+**Text:** "What went wrong? Whose fault was it?"
+
+**Narration:** "What went wrong?" Let them answer. "Whose fault was it -- the
+describer or the drawer?" Push toward: neither. B did exactly what the fish does. The problem is that some
+knowledge is tacit -- it does not survive the translation into language. The
+drawer did exactly what the words said. That is how a language model works: it
+runs on language, and language carries more than you think -- but it also leaks
+more than you think." Beat. "B wasn't allowed to ask questions. The fish is --
+if you invite it: 'ask me clarifying questions before you start.'"
+
+**Notes:** *Socratic:* "What went wrong? Whose fault?" The spine claim
+(introduced at the premise slide, station 3) is felt here from the inside. The
+exercise shows both sides -- the astonishing power
+(how much DID transmit) and the limit (tacit knowledge does not). Candidate technique: invite clarifying
+questions.
+
+### Slide: Specification -- plain vs. specified
+
+**Visual:** *(illustrate)* Side-by-side output comparison. Left: a plain prompt
+("give me a list of sushi restaurants"). Right: a fully specified prompt (near
+78757, ranked by Yelp review, with price range and wait time for Tuesday dinner).
+
+**Text:** Left header: "Plain prompt." Right header: "Specified prompt." Below:
+"Examples beat adjectives. Constraints generate quality."
+
+**Narration:** "The people-pleaser answers whatever you ask -- so a vague ask
+gets a confident, vague answer. Here's the same question asked two different ways. On the left,
+a vague ask -- you get a vague answer. On the right, I've specified what I
+actually want: location, ranking criteria, format. The output is dramatically
+better, not because the model is smarter, but because the input was clearer.
+Examples beat adjectives. Constraints generate quality."
+
+**Notes:** *Demo: side-by-side comparison.* This is the first capability method:
+specification, output formats, few-shot examples.
+
+### Slide: Knowledge-domain elicitation
+
+**Visual:** *(illustrate)* Three-way output comparison. Left: plain prompt.
+Center: role-prompted ("you are a financial analyst"). Right:
+knowledge-domain-prompted ("what domains of knowledge are relevant here? what
+perspectives and best practices does each contribute?").
+
+**Text:** Three column headers: "Plain" / "Role prompt" / "Knowledge-domain prompt."
+
+**Narration:** "It read the whole library. But which shelf does it pull from? Role prompting -- 'you are a financial analyst' -- shapes the
+response. But knowledge-domain elicitation goes further: instead of assigning one
+role, you ask 'what domains of expertise are relevant here?' The model surfaces
+knowledge it already holds but would not apply unless you ask for it." Beat.
+"Remember: it holds worlds of knowledge but does not apply them unprompted."
+
+**Notes:** *Demo: three-way comparison.* The callback to the library (station 3):
+the model has the knowledge; the bottleneck is whether you know to ask.
+Methods introduced: role prompting, knowledge-domain elicitation.
+
+### Slide: Meta-prompting + pink elephant
+
+**Visual:** *(new)* Pink elephant callback image -- a memorable visual of a pink
+elephant that will recur whenever the "don't think of X" principle surfaces.
+
+**Text:** "Help me write a better prompt for this task."
+
+**Narration:** "You don't always know what to ask -- so ask the fish. Meta-prompting: ask the model to help you write a better prompt.
+You can even write a prompt in one model to run in another. But here's the trap
+--" Tell the pink elephant / Theory of Mind anecdote: asking a model to write
+prompts for a fresh chat, and it included negative references to ideas from the
+first chat ('don't do X') -- a 'don't think of a pink elephant' effect that
+poisoned the second chat's context. "Asking it to use Theory of Mind and rewrite
+the prompt fixed it. The model knew how to do that -- I just had to know to ask."
+
+**Notes:** The pink elephant is the station 4 mascot for "it has the knowledge;
+you have to know to ask." Method: meta-prompting. The ToM anecdote is a personal
+story -- keep it brief and concrete.
+
+### Slide: Reliability levers
+
+**Visual:** *(illustrate)* Side-by-side comparison: same query with and without a
+"think about the criteria" preamble. Show the output quality difference.
+
+**Text:** "Chain-of-thought: 'Show your work.'" / "Extended thinking: 'Think about
+what criteria matter here, then answer.'" / "Self-reflection: 'How confident are
+you? What might you be wrong about?'"
+
+**Narration:** "The fish will never tell you it's unsure. So how do you make it
+more reliable?" Let them answer. "Three
+levers. Chain-of-thought -- ask it to show its work, so you can check the steps.
+Extended thinking -- direct it to think about specific things before answering;
+here's the same query with and without a 'think about the criteria' preamble.
+And self-reflection -- ask it to grade its own confidence, flag what it's unsure
+about, or search when it doesn't know. These reduce the problem; they do not remove
+your obligation to verify." Beat. "And can you trust its grade of itself? To
+answer that, we need to look at how its knowledge is shaped."
+
+**Notes:** *Socratic:* "So how do you make it more reliable?" Methods: chain-of-thought,
+extended thinking, self-reflection. The self-reflection caveat callbacks to the
+pink elephant (you must know to ask) and sets up the map/territory reveal that
+follows (the self-assessment is itself jagged), then verification (station 5).
 
 ### Slide: Map vs. territory -- the territory
 
@@ -248,7 +318,7 @@ Tracking, Recent Events, Everyday Cooking / Regional Cooking, plus background fi
 
 **Text:** "The territory (reality)."
 
-**Narration:** "This is reality. The landscape of knowledge. It's big, it's complex,
+**Narration:** "Let's look at what the fish knows as a map. First -- this is reality. The landscape of knowledge. It's big, it's complex,
 and nobody holds a complete picture of it. But it's out there, and you can go check
 it."
 
@@ -311,11 +381,17 @@ thing -- completing patterns from its training. When the patterns happen to alig
 reality, it looks like knowledge. When they don't, it looks like hallucination. The
 fish can't tell the difference, because it's doing the same thing either way."
 
+"Remember the training story? The map's content is anatomy -- it came from the
+library. The uniform confident ink is temperament -- it came from the
+apprenticeship."
+
 "And the uneven accuracy -- brilliant at poetry, hopeless at counting -- that's called
 jaggedness. The errors don't follow a difficulty gradient. They follow the density and
 quality of the books the fish had access to."
 
-**Notes:** This is the pivotal teaching image. Give it time. The three-beat reveal
+**Notes:** Ends the station on a tension: the map gives no sign of which regions
+are reliable -- so when is it safe to use at all? (Answered at station 5.) This
+is the pivotal teaching image. Give it time. The three-beat reveal
 should feel like a discovery, not a lecture. Let the audience see the pattern in the
 maps before naming it. "Hallucination" is familiar; use it, then deepen it -- the
 mechanism is pattern completion without grounding, not a perceptual error.
@@ -338,64 +414,20 @@ on the human map vs. the fish map; (2) pre-captured screencap showing the exampl
    ended. Screencap: post-cutoff confabulation.
 5. **Everyday vs. Regional Cooking (D1):** Same domain, split by source density.
    Screencap: mainstream recipe nailed vs. regional dish drifted.
-6. *(Maybe)* **Letter Counting (B1):** May overlap with Station 6 strawberry hook.
 
 **Narration:** Walk through each case: "Let's look at specific regions. Here's
 poetry..." Show the map comparison, then the example. Build the pattern: the
 errors track source-text density, not difficulty. By the third or fourth case the
 audience is predicting the pattern themselves.
 
-**Notes:** Pacing: don't rush, but don't belabor. 3-4 cases may be enough if time
+**Notes:** Two cases plant felt limits that later fittings resolve: Recent Events
+(-> web search, station 7) and Counting (-> code execution via the strawberry demo,
+station 8). Letter counting (B1) moved to the strawberry slide to avoid showing it
+twice. Pacing: don't rush, but don't belabor. 3-4 cases may be enough if time
 is tight; Poetry (impressive), Spatial Reasoning (jolting), and Cooking (density
 visible within one domain) are the strongest three. The rest reinforce. Order TBD:
 whether to show map comparison first (audience predicts) or example first (audience
 reacts, map explains).
-
-### Slide: Temperament vs. anatomy -- the training story
-
-**Visual:** *(extend)* The goldfish origin story, shown as two phases. Phase 1:
-the fish reading an enormous library (pretraining). Phase 2: the fish in an
-apprenticeship of conversations with feedback (RLHF/post-training).
-
-**Text:** "Phase 1: Read the library (anatomy -- what it knows)." "Phase 2:
-Apprenticeship with feedback (temperament -- how it acts)."
-
-**Narration:** "How did the fish get this way? Two phases. First, it read the
-entire library -- every book, every website. That's pretraining: it's where the
-map's content comes from, including the jagged fidelity. That's anatomy --
-structural, durable. Then it went through an apprenticeship: practice
-conversations with human feedback. That's where it learned its manners -- the
-helpfulness, the confidence, the eagerness to please. That's temperament --
-trained, model-specific, and it varies between fish. The map's content is anatomy.
-The uniform confident ink is temperament."
-
-**Notes:** "Why does this matter?" -- it answers "how much of this is fixable?"
-Anatomy is structural; temperament is model-specific and changing. Rhymes with
-human language acquisition (exposure then feedback) with one decisive disanalogy:
-a child's words are grounded in lived experience; the fish's are not. Do not
-claim developmental equivalence.
-
-### Slide: Reliability levers
-
-**Visual:** *(illustrate)* Side-by-side comparison: same query with and without a
-"think about the criteria" preamble. Show the output quality difference.
-
-**Text:** "Chain-of-thought: 'Show your work.'" / "Extended thinking: 'Think about
-what criteria matter here, then answer.'" / "Self-reflection: 'How confident are
-you? What might you be wrong about?'"
-
-**Narration:** "So how do you make it more reliable?" Let them answer. "Three
-levers. Chain-of-thought -- ask it to show its work, so you can check the steps.
-Extended thinking -- direct it to think about specific things before answering;
-here's the same query with and without a 'think about the criteria' preamble.
-And self-reflection -- ask it to grade its own confidence, flag what it's unsure
-about, or search when it doesn't know. But remember the map: the self-assessment
-is itself jagged. These reduce the problem; they do not remove your obligation
-to verify."
-
-**Notes:** *Socratic:* "So how do you make it more reliable?" Methods: chain-of-thought,
-extended thinking, self-reflection. The self-reflection caveat callbacks to the
-pink elephant (you must know to ask) and forward-references verification (station 5).
 
 ---
 
@@ -454,34 +486,13 @@ three venues within budget' is easy to check. 'Draft an agenda for a half-day
 session' is easy to check. Same task, but now each piece is in the 'lean in'
 zone."
 
-**Notes:** Decomposition is distinct from iteration (which refines after);
-iteration lives at station 7 with restart vs. repair.
+**Notes:** Bridge out: "We've been treating the fish as the whole system. It
+isn't." Decomposition is distinct from iteration (which refines after);
+iteration lives at station 6 with restart vs. repair.
 
 ---
 
-## Station 6 - The bowl and the fish
-
-### Slide: The strawberry hook
-
-**Visual:** *(illustrate)* Strawberry demo: first, the model gives a wrong
-letter count for "strawberry." Then, asked to write a script, it produces correct
-output.
-
-**Animation:** Wrong answer appears, then a script is requested, then the
-correct answer appears from the script output.
-
-**Text:** "How many Rs in 'strawberry'?" -> Wrong answer. "Write a script to
-count them." -> Correct answer.
-
-**Narration:** "Quick demo. Ask the fish: how many Rs in 'strawberry'? It gets it
-wrong -- this is a classic failure, and checking is trivial. But instead of
-checking yourself, ask: 'write a script that counts the letters.' Now the fish
-reaches outside itself and gets the right answer. You just crossed from 'a
-chatbot that says things' to 'a system that does things.' To understand how, you
-need to see the architecture."
-
-**Notes:** *Demo: live strawberry example.* Bridge from station 5 (verification)
-to station 6 (architecture). Cognitive shift: "one thing" -> "model + client."
+## Station 6 - The bowl and the water
 
 ### Slide: The bowl and the fish
 
@@ -492,70 +503,21 @@ fish.
 **Text:** "The model = the fish (intelligence)." / "The client = the bowl
 (interface + capabilities)." / "You never talk to the raw fish."
 
-**Narration:** "You never talk to the raw fish. You always talk through a client
+**Narration:** "We've been talking about the fish as if it were the whole system.
+It isn't. You never talk to the raw fish. You always talk through a client
 -- the bowl it sits in. ChatGPT, Claude, Gemini -- those are bowls. The model
 inside is the fish. A simple bowl, a fancy bowl, a mobile bowl -- different
 clients, same fish. When something goes wrong, the first diagnostic question is:
 is that the fish or the bowl?"
 
-**Notes:** *Shout-out:* After explaining, give scenarios and have the audience
+**Notes:** Opens station 6. At this point the bowl holds only water -- no
+fittings yet; they arrive one at a time in stations 7-8. The shout-out scenarios
+that answer "bowl!" ("it can't search," "it doesn't remember") foreshadow the
+fittings. *Shout-out:* After explaining, give scenarios and have the audience
 call out "fish!" or "bowl!" Examples: "It gave me a wrong fact" (fish). "It
 can't search the web" (bowl). "It's too agreeable" (fish -- temperament). "It
 doesn't remember our last conversation" (bowl -- no memory fitting). Keep it
 fast and fun.
-
-### Slide: Fittings catalog
-
-**Visual:** *(extend)* Fittings added onto the bowl one by one: water (context),
-notepad (memory), camera/ears (multimodal), tubes to the outside (tools/MCP),
-alarm clock (scheduled tasks), recipe cards (skills).
-
-**Animation:** Each fitting appears on the bowl as it's named.
-
-**Text:** Labels for each fitting as they appear. Final label: "The fittings
-decide what the fish can reach."
-
-**Narration:** "The bowl has fittings. Water -- that's the context, what the fish
-can see right now. A notepad -- memory, what it remembers between conversations.
-A camera and ears -- multimodal input, photos, voice. Tubes to the outside --
-tools, web access, connections to other services. An alarm clock -- scheduled
-tasks, the fish works while you sleep. Recipe cards -- skills, reusable
-instructions you don't have to rewrite every time. The fittings decide what the
-fish can do. Big vendors sell a fish already installed in a bowl, which is why
-people conflate them -- but they are separable."
-
-**Notes:** This is a rapid catalog, not deep dives -- each fitting gets expanded
-in its own station (7, 8, 9). Keep energy up; this should feel like opening a
-toolbox.
-
-### Slide: Citations ladder
-
-**Visual:** *(illustrate)* Three-rung ladder demo. Rung 1: "Tell me about X"
-(no sources). Rung 2: "...with sources" (citations present but unverified).
-Rung 3: "...with verified sources" (model used tools to check URLs).
-
-**Animation:** Each rung appears in sequence. The gap between rung 2 and rung 3
-is highlighted in red -- the dangerous gap.
-
-**Text:** Rung 1: "No sources." Rung 2: "With sources (unverified -- the
-dangerous gap)." Rung 3: "With verified sources (tool-checked)."
-
-**Narration:** "Here's the first fitting in action -- the tubes. Three levels of
-sourcing. First: no sources. You're trusting the fish. Second: 'with sources' --
-and here's where it gets dangerous. The fish can fabricate citations that look
-real. The appearance of sourcing manufactures unearned trust. Third: 'with
-verified sources' -- the fish actually uses its tools to check that the URLs
-exist and say what it claims. The danger lives in the gap between the second and
-the third: unverified sourcing is more dangerous than no sourcing at all."
-
-**Notes:** *Demo: three-rung citations.* This is the first demonstration of a
-fitting changing what the fish can *know*, not just what it can do. The demo
-needs the tubes fitting to mean anything, which is why it lives here rather
-than at station 4.
-
----
-
-## Station 7 - Context: the window
 
 ### Slide: Context window -- bounded water
 
@@ -618,19 +580,55 @@ Beat. "This is also where iteration lives: the first output is raw material, not
 a finished product. Refine it, have the fish critique itself. But iterating only
 pays off when the thread is clean. If the water is salted, restart."
 
-**Notes:** Methods: restart vs. repair, iteration, critique loops. The practical
+**Notes:** Bridge out: "The water holds only what you pour in. What about
+everything the fish doesn't have -- anything after the books ended, or the sources
+it claimed?" Methods: restart vs. repair, iteration, critique loops. The practical
 test: "Is this thread salted?" Personal story -- this is felt from real
 experience working with LLMs.
 
-### Slide: Memory oversharing
+---
 
-**Visual:** *(illustrate)* Mockup of an inflated/incorrect memory entry. Example:
+## Station 7 - First fittings: reaching out to know
+
+### Slide: Tubes, first use -- web search + the citations ladder
+
+**Visual:** *(extend)* The tubes fitting attaches to the bowl -- the first
+fitting. Then *(illustrate)* three-rung ladder demo. Rung 1: "Tell me about X"
+(no sources). Rung 2: "...with sources" (citations present but unverified).
+Rung 3: "...with verified sources" (model used tools to check URLs).
+
+**Animation:** Each rung appears in sequence. The gap between rung 2 and rung 3
+is highlighted in red -- the dangerous gap.
+
+**Text:** Rung 1: "No sources." Rung 2: "With sources (unverified -- the
+dangerous gap)." Rung 3: "With verified sources (tool-checked)."
+
+**Narration:** "Remember the Recent Events region of the fish's map -- the books
+ended. And the fish will happily invent a source. Wouldn't it be nice if it could
+look things up, or check its own sources? That's our first fitting: tubes to the
+outside." *(Tubes attach to the bowl.)* "Three levels of sourcing. First: no sources. You're trusting the fish. Second: 'with sources' --
+and here's where it gets dangerous. The fish can fabricate citations that look
+real. The appearance of sourcing manufactures unearned trust. Third: 'with
+verified sources' -- the fish actually uses its tools to check that the URLs
+exist and say what it claims. The danger lives in the gap between the second and
+the third: unverified sourcing is more dangerous than no sourcing at all."
+
+**Notes:** *Demo: three-rung citations.* Opens station 7. First fitting on the
+bowl, and the first time a fitting changes what the fish can *know*. New limit it
+introduces: whatever comes back through the tube is untrusted material poured into
+the water (sets up injection, station 9).
+
+### Slide: The notepad -- memory (and oversharing)
+
+**Visual:** *(extend)* The notepad fitting attaches to the bowl. Then *(illustrate)* Mockup of an inflated/incorrect memory entry. Example:
 a resume-drafting session where the model stored exaggerated claims as persistent
 "facts" about the user.
 
 **Text:** "It's taking notes about you. Are they accurate?"
 
-**Narration:** "If memory is on, the fish is taking notes about you between
+**Narration:** "Goldfish have a famous three-second memory -- and so does ours:
+the bowl is emptied between conversations. Unless you give it a notepad." Beat.
+"If memory is on, the fish is taking notes about you between
 conversations -- and it may store things you did not intend to persist." Tell the
 resume-inflation story: "I was drafting resume bullet points -- stretching things
 the way you do on a resume -- and the model stored those as facts about my
@@ -638,11 +636,38 @@ experience. Weeks later it was citing them back to me as things I could do.
 Memory audit: go look at what it has stored about you. Delete what should not be
 there."
 
-**Notes:** Method: memory audit. This is a personal story -- tell it as one.
+**Notes:** Methods: memory, memory audit. Memory sits in the instruction
+hierarchy (station 6) as another thing already in the water. Also sets up the
+sleeper attack (station 9). Bridge out: "Now it can read and remember. Can it
+*do* anything?" This is a personal story -- tell it as one.
 
 ---
 
-## Station 8 - Agency: tool use
+## Station 8 - The tank: reaching out to do
+
+### Slide: Strawberry -- the fish writes a tool
+
+**Visual:** *(illustrate)* Strawberry demo: first, the model gives a wrong
+letter count for "strawberry." Then, asked to write a script, it produces correct
+output.
+
+**Animation:** Wrong answer appears, then a script is requested, then the
+correct answer appears from the script output.
+
+**Text:** "How many Rs in 'strawberry'?" -> Wrong answer. "Write a script to
+count them." -> Correct answer.
+
+**Narration:** "Remember the Counting region of the fish's map? Quick demo. Ask the fish: how many Rs in 'strawberry'? It gets it
+wrong -- this is a classic failure, and checking is trivial. But instead of
+checking yourself, ask: 'write a script that counts the letters.' Now the fish
+reaches outside itself and gets the right answer. The tubes now carry actions out, not
+just information in. You just crossed from 'a chatbot that says things' to 'a
+system that does things.'"
+
+**Notes:** *Demo: live strawberry example.* Opens station 8. Callback to the
+Counting region (station 4); the pre-captured letter-count screencap (B1) lives
+here now. Cognitive shift: "chatbot that says" -> "system that does." Method:
+code execution.
 
 ### Slide: Agency -- the fish acts
 
@@ -690,13 +715,39 @@ packaged instructions being loaded.
 **Text:** "Alarm clock: the fish works while you sleep." / "Recipe cards: reusable
 playbooks you don't rewrite every time."
 
-**Narration:** "Two more fittings worth knowing. The alarm clock -- scheduled
-tasks: set the fish to run daily briefings, monitoring, periodic reports. It
-works while you sleep. And recipe cards -- skills: packaged instructions for
-recurring tasks, so you don't re-specify the same constraints every time."
+**Narration:** "Remember: the fish sleeps until you talk to it. Unless the tank
+has an alarm clock -- scheduled tasks: set the fish to run daily briefings, monitoring, periodic reports. It
+works while you sleep. And if you're tired of re-specifying the same
+constraints every time -- recipe cards. Skills: packaged instructions for recurring
+tasks."
 
-**Notes:** Methods: scheduled tasks, skills/playbooks. Brief -- catalog energy,
-not deep dive.
+**Notes:** Methods: scheduled tasks, skills/playbooks. Each fitting answers a felt limit:
+alarm clock <- "sleeps until woken" (station 3); recipe cards <- re-specifying
+(specification, station 4). Brief.
+
+### Slide: The tank -- fittings catalog (recap)
+
+**Visual:** *(extend)* Pull back to reveal the whole assembly: the bowl has become
+a tank. The fittings already introduced (water, tubes, notepad, alarm clock, recipe
+cards) are all visible; camera/ears (multimodal) and a microphone (voice) are added
+as quick extras.
+
+**Animation:** Zoom out from the bowl to the full tank; the two new fittings pop on
+last.
+
+**Text:** Labels for each fitting as they appear. Final label: "The fittings
+decide what the fish can reach."
+
+**Narration:** "Look at what we've built. Water -- the context. Tubes -- search,
+tools, connections to other services. A notepad -- memory. An alarm clock. Recipe
+cards. And a couple more worth knowing: a camera and ears -- photos, screenshots,
+voice -- and a microphone for talking out loud. The bowl has become a tank. The
+fittings decide what the fish can reach. Big vendors sell a fish already installed in a bowl, which is why
+people conflate them -- but they are separable."
+
+**Notes:** Closes station 8. A recap, not an introduction: every fitting except
+camera/ears and microphone has already arrived on its own felt limit. Microphone is a
+candidate to cut. Bridge out: every fitting widens the blast radius (station 9).
 
 ---
 
@@ -757,7 +808,7 @@ the people-pleaser fish will say 'sure, I'll do that' just as eagerly as it
 says it to you. There is no parameterized-query equivalent; the fix is
 architectural."
 
-**Notes:** Sycophancy callback to station 4 -- the people-pleaser eagerly
+**Notes:** Sycophancy callback to station 3 -- the people-pleaser eagerly
 complies with injected instructions too.
 
 ### Slide: Poisoned-water effects
@@ -989,7 +1040,7 @@ introduced the capability; station 12 asks who is responsible for using it.
 
 ### Slide: The review ladder
 
-**Visual:** *(extend)* Reuses the citations-ladder visual from station 6, now
+**Visual:** *(extend)* Reuses the citations-ladder visual from station 7, now
 with review-ladder rungs: self-review -> correlated agent review -> adversarial
 review -> human review.
 
@@ -1091,7 +1142,6 @@ must have earned this by now.
 
 - Benjamin Bradley
 - email via education at wegeekout - com (can be displayed visually on screen, but should not be scrapable in code)
-
 
 ---
 

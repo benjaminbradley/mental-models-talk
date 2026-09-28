@@ -26,8 +26,8 @@ exactly one doc; others link to it rather than copy it.
   what each image looks like, how it evolves across stations, and what visual properties
   carry meaning. Medium volatility; the index to artwork that needs to be generated.
 - `slides-outline.md` — per-slide visual and narration content, organized by station;
-  slide numbering is deferred until the deck is assembled. High volatility; currently
-  only the pre-talk and station 1 slides are drafted.
+  slide numbering is deferred until the deck is assembled. High volatility; drafted
+  through station 13 (some slides still TBD).
 - `open-questions-and-ideas.md` — unresolved design questions, candidate metaphors,
   and content ideas/stories not yet placed on the arc. High volatility; the working
   scratchpad. The arc links here for anything still being chosen.

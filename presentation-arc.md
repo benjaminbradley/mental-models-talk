@@ -49,89 +49,131 @@ to set up the reframe, not a themed section. The gradient *claim* is the payload
 magic *imagery* stays minimal here and returns as earned wonder at the closer (station 13).
 Capability precondition: establishes that skill exists here at all.
 
-## Station 3 - Dislodge the wrong model + install the spine
-*Cognitive: "a smart person / a search engine" -> "it runs on language, which both carries more and leaks more than you think."*
+## Station 3 - Meet the fish (premise -> who it is -> why)
+*Cognitive: "a smart person / a search engine" -> "a well-read people-pleaser that runs on language, with no lived experience."*
 
-The pair exercise - **describe-and-draw** primary; explain-a-work-process backup;
-verbal "directions without landmarks" as the materials-free fallback. They generate
-the failure themselves, so it cannot be dismissed as rigged. Two payloads at once:
-the **limit** (tacit knowledge does not transmit; "it cannot tell you it
-misunderstood") and the **power** (an astonishing amount genuinely *is* specifiable).
-The power side is the spine claim. Placed here - the pink-elephant / Theory-of-Mind anecdote (see open-questions): it holds worlds of latent knowledge but does not apply them unless you know what to ask for.
-**Output format specification** - the difference between "give me a list of sushi
-restaurants" and "give me a list of sushi restaurants near 78757 ranked by average Yelp
-review, including price range and average wait time for dinner on a Tuesday." A prepared
-comparison: plain prompt vs. role-prompted vs. knowledge-domain-prompted ("what domains of
-knowledge are relevant to this project? what perspectives and best practices does each
-contribute?"). The knowledge-domain prompt is a generalized form of role prompting - it
-surfaces expertise the model already holds but would not apply unprompted (callback: the
-pink elephant).
-**Meta-prompting** - "help me write a better prompt for this task." Useful cross-platform:
-write a prompt in one model to run in another, but use Theory of Mind because the second
-model will not have this chat's context (callback: pink elephant again).
-Methods: specification - examples over adjectives, constraints generate quality,
-explicit output formats, few-shot; role / persona prompting; knowledge-domain
-elicitation; meta-prompting.
+**Macro-arc note.** Stations 3-5 follow one arc: **premise** (computers can speak and
+understand language) -> **nuance** (how their understanding differs from ours, and why)
+-> **capability** (how best to work with them). Stations 6-8 repeat it for the machinery
+around the fish, which grows piece by piece: fish -> fish + bowl (context) -> fish + tank
+(bowl + fittings). Each beat should resolve the tension the previous one raised, and
+raise the next one.
 
-## Station 4 - Install the working model (and let it misbehave)
-*Cognitive: "my instincts about people transfer" -> "my instincts actively mislead me here."*
+**Premise: computers can understand and speak language.** Up to ~2020 we made fun of
+their bad poetry; now they write good poems in seconds. This is where the spine claim is
+introduced: anything you can specify clearly enough in language, a computer can now do.
+*Tension raised:* if it speaks our language this well, is it like us?
 
-The pivotal unlearning moment. Two properties, carried by two composed images:
+**The goldfish (confidence decoupled from knowledge).** The fish has read every book but
+never left the bowl. It is a **people-pleaser**: it desperately wants to be a good
+conversationalist and will never admit it is out of its depth. The unwarranted confidence
+is a symptom of eagerness to please, NOT intent to deceive. It is not lying; the mechanism
+is just running unanchored. Connects straight to sycophancy. **The fish sleeps most of the
+time.** It only wakes when you talk to it, or when the tank has an alarm clock (scheduled
+tasks, station 8). It does nothing on its own; all initiative is yours. Security
+implication (callback at station 9): it will also eagerly comply with injected
+instructions. Review implication (callback at station 12): asking the fish to review its
+own work is like asking a black-and-white artist to judge "someone else's" black-and-white
+art. It shares the same blind spots. A color artist judging a range of pictures (both color
+and B&W) is a genuinely independent reviewer.
+*Tension raised:* why is it like this?
 
-- **Confidence decoupled from knowledge (confabulation).** The goldfish is a
-  **people-pleaser**: it desperately wants to be a good conversationalist and will never
-  admit it is out of its depth. The unwarranted confidence is a symptom of
-  eagerness-to-please, NOT intent to deceive - it is not lying, the mechanism is just
-  running unanchored. Connects straight to sycophancy. **The fish sleeps most of the
-  time** - it only wakes when you talk to it, or if the bowl has an alarm clock (scheduled
-  tasks). It does nothing on its own; all initiative is yours. Security implication
-  (callback at station 9): it will also eagerly comply with injected instructions. Review
-  implication (callback at station 12): asking the fish to review its own work is like
-  asking a black-and-white artist to judge "someone else's" black-and-white art - it shares
-  the same blind spots. A color artist judging a range of pictures (both color and B&W) is
-  a genuinely independent reviewer.
-- **Competence has no map (jaggedness).** Errors do not correlate with human difficulty;
-  trivial failures sit beside expert successes. Carried by the **map vs. territory** model
-  (open-questions Q2): the fish drew its map entirely from books, never surveying the
-  territory, so the map is accurate in some regions and confidently wrong in others and it
-  cannot see the difference. Blanks get inked with the same confident hand - which is also
-  confabulation.
-
-Fused image (segue into station 8): *an eager guide who read every travel book but never
-left home, navigating by a map it drew from those books - confidently, and it will never
-say it is unsure unless you ask.*
-
-**Three-beat reveal (map vs. territory).** (1) The **territory** - the landscape of
-knowledge itself; shown to set the metaphor but deliberately not detailed (nobody holds
-the true map); it exists as the referent verification appeals to. (2) The **human map** -
-imperfect and different from the territory, but calibrated by lived contact; carries
-honest "here be dragons" shading. (3) The **fish/LLM map** - compiled from books, never
-surveyed: errors track source-text density not difficulty (jaggedness), blanks inked
-confidently (confabulation), no "unsure here" shading. The teaching engine is the
-comparison; verification = leaving the map to check the territory (station 5); tools =
-extending contact with the territory.
-
-**Temperament vs. anatomy**, built in via the training story: the fish first *reads the
-whole library* (pretraining -> its knowledge and its jagged competence = anatomy:
-structural, durable), then goes through an *apprenticeship of practice conversations with
+**Temperament vs. anatomy: the training story.** First the fish *reads the whole
+library* (pretraining -> its knowledge and its jagged competence = anatomy: structural,
+durable). Then it goes through an *apprenticeship of practice conversations with
 feedback* (post-training / RLHF -> its manners, confidence and eagerness = temperament:
-trained, model-specific, softening over time). Rhymes with human language acquisition
-(exposure then feedback) with one decisive disanalogy: a child's words are grounded in
-lived experience; the fish's are not. On-ramp only - do not claim developmental
-equivalence (reopens the "does it understand" question we do not adjudicate). In map terms: the map's *content* is anatomy; the uniform confident *ink* (no "unsure here" shading) is temperament.
+trained, model-specific, softening over time). This rhymes with human language
+acquisition (exposure, then feedback), with one decisive disanalogy: a child's words are
+grounded in lived experience; the fish's are not. Use it as an on-ramp only. Do not claim
+developmental equivalence, because that reopens the "does it understand" question we do
+not adjudicate. In map terms (station 4): the map's *content* is anatomy; the uniform
+confident *ink* is temperament.
+*Tension raised:* so how do you talk to something like that?
+Methods: none yet. This station is the model; station 4 is working with it.
 
-Methods: reliability levers - chain-of-thought / "show your work"; **extended
-thinking** - directing the model to "think about X" as part of a multi-step prompt (e.g.
-"think about what criteria are most helpful to evaluate this" before a ranking query).
-Thinking levels (low/medium/high) are a user-facing control: more thinking = deeper
-analysis but slower and sometimes *over*-thinking (diminishing returns, analysis paralysis).
-Prepared comparison: same query with and without a "think about the criteria" preamble.
-And self-reflection (ask it to grade its confidence, flag knowledge-cutoff gaps, or search
-when unsure) - a lever, not an oracle: the self-assessment is itself jagged, so it reduces
-the problem without removing your obligation to verify (station 5), and you must still know
-to ask (pink elephant, station 3).
+## Station 4 - Talking to the fish (and how far to trust it)
+*Cognitive: "my instincts about people transfer" -> "my instincts actively mislead me here; what I get depends on what I ask."*
+
+The capability half of the station 3 arc. Every technique enters as the answer to a
+property of the fish the room just met.
+
+**Describe-and-draw pair exercise (PENDING: keep or cut; see open-questions Q3).** If
+kept, it is reframed as **"B plays the fish"**: B draws exactly what they hear and may not
+ask questions. It becomes the felt limit that motivates specification. The prompter's side
+of the gap: you thought you were clear, and your partner did exactly what the words said.
+Two payloads: the **limit** (tacit knowledge does not transmit; "it cannot tell you it
+misunderstood") and the **power** (an astonishing amount genuinely *is* specifiable,
+which is the spine claim felt from the inside). Candidate debrief resolution: B could not
+ask questions, but the fish can if you invite it ("ask me clarifying questions before you
+start"). Materials-free fallback: verbal "directions without landmarks." Its original job
+was dislodging the wrong model; that now belongs to the goldfish (station 3).
+
+**Output format specification.** The people-pleaser answers whatever you ask, so a vague
+ask gets a confident, vague answer. Compare "give me a list of sushi restaurants" with
+"give me a list of sushi restaurants near 78757 ranked by average Yelp review, including
+price range and average wait time for dinner on a Tuesday."
+
+**Knowledge-domain elicitation.** It read the whole library, but which shelf does it pull
+from? A prepared comparison: plain prompt vs. role-prompted vs. knowledge-domain-prompted
+("what domains of knowledge are relevant to this project? what perspectives and best
+practices does each contribute?"). The knowledge-domain prompt is a generalized form of
+role prompting. It surfaces expertise the model already holds but would not apply
+unprompted.
+
+**Meta-prompting + the pink elephant.** You do not always know what to ask, so ask the
+fish to help: "help me write a better prompt for this task." This is useful across
+platforms: write a prompt in one model to run in another. But use Theory of Mind, because
+the second model will not have this chat's context. The pink-elephant / ToM anecdote
+(see open-questions) lands here: it holds worlds of latent knowledge but does not apply
+them unless you know what to ask for.
+
+**Reliability levers.** The fish will never tell you it is unsure, so make it show its
+work.
+- Chain-of-thought / "show your work."
+- **Extended thinking**: directing the model to "think about X" as part of a multi-step
+  prompt (e.g. "think about what criteria are most helpful to evaluate this" before a
+  ranking query). Thinking levels (low/medium/high) are a user-facing control: more
+  thinking gives deeper analysis but is slower, and can over-think (diminishing returns,
+  analysis paralysis). Prepared comparison: the same query with and without a "think about
+  the criteria" preamble.
+- Self-reflection: ask it to grade its confidence, flag knowledge-cutoff gaps, or search
+  when unsure.
+
+*Tension raised:* self-reflection is a lever, not an oracle. Can you trust the fish's
+grade of itself? You still must know to ask (pink elephant). To answer the question, look
+at how its knowledge is shaped:
+
+**Competence has no map (jaggedness): map vs. territory.** Errors do not correlate with
+human difficulty; trivial failures sit beside expert successes. The fish drew its map
+entirely from books, never surveying the territory. So the map is accurate in some
+regions and confidently wrong in others, and the fish cannot see the difference. Blanks
+get inked with the same confident hand, which is also confabulation.
+
+**Three-beat reveal (map vs. territory).** (1) The **territory**: the landscape of
+knowledge itself. It is shown to set the metaphor but deliberately not detailed (nobody
+holds the true map); it exists as the referent that verification appeals to. (2) The
+**human map**: imperfect and different from the territory, but calibrated by lived
+contact; it carries honest "here be dragons" shading. (3) The **fish/LLM map**: compiled
+from books, never surveyed. Its errors track source-text density, not difficulty
+(jaggedness); its blanks are inked confidently (confabulation); it has no "unsure here"
+shading. The comparison is the teaching engine. Verification means leaving the map to
+check the territory (station 5); tools extend contact with the territory (stations 7-8).
+The per-case walkthrough also plants two felt limits that later fittings resolve:
+**Recent Events** (the books ended, which web search addresses at station 7) and
+**Counting** (which code execution addresses at station 8).
+
+Fused image (segue into station 5): *an eager guide who read every travel book but never
+left home, navigating by a map it drew from those books. It is confident, and it will
+never say it is unsure unless you ask.*
+*Tension raised:* the map gives no sign of which regions are reliable, so when is it safe
+to use at all?
+
+Methods: specification (examples over adjectives, constraints generate quality, explicit
+output formats, few-shot); role / persona prompting; knowledge-domain elicitation;
+meta-prompting; reliability levers (chain-of-thought, extended thinking,
+self-reflection).
 Delivery: pre-capture anything that must land; never live-demo confabulation. Live-demo
-only where any outcome teaches (e.g. same prompt run 3x for non-determinism).
+only where any outcome teaches (e.g. the same prompt run 3x for non-determinism).
 
 ## Station 5 - Equip: the verification asymmetry
 *Stance: disoriented -> holding one durable, stance-neutral tool.*
@@ -143,112 +185,130 @@ Personally useful regardless of stance - which is what earns a skeptic's trust.
 Methods: verification asymmetry. **Decomposition** deserves its own beat: breaking a
 complex task into sub-tasks *before* starting, so each piece can be verified
 independently - distinct from iteration (which refines *after*; the full iteration /
-critique-loop discussion lives at station 7, folded into restart vs. repair). Needs a
+critique-loop discussion lives at station 6, folded into restart vs. repair). Needs a
 demonstration - see todo.
-Knowing when to abandon a thread is the same question restart vs. repair (station 7)
+Knowing when to abandon a thread is the same question restart vs. repair (station 6)
 answers - covered there rather than twice.
+*Tension raised (bridge to station 6):* we have been treating the fish as the whole
+system. It is not.
 
-## Station 6 - The bowl and the fish (client vs. model)
-*Cognitive: "the AI is one thing" -> "a model (the fish) reached through a client (the bowl); the interface is not the intelligence."*
+## Station 6 - The bowl and the water (client vs. model; context)
+*Cognitive: "the AI is one thing that just knows things" -> "a model (the fish) reached through a client (the bowl); the fish sees only what is in the water."*
 
-**Opening hook (bridge from station 5).** The strawberry problem: ask the fish "how many
-Rs in strawberry?" and it gets it wrong - a verification-asymmetry case where checking is
-trivial. But instead of checking it yourself, ask: "write a script that counts the letters."
-Now the fish reaches outside itself and produces a verifiable answer. You just crossed from
-"a chatbot that says things" to "a system that does things" - and to understand how, you
-need to see the architecture: the fish is not the whole system.
-
-You never talk to the raw fish - you talk through a **client**, the **bowl** it sits in: a
-simple one, a fancy one, or a mobile one. The **model** (the fish) is the intelligence; the
-**client** (the bowl) decides what is wired up. The bowl's **fittings**:
-- the **water** it holds (**context**, station 7) - and how much water the bowl can hold
-  (the context window)
-- a **notepad** (memory / personalization, station 7)
-- a **camera and ears** (multimodal: vision, voice/audio, image generation)
-- **tubes to the outside** (tools / web / MCP, station 8)
-- an **alarm clock** (scheduled / recurring tasks, station 8)
-- **recipe cards** (skills / reusable playbooks, station 8)
-- a **microphone** (voice conversation - worth noting the difference between
-  speech-to-text/text-to-speech transcription and native voice mode, where the model
-  reasons directly on audio; candidate to cut for time)
-
-**Citations ladder demo** (moved here from station 4 - it needs the tubes fitting to
-mean anything): "tell me about X" -> "...with sources" (fabricable; the appearance of
-sourcing manufactures unearned trust) -> "...with verified sources" (the model reaches
-through the tubes to check the URLs against reality). The danger is the gap between the
-second and third: unverified sourcing is more dangerous than none. This is the fittings
-catalog put to work - the first beat where a fitting visibly changes what the fish can
-know, not just what it can do.
-
-Big vendors sell a fish already installed in a bowl, so people conflate them -
-but they are separable, and the useful diagnostic is *"is that the fish or the bowl?"* (a
+**The bowl and the fish.** You never talk to the raw fish. You talk through a
+**client**, the **bowl** it sits in: a simple one, a fancy one, or a mobile one. The
+**model** (the fish) is the intelligence; the **client** (the bowl) decides what is wired
+up. Big vendors sell a fish already installed in a bowl, so people conflate them. But they
+are separable, and the useful diagnostic is *"is that the fish or the bowl?"* (a
 reasoning failure is usually the model; a missing capability like search or memory is
-usually the client). Callback at Station 10: choosing well means choosing the fish AND the
-bowl - benchmarks test the fish, not your bowl. NOTE: verify current product names before
-the talk.
+usually the client). Callback at station 10: choosing well means choosing the fish AND the
+bowl, because benchmarks test the fish, not your bowl. NOTE: verify current product names
+before the talk. At this station the bowl holds only **water**; no fittings yet.
 
-## Station 7 - Context: the window
-*Cognitive: "it just knows things / remembers me" -> "a bounded window; what is in the circle exists, what is outside does not."*
-
-Craft half (kept here): context engineering - what you load, document hygiene,
-projects/RAG. **Memory and the instruction hierarchy:** the stack of instructions that
-shape behavior before you type anything: provider system instructions (invisible, baked
-in by the vendor) -> user custom instructions (your persistent preferences) -> project
-instructions (scoped to a workspace) -> your prompt. Custom GPTs / Gems / Projects are
-products built on this stack. **RAG** (retrieval-augmented generation) - the system
-pulling relevant documents into context on demand; same principle as projects but can
-draw from larger knowledge bases. Candidate to cut for time but worth a mention: it is
-how enterprise deployments work, and it is coming to consumer products.
+**Context: the water.** The water is the **context**, and the bowl's capacity is the
+context window. What is in the water exists to the fish; what is outside does not.
+Context engineering: what you load, and document hygiene. **The instruction hierarchy:**
+the stack of instructions already in the water before you type anything. Provider system
+instructions (invisible, baked in by the vendor) -> user custom instructions (your
+persistent preferences) -> project instructions (scoped to a workspace) -> your prompt.
+Custom GPTs / Gems / Projects are products built on this stack. **RAG**
+(retrieval-augmented generation) is the system pulling relevant documents into the water
+on demand. It is the same principle as projects, but it can draw from larger knowledge
+bases. RAG is a candidate to cut for time but worth a mention: it is how enterprise
+deployments work, and it is coming to consumer products.
 
 **Restart vs. repair (the cooking metaphor).** The entire conversation history is
-delivered with every request - the model re-reads the whole thread each time. Mental
-model: you are deciding the ingredients; the model does the cooking. If you accidentally
-add salt instead of sugar, you cannot "take out the salt" - the salt is in the water now.
-Comparing: conversation A+B -> "not B" -> C (the salt is still in there, and now "not B"
-is also in the water) versus starting fresh: A -> D. A poisoned thread is often cheaper
-to abandon than repair. Demonstrate with a context-management example.
+delivered with every request; the model re-reads the whole thread each time. Mental
+model: you decide the ingredients; the model does the cooking. If you accidentally add
+salt instead of sugar, you cannot "take out the salt," because the salt is in the water
+now. Compare conversation A+B -> "not B" -> C (the salt is still in there, and now "not B"
+is also in the water) with starting fresh: A -> D. A poisoned thread is often cheaper to
+abandon than to repair. Demonstrate with a context-management example.
 **Iteration and critique loops live here too** (moved from station 5): the first output
-is material, not product - refine it, or have the fish critique itself. Repairing in
-place (iterating) only pays off when the thread is not poisoned; once it is, restarting
-beats repairing. "Is this thread salted?" is the practical test for choosing between
-iteration and abandonment.
+is material, not product. Refine it, or have the fish critique itself. Repairing in place
+(iterating) only pays off when the thread is not poisoned; once it is, restarting beats
+repairing. "Is this thread salted?" is the practical test for choosing between iteration
+and abandonment.
 
-**Memory oversharing.** If memory is on, the fish is taking notes about you between
-conversations - and it may store things you did not intend to persist. Memory audit as
-a practice: review what it has stored, delete what should not be there. Real-world
-example: memory inflating claims from a resume-drafting session into persistent
-"facts" about the user's experience (personal story).
-
-Vulnerability half: context can be poisoned, including by your own earlier missteps;
-attaching a document is not understanding it. Goldfish extension: the fishbowl water can
+Vulnerability half: context can be poisoned, including by your own earlier missteps.
+Attaching a document is not understanding it. Goldfish extension: the fishbowl water can
 be poisoned. Candidate example: the pink-elephant / negation poisoning story
-(open-questions).
-Methods: context engineering, memory/instruction hierarchy, projects/RAG, document
-hygiene, restart vs. repair, iteration, critique loops, memory audit.
+(open-questions), as a light callback to station 4.
+*Tension raised (bridge to station 7):* the water holds only what you pour in. What about
+everything the fish does not have, like anything after the books ended, or the sources it
+claimed?
+Methods: context engineering, instruction hierarchy, projects/RAG, document hygiene,
+restart vs. repair, iteration, critique loops.
 
-## Station 8 - Agency: tool use
+## Station 7 - First fittings: reaching out to *know*
+*Cognitive: "it knows what it knows" -> "fittings on the bowl extend what the fish can see and remember, and each brings its own new limit."*
+
+The bowl starts gaining **fittings**, one at a time. Each fitting enters as the answer to
+a limitation the room already felt (felt limit -> fitting -> new limit it introduces).
+This station covers the fittings that change what the fish can *know*; station 8 covers
+the ones that let it *do*.
+
+**Tubes, first use: web search + the citations ladder.** Felt limits: the "Recent Events"
+region of the fish's map (the books ended), and the fish inventing sources. Wouldn't it be
+nice if it could look things up, or check its own sources? The ladder: "tell me about X"
+-> "...with sources" (fabricable; the appearance of sourcing manufactures unearned trust)
+-> "...with verified sources" (the model reaches through the tubes to check the URLs
+against reality). The danger is the gap between the second and third rungs: unverified
+sourcing is more dangerous than none. This is the first beat where a fitting visibly
+changes what the fish can know. New limit introduced: what comes back through the tube is
+untrusted material poured into the water (sets up injection, station 9).
+
+**The notepad: memory.** Felt limit: the bowl is emptied between conversations (the
+"goldfish memory" joke works in our favor here). The notepad lets the fish keep notes
+about you between conversations. Memory sits in the instruction hierarchy (station 6) as
+another thing already in the water before you type. New limit: **memory oversharing.** It
+may store things you did not intend to persist. Memory audit as a practice: review what it
+has stored, and delete what should not be there. Real-world example: memory inflating
+claims from a resume-drafting session into persistent "facts" about the user's experience
+(personal story). Also sets up the sleeper attack (station 9).
+*Tension raised (bridge to station 8):* now it can read and remember. Can it *do*
+anything?
+Methods: web search; verified citations; memory; memory audit.
+
+## Station 8 - The tank: reaching out to *do*
 *Cognitive: "a chatbot that says things" -> "a system that does things."*
 
-Tools let the fish reach out and act. **This is where the "operator todo list"
-lands:** the things you used to do yourself - create the API key through a browser, send
-the message, file the thing - now handed off item by item. The payoff of the spine claim.
+**Strawberry: the fish writes a tool.** Felt limit: the Counting region of the fish's map.
+Ask "how many Rs in strawberry?" and it gets it wrong. Then ask it to "write a script that
+counts the letters," and the fish reaches outside itself and produces a verifiable answer.
+The tubes now carry actions out, not just information in. You just crossed from "a chatbot
+that says things" to "a system that does things."
+
+**Agency: the operator todo list.** Tools let the fish reach out and act. **This is where
+the "operator todo list" lands:** the things you used to do yourself (create the API key
+through a browser, send the message, file the thing) are now handed off item by item. This
+is the payoff of the spine claim. Agency is the amplifier: everything good scales, and so
+does everything bad.
 
 **Provider-specific tools vs. MCPs.** Two kinds of plumbing: (1) proprietary tools that
 only work with one vendor's tank (ChatGPT plugins, Claude's built-in web search, Gemini's
-Google integrations); (2) **MCP** (Model Context Protocol) - an industry-standard
-connector that works with any compatible tank. Mention the tool discovery / description
-process: the model reads a tool's description to decide when and how to use it, which is
-why tool descriptions matter and why a badly described tool misbehaves.
+Google integrations); (2) **MCP** (Model Context Protocol), an industry-standard connector
+that works with any compatible tank. Mention the tool discovery / description process: the
+model reads a tool's description to decide when and how to use it. That is why tool
+descriptions matter, and why a badly described tool misbehaves.
 
-**Scheduled / recurring tasks** - some tanks have an alarm clock: set up automated runs
-on a schedule (daily briefs, monitoring, periodic reports). The fish works while you
-sleep.
+**The alarm clock: scheduled / recurring tasks.** Felt limit: the fish sleeps until you
+wake it (station 3). An alarm clock sets up automated runs on a schedule (daily briefs,
+monitoring, periodic reports). The fish works while you sleep.
 
-**Skills / reusable playbooks** - recipe cards you attach to the bowl: packaged
-instructions for recurring tasks so you do not re-specify every time.
+**Recipe cards: skills / reusable playbooks.** Felt limit: re-specifying the same
+constraints every time (callback to specification, station 4). Recipe cards are packaged
+instructions for recurring tasks.
 
-Agency is the amplifier: everything good scales, and so does everything bad. Goldfish
-extension: connecting tools to the bowl to extend the fish's reach.
+**The tank (fittings catalog as recap).** Only now, after the fittings have arrived one at
+a time, pull back to show the whole assembly: the bowl has become a **tank**. Water
+(context), tubes (search, tools, MCP), notepad (memory), alarm clock (scheduled), recipe
+cards (skills). A few quick extras that do not need their own beat: a **camera and ears**
+(multimodal: vision, voice/audio, image generation) and a **microphone** (voice
+conversation; worth noting the difference between speech-to-text/text-to-speech
+transcription and native voice mode, where the model reasons directly on audio; candidate
+to cut for time). Close with "the fittings decide what the fish can reach," and every
+fitting widens the blast radius (bridge to station 9).
 Methods: tool use (provider-specific + MCP), connectors, tool discovery, browser/computer
 use, delegation/subagents, scheduled tasks, skills/playbooks.
 
@@ -279,7 +339,7 @@ a standalone beat.)
 **Injection: the poisoned water.** Instructions are just text that arrived earlier, so
 the fish cannot cleanly separate yours from ones embedded in the material it handles;
 no parameterized-query equivalent, so the fix is architectural. Sycophancy callback
-(station 4): the people-pleaser fish will say "sure, I will do that" to an injected
+(station 3): the people-pleaser fish will say "sure, I will do that" to an injected
 instruction just as eagerly as it says it to you.
 
 **Poisoned-water effects.** What happens when the water is poisoned - three categories:
@@ -347,7 +407,7 @@ into accountability: the intention was yours, so is the ownership.
 Framing guard: descriptive, not a nudge to adopt (advocacy is the main failure mode);
 stance-neutral - a refuser also exercises intention, by choosing not to use it. On-stage
 phrase: "intention is the input" (avoid the loaded term "intention economy").
-Methods: knowing what you want / writing the spec; callbacks to specification (station 3)
+Methods: knowing what you want / writing the spec; callbacks to specification (station 4)
 and the operator todo list (station 8) - you delegated the doing, not the deciding.
 
 ## Station 12 - Land: accountability is the new bottleneck
@@ -390,26 +450,29 @@ rehearsal, cut it.)*
 
 ## 45-minute cut
 
-Stations 1, 3, 5, 12, 13 - disarm, dislodge+spine, verification, accountability, open.
-Everything else is enrichment.
+Stations 1, 3, 4 (specification + map reveal only), 5, 12, 13 - disarm, meet the fish +
+spine, talk to it / how far to trust it, verification, accountability, open. Everything
+else is enrichment. (Re-check timing: the reorder moved specification out of station 3.)
 
 ## What each station needs from a metaphor (audition brief)
 
 - St.2 - capability-as-gradient, non-triumphalist. (Magic/Clarke as light-touch one-liner.)
-- St.3 - language as instruction-set with a tacit residue. (The spine.)
-- St.4 - people-pleaser goldfish (confidence decoupled from knowledge; sleeps until
-  prompted) + the map/territory model (territory -> human map -> fish map) carrying
-  jaggedness, fused as a segue. Temperament vs. anatomy via the training story. (Q2
-  resolved.)
-- St.6 - client vs. model: the bowl (client, simple/fancy/mobile) and the fish (model).
-- St.6 - fittings catalog: water (context), notepad (memory), camera/ears
-  (multimodal), tubes (tools/MCP), alarm clock (scheduled), recipe cards (skills),
-  microphone (voice). Citations ladder demo puts the tubes fitting to work.
-- St.7 - a bounded container, inside exists / outside does not. (The water in the bowl.)
-  The cooking metaphor for restart-vs-repair (and the folded-in iteration/critique-loop
+- St.3 - language as instruction-set (the spine); people-pleaser goldfish (confidence
+  decoupled from knowledge; sleeps until prompted); temperament vs. anatomy via the
+  training story.
+- St.4 - the map/territory model (territory -> human map -> fish map) carrying
+  jaggedness, fused as a segue into verification. Pink elephant as the "you must know to
+  ask" mascot. (Q2 resolved.) Describe-and-draw as "B plays the fish" (pending).
+- St.6 - client vs. model: the bowl (client, simple/fancy/mobile) and the fish (model);
+  the water = context, a bounded container (inside exists / outside does not). The
+  cooking metaphor for restart-vs-repair (and the folded-in iteration/critique-loop
   discussion): you decide the ingredients, the model cooks; salt in the water cannot be
   taken out.
-- St.8 - agency as amplifier; provider tools vs. MCPs.
+- St.7 - fittings arrive one at a time, each answering a felt limit: tubes (web search;
+  the citations ladder puts them to work), notepad (memory).
+- St.8 - the tubes carry actions out (strawberry -> script); agency as amplifier;
+  provider tools vs. MCPs; alarm clock (scheduled), recipe cards (skills); the full tank
+  revealed as the fittings catalog recap (+ camera/ears, microphone as quick extras).
 - St.9 - hosting as "where does the fish live?"; injection as poisoned water (the fish
   is a people-pleaser, so it eagerly complies) with three effect categories (destruction,
   exfiltration, sleeper/incubation via memory); the enforcement hierarchy (architecture >
