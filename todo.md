@@ -64,34 +64,9 @@ Image specs for all metaphors: `metaphor-imagery.md` (single source of truth).
 
 ### Other pre-talk work
 
-- [x] ~~(Waiting) Organizer reply on resources / audience / interaction.~~
-      RECEIVED -- see details below; `materials.md` updated.
 - [ ] Design entry & exit polls (Google Forms + QR codes; measure model accuracy / stance
       movement, not satisfaction). Phone-based (projector confirmed, QR on screen works).
 - [ ] Draft the one-page takeaway card (source: `take-home.md`).
-
-#### Organizer reply (EFF-Austin, received)
-
-Venue & equipment:
-- Projector: yes, HDMI + USB-C (with adapter). Can be finicky but organizer is practiced.
-- Wireless mic: yes, available on-site.
-- Tables: yes, writable surfaces -- participants can write at them.
-
-Audience:
-- Size: 10-30 (varies month to month; at least ~10 since new space, up to ~30).
-- Politically diverse across the spectrum. Smart people, hard questions.
-- Strong feelings about AI in both directions -- morally opposed AND uncritical enthusiasts
-  are both possible. Most attendees are nuanced.
-- Small groups / pair work: encouraged, done regularly.
-
-Format:
-- Organizer does EFF-Austin intro (what EFF-Austin is, upcoming events, news), then
-  introduces Benji's bio and hands off.
-- Audience participation / interaction strongly encouraged.
-
-Note: organizer described the talk as "educating people on how to use AI as a coding tool"
--- the actual scope is broader (mental models for working with LLMs generally). Worth
-clarifying in pre-talk coordination, or the intro will set wrong expectations.
 
 ## Week of Sep 28 - Oct 2 - assembly complete
 
@@ -125,3 +100,26 @@ clarifying in pre-talk coordination, or the intro will set wrong expectations.
 - [ ] station 11 alt example -- default vs custom
 - [ ] consider a reusable recording or write-up -- or publish to GitHub Pages?
 - [ ] re-imagine the talk experience as an improv comedy show: what would it look like to map the step1/step2 features in the presentation's narrative into an analogous setup/reveal joke rhythm? would a scripted show make more sense than improv?
+
+## Organizer reply (EFF-Austin, received)
+
+Venue & equipment:
+- Projector: yes, HDMI + USB-C (with adapter). Can be finicky but organizer is practiced.
+- Wireless mic: yes, available on-site.
+- Tables: yes, writable surfaces -- participants can write at them.
+
+Audience:
+- Size: 10-30 (varies month to month; at least ~10 since new space, up to ~30).
+- Politically diverse across the spectrum. Smart people, hard questions.
+- Strong feelings about AI in both directions -- morally opposed AND uncritical enthusiasts
+  are both possible. Most attendees are nuanced.
+- Small groups / pair work: encouraged, done regularly.
+
+Format:
+- Organizer does EFF-Austin intro (what EFF-Austin is, upcoming events, news), then
+  introduces Benji's bio and hands off.
+- Audience participation / interaction strongly encouraged.
+
+Note: organizer described the talk as "educating people on how to use AI as a coding tool"
+-- the actual scope is broader (mental models for working with LLMs generally). Worth
+clarifying in pre-talk coordination, or the intro will set wrong expectations.
