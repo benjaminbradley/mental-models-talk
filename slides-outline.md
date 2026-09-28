@@ -5,8 +5,9 @@ hears (narration), and speaker notes. Organized by station; slide numbering is
 deferred until the deck is assembled.
 
 Visual language and slide tech (HTML/CSS, presenter view, etc.) are tracked in
-`open-questions-and-ideas.md` (Q8). This doc describes *content*; final visual
-design is a later pass.
+`open-questions-and-ideas.md` (Q8). Metaphor artwork specs (what each image looks
+like and how it evolves) live in `metaphor-imagery.md`; this doc describes per-slide
+*content and narration*. Final visual design is a later pass.
 
 **Slide field conventions:**
 - **Visual:** What the audience sees on screen -- imagery, layout, animation.
@@ -237,33 +238,118 @@ this. Tone: productive disorientation -- their instincts about people (confident
 = knowledgeable) actively mislead here. Cognitive shift: "my instincts about
 people transfer" -> "my instincts actively mislead me."
 
-### Slide: Map vs. territory -- three-beat reveal
+### Slide: Map vs. territory -- the territory
 
-**Visual:** *(new)* Three-layer reveal. Beat 1: the territory (a landscape of
-knowledge/reality -- shown but deliberately not detailed). Beat 2: the human map
-overlaid (imperfect but calibrated by lived contact; carries honest "here be
-dragons" shading). Beat 3: the fish map overlaid (drawn entirely from books;
-confident ink everywhere, no unsure shading; accuracy varies region to region).
+**Visual:** *(new)* The territory -- a vivid, illustrated aerial/topographic landscape
+of knowledge domains. Labeled regions: Poetry & Verse, Spatial Reasoning, Counting &
+Tracking, Recent Events, Everyday Cooking / Regional Cooking, plus background fill
+(History, Law, Medicine). Full color, textured, alive. Centered on screen.
+(Image spec: `metaphor-imagery.md` § The three-layer map/territory.)
 
-**Animation:** Reveal each layer in sequence with a pause between. The contrast
-between the human map's honest gaps and the fish map's uniform confidence is the
-visual punch.
+**Text:** "The territory (reality)."
 
-**Text:** Beat 1: "The territory (reality)." Beat 2: "Your map (calibrated by
-contact)." Beat 3: "The fish's map (drawn from books, never surveyed)."
+**Narration:** "This is reality. The landscape of knowledge. It's big, it's complex,
+and nobody holds a complete picture of it. But it's out there, and you can go check
+it."
 
-**Narration:** "Here's reality -- the territory. Nobody holds a perfect map of
-it." Reveal human map: "Here's your map. It's imperfect, but it's calibrated by
-contact -- you've walked some of this ground. And where you haven't, you know you
-haven't -- you have honest 'here be dragons' zones." Reveal fish map: "Here's the
-fish's map. Drawn entirely from books, never surveyed in person. Where the books
-are dense, the map is great. Where they're thin, it's wrong -- but it's drawn with
-the same confident ink everywhere. It cannot tell you which parts are reliable.
-That is jaggedness: its errors don't correlate with difficulty. And that uniform
-confident ink? That is confabulation."
+**Notes:** Brief -- establish the referent, don't dwell. The audience needs to accept
+"reality exists and maps are representations of it," not memorize regions.
+
+### Slide: Map vs. territory -- the human map
+
+**Visual:** Territory slides right. Human map appears left for side-by-side comparison.
+The human map: same territory shape, rendered as a hand-drawn cartographic map (pen
+strokes, cross-hatching, handwritten labels). Variable ink confidence: firm strokes in
+experienced regions, sketchy/dotted in unfamiliar areas, honest blanks with "here be
+dragons" shading. Clear experience-worn paths connecting high-detail regions.
+(Image spec: `metaphor-imagery.md` § The human map.)
+
+**Animation:** Territory slides right; human map enters from left. Side by side.
+
+**Text:** "Your map (calibrated by contact)."
+
+**Narration:** "Here's your map of that same landscape. It's imperfect -- but it's
+calibrated by contact. You've walked some of this ground, and the paths between
+the places you've been are well-worn. Where you haven't been, you know you haven't
+-- you have honest gaps, honest 'here be dragons' zones. When you're not sure, you
+know you're not sure."
+
+**Notes:** The audience nods -- this is how everyone relates to knowledge. The
+experience-worn paths are important: human knowledge is connected by a trajectory,
+not randomly sampled.
+
+### Slide: Map vs. territory -- the fish map
+
+**Visual:** Human map slides right. Fish map appears left. All three now visible:
+fish map | human map | territory. The fish map: same territory shape, same cartographic
+medium (pen strokes, labels). But: every line is bold and confident (no dotted lines,
+no question marks, no "here be dragons"). Some regions have rich detail, others are
+sparser -- but the sparse regions don't signal their own sparsity. No connected
+experience paths. Compare to territory: Poetry region is accurate; Spatial Reasoning
+is confident but wrong; Recent Events is filled in from pattern; Regional Cooking
+drifts toward mainstream.
+(Image spec: `metaphor-imagery.md` § The fish map, § Jaggedness cases.)
+
+**Animation:** Human map slides right; fish map enters from left. All three visible
+for comparison.
+
+**Text:** "The fish's map (drawn from books, never surveyed)."
+
+**Narration:** "Now here's the fish's map. Drawn entirely from books. Notice
+anything?" (Pause for audience.) "Every line is drawn with the same confident hand.
+There are no question marks. No 'here be dragons.' And where the books were thin,
+there's less detail -- but the fish doesn't flag that as uncertainty. It just drew
+fewer features with full confidence." (Point to comparisons.) "Poetry? Remarkably
+accurate -- lots of good books. Spatial reasoning? Confident and wrong. Counting?
+It loses track of things a child could follow. Recent events? It fills in what
+'must have happened' from pattern, because the books ended before this did."
+
+"That's what people call hallucination -- the model says something false with full
+confidence. It's not a perceptual glitch; it's a consequence of generating plausible
+text without any way to check it against reality. The fish is always doing the same
+thing -- completing patterns from its training. When the patterns happen to align with
+reality, it looks like knowledge. When they don't, it looks like hallucination. The
+fish can't tell the difference, because it's doing the same thing either way."
+
+"And the uneven accuracy -- brilliant at poetry, hopeless at counting -- that's called
+jaggedness. The errors don't follow a difficulty gradient. They follow the density and
+quality of the books the fish had access to."
 
 **Notes:** This is the pivotal teaching image. Give it time. The three-beat reveal
-should feel like a discovery, not a lecture.
+should feel like a discovery, not a lecture. Let the audience see the pattern in the
+maps before naming it. "Hallucination" is familiar; use it, then deepen it -- the
+mechanism is pattern completion without grounding, not a perceptual error.
+
+### Slides: Jaggedness walkthrough (per-case)
+
+**Visual:** For each case, two beats: (1) zoomed/highlighted comparison of the region
+on the human map vs. the fish map; (2) pre-captured screencap showing the example.
+(Image specs and case details: `metaphor-imagery.md` § Per-case walkthrough.)
+
+**Cases (in order):**
+
+1. **Poetry & Verse (A3):** Fish map is denser than human map here -- and accurate.
+   Screencap: generation quality + speed (~5 sec vs. ~2 hours human).
+2. **Spatial Reasoning (B2):** Human map has well-worn paths; fish map is confident
+   but wrong. Screencap: a spatial reasoning failure.
+3. **Counting & Tracking (B4):** Trivially easy for humans; fish loses count.
+   Screencap: quantity-tracking failure in narrative.
+4. **Recent Events (C4):** Fish fills in territory that didn't exist when the books
+   ended. Screencap: post-cutoff confabulation.
+5. **Everyday vs. Regional Cooking (D1):** Same domain, split by source density.
+   Screencap: mainstream recipe nailed vs. regional dish drifted.
+6. *(Maybe)* **Letter Counting (B1):** May overlap with Station 6 strawberry hook.
+
+**Narration:** Walk through each case: "Let's look at specific regions. Here's
+poetry..." Show the map comparison, then the example. Build the pattern: the
+errors track source-text density, not difficulty. By the third or fourth case the
+audience is predicting the pattern themselves.
+
+**Notes:** Pacing: don't rush, but don't belabor. 3-4 cases may be enough if time
+is tight; Poetry (impressive), Spatial Reasoning (jolting), and Cooking (density
+visible within one domain) are the strongest three. The rest reinforce. Order TBD:
+whether to show map comparison first (audience predicts) or example first (audience
+reacts, map explains).
 
 ### Slide: Temperament vs. anatomy -- the training story
 

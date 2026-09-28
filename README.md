@@ -22,6 +22,9 @@ exactly one doc; others link to it rather than copy it.
 - `arc-table.md` — intermediate per-beat/per-track table bridging the station
   narratives (`presentation-arc.md`) and the per-slide content (`slides-outline.md`).
   Medium volatility.
+- `metaphor-imagery.md` — single source of truth for the talk's metaphor artwork:
+  what each image looks like, how it evolves across stations, and what visual properties
+  carry meaning. Medium volatility; the index to artwork that needs to be generated.
 - `slides-outline.md` — per-slide visual and narration content, organized by station;
   slide numbering is deferred until the deck is assembled. High volatility; currently
   only the pre-talk and station 1 slides are drafted.

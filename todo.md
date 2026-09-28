@@ -7,14 +7,16 @@ also live there. The take-home card content lives in `take-home.md`.
 
 Sections are the timeline weeks (talk: Oct 13). "Now" = anything before the first named week.
 
+Completed items are REMOVED (not marked complete) - tracked by git history.
+
 ## Now - design & decisions, begin assembly (imagery + assets)
 
 ### Finish the slides
 
 #### Design & spec work
 
-- [ ] Spec the three-layer **map/territory** visual: pick 4-5 jaggedness cases; decide the
-      reveal mechanics.
+Image specs for all metaphors: `metaphor-imagery.md` (single source of truth).
+
 - [ ] Find & test the **describe-and-draw** figure for station 3 (**Q3** resolved as a
       prototyping task). Criteria: spatial relationships (not artistic skill), dignified for
       adults, honest ambiguity (partners disagree about the result and both have a point).
@@ -33,8 +35,6 @@ Sections are the timeline weeks (talk: Oct 13). "Now" = anything before the firs
    - [ ] reliability-levers side-by-side: same query with/without thinking instructions (station 4)
    - [ ] email draft vs. send -- HITL toggle (station 12)
 - [ ] Source pre-captured transcripts/recordings
-   - [ ] confabulation example (station 4)
-   - [ ] jaggedness example (station 4)
    - [ ] guardrail-probe transcript: real cross-model comparison (station 10)
 - [ ] Pre-capture the **citations-ladder demo**: three real outputs -- no sources /
       unverified sources / verified sources (station 6)
@@ -46,7 +46,10 @@ Sections are the timeline weeks (talk: Oct 13). "Now" = anything before the firs
       on light background; bold colors (pick a palette).
 - [ ] Create images
    - [ ] goldfish visuals (sleeping/waking, people-pleaser)
-   - [ ] the three-layer map/territory diagram
+   - [ ] the three-layer map/territory base images (territory, human map, fish map)
+   - [ ] per-case map-comparison images: zoomed region on human vs. fish map for
+         each jaggedness case (see `metaphor-imagery.md` § Per-case walkthrough)
+   - [ ] decide case ordering and whether map-first or example-first
    - [ ] bowl + fish + fittings (station 6)
 
 #### Slide tech
