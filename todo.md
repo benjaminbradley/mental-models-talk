@@ -30,8 +30,6 @@ Image specs for all metaphors: `metaphor-imagery.md` (single source of truth).
 - [ ] Prepare comparison demos
    - [ ] plain vs. role vs. knowledge-domain prompts (station 4)
    - [ ] reliability-levers side-by-side: same query with/without thinking instructions (station 4)
-- [ ] Source pre-captured transcripts/recordings
-   - [ ] capture better confabulation example for C4 (recent events)
 - [ ] Pre-capture the **citations-ladder demo**: three real outputs -- no sources /
       unverified sources / verified sources (station 7)
 
@@ -51,7 +49,7 @@ Image specs for all metaphors: `metaphor-imagery.md` (single source of truth).
 
 #### Slide tech
 
-- [ ] Stand up the HTML/CSS slide setup + speaker-notes / presenter view (Q8); GitHub Pages.
+- [ ] Build the deck pipeline per `deck-build-plan.md` (Q8): Reveal.js, GitHub Pages, phone remote.
 
 #### Full review
 

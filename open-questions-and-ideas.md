@@ -281,4 +281,5 @@ as the talk's primary anthropomorphic carrier.
 **Q8. Presentation tech / assembly format.** Leaning: hand-built **HTML/CSS slides**
 (Claude's out-of-box slideshow support is weak; HTML/CSS is flexible and publishes to
 **GitHub Pages**). Reqs: per-slide **speaker notes**, and a way to load/show them in
-parallel (presenter view). Not designing now - noted; revisit at assembly (week of Sep 21+).
+parallel (presenter view). **Decided (Sep 29):** Reveal.js + custom phone remote; see
+`deck-build-plan.md`.
