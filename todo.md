@@ -47,10 +47,6 @@ Image specs for all metaphors: `metaphor-imagery.md` (single source of truth).
    - [ ] bowl + fish, water only (station 6); fittings attaching one at a time
          (stations 7-8); full-tank recap (end of station 8)
 
-#### Slide tech
-
-- [ ] Build the deck pipeline per `deck-build-plan.md` (Q8): Reveal.js, GitHub Pages, phone remote.
-
 #### Full review
 
 - [ ] Full review pass on `slides-outline.md` (after all above are done)

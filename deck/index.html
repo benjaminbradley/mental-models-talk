@@ -1,0 +1,50 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mental Models for Working with LLMs</title>
+  <link rel="stylesheet" href="vendor/reveal.js/dist/reset.css">
+  <link rel="stylesheet" href="vendor/reveal.js/dist/reveal.css">
+  <link rel="stylesheet" href="theme/talk.css">
+</head>
+<body>
+  <div class="reveal">
+    <div class="slides" id="slides"></div>
+  </div>
+
+  <script src="vendor/reveal.js/dist/reveal.js"></script>
+  <script src="vendor/reveal.js/plugin/markdown/markdown.js"></script>
+  <script src="vendor/reveal.js/plugin/notes/notes.js"></script>
+  <script src="manifest.js"></script>
+  <script>
+    // The markdown plugin scans for data-markdown sections at init, so build them first.
+    const slides = document.getElementById('slides');
+    for (const file of window.DECK_STATIONS) {
+      const section = document.createElement('section');
+      section.setAttribute('data-markdown', file);
+      section.setAttribute('data-separator', '^\\r?\\n---\\r?\\n$');
+      section.setAttribute('data-separator-notes', '^Note:');
+      slides.appendChild(section);
+    }
+
+    Reveal.initialize({
+      hash: true,
+      width: 1920,
+      height: 1080,
+      margin: 0.04,
+      controls: true,
+      progress: true,
+      transition: 'fade',
+      plugins: [RevealMarkdown, RevealNotes],
+    });
+
+    // Remote control client: inert unless the URL has ?remote=<token>.
+    if (new URLSearchParams(location.search).has('remote')) {
+      const s = document.createElement('script');
+      s.src = 'remote/deck-remote.js';
+      document.head.appendChild(s);
+    }
+  </script>
+</body>
+</html>

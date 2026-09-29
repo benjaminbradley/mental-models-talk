@@ -1,0 +1,11 @@
+{
+  "name": "mental-models-talk",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "present": "node tools/present.mjs"
+  },
+  "dependencies": {
+    "qrcode-terminal": "^0.12.0"
+  }
+}

@@ -1,0 +1,74 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <title>Deck remote</title>
+  <link rel="stylesheet" href="remote.css">
+</head>
+<body>
+  <header>
+    <span id="status" class="off">disconnected</span>
+    <span id="count">– / –</span>
+    <button id="timer" type="button" title="Tap to reset">0:00</button>
+  </header>
+  <main>
+    <h1 id="title"></h1>
+    <p id="next"></p>
+    <div id="notes"></div>
+  </main>
+  <footer>
+    <button id="prev" type="button">Prev</button>
+    <button id="nextbtn" type="button">Next</button>
+  </footer>
+  <script>
+    const token = new URLSearchParams(location.search).get('t') || '';
+    const q = encodeURIComponent(token);
+    const $ = (id) => document.getElementById(id);
+    let deckUp = false, linkUp = false;
+
+    function paintStatus() {
+      const ok = linkUp && deckUp;
+      $('status').className = ok ? 'on' : 'off';
+      $('status').textContent = !linkUp ? 'disconnected' : deckUp ? 'connected' : 'waiting for deck';
+    }
+
+    function render(s) {
+      $('count').textContent = `${s.index} / ${s.total}`;
+      $('title').textContent = s.title || '';
+      $('next').textContent = s.nextTitle ? `Next: ${s.nextTitle}` : 'Last slide';
+      $('notes').innerHTML = s.notesHtml || '<em>No notes</em>';
+      $('notes').scrollTop = 0;
+    }
+
+    function connect() {
+      const es = new EventSource(`/events?t=${q}&role=remote`);
+      es.onopen = () => { linkUp = true; paintStatus(); };
+      es.onerror = () => { linkUp = false; paintStatus(); };
+      es.addEventListener('state', (e) => { deckUp = true; paintStatus(); render(JSON.parse(e.data)); });
+      es.addEventListener('deck', (e) => { deckUp = JSON.parse(e.data).connected; paintStatus(); });
+      // Re-sync after the phone wakes: drop the stale stream and reconnect for a fresh state.
+      document.addEventListener('visibilitychange', () => {
+        if (document.visibilityState === 'visible') { es.close(); connect(); }
+      }, { once: true });
+    }
+    connect();
+
+    const send = (action) => fetch(`/cmd?t=${q}`, {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/json' },
+      body: JSON.stringify({ action }),
+    }).catch(() => {});
+    $('nextbtn').onclick = () => send('next');
+    $('prev').onclick = () => send('prev');
+
+    let t0 = Date.now();
+    $('timer').onclick = () => { t0 = Date.now(); };
+    setInterval(() => {
+      const s = Math.floor((Date.now() - t0) / 1000);
+      const h = Math.floor(s / 3600), m = Math.floor((s % 3600) / 60), sec = s % 60;
+      $('timer').textContent = (h ? `${h}:${String(m).padStart(2, '0')}` : `${m}`) + `:${String(sec).padStart(2, '0')}`;
+    }, 500);
+  </script>
+</body>
+</html>

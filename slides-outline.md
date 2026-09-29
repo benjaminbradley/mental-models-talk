@@ -25,14 +25,7 @@ like and how it evolves) live in `metaphor-imagery.md`; this doc describes per-s
 **Visual:** Talk title, speaker name and affiliation, large QR code linking to
 the anonymous entry survey. Clean layout; QR code dominates the right half.
 
-**Text:** "Mental Models for Working with LLMs" (or final title). Speaker name.
-"Scan to check in (anonymous)."
-
-**Narration:** None -- on screen as people walk in and settle.
-
-**Notes:** QR code must be large enough to scan from the back of the room (10-30
-attendees, tables). Survey design tracked in open-questions (polls bookmark).
-The entry poll captures stance + usage baseline before any content lands.
+**Text, Narration, Notes:** moved to `deck/slides/00-pre-talk.md` (SSOT for on-screen text and speaker notes).
 
 ---
 
@@ -48,36 +41,14 @@ aside (acknowledged, not dismissed).
 **Animation:** Each image drops in on a beat. After the last, they compress into
 a closed box that remains visible in the corner as a persistent reminder.
 
-**Text:** Minimal -- one or two words per image as labels (e.g., "energy,"
-"labor," "provenance"). No bullet list.
-
-**Narration:** "Before we talk about how any of this works, let's name what's
-wrong with it." Name each harm briefly as its image appears. Then: "These are
-real problems. I am not going to tell you they aren't. But that is not what this
-talk is about." The box closes.
-Metaphor for station 1: Cars are in accidents and pollute the environment everyday; this is a driving lesson.
-
-**Notes:** Tone is matter-of-fact, not dismissive. The box stays visible as a
-footer/corner element -- these were named, not hidden. Do not linger or
-editorialize; the point is speed and honesty.
+**Text, Narration, Notes:** moved to `deck/slides/01-disarm.md` (SSOT for on-screen text and speaker notes).
 
 ### Slide: The contract
 
 **Visual:** Clean text slide, minimal imagery. Three statements revealed in
 sequence.
 
-**Text:**
-1. "This talk is about how LLMs work, and how to work with them safely and effectively."
-2. "If you're new to this -- hopefully it opens your eyes to their potential."
-3. "If you're skeptical or opposed -- hopefully it helps you understand your enemy better."
-
-**Narration:** Read each line, then: "The goal is literacy, not conversion. A
-better-informed critic is a completely valid outcome. I am not selling you
-anything."
-
-**Notes:** The third line is the skeptic recruitment. Deliver with warmth, not an
-edge. This is the talk's social contract -- everything that follows is accountable
-to it.
+**Text, Narration, Notes:** moved to `deck/slides/01-disarm.md` (SSOT for on-screen text and speaker notes).
 
 ---
 

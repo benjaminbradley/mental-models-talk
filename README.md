@@ -35,9 +35,9 @@ exactly one doc; others link to it rather than copy it.
 - `todo.md` — active task list, organized by timeline week (talk: Oct 13). High volatility.
 - `take-home.md` — draft take-home reference: the capability-track and principles lists
   (memory-jogging phrases) that feed the one-page participant card. Medium volatility.
-- `deck-build-plan.md` -- build plan (handoff for a Claude Code session) for the Reveal.js deck,
-  GitHub Pages publishing, and the phone remote with speaker notes. Low volatility; retired once
-  the build is done and `deck/README.md` (authoring guide) exists.
+- `deck/README.md` — authoring guide for the Reveal.js deck (`deck/slides/`): how to run, add
+  slides/stations, conventions, presenting checklist. Once a station is migrated there, that file
+  owns its on-screen text and speaker notes. Medium volatility.
 - `handoff.md` — optional resume bridge for continuing this project in a fresh chat; read it (and
   this README) first when picking the work back up, when it exists.
 
