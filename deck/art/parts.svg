@@ -58,14 +58,6 @@
           <rect x="0" y="130" width="600" height="440" style="fill: var(--water)" opacity="0.85"/>
           <path style="stroke: var(--ink); stroke-width: var(--line, 9)" d="M 0 130 Q 50 116 100 130 T 200 130 T 300 130 T 400 130 T 500 130 T 600 130" fill="none" stroke-linecap="round"/>
         </g>
-        <!-- pebbles -->
-        <g style="stroke: var(--ink); stroke-width: calc(var(--line, 9) * 0.7)">
-          <ellipse cx="140" cy="490" rx="34" ry="22" style="fill: var(--red)"/>
-          <ellipse cx="220" cy="505" rx="30" ry="20" style="fill: var(--yellow)"/>
-          <ellipse cx="300" cy="496" rx="36" ry="24" style="fill: var(--blue)"/>
-          <ellipse cx="382" cy="506" rx="30" ry="20" style="fill: var(--green)"/>
-          <ellipse cx="458" cy="490" rx="32" ry="22" style="fill: var(--red)"/>
-        </g>
       </g>
     </symbol>
 

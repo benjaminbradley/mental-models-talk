@@ -162,6 +162,20 @@ properties.
 calibration. The errors don't follow a difficulty gradient; they follow source-text
 density. And the map itself gives no indication of which regions are reliable.
 
+### Prototype encoding (current choices in `tools/build-maps.mjs`)
+
+How the properties above are drawn in the prototype (open to change):
+- **Territory:** colored regions with hatched texture, full-color landmarks everywhere.
+- **Human map:** firm ink in walked regions (Spatial, Counting, both Cooking regions,
+  Recent Events), joined by a red dashed worn path; sketchy dashed ink, jittered
+  landmarks and "?" in Poetry, History, Medicine; Law is a cross-hatched honest blank
+  ("here be dragons").
+- **Fish map:** uniform bold ink. Full detail where books are dense (Poetry, History, Law,
+  Medicine, Everyday Cooking). Spatial: two mountains and a river on the wrong course.
+  Counting: 3 lakes where the territory has 5. Regional Cooking: Everyday Cooking's
+  landmarks (drift toward mainstream). Recent Events: invented coastline and landmarks.
+- **Per-case images:** the same map files cropped to one region (`data-zoom`).
+
 ### Slide layout — three-beat reveal + per-case walkthrough
 
 **Slide 1 (territory):** Territory centered. Establishes the referent.

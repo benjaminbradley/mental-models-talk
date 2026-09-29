@@ -34,6 +34,23 @@
       slides.appendChild(section);
     }
 
+    // Inline SVG files into [data-svg] elements (artwork that reads theme variables and
+    // fonts must live in the page, not in <img>). data-zoom="<region>" crops a map to a region.
+    const svgText = {};
+    function inlineSvgs() {
+      for (const el of document.querySelectorAll('[data-svg]')) {
+        (svgText[el.dataset.svg] ??= fetch(el.dataset.svg).then((r) => r.text()))
+          .then((text) => {
+            el.innerHTML = text;
+            const svg = el.querySelector('svg');
+            const box = el.dataset.zoom && JSON.parse(svg.dataset.regions || '{}')[el.dataset.zoom];
+            if (box) svg.setAttribute('viewBox', box.join(' '));
+            if (el.dataset.label) svg.setAttribute('aria-label', el.dataset.label);
+          })
+          .catch((e) => console.error('SVG failed to load', el.dataset.svg, e));
+      }
+    }
+
     Reveal.initialize({
       hash: true,
       width: 1920,
@@ -43,7 +60,7 @@
       progress: true,
       transition: 'fade',
       plugins: [RevealMarkdown, RevealNotes],
-    });
+    }).then(inlineSvgs);
 
     // Remote control client: inert unless the URL has ?remote=<token>.
     if (new URLSearchParams(location.search).has('remote')) {

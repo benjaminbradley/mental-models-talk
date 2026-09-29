@@ -293,7 +293,7 @@ on the projector and in `?print-pdf`; no build step, so it publishes as-is to Pa
 Rejected: **canvas** (raster, not addressable by fragments/auto-animate, blurs under
 Reveal's scaling); **AI-generated raster** (can't hold one character across ~10
 stations, not composable, and AI art is a needless flashpoint for an audience that
-includes people opposed to AI on training-data grounds). Planned for the map layers:
-**rough.js** run once at authoring time (fixed seed) to emit static SVG, so the human
+includes people opposed to AI on training-data grounds). Map layers: **rough.js** run
+at authoring time (`tools/build-maps.mjs`, fixed seeds) to emit static SVG, so the human
 map's sketchy ink and the fish map's uniform confident ink come from the same region
 shapes. How-to: `deck/README.md` § Artwork.

@@ -67,10 +67,20 @@ shows: `../metaphor-imagery.md`.
 - **Slide markup:** wrap the SVG in `<div class="scene">` with no blank lines inside
   (a blank line ends the HTML block in Markdown). Give the `<svg>` `role="img"` and an
   `aria-label`.
+- **Whole-file artwork:** `<div data-svg="art/maps/human.svg" data-label="alt text"></div>`
+  inlines an SVG file after Reveal starts (inline, not `<img>`, so it can use the theme's
+  colors and fonts). Add `data-zoom="<region id>"` to crop a map to one region (ids in
+  `../tools/build-maps.mjs`; the per-case walkthrough images are these crops).
+- **Maps (station 4):** `art/maps/{territory,human,fish}.svg` are generated. Edit
+  `../tools/build-maps.mjs` (region shapes, features, per-map ink profiles), then run
+  `node tools/build-maps.mjs` from the repo root (needs `npm install` once for rough.js).
+  Output is deterministic, so diffs show only real changes. Colors are `--land-*`, `--sea`,
+  `--parchment` in `theme/talk.css`; recoloring needs no rebuild.
+- **Fonts:** Caveat (handwriting, map labels) is vendored in `vendor/fonts/` (SIL OFL).
+- **Slide-to-slide motion:** `<!-- .slide: data-auto-animate -->` on consecutive slides plus a
+  matching `data-id` on the element (e.g. the three-map reveal) slides it into its new place.
 - **Prototype / sandbox:** `slides/art-lab.md` (last in `manifest.js`). Remove it from the
   manifest before presenting.
-- **Structure as it grows:** more parts go in `art/parts.svg`; generated maps go in
-  `art/maps/*.svg`, produced by a one-shot script in `../tools/` (rough.js, fixed seed).
 
 ## Presenting checklist
 

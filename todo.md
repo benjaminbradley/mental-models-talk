@@ -38,8 +38,9 @@ Image specs for all metaphors: `metaphor-imagery.md` (single source of truth).
 - [ ] Review the artwork prototype (`deck/slides/art-lab.md`; approach: Q16): fish look,
       palette, outline weight, and sleep/wake motion -- ideally on a projector. Adjust
       palette tokens in `deck/theme/talk.css`.
-- [ ] Prototype the map layers with rough.js (human sketchy vs. fish confident ink from
-      shared region shapes) -> `deck/art/maps/`.
+- [ ] Review the map-layer prototype (art-lab slides 6-9; encoding summarized in
+      `metaphor-imagery.md` § Prototype encoding): legibility of the three-up view on the
+      projector, whether each jaggedness case reads on its zoom, label/landmark overlaps.
 - [ ] Create images
    - [ ] goldfish visuals (sleeping/waking, people-pleaser)
    - [ ] the three-layer map/territory base images (territory, human map, fish map)

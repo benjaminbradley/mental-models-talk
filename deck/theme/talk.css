@@ -1,3 +1,11 @@
+/* Handwriting face for the maps (SIL OFL; vendor/fonts/caveat-OFL.txt). */
+@font-face {
+  font-family: 'Caveat';
+  src: url('../vendor/fonts/caveat-latin-wght.woff2') format('woff2');
+  font-weight: 400 700;
+  font-display: block;
+}
+
 /* Talk theme. Direction: heavy black outlines on a light background, bold flat colors
    (Red Fish Blue Fish). Palette tokens below are shared by slides and artwork
    (art/parts.svg reads them via var()); change a color here and every image follows. */
@@ -13,6 +21,9 @@
   --sky: #8fd6ea;
   --green: #3aa35a;
   --pink: #f59ab0;
+  --purple: #8a5cc9;
+  --teal: #1fa99a;
+  --green-deep: #237a42;
   --murk: #6f7a3a;     /* poisoned water (station 9) */
 
   /* semantic roles: artwork refers to these, not to raw colors */
@@ -23,7 +34,21 @@
   --cheek: var(--pink);
   --water: var(--sky);
   --glass: #e6f4f7;
-  --line: 9;           /* outline weight in artwork viewBox units */
+  --line: 9;
+
+  /* maps (station 4): tools/build-maps.mjs output reads these */
+  --sea: color-mix(in srgb, var(--sky) 45%, var(--paper));
+  --parchment: #f3e8cc;
+  --rock: #e3d9c4;
+  --land-poetry: color-mix(in srgb, var(--pink) 55%, var(--paper));
+  --land-history: color-mix(in srgb, var(--orange) 45%, var(--paper));
+  --land-law: color-mix(in srgb, var(--blue) 35%, var(--paper));
+  --land-spatial: color-mix(in srgb, var(--green) 45%, var(--paper));
+  --land-counting: color-mix(in srgb, var(--purple) 38%, var(--paper));
+  --land-medicine: color-mix(in srgb, var(--red) 35%, var(--paper));
+  --land-regional: color-mix(in srgb, var(--yellow) 85%, var(--orange));
+  --land-everyday: color-mix(in srgb, var(--yellow) 55%, var(--paper));
+  --land-recent: color-mix(in srgb, var(--teal) 40%, var(--paper));           /* outline weight in artwork viewBox units */
 }
 
 /* Registered so state changes (sleeping -> waking, clean -> murky) can transition. */
@@ -110,3 +135,11 @@
 @media (prefers-reduced-motion: reduce) {
   .goldfish *, .goldfish { animation: none !important; }
 }
+
+/* Maps (station 4). Each .map holds an inlined SVG (data-svg); data-zoom crops to a region. */
+.reveal .maps { display: flex; justify-content: center; align-items: flex-start; gap: 40px; }
+.reveal .map { margin: 0; width: 1080px; }
+.reveal .maps.two .map { width: 880px; }
+.reveal .maps.three .map { width: 590px; }
+.reveal .map svg { display: block; width: 100%; height: auto; border: 6px solid var(--ink); border-radius: 12px; }
+.reveal .map figcaption { text-align: center; font-weight: 800; font-size: 36px; margin-top: 14px; }
