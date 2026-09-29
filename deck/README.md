@@ -43,6 +43,35 @@ This creates `slides/02-demystify.md` from a template and appends it to `manifes
 - Slide attributes: `<!-- .slide: data-background-color="..." -->`.
 - Theme: `theme/talk.css` (placeholder for now).
 
+## Artwork
+
+Decision and rationale: `../open-questions-and-ideas.md` Q16. Specs for what each image
+shows: `../metaphor-imagery.md`.
+
+- **Parts library:** `art/parts.svg` holds reusable `<symbol>`s (fish body, eye states,
+  bowl layers, ...). `index.html` inlines it at load, so any slide can place a part with
+  `<use href="#part-id" x=".." y=".." width=".." height=".."/>`.
+- **Palette:** tokens in `theme/talk.css` `:root`. Raw colors (`--orange`, `--sky`, ...)
+  feed semantic roles (`--fish`, `--water`, `--glass`, ...); artwork uses the roles. Parts
+  set colors via `style="fill: var(--fish)"` (not the `fill=` attribute, which does not
+  reliably accept `var()`). Custom properties inherit into `<use>`, so a scene recolors a
+  part by setting the role on an ancestor.
+- **States:** a part that changes (eyes, water) is its own symbol sharing its parent's
+  viewBox, so layers stack exactly at the same x/y/width/height; CSS toggles them. CSS
+  selectors cannot reach *inside* a `<use>` copy, so split a part or pass a custom property
+  (e.g. `--water-drop` lowers the water).
+- **Timing on clicks:** put `class="fragment"` on an SVG `<g>` to pop it in. For a state
+  change rather than an appearance, add an empty cue fragment
+  (`<span class="fragment wake-cue"></span>`) and style with
+  `.scene:has(.wake-cue.visible) ...` (see the goldfish rules in `theme/talk.css`).
+- **Slide markup:** wrap the SVG in `<div class="scene">` with no blank lines inside
+  (a blank line ends the HTML block in Markdown). Give the `<svg>` `role="img"` and an
+  `aria-label`.
+- **Prototype / sandbox:** `slides/art-lab.md` (last in `manifest.js`). Remove it from the
+  manifest before presenting.
+- **Structure as it grows:** more parts go in `art/parts.svg`; generated maps go in
+  `art/maps/*.svg`, produced by a one-shot script in `../tools/` (rough.js, fixed seed).
+
 ## Presenting checklist
 
 - Laptop: `caffeinate -d` (or disable sleep); `npm run present`; open the deck URL in the

@@ -1,10 +1,35 @@
-/* Placeholder theme. Direction: heavy black outlines on a light background.
-   Red Fish Blue Fish palette comes later. */
+/* Talk theme. Direction: heavy black outlines on a light background, bold flat colors
+   (Red Fish Blue Fish). Palette tokens below are shared by slides and artwork
+   (art/parts.svg reads them via var()); change a color here and every image follows. */
 :root {
-  --bg: #faf8f2;
-  --ink: #111;
-  --accent: #d6402f;
+  /* palette: raw colors */
+  --paper: #fbf6e9;    /* warm cream page */
+  --ink: #161412;      /* outlines and text */
+  --red: #e0362c;
+  --orange: #f47a1f;
+  --orange-deep: #d1520f;
+  --yellow: #f8c630;
+  --blue: #2a63c9;
+  --sky: #8fd6ea;
+  --green: #3aa35a;
+  --pink: #f59ab0;
+  --murk: #6f7a3a;     /* poisoned water (station 9) */
+
+  /* semantic roles: artwork refers to these, not to raw colors */
+  --bg: var(--paper);
+  --accent: var(--red);
+  --fish: var(--orange);
+  --fish-deep: var(--orange-deep);
+  --cheek: var(--pink);
+  --water: var(--sky);
+  --glass: #e6f4f7;
+  --line: 9;           /* outline weight in artwork viewBox units */
 }
+
+/* Registered so state changes (sleeping -> waking, clean -> murky) can transition. */
+@property --fish { syntax: '<color>'; inherits: true; initial-value: #f47a1f; }
+@property --fish-deep { syntax: '<color>'; inherits: true; initial-value: #d1520f; }
+@property --water { syntax: '<color>'; inherits: true; initial-value: #8fd6ea; }
 
 .reveal-viewport { background: var(--bg); }
 
@@ -32,3 +57,56 @@
 .reveal li { margin: 0.5em 0; }
 .reveal .controls { color: var(--ink); }
 .reveal .progress { color: var(--accent); }
+
+/* ---- Artwork scenes (see README § Artwork) ---------------------------------------- */
+.reveal .scene { display: flex; justify-content: center; }
+.reveal .scene svg { height: 760px; width: auto; overflow: visible; }
+.reveal .scene .caption { font-size: 1.1em; font-weight: 800; }
+.reveal .scene .label { font: 800 44px "Helvetica Neue", Helvetica, Arial, sans-serif; fill: var(--ink); }
+
+/* Goldfish states. A scene is asleep until its .wake-cue fragment is shown. */
+.goldfish {
+  --fish: #d8b08e; --fish-deep: #b48a68;          /* dimmed, same fish */
+  transition: --fish 0.8s ease, --fish-deep 0.8s ease;
+}
+.goldfish .eyes-open { opacity: 0; }
+.goldfish .eyes-closed { opacity: 1; }
+.goldfish .zzz { opacity: 1; animation: zzz 3s ease-in-out infinite; }
+.goldfish .bubbles { opacity: 0; }
+
+.scene:has(.wake-cue.visible) .goldfish,
+.goldfish.awake {
+  --fish: var(--orange); --fish-deep: var(--orange-deep);
+}
+.scene:has(.wake-cue.visible) .goldfish .eyes-open,
+.goldfish.awake .eyes-open { opacity: 1; }
+.scene:has(.wake-cue.visible) .goldfish .eyes-closed,
+.goldfish.awake .eyes-closed { opacity: 0; }
+.scene:has(.wake-cue.visible) .goldfish .zzz,
+.goldfish.awake .zzz { opacity: 0; animation: none; }
+.scene:has(.wake-cue.visible) .goldfish .bubbles,
+.goldfish.awake .bubbles { opacity: 1; }
+.scene:has(.wake-cue.visible) .goldfish .swim,
+.goldfish.awake .swim { animation: bob 1.6s ease-in-out infinite; }
+.goldfish .swim { transform-box: fill-box; transform-origin: center; }
+
+.goldfish .bubbles circle { animation: rise 2.4s ease-in infinite; }
+.goldfish .bubbles circle:nth-child(2) { animation-delay: 0.8s; }
+.goldfish .bubbles circle:nth-child(3) { animation-delay: 1.6s; }
+
+@keyframes bob {
+  0%, 100% { transform: translateY(0) rotate(0deg); }
+  50% { transform: translateY(-14px) rotate(-3deg); }
+}
+@keyframes zzz {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(-10px); }
+}
+@keyframes rise {
+  0% { transform: translateY(0); opacity: 0; }
+  20% { opacity: 1; }
+  100% { transform: translateY(-220px); opacity: 0; }
+}
+@media (prefers-reduced-motion: reduce) {
+  .goldfish *, .goldfish { animation: none !important; }
+}

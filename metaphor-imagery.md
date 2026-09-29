@@ -10,8 +10,8 @@ draw, how it differs layer to layer, what visual properties carry meaning. It do
 describe narration or slide layout (those live in `slides-outline.md`).
 
 **Imagery status:** all images are in design/spec phase. The `illustrations/` directory
-will hold final assets once produced. Image creation approach (SVG, canvas, generated)
-is tracked in `todo.md`.
+will hold screencaps; metaphor artwork is SVG built from reusable parts in `deck/art/`
+(decision: `open-questions-and-ideas.md` Q16; how-to: `deck/README.md` § Artwork).
 
 ---
 

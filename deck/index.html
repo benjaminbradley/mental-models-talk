@@ -18,6 +18,12 @@
   <script src="vendor/reveal.js/plugin/notes/notes.js"></script>
   <script src="manifest.js"></script>
   <script>
+    // Inline the artwork parts library so slides can <use href="#part-id">. See README § Artwork.
+    fetch('art/parts.svg')
+      .then((r) => r.text())
+      .then((svg) => document.body.insertAdjacentHTML('afterbegin', svg))
+      .catch((e) => console.error('Artwork parts failed to load', e));
+
     // The markdown plugin scans for data-markdown sections at init, so build them first.
     const slides = document.getElementById('slides');
     for (const file of window.DECK_STATIONS) {

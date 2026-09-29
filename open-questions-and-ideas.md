@@ -283,3 +283,17 @@ as the talk's primary anthropomorphic carrier.
 **GitHub Pages**). Reqs: per-slide **speaker notes**, and a way to load/show them in
 parallel (presenter view). **Resolved (Sep 29):** Reveal.js + custom phone remote; see
 `deck/README.md`.
+
+**Q16. Artwork technology.** **Resolved (Sep 29):** inline **SVG**, built from a library
+of reusable parts (`deck/art/parts.svg`, placed with `<use>`), colored by CSS palette
+tokens in `deck/theme/talk.css`, animated with CSS and Reveal fragments. Why: the
+metaphors are compositional (fish -> bowl -> fittings -> tank) and stateful (sleeping/
+waking, clean/poisoned water), which SVG parts + CSS handle natively; vector stays crisp
+on the projector and in `?print-pdf`; no build step, so it publishes as-is to Pages.
+Rejected: **canvas** (raster, not addressable by fragments/auto-animate, blurs under
+Reveal's scaling); **AI-generated raster** (can't hold one character across ~10
+stations, not composable, and AI art is a needless flashpoint for an audience that
+includes people opposed to AI on training-data grounds). Planned for the map layers:
+**rough.js** run once at authoring time (fixed seed) to emit static SVG, so the human
+map's sketchy ink and the fish map's uniform confident ink come from the same region
+shapes. How-to: `deck/README.md` § Artwork.

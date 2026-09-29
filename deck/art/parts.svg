@@ -1,0 +1,83 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="0" height="0" style="position:absolute" aria-hidden="true">
+  <!--
+    Reusable artwork parts. index.html inlines this file into the page, so slides can
+    place parts with <use href="#part-id" width=".." height=".."/>.
+    Colors come from CSS custom properties (theme/talk.css); they inherit into each <use>,
+    so a scene can recolor a part by setting e.g. --fish on an ancestor.
+    Parts that change state (eyes) are separate symbols sharing their parent's viewBox,
+    so they stack exactly when placed at the same x/y/width/height.
+    Guide: deck/README.md § Artwork.
+  -->
+  <defs>
+    <!-- Goldfish, facing right. All fish-* symbols share viewBox 0 0 400 260. -->
+    <symbol id="fish-body" viewBox="0 0 400 260">
+      <g style="stroke: var(--ink); stroke-width: var(--line, 9)" stroke-linejoin="round" stroke-linecap="round">
+        <!-- tail -->
+        <path style="fill: var(--fish-deep)" d="M 110 130 C 85 95, 55 50, 22 38 C 42 80, 52 110, 42 130 C 52 150, 42 182, 22 222 C 55 210, 85 165, 110 130 Z"/>
+        <!-- dorsal fin -->
+        <path style="fill: var(--fish-deep)" d="M 150 64 C 165 18, 232 4, 268 58 Z"/>
+        <!-- body -->
+        <path style="fill: var(--fish)" d="M 340 132 C 340 72, 272 44, 200 46 C 128 48, 96 96, 92 132 C 96 172, 132 214, 202 218 C 274 220, 340 190, 340 132 Z"/>
+        <!-- gill -->
+        <path fill="none" d="M 262 92 Q 246 132 262 176"/>
+        <!-- scale hints -->
+        <path style="stroke-width: calc(var(--line, 9) * 0.6)" fill="none" d="M 170 110 q 14 12 0 26 M 200 96 q 14 12 0 26"/>
+        <!-- pectoral fin -->
+        <path style="fill: var(--fish-deep)" d="M 222 150 Q 180 172 198 206 Q 236 190 234 152 Z"/>
+        <!-- smile -->
+        <path fill="none" d="M 330 160 Q 320 172 304 168"/>
+      </g>
+      <!-- cheek -->
+      <ellipse cx="296" cy="146" rx="13" ry="8" style="fill: var(--cheek)" opacity="0.8"/>
+    </symbol>
+
+    <symbol id="fish-eyes-open" viewBox="0 0 400 260">
+      <circle cx="298" cy="108" r="24" style="fill: var(--paper); stroke: var(--ink); stroke-width: var(--line, 9)"/>
+      <circle cx="304" cy="106" r="12" style="fill: var(--ink)"/>
+      <circle cx="308" cy="101" r="4" style="fill: var(--paper)"/>
+    </symbol>
+
+    <symbol id="fish-eyes-closed" viewBox="0 0 400 260">
+      <path style="stroke: var(--ink); stroke-width: var(--line, 9)" d="M 276 110 Q 298 128 320 110" fill="none" stroke-linecap="round"/>
+    </symbol>
+
+    <!-- Round goldfish bowl. bowl-* symbols share viewBox 0 0 600 560.
+         Water level: --water-drop (px, in viewBox units) lowers the water from full. -->
+    <clipPath id="bowl-inside">
+      <path d="M 185 64 C 60 120, 22 262, 62 382 C 92 470, 162 518, 300 518 C 438 518, 508 470, 538 382 C 578 262, 540 120, 415 64 Z"/>
+    </clipPath>
+
+    <symbol id="bowl-back" viewBox="0 0 600 560">
+      <!-- glass tint behind the fish -->
+      <path style="fill: var(--glass)" d="M 185 64 C 60 120, 22 262, 62 382 C 92 470, 162 518, 300 518 C 438 518, 508 470, 538 382 C 578 262, 540 120, 415 64 Z"/>
+    </symbol>
+
+    <symbol id="bowl-water" viewBox="0 0 600 560">
+      <g clip-path="url(#bowl-inside)">
+        <g class="bowl-water-level" style="transform: translateY(var(--water-drop, 0px)); transition: transform 1.2s ease">
+          <rect x="0" y="130" width="600" height="440" style="fill: var(--water)" opacity="0.85"/>
+          <path style="stroke: var(--ink); stroke-width: var(--line, 9)" d="M 0 130 Q 50 116 100 130 T 200 130 T 300 130 T 400 130 T 500 130 T 600 130" fill="none" stroke-linecap="round"/>
+        </g>
+        <!-- pebbles -->
+        <g style="stroke: var(--ink); stroke-width: calc(var(--line, 9) * 0.7)">
+          <ellipse cx="140" cy="490" rx="34" ry="22" style="fill: var(--red)"/>
+          <ellipse cx="220" cy="505" rx="30" ry="20" style="fill: var(--yellow)"/>
+          <ellipse cx="300" cy="496" rx="36" ry="24" style="fill: var(--blue)"/>
+          <ellipse cx="382" cy="506" rx="30" ry="20" style="fill: var(--green)"/>
+          <ellipse cx="458" cy="490" rx="32" ry="22" style="fill: var(--red)"/>
+        </g>
+      </g>
+    </symbol>
+
+    <symbol id="bowl-front" viewBox="0 0 600 560">
+      <g style="stroke: var(--ink); stroke-width: var(--line, 9)" stroke-linejoin="round" stroke-linecap="round" fill="none">
+        <!-- glass outline -->
+        <path d="M 185 64 C 60 120, 22 262, 62 382 C 92 470, 162 518, 300 518 C 438 518, 508 470, 538 382 C 578 262, 540 120, 415 64"/>
+        <!-- lip -->
+        <ellipse cx="300" cy="60" rx="126" ry="20" style="fill: var(--glass)"/>
+      </g>
+      <!-- glint -->
+      <path style="stroke: var(--paper)" d="M 110 200 C 92 250, 94 310, 116 356" fill="none" stroke-width="14" stroke-linecap="round" opacity="0.9"/>
+    </symbol>
+  </defs>
+</svg>
