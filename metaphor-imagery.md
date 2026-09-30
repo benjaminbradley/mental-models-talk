@@ -165,15 +165,22 @@ density. And the map itself gives no indication of which regions are reliable.
 ### Prototype encoding (current choices in `tools/build-maps.mjs`)
 
 How the properties above are drawn in the prototype (open to change):
+- **Not an island:** the named regions are a highlighted patch inside a landscape that runs
+  off every edge (faint region borders and out-of-focus landmarks continue outward). Water
+  is local: a stretch of coast in one corner and a lake, never a surrounding sea.
 - **Territory:** colored regions with hatched texture, full-color landmarks everywhere.
-- **Human map:** firm ink in walked regions (Spatial, Counting, both Cooking regions,
-  Recent Events), joined by a red dashed worn path; sketchy dashed ink, jittered
-  landmarks and "?" in Poetry, History, Medicine; Law is a cross-hatched honest blank
-  ("here be dragons").
-- **Fish map:** uniform bold ink. Full detail where books are dense (Poetry, History, Law,
-  Medicine, Everyday Cooking). Spatial: two mountains and a river on the wrong course.
-  Counting: 3 lakes where the territory has 5. Regional Cooking: Everyday Cooking's
-  landmarks (drift toward mainstream). Recent Events: invented coastline and landmarks.
+- **Human map:** a network of paths grown outward from home (a house in Everyday Cooking).
+  Each segment is drawn once per trip that passes through it, so routes near home braid into
+  well-worn trails; single strands lead out to lone landmarks (one each in Poetry, History,
+  Medicine), a few trails wander off the map, and one reaches a single stretch of coast. Only
+  landmarks along the paths appear. Region confidence follows path length: firm ink where
+  much is walked, sketchy ink + "?" where one strand reaches, and an honest cross-hatched blank
+  with "here be dragons" where none does (Law).
+- **Fish map:** uniform bold ink, and a *subset* of the real landmarks at their real
+  positions (missing ones = thin training data): most kept in Poetry, History, Law, Medicine,
+  Everyday Cooking; few in Spatial, Counting (3 of 5 lakes), Regional Cooking, Recent Events.
+  The only non-matching marks: Spatial's river on the wrong course, one mainstream house in
+  Regional Cooking (drift), and two invented landmarks in Recent Events (filled from pattern).
 - **Per-case images:** the same map files cropped to one region (`data-zoom`).
 
 ### Slide layout — three-beat reveal + per-case walkthrough

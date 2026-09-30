@@ -39,6 +39,8 @@
   /* maps (station 4): tools/build-maps.mjs output reads these */
   --sea: color-mix(in srgb, var(--sky) 45%, var(--paper));
   --parchment: #f3e8cc;
+  --land-outer: color-mix(in srgb, var(--green) 14%, var(--paper));  /* landscape beyond the focus */
+  --trail: color-mix(in srgb, var(--red) 80%, var(--ink));            /* human paths of experience */
   --rock: #e3d9c4;
   --land-poetry: color-mix(in srgb, var(--pink) 55%, var(--paper));
   --land-history: color-mix(in srgb, var(--orange) 45%, var(--paper));
