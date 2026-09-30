@@ -7,8 +7,7 @@ and needs no build step). Published to GitHub Pages by `.github/workflows/pages.
 ## Run
 
 ```bash
-npm install        # once (only needed for the terminal QR code)
-npm run present    # serves deck/ on port 8765 and prints the URLs
+make present       # installs npm deps if needed, serves deck/ on port 8765 (PORT=...), prints the URLs
 ```
 
 Open the printed **deck URL** (it carries `?remote=<token>`) on the laptop. Scan the QR
@@ -24,7 +23,7 @@ and below) and write the next slide.
 ## Add a station
 
 ```bash
-node tools/new-station.mjs 02 demystify
+make station NN=02 SLUG=demystify
 ```
 
 This creates `slides/02-demystify.md` from a template and appends it to `manifest.js`
@@ -73,7 +72,7 @@ shows: `../metaphor-imagery.md`.
   `../tools/build-maps.mjs`; the per-case walkthrough images are these crops).
 - **Maps (station 4):** `art/maps/{territory,human,fish}.svg` are generated. Edit
   `../tools/build-maps.mjs` (region shapes, features, per-map ink profiles), then run
-  `node tools/build-maps.mjs` from the repo root (needs `npm install` once for rough.js).
+  `make maps` from the repo root.
   Output is deterministic, so diffs show only real changes. Colors are `--land-*`, `--sea`,
   `--parchment` in `theme/talk.css`; recoloring needs no rebuild.
 - **Fonts:** Caveat (handwriting, map labels) is vendored in `vendor/fonts/` (SIL OFL).
@@ -84,7 +83,7 @@ shows: `../metaphor-imagery.md`.
 
 ## Presenting checklist
 
-- Laptop: `caffeinate -d` (or disable sleep); `npm run present`; open the deck URL in the
+- Laptop: `caffeinate -d` (or disable sleep); `make present`; open the deck URL in the
   projector-side browser, fullscreen. Accept the macOS firewall prompt for `node` the first time.
 - Phone: disable auto-lock (the wake-lock API doesn't work over plain http); join the same
   network (use the phone's hotspot if the venue isolates clients); scan the terminal QR.

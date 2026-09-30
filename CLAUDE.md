@@ -15,10 +15,11 @@ they are authoritative and more detailed than this file. If `handoff.md` exists,
 ## Commands
 
 ```bash
-npm install                            # once: QR code for the remote, rough.js for map generation
-npm run present                        # serve deck/ on :8765 with the phone-remote relay; prints deck URL + QR
-node tools/new-station.mjs 02 demystify   # new slides/02-demystify.md from template, appended to manifest.js
-node tools/build-maps.mjs              # regenerate deck/art/maps/*.svg (run from repo root)
+make                              # list targets
+make install                      # npm deps: QR code for the remote, rough.js for map generation
+make present                      # serve deck/ on :8765 (PORT=...) with the phone-remote relay; prints deck URL + QR
+make station NN=02 SLUG=demystify # new slides/02-demystify.md from template, appended to manifest.js
+make maps                         # regenerate deck/art/maps/*.svg
 ```
 
 There is no build, lint, or test step. The deck is static and needs no build; vendored Reveal.js
