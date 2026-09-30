@@ -13,6 +13,10 @@ Completed items are REMOVED (not marked complete) - tracked by git history.
 
 ### Finish the slides
 
+#### Ideas and change requests
+
+- Models (fish) need to be taught how to use tools (tank attachments)
+
 #### Design & spec work
 
 Image specs for all metaphors: `metaphor-imagery.md` (single source of truth).
@@ -30,8 +34,6 @@ Image specs for all metaphors: `metaphor-imagery.md` (single source of truth).
 - [ ] Prepare comparison demos
    - [ ] plain vs. role vs. knowledge-domain prompts (station 4)
    - [ ] reliability-levers side-by-side: same query with/without thinking instructions (station 4)
-- [ ] Pre-capture the **citations-ladder demo**: three real outputs -- no sources /
-      unverified sources / verified sources (station 7)
 
 #### Image creation
 
