@@ -71,7 +71,7 @@ Image specs for all metaphors: `metaphor-imagery.md` (single source of truth).
 
 - [ ] Review final logistics -- slide control remote? Adapter for projector (USB-C)?
 - [ ] Presentation prep: test the phone remote with the laptop on the phone's hotspot, on the projector's extended display, and accept the macOS firewall prompt for `node` (see `deck/README.md`). Fragments and phone lock/unlock are already verified.
-- [ ] Optional, once the slides are complete: publish the deck to GitHub Pages so the URL can go on the take-home card. Set the repo public, Pages source = GitHub Actions (`.github/workflows/pages.yml` is ready), check the Pages URL for slides, images and no console errors, then add the URL to the card (`take-home.md`). Do this before the card is printed.
+- [ ] Optional, once the slides are complete: publish the deck to GitHub Pages so the URL can go on the take-home card. Pages currently serves a placeholder page: in `.github/workflows/pages.yml` switch `path: placeholder` back to `path: deck` and delete `placeholder/`, then check the Pages URL for slides, images and no console errors, then add the URL to the card (`take-home.md`). Do this before the card is printed.
 - [ ] Full run-through for real timing
    - [ ] measure overall timing
    - [ ] compare estimated timing vs. actual timing

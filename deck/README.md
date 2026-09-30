@@ -2,7 +2,8 @@
 
 Reveal.js 5.x slides written in Markdown, one file per station. Vendored under
 `vendor/reveal.js/` (version in `VERSION`; committed on purpose so the deck works offline
-and needs no build step). Published to GitHub Pages by `.github/workflows/pages.yml`.
+and needs no build step). Published to GitHub Pages by `.github/workflows/pages.yml`
+(temporarily publishing `placeholder/` instead until the slides are complete; see `todo.md`).
 
 ## Run
 
