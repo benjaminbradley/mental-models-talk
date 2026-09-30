@@ -4,6 +4,10 @@ Source material for the one-page card participants leave with. Format: key conce
 + a memory-jogging phrase, so people can look up detail if they want - not full
 explanations. To be trimmed and prioritized later (a real card fits far fewer than this).
 
+## Links (keep on the card)
+
+- **Slides:** https://benjaminbradley.github.io/mental-models-talk/
+
 ## Capability track (how to work with it)
 
 - **Specification / prompt engineering** - examples beat adjectives; constraints

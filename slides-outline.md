@@ -1134,6 +1134,8 @@ must have earned this by now.
 
 - Benjamin Bradley
 - email via education at wegeekout - com (can be displayed visually on screen, but should not be scrapable in code)
+- Slides: https://benjaminbradley.github.io/mental-models-talk/ -- show the URL plus a QR code
+  for it (generate the QR when the slide is built)
 
 ---
 
