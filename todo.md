@@ -32,7 +32,6 @@ Image specs for all metaphors: `metaphor-imagery.md` (single source of truth).
 #### Pre-capture demos & transcripts
 
 - [ ] Prepare comparison demos
-   - [ ] plain vs. role vs. knowledge-domain prompts (station 4)
    - [ ] reliability-levers side-by-side: same query with/without thinking instructions (station 4)
 
 #### Image creation
