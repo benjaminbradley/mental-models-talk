@@ -43,8 +43,16 @@
           .then((text) => {
             el.innerHTML = text;
             const svg = el.querySelector('svg');
-            const box = el.dataset.zoom && JSON.parse(svg.dataset.regions || '{}')[el.dataset.zoom];
-            if (box) svg.setAttribute('viewBox', box.join(' '));
+            if (el.dataset.zoom) {
+              // One region id, or several comma-separated ("regional,everyday") cropped to their union.
+              const regions = JSON.parse(svg.dataset.regions || '{}');
+              const boxes = el.dataset.zoom.split(',').map((id) => regions[id.trim()]).filter(Boolean);
+              if (boxes.length) {
+                const x = Math.min(...boxes.map((b) => b[0])), y = Math.min(...boxes.map((b) => b[1]));
+                const r = Math.max(...boxes.map((b) => b[0] + b[2])), btm = Math.max(...boxes.map((b) => b[1] + b[3]));
+                svg.setAttribute('viewBox', [x, y, r - x, btm - y].join(' '));
+              }
+            }
             if (el.dataset.label) svg.setAttribute('aria-label', el.dataset.label);
           })
           .catch((e) => console.error('SVG failed to load', el.dataset.svg, e));

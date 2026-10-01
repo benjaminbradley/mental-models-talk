@@ -69,7 +69,7 @@ shows: `../metaphor-imagery.md`.
   `aria-label`.
 - **Whole-file artwork:** `<div data-svg="art/maps/human.svg" data-label="alt text"></div>`
   inlines an SVG file after Reveal starts (inline, not `<img>`, so it can use the theme's
-  colors and fonts). Add `data-zoom="<region id>"` to crop a map to one region (ids in
+  colors and fonts). Add `data-zoom="<region id>"` (or several, comma-separated, for their union) to crop a map to one region (ids in
   `../tools/build-maps.mjs`; the per-case walkthrough images are these crops).
 - **Maps (station 4):** `art/maps/{territory,human,fish}.svg` are generated. Edit
   `../tools/build-maps.mjs` (region shapes, features, per-map ink profiles), then run
@@ -79,8 +79,13 @@ shows: `../metaphor-imagery.md`.
 - **Fonts:** Caveat (handwriting, map labels) is vendored in `vendor/fonts/` (SIL OFL).
 - **Slide-to-slide motion:** `<!-- .slide: data-auto-animate -->` on consecutive slides plus a
   matching `data-id` on the element (e.g. the three-map reveal) slides it into its new place.
-- **Prototype / sandbox:** `slides/art-lab.md` (last in `manifest.js`). Remove it from the
-  manifest before presenting.
+- **Placeholders:** missing artwork or captures go in `<div class="placeholder">TODO: what goes
+  here</div>` (a dashed red box). `grep -rn 'class="placeholder"' deck/slides` lists what is missing.
+- **Screenshots:** wrap captures in `<div class="shots">` with one `<figure>` (img + optional
+  `<figcaption>`) per capture; add `tall` for a single tall capture. `<div class="overlay fragment">`
+  drops an image in over the slide (e.g. a full transcript behind a trimmed one).
+- **Hidden slides:** `<!-- .slide: data-visibility="hidden" -->` keeps a slide in the file but out
+  of the deck (used for the pending describe-and-draw exercise).
 
 ## Presenting checklist
 

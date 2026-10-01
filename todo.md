@@ -36,18 +36,15 @@ Image specs for all metaphors: `metaphor-imagery.md` (single source of truth).
 
 #### Image creation
 
-- [ ] Review the artwork prototype (`deck/slides/art-lab.md`; approach: Q16): fish look,
-      palette, outline weight, and sleep/wake motion -- ideally on a projector. Adjust
-      palette tokens in `deck/theme/talk.css`.
-- [ ] Review the map-layer prototype (art-lab slides 6-9; encoding summarized in
-      `metaphor-imagery.md` § Prototype encoding): legibility of the three-up view on the
+- [ ] Review the goldfish artwork (station 3, `deck/slides/03-meet-the-fish.md`; approach: Q16):
+      fish look, palette, outline weight, and sleep/wake motion -- ideally on a projector.
+      Adjust palette tokens in `deck/theme/talk.css`.
+- [ ] Review the maps (station 4, `deck/slides/04-talking-to-the-fish.md`; encoding summarized
+      in `metaphor-imagery.md` § Prototype encoding): legibility of the three-up view on the
       projector, whether each jaggedness case reads on its zoom, label/landmark overlaps.
 - [ ] Create images
    - [ ] goldfish visuals (sleeping/waking, people-pleaser)
-   - [ ] the three-layer map/territory base images (territory, human map, fish map)
-   - [ ] per-case map-comparison images: zoomed region on human vs. fish map for
-         each jaggedness case (see `metaphor-imagery.md` § Per-case walkthrough)
-   - [ ] decide case ordering and whether map-first or example-first
+   - [ ] confirm case ordering and map-first (current default in the deck) vs. example-first
    - [ ] bowl + fish, water only (station 6); fittings attaching one at a time
          (stations 7-8); full-tank recap (end of station 8)
 

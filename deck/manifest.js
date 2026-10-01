@@ -2,5 +2,8 @@
 window.DECK_STATIONS = [
   'slides/00-pre-talk.md',
   'slides/01-disarm.md',
-  'slides/art-lab.md', // PROTOTYPE artwork slides; remove before presenting
+  'slides/02-demystify.md',
+  'slides/03-meet-the-fish.md',
+  'slides/04-talking-to-the-fish.md',
+  'slides/05-verification.md',
 ];

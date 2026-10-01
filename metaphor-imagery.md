@@ -9,7 +9,9 @@ beats introduce or extend each image. This doc describes the artwork itself — 
 draw, how it differs layer to layer, what visual properties carry meaning. It does not
 describe narration or slide layout (those live in `slides-outline.md`).
 
-**Imagery status:** all images are in design/spec phase. The `illustrations/` directory
+**Imagery status:** the goldfish (station 3) and the three maps + per-case zooms (station 4)
+are built; the station 2 gradient is a simple CSS version; the rest are in design/spec phase
+(placeholders in the deck). The `illustrations/` directory
 will hold screencaps; metaphor artwork is SVG built from reusable parts in `deck/art/`
 (decision: `open-questions-and-ideas.md` Q16; how-to: `deck/README.md` § Artwork).
 

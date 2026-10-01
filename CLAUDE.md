@@ -41,7 +41,7 @@ Update the owning doc, not a copy.
 
 - `deck/index.html` builds one `data-markdown` `<section>` per file in `deck/manifest.js`
   (`window.DECK_STATIONS`, ordered), splitting slides on a lone `---` and notes on `Note:`.
-  `slides/art-lab.md` is a prototype sandbox and must be removed from the manifest before presenting.
+  Missing artwork/captures are `<div class="placeholder">TODO: ...</div>` boxes; grep for them.
 - Artwork is inline SVG so it can use theme CSS variables and fonts:
   - `art/parts.svg` is a `<symbol>` library inlined at page load; slides place parts with `<use href="#id">`.
   - `<div data-svg="art/...svg" data-zoom="<region>">` inlines a whole SVG after Reveal starts;

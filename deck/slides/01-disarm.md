@@ -6,7 +6,7 @@
 - provenance <!-- .element: class="fragment" -->
 - concentration of power <!-- .element: class="fragment" -->
 
-![Placeholder artwork: an AI agent deleting files (image-path check)](illustrations/blast-radius--deleted-files.png)
+<div class="placeholder">TODO: harms images (datacenters, water, labor, provenance, power) drop in, then close into a box in the corner</div>
 
 Note:
 Visual intent (artwork TBD, see `slides-outline.md`): images of real harms drop in one by one, then compress into a closed box that stays in the corner as a persistent reminder.

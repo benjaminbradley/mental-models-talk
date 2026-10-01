@@ -62,17 +62,7 @@ effort. Light touch -- this image returns in full treatment at station 13.
 
 **Animation:** Binary split morphs or dissolves into a gradient bar.
 
-**Text:** "Any sufficiently advanced technology is indistinguishable from magic.
--- Clarke" then below: "But magic is a discipline, not a caste."
-
-**Narration:** "Pop culture frames this as binary -- you're a wizard or you're
-not. But every technology that looked like magic turned out to be a skill -- a
-discipline you learn through effort. That's the frame for the next hour: this is
-learnable, and the skill is proportional to the effort you put in."
-
-**Notes:** One-liner energy -- do not dwell. The gradient *claim* is the payload;
-the magic *imagery* stays minimal here. It returns at station 13 as earned wonder
-(only if the talk has earned it by then).
+**Text, Narration, Notes:** moved to `deck/slides/02-demystify.md` (SSOT for on-screen text and speaker notes).
 
 ---
 
@@ -82,19 +72,7 @@ the magic *imagery* stays minimal here. It returns at station 13 as earned wonde
 
 **Visual:** *(illustrate)* A computer with a speech bubble.
 
-Up until 2020, we made fun of their bad poetry.
-Now: https://www.reddit.com/r/ClaudeAI/comments/1gn4u8y/i_hade_a_nice_night_with_claude_and_asked_for_a/
-
-**Narration:** "Until about 2020, we made fun of computers' bad poetry. Now they
-write good poems in seconds." Then introduce the spine claim plainly: "Here's the
-claim this whole talk hangs on: anything you can specify clearly enough in language,
-a computer can now do." Beat. "So if it speaks our language this well -- is it like
-us?"
-
-**Notes:** The spine claim is introduced here (it is felt from the inside at the
-describe-and-draw debrief in station 4, if kept; made literal at station 8; closed
-at station 12). End on the question -- the goldfish is the answer. *TBD:* final
-visual and example.
+**Text, Narration, Notes:** moved to `deck/slides/03-meet-the-fish.md` (SSOT for on-screen text and speaker notes).
 
 ### Slide: The goldfish
 
@@ -105,23 +83,7 @@ but never left the bowl.
 **Animation:** The fish is asleep (dim, still). When "you talk to it," it wakes
 up -- bright, eager, animated.
 
-**Text:** "It has read every book ever written. It has never left the bowl. And
-it desperately wants to be helpful."
-
-**Narration:** "Meet the goldfish. It has read every book ever written -- every
-textbook, every novel, every Reddit thread. It is astonishingly well-read. But
-it has never left the bowl. It has no lived experience. And it is a
-people-pleaser: it desperately wants to be a good conversationalist and will never
-admit it is out of its depth. Its confidence is not intent to deceive -- it is
-eagerness. And one more thing: it sleeps most of the time. It does nothing on its
-own. It only wakes up when you talk to it."
-
-**Notes:** Answers the premise slide's "is it like us?" -- no: well-read, eager,
-ungrounded. *Socratic:* "How would you know when it's wrong?" Let them sit with
-this. Tone: productive disorientation -- their instincts about people (confident
-= knowledgeable) actively mislead here. Cognitive shift: "my instincts about
-people transfer" -> "my instincts actively mislead me." Leave the question
-open: "why is it like this?" -- the training story answers it next.
+**Text, Narration, Notes:** moved to `deck/slides/03-meet-the-fish.md` (SSOT for on-screen text and speaker notes).
 
 ### Slide: Temperament vs. anatomy -- the training story
 
@@ -129,26 +91,7 @@ open: "why is it like this?" -- the training story answers it next.
 the fish reading an enormous library (pretraining). Phase 2: the fish in an
 apprenticeship of conversations with feedback (RLHF/post-training).
 
-**Text:** "Phase 1: Read the library (anatomy -- what it knows)." "Phase 2:
-Apprenticeship with feedback (temperament -- how it acts)."
-
-**Narration:** "How did the fish get this way? Two phases. First, it read the
-entire library -- every book, every website. That's pretraining: it's where the
-map's content comes from, including the jagged fidelity. That's anatomy --
-structural, durable. Then it went through an apprenticeship: practice
-conversations with human feedback. That's where it learned its manners -- the
-helpfulness, the confidence, the eagerness to please. That's temperament --
-trained, model-specific, and it varies between fish." Beat. "So how do you talk
-to something like that?"
-
-**Notes:** Bridge: ends on "how do you talk to something like that?", which
-opens station 4. The map/territory callback ("the map's content is anatomy; the
-confident ink is temperament") now lands on the fish-map slide in station 4.
-"Why does this matter?" -- it answers "how much of this is fixable?"
-Anatomy is structural; temperament is model-specific and changing. Rhymes with
-human language acquisition (exposure then feedback) with one decisive disanalogy:
-a child's words are grounded in lived experience; the fish's are not. Do not
-claim developmental equivalence.
+**Text, Narration, Notes:** moved to `deck/slides/03-meet-the-fish.md` (SSOT for on-screen text and speaker notes).
 
 ---
 
@@ -160,43 +103,14 @@ claim developmental equivalence.
 figure visible only to the "A" partner (candidate: architectural floor plan --
 something with spatial relationships that are hard to convey in words alone).
 
-**Text:** "Pair up. A describes. B plays the fish: draw exactly what you hear. No
-peeking, no questions."
-
-**Narration:** "Find a partner. One of you gets a picture -- you describe it in
-words only. Your partner plays the fish: they draw exactly what they hear, and
-they are not allowed to ask questions. You cannot look at each other's
-paper. The describer is NOT ALLOWED to see the result until its finished."
-Give 3-4 minutes.
-
-**Notes:** PENDING decision (open-questions Q3): its original job (dislodging the
-"smart person" model) now belongs to the goldfish. What remains unique is that the
-audience *feels* the prompter's side of the gap. Keep only in this framing; first cut
-if time is tight. *Exercise: pair.* Have printed figures face-down on tables or ready to
-hand out. The exercise must generate the failure itself so it cannot be dismissed
-as rigged. Fallback if no printed materials: "give directions to your house
-without using any landmarks or street names."
+**Text, Narration, Notes:** moved to `deck/slides/04-talking-to-the-fish.md` (SSOT for on-screen text and speaker notes).
 
 ### Slide: Debrief -- the tacit bound (PENDING, with the exercise)
 
 **Visual:** Reveal the source figure alongside a few audience drawings (if
 willing to share). The gap between intent and result is the lesson.
 
-**Text:** "What went wrong? Whose fault was it?"
-
-**Narration:** "What went wrong?" Let them answer. "Whose fault was it -- the
-describer or the drawer?" Push toward: neither. B did exactly what the fish does. The problem is that some
-knowledge is tacit -- it does not survive the translation into language. The
-drawer did exactly what the words said. That is how a language model works: it
-runs on language, and language carries more than you think -- but it also leaks
-more than you think." Beat. "B wasn't allowed to ask questions. The fish is --
-if you invite it: 'ask me clarifying questions before you start.'"
-
-**Notes:** *Socratic:* "What went wrong? Whose fault?" The spine claim
-(introduced at the premise slide, station 3) is felt here from the inside. The
-exercise shows both sides -- the astonishing power
-(how much DID transmit) and the limit (tacit knowledge does not). Candidate technique: invite clarifying
-questions.
+**Text, Narration, Notes:** moved to `deck/slides/04-talking-to-the-fish.md` (SSOT for on-screen text and speaker notes).
 
 ### Slide: Specification -- plain vs. specified
 
@@ -204,80 +118,31 @@ questions.
 ("give me a list of sushi restaurants"). Right: a fully specified prompt (near
 78757, ranked by Yelp review, with price range and wait time for Tuesday dinner).
 
-**Text:** Left header: "Plain prompt." Right header: "Specified prompt." Below:
-"Examples beat adjectives. Constraints generate quality."
-
-**Narration:** "The people-pleaser answers whatever you ask -- so a vague ask
-gets a confident, vague answer. Here's the same question asked two different ways. On the left,
-a vague ask -- you get a vague answer. On the right, I've specified what I
-actually want: location, ranking criteria, format. The output is dramatically
-better, not because the model is smarter, but because the input was clearer.
-Examples beat adjectives. Constraints generate quality."
-
-**Notes:** *Demo: side-by-side comparison.* This is the first capability method:
-specification, output formats, few-shot examples.
+**Text, Narration, Notes:** moved to `deck/slides/04-talking-to-the-fish.md` (SSOT for on-screen text and speaker notes).
 
 ### Slide: Knowledge-domain elicitation
 
 **Visual:** *(illustrate)* Three-way output comparison. Left: plain prompt.
-Center: role-prompted ("you are a financial analyst"). Right:
-knowledge-domain-prompted ("what domains of knowledge are relevant here? what
-perspectives and best practices does each contribute?").
+Center: role-prompted ("you are a residential contractor"). Right:
+knowledge-domain-prompted ("what domains of knowledge are relevant here? for each,
+what does a non-expert overlook?"). The full knowledge-domain response drops in as a
+fragment to show how much more it generated.
 
-**Text:** Three column headers: "Plain" / "Role prompt" / "Knowledge-domain prompt."
-
-**Narration:** "It read the whole library. But which shelf does it pull from? Role prompting -- 'you are a financial analyst' -- shapes the
-response. But knowledge-domain elicitation goes further: instead of assigning one
-role, you ask 'what domains of expertise are relevant here?' The model surfaces
-knowledge it already holds but would not apply unless you ask for it." Beat.
-"Remember: it holds worlds of knowledge but does not apply them unprompted."
-
-**Notes:** *Demo: three-way comparison.* The callback to the library (station 3):
-the model has the knowledge; the bottleneck is whether you know to ask.
-Methods introduced: role prompting, knowledge-domain elicitation.
+**Text, Narration, Notes:** moved to `deck/slides/04-talking-to-the-fish.md` (SSOT for on-screen text and speaker notes).
 
 ### Slide: Meta-prompting + pink elephant
 
 **Visual:** *(new)* Pink elephant callback image -- a memorable visual of a pink
 elephant that will recur whenever the "don't think of X" principle surfaces.
 
-**Text:** "Help me write a better prompt for this task."
-
-**Narration:** "You don't always know what to ask -- so ask the fish. Meta-prompting: ask the model to help you write a better prompt.
-You can even write a prompt in one model to run in another. But here's the trap
---" Tell the pink elephant / Theory of Mind anecdote: asking a model to write
-prompts for a fresh chat, and it included negative references to ideas from the
-first chat ('don't do X') -- a 'don't think of a pink elephant' effect that
-poisoned the second chat's context. "Asking it to use Theory of Mind and rewrite
-the prompt fixed it. The model knew how to do that -- I just had to know to ask."
-
-**Notes:** The pink elephant is the station 4 mascot for "it has the knowledge;
-you have to know to ask." Method: meta-prompting. The ToM anecdote is a personal
-story -- keep it brief and concrete.
+**Text, Narration, Notes:** moved to `deck/slides/04-talking-to-the-fish.md` (SSOT for on-screen text and speaker notes).
 
 ### Slide: Reliability levers
 
 **Visual:** *(illustrate)* Side-by-side comparison: same query with and without a
 "think about the criteria" preamble. Show the output quality difference.
 
-**Text:** "Chain-of-thought: 'Show your work.'" / "Extended thinking: 'Think about
-what criteria matter here, then answer.'" / "Self-reflection: 'How confident are
-you? What might you be wrong about?'"
-
-**Narration:** "The fish will never tell you it's unsure. So how do you make it
-more reliable?" Let them answer. "Three
-levers. Chain-of-thought -- ask it to show its work, so you can check the steps.
-Extended thinking -- direct it to think about specific things before answering;
-here's the same query with and without a 'think about the criteria' preamble.
-And self-reflection -- ask it to grade its own confidence, flag what it's unsure
-about, or search when it doesn't know. These reduce the problem; they do not remove
-your obligation to verify." Beat. "And can you trust its grade of itself? To
-answer that, we need to look at how its knowledge is shaped."
-
-**Notes:** *Socratic:* "So how do you make it more reliable?" Methods: chain-of-thought,
-extended thinking, self-reflection. The self-reflection caveat callbacks to the
-pink elephant (you must know to ask) and sets up the map/territory reveal that
-follows (the self-assessment is itself jagged), then verification (station 5).
+**Text, Narration, Notes:** moved to `deck/slides/04-talking-to-the-fish.md` (SSOT for on-screen text and speaker notes).
 
 ### Slide: Map vs. territory -- the territory
 
@@ -287,14 +152,7 @@ Tracking, Recent Events, Everyday Cooking / Regional Cooking, plus background fi
 (History, Law, Medicine). Full color, textured, alive. Centered on screen.
 (Image spec: `metaphor-imagery.md` § The three-layer map/territory.)
 
-**Text:** "The territory (reality)."
-
-**Narration:** "Let's look at what the fish knows as a map. First -- this is reality. The landscape of knowledge. It's big, it's complex,
-and nobody holds a complete picture of it. But it's out there, and you can go check
-it."
-
-**Notes:** Brief -- establish the referent, don't dwell. The audience needs to accept
-"reality exists and maps are representations of it," not memorize regions.
+**Text, Narration, Notes:** moved to `deck/slides/04-talking-to-the-fish.md` (SSOT for on-screen text and speaker notes).
 
 ### Slide: Map vs. territory -- the human map
 
@@ -307,17 +165,7 @@ dragons" shading. Clear experience-worn paths connecting high-detail regions.
 
 **Animation:** Territory slides right; human map enters from left. Side by side.
 
-**Text:** "Your map (calibrated by contact)."
-
-**Narration:** "Here's your map of that same landscape. It's imperfect -- but it's
-calibrated by contact. You've walked some of this ground, and the paths between
-the places you've been are well-worn. Where you haven't been, you know you haven't
--- you have honest gaps, honest 'here be dragons' zones. When you're not sure, you
-know you're not sure."
-
-**Notes:** The audience nods -- this is how everyone relates to knowledge. The
-experience-worn paths are important: human knowledge is connected by a trajectory,
-not randomly sampled.
+**Text, Narration, Notes:** moved to `deck/slides/04-talking-to-the-fish.md` (SSOT for on-screen text and speaker notes).
 
 ### Slide: Map vs. territory -- the fish map
 
@@ -334,71 +182,16 @@ drifts toward mainstream.
 **Animation:** Human map slides right; fish map enters from left. All three visible
 for comparison.
 
-**Text:** "The fish's map (drawn from books, never surveyed)."
-
-**Narration:** "Now here's the fish's map. Drawn entirely from books. Notice
-anything?" (Pause for audience.) "Every line is drawn with the same confident hand.
-There are no question marks. No 'here be dragons.' And where the books were thin,
-there's less detail -- but the fish doesn't flag that as uncertainty. It just drew
-fewer features with full confidence." (Point to comparisons.) "Poetry? Remarkably
-accurate -- lots of good books. Spatial reasoning? Confident and wrong. Counting?
-It loses track of things a child could follow. Recent events? It fills in what
-'must have happened' from pattern, because the books ended before this did."
-
-"That's what people call hallucination -- the model says something false with full
-confidence. It's not a perceptual glitch; it's a consequence of generating plausible
-text without any way to check it against reality. The fish is always doing the same
-thing -- completing patterns from its training. When the patterns happen to align with
-reality, it looks like knowledge. When they don't, it looks like hallucination. The
-fish can't tell the difference, because it's doing the same thing either way."
-
-"Remember the training story? The map's content is anatomy -- it came from the
-library. The uniform confident ink is temperament -- it came from the
-apprenticeship."
-
-"And the uneven accuracy -- brilliant at poetry, hopeless at counting -- that's called
-jaggedness. The errors don't follow a difficulty gradient. They follow the density and
-quality of the books the fish had access to."
-
-**Notes:** Ends the station on a tension: the map gives no sign of which regions
-are reliable -- so when is it safe to use at all? (Answered at station 5.) This
-is the pivotal teaching image. Give it time. The three-beat reveal
-should feel like a discovery, not a lecture. Let the audience see the pattern in the
-maps before naming it. "Hallucination" is familiar; use it, then deepen it -- the
-mechanism is pattern completion without grounding, not a perceptual error.
+**Text, Narration, Notes:** moved to `deck/slides/04-talking-to-the-fish.md` (SSOT for on-screen text and speaker notes).
 
 ### Slides: Jaggedness walkthrough (per-case)
 
 **Visual:** For each case, two beats: (1) zoomed/highlighted comparison of the region
 on the human map vs. the fish map; (2) pre-captured screencap showing the example.
+Map first (audience predicts), then the capture; swapping means reordering slide pairs.
 (Image specs and case details: `metaphor-imagery.md` § Per-case walkthrough.)
 
-**Cases (in order):**
-
-1. **Poetry & Verse (A3):** Fish map is denser than human map here -- and accurate.
-   Screencap: generation quality + speed (~5 sec vs. ~2 hours human).
-2. **Spatial Reasoning (B2):** Human map has well-worn paths; fish map is confident
-   but wrong. Screencap: a spatial reasoning failure.
-3. **Counting & Tracking (B4):** Trivially easy for humans; fish loses count.
-   Screencap: quantity-tracking failure in narrative.
-4. **Recent Events (C4):** Fish fills in territory that didn't exist when the books
-   ended. Screencap: post-cutoff confabulation.
-5. **Everyday vs. Regional Cooking (D1):** Same domain, split by source density.
-   Screencap: mainstream recipe nailed vs. regional dish drifted.
-
-**Narration:** Walk through each case: "Let's look at specific regions. Here's
-poetry..." Show the map comparison, then the example. Build the pattern: the
-errors track source-text density, not difficulty. By the third or fourth case the
-audience is predicting the pattern themselves.
-
-**Notes:** Two cases plant felt limits that later fittings resolve: Recent Events
-(-> web search, station 7) and Counting (-> code execution via the strawberry demo,
-station 8). Letter counting (B1) moved to the strawberry slide to avoid showing it
-twice. Pacing: don't rush, but don't belabor. 3-4 cases may be enough if time
-is tight; Poetry (impressive), Spatial Reasoning (jolting), and Cooking (density
-visible within one domain) are the strongest three. The rest reinforce. Order TBD:
-whether to show map comparison first (audience predicts) or example first (audience
-reacts, map explains).
+**Text, Narration, Notes:** moved to `deck/slides/04-talking-to-the-fish.md` (SSOT for on-screen text and speaker notes).
 
 ---
 
@@ -410,37 +203,14 @@ reacts, map explains).
 (easy to check -- just open the spreadsheet). Right: a document summary (harder
 to check -- you'd have to read the whole document).
 
-**Text:** "When is it safe to use?" / Left: "Checking < Doing = Lean in." /
-Right: "Checking >= Doing = Beware."
-
-**Narration:** "When IS it safe to use this?" Let them answer. "Here's the most
-useful thing I can give you today -- one rule that works regardless of your
-stance: lean in where checking is cheaper than doing. Beware where it is not."
-Point to examples. "A spreadsheet summary -- easy to check, just open the file.
-A document summary -- harder, you'd have to read the whole thing. The value is
-not in the output; it's in the ratio between checking and doing."
-
-**Notes:** *Socratic:* "When IS it safe to use?" This is the stabilization moment
--- after disorientation, they get one durable, stance-neutral tool. Cognitive
-shift: "disoriented" -> "holding one durable tool."
+**Text, Narration, Notes:** moved to `deck/slides/05-verification.md` (SSOT for on-screen text and speaker notes).
 
 ### Slide: Task sort exercise
 
 **Visual:** *(illustrate)* Blank task cards or a worksheet with a spectrum
 (easy to check <---> hard to check).
 
-**Text:** "List 5 of your real work tasks. Sort them: is checking cheaper than
-doing?"
-
-**Narration:** "Take a minute. List five things you actually do at work. For each
-one, ask: if I handed this to the fish, would checking the result be cheaper than
-doing it myself? Sort them on that spectrum. Then challenge your partner -- do
-they agree with your sorting?"
-
-**Notes:** *Exercise: individual then pair.* 3-4 minutes individual, 2-3 minutes
-pair discussion. This is personally useful regardless of stance -- skeptics and
-enthusiasts both have work tasks. The exercise earns trust by being genuinely
-useful.
+**Text, Narration, Notes:** moved to `deck/slides/05-verification.md` (SSOT for on-screen text and speaker notes).
 
 ### Slide: Decomposition
 
@@ -448,18 +218,7 @@ useful.
 offsite") vs. a decomposed version (broken into sub-tasks: venue research,
 agenda draft, logistics checklist -- each independently verifiable).
 
-**Text:** "Monolithic: one big ask." / "Decomposed: verifiable pieces."
-
-**Narration:** "One more technique before we move on: decomposition. Instead of
-one massive prompt, break the task into sub-tasks before you start, so you can
-verify each piece independently. 'Plan a team offsite' is hard to check. 'Find
-three venues within budget' is easy to check. 'Draft an agenda for a half-day
-session' is easy to check. Same task, but now each piece is in the 'lean in'
-zone."
-
-**Notes:** Bridge out: "We've been treating the fish as the whole system. It
-isn't." Decomposition is distinct from iteration (which refines after);
-iteration lives at station 6 with restart vs. repair.
+**Text, Narration, Notes:** moved to `deck/slides/05-verification.md` (SSOT for on-screen text and speaker notes).
 
 ---
 
@@ -1133,7 +892,8 @@ must have earned this by now.
 ### Contact info for closing screen
 
 - Benjamin Bradley
-- email via education at wegeekout - com (can be displayed visually on screen, but should not be scrapable in code)
+- Contact: the contact form, https://wegeekout.com/contact-me/ (on anything published or web-based, never the email address;
+  the email address may appear on the printed take-home card only)
 - Slides: https://benjaminbradley.github.io/mental-models-talk/ -- show the URL plus a QR code
   for it (generate the QR when the slide is built)
 

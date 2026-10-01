@@ -74,13 +74,18 @@
 }
 
 .reveal .slides section { text-align: left; }
+.reveal h1 { font-size: 72px; line-height: 1.1; margin: 0 0 0.5em; }
+.reveal blockquote {
+  width: auto; margin: 0 0 0.6em; padding: 0 0 0 30px; box-shadow: none;
+  border-left: 10px solid var(--purple); font-style: italic; background: none;
+}
 .reveal .slides section img {
   border: 6px solid var(--ink);
   border-radius: 12px;
   background: #fff;
   max-height: 700px;
 }
-.reveal ol, .reveal ul { display: block; }
+.reveal ol, .reveal ul { display: block; margin-left: 1.3em; }
 .reveal li { margin: 0.5em 0; }
 .reveal .controls { color: var(--ink); }
 .reveal .progress { color: var(--accent); }
@@ -145,3 +150,62 @@
 .reveal .maps.three .map { width: 590px; }
 .reveal .map svg { display: block; width: 100%; height: auto; border: 6px solid var(--ink); border-radius: 12px; }
 .reveal .map figcaption { text-align: center; font-weight: 800; font-size: 36px; margin-top: 14px; }
+
+/* ---- Placeholders ------------------------------------------------------------------ */
+/* Missing artwork or captures. Every placeholder starts with "TODO:" so
+   `grep -rn 'class="placeholder"' deck/slides` lists what is still missing. */
+.reveal .placeholder {
+  display: flex; align-items: center; justify-content: center; text-align: center;
+  min-height: 320px; padding: 40px; box-sizing: border-box;
+  border: 6px dashed var(--accent); border-radius: 12px;
+  background: color-mix(in srgb, var(--accent) 6%, var(--paper));
+  color: var(--accent); font-size: 36px; font-weight: 800;
+}
+
+/* ---- Screenshots ------------------------------------------------------------------- */
+/* .shots: a row of captured screenshots, each a <figure> with an optional caption. */
+.reveal .shots { display: flex; gap: 40px; justify-content: center; align-items: flex-start; }
+.reveal .shots figure { margin: 0; flex: 1 1 0; min-width: 0; text-align: center; }
+.reveal .shots img { display: block; width: 100%; height: auto; max-height: 760px; object-fit: contain; margin: 0 auto; }
+.reveal .shots.tall img { max-height: 840px; width: auto; max-width: 100%; }
+.reveal .shots figcaption, .reveal .map figcaption { font-weight: 800; font-size: 34px; margin-top: 14px; }
+.reveal .shots .placeholder { min-height: 560px; }
+.reveal .lede { font-size: 1.1em; font-weight: 800; }
+.reveal .small { font-size: 0.7em; }
+/* An image that drops in over the slide (e.g. the full transcript behind a trimmed one). */
+.reveal .overlay { position: absolute; top: 40px; right: 40px; z-index: 5; }
+.reveal .overlay img { max-height: 980px; box-shadow: 0 20px 60px rgb(0 0 0 / 0.35); }
+
+/* ---- Two-sided comparisons (station 5) --------------------------------------------- */
+.reveal .versus { display: flex; gap: 60px; justify-content: center; }
+.reveal .versus > div {
+  flex: 1 1 0; border: 6px solid var(--ink); border-radius: 12px; padding: 30px 40px;
+  background: #fff;
+}
+.reveal .versus h3 { margin-top: 0; }
+.reveal .versus .lean { border-color: var(--green-deep); background: color-mix(in srgb, var(--green) 10%, #fff); }
+.reveal .versus .beware { border-color: var(--red); background: color-mix(in srgb, var(--red) 8%, #fff); }
+
+/* ---- The gradient (station 2; returns at 13) --------------------------------------- */
+/* Two camps split by a hard line; the cue fragment dissolves the line into a gradient. */
+.gradient-scene { position: relative; height: 340px; margin-top: 40px; }
+.gradient-scene .camps, .gradient-scene .bar {
+  position: absolute; inset: 0; border: 6px solid var(--ink); border-radius: 12px;
+  transition: opacity 1.2s ease;
+}
+.gradient-scene .camps { display: flex; overflow: hidden; }
+.gradient-scene .camps > div {
+  flex: 1; display: flex; align-items: center; justify-content: center;
+  font-size: 56px; font-weight: 800;
+}
+.gradient-scene .camps .muggle { background: #fff; border-right: 6px solid var(--ink); }
+.gradient-scene .camps .wizard { background: var(--purple); color: var(--paper); }
+.gradient-scene .bar {
+  opacity: 0;
+  background: linear-gradient(to right, #fff, var(--purple));
+  display: flex; align-items: flex-end; justify-content: space-between; padding: 24px 36px;
+  font-size: 40px; font-weight: 800; box-sizing: border-box;
+}
+.gradient-scene .bar span:last-child { color: var(--paper); }
+.gradient-scene:has(.gradient-cue.visible) .camps { opacity: 0; }
+.gradient-scene:has(.gradient-cue.visible) .bar { opacity: 1; }
