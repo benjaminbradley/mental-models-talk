@@ -7,6 +7,7 @@ explanations. To be trimmed and prioritized later (a real card fits far fewer th
 ## Links (keep on the card)
 
 - **Slides:** https://benjaminbradley.github.io/mental-models-talk/
+- email via education at wegeekout - com (can be displayed visually on print-out, but should not be scrapable in code)
 
 ## Capability track (how to work with it)
 
