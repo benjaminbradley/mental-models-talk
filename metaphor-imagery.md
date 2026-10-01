@@ -48,6 +48,12 @@ tiers), Station 10 (version change).
 
 **Description:** A goldfish — the talk's primary anthropomorphic carrier for LLMs.
 
+**Technical terms beside the metaphor:** wherever a metaphor stands for a real concept, the
+real term appears on screen next to it in the shared `.term` style (yellow monospace chip;
+`deck/README.md` § Conventions), e.g. the library = `training data`, reading it = `pretraining`,
+the apprenticeship = `RLHF` (expanded). The metaphor carries the idea; the chip gives the
+audience the word to look up.
+
 **Visual properties:**
 - **Aesthetic:** Cartoon style, heavy black outline on light background; bold colors.
   Reminiscent of Red Fish Blue Fish. Expressive but simple — readable from the back
@@ -59,11 +65,17 @@ tiers), Station 10 (version change).
   stupid — earnest and well-read but ungrounded.
 
 **Evolution through the talk:**
-- Station 3: Fish alone (sleeping → waking). Establishes character. Then the origin
-  story: reading the library (pretraining) → apprenticeship of conversations (RLHF).
-- Station 6: Fish in a bare bowl. Bowl = client; water = context; water level
-  visible (context window). No fittings yet. Cooking metaphor is separate (see below).
-  (See "The bowl and the fish" below.)
+- Station 3: Fish alone, introduced **awake** (no bowl, no water). Then the origin
+  story: (1) the fish in reading glasses atop a tall stack of books, reading an open book
+  (pretraining; the books = training data); (2) the fish in practice conversations, each
+  reply scored by a green ✓ or red ✗ paddle (RLHF). Then the **sleeping** beat (asleep →
+  wakes when addressed): it does nothing when you are not talking to it.
+- Station 4: still the bare fish (no bowl): talking to it directly, it does not remember
+  your name. Remembering the conversation is the bowl's job (station 6).
+- Station 6: Fish by itself → fish in water in a basic glass bowl. Bowl = client; water =
+  context; water level visible (context window). The conversation so far floats in the
+  water as words/phrases, in order (each turn is added; the whole history is what the fish
+  sees). No fittings yet. (See "The bowl and the fish" below.)
 - Station 7: First fittings attach one at a time: tubes (web search), notepad (memory).
 - Station 8: Fish reaching through tubes (tools/agency); alarm clock and recipe cards
   attach; pull back to reveal the full tank.
@@ -265,6 +277,13 @@ client (simple/fancy/mobile); the water = the context.
 **Visual properties:**
 - Bowl types: simple round bowl, fancy aquarium with features, mobile/portable tank.
   Represent different clients (basic chat, full IDE, mobile app).
+- **Every fitting is a tool the fish initiates.** No arrows pointing in: the fish reaches
+  out through a tube and pulls the result back itself. Tubes connect at the top, sides, or
+  back of the bowl/tank; for back connections, show the interface the fish sees (what the
+  tool looks like from inside the water).
+- **Everything attaches to the bowl/tank**, so the water = context metaphor holds (whatever
+  a fitting returns lands in the water). Fittings are tank attachments marked with an icon:
+  e.g. an attachment with a notepad icon = memory (the fish's journal).
 - Fittings on the bowl (each added at its narrative beat, in this order):
   - Water = context (pourable, poisonable, has a level/surface line) — Station 6
   - Tubes = web search first (information in), then tools / MCP connectors (actions
@@ -272,7 +291,12 @@ client (simple/fancy/mobile); the water = the context.
   - Notepad = memory (attached to the bowl) — Station 7
   - Alarm clock = scheduled/recurring tasks — Station 8
   - Recipe cards = skills / reusable playbooks — Station 8
-  - Camera/ears = multimodal inputs; microphone = voice — Station 8 tank reveal only
+  - Camera/ears = multimodal inputs; microphone = voice — Station 8 tank reveal only.
+    Show a conversion stage between the device and the water: for the microphone, a
+    transcription step (speech → text) — except native voice mode, where audio goes in
+    directly. For images, the conversion is an encoder that turns pixels into the fish's own
+    internal tokens (not into text) in current multimodal models; older pipelines did caption
+    images to text first. Open: how to draw "converted, but not into words."
 
 **Evolution:**
 - Station 6: Bowl + fish established, water only. Diagnostic: "is it the fish or
@@ -288,21 +312,24 @@ client (simple/fancy/mobile); the water = the context.
 
 ---
 
-## The cooking metaphor (Station 6)
+## Cat food in the water (Station 6; replaces the cooking metaphor)
 
-**Introduced:** Station 6 — restart vs. repair.
+**Introduced:** Station 6 — restart vs. repair. Kept inside the fishbowl metaphor (Benji,
+Oct 1; replaces the salt-in-the-pot cooking image, to be confirmed once prototyped).
 
-**Description:** Standalone metaphor (not part of the fish/bowl system). You decide
-the ingredients; the model does the cooking. If you add salt instead of sugar, you
-cannot remove the salt — it's in the dish now.
+**Description:** Something that does not belong gets into the water: cat food. Now every
+answer the fish gives has "meow" sprinkled through it. You cannot fish the cat food back out;
+"please ignore the cat food" just adds more words to the water. Moving the fish to a fresh
+bowl of clean water (a new chat) is easier than cleaning the old one.
 
 **Visual properties:**
-- A pot/pan with ingredients being added.
-- Salt shaker accident — salt visibly in the food.
-- Two paths shown: (A) try to fix the salty dish (add more, compensate — the
-  salt is still there) vs. (B) start a fresh dish with the right ingredients.
-- Visual makes clear: the entire conversation history is re-read every turn, so
-  a mistake early on persists.
+- The bowl with the conversation-so-far floating in the water (station 6 base image); cat
+  food flakes added among the words.
+- The fish's replies come out with "meow" interspersed.
+- Two paths: (A) try to clean it (add "ignore the cat food" to the water; the flakes stay)
+  vs. (B) scoop the fish into a fresh bowl with only the good words carried over.
+- Makes clear: the whole history is in the water and re-read every turn, so an early
+  mistake persists.
 
 **Detail spec:** See `slides-outline.md` Station 6 for narration and slide content.
 
@@ -350,9 +377,9 @@ Quick reference: which metaphor images appear or change at each station.
 | Station | New images | Extended images |
 |---------|-----------|-----------------|
 | 2 | The gradient (light touch) | |
-| 3 | The goldfish (sleeping/waking); Temperament origin story | |
-| 4 | Three-layer map/territory; pink elephant | |
-| 6 | The bowl and the fish (water only); The cooking metaphor (salt in the water) | Water level in bowl (context window) |
+| 3 | The goldfish (awake; later sleeping/waking); training story (books; ✓/✗ paddles) | |
+| 4 | Three-layer map/territory; pink-elephant conversation (HTML, no artwork) | |
+| 6 | The bowl and the fish (water + floating conversation); cat food in the water | Water level in bowl (context window) |
 | 7 | | Tubes fitting (web search); notepad fitting (memory) |
 | 8 | | Fish reaching through tubes (agency); alarm clock + recipe cards; full-tank reveal |
 | 9 | Enforcement hierarchy; Three-tier hosting | Water turns poisoned; effect icons |

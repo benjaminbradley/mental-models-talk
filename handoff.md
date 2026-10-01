@@ -27,17 +27,32 @@ for anything not yet captured or drawn. Iteration on everything follows once Ben
 
 - Cheap/easy artwork: build it. Undefined artwork: gather Benji's preferences first (list
   sent in chat on Oct 1; record the answers below when they arrive).
-- Describe-and-draw (Q3): built, hidden with `data-visibility="hidden"`.
+- Describe-and-draw (Q3): built and shown (still pending keep/cut).
 - Knowledge elicitation: trimmed capture on the slide; the full version drops in as a fragment.
 - Recent Events: World Series (older local model via ollama, a true hallucination) first, then
   World Cup (Haiku: starts to confabulate, notices the date, pushes toward web search).
 - Cooking: French omelette = well documented; "Bradley meat pie" = family recipe (stands in for
-  regional cuisine).
+  regional cuisine). gemma3 confabulates a Bradley-smoker recipe; two search captures show the
+  check. The current-model refusal capture stays in `illustrations/` (notes-only aside).
 - Walkthrough order: map comparison first, then the capture (default; easy to flip).
 
-## Artwork preferences (fill in from Benji's answers)
+## Artwork preferences
 
-_Pending._
+Recorded in their owning docs (Oct 1): `metaphor-imagery.md` (goldfish evolution, fittings
+rules, cat food in the water, camera/mic conversion stage, `.term` chips) and `arc-table.md`.
+Highlights for chunk B:
+- Station 6 starts from the bare fish: fish by itself -> fish in water in a basic glass bowl;
+  the conversation so far floats in the water as words/phrases, in order.
+- Restart vs. repair = cat food in the water ("meow" in every answer; move the fish to a fresh
+  bowl), replacing the cooking/salt image.
+- Station 7: no inward arrows; every fitting is a tool the fish initiates. Tubes attach at the
+  top, sides or back; back connections show the interface the fish sees.
+- Station 8: everything attaches to the tank (water = context holds); attachments carry icons
+  (notepad icon = memory/journal). Camera/microphone show a conversion stage (transcription
+  for the mic; an encoder for images).
+- Still awaiting Benji's input on the rest of the Oct 1 list (bowl variants, alarm clock /
+  recipe cards, instruction stack, MCP, ladders, hosting, poisoned-water icons, enforcement
+  hierarchy, version change, bias, refusal mockup, blame image, station 13 gradient).
 
 ## Working notes
 

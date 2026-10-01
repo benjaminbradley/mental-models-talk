@@ -69,7 +69,7 @@ never left the bowl. It is a **people-pleaser**: it desperately wants to be a go
 conversationalist and will never admit it is out of its depth. The unwarranted confidence
 is a symptom of eagerness to please, NOT intent to deceive. It is not lying; the mechanism
 is just running unanchored. Connects straight to sycophancy. **The fish sleeps most of the
-time.** It only wakes when you talk to it, or when the tank has an alarm clock (scheduled
+time** (its own beat, after the training story). It only wakes when you talk to it, or when the tank has an alarm clock (scheduled
 tasks, station 8). It does nothing on its own; all initiative is yours. Security
 implication (callback at station 9): it will also eagerly comply with injected
 instructions. Review implication (callback at station 12): asking the fish to review its
@@ -96,6 +96,10 @@ Methods: none yet. This station is the model; station 4 is working with it.
 
 The capability half of the station 3 arc. Every technique enters as the answer to a
 property of the fish the room just met.
+
+**Talking to the bare fish.** A pre-captured local-model exchange: introduce yourself, then
+ask it your name; it has no idea. Each message reaches the fish alone. Remembering the
+conversation is the bowl's job (plants station 6).
 
 **Describe-and-draw pair exercise (PENDING: keep or cut; see open-questions Q3).** If
 kept, it is reframed as **"B plays the fish"**: B draws exactly what they hear and may not
@@ -217,17 +221,18 @@ on demand. It is the same principle as projects, but it can draw from larger kno
 bases. RAG is a candidate to cut for time but worth a mention: it is how enterprise
 deployments work, and it is coming to consumer products.
 
-**Restart vs. repair (the cooking metaphor).** The entire conversation history is
+**Restart vs. repair (cat food in the water).** The entire conversation history is
 delivered with every request; the model re-reads the whole thread each time. Mental
-model: you decide the ingredients; the model does the cooking. If you accidentally add
-salt instead of sugar, you cannot "take out the salt," because the salt is in the water
-now. Compare conversation A+B -> "not B" -> C (the salt is still in there, and now "not B"
-is also in the water) with starting fresh: A -> D. A poisoned thread is often cheaper to
+model: cat food in the water (`metaphor-imagery.md`; replaced the cooking/salt image). Once
+it is in, every answer comes out with "meow" in it; you cannot fish it back out, and "ignore
+the cat food" is just more words in the water. Compare conversation A+B -> "not B" -> C
+(B is still in there, and now "not B" is too) with starting fresh: A -> D, i.e. move the fish
+to a fresh bowl. A poisoned thread is often cheaper to
 abandon than to repair. Demonstrate with a context-management example.
 **Iteration and critique loops live here too** (moved from station 5): the first output
 is material, not product. Refine it, or have the fish critique itself. Repairing in place
 (iterating) only pays off when the thread is not poisoned; once it is, restarting beats
-repairing. "Is this thread salted?" is the practical test for choosing between iteration
+repairing. "Is there cat food in this water?" is the practical test for choosing between iteration
 and abandonment.
 
 Vulnerability half: context can be poisoned, including by your own earlier missteps.
@@ -464,10 +469,9 @@ else is enrichment. (Re-check timing: the reorder moved specification out of sta
   jaggedness, fused as a segue into verification. Pink elephant as the "you must know to
   ask" mascot. (Q2 resolved.) Describe-and-draw as "B plays the fish" (pending).
 - St.6 - client vs. model: the bowl (client, simple/fancy/mobile) and the fish (model);
-  the water = context, a bounded container (inside exists / outside does not). The
-  cooking metaphor for restart-vs-repair (and the folded-in iteration/critique-loop
-  discussion): you decide the ingredients, the model cooks; salt in the water cannot be
-  taken out.
+  the water = context, a bounded container (inside exists / outside does not). Cat food
+  in the water for restart-vs-repair (and the folded-in iteration/critique-loop
+  discussion): once it is in, every answer says "meow"; move the fish to a fresh bowl.
 - St.7 - fittings arrive one at a time, each answering a felt limit: tubes (web search;
   the citations ladder puts them to work), notepad (memory).
 - St.8 - the tubes carry actions out (strawberry -> script); agency as amplifier;

@@ -84,8 +84,12 @@ shows: `../metaphor-imagery.md`.
 - **Screenshots:** wrap captures in `<div class="shots">` with one `<figure>` (img + optional
   `<figcaption>`) per capture; add `tall` for a single tall capture. `<div class="overlay fragment">`
   drops an image in over the slide (e.g. a full transcript behind a trimmed one).
+- **Technical terms:** `<span class="term">pretraining</span>` puts the real term beside the
+  metaphor (yellow monospace chip); use it everywhere a metaphor stands for a real concept.
+- **Simulated chats:** `<div class="chat">` with `<p class="user">` / `<p class="fish">` bubbles
+  (`<span class="who">` for the speaker); `<p class="new-chat">` for a fresh conversation.
 - **Hidden slides:** `<!-- .slide: data-visibility="hidden" -->` keeps a slide in the file but out
-  of the deck (used for the pending describe-and-draw exercise).
+  of the deck (available for anything pending a keep/cut decision).
 
 ## Presenting checklist
 

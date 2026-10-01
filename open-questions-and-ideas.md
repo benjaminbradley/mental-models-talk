@@ -150,7 +150,8 @@ as the talk's primary anthropomorphic carrier.
   / "iron man suit" allowed as passing references only. The sleeping-fish insight (does
   nothing on its own) is folded into the goldfish.
 
-- **The cooking metaphor** (station 6, restart-vs-repair; also now carries iteration vs.
+- **The cooking metaphor** (SUPERSEDED Oct 1 by cat food in the water, which stays inside the
+  fishbowl metaphor; see `metaphor-imagery.md`) (station 6, restart-vs-repair; also now carries iteration vs.
   abandonment, Q14). You are deciding the ingredients; the model does the cooking to
   combine them. If you accidentally add salt instead of sugar, you cannot take out the
   salt - it is in the dish now. The entire conversation history is re-read with every

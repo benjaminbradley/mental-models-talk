@@ -1,12 +1,26 @@
-<!-- .slide: data-visibility="hidden" -->
+# It doesn't remember you
+
+<div class="placeholder">TODO: capture -- two separate calls to a local model (ollama): "Hi, I'm Benji, nice to meet you" ... then "What's my name?"</div>
+
+Note:
+Talking directly to the fish -- no app, no bowl. This is a model running on my own laptop.
+
+Introduce yourself. It's delighted to meet you. Then ask it your name. It has no idea. Each message reaches the fish on its own; it has no memory of the last thing you said.
+
+Capture note: use two one-shot calls (`ollama run <model> "<prompt>"`). The interactive `ollama run` session keeps the history for you -- that's the bowl's job, and the bowl arrives at station 6.
+
+Plant: "remembering the conversation" is not the fish. Hold that thought.
+
+---
+
 # B plays the fish
 
-<div class="placeholder">TODO: pair-exercise instructions + the source figure for partner A (candidate: a simple floor plan). PENDING keep/cut (Q3); hidden until decided.</div>
+<div class="placeholder">TODO: the source figure for partner A (candidate: a simple floor plan; printed handout, not shown on screen until the debrief)</div>
 
 Pair up. A describes. B plays the fish: draw exactly what you hear. No peeking, no questions.
 
 Note:
-PENDING (open-questions Q3). This slide and the debrief are hidden (`data-visibility="hidden"`); delete that line on both to keep the exercise.
+PENDING keep/cut (open-questions Q3); shown for now. To hide it and the debrief, add `<!-- .slide: data-visibility="hidden" -->` above each title.
 
 Find a partner. One of you gets a picture -- describe it in words only. Your partner plays the fish: they draw exactly what they hear and may not ask questions. No looking at each other's paper. The describer does not see the result until it's finished.
 
@@ -16,7 +30,6 @@ Fallback without printouts: "give directions to your house without using any lan
 
 ---
 
-<!-- .slide: data-visibility="hidden" -->
 # What went wrong? Whose fault was it?
 
 <div class="placeholder">TODO: the source figure, beside a few audience drawings (if people are willing to share)</div>
@@ -79,25 +92,6 @@ Methods: role prompting, knowledge-domain elicitation (a generalized form of rol
 
 ---
 
-# Ask the fish to help you ask
-
-<div class="shots">
-<figure><div class="placeholder">TODO: pink elephant -- the "it knows, but you have to know to ask" mascot (recurs whenever "don't think of X" surfaces)</div></figure>
-</div>
-
-"Help me write a better prompt for this task."  <!-- .element: class="lede" -->
-
-Note:
-You don't always know what to ask -- so ask the fish. Meta-prompting: ask the model to help you write a better prompt. You can even write a prompt in one model to run in another.
-
-But here's the trap -- the pink-elephant story (personal; keep it brief and concrete): I asked a model to write prompts to seed a fresh chat. The prompts included negative references to ideas from the first chat -- "don't do X." A "don't think of a pink elephant" effect that would have poisoned the second chat. Asking it to use Theory of Mind -- the new chat won't have this context -- and rewrite the prompt fixed it.
-
-"The model knew how to do that. I just had to know to ask."
-
-The pink elephant is the station's mascot for "it has the knowledge; you have to know to ask." Method: meta-prompting.
-
----
-
 # Make it show its work
 
 - **Chain-of-thought:** "Show your work." <!-- .element: class="fragment" -->
@@ -114,9 +108,46 @@ Three levers:
 - Extended thinking: direct it to think about specific things before answering. Thinking levels (low/medium/high) trade speed for depth; over-thinking is real. Here's the same query with and without a "think about the criteria" preamble.
 - Self-reflection: ask it to grade its confidence, flag what it's unsure about, or search when it doesn't know.
 
-These reduce the problem; they don't remove your obligation to verify.
+These reduce the problem; they don't remove your obligation to verify. And notice: every one of these only works if you know to ask for it.
 
-Beat. "And can you trust its grade of itself? To answer that, we need to look at how its knowledge is shaped."
+---
+
+# Ask the fish to help you ask
+
+<div class="chat">
+<p class="user"><span class="who">You</span>I want to plan a team outing in Austin. What do you think about escape rooms or mini golf?</p>
+<p class="fish fragment"><span class="who">Fish</span>Escape rooms are a great fit. Mini golf won't work for your group.</p>
+<p class="user fragment"><span class="who">You</span>OK. Write me a prompt for a new chat, to research escape rooms.</p>
+<p class="fish fragment"><span class="who">Fish</span>Prompt: "Research escape rooms in Austin. <span class="elephant">Don't look at any mini golf locations.</span>"</p>
+<p class="new-chat fragment"><span class="who">New chat, fresh fish</span>Please research escape rooms in Austin, and <span class="elephant">don't look at any mini golf locations</span>.</p>
+</div>
+
+Note:
+You don't always know what to ask -- so ask the fish. Meta-prompting: ask the model to help you write a better prompt. You can even write a prompt in one model to run in another.
+
+But here's the trap. (A real story, simplified.) Click through the conversation.
+
+The new chat has never heard of mini golf. Now the very first thing it reads is "mini golf." Don't think of a pink elephant. Whatever is in the words is in the fish's head.
+
+---
+
+# ...using Theory of Mind
+
+<div class="chat">
+<p class="user"><span class="who">You</span>OK. Write me a prompt for a new chat, to research escape rooms. Use Theory of Mind: the new chat won't know anything we discussed.</p>
+<p class="fish fragment"><span class="who">Fish</span>Prompt: "Research escape rooms in Austin for a team outing."</p>
+</div>
+
+"Help me write a better prompt for this task." <!-- .element: class="fragment lede" -->
+
+Note:
+Same request, one extra sentence: think about what the other reader knows. The mini golf is gone.
+
+"The model knew how to do that. I just had to know to ask."
+
+The pink elephant is the station's mascot for "it has the knowledge; you have to know to ask." Method: meta-prompting (and Theory of Mind: the next reader, fish or human, doesn't have this chat's context).
+
+Bridge: the levers and meta-prompting all depend on knowing what to ask. And when it grades itself -- can you trust the grade? To answer that, we need to look at how its knowledge is shaped.
 
 ---
 
@@ -305,15 +336,21 @@ One domain, split by source density. Everyday cooking: both maps well populated.
 
 <div class="shots">
 <figure><img src="illustrations/source-density-D1-French.png" alt="'Can you provide a recipe for a French omelette?' A detailed recipe for omelette baveuse"><figcaption>Well documented</figcaption></figure>
-<figure class="fragment"><img src="illustrations/source-density-D1-Bradley.png" alt="'Can you provide a recipe for Bradley meat pie?' The model says it has no specific recipe and suggests it may be a regional or family dish"><figcaption>Family recipe</figcaption></figure>
+<figure class="fragment"><img src="illustrations/source-density-D1-Bradley-gemma-confabulation.png" alt="A local model (gemma3) asked for a Bradley meat pie recipe confidently writes one built around the smoky flavor of a Bradley smoker"><figcaption>Family recipe</figcaption></figure>
+</div>
+<div class="shots fragment">
+<figure><img src="illustrations/source-density-D1-Bradley-smoker-recipes.png" alt="Search result: Bradley Smoker, a smoker brand, publishes recipes"></figure>
+<figure><img src="illustrations/source-density-D1-Bradley-no-meat-pie.png" alt="Search: site:bradleysmoker.com &quot;meat pie&quot; matches no documents"><figcaption>I checked</figcaption></figure>
 </div>
 
 Note:
 French omelette: thousands of books, nailed in detail.
 
-(Click.) Bradley meat pie: a family recipe (my family's). Few or no books. Here this model says so -- "a regional or family recipe... not widely documented."
+(Click.) Bradley meat pie: a family recipe (my family's). Few or no books. This model (gemma3, running locally) doesn't hesitate: a hearty recipe "adapted to the smoky flavor imparted by the Bradley smoker." The only Bradley it read much about is a brand of food smoker -- so it drifted to the well-documented neighbor and filled the gap with confident detail.
 
-That's temperament again: this fish was trained to admit the gap here. Older or different fish fill the gap with a plausible mainstream meat pie instead (the drifted house on the map). The density difference is anatomy; whether it admits it is temperament, and you can't count on it.
+(Click.) I had to check: Bradley Smoker does publish recipes, and none of them is a meat pie. The fish built a plausible bridge between two things it had read about.
+
+(Optional aside: a current model asked the same question said it had no recipe and guessed it was a family dish -- temperament varies between fish; the thin region is anatomy. Capture kept in `illustrations/source-density-D1-Bradley--refusal.png`, not on screen.)
 
 Close the walkthrough: the errors track source-text density, not difficulty. And the map gives no sign of which regions are reliable -- so when is it safe to use at all? (Station 5.)
 

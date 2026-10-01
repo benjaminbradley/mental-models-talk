@@ -1,15 +1,16 @@
 # The real problems
 
-- energy <!-- .element: class="fragment" -->
-- water <!-- .element: class="fragment" -->
-- labor <!-- .element: class="fragment" -->
-- provenance <!-- .element: class="fragment" -->
-- concentration of power <!-- .element: class="fragment" -->
-
-<div class="placeholder">TODO: harms images (datacenters, water, labor, provenance, power) drop in, then close into a box in the corner</div>
+<div class="harms">
+<div class="fragment"><span class="emoji">⚡</span>energy</div>
+<div class="fragment"><span class="emoji">💧</span>water</div>
+<div class="fragment"><span class="emoji">👷</span>labor</div>
+<div class="fragment"><span class="emoji">📚</span>provenance</div>
+<div class="fragment"><span class="emoji">👑</span>concentration of power</div>
+</div>
+<span class="fragment box-cue"></span>
 
 Note:
-Visual intent (artwork TBD, see `slides-outline.md`): images of real harms drop in one by one, then compress into a closed box that stays in the corner as a persistent reminder.
+Click per harm; the last click closes them into a box in the corner. (Icons are stand-ins; photos are a planned enhancement, see todo.md. The box does not yet persist onto later slides.)
 
 Say: "Before we talk about how any of this works, let's name what's wrong with it." Name each harm briefly as it appears. Then: "These are real problems. I am not going to tell you they aren't. But that is not what this talk is about." The box closes.
 

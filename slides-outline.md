@@ -54,13 +54,15 @@ sequence.
 
 ## Station 2 - Demystify: the gradient
 
-### Slide: Magic is a gradient
+### Slide: Technology is a learnable form of magic
 
 **Visual:** *(new)* A visual that starts with a binary split (magic / not magic,
 wizards / muggles) and transforms into a continuous gradient of skill refined by
 effort. Light touch -- this image returns in full treatment at station 13.
 
-**Animation:** Binary split morphs or dissolves into a gradient bar.
+**Animation:** Binary split morphs or dissolves into a gradient bar. Emoji people: a cluster of
+regular people at the muggle end and wizards at the other; after the dissolve, people are
+dotted along the whole bar, almost all wizards (varied), only a few regular at the far left.
 
 **Text, Narration, Notes:** moved to `deck/slides/02-demystify.md` (SSOT for on-screen text and speaker notes).
 
@@ -68,20 +70,25 @@ effort. Light touch -- this image returns in full treatment at station 13.
 
 ## Station 3 - Meet the fish
 
+### Slide: Who learns whose language?
+
+**Visual:** *(illustrate)* Two rows. Then: a person speaks binary to a computer (strict,
+only numbers). Now (fragment): a computer speaks to a person in pictures of ideas (loose;
+ideas, philosophy, feelings).
+
+**Text, Narration, Notes:** moved to `deck/slides/03-meet-the-fish.md` (SSOT for on-screen text and speaker notes).
+
 ### Slide: Computers can understand and speak language
 
-**Visual:** *(illustrate)* A computer with a speech bubble.
+**Visual:** *(illustrate)* Then vs. now poetry: a computer's bad poem (~2020) vs. the first
+AI-generated poem to bring a tear to Benji's eye (😢, linked to the published Reddit comment).
 
 **Text, Narration, Notes:** moved to `deck/slides/03-meet-the-fish.md` (SSOT for on-screen text and speaker notes).
 
 ### Slide: The goldfish
 
-**Visual:** *(new)* The goldfish -- a people-pleaser, eager, fluent, and
-unanchored. Show it sleeping, then waking when addressed. It has read every book
-but never left the bowl.
-
-**Animation:** The fish is asleep (dim, still). When "you talk to it," it wakes
-up -- bright, eager, animated.
+**Visual:** *(new)* The goldfish, awake -- a people-pleaser, eager, fluent, and
+unanchored. No bowl yet.
 
 **Text, Narration, Notes:** moved to `deck/slides/03-meet-the-fish.md` (SSOT for on-screen text and speaker notes).
 
@@ -89,13 +96,29 @@ up -- bright, eager, animated.
 
 **Visual:** *(extend)* The goldfish origin story, shown as two phases. Phase 1:
 the fish reading an enormous library (pretraining). Phase 2: the fish in an
-apprenticeship of conversations with feedback (RLHF/post-training).
+apprenticeship of conversations with feedback (RLHF/post-training). Technical terms
+(`pretraining`, `training data`, `RLHF`) shown beside the metaphor in the `.term` style.
+
+**Text, Narration, Notes:** moved to `deck/slides/03-meet-the-fish.md` (SSOT for on-screen text and speaker notes).
+
+### Slide: It sleeps until you talk to it
+
+**Visual:** *(extend)* The goldfish asleep (dim, still, eyes closed).
+
+**Animation:** When "you talk to it," it wakes up -- bright, eager, animated.
 
 **Text, Narration, Notes:** moved to `deck/slides/03-meet-the-fish.md` (SSOT for on-screen text and speaker notes).
 
 ---
 
 ## Station 4 - Talking to the fish (and how far to trust it)
+
+### Slide: It doesn't remember you
+
+**Visual:** *(illustrate)* Pre-captured local-model (ollama) exchange: introduce yourself,
+then ask your name in a separate call; it has no idea.
+
+**Text, Narration, Notes:** moved to `deck/slides/04-talking-to-the-fish.md` (SSOT for on-screen text and speaker notes).
 
 ### Slide: Describe-and-draw exercise -- "B plays the fish" (PENDING: keep or cut)
 
@@ -130,17 +153,19 @@ fragment to show how much more it generated.
 
 **Text, Narration, Notes:** moved to `deck/slides/04-talking-to-the-fish.md` (SSOT for on-screen text and speaker notes).
 
-### Slide: Meta-prompting + pink elephant
-
-**Visual:** *(new)* Pink elephant callback image -- a memorable visual of a pink
-elephant that will recur whenever the "don't think of X" principle surfaces.
-
-**Text, Narration, Notes:** moved to `deck/slides/04-talking-to-the-fish.md` (SSOT for on-screen text and speaker notes).
-
 ### Slide: Reliability levers
 
 **Visual:** *(illustrate)* Side-by-side comparison: same query with and without a
 "think about the criteria" preamble. Show the output quality difference.
+
+**Text, Narration, Notes:** moved to `deck/slides/04-talking-to-the-fish.md` (SSOT for on-screen text and speaker notes).
+
+### Slides: Meta-prompting + pink elephant (after the reliability levers)
+
+**Visual:** *(illustrate)* A simulated chat, built up bubble by bubble: planning a team
+outing, the fish rejects mini golf; asked for a research prompt, it writes "...don't look at
+any mini golf locations," which lands in a fresh chat (the pink elephant). Second slide: the
+same request with "use Theory of Mind," and the mini golf disappears.
 
 **Text, Narration, Notes:** moved to `deck/slides/04-talking-to-the-fish.md` (SSOT for on-screen text and speaker notes).
 
@@ -290,11 +315,13 @@ knowledge bases."
 cut for time but worth at least a mention -- it's how enterprise deployments
 work and it's coming to consumer products.
 
-### Slide: Restart vs. repair -- salt in the water
+### Slide: Restart vs. repair -- cat food in the water
 
-**Visual:** *(new)* The cooking metaphor. Two paths shown: Path A (polluted) --
-ingredients A+B, then "not B," then C, with the salt visibly still in the water.
-Path B (fresh) -- new conversation with ingredients A+D, clean water.
+**Visual:** *(new)* Cat food in the water (`metaphor-imagery.md`): the conversation floats
+in the bowl; cat food gets in and every answer comes out with "meow" in it. Path A
+(polluted) -- A+B, then "not B," then C, the cat food still there. Path B (fresh) -- the
+fish moved to a new bowl with A+D. (Text and narration below still use the old salt image;
+rewrite when the station is migrated.)
 
 **Text:** "The entire conversation is re-read every turn. You cannot take out
 the salt."

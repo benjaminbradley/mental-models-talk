@@ -15,7 +15,7 @@ Completed items are REMOVED (not marked complete) - tracked by git history.
 
 #### Ideas and change requests
 
-- Models (fish) need to be taught how to use tools (tank attachments)
+- New slide? Models (fish) need to be taught how to use tools (tank attachments)
 
 #### Design & spec work
 
@@ -31,6 +31,13 @@ Image specs for all metaphors: `metaphor-imagery.md` (single source of truth).
 
 #### Pre-capture demos & transcripts
 
+- [ ] Station 3 "then" poetry: find a pre-2020-ish example of a computer's bad poem.
+- [ ] Station 3 "now" poetry: capture the poem from
+      https://www.reddit.com/r/ClaudeAI/comments/1gn4u8y/i_hade_a_nice_night_with_claude_and_asked_for_a/
+      and replace the slide link with the permalink to the published comment.
+- [ ] Station 4 "it doesn't remember you": two one-shot local-model calls (ollama):
+      introduce yourself, then "what's my name?"
+- [ ] Station 4 specification demo: plain vs. specified sushi-restaurant prompts.
 - [ ] Prepare comparison demos
    - [ ] reliability-levers side-by-side: same query with/without thinking instructions (station 4)
 
@@ -57,6 +64,13 @@ Image specs for all metaphors: `metaphor-imagery.md` (single source of truth).
 - [ ] Design entry & exit polls (Google Forms + QR codes; measure model accuracy / stance
       movement, not satisfaction). Phone-based (projector confirmed, QR on screen works).
 - [ ] Draft the one-page takeaway card (source: `take-home.md`).
+
+### Enhancements (low priority)
+
+- [ ] Station 1 harms: replace the emoji tiles with photos (datacenter, water, labor,
+      provenance, power).
+- [ ] Station 1 harms: keep the closed box visible in the corner on later slides (persistent
+      reminder), not only on its own slide.
 
 ## Week of Sep 28 - Oct 2 - assembly complete
 
@@ -91,6 +105,9 @@ Image specs for all metaphors: `metaphor-imagery.md` (single source of truth).
 - [ ] Capture feedback / lessons
 - [ ] station 11 alt example -- default vs custom
 - [ ] consider a reusable recording or write-up -- or publish to GitHub Pages?
+  - [ ] clean up repo - move planning docs into a doc/ subdir with its own README describing the planning/creation process - check github history for document creation order - relative timeline is more important than specific timestamps.
+  - [ ] main README should link to the presentation on github pages, and on credits page(?), presentation should link back to the github repo
+  - [ ] move most of CLAUDE.md contents to AGENTS.md - leave claude-specific + @AGENTS loader in CLAUDE
 - [ ] re-imagine the talk experience as an improv comedy show: what would it look like to map the step1/step2 features in the presentation's narrative into an analogous setup/reveal joke rhythm? would a scripted show make more sense than improv?
 
 ## Organizer reply (EFF-Austin, received)
