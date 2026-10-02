@@ -1,83 +1,100 @@
-# Handoff: deck assembly (Oct 1)
+# Handoff: deck assembly, chunk C + iteration (Oct 1)
 
 Resume bridge for finishing the initial slide deck. Read `README.md`, `deck/README.md` and
-this file first. Delete this file once chunk C is done and the deck is complete.
+this file first. Delete this file once chunk C and the final sweep are done.
 
-## Plan
+## Where things stand
 
-Build every station into `deck/slides/`, move each station's Text/Narration/Notes out of
-`slides-outline.md` (leaving Visual/Animation + a pointer), and use `<div class="placeholder">TODO: ...</div>`
-for anything not yet captured or drawn. Iteration on everything follows once Benji has seen it.
+Stations 0-8 are built in `deck/slides/` (listed in `deck/manifest.js`), and their
+Text/Narration/Notes have moved out of `slides-outline.md` (which keeps Visual/Animation + a
+pointer). Missing captures and artwork are `<div class="placeholder">TODO: ...</div>` boxes;
+`grep -rn 'class="placeholder"' deck/slides` lists them. Every built slide has been checked in
+headless-Chrome screenshots only; nothing has been reviewed on a projector yet.
 
-- **Chunk A (done):** placeholder style; art-lab removed; stations 2-5 built; station 4
-  screenshots moved into `deck/illustrations/`.
-- **Chunk B (next):** stations 6-8. New bowl parts in `deck/art/parts.svg` (tubes, notepad,
-  alarm clock, recipe cards, tank, camera/ears, microphone), cooking metaphor, instruction
-  stack, MCP diagram, citations ladder (3 captures in `illustrations/citations-ladder--*`),
-  strawberry (`illustrations/jaggedness-B1-letters.png`; script output not captured).
-  The bowl prototype (bowl-back / bowl-water / bowl-front + waterline label) was on the
-  deleted art-lab slide; see git history (`deck/slides/art-lab.md` before this commit).
-- **Chunk C:** stations 9-13 + closing slide. Diagrams and HTML/CSS mockups; poisoned water
-  reuses chunk B parts. Closing slide: slides URL + QR (add the `qrcode` npm package as a dev
-  dependency and commit a static SVG) and the contact form https://wegeekout.com/contact-me/
-  (never the email address on anything published). Then the final sweep: outline pointers,
-  `metaphor-imagery.md` status, `todo.md`, delete this file.
+- **Chunk A (done):** stations 1-5, revised after Benji's first review (emoji harm tiles,
+  emoji gradient, who-learns-whose-language, awake intro fish, training-story art with `.term`
+  chips, sleep beat, no-memory demo slot, describe-and-draw shown, pink elephant as a chat after
+  the levers, gemma Bradley confabulation).
+- **Chunk B (done):** stations 6-8. New parts `tank-back` / `tank-water` / `tank-front` in
+  `deck/art/parts.svg`; bowl/tank scenes are inline SVG in the slide files. Station 6: the bowl
+  remembers the conversation, fish-or-bowl (round bowl / lidded aquarium / travel jar), context
+  window, notes on the glass, a pre-set-up tank (candidate), cat food. Station 7: quizzical fish,
+  training step 3, web search, three citation slides (captures) behind a placeholder citations
+  visual, the notepad + illustrative memory mock. Station 8: letter-count demo, the fish acts +
+  operator checklist, proprietary vs. MCP fittings, alarm clock + recipe cards, the full tank
+  with mic/camera conversion boxes.
+- **Chunk C (next):** stations 9-13 + the closing slide, then the final sweep (below).
 
-## Decisions from Benji (this session)
+## Chunk C: what to build
 
-- Cheap/easy artwork: build it. Undefined artwork: gather Benji's preferences first (list
-  sent in chat on Oct 1; record the answers below when they arrive).
-- Describe-and-draw (Q3): built and shown (still pending keep/cut).
-- Knowledge elicitation: trimmed capture on the slide; the full version drops in as a fragment.
-- Recent Events: World Series (older local model via ollama, a true hallucination) first, then
-  World Cup (Haiku: starts to confabulate, notices the date, pushes toward web search).
-- Cooking: French omelette = well documented; "Bradley meat pie" = family recipe (stands in for
-  regional cuisine). gemma3 confabulates a Bradley-smoker recipe; two search captures show the
-  check. The current-model refusal capture stays in `illustrations/` (notes-only aside).
-- Walkthrough order: map comparison first, then the capture (default; easy to flip).
+Specs live in their owning docs: `metaphor-imagery.md` (artwork), `arc-table.md` (beats),
+`slides-outline.md` stations 9-13 (per-slide Visual/Text/Narration/Notes still there, to be
+migrated). Benji's choices, in short:
 
-## Artwork preferences
+- **Station 9:** hosting = four-step reveal (frontier, both tank and fish in a corporate cloud
+  with several vendor names as plain text and an uncuttable cord from you -> your tank + their
+  fish in a company uniform -> your tank + your fish in a padlocked private cloud -> everything
+  on a beefy local PC drawn below the clouds). Poisoned water: murk via `--murk` (`--water`
+  transitions), effect icons ☢️ destruction, ✉️ exfiltration (leaving through a tube), 💣 tucked
+  into the notepad (sleeper). Enforcement = a wall (architecture) vs. a "please keep out" sign
+  (guideline); the policy layer is dropped everywhere. Recovery stories:
+  `illustrations/blast-radius--deleted-{db,homedir}.png` + `deck/illustrations/blast-radius--deleted-files.png`.
+  Mailbox trifecta exercise; training-data opt-out (autocomplete screenshot not captured).
+- **Station 10:** refusal-as-product = a settings panel with several dials (hacking, chemistry,
+  politics, ...); bias = four mechanisms (books, ✓/✗ paddles, vendor fence, 🎭 masks for
+  emergent effects); guardrail probe = `illustrations/guardrail-station10.headline-{a,b}.png` in
+  front, `illustrations/guardrail--deepseek-refusal.png` dimmed behind; instability = a row of
+  versioned fish, one in the middle with goofy eyes (a nerf), plus captures
+  `illustrations/unstable--{fable-suspended,silently-restricted-acct}.png`.
+- **Station 11:** intention = `illustrations/intention--macbook.jpg` vs.
+  `illustrations/intention--cyberdeck-rpimag.png`; sycophancy + atrophy (reuse the fish).
+- **Station 12:** "Would you sign it?" cover page and the drafts-folder mockup are fully specified
+  in `slides-outline.md` (build as HTML/CSS mockups); review ladder = placeholder (not a literal
+  ladder); blame image = "the dog ate my homework."
+- **Station 13:** what would change your mind; exit poll (placeholder QR, polls not designed);
+  coda = the station 2 gradient returns in full treatment (no input yet: use a richer version of
+  the emoji gradient and flag it for review).
+- **Closing slide:** slides URL https://benjaminbradley.github.io/mental-models-talk/ + a QR code
+  (add the `qrcode` npm package as a dev dependency, generate a static SVG once and commit it) and
+  the contact form https://wegeekout.com/contact-me/. Never put the email address on anything
+  published (it belongs on the printed take-home card only).
 
-Recorded in their owning docs (Oct 1): `metaphor-imagery.md` (goldfish evolution, fittings
-rules, cat food in the water, camera/mic conversion stage, `.term` chips) and `arc-table.md`.
-Highlights for chunk B:
-- Station 6 starts from the bare fish: fish by itself -> fish in water in a basic glass bowl;
-  the conversation so far floats in the water as words/phrases, in order.
-- Restart vs. repair = cat food in the water ("meow" in every answer; move the fish to a fresh
-  bowl), replacing the cooking/salt image.
-- Station 7: no inward arrows; every fitting is a tool the fish initiates. Tubes attach at the
-  top, sides or back; back connections show the interface the fish sees.
-- Station 8: everything attaches to the tank (water = context holds); attachments carry icons
-  (notepad icon = memory/journal). Camera/microphone show a conversion stage (transcription
-  for the mic; an encoder for images).
-- Station 6 instructions: introduced by a need; your sticky note inside the glass (custom
-  instructions), then the tank maker's note (system instructions); no project instructions;
-  candidate slide for a Custom GPT / Gem (a tank someone else set up).
-- Station 7 opens with the fish eyeing its first tube quizzically, then a third training step
-  (tool-use training) added to the station 3 training story, then it uses the tube.
-- Citations ladder (7) and review ladder (12): not literal ladders; placeholders for now.
-- Station 8: operator to-do = checklist ticked off; MCP = one standard coupling (plan: garden
-  hose) vs. custom-shaped vendor fittings.
+## Final sweep (after chunk C)
 
-Highlights for chunk C (all in `metaphor-imagery.md`, `arc-table.md`, `slides-outline.md`):
-- Hosting: four-step reveal (frontier -> your tank + their fish -> private cloud -> local);
-  fish in a company uniform; uncuttable cord to the corporate cloud (vendor names as plain
-  text, several vendors); padlocked private cloud; beefy local PC drawn below the clouds.
-- Poisoned water: ☢️ destruction, ✉️ exfiltration, 💣 tucked into the notepad (sleeper).
-- Enforcement: wall (architecture) vs. sign (guideline); the policy layer is dropped
-  everywhere, including `take-home.md`.
-- Station 10: refusal dials panel (hacking, chemistry, politics, ...); bias = books, ✓/✗
-  paddles, vendor fence, 🎭 masks; instability = a row of versioned fish, one nerfed with
-  goofy eyes.
-- Station 12 blame image: "the dog ate my homework."
-- No input yet (use defaults, flag for review): bowl variants (round bowl / lidded aquarium /
-  travel jar), alarm-clock and recipe-card attachments (tank attachments with icons), station 13
-  gradient full treatment, how to draw the image encoder ("converted, but not into words").
+- `slides-outline.md`: every station a pointer + Visual/Animation; contact section stays.
+- `metaphor-imagery.md` imagery status; `todo.md` (remove done items, add captures still
+  missing); `deck/README.md` for any new conventions.
+- Do NOT switch Pages from `placeholder/` to `deck/`; that is a separate, optional todo.
+- Delete this file.
+
+## Iteration (after the deck is complete)
+
+Benji expects to review everything and iterate. Open items already known:
+- Projector review: fish/bowl outline weight and palette, map legibility, screenshot legibility
+  (the 3-up knowledge-elicitation captures are small).
+- Emoji are stand-ins in several places (station 1 harms, attachments, mic/camera); the
+  attachments should probably become drawn parts.
+- Placeholders awaiting captures: see `todo.md` § Pre-capture demos & transcripts.
+- Placeholders awaiting design: citations visual (7), review-ladder visual (12), back-connection
+  "interface the fish sees" (8), describe-and-draw figure (4, still pending keep/cut Q3).
+- The station 1 harms box doesn't persist onto later slides (todo § Enhancements).
+- Timing: the deck is now much longer than the outline (stations 4 and 6-8 especially); the
+  week-of-Oct-5 run-through decides cuts (`todo.md`).
+
+## Decisions from Benji worth keeping in mind
+
+- Technical terms appear beside their metaphor in the `.term` chip style.
+- Every fitting is a tool the fish initiates (no inward arrows); everything attaches to the
+  tank so water = context holds.
+- Describe-and-draw is shown for now (pending Q3). Walkthrough order: map first, then capture.
+- Cat food replaces the cooking/salt metaphor; the policy layer is gone from the enforcement
+  hierarchy.
 
 ## Working notes
 
-- Slides are flat (horizontal): hash `#/N` is the Nth visible slide overall; fragments are
-  `#/N/0/F`. Hidden slides are not counted.
-- Visual check: serve `deck/` (e.g. `python3 -m http.server 8799` from `deck/`) and screenshot
-  with headless Chrome:
+- Slides are flat (horizontal): hash `#/N` is the Nth visible slide overall (0-based); fragments
+  are `#/N/0/F`. Stations 0-8 currently span slides 0-51 (station 8 ends at 51).
+- Visual check: serve `deck/` (`python3 -m http.server 8799` from `deck/`) and screenshot with
+  headless Chrome:
   `"/Applications/Google Chrome.app/Contents/MacOS/Google Chrome" --headless=new --hide-scrollbars --window-size=1920,1080 --virtual-time-budget=4000 --screenshot=out.png "http://localhost:8799/index.html#/13"`
+- In slide Markdown, keep HTML blocks free of blank lines (a blank line ends the block).

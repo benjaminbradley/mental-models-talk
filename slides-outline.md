@@ -249,30 +249,19 @@ agenda draft, logistics checklist -- each independently verifiable).
 
 ## Station 6 - The bowl and the water
 
-### Slide: The bowl and the fish
+### Slide: The bowl remembers the conversation
 
-**Visual:** *(new)* The bowl and the fish. The model (fish) sits inside the
-client (bowl). Simple bowl, fancy bowl, mobile bowl -- different clients, same
-fish.
+**Visual:** *(new)* The bare fish (from station 4); the bowl and water appear around it; the
+conversation floats in the water message by message.
 
-**Text:** "The model = the fish (intelligence)." / "The client = the bowl
-(interface + capabilities)." / "You never talk to the raw fish."
+**Text, Narration, Notes:** moved to `deck/slides/06-bowl-and-water.md` (SSOT for on-screen text and speaker notes).
 
-**Narration:** "We've been talking about the fish as if it were the whole system.
-It isn't. You never talk to the raw fish. You always talk through a client
--- the bowl it sits in. ChatGPT, Claude, Gemini -- those are bowls. The model
-inside is the fish. A simple bowl, a fancy bowl, a mobile bowl -- different
-clients, same fish. When something goes wrong, the first diagnostic question is:
-is that the fish or the bowl?"
+### Slide: Is that the fish or the bowl?
 
-**Notes:** Opens station 6. At this point the bowl holds only water -- no
-fittings yet; they arrive one at a time in stations 7-8. The shout-out scenarios
-that answer "bowl!" ("it can't search," "it doesn't remember") foreshadow the
-fittings. *Shout-out:* After explaining, give scenarios and have the audience
-call out "fish!" or "bowl!" Examples: "It gave me a wrong fact" (fish). "It
-can't search the web" (bowl). "It's too agreeable" (fish -- temperament). "It
-doesn't remember our last conversation" (bowl -- no memory fitting). Keep it
-fast and fun.
+**Visual:** *(new)* The same fish in a round bowl (simple chat app), a lidded aquarium (full
+workspace) and a travel jar (phone app) -- different clients, same fish.
+
+**Text, Narration, Notes:** moved to `deck/slides/06-bowl-and-water.md` (SSOT for on-screen text and speaker notes).
 
 ### Slide: Context window -- bounded water
 
@@ -280,18 +269,9 @@ fast and fun.
 water level as a boundary: everything submerged exists to the fish; everything
 above the waterline does not.
 
-**Text:** "Inside the water: exists. Outside the water: does not exist."
+**Text, Narration, Notes:** moved to `deck/slides/06-bowl-and-water.md` (SSOT for on-screen text and speaker notes).
 
-**Narration:** "The water in the bowl is the context window. Everything inside
-it -- your conversation, your attached files, system instructions -- exists to
-the fish. Everything outside it does not. There is no 'it probably knows' -- it
-either has the context or it doesn't. And the bowl only holds so much water."
-
-**Notes:** Cognitive shift: "it just knows things / remembers me" -> "a bounded
-window; what's inside exists, what's outside does not." Methods: context
-engineering, document hygiene.
-
-### Slide: Instruction hierarchy
+### Slide: Notes on the glass (instructions)
 
 **Visual:** *(extend)* Introduced by a need: a behavior you keep re-asking for
 (e.g. "always use metric"). Your sticky note goes up on the inside of the glass (custom
@@ -299,57 +279,23 @@ instructions). Then a second note appears from the tank's maker (system instruct
 in, often unreadable). Both are in the water before you type. Project instructions are
 omitted as too detailed. (Imagery: `metaphor-imagery.md` § The bowl and the fish.)
 
-**Text:** Note labels: "Your note: custom instructions" / "The maker's note: system
-instructions." (Revise the narration below on migration: drop project instructions.)
-
-**Narration:** "Before you type anything, the fish has already received
-instructions. At the bottom: the provider's system instructions -- invisible to
-you, baked in. Above that: your custom instructions -- persistent preferences.
-Then project instructions -- scoped to a workspace. And finally your prompt.
-Custom GPTs, Gems, Claude Projects -- these are products built on this stack.
-RAG -- retrieval-augmented generation -- is the system pulling relevant documents
-into context on demand; same principle as projects, just drawing from larger
-knowledge bases."
-
-**Notes:** Methods: instruction hierarchy, projects/RAG. RAG is a candidate to
-cut for time but worth at least a mention -- it's how enterprise deployments
-work and it's coming to consumer products.
+**Text, Narration, Notes:** moved to `deck/slides/06-bowl-and-water.md` (SSOT for on-screen text and speaker notes).
 
 ### Slide: A tank someone else set up (Custom GPT / Gem) -- candidate
 
 **Visual:** *(extend)* A tank that arrives already set up: someone else's sticky notes (and
 documents) inside the glass. That's a Custom GPT / Gem / Project in this metaphor.
 
-**Notes:** Candidate slide; keep if time allows. RAG (pulling documents into the water on
-demand) can ride along here.
+**Text, Narration, Notes:** moved to `deck/slides/06-bowl-and-water.md` (SSOT for on-screen text and speaker notes).
 
 ### Slide: Restart vs. repair -- cat food in the water
 
 **Visual:** *(new)* Cat food in the water (`metaphor-imagery.md`): the conversation floats
 in the bowl; cat food gets in and every answer comes out with "meow" in it. Path A
 (polluted) -- A+B, then "not B," then C, the cat food still there. Path B (fresh) -- the
-fish moved to a new bowl with A+D. (Text and narration below still use the old salt image;
-rewrite when the station is migrated.)
+fish moved to a new bowl with A+D.
 
-**Text:** "The entire conversation is re-read every turn. You cannot take out
-the salt."
-
-**Narration:** "The entire conversation history is delivered with every request --
-the fish re-reads the whole thread each time. Think of it like cooking: you
-decide the ingredients, the fish does the cooking. If you accidentally add salt
-instead of sugar, you cannot take it out -- the salt is in the water now. And
-'not B' doesn't remove B; it adds 'not B' as another ingredient. Often, starting
-fresh is cheaper than trying to repair a derailed thread."
-
-Beat. "This is also where iteration lives: the first output is raw material, not
-a finished product. Refine it, have the fish critique itself. But iterating only
-pays off when the thread is clean. If the water is salted, restart."
-
-**Notes:** Bridge out: "The water holds only what you pour in. What about
-everything the fish doesn't have -- anything after the books ended, or the sources
-it claimed?" Methods: restart vs. repair, iteration, critique loops. The practical
-test: "Is this thread salted?" Personal story -- this is felt from real
-experience working with LLMs.
+**Text, Narration, Notes:** moved to `deck/slides/06-bowl-and-water.md` (SSOT for on-screen text and speaker notes).
 
 ---
 
@@ -362,10 +308,9 @@ station 3 training story returns with a third step: tool-use training (the fish 
 with fittings, with ✓/✗ feedback; term chip: tool use / function calling). Then the fish is
 back in the tank, using the tube.
 
-**Notes:** Felt limit -> method: the library and the apprenticeship never taught it to use a
-fitting, so it had to be trained to. Opens station 7.
+**Text, Narration, Notes:** moved to `deck/slides/07-first-fittings.md` (SSOT for on-screen text and speaker notes).
 
-### Slide: Tubes, first use -- web search + the citations ladder
+### Slides: Looking things up (web search) + the three citation levels
 
 **Visual:** *(extend)* The tubes fitting attaches to the bowl -- the first
 fitting. Then *(illustrate)* three-rung ladder demo. Rung 1: "Tell me about X"
@@ -375,23 +320,7 @@ Rung 3: "...with verified sources" (model used tools to check URLs).
 **Animation:** The three rungs appear in sequence; the gap between the second and third is
 highlighted. The visual is TBD (a literal ladder was rejected); placeholder for now.
 
-**Text:** Rung 1: "No sources." Rung 2: "With sources (unverified -- the
-dangerous gap)." Rung 3: "With verified sources (tool-checked)."
-
-**Narration:** "Remember the Recent Events region of the fish's map -- the books
-ended. And the fish will happily invent a source. Wouldn't it be nice if it could
-look things up, or check its own sources? That's our first fitting: tubes to the
-outside." *(Tubes attach to the bowl.)* "Three levels of sourcing. First: no sources. You're trusting the fish. Second: 'with sources' --
-and here's where it gets dangerous. The fish can fabricate citations that look
-real. The appearance of sourcing manufactures unearned trust. Third: 'with
-verified sources' -- the fish actually uses its tools to check that the URLs
-exist and say what it claims. The danger lives in the gap between the second and
-the third: unverified sourcing is more dangerous than no sourcing at all."
-
-**Notes:** *Demo: three-rung citations.* Opens station 7. First fitting on the
-bowl, and the first time a fitting changes what the fish can *know*. New limit it
-introduces: whatever comes back through the tube is untrusted material poured into
-the water (sets up injection, station 9).
+**Text, Narration, Notes:** moved to `deck/slides/07-first-fittings.md` (SSOT for on-screen text and speaker notes).
 
 ### Slide: The notepad -- memory (and oversharing)
 
@@ -399,50 +328,21 @@ the water (sets up injection, station 9).
 a resume-drafting session where the model stored exaggerated claims as persistent
 "facts" about the user.
 
-**Text:** "It's taking notes about you. Are they accurate?"
-
-**Narration:** "Goldfish have a famous three-second memory -- and so does ours:
-the bowl is emptied between conversations. Unless you give it a notepad." Beat.
-"If memory is on, the fish is taking notes about you between
-conversations -- and it may store things you did not intend to persist." Tell the
-resume-inflation story: "I was drafting resume bullet points -- stretching things
-the way you do on a resume -- and the model stored those as facts about my
-experience. Weeks later it was citing them back to me as things I could do.
-Memory audit: go look at what it has stored about you. Delete what should not be
-there."
-
-**Notes:** Methods: memory, memory audit. Memory sits in the instruction
-hierarchy (station 6) as another thing already in the water. Also sets up the
-sleeper attack (station 9). Bridge out: "Now it can read and remember. Can it
-*do* anything?" This is a personal story -- tell it as one.
+**Text, Narration, Notes:** moved to `deck/slides/07-first-fittings.md` (SSOT for on-screen text and speaker notes).
 
 ---
 
 ## Station 8 - The tank: reaching out to do
 
-### Slide: Strawberry -- the fish writes a tool
+### Slide: Counting letters -- the fish writes a tool
 
-**Visual:** *(illustrate)* Strawberry demo: first, the model gives a wrong
-letter count for "strawberry." Then, asked to write a script, it produces correct
-output.
+**Visual:** *(illustrate)* Letter-count demo ("Suffering Succotash": the model says 4 S's;
+there are 3). Then, asked to write a script, it produces the correct count.
 
 **Animation:** Wrong answer appears, then a script is requested, then the
 correct answer appears from the script output.
 
-**Text:** "How many Rs in 'strawberry'?" -> Wrong answer. "Write a script to
-count them." -> Correct answer.
-
-**Narration:** "Remember the Counting region of the fish's map? Quick demo. Ask the fish: how many Rs in 'strawberry'? It gets it
-wrong -- this is a classic failure, and checking is trivial. But instead of
-checking yourself, ask: 'write a script that counts the letters.' Now the fish
-reaches outside itself and gets the right answer. The tubes now carry actions out, not
-just information in. You just crossed from 'a chatbot that says things' to 'a
-system that does things.'"
-
-**Notes:** *Demo: live strawberry example.* Opens station 8. Callback to the
-Counting region (station 4); the pre-captured letter-count screencap (B1) lives
-here now. Cognitive shift: "chatbot that says" -> "system that does." Method:
-code execution.
+**Text, Narration, Notes:** moved to `deck/slides/08-the-tank.md` (SSOT for on-screen text and speaker notes).
 
 ### Slide: Agency -- the fish acts
 
@@ -450,17 +350,7 @@ code execution.
 doing things in the outside world. Plus: *(illustrate)* the operator to-do list: a checklist
 whose items get ticked off one by one as the fish does them.
 
-**Text:** "A chatbot says things. An agent does things." / "The operator todo
-list: the things you used to do yourself."
-
-**Narration:** "Tools let the fish act. This is where the spine claim from
-station 3 becomes literal: anything you can specify clearly enough, the system
-can now do. Create the API key. Send the message. File the document. These are
-the things you used to do yourself, handed off item by item. That's the operator
-todo list -- and it is powerful and dangerous for the same reason."
-
-**Notes:** Cognitive shift: "chatbot that says" -> "system that does." This is
-spine payoff #2. Methods: tool use, tool discovery.
+**Text, Narration, Notes:** moved to `deck/slides/08-the-tank.md` (SSOT for on-screen text and speaker notes).
 
 ### Slide: Provider tools vs. MCPs
 
@@ -468,18 +358,7 @@ spine payoff #2. Methods: tool use, tool discovery.
 each made for one vendor's tank. MCP: one standard fitting everyone recognizes that fits any
 compatible tank (plan: a garden-hose coupling; an electrical plug clashes with water).
 
-**Text:** "Proprietary tools: one vendor's bowl only." / "MCP (Model Context
-Protocol): industry-standard connectors, any compatible bowl."
-
-**Narration:** "Two kinds of plumbing. Proprietary tools -- ChatGPT plugins,
-Claude's built-in web search, Gemini's Google integrations -- only work with
-one vendor's bowl. MCP -- Model Context Protocol -- is an industry-standard
-connector that works across compatible platforms. The model reads a tool's
-description to decide when and how to use it, which is why tool descriptions
-matter and a badly described tool misbehaves."
-
-**Notes:** Methods: MCP, provider tools, tool discovery. Keep this concise --
-the distinction matters but the details don't need to land here.
+**Text, Narration, Notes:** moved to `deck/slides/08-the-tank.md` (SSOT for on-screen text and speaker notes).
 
 ### Slide: Scheduled tasks + skills
 
@@ -487,18 +366,7 @@ the distinction matters but the details don't need to land here.
 The alarm clock triggers the fish to work on a schedule; the recipe cards show
 packaged instructions being loaded.
 
-**Text:** "Alarm clock: the fish works while you sleep." / "Recipe cards: reusable
-playbooks you don't rewrite every time."
-
-**Narration:** "Remember: the fish sleeps until you talk to it. Unless the tank
-has an alarm clock -- scheduled tasks: set the fish to run daily briefings, monitoring, periodic reports. It
-works while you sleep. And if you're tired of re-specifying the same
-constraints every time -- recipe cards. Skills: packaged instructions for recurring
-tasks."
-
-**Notes:** Methods: scheduled tasks, skills/playbooks. Each fitting answers a felt limit:
-alarm clock <- "sleeps until woken" (station 3); recipe cards <- re-specifying
-(specification, station 4). Brief.
+**Text, Narration, Notes:** moved to `deck/slides/08-the-tank.md` (SSOT for on-screen text and speaker notes).
 
 ### Slide: The tank -- fittings catalog (recap)
 
@@ -510,19 +378,7 @@ as quick extras.
 **Animation:** Zoom out from the bowl to the full tank; the two new fittings pop on
 last.
 
-**Text:** Labels for each fitting as they appear. Final label: "The fittings
-decide what the fish can reach."
-
-**Narration:** "Look at what we've built. Water -- the context. Tubes -- search,
-tools, connections to other services. A notepad -- memory. An alarm clock. Recipe
-cards. And a couple more worth knowing: a camera and ears -- photos, screenshots,
-voice -- and a microphone for talking out loud. The bowl has become a tank. The
-fittings decide what the fish can reach. Big vendors sell a fish already installed in a bowl, which is why
-people conflate them -- but they are separable."
-
-**Notes:** Closes station 8. A recap, not an introduction: every fitting except
-camera/ears and microphone has already arrived on its own felt limit. Microphone is a
-candidate to cut. Bridge out: every fitting widens the blast radius (station 9).
+**Text, Narration, Notes:** moved to `deck/slides/08-the-tank.md` (SSOT for on-screen text and speaker notes).
 
 ---
 

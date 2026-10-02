@@ -37,6 +37,10 @@ Image specs for all metaphors: `metaphor-imagery.md` (single source of truth).
 - [ ] Station 4 "it doesn't remember you": two one-shot local-model calls (ollama):
       introduce yourself, then "what's my name?"
 - [ ] Station 4 specification demo: plain vs. specified sushi-restaurant prompts.
+- [ ] Station 8 letter count: capture the follow-up ("write a script to count them") with the
+      script and its output, same "Suffering Succotash" question.
+- [ ] Station 7 memory: replace the illustrative "Saved memories" mock entries with the real
+      resume-inflation example (or a capture of it).
 - [ ] Prepare comparison demos
    - [ ] reliability-levers side-by-side: same query with/without thinking instructions (station 4)
 
@@ -48,11 +52,13 @@ Image specs for all metaphors: `metaphor-imagery.md` (single source of truth).
 - [ ] Review the maps (station 4, `deck/slides/04-talking-to-the-fish.md`; encoding summarized
       in `metaphor-imagery.md` § Prototype encoding): legibility of the three-up view on the
       projector, whether each jaggedness case reads on its zoom, label/landmark overlaps.
+- [ ] Review the bowl/tank artwork (stations 6-8): bowl variants, sticky notes, cat food,
+      tubes and attachments (emoji icons are stand-ins), the MCP fittings, the full tank with
+      mic/camera conversion boxes.
 - [ ] Create images
-   - [ ] goldfish visuals (sleeping/waking, people-pleaser)
    - [ ] confirm case ordering and map-first (current default in the deck) vs. example-first
-   - [ ] bowl + fish, water only (station 6); fittings attaching one at a time
-         (stations 7-8); full-tank recap (end of station 8)
+   - [ ] citations visual (station 7; not a literal ladder) -- placeholder in the deck
+   - [ ] tubes connecting at the back of the tank: show the interface the fish sees
 
 #### Full review
 

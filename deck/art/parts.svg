@@ -71,5 +71,31 @@
       <!-- glint -->
       <path style="stroke: var(--paper)" d="M 110 200 C 92 250, 94 310, 116 356" fill="none" stroke-width="14" stroke-linecap="round" opacity="0.9"/>
     </symbol>
+    <!-- Rectangular tank (the bowl grown into a tank, station 8). tank-* share viewBox 0 0 900 560.
+         Glass interior: x 60-840, y 70-500. Water surface at y 130. -->
+    <clipPath id="tank-inside"><rect x="60" y="70" width="780" height="430" rx="18"/></clipPath>
+
+    <symbol id="tank-back" viewBox="0 0 900 560">
+      <rect x="60" y="70" width="780" height="430" rx="18" style="fill: var(--glass)"/>
+    </symbol>
+
+    <symbol id="tank-water" viewBox="0 0 900 560">
+      <g clip-path="url(#tank-inside)">
+        <g style="transform: translateY(var(--water-drop, 0px)); transition: transform 1.2s ease">
+          <rect x="0" y="130" width="900" height="440" style="fill: var(--water)" opacity="0.85"/>
+          <path style="stroke: var(--ink); stroke-width: var(--line, 9)" d="M 0 130 Q 50 116 100 130 T 200 130 T 300 130 T 400 130 T 500 130 T 600 130 T 700 130 T 800 130 T 900 130" fill="none" stroke-linecap="round"/>
+        </g>
+      </g>
+    </symbol>
+
+    <symbol id="tank-front" viewBox="0 0 900 560">
+      <g style="stroke: var(--ink); stroke-width: var(--line, 9)" stroke-linejoin="round" stroke-linecap="round">
+        <rect x="60" y="70" width="780" height="430" rx="18" fill="none"/>
+        <!-- rim and stand -->
+        <rect x="44" y="52" width="812" height="26" rx="8" style="fill: var(--ink)"/>
+        <rect x="44" y="496" width="812" height="34" rx="8" style="fill: var(--ink)"/>
+      </g>
+      <path style="stroke: var(--paper)" d="M 100 120 V 300" fill="none" stroke-width="14" stroke-linecap="round" opacity="0.9"/>
+    </symbol>
   </defs>
 </svg>

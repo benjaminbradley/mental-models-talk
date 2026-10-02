@@ -9,9 +9,10 @@ beats introduce or extend each image. This doc describes the artwork itself — 
 draw, how it differs layer to layer, what visual properties carry meaning. It does not
 describe narration or slide layout (those live in `slides-outline.md`).
 
-**Imagery status:** the goldfish (station 3) and the three maps + per-case zooms (station 4)
-are built; the station 2 gradient is a simple CSS version; the rest are in design/spec phase
-(placeholders in the deck). The `illustrations/` directory
+**Imagery status:** first pass built for stations 1-8: the goldfish and training story
+(station 3), the three maps + per-case zooms (station 4), the bowl/tank progression with notes,
+cat food, tubes, attachments and the MCP fittings (stations 6-8); station 1-2 use emoji/CSS.
+Stations 9-13 are in design/spec phase. Missing items are placeholders in the deck. The `illustrations/` directory
 will hold screencaps; metaphor artwork is SVG built from reusable parts in `deck/art/`
 (decision: `open-questions-and-ideas.md` Q16; how-to: `deck/README.md` § Artwork).
 

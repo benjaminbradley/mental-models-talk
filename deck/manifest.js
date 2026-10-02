@@ -6,4 +6,7 @@ window.DECK_STATIONS = [
   'slides/03-meet-the-fish.md',
   'slides/04-talking-to-the-fish.md',
   'slides/05-verification.md',
+  'slides/06-bowl-and-water.md',
+  'slides/07-first-fittings.md',
+  'slides/08-the-tank.md',
 ];

@@ -49,7 +49,9 @@ Decision and rationale: `../open-questions-and-ideas.md` Q16. Specs for what eac
 shows: `../metaphor-imagery.md`.
 
 - **Parts library:** `art/parts.svg` holds reusable `<symbol>`s (fish body, eye states,
-  bowl layers, ...). `index.html` inlines it at load, so any slide can place a part with
+  bowl layers, rectangular tank layers, ...). Layer order for a container scene: `*-back`,
+  `*-water`, then contents (fish, messages, notes), then `*-front`. Tubes are a thick ink path
+  with a thinner `--rock` path on top; attachments are white rounded boxes with an emoji icon. `index.html` inlines it at load, so any slide can place a part with
   `<use href="#part-id" x=".." y=".." width=".." height=".."/>`.
 - **Palette:** tokens in `theme/talk.css` `:root`. Raw colors (`--orange`, `--sky`, ...)
   feed semantic roles (`--fish`, `--water`, `--glass`, ...); artwork uses the roles. Parts
