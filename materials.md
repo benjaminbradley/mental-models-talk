@@ -35,6 +35,7 @@ Update as exercises are locked.
 - Laptop with slides loaded + HDMI cable. Bring own USB-C adapter as backup
   (venue's can be finicky).
 - Slide control remote (clicker).
+- Laser pointer
 
 ## Still unknown
 
