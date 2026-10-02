@@ -50,9 +50,29 @@ Highlights for chunk B:
 - Station 8: everything attaches to the tank (water = context holds); attachments carry icons
   (notepad icon = memory/journal). Camera/microphone show a conversion stage (transcription
   for the mic; an encoder for images).
-- Still awaiting Benji's input on the rest of the Oct 1 list (bowl variants, alarm clock /
-  recipe cards, instruction stack, MCP, ladders, hosting, poisoned-water icons, enforcement
-  hierarchy, version change, bias, refusal mockup, blame image, station 13 gradient).
+- Station 6 instructions: introduced by a need; your sticky note inside the glass (custom
+  instructions), then the tank maker's note (system instructions); no project instructions;
+  candidate slide for a Custom GPT / Gem (a tank someone else set up).
+- Station 7 opens with the fish eyeing its first tube quizzically, then a third training step
+  (tool-use training) added to the station 3 training story, then it uses the tube.
+- Citations ladder (7) and review ladder (12): not literal ladders; placeholders for now.
+- Station 8: operator to-do = checklist ticked off; MCP = one standard coupling (plan: garden
+  hose) vs. custom-shaped vendor fittings.
+
+Highlights for chunk C (all in `metaphor-imagery.md`, `arc-table.md`, `slides-outline.md`):
+- Hosting: four-step reveal (frontier -> your tank + their fish -> private cloud -> local);
+  fish in a company uniform; uncuttable cord to the corporate cloud (vendor names as plain
+  text, several vendors); padlocked private cloud; beefy local PC drawn below the clouds.
+- Poisoned water: ☢️ destruction, ✉️ exfiltration, 💣 tucked into the notepad (sleeper).
+- Enforcement: wall (architecture) vs. sign (guideline); the policy layer is dropped
+  everywhere, including `take-home.md`.
+- Station 10: refusal dials panel (hacking, chemistry, politics, ...); bias = books, ✓/✗
+  paddles, vendor fence, 🎭 masks; instability = a row of versioned fish, one nerfed with
+  goofy eyes.
+- Station 12 blame image: "the dog ate my homework."
+- No input yet (use defaults, flag for review): bowl variants (round bowl / lidded aquarium /
+  travel jar), alarm-clock and recipe-card attachments (tank attachments with icons), station 13
+  gradient full treatment, how to draw the image encoder ("converted, but not into words").
 
 ## Working notes
 

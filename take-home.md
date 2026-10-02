@@ -77,8 +77,8 @@ explanations. To be trimmed and prioritized later (a real card fits far fewer th
 - **Injection** - instructions are just text that arrived earlier; it cannot tell yours
   from the material's.
 - **The lethal trifecta** - private data + untrusted content + outbound channel = exploitable.
-- **The enforcement hierarchy** - architecture (cannot reach it) > policy (admin
-  rules) > guidelines (human discipline). If a guideline is your only protection,
+- **The enforcement hierarchy** - architecture (a wall: it cannot reach it) >
+  guidelines (a sign: human or model discipline). If a guideline is your only protection,
   you have a vulnerability, not a control.
 - **Agency is the amplifier** - a chatbot says; an agent does. Bound the blast radius;
   least privilege.

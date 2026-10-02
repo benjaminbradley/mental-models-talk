@@ -293,14 +293,14 @@ engineering, document hygiene.
 
 ### Slide: Instruction hierarchy
 
-**Visual:** *(illustrate)* A stack diagram showing the instruction hierarchy:
-provider system instructions (bottom, invisible) -> user custom instructions ->
-project instructions -> your prompt (top, visible).
+**Visual:** *(extend)* Introduced by a need: a behavior you keep re-asking for
+(e.g. "always use metric"). Your sticky note goes up on the inside of the glass (custom
+instructions). Then a second note appears from the tank's maker (system instructions: baked
+in, often unreadable). Both are in the water before you type. Project instructions are
+omitted as too detailed. (Imagery: `metaphor-imagery.md` § The bowl and the fish.)
 
-**Text:** Stack labels from bottom to top: "Provider instructions (invisible)" /
-"Your custom instructions (persistent)" / "Project instructions (scoped)" /
-"Your prompt." Side note: "Custom GPTs / Gems / Projects = products built on
-this stack."
+**Text:** Note labels: "Your note: custom instructions" / "The maker's note: system
+instructions." (Revise the narration below on migration: drop project instructions.)
 
 **Narration:** "Before you type anything, the fish has already received
 instructions. At the bottom: the provider's system instructions -- invisible to
@@ -314,6 +314,14 @@ knowledge bases."
 **Notes:** Methods: instruction hierarchy, projects/RAG. RAG is a candidate to
 cut for time but worth at least a mention -- it's how enterprise deployments
 work and it's coming to consumer products.
+
+### Slide: A tank someone else set up (Custom GPT / Gem) -- candidate
+
+**Visual:** *(extend)* A tank that arrives already set up: someone else's sticky notes (and
+documents) inside the glass. That's a Custom GPT / Gem / Project in this metaphor.
+
+**Notes:** Candidate slide; keep if time allows. RAG (pulling documents into the water on
+demand) can ride along here.
 
 ### Slide: Restart vs. repair -- cat food in the water
 
@@ -347,6 +355,16 @@ experience working with LLMs.
 
 ## Station 7 - First fittings: reaching out to know
 
+### Slide: The fish has never used a tube
+
+**Visual:** *(extend)* A tube attaches to the bowl; the fish looks at it quizzically. Then the
+station 3 training story returns with a third step: tool-use training (the fish practicing
+with fittings, with ✓/✗ feedback; term chip: tool use / function calling). Then the fish is
+back in the tank, using the tube.
+
+**Notes:** Felt limit -> method: the library and the apprenticeship never taught it to use a
+fitting, so it had to be trained to. Opens station 7.
+
 ### Slide: Tubes, first use -- web search + the citations ladder
 
 **Visual:** *(extend)* The tubes fitting attaches to the bowl -- the first
@@ -354,8 +372,8 @@ fitting. Then *(illustrate)* three-rung ladder demo. Rung 1: "Tell me about X"
 (no sources). Rung 2: "...with sources" (citations present but unverified).
 Rung 3: "...with verified sources" (model used tools to check URLs).
 
-**Animation:** Each rung appears in sequence. The gap between rung 2 and rung 3
-is highlighted in red -- the dangerous gap.
+**Animation:** The three rungs appear in sequence; the gap between the second and third is
+highlighted. The visual is TBD (a literal ladder was rejected); placeholder for now.
 
 **Text:** Rung 1: "No sources." Rung 2: "With sources (unverified -- the
 dangerous gap)." Rung 3: "With verified sources (tool-checked)."
@@ -429,8 +447,8 @@ code execution.
 ### Slide: Agency -- the fish acts
 
 **Visual:** *(extend)* The fish reaching through the tubes fitting, actively
-doing things in the outside world. Plus: *(illustrate)* an operator todo list
-graphic -- a checklist of tasks being handed off one by one.
+doing things in the outside world. Plus: *(illustrate)* the operator to-do list: a checklist
+whose items get ticked off one by one as the fish does them.
 
 **Text:** "A chatbot says things. An agent does things." / "The operator todo
 list: the things you used to do yourself."
@@ -446,9 +464,9 @@ spine payoff #2. Methods: tool use, tool discovery.
 
 ### Slide: Provider tools vs. MCPs
 
-**Visual:** *(illustrate)* Diagram showing proprietary tools (locked to one
-vendor's bowl) vs. MCP connectors (industry-standard, work across compatible
-bowls).
+**Visual:** *(new)* Proprietary tools: tubes ending in custom-shaped fittings,
+each made for one vendor's tank. MCP: one standard fitting everyone recognizes that fits any
+compatible tank (plan: a garden-hose coupling; an electrical plug clashes with water).
 
 **Text:** "Proprietary tools: one vendor's bowl only." / "MCP (Model Context
 Protocol): industry-standard connectors, any compatible bowl."
@@ -512,13 +530,16 @@ candidate to cut. Bridge out: every fitting widens the blast radius (station 9).
 
 ### Slide: Where does the fish live?
 
-**Visual:** *(new)* Three-tier hosting data-flow diagram. Tier 1: local (your
-computer). Tier 2: private cloud/VPS (your server). Tier 3: frontier cloud
-(vendor infrastructure). Arrows show where data flows at each tier.
+**Visual:** *(new)* Four-step reveal of where the tank (client) and the fish (model)
+live (`metaphor-imagery.md` § Where does the fish live?): (1) frontier: tank and fish in a
+corporate cloud with vendor names above it, joined to you by an uncuttable cord; (2) your tank
++ their fish (in a company uniform), cord still attached; (3) your tank + your fish in a
+padlocked private cloud; (4) everything on a beefy local PC, drawn below the clouds.
 
-**Text:** "Local: data stays home (limited capability)." / "Private cloud: you
-control the path (more power)." / "Frontier cloud: vendor infrastructure (most
-capable, least control)."
+**Text:** "Frontier: everything you say goes to their servers." / "Your tank, their
+fish: still goes to their servers." / "Private cloud: you control the path." / "Local: your
+data stays home (limited capability)." (Revise the narration below to the four steps on
+migration.)
 
 **Narration:** "Where does the fish live? Three tiers." Walk through each.
 "Local -- the fish runs on your computer; your data never leaves. Private cloud
@@ -541,9 +562,9 @@ training data.
 **Text:** "Training-data opt-out: a guideline, not an architectural boundary."
 
 **Narration:** "Does the provider train on your conversations? Most have a
-toggle. But notice: that toggle is a policy promise, not an architectural
+toggle. But notice: that toggle is a promise, not an architectural
 boundary. The provider *could* use your data; they promise not to. The same
-hierarchy we're about to see -- architecture vs. policy vs. guideline -- applies
+distinction we're about to see -- a wall vs. a sign -- applies
 to your trust in the vendor."
 
 **Notes:** Brief -- set up the enforcement hierarchy that comes two beats later.
@@ -570,9 +591,9 @@ complies with injected instructions too.
 
 ### Slide: Poisoned-water effects
 
-**Visual:** *(extend)* Three effect icons overlaid on the poisoned water:
-destruction (explosion/delete icon), exfiltration (data flowing outward), and
-sleeper/incubation (a clock or dormant seed icon).
+**Visual:** *(extend)* Three effect icons on the poisoned water: ☢️ destruction,
+✉️ exfiltration (an envelope leaving through a tube), and 💣 sleeper/incubation (a bomb
+tucked into the notepad, i.e. memory).
 
 **Text:** "1. Destruction -- deletes, resets, sends wrong messages." /
 "2. Exfiltration -- sends your data outward." / "3. Sleeper -- persists in
@@ -609,19 +630,18 @@ control, sandboxes. Pre-capture screenshots before the talk.
 
 ### Slide: The enforcement hierarchy
 
-**Visual:** *(new)* Three-tier pyramid or stack: Architecture (bottom, strongest)
-> Policy (middle) > Guideline (top, weakest).
+**Visual:** *(new)* A wall (architecture: the fish *cannot* reach it) vs. a
+"please keep out" sign (guideline: it is asked not to). The middle "policy" layer is dropped.
 
-**Text:** "Architecture: the system *cannot* reach it (reliable)." / "Policy:
-admin-enforced rules (better)." / "Guideline: human discipline (fragile)."
+**Text:** "Architecture: a wall. It *cannot* reach it (reliable)." / "Guideline: a
+sign. Human or model discipline (fragile)."
 
-**Narration:** "Three layers of protection. Architecture -- the system cannot
-reach the thing. No access granted, sandboxed, air-gapped. The only reliable
-layer. Policy -- org-level settings, access controls, admin rules. Better than
-guidelines but circumventable. Guidelines -- 'don't paste secrets,' 'always
-review before sending.' Relies on human discipline; fails under pressure,
-fatigue, or habit. The lesson: if a guideline is your only protection for
-something that matters, you have a vulnerability, not a control."
+**Narration:** "Two kinds of protection. Architecture -- a wall: the system cannot reach the
+thing. No access granted, sandboxed, air-gapped. The only reliable layer. Guidelines -- a sign:
+'don't paste secrets,' 'always review before sending,' or a note telling the fish not to.
+Relies on discipline; fails under pressure, fatigue, habit -- or a persuasive bit of poisoned
+water. The lesson: if a sign is your only protection for something that matters, you have a
+vulnerability, not a control."
 
 **Notes:** Methods: least privilege, enforcement hierarchy. This is the
 capstone mental model for the security station.
@@ -649,9 +669,9 @@ others; outbound channel = ability to send mail. The trifecta is complete.
 
 ### Slide: It's a product
 
-**Visual:** *(illustrate)* A product mockup showing a refusal message, framed
-explicitly as a design decision (e.g., a UI settings panel where "refusal
-sensitivity" is a slider).
+**Visual:** *(illustrate)* A product settings-panel mockup with several refusal
+dials -- e.g. hacking, chemistry, politics -- each set somewhere by someone, framing refusals
+as design decisions.
 
 **Text:** "Who decided it should refuse that?"
 
@@ -666,9 +686,10 @@ suspicion has a legitimate object.
 
 ### Slide: Four mechanisms of bias
 
-**Visual:** *(illustrate)* Four-mechanism diagram. 1: Corpus bias (what it read).
-2: Preference tuning (what humans rewarded). 3: Explicit guardrails (what the
-vendor blocked). 4: Emergent effects (sycophancy, risk aversion).
+**Visual:** *(illustrate)* Four mechanisms, each with its image: the books (corpus:
+what it read), ✓/✗ paddles (preference tuning: what humans rewarded), the vendor's fence
+(explicit guardrails: what the vendor blocked), 🎭 comedy/tragedy masks (emergent effects:
+sycophancy, risk aversion -- can be helpful or harmful).
 
 **Text:** Labels for each mechanism. No value judgments on the slide.
 
@@ -710,12 +731,11 @@ guard: the point is symmetry, not "their model is biased, ours isn't."
 
 ### Slide: Frontier instability
 
-**Visual:** *(extend)* The fish visibly changes appearance and behavior between
-versions -- a version number ticks up, and the fish looks/acts noticeably
-different.
+**Visual:** *(extend)* A row of fish with slight variations (fin shape, color),
+each labeled with a version number; one in the middle has goofy eyes (a nerf: a version that
+got worse at something).
 
-**Animation:** Fish morphs subtly -- different coloring, different posture.
-Version counter increments.
+**Animation:** The fish appear left to right as the version numbers tick up.
 
 **Text:** "The models change without notice and without recourse."
 
@@ -818,9 +838,9 @@ exercise's poisoned water (exfiltration) would produce.
 
 ### Slide: The review ladder
 
-**Visual:** *(extend)* Reuses the citations-ladder visual from station 7, now
-with review-ladder rungs: self-review -> correlated agent review -> adversarial
-review -> human review.
+**Visual:** *(illustrate)* Review-ladder rungs: self-review -> correlated agent
+review -> adversarial review -> human review. Visual TBD (not a literal ladder); placeholder
+for now.
 
 **Animation:** Rungs build up. At the top: a person.
 
@@ -841,8 +861,8 @@ same blind spots.
 
 ### Slide: Accountability does not transfer
 
-**Visual:** *(illustrate)* An image of someone blaming the tool for the outcome
-(find a good real-world/adult example; fallback: kid blaming the toy).
+**Visual:** *(illustrate)* "The dog ate my homework" -- the classic blaming-the-tool
+excuse (for now).
 
 **Text:** "The operator acts. Accountability does not transfer."
 

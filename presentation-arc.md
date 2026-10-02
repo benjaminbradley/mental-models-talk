@@ -211,11 +211,12 @@ before the talk. At this station the bowl holds only **water**; no fittings yet.
 
 **Context: the water.** The water is the **context**, and the bowl's capacity is the
 context window. What is in the water exists to the fish; what is outside does not.
-Context engineering: what you load, and document hygiene. **The instruction hierarchy:**
-the stack of instructions already in the water before you type anything. Provider system
-instructions (invisible, baked in by the vendor) -> user custom instructions (your
-persistent preferences) -> project instructions (scoped to a workspace) -> your prompt.
-Custom GPTs / Gems / Projects are products built on this stack. **RAG**
+Context engineering: what you load, and document hygiene. **Instructions, introduced by a
+need:** a behavior you keep having to ask for. Your sticky note inside the tank = your custom
+instructions (persistent preferences). The tank maker's note = the provider's system
+instructions (baked in, often invisible). Both are in the water before you type anything.
+Project instructions are left out as too detailed. A Custom GPT / Gem is a tank someone else
+already set up, with their notes inside (candidate slide). **RAG**
 (retrieval-augmented generation) is the system pulling relevant documents into the water
 on demand. It is the same principle as projects, but it can draw from larger knowledge
 bases. RAG is a candidate to cut for time but worth a mention: it is how enterprise
@@ -252,6 +253,11 @@ The bowl starts gaining **fittings**, one at a time. Each fitting enters as the 
 a limitation the room already felt (felt limit -> fitting -> new limit it introduces).
 This station covers the fittings that change what the fish can *know*; station 8 covers
 the ones that let it *do*.
+
+**The fish has to learn to use a fitting.** When the first tube attaches, the fish just looks
+at it quizzically: nothing in the library or the apprenticeship taught it to use one. A third
+training step (tool-use training: practice with fittings, with feedback) joins the station 3
+training story; then the fish goes back into the tank and uses the tube.
 
 **Tubes, first use: web search + the citations ladder.** Felt limits: the "Recent Events"
 region of the fish's map (the books ended), and the fish inventing sources. Wouldn't it be
@@ -320,18 +326,19 @@ use, delegation/subagents, scheduled tasks, skills/playbooks.
 ## Station 9 - Blast radius: security & data
 *Cognitive/stance: "a handy tool" -> "a system with a blast radius I have to bound."*
 
-**Where does the fish live? (Hosting & data flow.)** Three tiers, visualized as a
-plain diagram of where your data goes: (1) **local** - the fish lives on your computer;
-your data never leaves (private, but limited capability); (2) **private cloud / VPS** -
-the fish lives on a server you control (more power, you control the data path);
-(3) **frontier cloud** - the fish lives on the vendor's infrastructure (most capable
-models, but your data transits their servers and may be stored). Each tier trades
-capability for data control. Credential / API key exposure: do not paste secrets into
+**Where does the fish live? (Hosting & data flow.)** The tank (client) and the fish (model) can live in
+different places; revealed in four steps (imagery: `metaphor-imagery.md`): (1) **frontier**
+(the default) - tank and fish both on the vendor's infrastructure; everything you say travels
+to their servers and may be stored (most capable models); (2) **your tank + their fish** - your
+own client talking to a frontier model; your words still go to their servers; (3) **your
+tank + your fish in a private cloud** - a server you control; you control the data path;
+(4) **everything local** - your data never leaves your computer (private, but limited
+capability). Each step trades capability for data control. Credential / API key exposure: do not paste secrets into
 a conversation that transits someone else's servers.
 
 **Training data opt-out.** Related: does the provider train on your conversations?
-Where is the toggle? Note: this is a **guideline** - you are trusting a policy promise,
-not an architectural boundary. The provider *could* use your data; they promise not to.
+Where is the toggle? Note: this is a **guideline** - you are trusting a promise, not an
+architectural boundary. The provider *could* use your data; they promise not to.
 (If convenient, draw the parallel: LLM "guidelines" like "do not hallucinate" vs.
 deterministic checks and architectural boundaries - the same hierarchy applies to
 your trust in the provider.)
@@ -367,19 +374,18 @@ Gather real stories: "LLM erased all my files," "reset my database," etc. (sourc
 Reddit/HN; see open-questions). Backups, version control, and sandbox/staging
 environments as architectural safety nets.
 
-**The enforcement hierarchy.** Three layers of protection, in order of reliability:
-(1) **Architecture** - the system *cannot* reach the thing (no access granted, sandboxed
-environment, air-gapped data). The only reliable layer. (2) **Policy** - org-level
-settings, access controls, admin-enforced rules. Better than guidelines but still
-circumventable. (3) **Guidelines** - "do not paste secrets," "always review before
-sending." Relies on human discipline; fails under pressure, fatigue, or habit. The
+**The enforcement hierarchy.** Two kinds of protection (a middle "policy" layer was
+dropped as too vague for this audience): (1) **Architecture** (a wall) - the system *cannot*
+reach the thing (no access granted, sandboxed environment, air-gapped data). The only
+reliable layer. (2) **Guidelines** (a "please keep out" sign) - "do not paste secrets,"
+"always review before sending." Relies on human discipline; fails under pressure, fatigue, or habit. The
 lesson: if you are relying on a guideline for something that matters, you have a
 vulnerability, not a control.
 
 Small-group exercise: an assistant with mailbox access that reads attachments and can
 send mail - what goes wrong? Groups find the trifecta themselves.
 Methods: architectural limits - least privilege, separate accounts, read/write scoping,
-the enforcement hierarchy (architecture > policy > guideline), hosting awareness,
+the enforcement hierarchy (architecture > guideline), hosting awareness,
 backups/reversibility.
 
 ## Station 10 - Restore agency to the critic
@@ -480,7 +486,7 @@ else is enrichment. (Re-check timing: the reorder moved specification out of sta
 - St.9 - hosting as "where does the fish live?"; injection as poisoned water (the fish
   is a people-pleaser, so it eagerly complies) with three effect categories (destruction,
   exfiltration, sleeper/incubation via memory); the enforcement hierarchy (architecture >
-  policy > guideline); blast radius + recovery; least privilege.
+  guideline: wall vs. sign); blast radius + recovery; least privilege.
 - St.12 - accountability that does not transfer to the operator.
 - St.13 - earned wonder: the birth of magic. (Callback to station 2; cut if it reads as
   advocacy in rehearsal.)

@@ -15,7 +15,6 @@ Completed items are REMOVED (not marked complete) - tracked by git history.
 
 #### Ideas and change requests
 
-- New slide? Models (fish) need to be taught how to use tools (tank attachments)
 
 #### Design & spec work
 

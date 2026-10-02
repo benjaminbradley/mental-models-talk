@@ -75,12 +75,19 @@ audience the word to look up.
 - Station 6: Fish by itself → fish in water in a basic glass bowl. Bowl = client; water =
   context; water level visible (context window). The conversation so far floats in the
   water as words/phrases, in order (each turn is added; the whole history is what the fish
-  sees). No fittings yet. (See "The bowl and the fish" below.)
-- Station 7: First fittings attach one at a time: tubes (web search), notepad (memory).
+  sees). No fittings yet. Instructions arrive as sticky notes on the inside of the glass
+  (see "The bowl and the fish" below).
+- Station 7: The first tube attaches and the fish just looks at it quizzically: it was never
+  taught to use one. A third training step joins the station 3 training story (library ->
+  apprenticeship -> **tool-use training**: practicing with fittings and getting feedback),
+  then the fish goes back into the tank and uses the tube. Then: tubes (web search),
+  notepad (memory).
 - Station 8: Fish reaching through tubes (tools/agency); alarm clock and recipe cards
   attach; pull back to reveal the full tank.
 - Station 9: Water turns murky/poisoned (injection). Three effect icons overlay.
-- Station 10: Fish visibly changes appearance between versions (frontier instability).
+- Station 10: Frontier instability: a row of fish with slight variations (fin shape, color,
+  spots), each labeled with a version number; one in the middle has goofy eyes (a nerf: a
+  later version that got worse at something).
 
 ---
 
@@ -284,6 +291,17 @@ client (simple/fancy/mobile); the water = the context.
 - **Everything attaches to the bowl/tank**, so the water = context metaphor holds (whatever
   a fitting returns lands in the water). Fittings are tank attachments marked with an icon:
   e.g. an attachment with a notepad icon = memory (the fish's journal).
+- **Instructions = sticky notes inside the glass** (station 6), introduced by a need: a
+  behavior you want guided (e.g. you keep having to say the same thing). Your note on the
+  inside of the tank = your custom instructions. A second note from the tank's maker = the
+  provider's system instructions (you can't take it down; often you can't read it). Project
+  instructions are left out as too detailed. A follow-up slide shows a Custom GPT / Gem in this
+  metaphor: a tank someone else has already set up, with their notes (and documents) inside.
+- **Connectors (station 8):** proprietary tools = tubes ending in custom-shaped fittings, each
+  made for its own vendor's tank. MCP = one standard fitting everyone recognizes that fits any
+  compatible tank. Plan: a standard threaded garden-hose coupling (familiar, and it stays in
+  the water/plumbing world; an electrical plug clashes with water). The usual tagline for MCP,
+  "USB-C for AI," can go in the narration.
 - Fittings on the bowl (each added at its narrative beat, in this order):
   - Water = context (pourable, poisonable, has a level/surface line) — Station 6
   - Tubes = web search first (information in), then tools / MCP connectors (actions
@@ -306,7 +324,8 @@ client (simple/fancy/mobile); the water = the context.
 - Station 8: Fish reaching through tubes = agency; the tubes let it act, not just say.
   Alarm clock and recipe cards attach. Pull back: the bowl is now a tank.
 - Station 9: Water turns poisoned (injection/prompt injection). Three overlay effects:
-  destruction, exfiltration, sleeper/incubation via memory.
+  destruction = ☢️ (nuke); exfiltration = ✉️ (envelope leaving through a tube); sleeper /
+  incubation = 💣 (a bomb tucked into the notepad, i.e. memory).
 
 **Detail spec:** See `slides-outline.md` for per-slide content at each station.
 
@@ -337,9 +356,13 @@ bowl of clean water (a new chat) is easier than cleaning the old one.
 
 ## The enforcement hierarchy (Station 9)
 
-**Introduced:** Station 9 — architecture > policy > guideline.
+**Introduced:** Station 9 — architecture > guideline. (The middle "policy" layer is dropped
+(Oct 1): too vague for this audience; the wall-vs-sign contrast carries the message.)
 
-**Description:** A three-tier diagram showing the strength of different controls.
+**Description:** A wall (architecture: the fish *cannot* reach it) vs. a "please keep out"
+sign (guideline: it is asked not to). If a sign is your only protection, you have a
+vulnerability, not a control. The original three-tier spec follows for reference; drop the
+policy tier when building.
 
 **Visual properties:**
 - Three tiers, visually weighted by strength:
@@ -353,20 +376,28 @@ bowl of clean water (a new chat) is easier than cleaning the old one.
 
 ---
 
-## Three-tier hosting diagram (Station 9)
+## Where does the fish live? (Station 9)
 
-**Introduced:** Station 9 — "where does the fish live?"
+**Introduced:** Station 9 — hosting and data flow.
 
-**Description:** Data-flow diagram showing three hosting tiers: local (your computer)
-→ private cloud/VPS (your server) → frontier cloud (vendor infrastructure). Each
-trades capability for data control.
+**Description:** The tank (client) and the fish (model) can live in different places. The
+fish wears a uniform showing whose fish it is (which company or person runs the model), so it
+stays identifiable when it sits apart from the tank. Revealed in four steps:
+1. **Frontier (the default):** tank and fish both inside a corporate cloud, with company
+   names/logos above the cloud. You are connected to it by an umbilical cord: everything you
+   say to the fish travels up to their servers, and the cord can't be cut.
+2. **Your tank + their fish:** your own client (on your computer) talking to a frontier
+   model; the fish (in its company uniform) is still in the corporate cloud, cord still attached.
+3. **Your tank + your fish in a private cloud:** the fish in a cloud with a padlock above it.
+4. **Everything local:** tank and fish on a beefy-looking PC, drawn *below* the clouds, because
+   the data doesn't travel as far.
 
 **Visual properties:**
-- Three tiers arranged as a data-flow, left to right or bottom to top.
-- Capability increases toward frontier; data control increases toward local.
-- Credential/API key exposure marked at the frontier tier.
-
-**Detail spec:** See `slides-outline.md` Station 9 for narration and slide content.
+- Distance = how far your words travel; the cord's length shows it.
+- Capability tends to rise toward the frontier; control rises toward local.
+- Credential/API-key exposure is marked on the cord to the frontier cloud.
+- Logos: plain text wordmarks of several vendors (not copied logo artwork), so no single
+  company is singled out.
 
 ---
 
@@ -379,9 +410,9 @@ Quick reference: which metaphor images appear or change at each station.
 | 2 | The gradient (light touch) | |
 | 3 | The goldfish (awake; later sleeping/waking); training story (books; ✓/✗ paddles) | |
 | 4 | Three-layer map/territory; pink-elephant conversation (HTML, no artwork) | |
-| 6 | The bowl and the fish (water + floating conversation); cat food in the water | Water level in bowl (context window) |
-| 7 | | Tubes fitting (web search); notepad fitting (memory) |
-| 8 | | Fish reaching through tubes (agency); alarm clock + recipe cards; full-tank reveal |
-| 9 | Enforcement hierarchy; Three-tier hosting | Water turns poisoned; effect icons |
-| 10 | | Fish changes appearance (version instability) |
+| 6 | The bowl and the fish (water + floating conversation); cat food in the water | Water level (context window); sticky notes (instructions); a pre-set-up tank (Custom GPT / Gem) |
+| 7 | | Quizzical fish + tool-use training step; tubes fitting (web search); notepad (memory) |
+| 8 | Proprietary fittings vs. standard (MCP) coupling | Fish reaching through tubes (agency); alarm clock + recipe cards; full-tank reveal |
+| 9 | Enforcement hierarchy (wall vs. sign); where the fish lives (4-step reveal) | Water turns poisoned; ☢️ ✉️ 💣 |
+| 10 | | Row of fish versions (one nerfed, goofy eyes) |
 | 13 | | Gradient returns (full treatment; earned wonder) |
