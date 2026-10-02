@@ -9,4 +9,9 @@ window.DECK_STATIONS = [
   'slides/06-bowl-and-water.md',
   'slides/07-first-fittings.md',
   'slides/08-the-tank.md',
+  'slides/09-blast-radius.md',
+  'slides/10-restore-agency.md',
+  'slides/11-intention.md',
+  'slides/12-accountability.md',
+  'slides/13-open.md',
 ];

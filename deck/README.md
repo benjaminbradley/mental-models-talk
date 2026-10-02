@@ -65,7 +65,12 @@ shows: `../metaphor-imagery.md`.
 - **Timing on clicks:** put `class="fragment"` on an SVG `<g>` to pop it in. For a state
   change rather than an appearance, add an empty cue fragment
   (`<span class="fragment wake-cue"></span>`) and style with
-  `.scene:has(.wake-cue.visible) ...` (see the goldfish rules in `theme/talk.css`).
+  `.scene:has(.wake-cue.visible) ...` (see the goldfish rules in `theme/talk.css`). Poisoned water
+  works the same way: a `.murk-cue` fragment turns `--water` to `--murk` on an `svg.poisonable`.
+- **Fish variants:** `fish-uniform` (company cap and badge: someone else's fish) and
+  `fish-face-goofy` (a nerfed version; use instead of `fish-eyes-open`) layer on `fish-body` at the
+  same x/y/width/height. A scene recolors one fish with an inline `style="--fish: ...; --fish-deep: ..."`
+  on its `.goldfish` group.
 - **Slide markup:** wrap the SVG in `<div class="scene">` with no blank lines inside
   (a blank line ends the HTML block in Markdown). Give the `<svg>` `role="img"` and an
   `aria-label`.
@@ -90,8 +95,27 @@ shows: `../metaphor-imagery.md`.
   metaphor (yellow monospace chip); use it everywhere a metaphor stands for a real concept.
 - **Simulated chats:** `<div class="chat">` with `<p class="user">` / `<p class="fish">` bubbles
   (`<span class="who">` for the speaker); `<p class="new-chat">` for a fresh conversation.
+- **Ledes with an inline fragment:** `<!-- .element: class="..." -->` attaches to the element just
+  before it, so after an inline `<span class="fragment">` it styles the span, not the line. Write
+  the paragraph as HTML instead: `<p class="lede">Text. <span class="fragment">More.</span></p>`.
+- **Layouts:** `<div class="stack">` stacks wide captures vertically (each capped in height);
+  `<div class="tiles">` is a row of bordered tiles (image + label + term); `<div class="trio">` is
+  three answer boxes for an exercise; `<div class="mock">` is a generic mock UI card (memory list,
+  toggles, dials); `<!-- .slide: class="center-slide" -->` centers a text-only slide.
+- **QR codes:** `make qr URL=... OUT=deck/art/qr-<name>.svg` writes a static SVG; commit it and
+  place it with `<img>` (closing slide: `art/qr-slides.svg`).
 - **Hidden slides:** `<!-- .slide: data-visibility="hidden" -->` keeps a slide in the file but out
   of the deck (available for anything pending a keep/cut decision).
+
+## Visual check
+
+Slides are flat (horizontal): hash `#/N` is the Nth slide overall (0-based), `#/N/0/F` shows
+fragments up to F. Serve `deck/` (`python3 -m http.server 8799` from `deck/`) and screenshot with
+headless Chrome (one at a time; parallel runs sometimes render blank):
+
+```bash
+"/Applications/Google Chrome.app/Contents/MacOS/Google Chrome" --headless=new --hide-scrollbars --window-size=1920,1080 --virtual-time-budget=4000 --screenshot=out.png "http://localhost:8799/index.html#/13"
+```
 
 ## Presenting checklist
 

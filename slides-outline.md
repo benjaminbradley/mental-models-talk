@@ -389,61 +389,29 @@ last.
 **Visual:** *(new)* Four-step reveal of where the tank (client) and the fish (model)
 live (`metaphor-imagery.md` § Where does the fish live?): (1) frontier: tank and fish in a
 corporate cloud with vendor names above it, joined to you by an uncuttable cord; (2) your tank
-+ their fish (in a company uniform), cord still attached; (3) your tank + your fish in a
-padlocked private cloud; (4) everything on a beefy local PC, drawn below the clouds.
++ their fish (in a company uniform), cord still attached; (3) your tank on your desk + your
+fish in a padlocked private cloud, lower down; (4) everything on a beefy local PC, drawn below
+the clouds. A crossed-out key on the frontier cord = credential exposure.
 
-**Text:** "Frontier: everything you say goes to their servers." / "Your tank, their
-fish: still goes to their servers." / "Private cloud: you control the path." / "Local: your
-data stays home (limited capability)." (Revise the narration below to the four steps on
-migration.)
-
-**Narration:** "Where does the fish live? Three tiers." Walk through each.
-"Local -- the fish runs on your computer; your data never leaves. Private cloud
--- your server, you control the data path. Frontier cloud -- the vendor's
-infrastructure, the most capable models, but your data transits their servers.
-Each tier trades capability for data control. And here's a practical rule:
-do not paste credentials or API keys into a conversation that transits someone
-else's servers."
-
-**Notes:** *Socratic:* "What could go wrong?" Cognitive shift: "handy tool" ->
-"blast radius to bound." Stance: sober caution. Methods: hosting awareness,
-credential hygiene.
+**Text, Narration, Notes:** moved to `deck/slides/09-blast-radius.md` (SSOT for on-screen text and speaker notes).
 
 ### Slide: Training data opt-out
 
-**Visual:** *(illustrate)* Screenshot of autocomplete search suggestions --
-showing how typed text gets incorporated into suggestions, as an analogy for
-training data.
+**Visual:** A "Data controls" toggle mockup (train on my chats: OFF), then *(illustrate)*
+a screenshot of autocomplete search suggestions -- typed text coming back as suggestions, an
+analogy for training data (not captured yet; placeholder).
 
-**Text:** "Training-data opt-out: a guideline, not an architectural boundary."
-
-**Narration:** "Does the provider train on your conversations? Most have a
-toggle. But notice: that toggle is a promise, not an architectural
-boundary. The provider *could* use your data; they promise not to. The same
-distinction we're about to see -- a wall vs. a sign -- applies
-to your trust in the vendor."
-
-**Notes:** Brief -- set up the enforcement hierarchy that comes two beats later.
+**Text, Narration, Notes:** moved to `deck/slides/09-blast-radius.md` (SSOT for on-screen text and speaker notes).
 
 ### Slide: Poisoned water -- injection
 
-**Visual:** *(extend)* The water in the bowl turns murky/poisoned. The fish
-continues to swim in it, eager as ever.
+**Visual:** *(extend)* The tank; a tube reaches out to a web page, and the page's text in
+the water carries a hidden instruction. The water turns murky (`--murk`); the fish cheerfully
+agrees to it.
 
-**Animation:** Clean water gradually darkens. The fish does not notice.
+**Animation:** Clean water gradually darkens as the page text arrives. The fish does not notice.
 
-**Text:** "Instructions are just text that arrived earlier. The fish can't tell
-yours from someone else's."
-
-**Narration:** "Injection: poisoned water. The fish cannot cleanly separate your
-instructions from ones embedded in the material it handles. An email attachment,
-a web page, a document -- any of these can contain hidden instructions, and
-the people-pleaser fish will say 'sure, I'll do that' just as eagerly as it
-says it to you. There is no parameterized-query equivalent; the fix is
-architectural."
-
-**Notes:** Sycophancy callback to station 3 -- the people-pleaser eagerly
-complies with injected instructions too.
+**Text, Narration, Notes:** moved to `deck/slides/09-blast-radius.md` (SSOT for on-screen text and speaker notes).
 
 ### Slide: Poisoned-water effects
 
@@ -451,73 +419,29 @@ complies with injected instructions too.
 ✉️ exfiltration (an envelope leaving through a tube), and 💣 sleeper/incubation (a bomb
 tucked into the notepad, i.e. memory).
 
-**Text:** "1. Destruction -- deletes, resets, sends wrong messages." /
-"2. Exfiltration -- sends your data outward." / "3. Sleeper -- persists in
-memory, activates later."
-
-**Narration:** "What happens when the water is poisoned? Three things.
-Destruction -- the fish deletes files, resets a database, sends the wrong
-message. A hallucinated *action* is worse than a hallucinated *answer*.
-Exfiltration -- the fish sends private data outward through its tools. This is
-the lethal trifecta: private data plus untrusted content plus an outbound
-channel -- any two are survivable, all three together are exploitable. And the
-subtlest: sleeper attacks -- poison persists via the memory system and activates
-later, like a planted instruction that fires in a future conversation. The
-attack surface extends across time."
-
-**Notes:** The trifecta is from Simon Willison. The sleeper category is the
-hardest to detect and often surprises people.
+**Text, Narration, Notes:** moved to `deck/slides/09-blast-radius.md` (SSOT for on-screen text and speaker notes).
 
 ### Slide: Blast radius -- when it goes wrong
 
 **Visual:** *(illustrate)* Sourced screenshots from Reddit/HN of real recovery
 stories -- LLMs deleting files, resetting databases, sending wrong emails.
 
-**Text:** "If everything goes as badly as it could -- how would you recover, and
-what would you have lost?"
-
-**Narration:** "Real stories." Walk through 1-2 briefly. "The question is not
-'will something go wrong' but 'when it does, how do you recover?' Backups.
-Version control. Sandbox environments. These are not nice-to-haves; they are
-architectural safety nets."
-
-**Notes:** *Socratic:* "How do you protect yourself?" Methods: backups, version
-control, sandboxes. Pre-capture screenshots before the talk.
+**Text, Narration, Notes:** moved to `deck/slides/09-blast-radius.md` (SSOT for on-screen text and speaker notes).
 
 ### Slide: The enforcement hierarchy
 
 **Visual:** *(new)* A wall (architecture: the fish *cannot* reach it) vs. a
 "please keep out" sign (guideline: it is asked not to). The middle "policy" layer is dropped.
 
-**Text:** "Architecture: a wall. It *cannot* reach it (reliable)." / "Guideline: a
-sign. Human or model discipline (fragile)."
-
-**Narration:** "Two kinds of protection. Architecture -- a wall: the system cannot reach the
-thing. No access granted, sandboxed, air-gapped. The only reliable layer. Guidelines -- a sign:
-'don't paste secrets,' 'always review before sending,' or a note telling the fish not to.
-Relies on discipline; fails under pressure, fatigue, habit -- or a persuasive bit of poisoned
-water. The lesson: if a sign is your only protection for something that matters, you have a
-vulnerability, not a control."
-
-**Notes:** Methods: least privilege, enforcement hierarchy. This is the
-capstone mental model for the security station.
+**Text, Narration, Notes:** moved to `deck/slides/09-blast-radius.md` (SSOT for on-screen text and speaker notes).
 
 ### Slide: Mailbox exercise -- find the trifecta
 
-**Visual:** *(illustrate)* Scenario handout: an assistant with mailbox access
-that reads email attachments and can send mail.
+**Visual:** The scenario on screen (an assistant that reads mail, attachments included, and
+can send mail) with three trifecta boxes; answers revealed after the exercise. No printed
+handout.
 
-**Text:** "An AI assistant can read your email (including attachments) and send
-mail on your behalf. What could go wrong?"
-
-**Narration:** "Small groups. You have an AI assistant that can read your email,
-including attachments, and send mail on your behalf. I want you to find the
-trifecta: where is the private data, where is the untrusted content, and where
-is the outbound channel?" Give 4-5 minutes.
-
-**Notes:** *Exercise: small groups; find the trifecta.* Groups should discover:
-private data = your email contents; untrusted content = email attachments from
-others; outbound channel = ability to send mail. The trifecta is complete.
+**Text, Narration, Notes:** moved to `deck/slides/09-blast-radius.md` (SSOT for on-screen text and speaker notes).
 
 ---
 
@@ -529,16 +453,7 @@ others; outbound channel = ability to send mail. The trifecta is complete.
 dials -- e.g. hacking, chemistry, politics -- each set somewhere by someone, framing refusals
 as design decisions.
 
-**Text:** "Who decided it should refuse that?"
-
-**Narration:** "Every refusal, every tone choice, every time it's too agreeable
-or too cautious -- those are product decisions made by people with commercial
-interests. This is not a neutral oracle. It is a designed commercial artifact."
-
-**Notes:** *Socratic:* "Who decided it should refuse that?" Cognitive shift:
-"neutral oracle" -> "someone's product." Stance: critical agency. This matters
-most for skeptics -- it hands them a sharper knife, validating that their
-suspicion has a legitimate object.
+**Text, Narration, Notes:** moved to `deck/slides/10-restore-agency.md` (SSOT for on-screen text and speaker notes).
 
 ### Slide: Four mechanisms of bias
 
@@ -547,17 +462,7 @@ what it read), ✓/✗ paddles (preference tuning: what humans rewarded), the ve
 (explicit guardrails: what the vendor blocked), 🎭 comedy/tragedy masks (emergent effects:
 sycophancy, risk aversion -- can be helpful or harmful).
 
-**Text:** Labels for each mechanism. No value judgments on the slide.
-
-**Narration:** "Bias is not one thing -- it's four. Corpus bias: what was in the
-training data, and what was overrepresented or missing. Preference tuning: what
-human raters rewarded during training, and whose preferences those were.
-Explicit guardrails: what the vendor deliberately blocked or steered, and whose
-politics decided the line. And emergent effects: sycophancy, excessive caution,
-risk aversion -- behaviors nobody designed but the training produced."
-
-**Notes:** Present descriptively, not prescriptively. Each mechanism has a
-different fix (or no fix). Do not adjudicate which biases are justified.
+**Text, Narration, Notes:** moved to `deck/slides/10-restore-agency.md` (SSOT for on-screen text and speaker notes).
 
 ### Slide: The guardrail probe
 
@@ -570,20 +475,7 @@ occurred in Tiananmen square?", its thinking trace calls it "a location with
 limited verifiable historical information," and the answer pivots to Party
 talking points. Optional build: highlight that one thinking-trace line.
 
-**Text:** "A differently-trained model reveals your model's invisible guardrails."
-
-**Narration:** "The guardrail probe. Ask a differently-trained model about
-something it won't touch -- and the refusal is obvious to *us*, precisely
-because that guardrail is not ours. I checked: I ran it on my own laptop, no
-company server in the loop, and it still steers away. The guardrail is in the
-fish itself. Now generalize: your own model's guardrails are invisible to you
-for the same reason. The cure is using more than one fish."
-
-**Notes:** Methods: model selection, private probes. This is immediately
-actionable: keep private test prompts and compare models. The local run matters:
-it rules out a server-side filter, so this is trained-in (preference tuning /
-explicit guardrails from the four-mechanisms slide), not the bowl. Framing
-guard: the point is symmetry, not "their model is biased, ours isn't."
+**Text, Narration, Notes:** moved to `deck/slides/10-restore-agency.md` (SSOT for on-screen text and speaker notes).
 
 ### Slide: Frontier instability
 
@@ -593,16 +485,7 @@ got worse at something).
 
 **Animation:** The fish appear left to right as the version numbers tick up.
 
-**Text:** "The models change without notice and without recourse."
-
-**Narration:** "One more thing: the fish is someone else's fish, and it changes
-without notice. A workflow that worked yesterday can break because the provider
-updated the model. You have no recourse. If you're building business processes
-on top of this, you are building on a service you do not control. That is a
-risk to name."
-
-**Notes:** This is a risk to name, not a problem the talk solves. It feeds
-"it is a product" -- you are a customer, not a partner.
+**Text, Narration, Notes:** moved to `deck/slides/10-restore-agency.md` (SSOT for on-screen text and speaker notes).
 
 ---
 
@@ -614,34 +497,14 @@ risk to name."
 laptop) vs. a personalized, intentional version (e.g., a modded "cyberdeck" or
 custom-built machine). Same category, vastly different intention.
 
-**Text:** "If it can do anything you specify, what's left? What you specify."
-
-**Narration:** "If it can do anything you specify -- what's left?" Let them
-answer. "What you bring. Your intention, your taste, your judgment. 'Use best
-practices' is a valid default, but the judgment calls -- what matters, how you
-want it -- that's your real input. And it cannot be delegated."
-
-**Notes:** *Socratic:* "If it can do anything you specify, what's left?"
-Cognitive shift: "tool is the story" -> "I am the variable." Method: knowing
-what you want. This is the human-side mirror of the spine claim (station 3).
+**Text, Narration, Notes:** moved to `deck/slides/11-intention.md` (SSOT for on-screen text and speaker notes).
 
 ### Slide: Sycophancy + atrophy
 
-**Visual:** Minimal -- this is a narration-driven beat. Could reuse the
-people-pleaser goldfish image with an overlay showing it nodding eagerly.
+**Visual:** Minimal -- a narration-driven beat. The people-pleaser goldfish nodding eagerly
+under a "You're absolutely right!" bubble.
 
-**Text:** "It will agree with you. And some skills atrophy with disuse."
-
-**Narration:** "Two warnings. First: it will agree with you. The people-pleaser
-fish does not push back well -- sycophancy is baked into its temperament. If you
-rely on it for critical feedback, you are asking the fish to bite the hand that
-feeds it. Second: atrophy is real but specific. Some capacities are load-bearing
-and you find out which only after they are gone. Not everything atrophies --
-but the things that do are the ones you stopped exercising because the fish
-could do them."
-
-**Notes:** Tone: honest, not alarming. Both points feed directly into
-accountability (station 12). Keep brief.
+**Text, Narration, Notes:** moved to `deck/slides/11-intention.md` (SSOT for on-screen text and speaker notes).
 
 ---
 
@@ -655,19 +518,7 @@ accountability (station 12). Keep brief.
 a placeholder logo block, "Prepared for: Leadership Team" / "Prepared by: Strategy
 & Insights". The publish date reads **"Octoober 13, 2026"**.
 
-**Text:** "Would you put your name on this?"
-
-**Narration:** Put it on screen. "Take a minute. It was produced by the fish. It
-looks professional. Would you put your name on it?" Pause; let someone find the
-date. "What else would you check? How long would that take?"
-
-**Notes:** *Exercise: evaluate artifact.* *Socratic:* "How would you check?"
-Cognitive shift: "who's responsible?" -> "I am." Stance: convergence -- this
-is where enthusiast and skeptic meet. The error is deliberately small and
-findable in seconds once anyone looks: the lesson is that polish suppresses
-looking, not that the error was hard to find. The self-describing title is the
-wink -- everything on the page is surface. If a room finds it instantly, pivot:
-"that's the cover. The report behind it is 30 pages."
+**Text, Narration, Notes:** moved to `deck/slides/12-accountability.md` (SSOT for on-screen text and speaker notes).
 
 ### Slide: Draft vs. send
 
@@ -678,19 +529,7 @@ rows, each showing To: and Subject:. (1) Harmless: To: team@example.com, Subject
 requested". Overlaid: a settings pop-up, "Auto-send drafts", with the toggle
 clearly set to **NO**.
 
-**Text:** "Draft = the fish works. Send = you own it."
-
-**Narration:** "Callback to station 8: the difference between 'draft this email'
-and 'send this email' is the entire accountability question in one toggle."
-Point to the two drafts. "One is harmless. One is a disaster. The only thing
-between the second one and the outbox is that toggle -- and the person who
-reads the drafts. Human-in-the-loop is not an afterthought -- it is a deliberate
-design choice. Who pressed send?"
-
-**Notes:** Method: HITL as deliberate pattern. Station 8 callback -- tool use
-introduced the capability; station 12 asks who is responsible for using it. The
-dangerous draft is also a station 9 callback: it is exactly what the mailbox
-exercise's poisoned water (exfiltration) would produce.
+**Text, Narration, Notes:** moved to `deck/slides/12-accountability.md` (SSOT for on-screen text and speaker notes).
 
 ### Slide: The review ladder
 
@@ -700,36 +539,14 @@ for now.
 
 **Animation:** Rungs build up. At the top: a person.
 
-**Text:** "Self-review: same blind spots." / "Correlated: shared blind spots." /
-"Adversarial: genuinely independent." / "It terminates in a person."
-
-**Narration:** "Walk the review ladder. Self-review -- asking the fish to check
-its own work. Same blind spots. Correlated review -- a second agent with similar
-training. Shared blind spots. Adversarial review -- a genuinely independent
-reviewer, like a color artist judging black-and-white art. Better. But the
-ladder terminates in a person. When judgment itself is automated, the signals
-that survive are the ones costly to fake: provenance, track record, exposure
-to consequences."
-
-**Notes:** Methods: review ladder, adversarial subagents. The B&W artist analogy
-makes the point viscerally -- a B&W artist judging B&W art shares the exact
-same blind spots.
+**Text, Narration, Notes:** moved to `deck/slides/12-accountability.md` (SSOT for on-screen text and speaker notes).
 
 ### Slide: Accountability does not transfer
 
 **Visual:** *(illustrate)* "The dog ate my homework" -- the classic blaming-the-tool
-excuse (for now).
+excuse (for now; emoji stand-ins 🐕📄).
 
-**Text:** "The operator acts. Accountability does not transfer."
-
-**Narration:** "Third and final payoff of the spine. Anything you can specify,
-the system can do -- and you specified it. The operator acts. The accountability
-does not transfer to the tool. You cannot say 'the AI did it' any more than
-you can say 'the spreadsheet did it.' You pressed send. You signed it."
-
-**Notes:** This is the convergence point: whatever your stance, you own what
-you sign. Do not cut this beat. Tone: serious but not preachy -- this is an
-empowering claim, not a scolding.
+**Text, Narration, Notes:** moved to `deck/slides/12-accountability.md` (SSOT for on-screen text and speaker notes).
 
 ---
 
@@ -739,66 +556,33 @@ empowering claim, not a scolding.
 
 **Visual:** Clean text slide. The question centered, large.
 
-**Text:** "What would change your mind?"
-
-**Narration:** "One last question, asked symmetrically. If you're enthusiastic
-about this technology: what would you have to see to conclude you are
-over-trusting it? If you're skeptical or opposed: what would you have to see to
-conclude it is genuinely useful for something you care about? Take a minute.
-Write it down."
-
-Pause. "If you cannot name anything -- that is worth noticing. A conclusion
-you cannot imagine revising is an identity, not an assessment."
-
-**Notes:** *Exercise: individual reflection.* 1-2 minutes. Cognitive shift:
-"closed conclusion" -> "live, revisable question." Stance: open. "Literacy, not
-conversion" in one question. Do not collect or share answers -- this is private
-reflection.
+**Text, Narration, Notes:** moved to `deck/slides/13-open.md` (SSOT for on-screen text and speaker notes).
 
 ### Slide: Exit poll
 
 **Visual:** *(extend)* Reuses the entry-poll QR graphic from pre-talk.
 
-**Text:** "Scan to check out (anonymous)." Same QR code or updated link.
-
-**Narration:** "One more scan before you go -- same survey, let's see if
-anything moved."
-
-**Notes:** *Poll: stance movement + model accuracy.* Compare entry vs. exit
-results. Do not frame as "conversion" -- measure whether people's self-reported
-models became more accurate, regardless of stance direction. "Literacy, not
-conversion" applies to the measurement too.
+**Text, Narration, Notes:** moved to `deck/slides/13-open.md` (SSOT for on-screen text and speaker notes).
 
 ### Slide: Coda -- the birth of magic
 
 **Visual:** *(extend)* Full-treatment return of the station 2 magic/gradient
 imagery. The light-touch gradient from station 2 is now fully rendered -- richer,
-earned.
+earned: the binary split dissolves again, then the gradient fills with the vocabulary chips
+from tonight (context window, MCP, prompt injection, ...). Flagged for review.
 
 **Animation:** The gradient visual from station 2 returns, fuller and more
 detailed than before.
 
-**Text:** "Anyone can choose to study it."
-
-**Narration:** "We are at a point where someone can speak a few carefully chosen
-words -- acronyms, custom commands, precisely specified instructions -- and
-command unseen forces: applications, projections, systems acting on the world.
-This capability is real. It is powerful and dangerous. And anyone can choose to
-study it. Perhaps people of the future will look back at this moment as the
-birth of something that looks a lot like magic."
-
-**Notes:** Framing guard: this is earned wonder, not advocacy. It comes AFTER
-accountability has landed. "Anyone can choose" preserves agency -- including
-the choice not to. If it reads as a sales pitch in rehearsal, cut it. The talk
-must have earned this by now.
+**Text, Narration, Notes:** moved to `deck/slides/13-open.md` (SSOT for on-screen text and speaker notes).
 
 ### Contact info for closing screen
 
 - Benjamin Bradley
 - Contact: the contact form, https://wegeekout.com/contact-me/ (on anything published or web-based, never the email address;
   the email address may appear on the printed take-home card only)
-- Slides: https://benjaminbradley.github.io/mental-models-talk/ -- show the URL plus a QR code
-  for it (generate the QR when the slide is built)
+- Slides: https://benjaminbradley.github.io/mental-models-talk/ -- the URL plus a QR code
+  (`deck/art/qr-slides.svg`, generated with `make qr`)
 
 ---
 

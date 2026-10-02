@@ -20,6 +20,7 @@ make install                      # npm deps: QR code for the remote, rough.js f
 make present                      # serve deck/ on :8765 (PORT=...) with the phone-remote relay; prints deck URL + QR
 make station NN=02 SLUG=demystify # new slides/02-demystify.md from template, appended to manifest.js
 make maps                         # regenerate deck/art/maps/*.svg
+make qr URL=... OUT=deck/art/qr-x.svg  # static QR code SVG for a slide
 ```
 
 There is no build, lint, or test step. The deck is static and needs no build; vendored Reveal.js

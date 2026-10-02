@@ -39,6 +39,10 @@ Image specs for all metaphors: `metaphor-imagery.md` (single source of truth).
 - [ ] Station 4 specification demo: plain vs. specified sushi-restaurant prompts.
 - [ ] Station 8 letter count: capture the follow-up ("write a script to count them") with the
       script and its output, same "Suffering Succotash" question.
+- [ ] Station 9 training-data opt-out: capture search-box autocomplete suggestions (typed text
+      coming back as suggestions) for the placeholder.
+- [ ] Station 10 instability: find a higher-resolution capture of the model-suspension post
+      (`unstable--fable-suspended.png` is 501px wide and blurs when projected).
 - [ ] Station 7 memory: replace the illustrative "Saved memories" mock entries with the real
       resume-inflation example (or a capture of it).
 - [ ] Prepare comparison demos
@@ -52,6 +56,11 @@ Image specs for all metaphors: `metaphor-imagery.md` (single source of truth).
 - [ ] Review the maps (station 4, `deck/slides/04-talking-to-the-fish.md`; encoding summarized
       in `metaphor-imagery.md` § Prototype encoding): legibility of the three-up view on the
       projector, whether each jaggedness case reads on its zoom, label/landmark overlaps.
+- [ ] Review the station 9-13 artwork: the four-step hosting scene (is step 3 right with your
+      tank on the desk and your fish in the private cloud? the fish's cap/badge uniform), the
+      murky water and effect icons, wall vs. sign, the versioned fish with the nerfed v3, the
+      refusal-dials and bias tiles, the report cover and drafts mockups, and the coda gradient
+      filled with vocabulary chips (built without input; needs your call).
 - [ ] Review the bowl/tank artwork (stations 6-8): bowl variants, sticky notes, cat food,
       tubes and attachments (emoji icons are stand-ins), the MCP fittings, the full tank with
       mic/camera conversion boxes.
@@ -59,6 +68,10 @@ Image specs for all metaphors: `metaphor-imagery.md` (single source of truth).
    - [ ] confirm case ordering and map-first (current default in the deck) vs. example-first
    - [ ] citations visual (station 7; not a literal ladder) -- placeholder in the deck
    - [ ] tubes connecting at the back of the tank: show the interface the fish sees
+   - [ ] review-ladder visual (station 12; not a literal ladder) -- placeholder in the deck
+   - [ ] "the dog ate my homework" image (station 12; emoji stand-ins for now)
+   - [ ] attachments as drawn parts instead of emoji (notepad, alarm clock, recipe cards,
+         mic/camera, effect icons)
 
 #### Full review
 
@@ -68,6 +81,8 @@ Image specs for all metaphors: `metaphor-imagery.md` (single source of truth).
 
 - [ ] Design entry & exit polls (Google Forms + QR codes; measure model accuracy / stance
       movement, not satisfaction). Phone-based (projector confirmed, QR on screen works).
+      Generate the QR SVGs with `make qr URL=... OUT=deck/art/qr-poll.svg` and replace the
+      placeholders in `deck/slides/00-pre-talk.md` and `13-open.md`.
 - [ ] Draft the one-page takeaway card (source: `take-home.md`).
 
 ### Enhancements (low priority)
@@ -79,7 +94,6 @@ Image specs for all metaphors: `metaphor-imagery.md` (single source of truth).
 
 ## Week of Sep 28 - Oct 2 - assembly complete
 
-- [ ] Assemble the full slideshow with speaker notes per slide (Q8).
 - [ ] Review for audience interaction -- add intro question at the beginning to initiate pairs.
 - [ ] Print the one-page takeaway card.
 - [ ] Lock the materials list (`materials.md`).

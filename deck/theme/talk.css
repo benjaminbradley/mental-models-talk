@@ -298,3 +298,140 @@ section:has(.box-cue.visible) .harms {
 .reveal .split .scene svg { height: 760px; }
 .reveal .split > div:last-child { flex: 1 1 0; }
 .reveal .split p { margin: 0 0 0.6em; }
+
+/* ---- Station 9: poisoned water, data toggle, capture stack, trifecta --------------- */
+/* Water turns murky when the scene's .murk-cue fragment shows (--water is registered above). */
+.reveal .scene .poisonable { transition: --water 2.5s ease; }
+.reveal .scene:has(.murk-cue.visible) .poisonable { --water: var(--murk); }
+.reveal .scene .msg.page { fill: var(--ink); font-style: italic; }
+.reveal .scene .exfil.visible { animation: exfil 2.4s ease-in-out infinite; }
+@keyframes exfil {
+  0% { transform: translateX(-40px); opacity: 0; }
+  30% { opacity: 1; }
+  100% { transform: translateX(40px); opacity: 0.2; }
+}
+.reveal .toggle-row { display: flex; align-items: center; justify-content: space-between; gap: 30px; }
+.reveal .toggle {
+  flex: 0 0 auto; padding: 6px 22px; border: 5px solid var(--ink); border-radius: 40px;
+  font-weight: 800; background: var(--rock);
+}
+/* A vertical stack of wide captures (e.g. Reddit headlines), each capped in height. */
+.reveal .stack { display: flex; flex-direction: column; align-items: center; gap: 22px; }
+.reveal .slides .stack img { max-height: 220px; width: auto; max-width: 100%; margin: 0; }
+/* Three answer boxes (the lethal trifecta exercise). */
+.reveal .trio { display: flex; gap: 40px; margin-top: 50px; }
+.reveal .trio > div {
+  flex: 1 1 0; display: flex; flex-direction: column; align-items: center; gap: 16px;
+  padding: 30px 20px; border: 6px solid var(--ink); border-radius: 12px; background: #fff;
+  text-align: center; font-size: 40px;
+}
+.reveal .trio .emoji { font-size: 110px; }
+.reveal .trio .answer { color: var(--red); font-weight: 800; }
+.reveal .scene.wide.tall svg { max-height: 860px; }
+
+/* Inline emphasis (reset.css strips the browser's bold). */
+.reveal b, .reveal strong { font-weight: 800; }
+
+/* ---- Station 10: refusal dials, bias tiles, guardrail probe ------------------------ */
+.reveal .dials { width: 1300px; margin: 0 auto 30px; }
+.reveal .dials .dial, .reveal .dials .dial-scale {
+  display: grid; grid-template-columns: 420px 1fr; align-items: center; gap: 30px; padding: 12px 0;
+}
+.reveal .dials .dial-scale { grid-template-columns: 420px 1fr 1fr; font-size: 26px; font-weight: 800; opacity: 0.7; }
+.reveal .dials .dial-scale span:last-child { text-align: right; }
+.reveal .dials .track {
+  position: relative; height: 16px; border: 4px solid var(--ink); border-radius: 12px;
+  background: linear-gradient(to right, var(--red), var(--rock) 50%, var(--green));
+}
+.reveal .dials .knob {
+  position: absolute; top: 50%; width: 44px; height: 44px; transform: translate(-50%, -50%);
+  border: 6px solid var(--ink); border-radius: 50%; background: #fff;
+}
+.reveal .tiles { display: flex; gap: 36px; justify-content: center; margin-top: 30px; }
+.reveal .tiles > div {
+  flex: 1 1 0; display: flex; flex-direction: column; align-items: center; gap: 18px;
+  padding: 30px 16px; border: 6px solid var(--ink); border-radius: 12px; background: #fff;
+  text-align: center; font-size: 38px;
+}
+.reveal .tiles svg { height: 200px; width: auto; }
+.reveal .tiles .emoji { font-size: 170px; height: 200px; line-height: 200px; }
+/* Headlines in front; the transcript behind, dimmed until the .probe-cue fragment. */
+.reveal .probe { position: relative; height: 700px; }
+.reveal .slides .probe img { margin: 0; }
+.reveal .slides .probe .behind {
+  position: absolute; left: 0; right: 0; top: 40px; width: 100%; max-height: none;
+  opacity: 0.25; transition: opacity 0.8s ease;
+}
+.reveal .probe .front {
+  position: absolute; inset: 0; display: flex; flex-direction: column; align-items: center;
+  justify-content: center; gap: 40px; transition: opacity 0.8s ease;
+}
+.reveal .slides .probe .front img { box-shadow: 0 20px 60px rgb(0 0 0 / 0.3); max-height: 260px; }
+.reveal .probe:has(.probe-cue.visible) .behind { opacity: 1; }
+.reveal .probe:has(.probe-cue.visible) .front { opacity: 0; }
+
+/* ---- Station 12: report cover, drafts folder, the excuse --------------------------- */
+/* A "professional" cover page: navy/grey, serif title, thin rule, logo block. */
+.reveal .cover {
+  flex: 0 0 600px; height: 780px; box-sizing: border-box; padding: 70px 60px;
+  background: #fff; border: 2px solid #c9ccd3; box-shadow: 0 20px 50px rgb(0 0 0 / 0.25);
+  font-family: Georgia, "Times New Roman", serif; color: #1f2a44; font-size: 26px;
+  display: flex; flex-direction: column;
+}
+.reveal .cover .logo {
+  width: 120px; height: 60px; display: flex; align-items: center; justify-content: center;
+  background: #d5d9e0; color: #6b7385; font: 700 20px "Helvetica Neue", sans-serif; letter-spacing: 0.1em;
+  margin-bottom: 150px;
+}
+.reveal .cover h2 { font-family: Georgia, serif; font-weight: 400; font-size: 56px; color: #1f2a44; line-height: 1.15; margin: 0; }
+.reveal .cover hr { border: 0; border-top: 2px solid #1f2a44; width: 100%; margin: 36px 0; }
+.reveal .split .cover p { margin: 0 0 0.4em; color: #4a5368; }
+.reveal .split .cover .date { margin-top: auto; }
+.reveal .mail {
+  position: relative; width: 1500px; margin: 10px auto 50px; border: 6px solid var(--ink);
+  border-radius: 14px; background: #fff; font-size: 34px; box-shadow: 0 10px 0 var(--ink);
+}
+.reveal .mail-head { padding: 16px 30px; background: var(--rock); font-weight: 800; border-bottom: 4px solid var(--ink); border-radius: 8px 8px 0 0; }
+.reveal .mail-row { display: grid; grid-template-columns: 560px 1fr; gap: 30px; padding: 26px 30px; border-bottom: 2px solid var(--rock); }
+.reveal .mail-row .subj { font-weight: 800; }
+.reveal .mail-popup {
+  position: absolute; right: -30px; top: -50px; display: flex; align-items: center; gap: 30px;
+  padding: 24px 34px; background: #fff; border: 6px solid var(--ink); border-radius: 14px;
+  box-shadow: 0 20px 50px rgb(0 0 0 / 0.3);
+}
+.reveal .excuse { text-align: center; }
+.reveal .excuse .emoji { font-size: 220px; }
+.reveal .excuse p { font-size: 64px; font-style: italic; font-weight: 800; margin: 10px 0 40px; }
+
+/* ---- Station 13: centered slides, the full gradient, closing ----------------------- */
+.reveal .slides section.center-slide { text-align: center; }
+.reveal .slides section.center-slide h1 { font-size: 110px; }
+.gradient-scene.full { height: 560px; margin: 10px 0 40px; }
+.gradient-scene.full .camps > div { font-size: 72px; }
+.gradient-scene.full .crowd { font-size: 90px; }
+.gradient-scene.full .bar .dots span { font-size: 64px; }
+.gradient-scene .spells { position: absolute; inset: 0; }
+.gradient-scene .spells .term {
+  position: absolute; transform: translate(-50%, -50%) scale(0.6); opacity: 0;
+  transition: opacity 0.6s ease, transform 0.6s ease; white-space: nowrap; font-size: 32px;
+}
+.gradient-scene:has(.spells-cue.visible) .spells .term { opacity: 1; transform: translate(-50%, -50%) scale(1); }
+.gradient-scene .spells .term:nth-child(2n) { transition-delay: 0.15s; }
+.gradient-scene .spells .term:nth-child(3n) { transition-delay: 0.3s; }
+.reveal .closing { display: flex; align-items: center; justify-content: center; gap: 80px; text-align: left; }
+.reveal .closing figure { margin: 0; text-align: center; }
+.reveal .slides .closing img { width: 420px; height: 420px; border-radius: 12px; }
+.reveal .closing figcaption { font-weight: 800; font-size: 34px; margin-top: 10px; }
+.reveal .closing a { color: var(--blue); }
+.reveal .closing p { margin: 0 0 0.6em; }
+@media (prefers-reduced-motion: reduce) {
+  .reveal .scene .exfil.visible { animation: none; }
+  .goldfish .nod { animation: none !important; }
+}
+/* The people-pleaser nods along (station 11). */
+.goldfish .nod { transform-box: fill-box; transform-origin: 60% 50%; animation: nod 0.9s ease-in-out infinite; }
+@keyframes nod {
+  0%, 100% { transform: rotate(0deg); }
+  50% { transform: rotate(7deg); }
+}
+.reveal .shots.short img { max-height: 580px; }

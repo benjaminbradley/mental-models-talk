@@ -11,9 +11,13 @@ describe narration or slide layout (those live in `slides-outline.md`).
 
 **Imagery status:** first pass built for stations 1-8: the goldfish and training story
 (station 3), the three maps + per-case zooms (station 4), the bowl/tank progression with notes,
-cat food, tubes, attachments and the MCP fittings (stations 6-8); station 1-2 use emoji/CSS.
-Stations 9-13 are in design/spec phase. Missing items are placeholders in the deck. The `illustrations/` directory
-will hold screencaps; metaphor artwork is SVG built from reusable parts in `deck/art/`
+cat food, tubes, attachments and the MCP fittings (stations 6-8), the four-step hosting scene
+(fish in a company cap and badge: part `fish-uniform`), murky water, the effect icons, wall vs.
+sign (station 9), the versioned fish with a nerfed one (part `fish-face-goofy`, station 10), and
+the full-treatment gradient (station 13, flagged for review); stations 1-2 use emoji/CSS.
+Still to design: the citations visual (7), the review-ladder visual (12), the back-connection
+interface (8). Missing items are placeholders in the deck. The `illustrations/` directory
+holds candidate screencaps; metaphor artwork is SVG built from reusable parts in `deck/art/`
 (decision: `open-questions-and-ideas.md` Q16; how-to: `deck/README.md` § Artwork).
 
 ---
