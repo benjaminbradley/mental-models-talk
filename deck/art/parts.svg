@@ -48,14 +48,15 @@
       <circle cx="276" cy="122" r="10" style="fill: var(--ink)"/>
     </symbol>
 
-    <!-- Company uniform (station 9): cap and name badge, for a fish someone else runs.
-         Layer it on top of fish-body at the same x/y/width/height. -->
+    <!-- Company uniform (station 9): cap on the head (only the brim sticks out) and a name
+         badge on the chest, for a fish someone else runs. Layer it on fish-body at the same
+         x/y/width/height. -->
     <symbol id="fish-uniform" viewBox="0 0 400 260">
       <g style="stroke: var(--ink); stroke-width: var(--line, 9)" stroke-linejoin="round" stroke-linecap="round">
-        <path style="fill: var(--blue)" d="M 252 66 C 250 24, 322 10, 340 58 Z"/>
-        <path style="fill: var(--ink)" d="M 334 56 Q 366 50 380 64 Q 356 70 334 66 Z"/>
-        <rect x="108" y="112" width="62" height="40" rx="6" style="fill: #fff"/>
-        <path style="stroke: var(--blue)" d="M 120 132 h 38"/>
+        <path style="fill: var(--blue)" d="M 212 52 C 212 8, 292 0, 300 62 Z"/>
+        <path style="fill: var(--ink)" d="M 294 58 Q 330 50 350 64 Q 324 72 296 68 Z"/>
+        <rect x="244" y="184" width="58" height="38" rx="6" style="fill: #fff"/>
+        <path style="stroke: var(--blue)" d="M 256 203 h 34"/>
       </g>
     </symbol>
 
@@ -102,6 +103,19 @@
         <g style="transform: translateY(var(--water-drop, 0px)); transition: transform 1.2s ease">
           <rect x="0" y="130" width="900" height="440" style="fill: var(--water)" opacity="0.85"/>
           <path style="stroke: var(--ink); stroke-width: var(--line, 9)" d="M 0 130 Q 50 116 100 130 T 200 130 T 300 130 T 400 130 T 500 130 T 600 130 T 700 130 T 800 130 T 900 130" fill="none" stroke-linecap="round"/>
+        </g>
+      </g>
+    </symbol>
+
+    <!-- Poisoned water (station 9): a light cross-hatch over the water, so "murky" doesn't rely
+         on color alone. Layer it right after tank-water. -->
+    <pattern id="murk-hatch" width="26" height="26" patternUnits="userSpaceOnUse" patternTransform="rotate(45)">
+      <path d="M 0 13 H 26 M 13 0 V 26" style="stroke: var(--ink); stroke-width: 3" opacity="0.28"/>
+    </pattern>
+    <symbol id="tank-murk" viewBox="0 0 900 560">
+      <g clip-path="url(#tank-inside)">
+        <g style="transform: translateY(var(--water-drop, 0px))">
+          <rect x="0" y="134" width="900" height="440" style="fill: url(#murk-hatch)"/>
         </g>
       </g>
     </symbol>

@@ -303,6 +303,11 @@ section:has(.box-cue.visible) .harms {
 /* Water turns murky when the scene's .murk-cue fragment shows (--water is registered above). */
 .reveal .scene .poisonable { transition: --water 2.5s ease; }
 .reveal .scene:has(.murk-cue.visible) .poisonable { --water: var(--murk); }
+.reveal .scene .poisonable .murk-hatch { opacity: 0; transition: opacity 2.5s ease; }
+/* Keep the conversation readable over the hatch: a pale halo behind each line. */
+.reveal .scene .poisonable .msg { paint-order: stroke; stroke: var(--paper); stroke-width: 0; stroke-opacity: 0.8; stroke-linejoin: round; transition: stroke-width 2.5s ease; }
+.reveal .scene:has(.murk-cue.visible) .poisonable .msg { stroke-width: 8px; }
+.reveal .scene:has(.murk-cue.visible) .poisonable .murk-hatch { opacity: 1; }
 .reveal .scene .msg.page { fill: var(--ink); font-style: italic; }
 .reveal .scene .exfil.visible { animation: exfil 2.4s ease-in-out infinite; }
 @keyframes exfil {
@@ -347,7 +352,7 @@ section:has(.box-cue.visible) .harms {
   position: absolute; top: 50%; width: 44px; height: 44px; transform: translate(-50%, -50%);
   border: 6px solid var(--ink); border-radius: 50%; background: #fff;
 }
-.reveal .tiles { display: flex; gap: 36px; justify-content: center; margin-top: 30px; }
+.reveal .tiles { display: flex; gap: 36px; justify-content: center; margin: 30px 0 40px; }
 .reveal .tiles > div {
   flex: 1 1 0; display: flex; flex-direction: column; align-items: center; gap: 18px;
   padding: 30px 16px; border: 6px solid var(--ink); border-radius: 12px; background: #fff;
@@ -355,6 +360,8 @@ section:has(.box-cue.visible) .harms {
 }
 .reveal .tiles svg { height: 200px; width: auto; }
 .reveal .tiles .emoji { font-size: 170px; height: 200px; line-height: 200px; }
+.reveal .tiles .emoji.code { font: 800 120px ui-monospace, Menlo, monospace; }
+.reveal .tiles .small { font-size: 28px; }
 /* Headlines in front; the transcript behind, dimmed until the .probe-cue fragment. */
 .reveal .probe { position: relative; height: 700px; }
 .reveal .slides .probe img { margin: 0; }

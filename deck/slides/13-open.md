@@ -29,7 +29,7 @@ Poll: stance movement + model accuracy. Compare entry vs. exit. Don't frame it a
 
 ---
 
-# Anyone can choose to study it
+# An advanced technology that anyone can learn
 
 <div class="gradient-scene full">
 <div class="camps">

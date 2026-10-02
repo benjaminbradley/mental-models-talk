@@ -66,7 +66,9 @@ shows: `../metaphor-imagery.md`.
   change rather than an appearance, add an empty cue fragment
   (`<span class="fragment wake-cue"></span>`) and style with
   `.scene:has(.wake-cue.visible) ...` (see the goldfish rules in `theme/talk.css`). Poisoned water
-  works the same way: a `.murk-cue` fragment turns `--water` to `--murk` on an `svg.poisonable`.
+  works the same way: a `.murk-cue` fragment turns `--water` to `--murk` on an `svg.poisonable` and
+  fades in its `<use class="murk-hatch" href="#tank-murk">` cross-hatch (always-murky scenes just
+  place `tank-murk` after `tank-water`).
 - **Fish variants:** `fish-uniform` (company cap and badge: someone else's fish) and
   `fish-face-goofy` (a nerfed version; use instead of `fish-eyes-open`) layer on `fish-body` at the
   same x/y/width/height. A scene recolors one fish with an inline `style="--fish: ...; --fish-deep: ..."`

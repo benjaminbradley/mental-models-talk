@@ -328,7 +328,9 @@ client (simple/fancy/mobile); the water = the context.
 - Station 7: Tubes attach (web search; citations ladder), then the notepad (memory).
 - Station 8: Fish reaching through tubes = agency; the tubes let it act, not just say.
   Alarm clock and recipe cards attach. Pull back: the bowl is now a tank.
-- Station 9: Water turns poisoned (injection/prompt injection). Three overlay effects:
+- Station 9: Water turns poisoned (injection/prompt injection): murky color plus a light
+  cross-hatch (part `tank-murk`) so it doesn't rely on color alone; the page coming in through
+  the tube carries a ☠️. Three overlay effects:
   destruction = ☢️ (nuke); exfiltration = ✉️ (envelope leaving through a tube); sleeper /
   incubation = 💣 (a bomb tucked into the notepad, i.e. memory).
 
@@ -387,7 +389,9 @@ policy tier when building.
 
 **Description:** The tank (client) and the fish (model) can live in different places. The
 fish wears a uniform showing whose fish it is (which company or person runs the model), so it
-stays identifiable when it sits apart from the tank. Revealed in four steps:
+stays identifiable when it sits apart from the tank: a cap on its head (only the brim sticks out
+in front) and a name badge on its chest, below the gill (part `fish-uniform`). Slide title:
+"Where does your data go?"  Revealed in four steps:
 1. **Frontier (the default):** tank and fish both inside a corporate cloud, with company
    names/logos above the cloud. You are connected to it by an umbilical cord: everything you
    say to the fish travels up to their servers, and the cord can't be cut.
@@ -400,7 +404,11 @@ stays identifiable when it sits apart from the tank. Revealed in four steps:
 **Visual properties:**
 - Distance = how far your words travel; the cord's length shows it.
 - Capability tends to rise toward the frontier; control rises toward local.
-- Credential/API-key exposure is marked on the cord to the frontier cloud.
+- An **unlocked padlock** on each cord to the frontier cloud (steps 1 and 2): whatever goes up
+  it is readable on their side (credential/API-key exposure); the private cloud has a locked one.
+- Short examples beside each step: BYOK / a local app + a frontier model (step 2);
+  "open-source / open-weight models on hardware you control" above the private cloud (step 3);
+  Ollama, LM Studio (step 4).
 - Logos: plain text wordmarks of several vendors (not copied logo artwork), so no single
   company is singled out.
 

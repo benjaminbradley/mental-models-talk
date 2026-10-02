@@ -384,14 +384,24 @@ last.
 
 ## Station 9 - Blast radius: security & data
 
-### Slide: Where does the fish live?
+### Slide: Many kinds of tanks
+
+**Visual:** *(illustrate)* Four tiles of client examples: web apps; desktop & mobile apps;
+coding agents (Claude Code and other vendors' equivalents); open-source clients (OpenClaw,
+Hermes, Open WebUI, ...). Bridges the station 8 tank to hosting: some tanks let you choose the
+fish.
+
+**Text, Narration, Notes:** moved to `deck/slides/09-blast-radius.md` (SSOT for on-screen text and speaker notes).
+
+### Slide: Where does your data go? (was "Where does the fish live?")
 
 **Visual:** *(new)* Four-step reveal of where the tank (client) and the fish (model)
 live (`metaphor-imagery.md` § Where does the fish live?): (1) frontier: tank and fish in a
 corporate cloud with vendor names above it, joined to you by an uncuttable cord; (2) your tank
 + their fish (in a company uniform), cord still attached; (3) your tank on your desk + your
 fish in a padlocked private cloud, lower down; (4) everything on a beefy local PC, drawn below
-the clouds. A crossed-out key on the frontier cord = credential exposure.
+the clouds. An unlocked padlock on both frontier cords = credential exposure; short examples
+beside each step (BYOK; open-weight models on your hardware; Ollama, LM Studio).
 
 **Text, Narration, Notes:** moved to `deck/slides/09-blast-radius.md` (SSOT for on-screen text and speaker notes).
 
@@ -403,11 +413,11 @@ analogy for training data (not captured yet; placeholder).
 
 **Text, Narration, Notes:** moved to `deck/slides/09-blast-radius.md` (SSOT for on-screen text and speaker notes).
 
-### Slide: Poisoned water -- injection
+### Slide: Prompt injection = poisoned water
 
-**Visual:** *(extend)* The tank; a tube reaches out to a web page, and the page's text in
-the water carries a hidden instruction. The water turns murky (`--murk`); the fish cheerfully
-agrees to it.
+**Visual:** *(extend)* The tank; a tube reaches out to a web page (☠️ on the page icon), and
+the page's text in the water carries a hidden instruction. The water turns murky (`--murk`, plus
+a light cross-hatch for colorblind viewers); the fish cheerfully agrees to it.
 
 **Animation:** Clean water gradually darkens as the page text arrives. The fish does not notice.
 
