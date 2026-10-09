@@ -33,7 +33,7 @@ deck holds the specifics (examples, wording, slide order, composition).
 upstream doc only if the change alters something at that doc's level:
 
 - New example, wording, or visual detail in a beat -> the deck only.
-- Beat added, cut, reordered, or hidden -> the deck + `arc-table.md` (hiding: deck only; record any keep/cut decision in `todo.md` or open-questions).
+- Beat added, cut, reordered, or hidden -> the deck + `arc-table.md` (any pending keep/cut decision goes in `todo.md` or open-questions).
 - Method moves between stations, or a station's purpose shifts -> the deck + `arc-table.md` + `presentation-arc.md` (+ `take-home.md` if a method or principle is added, removed, or renamed).
 - New metaphor, or a change to what one means -> `metaphor-imagery.md` + the deck.
 
