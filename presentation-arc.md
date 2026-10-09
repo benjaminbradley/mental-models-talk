@@ -186,8 +186,8 @@ Methods: tool use; web search; verified citations; memory; memory audit.
 - **The full system as recap,** plus multimodal input and voice as quick extras. Every tool
   widens the blast radius (bridge to station 9).
 
-Methods: code execution, tool use, tool discovery, MCP / provider tools, scheduled tasks,
-skills, multimodal.
+Methods: code execution, tool use, tool discovery, connectors (MCP / provider tools),
+browser/computer use, delegation/subagents, scheduled tasks, skills, multimodal.
 
 ## Station 9 - Blast radius: security & data
 *Cognitive/stance: "a handy tool" -> "a system with a blast radius I have to bound."*

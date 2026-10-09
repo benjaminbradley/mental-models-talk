@@ -1,8 +1,10 @@
-# Take-Home Reference (DRAFT - placeholders)
+# Take-Home Reference
 
-Source material for the one-page card participants leave with. Format: key concept/term
+Source for the one-page card participants leave with. Format: key concept/term
 + a memory-jogging phrase, so people can look up detail if they want - not full
-explanations. To be trimmed and prioritized later (a real card fits far fewer than this).
+explanations. Covers what the talk teaches, and nothing it doesn't; update it when a method or principle
+is added, removed, or renamed in the talk. To be trimmed and prioritized for print (a real
+card fits far fewer than this).
 
 ## Links (keep on the card)
 
@@ -43,6 +45,8 @@ explanations. To be trimmed and prioritized later (a real card fits far fewer th
   for a tool by reading the tool's description.
 - **MCP** (Model Context Protocol) - an industry-standard way to connect a tool once and use
   it from any compatible app.
+- **Code execution** - for counting, math, and data, ask it to write and run a script
+  instead of answering from memory.
 - **Browser & computer use** - it can operate the same interfaces you do.
 - **Multimodal** - vision (drag in a photo or screenshot), image generation, voice
   conversation. Know the difference: transcription (speech-to-text) vs. native voice
@@ -85,12 +89,16 @@ explanations. To be trimmed and prioritized later (a real card fits far fewer th
   least privilege.
 - **Hosting matters** - local, private cloud, or frontier cloud; each tier trades
   capability for data control. Know where your data goes. Do not paste credentials
-  into a conversation that transits someone else's servers.
+  into a conversation that transits someone else's servers. A training-data opt-out is a
+  promise, not a wall.
 - **It is a product** - refusals, tone, agreeableness are design decisions with
-  commercial interests behind them.
+  commercial interests behind them. Bias has four sources: what it read, what humans
+  rewarded, what the vendor blocked, and emergent effects like sycophancy.
+- **Unknown unknowns** - in territory you don't already know, you can't see what is missing.
 - **Frontier instability** - the models change without notice; a workflow that worked
   yesterday can break tomorrow. You are building on someone else's fish.
-- **It amplifies what you bring** - taste and intention become the bottleneck.
+- **Intention is the input** - it amplifies what you bring; taste and intention become
+  the bottleneck.
 - **Blast radius and recovery** - if everything goes wrong, what would you lose?
   Backups, version control, sandbox environments are architectural safety nets.
 - **Draft vs. send** - human-in-the-loop is a deliberate design choice, not an
