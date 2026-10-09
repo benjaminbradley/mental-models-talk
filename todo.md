@@ -55,8 +55,8 @@ Image specs for all metaphors: `metaphor-imagery.md` (single source of truth).
 - [ ] Review the goldfish artwork (station 3, `deck/slides/03-meet-the-fish.md`; approach: Q16):
       fish look, palette, outline weight, and sleep/wake motion -- ideally on a projector.
       Adjust palette tokens in `deck/theme/talk.css`.
-- [ ] Review the maps (station 4, `deck/slides/04-talking-to-the-fish.md`; encoding summarized
-      in `metaphor-imagery.md` § Prototype encoding): legibility of the three-up view on the
+- [ ] Review the maps (station 4, `deck/slides/04-talking-to-the-fish.md`; encoding in the header
+      of `tools/build-maps.mjs`): legibility of the two-up views on the
       projector, whether each jaggedness case reads on its zoom, label/landmark overlaps.
 - [ ] Review the station 9-13 artwork: the four-step hosting scene (is step 3 right with your
       tank on the desk and your fish in the private cloud? the fish's cap/badge uniform), the

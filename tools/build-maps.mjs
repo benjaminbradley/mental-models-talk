@@ -8,7 +8,32 @@
 // Deterministic (seeded): rerunning produces identical files. Colors are CSS custom properties
 // (deck/theme/talk.css), so the maps must be inlined into the page (the deck's data-svg loader).
 // Usage: node tools/build-maps.mjs   -> deck/art/maps/{territory,human,fish,fish-cut}.svg
-// Spec: metaphor-imagery.md § The three-layer map/territory. Guide: deck/README.md § Artwork.
+// Spec: metaphor-imagery.md § The map and the territory. Guide: deck/README.md § Artwork.
+//
+// Encoding (how the metaphor-imagery.md properties are drawn; open to change):
+// - Not an island: the named regions are a highlighted patch inside a landscape that runs off
+//   every edge (faint borders and out-of-focus landmarks continue outward). Water is local: a
+//   stretch of coast in one corner and a lake, never a surrounding sea.
+// - Territory: colored regions with hatched texture, full-color landmarks everywhere. Every focus
+//   region has the same number of landmarks (six), so coverage on the other maps reads at a
+//   glance as "6 of 6" vs. "2 of 6".
+// - Human map: a network of paths grown outward from home (a house in Everyday Cooking). Each
+//   segment is drawn once per trip through it, so routes near home braid into well-worn trails;
+//   single strands lead out to lone landmarks (one each in Poetry, History, Medicine), a few trails
+//   wander off the map, and one reaches a single stretch of coast. Only landmarks along the paths
+//   appear. Region confidence follows path length: firm ink where much is walked, sketchy ink + "?"
+//   where one strand reaches, an honest cross-hatched blank with "here be dragons" where none does
+//   (Law).
+// - Fish map: uniform bold ink, and a subset of the real landmarks at their real positions
+//   (missing = thin training data), aligned with the examples: all 6 in Poetry and Everyday
+//   Cooking; 5 of 6 in History, Law, Medicine; Spatial 2 of 6, Counting 3 of 6 lakes, Family
+//   Recipes 1 of 6, Recent Events 2 of 6. The only non-matching marks: Spatial's river on the
+//   wrong course, one mainstream house in Family Recipes (drift), two invented landmarks in Recent
+//   Events (filled from pattern).
+// - Fish map, cut (fish-cut.svg, station 10): the fish map with a patch of History blanked out,
+//   outlined by a dotted cut line with scissors partway round (the stretch behind them solid:
+//   already cut).
+// - Per-case images: the same files cropped to one region (data-zoom).
 import rough from 'roughjs';
 import { mkdir, writeFile } from 'node:fs/promises';
 import { fileURLToPath } from 'node:url';
