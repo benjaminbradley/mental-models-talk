@@ -19,11 +19,12 @@ activity (pair/group/individual); *demo* = live or pre-captured demonstration;
 | 1 | The real problems, named out loud | | guarded -> permission to engage | | |
 | 1 | The contract: literacy, not conversion | | | | |
 | 2 | Magic -> gradient | "magic, not for me" -> "learnable discipline" | | | |
+| 3 | Who learns whose language? | | | | |
 | 3 | Computers speak our language (spine claim) | "smart person / search" -> "runs on language" | curiosity | | |
 | 3 | The goldfish: well-read people-pleaser | -> "well-read people-pleaser, no lived experience" | | | *socratic:* how would you know when it's wrong? |
 | 3 | Training story: temperament vs. anatomy | | | | |
 | 3 | It sleeps until you talk to it | | | | |
-| 4 | B plays the fish *(hidden)* | "instincts transfer" -> "instincts mislead; output depends on what I ask" | productive disorientation | invite clarifying questions | *exercise:* pair, describe-and-draw |
+| 4 | B plays the fish *(hidden)* | "instincts transfer" -> "instincts mislead; output depends on what I ask" | productive disorientation | invite clarifying questions | *exercise:* pair, describe-and-draw; *socratic:* what went wrong? whose fault? |
 | 4 | Say what you want & how | | | specification; output formats; few-shot | *demo:* plain vs. specified |
 | 4 | The lazy genie | | | | |
 | 4 | Ask the fish to help you ask (pink elephant, Theory of Mind) | | | meta-prompting | |
@@ -42,13 +43,13 @@ activity (pair/group/individual); *demo* = live or pre-captured demonstration;
 | 6 | Make it show its work | | | chain-of-thought; extended thinking; self-reflection | *socratic:* how do you make it more reliable? |
 | 6 | Notes on the glass; a tank someone else set up | | | custom/system instructions; Custom GPTs / Gems; RAG | |
 | 6 | Restart vs. repair (cat food) | | | restart vs. repair; iteration; critique loops; context management | |
-| 7 | Tools | "knows what it knows" -> "tools extend what it can see" | | tool use | |
+| 7 | Tools | "knows what it knows" -> "tools extend what it can see" | | tool use; tool discovery | |
 | 7 | Tool-use training | | | | |
 | 7 | The books ended; looking things up | | | web search | |
 | 7 | Three ways to ask for facts | | | verified citations | *demo:* three levels of sourcing |
 | 7 | The notepad (memory) | | | memory; memory audit | |
 | 8 | The fish writes a tool (letter count) | "chatbot that says" -> "system that does" | | code execution | *demo* |
-| 8 | The fish can act (spine payoff #2) | | | tool use; tool discovery | |
+| 8 | The fish can act (spine payoff #2) | | | | |
 | 8 | Provider tools vs. MCP *(hidden)* | | | MCP; provider tools | |
 | 8 | Alarm clock + recipe cards | | | scheduled tasks; skills | |
 | 8 | The tank (recap) | | | multimodal | |
@@ -66,7 +67,7 @@ activity (pair/group/individual); *demo* = live or pre-captured demonstration;
 | 10 | The fish changes without notice | | | | |
 | 11 | Intention is the input | "tool is the story" -> "I am the variable" | | knowing what you want | *socratic:* if it can do anything you specify, what's left? |
 | 11 | Two warnings: sycophancy, atrophy | | | | |
-| 12 | Would you put your name on this? | "who's responsible?" -> "I am" | convergence | | *exercise:* evaluate artifact |
+| 12 | Would you put your name on this? | "who's responsible?" -> "I am" | convergence | | *exercise:* evaluate artifact; *socratic:* how would you check? |
 | 12 | Draft vs. send | | | HITL as deliberate pattern | |
 | 12 | Who checks the fish? (review ladder) | | | review ladder; adversarial subagents | |
 | 12 | "The AI did it" (spine payoff #3) | | | | |

@@ -13,9 +13,11 @@ Artwork approach: `open-questions-and-ideas.md` Q16.
 - **The real term beside the metaphor.** Wherever a metaphor stands for a real concept, the
   technical term appears next to it as a term chip (e.g. the library = `training data`). The
   metaphor carries the idea; the chip gives the audience the word to look up.
-- **Aesthetic:** cartoon style, heavy black outline, bold colors, simple shapes; readable
-  from the back of a room on a projector.
+- **Aesthetic:** cartoon style, heavy black outline, bold colors, simple shapes (think Red
+  Fish Blue Fish); readable from the back of a room on a projector.
 - **Original designs only;** nothing borrowed from a famous character.
+- **Real brands appear only as plain-text names,** never copied logo artwork; mockups of real
+  services use made-up names and stand-in logos.
 
 ## The vocabulary
 

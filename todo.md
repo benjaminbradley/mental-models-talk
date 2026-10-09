@@ -24,7 +24,7 @@ Completed items are REMOVED (not marked complete) - tracked by git history.
 
 #### Design & spec work
 
-Image specs for all metaphors: `metaphor-imagery.md` (single source of truth).
+What each metaphor image means: `metaphor-imagery.md`; how each slide composes it: the deck.
 
 - [ ] Decide keep/cut for **describe-and-draw** ("B plays the fish", station 4; **Q3**
       reopened; HIDDEN in the deck for now). If kept: find & test the figure. Criteria: spatial relationships (not artistic skill), dignified for

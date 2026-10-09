@@ -361,6 +361,8 @@ Start from the need: "How many of you have typed the same reminder into a chat o
 
 You (or the maker) write these notes; the fish only reads them. Memory (station 7) is different: the fish writes those notes itself.
 
+(Project instructions are deliberately left out: too detailed for this audience.)
+
 ---
 
 # A tank someone else set up

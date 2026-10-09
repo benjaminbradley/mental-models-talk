@@ -27,8 +27,7 @@ Update as exercises are locked.
 - Printed one-page takeaway card -- the self-diagnostic, the verification asymmetry,
   and the lethal trifecta. The only thing that persists after the room empties.
   Print enough for full audience (~30 copies).
-- Station 9 handout -- the "assistant with mailbox access" scenario for the
-  small-group injection exercise (~10 copies, one per group of 3).
+- Station 9 mailbox exercise: no handout; the scenario is on screen.
 - Station 12 handout -- a plausible, polished, subtly-wrong artifact for the
   "would you sign it?" exercise (~30 copies, or display on screen).
 - Timer / clock the facilitator can see.

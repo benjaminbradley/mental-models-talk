@@ -23,7 +23,7 @@ deck holds the specifics (examples, wording, slide order, composition).
 | `arc-table.md` | Bird's-eye index: one row per beat, short labels for beat, track shifts, methods, interaction (imagery per station: the index in `metaphor-imagery.md`) | beats are added, removed, reordered, or change track/method | wording longer than a label |
 | `metaphor-imagery.md` | The visual vocabulary: what each metaphor stands for, rules that hold everywhere, which station adds what | a metaphor or one of its rules changes | slide layouts, SVG part ids, encoding values, status |
 | `deck/slides/*.md` | Everything concrete: on-screen text, examples, slide order, visual composition, speaker notes, hidden slides, placeholders for unbuilt visuals | every revision | n/a |
-| `take-home.md` | The participant card: the talk's methods and principles as memory-jogging phrases | a method or principle is added, removed, or renamed in the talk | anything not taught in the talk |
+| `take-home.md` | The participant card: the talk's methods and principles as memory-jogging phrases | a method or principle is added, removed, or renamed in the talk | anything not taught in the talk (outside its short "Beyond the talk" list) |
 | `open-questions-and-ideas.md` | Unresolved design questions (stable IDs Q1, Q2, ...), resolved-decision log, candidate metaphors, unplaced stories | constantly | n/a |
 | `todo.md` | Tasks, status, things to verify, by timeline week (talk: Oct 13) | constantly | n/a |
 | `materials.md` | Physical and technical materials to bring or provide | rarely | n/a |

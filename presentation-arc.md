@@ -42,8 +42,8 @@ non-determinism).
 ## Station 1 - Disarm + Acknowledge
 *Stance: guarded suspicion -> permission to engage.*
 
-Name the real problems out loud first (bubble dynamics, energy footprint, labor,
-training-data provenance, concentration of power) and say plainly the talk does not
+Name the real problems out loud first (energy and water footprint, labor, training-data
+provenance, concentration of power) and say plainly the talk does not
 adjudicate them. Then the contract: you should be able to reason about this accurately,
 including against it; nothing is being sold. Motivate through agency, not fear (refusing
 what you do not understand is weak refusal), never "adapt or be left behind," which is
@@ -87,8 +87,8 @@ The capability half of the station 3 arc; every technique answers a property of 
 the room just met.
 
 - **Describe-and-draw ("B plays the fish"; pending, Q3):** the felt limit behind
-  specification, from the prompter's side: tacit knowledge does not transmit, and an
-  astonishing amount *is* specifiable. Debrief method: invite clarifying questions.
+  specification, from the prompter's side: tacit knowledge does not transmit (and the fish
+  cannot tell you it misunderstood), yet an astonishing amount *is* specifiable. Debrief method: invite clarifying questions.
 - **Specification:** the people-pleaser answers whatever you ask, so a vague ask gets a
   confident, vague answer; gaps get filled with the cheapest answer.
 - **Meta-prompting:** when you do not know what to ask, ask the fish to help. It holds
@@ -158,8 +158,9 @@ RAG, document hygiene, restart vs. repair, iteration, critique loops.
 Tools arrive one at a time, each answering a limit the room already felt. This station:
 tools that change what the fish can *know*; station 8: tools that let it *do*.
 
-- **A tool is anything outside the model it can reach for.** Using one is itself trained:
-  tool-use training joins the station 3 training story as a third step.
+- **A tool is anything outside the model it can reach for.** The model reads a tool's
+  description to decide when to use it. Using one is itself trained: tool-use training
+  joins the station 3 training story as a third step.
 - **Web search + verified citations.** Felt limits: training data ends (Recent Events),
   and invented sources. Three levels: no sources, sources (fabricable, and the appearance
   of sourcing manufactures unearned trust), verified sources (checked through tools). The
@@ -170,7 +171,7 @@ tools that change what the fish can *know*; station 8: tools that let it *do*.
   it. Also sets up the sleeper attack (station 9).
 
 *Tension raised:* now it can read and remember. Can it *do* anything?
-Methods: tool use; web search; verified citations; memory; memory audit.
+Methods: tool use; tool discovery; web search; verified citations; memory; memory audit.
 
 ## Station 8 - The tank: reaching out to *do*
 *Cognitive: "a chatbot that says things" -> "a system that does things."*
@@ -178,16 +179,15 @@ Methods: tool use; web search; verified citations; memory; memory audit.
 - **Code execution.** Felt limit: Counting. The fish writes a script and gets a verifiable
   answer: tools now carry actions out, not just information in.
 - **Agency (spine payoff #2):** the things you used to do yourself are handed off item by
-  item. Agency is the amplifier: everything good scales, and so does everything bad. The
-  model reads a tool's description to decide when to use it.
+  item. Agency is the amplifier: everything good scales, and so does everything bad.
 - **Provider tools vs. MCP** (pending; MCP stays on the take-home card).
 - **Scheduled tasks** (felt limit: it sleeps until woken) and **skills** (felt limit:
   re-specifying the same constraints every time).
 - **The full system as recap,** plus multimodal input and voice as quick extras. Every tool
   widens the blast radius (bridge to station 9).
 
-Methods: code execution, tool use, tool discovery, connectors (MCP / provider tools),
-browser/computer use, delegation/subagents, scheduled tasks, skills, multimodal.
+Methods: code execution, scheduled tasks, skills, multimodal; MCP (card only, while
+its slide is hidden).
 
 ## Station 9 - Blast radius: security & data
 *Cognitive/stance: "a handy tool" -> "a system with a blast radius I have to bound."*

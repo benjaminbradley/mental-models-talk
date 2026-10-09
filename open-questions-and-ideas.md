@@ -112,6 +112,10 @@ the restart-vs-repair beat (now station 6). "Knowing when to abandon a thread" w
 already a station-5-to-restart-vs-repair callback; folding iteration in avoids answering the same question
 (repair vs. restart) twice.
 
+**Enforcement hierarchy tiers.** RESOLVED - two tiers only: architecture (a wall) >
+guideline (a sign). The middle "policy" tier was dropped as too vague for this audience;
+the wall-vs-sign contrast carries the message.
+
 **Drunk intern metaphor.** RETIRED - replaced by the poisoned-water metaphor extension
 at station 9. The intern's useful contribution (least-privilege punchline) survives as a
 standalone one-liner; the full character is dropped to avoid competing with the goldfish

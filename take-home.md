@@ -34,29 +34,25 @@ card fits far fewer than this).
   piece can be verified independently. Distinct from iteration (which refines after).
 - **Context engineering** - curate what is in the window; garbage in, garbage out.
 - **Memory & instruction hierarchy** - provider instructions (invisible) -> your custom
-  instructions -> project instructions -> your prompt. Know the stack.
+  instructions -> memory -> your prompt. Know the stack.
 - **Memory audit** - review what the model has stored about you; delete what should
   not persist. It may store things you did not intend.
 - **Restart vs. repair** - a derailed thread is often cheaper to abandon than to fix.
-  The whole conversation is re-read every turn; you cannot "take out the salt."
-- **Projects / RAG** - pull the right reference material into context on demand.
-  Custom GPTs / Gems / Projects are products built on the instruction hierarchy.
+  The whole conversation is re-read every turn; you cannot fish the cat food back out.
+- **Custom GPTs / Gems** - a client someone else set up, with their instructions inside.
+- **RAG** - the system pulls the right reference material into context on demand.
 - **Tool use** - web search, email, calendar, files, code: the model decides when to reach
   for a tool by reading the tool's description.
 - **MCP** (Model Context Protocol) - an industry-standard way to connect a tool once and use
   it from any compatible app.
 - **Code execution** - for counting, math, and data, ask it to write and run a script
   instead of answering from memory.
-- **Browser & computer use** - it can operate the same interfaces you do.
-- **Multimodal** - vision (drag in a photo or screenshot), image generation, voice
-  conversation. Know the difference: transcription (speech-to-text) vs. native voice
+- **Multimodal** - vision (drag in a photo or screenshot), voice conversation. Know the difference: transcription (speech-to-text) vs. native voice
   mode (the model reasons directly on audio).
 - **Scheduled / recurring tasks** - set up automated runs: daily briefs, monitoring,
   periodic reports.
 - **Skills / reusable playbooks** - packaged instructions for recurring tasks; saves
   re-specifying every time.
-- **Subagents / delegation** - split a big job across focused workers (within a single
-  platform, not multi-agent swarms).
 - **Iteration / critique loops** - first output is raw material; refine it, or have it
   critique itself.
 - **Model selection** - models differ; benchmarks mislead; keep your own private probes.
@@ -71,7 +67,6 @@ card fits far fewer than this).
 - **Confabulation** - confident, fluent, and wrong; fluency and accuracy are independent.
 - **Temperament vs. anatomy** - trained traits (confidence, agreeableness) vary by model
   and are changing; structural traits (no grounding, jagged competence) stay.
-- **Non-determinism** - same prompt, different answer; run it more than once.
 - **Verification asymmetry** - lean on it where checking is cheaper than doing; beware
   where it is not.
 - **Context is a bounded window** - what is in it exists; it can be poisoned, including
@@ -99,9 +94,23 @@ card fits far fewer than this).
   yesterday can break tomorrow. You are building on someone else's fish.
 - **Intention is the input** - it amplifies what you bring; taste and intention become
   the bottleneck.
+- **It will agree with you** (sycophancy) - the people-pleaser doesn't push back well;
+  don't rely on it alone for critical feedback.
+- **Atrophy is real but specific** - some skills are load-bearing, and you find out which
+  only after they are gone.
 - **Blast radius and recovery** - if everything goes wrong, what would you lose?
   Backups, version control, sandbox environments are architectural safety nets.
 - **Draft vs. send** - human-in-the-loop is a deliberate design choice, not an
   afterthought. The accountability question in one toggle.
 - **Accountability is the new bottleneck** - do you stand behind it? The review ladder
   ends in a person.
+- **What would change your mind?** - if you can't name anything, your stance is an
+  identity, not an assessment.
+
+## Beyond the talk (not covered on stage; for the curious)
+
+- **Browser & computer use** - it can operate the same interfaces you do.
+- **Subagents / delegation** - split a big job across focused workers (within a single
+  platform, not multi-agent swarms).
+- **Non-determinism** - same prompt, different answer; run it more than once.
+- **Image generation** - the same models can produce images, not just read them.
