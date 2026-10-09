@@ -12,34 +12,36 @@ failure mode to guard against is facilitator drift into advocacy.
 
 ## Documents in this folder
 
-Docs are separated by how fast their contents change (volatility) so each can stay
-accurate on its own update cadence. Single source of truth: each fact lives in
-exactly one doc; others link to it rather than copy it.
+Each doc owns one level of detail, and each fact lives in exactly one doc (others link
+to it). The test for where a sentence belongs: *if the slide were redesigned, would this
+still be true?* If not, it belongs further downstream. Upstream docs name concepts; the
+deck holds the specifics (examples, wording, slide order, composition).
 
-- `presentation-arc.md` — the scoped presentation flow: the stations of the audience
-  journey across three tracks (cognitive / stance / capability). The backbone.
-  Medium volatility.
-- `arc-table.md` — intermediate per-beat/per-track table bridging the station
-  narratives (`presentation-arc.md`) and the per-slide content (`slides-outline.md`).
-  Medium volatility.
-- `metaphor-imagery.md` — single source of truth for the talk's metaphor artwork:
-  what each image looks like, how it evolves across stations, and what visual properties
-  carry meaning. Medium volatility; the index to artwork that needs to be generated.
-- `slides-outline.md` — per-slide visual and narration content, organized by station;
-  slide numbering is deferred until the deck is assembled. High volatility; drafted
-  through station 13 (some slides still TBD).
-- `open-questions-and-ideas.md` — unresolved design questions, candidate metaphors,
-  and content ideas/stories not yet placed on the arc. High volatility; the working
-  scratchpad. The arc links here for anything still being chosen.
-- `materials.md` — physical and technical materials to bring or provide. Low volatility.
-- `todo.md` — active task list, organized by timeline week (talk: Oct 13). High volatility.
-- `take-home.md` — draft take-home reference: the capability-track and principles lists
-  (memory-jogging phrases) that feed the one-page participant card. Medium volatility.
-- `deck/README.md` — authoring guide for the Reveal.js deck (`deck/slides/`): how to run, add
-  slides/stations, conventions, presenting checklist. Once a station is migrated there, that file
-  owns its on-screen text and speaker notes. Medium volatility.
-- `handoff.md` — optional resume bridge for continuing this project in a fresh chat; read it (and
-  this README) first when picking the work back up, when it exists.
+| Doc | Owns | Changes when... | Leaves out |
+|---|---|---|---|
+| `presentation-arc.md` | Per station: the shift on each track, felt limit -> method -> new limit, the tension handed to the next station, framing guards, methods | a station's purpose changes, or a method moves between stations | examples, imagery, slide order, status |
+| `arc-table.md` | Bird's-eye index: one row per beat, short labels for beat, track shifts, methods, interaction (imagery per station: the index in `metaphor-imagery.md`) | beats are added, removed, reordered, or change track/method | wording longer than a label |
+| `metaphor-imagery.md` | The visual vocabulary: what each metaphor stands for, rules that hold everywhere, which station adds what | a metaphor or one of its rules changes | slide layouts, SVG part ids, encoding values, status |
+| `deck/slides/*.md` | Everything concrete: on-screen text, examples, slide order, visual composition, speaker notes, hidden slides, placeholders for unbuilt visuals | every revision | n/a |
+| `take-home.md` | The participant card: the talk's methods and principles as memory-jogging phrases | a method or principle is added, removed, or renamed in the talk | anything not taught in the talk |
+| `open-questions-and-ideas.md` | Unresolved design questions (stable IDs Q1, Q2, ...), resolved-decision log, candidate metaphors, unplaced stories | constantly | n/a |
+| `todo.md` | Tasks, status, things to verify, by timeline week (talk: Oct 13) | constantly | n/a |
+| `materials.md` | Physical and technical materials to bring or provide | rarely | n/a |
+| `deck/README.md` | Deck authoring: how to run, conventions, artwork parts, presenting checklist | when conventions change | talk content |
+
+**How a change flows.** Make each edit in the lowest doc that owns it, and update an
+upstream doc only if the change alters something at that doc's level:
+
+- New example, wording, or visual detail in a beat -> the deck only.
+- Beat added, cut, reordered, or hidden -> the deck + `arc-table.md` (hiding: deck only; record any keep/cut decision in `todo.md` or open-questions).
+- Method moves between stations, or a station's purpose shifts -> the deck + `arc-table.md` + `presentation-arc.md` (+ `take-home.md` if a method or principle is added, removed, or renamed).
+- New metaphor, or a change to what one means -> `metaphor-imagery.md` + the deck.
+
+`handoff.md`, when it exists, is a temporary resume bridge for continuing in a fresh chat;
+read it (and this README) first.
+
+History ("moved from", "replaces") belongs in git, and status ("hidden", "candidate",
+"verify names") belongs in the deck or `todo.md`, not in the upstream docs.
 
 ## Source material (Google Drive)
 

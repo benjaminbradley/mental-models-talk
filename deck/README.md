@@ -28,12 +28,13 @@ make station NN=02 SLUG=demystify
 ```
 
 This creates `slides/02-demystify.md` from a template and appends it to `manifest.js`
-(the ordered list of files). Number files to match stations in `../slides-outline.md`.
+(the ordered list of files). Number files to match stations in `../presentation-arc.md`.
 
 ## Conventions
 
-- **Source of truth:** once a station lives here, this file owns its on-screen text and
-  speaker notes. `../slides-outline.md` keeps the Visual/intent and points here.
+- **Source of truth:** the station files own everything concrete: on-screen text, examples,
+  slide order, visual composition, speaker notes. Upstream docs stay at concept level (see
+  `../README.md` § Documents).
 - The first heading of each slide is its title (the phone shows the next slide's title).
 - Speaker notes: everything after a line starting `Note:` until the next `---`.
   Narration goes first (key phrases, not a script), then `Tone:` / `Timing:` lines as useful.

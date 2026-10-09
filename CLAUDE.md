@@ -30,13 +30,11 @@ until the slides are complete (removal tracked in `todo.md`).
 
 ## Doc structure (single source of truth)
 
-Each fact lives in exactly one doc; the others link to it. Docs are split by how often they change:
-`presentation-arc.md` (stations across cognitive/stance/capability tracks, the backbone) →
-`arc-table.md` (per-beat bridge) → `slides-outline.md` (per-slide content) → `deck/slides/*.md`.
-Once a station is migrated into `deck/slides/`, that file owns its on-screen text and speaker notes,
-and `slides-outline.md` keeps only the visual intent plus a pointer. Artwork specs live in
-`metaphor-imagery.md`; unresolved decisions in `open-questions-and-ideas.md` (e.g. Q16 = artwork approach).
-Update the owning doc, not a copy.
+`README.md` § Documents is authoritative: what each doc owns and how a change flows. In short:
+make each edit in the lowest doc that owns it (usually `deck/slides/*.md`), and touch upstream
+docs (`arc-table.md`, `presentation-arc.md`, `metaphor-imagery.md`, `take-home.md`) only when the
+change alters something at their level. Don't copy specifics (examples, wording, layout) upward,
+and don't write history or status notes into upstream docs.
 
 ## Deck architecture
 
