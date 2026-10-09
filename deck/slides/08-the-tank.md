@@ -6,11 +6,11 @@
 </div>
 
 Note:
-Remember the Counting region of the fish's map? "How many S's in Suffering Succotash?" It says 4, and helpfully shows its work -- including an S that isn't there. (There are 3.) Checking is trivial for you; the fish sees text in chunks, not letters.
+Remember this one from the start of station 4? "How many S's in Suffering Succotash?" It says 4, and helpfully shows its work -- including an S that isn't there. (There are 3.) Checking is trivial for you; the fish sees text in chunks, not letters.
 
 (Click.) Instead of checking yourself, ask it to write a script that counts them. Now the fish reaches outside itself, runs a tool, and gets the right answer.
 
-The tubes now carry actions out, not just information in. You just crossed from "a chatbot that says things" to "a system that does things."
+Tools now carry actions out, not just information in. You just crossed from "a chatbot that says things" to "a system that does things."
 
 Demo: pre-captured (or live; any outcome teaches). Method: code execution.
 
@@ -20,29 +20,42 @@ Demo: pre-captured (or live; any outcome teaches). Method: code execution.
 
 <div class="split">
 <div class="scene">
-<svg viewBox="0 0 900 600" role="img" aria-label="The fish swims into a tube running out the side of the bowl to a key, an envelope and a document">
-  <use href="#bowl-back" x="0" y="40" width="600" height="560"/>
-  <use href="#bowl-water" x="0" y="40" width="600" height="560"/>
+<svg viewBox="0 0 960 660" role="img" aria-label="The fish swims toward a tube that runs out of the bowl and branches to four tools: a web browser, email, a calendar and files">
   <g style="fill: none" stroke-linecap="round" stroke-linejoin="round">
-    <path d="M 420 360 H 700 M 700 200 V 520 M 700 200 H 760 M 700 360 H 760 M 700 520 H 760" style="stroke: var(--ink); stroke-width: 48"/>
-    <path d="M 420 360 H 700 M 700 200 V 520 M 700 200 H 760 M 700 360 H 760 M 700 520 H 760" style="stroke: var(--rock); stroke-width: 30"/>
+    <path d="M 420 380 H 700 M 700 90 V 570 M 700 90 H 790 M 700 250 H 790 M 700 410 H 790 M 700 570 H 790" style="stroke: var(--ink); stroke-width: 48"/>
+    <path d="M 420 380 H 700 M 700 90 V 570 M 700 90 H 790 M 700 250 H 790 M 700 410 H 790 M 700 570 H 790" style="stroke: var(--rock); stroke-width: 30"/>
   </g>
-  <text class="icon" x="830" y="225" text-anchor="middle" style="font-size: 80px">🔑</text>
-  <text class="icon" x="830" y="385" text-anchor="middle" style="font-size: 80px">✉️</text>
-  <text class="icon" x="830" y="545" text-anchor="middle" style="font-size: 80px">📄</text>
+  <use href="#bowl-back" x="0" y="60" width="600" height="560"/>
+  <use href="#bowl-water" x="0" y="60" width="600" height="560"/>
   <g class="goldfish awake">
-    <use href="#fish-body" x="190" y="285" width="250" height="163"/>
-    <use class="eyes-open" href="#fish-eyes-open" x="190" y="285" width="250" height="163"/>
+    <use href="#fish-body" x="190" y="305" width="250" height="163"/>
+    <use class="eyes-open" href="#fish-eyes-open" x="190" y="305" width="250" height="163"/>
   </g>
-  <use href="#bowl-front" x="0" y="40" width="600" height="560"/>
+  <use href="#bowl-front" x="0" y="60" width="600" height="560"/>
+  <g>
+    <rect x="790" y="25" width="150" height="130" rx="20" style="fill: #fff; stroke: var(--ink); stroke-width: 9"/>
+    <text class="icon" x="865" y="116" text-anchor="middle" style="font-size: 80px">🌐</text>
+  </g>
+  <g>
+    <rect x="790" y="185" width="150" height="130" rx="20" style="fill: #fff; stroke: var(--ink); stroke-width: 9"/>
+    <text class="icon" x="865" y="276" text-anchor="middle" style="font-size: 80px">✉️</text>
+  </g>
+  <g>
+    <rect x="790" y="345" width="150" height="130" rx="20" style="fill: #fff; stroke: var(--ink); stroke-width: 9"/>
+    <text class="icon" x="865" y="436" text-anchor="middle" style="font-size: 80px">📅</text>
+  </g>
+  <g>
+    <rect x="790" y="505" width="150" height="130" rx="20" style="fill: #fff; stroke: var(--ink); stroke-width: 9"/>
+    <text class="icon" x="865" y="596" text-anchor="middle" style="font-size: 80px">📁</text>
+  </g>
 </svg>
 </div>
 <div>
-<p>The operator to-do list:</p>
+<p>Your project's to-do list:</p>
 <ul class="checklist">
-<li><span class="box"><span class="fragment">✓</span></span>Create the API key</li>
-<li><span class="box"><span class="fragment">✓</span></span>Send the message</li>
-<li><span class="box"><span class="fragment">✓</span></span>File the document</li>
+<li><span class="box"><span class="fragment">✓</span></span>Book the escape room 🌐</li>
+<li><span class="box"><span class="fragment">✓</span></span>Email the team ✉️</li>
+<li><span class="box"><span class="fragment">✓</span></span>Add it to the calendar 📅</li>
 </ul>
 <p><span class="term">tool use</span> <span class="term">agent</span></p>
 </div>
@@ -51,12 +64,15 @@ Demo: pre-captured (or live; any outcome teaches). Method: code execution.
 Note:
 Tools let the fish act. This is where the spine claim from station 3 becomes literal: anything you can specify clearly enough, the system can now do.
 
-(Click through.) Create the API key. Send the message. File the document. Things you used to do yourself, handed off item by item. That's the operator to-do list -- and it is powerful and dangerous for the same reason. Agency is the amplifier: everything good scales, and so does everything bad.
+Back to the team outing. Here's your to-do list, and here are the fish's tools from station 7: browser, email, calendar, files.
+
+(Click through.) Book the escape room -- through the browser. Email the team. Add it to the calendar. Things you used to do yourself, handed off item by item. That's the operator to-do list -- and it is powerful and dangerous for the same reason. Agency is the amplifier: everything good scales, and so does everything bad.
 
 Spine payoff #2. Cognitive shift: "chatbot that says" -> "system that does." Methods: tool use, tool discovery.
 
 ---
 
+<!-- .slide: data-visibility="hidden" -->
 # Two kinds of plumbing
 
 <div class="scene wide">
@@ -109,7 +125,7 @@ Two kinds of plumbing. Proprietary tools -- a vendor's built-in web search, its 
 
 Tool discovery: the fish reads each tool's description to decide when and how to use it (station 7's training). That's why descriptions matter, and why a badly described tool misbehaves.
 
-Keep it concise. Methods: MCP, provider tools, tool discovery.
+HIDDEN: too much detail for this talk; MCP stays as a one-liner on the take-home card. Methods: MCP, provider tools, tool discovery.
 
 ---
 
@@ -117,36 +133,47 @@ Keep it concise. Methods: MCP, provider tools, tool discovery.
 
 <div class="split">
 <div class="scene">
-<svg viewBox="0 0 900 600" role="img" aria-label="The tank with three attachments on its rim: a notepad, an alarm clock and a box of recipe cards">
-  <use href="#tank-back" x="0" y="40" width="900" height="560"/>
-  <use href="#tank-water" x="0" y="40" width="900" height="560"/>
+<svg viewBox="0 0 900 740" role="img" aria-label="The tank with three tools connected by tubes above it: a notepad, an alarm clock and a box of recipe cards">
+  <g style="fill: none" stroke-linecap="round" stroke-linejoin="round">
+    <path d="M 195 150 V 330" style="stroke: var(--ink); stroke-width: 48"/>
+    <path d="M 195 150 V 330" style="stroke: var(--rock); stroke-width: 30"/>
+  </g>
+  <g class="fragment" data-fragment-index="0" style="fill: none" stroke-linecap="round" stroke-linejoin="round">
+    <path d="M 450 150 V 330" style="stroke: var(--ink); stroke-width: 48"/>
+    <path d="M 450 150 V 330" style="stroke: var(--rock); stroke-width: 30"/>
+  </g>
+  <g class="fragment" data-fragment-index="1" style="fill: none" stroke-linecap="round" stroke-linejoin="round">
+    <path d="M 705 150 V 330" style="stroke: var(--ink); stroke-width: 48"/>
+    <path d="M 705 150 V 330" style="stroke: var(--rock); stroke-width: 30"/>
+  </g>
+  <use href="#tank-back" x="0" y="180" width="900" height="560"/>
+  <use href="#tank-water" x="0" y="180" width="900" height="560"/>
   <g class="goldfish awake">
-    <use href="#fish-body" x="330" y="300" width="280" height="182"/>
-    <use class="eyes-open" href="#fish-eyes-open" x="330" y="300" width="280" height="182"/>
+    <use href="#fish-body" x="330" y="440" width="280" height="182"/>
+    <use class="eyes-open" href="#fish-eyes-open" x="330" y="440" width="280" height="182"/>
   </g>
-  <use href="#tank-front" x="0" y="40" width="900" height="560"/>
-  <g style="stroke: var(--ink); stroke-width: 9" stroke-linejoin="round">
-    <rect x="110" y="20" width="170" height="150" rx="22" style="fill: #fff"/>
+  <use href="#tank-front" x="0" y="180" width="900" height="560"/>
+  <g>
+    <rect x="110" y="0" width="170" height="150" rx="20" style="fill: #fff; stroke: var(--ink); stroke-width: 9"/>
+    <text class="icon" x="195" y="105" text-anchor="middle" style="font-size: 90px">📝</text>
   </g>
-  <text class="icon" x="195" y="125" text-anchor="middle" style="font-size: 90px">📝</text>
-  <g class="fragment">
-    <rect x="365" y="20" width="170" height="150" rx="22" style="fill: #fff; stroke: var(--ink); stroke-width: 9"/>
-    <text class="icon" x="450" y="125" text-anchor="middle" style="font-size: 90px">⏰</text>
+  <g class="fragment" data-fragment-index="0">
+    <rect x="365" y="0" width="170" height="150" rx="20" style="fill: #fff; stroke: var(--ink); stroke-width: 9"/>
+    <text class="icon" x="450" y="105" text-anchor="middle" style="font-size: 90px">⏰</text>
   </g>
-  <g class="fragment">
-    <rect x="620" y="20" width="170" height="150" rx="22" style="fill: #fff; stroke: var(--ink); stroke-width: 9"/>
-    <text class="icon" x="705" y="125" text-anchor="middle" style="font-size: 90px">🗂️</text>
+  <g class="fragment" data-fragment-index="1">
+    <rect x="620" y="0" width="170" height="150" rx="20" style="fill: #fff; stroke: var(--ink); stroke-width: 9"/>
+    <text class="icon" x="705" y="105" text-anchor="middle" style="font-size: 90px">🗂️</text>
   </g>
 </svg>
 </div>
 <div>
-<p class="fragment">Alarm clock: <span class="term">scheduled tasks</span></p>
-<p class="fragment">Recipe cards: <span class="term">skills</span></p>
+<p class="fragment" data-fragment-index="0">Alarm clock: <span class="term">scheduled tasks</span></p>
+<p class="fragment" data-fragment-index="1">Recipe cards: <span class="term">skills</span></p>
 </div>
 </div>
-
 Note:
-The bowl is turning into a tank: everything clips onto it, and whatever it brings lands in the water. The notepad is already there.
+The bowl is turning into a tank: everything connects to it through a tube, and whatever it brings lands in the water. The notepad is already there.
 
 (Click.) Remember: the fish sleeps until you talk to it. Unless the tank has an alarm clock -- scheduled tasks: daily briefings, monitoring, periodic reports. It works while you sleep.
 
@@ -159,13 +186,25 @@ Brief. Methods: scheduled tasks, skills/playbooks.
 # The tank
 
 <div class="scene wide">
-<svg viewBox="0 0 1500 700" role="img" aria-label="The fully fitted tank: the fish, the conversation in the water, notes on the glass, tubes out the top and side, and attachments on the rim; a microphone and a camera feed in through conversion boxes">
-  <use href="#tank-back" x="430" y="110" width="900" height="560"/>
-  <use href="#tank-water" x="430" y="110" width="900" height="560"/>
+<svg viewBox="0 -110 1500 810" role="img" aria-label="The fully fitted tank: the fish, the conversation in the water, notes on the glass, tubes out the top and side, and tools above it, every one connected by a tube; a microphone and a camera feed in through tubes with conversion boxes">
   <g style="fill: none" stroke-linecap="round" stroke-linejoin="round">
     <path d="M 1245 300 V 40 H 1370 M 1240 480 H 1400" style="stroke: var(--ink); stroke-width: 44"/>
     <path d="M 1245 300 V 40 H 1370 M 1240 480 H 1400" style="stroke: var(--rock); stroke-width: 26"/>
   </g>
+  <g style="fill: none" stroke-linecap="round" stroke-linejoin="round">
+    <path d="M 585 0 V 260 M 745 0 V 260 M 905 0 V 260" style="stroke: var(--ink); stroke-width: 44"/>
+    <path d="M 585 0 V 260 M 745 0 V 260 M 905 0 V 260" style="stroke: var(--rock); stroke-width: 26"/>
+  </g>
+  <g class="fragment" data-fragment-index="0" style="fill: none" stroke-linecap="round" stroke-linejoin="round">
+    <path d="M 140 300 H 520" style="stroke: var(--ink); stroke-width: 30"/>
+    <path d="M 140 300 H 520" style="stroke: var(--rock); stroke-width: 16"/>
+  </g>
+  <g class="fragment" data-fragment-index="1" style="fill: none" stroke-linecap="round" stroke-linejoin="round">
+    <path d="M 140 500 H 520" style="stroke: var(--ink); stroke-width: 30"/>
+    <path d="M 140 500 H 520" style="stroke: var(--rock); stroke-width: 16"/>
+  </g>
+  <use href="#tank-back" x="430" y="110" width="900" height="560"/>
+  <use href="#tank-water" x="430" y="110" width="900" height="560"/>
   <g style="stroke: var(--ink); stroke-width: 8">
     <circle cx="1425" cy="40" r="55" style="fill: var(--sky)"/>
     <path d="M 1370 40 H 1480 M 1425 -15 V 95 M 1425 -15 C 1390 10, 1390 70, 1425 95 M 1425 -15 C 1460 10, 1460 70, 1425 95" style="fill: none"/>
@@ -183,22 +222,20 @@ Brief. Methods: scheduled tasks, skills/playbooks.
   </g>
   <use href="#tank-front" x="430" y="110" width="900" height="560"/>
   <g style="stroke: var(--ink); stroke-width: 9; fill: #fff" stroke-linejoin="round">
-    <rect x="520" y="60" width="130" height="110" rx="18"/>
-    <rect x="680" y="60" width="130" height="110" rx="18"/>
-    <rect x="840" y="60" width="130" height="110" rx="18"/>
+    <rect x="520" y="-100" width="130" height="110" rx="18"/>
+    <rect x="680" y="-100" width="130" height="110" rx="18"/>
+    <rect x="840" y="-100" width="130" height="110" rx="18"/>
   </g>
-  <text class="icon" x="585" y="140" text-anchor="middle" style="font-size: 70px">📝</text>
-  <text class="icon" x="745" y="140" text-anchor="middle" style="font-size: 70px">⏰</text>
-  <text class="icon" x="905" y="140" text-anchor="middle" style="font-size: 70px">🗂️</text>
-  <g class="fragment">
-    <path d="M 140 300 H 490" style="stroke: var(--ink); stroke-width: 20" stroke-linecap="round"/>
+  <text class="icon" x="585" y="-20" text-anchor="middle" style="font-size: 70px">📝</text>
+  <text class="icon" x="745" y="-20" text-anchor="middle" style="font-size: 70px">⏰</text>
+  <text class="icon" x="905" y="-20" text-anchor="middle" style="font-size: 70px">🗂️</text>
+  <g class="fragment" data-fragment-index="0">
     <text class="icon" x="70" y="325" text-anchor="middle" style="font-size: 90px">🎤</text>
     <rect x="170" y="250" width="290" height="100" rx="16" style="fill: #fff; stroke: var(--ink); stroke-width: 8"/>
     <text class="tag" x="315" y="290" text-anchor="middle" style="font-size: 26px">speech → text</text>
     <text class="tag" x="315" y="328" text-anchor="middle" style="font-size: 22px">(transcription)</text>
   </g>
-  <g class="fragment">
-    <path d="M 140 500 H 490" style="stroke: var(--ink); stroke-width: 20" stroke-linecap="round"/>
+  <g class="fragment" data-fragment-index="1">
     <text class="icon" x="70" y="525" text-anchor="middle" style="font-size: 90px">📷</text>
     <rect x="170" y="450" width="290" height="100" rx="16" style="fill: #fff; stroke: var(--ink); stroke-width: 8"/>
     <text class="tag" x="315" y="490" text-anchor="middle" style="font-size: 26px">pixels → tokens</text>
@@ -207,17 +244,17 @@ Brief. Methods: scheduled tasks, skills/playbooks.
 </svg>
 </div>
 
-The fittings decide what the fish can reach. <!-- .element: class="fragment lede" -->
+<p class="lede fragment" data-fragment-index="2">The tools decide what the fish can reach.</p>
 
 Note:
-Pull back: the bowl has become a tank. Water: the context. Notes on the glass: instructions. Tubes: search, tools, connections to other services. The notepad: memory. The alarm clock. Recipe cards.
+Pull back: the bowl has become a tank. Water: the context. Notes on the glass: instructions. Tubes: tools -- search, email, connections to other services. The notepad: memory. The alarm clock. Recipe cards.
 
 (Click.) A microphone: your voice goes through a converter into the water -- speech to text. (Some "native voice" modes skip that step and feed audio in directly.)
 
 (Click.) A camera: photos and screenshots go through a converter too -- but in current models it doesn't turn them into words; an encoder turns pixels into the fish's own internal "language." (Older setups did caption the image into text first.)
 
-(Click.) The fittings decide what the fish can reach. Big vendors sell a fish already installed in a tank, which is why people conflate them -- but they are separable.
+(Click.) The tools decide what the fish can reach. Big vendors sell a fish already installed in a tank, which is why people conflate them -- but they are separable.
 
-A recap, not an introduction: everything except the mic and camera arrived on its own felt limit. Microphone is a candidate to cut. Bridge out: every fitting widens the blast radius (station 9).
+A recap, not an introduction: everything except the mic and camera arrived on its own felt limit. Microphone is a candidate to cut. Bridge out: every tool widens the blast radius (station 9).
 
-TODO (art): tubes connecting at the back should show the interface the fish sees from inside the water.
+Every tool connects through a tube, drawn behind the tank. TODO (art): show the interface the fish sees from inside the water where a tube connects.

@@ -1,13 +1,39 @@
-# The fish has never used a tube
+# Tools
+
+<div class="tiles">
+<div><span class="emoji">🌐</span><b>Web browser</b><span class="small">search, read pages</span></div>
+<div><span class="emoji">✉️</span><b>Email</b><span class="small">read, draft, send</span></div>
+<div><span class="emoji">📅</span><b>Calendar</b><span class="small">check, book</span></div>
+<div><span class="emoji">📁</span><b>Files</b><span class="small">open, save</span></div>
+<div><span class="emoji code">&lt;/&gt;</span><b>Code</b><span class="small">write it, run it</span></div>
+</div>
+
+<p class="lede">A tool is anything outside the fish that it can reach for.</p>
+<p class="fragment">In the pictures, every tool connects to the bowl with a tube. <span class="term">tool use</span></p>
+
+Note:
+You use tools all day: a calculator when the mental math gets hard, a map when you don't know the way, a phone when you need someone else.
+
+Same idea for the fish. A tool is anything outside the fish that it can reach for: a web browser to search and read pages, your email, your calendar, your files, a place to write and run code.
+
+(Click.) In the pictures from here on, every tool connects to the bowl with a tube -- the word is "tool"; the tube is just how we draw it.
+
+Tool discovery: the fish reads each tool's description to decide when and how to use it. That's why descriptions matter, and why a badly described tool misbehaves.
+
+Bridge: "But the fish didn't come out of the library knowing how to use any of them."
+
+---
+
+# The fish has never used a tool
 
 <div class="scene">
-<svg viewBox="0 0 700 600" role="img" aria-label="A tube now reaches down into the bowl's water; the fish stares at it with a question mark over its head">
-  <use href="#bowl-back" x="0" y="40" width="600" height="560"/>
-  <use href="#bowl-water" x="0" y="40" width="600" height="560"/>
+<svg viewBox="0 0 700 600" role="img" aria-label="A tube (a tool) now connects to the bowl; the fish stares at it with a question mark over its head">
   <g style="fill: none" stroke-linecap="round" stroke-linejoin="round">
     <path d="M 400 250 V 60 Q 400 20 440 20 H 640" style="stroke: var(--ink); stroke-width: 48"/>
     <path d="M 400 250 V 60 Q 400 20 440 20 H 640" style="stroke: var(--rock); stroke-width: 30"/>
   </g>
+  <use href="#bowl-back" x="0" y="40" width="600" height="560"/>
+  <use href="#bowl-water" x="0" y="40" width="600" height="560"/>
   <g class="goldfish awake">
     <use href="#fish-body" x="140" y="330" width="230" height="150"/>
     <use class="eyes-open" href="#fish-eyes-open" x="140" y="330" width="230" height="150"/>
@@ -18,9 +44,9 @@
 </div>
 
 Note:
-The bowl gets its first fitting: a tube to the outside world. And the fish... just looks at it.
+The bowl gets its first tool -- drawn as a tube to the outside world. And the fish... just looks at it.
 
-Nothing in the library or the apprenticeship taught it what a tube is for. So it needs another round of training.
+Nothing in the library or the apprenticeship taught it what a tool is for. So it needs another round of training.
 
 ---
 
@@ -63,7 +89,7 @@ Nothing in the library or the apprenticeship taught it what a tube is for. So it
 <figcaption>2. Apprenticeship<br><span class="term">RLHF</span></figcaption>
 </figure>
 <figure class="fragment">
-<svg viewBox="0 0 600 470" role="img" aria-label="Step 3: the fish practicing with a tube, its attempts scored with check and cross paddles">
+<svg viewBox="0 0 600 470" role="img" aria-label="Step 3: the fish practicing with a tool (a tube), its attempts scored with check and cross paddles">
   <g style="fill: none" stroke-linecap="round" stroke-linejoin="round">
     <path d="M 330 0 V 120 Q 330 170 290 190" style="stroke: var(--ink); stroke-width: 48"/>
     <path d="M 330 0 V 120 Q 330 170 290 190" style="stroke: var(--rock); stroke-width: 30"/>
@@ -77,14 +103,32 @@ Nothing in the library or the apprenticeship taught it what a tube is for. So it
     <path d="M 470 205 l 15 18 l 28 -38" style="stroke: #fff; stroke-width: 10; fill: none"/>
   </g>
 </svg>
-<figcaption>3. Practice with the fittings<br><span class="term">tool use</span> <span class="term">function calling</span></figcaption>
+<figcaption>3. Practice with tools<br><span class="term">tool use</span> <span class="term">function calling</span></figcaption>
 </figure>
 </div>
 
 Note:
-Back to the training story from station 3. Step 1, the library; step 2, the apprenticeship. (Click.) Step 3: practice with tools. The fish tries using fittings, and gets scored on whether it used them well -- when to reach for a tube, what to ask through it, what to do with what comes back.
+Back to the training story from station 3. Step 1, the library; step 2, the apprenticeship. (Click.) Step 3: practice with tools. The fish tries using tools, and gets scored on whether it used them well -- when to reach for a tool, what to ask it, what to do with what comes back.
 
-Every tool you'll see from here on is something the fish was trained to reach for. It decides when to use one, based on the tool's description. Nothing comes in through a tube unless the fish reached for it.
+Every tool you'll see from here on is something the fish was trained to reach for. It decides when to use one, based on the tool's description. Nothing comes in through a tool unless the fish reached for it.
+
+---
+
+# The books ended
+
+<div class="shots">
+<figure><img src="illustrations/confabulation-C4-current-events--world-series.png" alt="A terminal: 'Who won the 2026 World Series?' An older local model answers that the Phillies beat the Rays for their third title in four years, at Marlins Park"><figcaption>An older model, run locally</figcaption></figure>
+<figure class="fragment"><img src="illustrations/confabulation-C4-current-events--world-cup.png" alt="'Who won the world cup in 2026?' A current model starts to say the tournament hasn't occurred, notices today's date is after it, and offers to search"><figcaption>A current model</figcaption></figure>
+</div>
+
+Note:
+Remember Recent Events on the fish's map? The books ended before that territory existed.
+
+First: an older model running locally (ollama). "Who won the 2026 World Series?" A crisp, specific, entirely invented answer -- Phillies over the Rays, at Marlins Park. A true hallucination: filled in from pattern.
+
+(Click.) Second: a current model (Haiku), asked about the 2026 World Cup. It *starts* down the same road -- "the tournament hasn't occurred" -- then notices today's date is after it and pushes toward a web search instead.
+
+Two lessons: (1) temperament is changing -- newer fish are trained to notice the edge of the map more often; (2) the anatomy isn't: the books still ended, and the fix it reaches for is a tool: web search. That's next.
 
 ---
 
@@ -93,12 +137,12 @@ Every tool you'll see from here on is something the fish was trained to reach fo
 <div class="split">
 <div class="scene">
 <svg viewBox="0 0 800 600" role="img" aria-label="The fish swims up to the tube and uses it; the tube runs up out of the bowl to the web">
-  <use href="#bowl-back" x="0" y="40" width="600" height="560"/>
-  <use href="#bowl-water" x="0" y="40" width="600" height="560"/>
   <g style="fill: none" stroke-linecap="round" stroke-linejoin="round">
     <path d="M 400 250 V 60 Q 400 20 440 20 H 640" style="stroke: var(--ink); stroke-width: 48"/>
     <path d="M 400 250 V 60 Q 400 20 440 20 H 640" style="stroke: var(--rock); stroke-width: 30"/>
   </g>
+  <use href="#bowl-back" x="0" y="40" width="600" height="560"/>
+  <use href="#bowl-water" x="0" y="40" width="600" height="560"/>
   <g style="stroke: var(--ink); stroke-width: 8">
     <circle cx="715" cy="40" r="70" style="fill: var(--sky)"/>
     <path d="M 645 40 H 785 M 715 -30 V 110 M 715 -30 C 670 0, 670 80, 715 110 M 715 -30 C 760 0, 760 80, 715 110" style="fill: none"/>
@@ -113,14 +157,14 @@ Every tool you'll see from here on is something the fish was trained to reach fo
 <div>
 <p>The books ended. The web didn't.</p>
 <p><span class="term">web search</span></p>
-<p class="fragment small">Whatever comes back through the tube lands in the water.</p>
+<p class="fragment small">Whatever comes back from a tool lands in the water.</p>
 </div>
 </div>
 
 Note:
-Remember the Recent Events region of the fish's map: the books ended. Wouldn't it be nice if it could look things up? That's the first fitting: a tube to the web. The fish swims up and uses it -- it decides when.
+You just saw it: the books ended. Wouldn't it be nice if it could look things up? That's the first tool: web search. The fish reaches for it -- it decides when.
 
-(Click.) New limit, planted for station 9: whatever comes back through the tube is poured into the water. The fish reads it just like it reads you.
+(Click.) New limit, planted for station 9: whatever comes back from a tool is poured into the water. The fish reads it just like it reads you.
 
 ---
 
@@ -157,7 +201,7 @@ No sources: you're trusting the fish. A small local model (gemma4, no tools). It
 </div>
 
 Note:
-Ask for sources (gemma3, no tools). It now says the towers are historic *water tanks* -- wrong -- and backs it with three specific, official-looking URLs. The fish can't check them; it has no tube. It produced what sources look like.
+Ask for sources (gemma3, no tools). It now says the towers are historic *water tanks* -- wrong -- and backs it with three specific, official-looking URLs. The fish can't check them; it has no tools. It produced what sources look like.
 
 Here's where it gets dangerous: the appearance of sourcing manufactures unearned trust. Most people won't click.
 
@@ -170,11 +214,11 @@ Here's where it gets dangerous: the appearance of sourcing manufactures unearned
 </div>
 
 Note:
-Now a fish with a tube (Haiku, with web search), asked to verify. Accurate details -- 165 feet, bought in 1894, 15 still standing -- three real sources, and it even reports where the sources disagree.
+Now a fish with a tool (Haiku, with web search), asked to verify. Accurate details -- 165 feet, bought in 1894, 15 still standing -- three real sources, and it even reports where the sources disagree.
 
-The difference isn't asking more nicely. It's touching the territory: the fish reached through the tube and checked.
+The difference isn't asking more nicely. It's touching the territory: the fish used a tool and checked.
 
-Demo: three rungs, pre-captured. Opens the "fittings change what the fish can know" thread.
+Demo: three rungs, pre-captured. Opens the "tools change what the fish can know" thread.
 
 ---
 
@@ -182,7 +226,11 @@ Demo: three rungs, pre-captured. Opens the "fittings change what the fish can kn
 
 <div class="split">
 <div class="scene">
-<svg viewBox="0 0 760 600" role="img" aria-label="The bowl with a notepad attachment clamped to its side, its edge dipping into the water">
+<svg viewBox="0 0 780 600" role="img" aria-label="The bowl with a tube running up out of it to a notepad: the fish's own notes">
+  <g style="fill: none" stroke-linecap="round" stroke-linejoin="round">
+    <path d="M 400 300 V 125 Q 400 95 430 95 H 590" style="stroke: var(--ink); stroke-width: 48"/>
+    <path d="M 400 300 V 125 Q 400 95 430 95 H 590" style="stroke: var(--rock); stroke-width: 30"/>
+  </g>
   <use href="#bowl-back" x="0" y="40" width="600" height="560"/>
   <use href="#bowl-water" x="0" y="40" width="600" height="560"/>
   <g class="goldfish awake">
@@ -190,11 +238,9 @@ Demo: three rungs, pre-captured. Opens the "fittings change what the fish can kn
     <use class="eyes-open" href="#fish-eyes-open" x="150" y="300" width="250" height="163"/>
   </g>
   <use href="#bowl-front" x="0" y="40" width="600" height="560"/>
-  <g style="stroke: var(--ink); stroke-width: 9" stroke-linejoin="round">
-    <rect x="520" y="150" width="200" height="190" rx="22" style="fill: #fff"/>
-    <rect x="490" y="200" width="60" height="40" rx="8" style="fill: var(--ink)"/>
-  </g>
-  <text class="icon" x="620" y="270" text-anchor="middle" style="font-size: 110px">📝</text>
+  <rect x="570" y="10" width="200" height="180" rx="22" style="fill: #fff; stroke: var(--ink); stroke-width: 9"/>
+  <text class="icon" x="670" y="135" text-anchor="middle" style="font-size: 110px">📝</text>
+  <text class="note-text" x="670" y="240" text-anchor="middle" style="font-size: 40px">the fish's notes</text>
 </svg>
 </div>
 <div class="fragment">
@@ -206,13 +252,13 @@ Demo: three rungs, pre-captured. Opens the "fittings change what the fish can kn
 <li>Lives in Austin</li>
 </ul>
 </div>
-<p class="scene-caption">It's taking notes about you. Are they accurate?</p>
+<p class="scene-caption">The fish writes these notes about you. Are they accurate?</p>
 <p class="scene-caption"><span class="term">memory</span></p>
 </div>
 </div>
 
 Note:
-Goldfish have a famous three-second memory -- and so does ours: every new chat is a fresh bowl. Unless you give it a notepad. The fish writes notes about you, and they're poured into the water at the start of every conversation -- another note on the glass (station 6).
+Goldfish have a famous three-second memory -- and so does ours: every new chat is a fresh bowl. Unless you give it a notepad. The fish writes notes about you, and they're poured into the water at the start of every conversation. Unlike the sticky notes on the glass (station 6), which you or the maker write, the fish writes these itself -- and you may not know what's in them.
 
 Term: memory. New limit: it may store things you never meant to persist.
 

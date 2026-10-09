@@ -49,7 +49,7 @@ Poll: stance movement + model accuracy. Compare entry vs. exit. Don't frame it a
 <span class="term" style="left: 20%; top: 14%">custom instructions</span>
 <span class="term" style="left: 27%; top: 50%">RAG</span>
 <span class="term" style="left: 40%; top: 40%">tool use</span>
-<span class="term" style="left: 47%; top: 62%">MCP</span>
+<span class="term" style="left: 47%; top: 62%">meta-prompting</span>
 <span class="term" style="left: 55%; top: 14%">skills</span>
 <span class="term" style="left: 62%; top: 52%">prompt injection</span>
 <span class="term" style="left: 76%; top: 40%">least privilege</span>

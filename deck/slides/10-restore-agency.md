@@ -8,16 +8,21 @@
 <div class="dial"><span>Politics</span><span class="track"><span class="knob" style="left: 30%"></span></span></div>
 <div class="dial"><span>Medical advice</span><span class="track"><span class="knob" style="left: 60%"></span></span></div>
 <div class="dial"><span>Agreeing with you</span><span class="track"><span class="knob" style="left: 85%"></span></span></div>
+<div class="curtains"><span class="curtain l"></span><span class="curtain r"></span></div>
+<span class="fragment curtain-cue" data-fragment-index="1"></span>
 </div>
 
-Every dial was set by someone. <!-- .element: class="fragment lede" -->
+<p class="lede fragment" data-fragment-index="0">Every dial was set by someone.</p>
+<p class="lede fragment" data-fragment-index="1">...and the dials are not public.</p>
 
 Note:
 Socratic first: "Who decided it should refuse that?" Let it hang.
 
 There's no literal panel like this (it's a mockup), but there might as well be. Every refusal, every tone choice, every time it's too agreeable or too cautious -- those are product decisions, made by people, at a company, with commercial interests. Remember the maker's note on the glass (station 6).
 
-(Click.) This is not a neutral oracle. It's a designed commercial artifact.
+(Click.) Every dial was set by someone. This is not a neutral oracle. It's a designed commercial artifact.
+
+(Click.) And the dials are not public. (The curtains close.) You don't get to see where they're set; you find out by bumping into them.
 
 Cognitive shift: "neutral oracle" -> "someone's product." Stance: critical agency. This matters most for skeptics: it hands them a sharper knife -- their suspicion has a legitimate object. Don't argue where any dial *should* be.
 
@@ -101,6 +106,27 @@ The guardrail probe. Ask a differently-trained model about something it won't to
 
 Framing guard: the point is symmetry, not "their model is biased, ours isn't." Methods: model selection, private probes.
 
+Bridge: "We spotted that one because we know the history. What about the gaps we can't spot?"
+
+---
+
+# What else is missing?
+
+<div class="maps">
+<figure class="map" style="width: 1500px"><div data-svg="art/maps/fish-cut.svg" data-zoom="poetry,law" data-label="The fish's map with a patch of History cut out: a dotted cut line, half cut, with scissors partway around, and nothing left inside"></div></figure>
+</div>
+
+<p class="lede fragment">You can't ask about what you don't know is missing.</p>
+
+Note:
+Tiananmen was easy to spot -- for us. We know that history, so the gap jumps out. That's a known unknown.
+
+Back to the fish's map. Someone has cut a piece out. On the real map there's no dotted line and no scissors: the region just has less in it, or the fish steers around it, in the same confident ink as everything else. For a topic you already know, you might notice. For a topic you don't, you never will.
+
+(Click.) That's the unknown unknown. You can't ask about what you don't know is missing.
+
+The cure is the same as the probe: more than one fish, a few private test prompts, and your own walks through the territory. Framing guard: this applies to every vendor's fish, including the one you like.
+
 ---
 
 # The fish changes without notice
@@ -120,7 +146,7 @@ Framing guard: the point is symmetry, not "their model is biased, ours isn't." M
     <text class="tag" x="555" y="285" text-anchor="middle">v2</text>
   </g>
   <g class="fragment">
-    <g class="goldfish awake" style="--fish: #f47a1f; --fish-deep: #d1520f" transform="rotate(-12 900 125)">
+    <g class="goldfish awake" style="--fish: #f47a1f; --fish-deep: #d1520f" transform="rotate(-22 900 125)">
       <use href="#fish-body" x="740" y="20" width="320" height="208"/>
       <use href="#fish-face-goofy" x="740" y="20" width="320" height="208"/>
     </g>

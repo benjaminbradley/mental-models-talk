@@ -10,10 +10,12 @@ draw, how it differs layer to layer, what visual properties carry meaning. It do
 describe narration or slide layout (those live in `slides-outline.md`).
 
 **Imagery status:** first pass built for stations 1-8: the goldfish and training story
-(station 3), the three maps + per-case zooms (station 4), the bowl/tank progression with notes,
-cat food, tubes, attachments and the MCP fittings (stations 6-8), the four-step hosting scene
+(station 3), the lazy genie, the brain, the three maps + per-case zooms (station 4), the bowl/tank
+progression with notes, cat food, tools-as-tubes, attachments and the (hidden) MCP fittings
+(stations 6-8), the four-step hosting scene
 (fish in a company cap and badge: part `fish-uniform`), murky water, the effect icons, wall vs.
-sign (station 9), the versioned fish with a nerfed one (part `fish-face-goofy`, station 10), and
+sign, the profile page that goes down the tube (station 9), the curtained dials, the cut-out map
+and the versioned fish with a nerfed one (part `fish-face-goofy`, station 10), and
 the full-treatment gradient (station 13, flagged for review); stations 1-2 use emoji/CSS.
 Still to design: the citations visual (7), the review-ladder visual (12), the back-connection
 interface (8). Missing items are placeholders in the deck. The `illustrations/` directory
@@ -75,24 +77,26 @@ audience the word to look up.
   (pretraining; the books = training data); (2) the fish in practice conversations, each
   reply scored by a green ✓ or red ✗ paddle (RLHF). Then the **sleeping** beat (asleep →
   wakes when addressed): it does nothing when you are not talking to it.
-- Station 4: still the bare fish (no bowl): talking to it directly, it does not remember
-  your name. Remembering the conversation is the bowl's job (station 6).
+- Station 6 opens with the bare fish (no bowl): messages arrive, it answers, and each
+  exchange falls away -- it does not remember your name. Then the bowl appears around it:
+  remembering the conversation is the bowl's job.
 - Station 6: Fish by itself → fish in water in a basic glass bowl. Bowl = client; water =
   context; water level visible (context window). The conversation so far floats in the
   water as words/phrases, in order (each turn is added; the whole history is what the fish
   sees). No fittings yet. Instructions arrive as sticky notes on the inside of the glass
   (see "The bowl and the fish" below).
-- Station 7: The first tube attaches and the fish just looks at it quizzically: it was never
-  taught to use one. A third training step joins the station 3 training story (library ->
-  apprenticeship -> **tool-use training**: practicing with fittings and getting feedback),
-  then the fish goes back into the tank and uses the tube. Then: tubes (web search),
-  notepad (memory).
+- Station 7: Opens with the tools themselves (browser, email, calendar, files, code). The
+  first tool attaches -- drawn as a tube; the word on screen is always "tool" -- and the fish
+  just looks at it quizzically: it was never taught to use one. A third training step joins
+  the station 3 training story (library -> apprenticeship -> **tool-use training**: practicing
+  with tools and getting feedback), then the fish uses it. Then: web search, notepad (memory).
 - Station 8: Fish reaching through tubes (tools/agency); alarm clock and recipe cards
   attach; pull back to reveal the full tank.
 - Station 9: Water turns murky/poisoned (injection). Three effect icons overlay.
 - Station 10: Frontier instability: a row of fish with slight variations (fin shape, color,
-  spots), each labeled with a version number; one in the middle has goofy eyes (a nerf: a
-  later version that got worse at something).
+  spots), each labeled with a version number; one in the middle is a derpy nerf (a later
+  version that got worse at something): mismatched googly eyes looking different ways, a big
+  tongue out, a pectoral fin on backwards, tilted.
 
 ---
 
@@ -121,7 +125,7 @@ real thing, not a representation. Think illustrated aerial/topographic view.
 - Spatial Reasoning
 - Counting & Tracking
 - Recent Events
-- Everyday Cooking / Regional Cooking (split region — well-documented vs. oral tradition)
+- Everyday Cooking / Family Recipes (split region — well-documented vs. oral tradition)
 - Background regions (not demoed, fill out the landscape): History, Law, Medicine
 
 **Labeling:** Domain names only. No mechanism terms (no "jaggedness," no
@@ -180,7 +184,7 @@ properties.
   to the territory: Poetry & Verse is remarkably accurate (dense, high-quality
   sources). Spatial Reasoning is confident but wrong (poorly represented in text).
   Recent Events is filled in from pattern, not knowledge (post-dates the books).
-  Regional Cooking drifts toward mainstream (thin oral-tradition coverage).
+  Family Recipes drift toward the mainstream (thin oral-tradition coverage).
   Everyday Cooking is solid (well-documented). Counting & Tracking has errors in
   areas that seem trivially easy to humans.
 
@@ -194,7 +198,9 @@ How the properties above are drawn in the prototype (open to change):
 - **Not an island:** the named regions are a highlighted patch inside a landscape that runs
   off every edge (faint region borders and out-of-focus landmarks continue outward). Water
   is local: a stretch of coast in one corner and a lake, never a surrounding sea.
-- **Territory:** colored regions with hatched texture, full-color landmarks everywhere.
+- **Territory:** colored regions with hatched texture, full-color landmarks everywhere. Every
+  focus region has the same number of landmarks (six), so coverage on the other maps reads at a
+  glance as "6 of 6" vs. "2 of 6".
 - **Human map:** a network of paths grown outward from home (a house in Everyday Cooking).
   Each segment is drawn once per trip that passes through it, so routes near home braid into
   well-worn trails; single strands lead out to lone landmarks (one each in Poetry, History,
@@ -203,71 +209,57 @@ How the properties above are drawn in the prototype (open to change):
   much is walked, sketchy ink + "?" where one strand reaches, and an honest cross-hatched blank
   with "here be dragons" where none does (Law).
 - **Fish map:** uniform bold ink, and a *subset* of the real landmarks at their real
-  positions (missing ones = thin training data): most kept in Poetry, History, Law, Medicine,
-  Everyday Cooking; few in Spatial, Counting (3 of 5 lakes), Regional Cooking, Recent Events.
+  positions (missing ones = thin training data), aligned with the examples: all 6 in Poetry and
+  Everyday Cooking (the easy cases); 5 of 6 in History, Law, Medicine; few in Spatial (2 of 6),
+  Counting (3 of 6 lakes), Family Recipes (1 of 6), Recent Events (2 of 6).
   The only non-matching marks: Spatial's river on the wrong course, one mainstream house in
-  Regional Cooking (drift), and two invented landmarks in Recent Events (filled from pattern).
+  Family Recipes (drift), and two invented landmarks in Recent Events (filled from pattern).
+- **Fish map, cut (station 10, `fish-cut.svg`):** the fish map with a patch of History blanked
+  out, outlined by a dotted cut line with scissors partway round (the stretch behind them solid:
+  already cut). Removed data; shown cropped to the top row.
 - **Per-case images:** the same map files cropped to one region (`data-zoom`).
 
-### Slide layout — three-beat reveal + per-case walkthrough
+### Slide layout — intro, brain, map reveal, per-case walkthrough
 
-**Slide 1 (territory):** Territory centered. Establishes the referent.
+**Intro (the felt puzzle):** two outputs only, cropped from the captures: the Shakespearean
+verse (brilliant) and the letter count of "Suffering Succotash" (wrong). "Why is it so good at
+some things and so bad at others?"
 
-**Slide 2 (human map):** Territory slides right; human map appears left.
-Side-by-side comparison. The audience sees how a human's map simplifies and
-gaps the territory, but honestly.
+**The brain:** a simplified side view of a human brain with rough specialist hubs labeled:
+language (speaking, Broca's area; understanding, Wernicke's area; a pathway between them),
+movement, numbers & counting, space & navigation (plus the hippocampus, deep inside), seeing.
+Hub colors match the map regions (pink = language / Poetry, purple = Counting, green =
+Spatial). On the cue everything except language fades: the fish learned only from language.
+A simplification, said so in the notes.
 
-**Slide 3 (fish map):** Human map slides right; fish map appears left. All three
-visible: fish map | human map | territory. The audience compares all three —
-the fish map's confident-everywhere ink vs. the human map's honest gaps vs. the
-actual territory.
+**Map reveal -- never more than two maps on screen** (three at once is too small to read):
+1. Territory alone, captioned "The territory = real knowledge, as a landscape".
+2. Territory | your map (the new map appears on the right).
+3. Territory | the fish's map.
+4. Your map | the fish's map.
+Consecutive slides auto-animate (matching `data-id`s).
 
-**Slides 4+ (per-case walkthrough):** After the three-map reveal, walk through
-individual regions. For each case, two beats:
-- **Map comparison:** Zoomed/highlighted view of the region on both maps —
-  how do the human and fish maps differ here?
-- **Example screencap:** Pre-captured screenshot demonstrating the case.
+**Per-case walkthrough:** the fish first (react), then the map explains it:
+Poetry (fish, map) -> Counting & Tracking (fish, map) -> Spatial (fish only; the room can
+predict the map) -> Everyday Cooking vs. Family Recipes (fish, map).
 
-Open question: whether to show the map comparison first (predict) or the example
-first (surprise), then the map (explain). Both orderings teach; the choice
-depends on the energy of the room and whether we want the audience predicting
-or reacting.
+### Per-case walkthrough
 
-### Per-case walkthrough (after the three-map reveal)
+Each case: a captured example (screencap with generation context, in `illustrations/`), then a
+zoomed view of the region on your map vs. the fish's map (`data-zoom`).
 
-After the audience has seen all three layers, walk through individual regions
-one at a time. For each case: show the region's "path" on both maps (how the
-human and fish maps differ in that area), then show a captured example
-(screencap with generation context).
-
-Each case needs two image assets:
-1. **Map comparison:** A zoomed/highlighted view of the region on the human map
-   vs. the fish map — showing how detail, confidence, and paths differ there.
-2. **Example screencap:** Pre-captured screenshot demonstrating the case.
-   (Screencaps are stored in `illustrations/`.)
-
-**Cases and their map treatments:**
-
-- **Poetry & Verse (A3):** Fish map is *more* densely populated than the human map
-  in this region. The fish drew rich, detailed terrain here — and it's accurate.
-  Human map may be sparser (most people don't write poetry daily). Example shows
-  generation quality + speed contrast (~5 sec for fish vs. ~2 hours for a human).
-- **Spatial Reasoning (B2):** Human map has a well-worn path through this region
-  (people navigate space constantly). Fish map has sparse, confident-but-wrong
-  features. Screencap captured.
-- **Counting & Tracking (B4):** Human map: trivially familiar territory (everyone
-  counts). Fish map: confident features that don't match the territory. Screencap
-  captured.
-- **Letter Counting (B1):** Moved out of the walkthrough; the screencap is reused by
-  the Station 8 strawberry demo, which resolves the Counting region with code
-  execution.
-- **Recent Events (C4):** Human map: recently walked territory (current awareness).
-  Fish map: the region is filled in from pattern — the books ended before this
-  territory existed. Screencap captured.
-- **Everyday vs. Regional Cooking (D1):** Split region. Everyday side: both maps
-  are well-populated. Regional side: human map has a path (if you grew up with
-  it); fish map has sparse features drifting toward the mainstream. Screencap
-  captured.
+- **Poetry & Verse (A3):** Fish map has every landmark, *more* than the human map (most people
+  don't write poetry daily). Example: generation quality + speed (seconds vs. hours).
+- **Counting & Tracking (B4):** Human map: trivially familiar. Fish map: 3 of 6 lakes. The
+  example is quantity tracking (the margarita); the letter count (B1) is in the intro and
+  returns at station 8, resolved with code execution.
+- **Spatial Reasoning (B2):** Example only. Human map: well-worn paths; fish map: 2 of 6
+  mountains and a river on the wrong course.
+- **Everyday Cooking vs. Family Recipes (D1):** Everyday: both maps complete. Family Recipes:
+  human map has a path (if you grew up with them); fish map has one real landmark and a
+  mainstream house drifted in (the smoker brand).
+- **Recent Events (C4):** moved to station 7 as the felt limit that opens web search ("The
+  books ended").
 
 ---
 
@@ -275,7 +267,7 @@ Each case needs two image assets:
 
 **Introduced:** Station 6 — client vs. model architecture; a bare bowl holding only
 water (context).
-**Extended:** Station 7 (tubes, notepad), Station 8 (tubes carrying actions out;
+**Extended:** Station 7 (tools, notepad), Station 8 (tools carrying actions out;
 alarm clock, recipe cards; full-tank reveal), Station 9 (poisoned water, hosting tiers).
 
 **Growth principle:** the image grows piece by piece: fish → fish + bowl (water only)
@@ -289,20 +281,25 @@ client (simple/fancy/mobile); the water = the context.
 **Visual properties:**
 - Bowl types: simple round bowl, fancy aquarium with features, mobile/portable tank.
   Represent different clients (basic chat, full IDE, mobile app).
-- **Every fitting is a tool the fish initiates.** No arrows pointing in: the fish reaches
-  out through a tube and pulls the result back itself. Tubes connect at the top, sides, or
-  back of the bowl/tank; for back connections, show the interface the fish sees (what the
-  tool looks like from inside the water).
+- **Every fitting is a tool the fish initiates; the word is "tool", the drawing is a tube.**
+  No arrows pointing in: the fish reaches out through a tube and pulls the result back itself.
+- **Every attachment connects through the same tube visual** (thick ink stroke with a
+  `--rock` core), drawn *behind* the bowl/tank and behind the attachment, so the tube's ends
+  are hidden: notepad, alarm clock, recipe cards, microphone, camera, web, email, files, the
+  injected web page. For back connections, a later pass shows the interface the fish sees.
 - **Everything attaches to the bowl/tank**, so the water = context metaphor holds (whatever
-  a fitting returns lands in the water). Fittings are tank attachments marked with an icon:
-  e.g. an attachment with a notepad icon = memory (the fish's journal).
+  a tool returns lands in the water). Attachments are white boxes marked with an icon:
+  e.g. the notepad = memory, which the fish writes itself (unlike the sticky notes, which you
+  or the maker write and the fish only reads).
 - **Instructions = sticky notes inside the glass** (station 6), introduced by a need: a
   behavior you want guided (e.g. you keep having to say the same thing). Your note on the
-  inside of the tank = your custom instructions. A second note from the tank's maker = the
+  inside of the tank = your custom instructions (a real one of Benji's: "Separate documents
+  by how fast their contents change, not just by topic."). A second note from the tank's maker = the
   provider's system instructions (you can't take it down; often you can't read it). Project
   instructions are left out as too detailed. A follow-up slide shows a Custom GPT / Gem in this
   metaphor: a tank someone else has already set up, with their notes (and documents) inside.
-- **Connectors (station 8):** proprietary tools = tubes ending in custom-shaped fittings, each
+- **Connectors (station 8; slide HIDDEN -- too much detail; MCP is a one-liner on the
+  take-home):** proprietary tools = tubes ending in custom-shaped fittings, each
   made for its own vendor's tank. MCP = one standard fitting everyone recognizes that fits any
   compatible tank. Plan: a standard threaded garden-hose coupling (familiar, and it stays in
   the water/plumbing world; an electrical plug clashes with water). The usual tagline for MCP,
@@ -328,11 +325,18 @@ client (simple/fancy/mobile); the water = the context.
 - Station 7: Tubes attach (web search; citations ladder), then the notepad (memory).
 - Station 8: Fish reaching through tubes = agency; the tubes let it act, not just say.
   Alarm clock and recipe cards attach. Pull back: the bowl is now a tank.
+- Station 6 also gets the elicitation and show-its-work slides drawn in the bowl: the prompt
+  in the water, then what each technique adds (a role prompt = one line; a knowledge-domain
+  prompt = the fish fills the water with eight domains; show-its-work = steps, criteria and
+  doubts written into the water before the answer).
 - Station 9: Water turns poisoned (injection/prompt injection): murky color plus a light
-  cross-hatch (part `tank-murk`) so it doesn't rely on color alone; the page coming in through
-  the tube carries a ☠️. Three overlay effects:
+  cross-hatch (part `tank-murk`) so it doesn't rely on color alone. The source is a mocked
+  professional-network profile at the top right (made-up name, stand-in logo) whose bio holds
+  the flan instruction (the real LinkedIn incident); on the cue it shrinks and goes down the
+  tube. Three overlay effects:
   destruction = ☢️ (nuke); exfiltration = ✉️ (envelope leaving through a tube); sleeper /
-  incubation = 💣 (a bomb tucked into the notepad, i.e. memory).
+  incubation = 💣 (a bomb tucked into the notepad, i.e. memory), with the source shown as an
+  ordinary invoice email whose P.S. below the signature addresses the assistant.
 
 **Detail spec:** See `slides-outline.md` for per-slide content at each station.
 
@@ -343,8 +347,11 @@ client (simple/fancy/mobile); the water = the context.
 **Introduced:** Station 6 — restart vs. repair. Kept inside the fishbowl metaphor (Benji,
 Oct 1; replaces the salt-in-the-pot cooking image, to be confirmed once prototyped).
 
-**Description:** Something that does not belong gets into the water: cat food. Now every
-answer the fish gives has "meow" sprinkled through it. You cannot fish the cat food back out;
+**Description:** Something that does not belong gets into the water: cat food. The real-chat
+version: the team outing from station 4. Escape rooms and mini golf both went into the water
+as two kinds of flakes, color-coded and shaped differently (purple squares = escape rooms,
+green circles = mini golf; the words are colored to match). You chose escape rooms, but the
+next answer mixes both: "an escape room, then go-karts!" Labeled `context management`. You cannot fish the cat food back out;
 "please ignore the cat food" just adds more words to the water. Moving the fish to a fresh
 bowl of clean water (a new chat) is easier than cleaning the old one.
 
@@ -397,7 +404,10 @@ in front) and a name badge on its chest, below the gill (part `fish-uniform`). S
    say to the fish travels up to their servers, and the cord can't be cut.
 2. **Your tank + their fish:** your own client (on your computer) talking to a frontier
    model; the fish (in its company uniform) is still in the corporate cloud, cord still attached.
-3. **Your tank + your fish in a private cloud:** the fish in a cloud with a padlock above it.
+3. **Your tank + your fish in a private cloud:** the fish in a cloud with a padlock above it;
+   then the tank moves up into the private cloud too (the desk tank fades and the cord runs from
+   you). The data-training slide sits between steps 2 and 3, so the scene is split across two
+   slides: steps 1-2, then (after the training slide) steps 3-4.
 4. **Everything local:** tank and fish on a beefy-looking PC, drawn *below* the clouds, because
    the data doesn't travel as far.
 
@@ -414,6 +424,28 @@ in front) and a name badge on its chest, below the gill (part `fish-uniform`). S
 
 ---
 
+## The lazy genie (Station 4)
+
+**Introduced:** Station 4, right after "say what you want & how you want it". A cousin of the
+fish who grants wishes to the letter with the least effort. An original design: a blue genie
+rising from a gold lamp's smoke, purple turban with a red gem, arms folded, half-lidded eyes
+(no ponytail, goatee, cuffs or sash -- nothing borrowed from a famous film genie).
+Wish: "I want to be rich for the rest of my life." Click: a sack of gold. Click: a lit time
+bomb with a 00:59 readout. "It granted exactly what you said."
+
+## The autocomplete analogy (Station 9)
+
+A generic search box (no brand): "who called me from" typed in bold, suggestions completing
+it with fictional 555 phone numbers -- what people type comes back to everyone. Beside it, the
+data-controls toggle ("a promise, not a wall").
+
+## The curtained dials (Station 10)
+
+The refusal-dials settings mockup; on "...and the dials are not public" red curtains close over
+the dial controls (the labels stay visible: you know the dials exist, not where they're set).
+
+---
+
 ## Image index by station
 
 Quick reference: which metaphor images appear or change at each station.
@@ -422,10 +454,10 @@ Quick reference: which metaphor images appear or change at each station.
 |---------|-----------|-----------------|
 | 2 | The gradient (light touch) | |
 | 3 | The goldfish (awake; later sleeping/waking); training story (books; ✓/✗ paddles) | |
-| 4 | Three-layer map/territory; pink-elephant conversation (HTML, no artwork) | |
-| 6 | The bowl and the fish (water + floating conversation); cat food in the water | Water level (context window); sticky notes (instructions); a pre-set-up tank (Custom GPT / Gem) |
-| 7 | | Quizzical fish + tool-use training step; tubes fitting (web search); notepad (memory) |
-| 8 | Proprietary fittings vs. standard (MCP) coupling | Fish reaching through tubes (agency); alarm clock + recipe cards; full-tank reveal |
-| 9 | Enforcement hierarchy (wall vs. sign); where the fish lives (4-step reveal) | Water turns poisoned; ☢️ ✉️ 💣 |
-| 10 | | Row of fish versions (one nerfed, goofy eyes) |
+| 4 | The lazy genie; the brain; three-layer map/territory (two maps at a time); pink-elephant conversation (HTML, no artwork) | |
+| 6 | The bare fish forgetting each message; the bowl and the fish (water + floating conversation); cat food in the water (two kinds) | Water level (context window); elicitation + show-its-work in the bowl; sticky notes (instructions); a pre-set-up tank (Custom GPT / Gem) |
+| 7 | Tools tiles | Quizzical fish + tool-use training step; web search tube; notepad (memory, via tube) |
+| 8 | (Proprietary vs. MCP fittings: hidden) | Tubes to named tools (agency); alarm clock + recipe cards via tubes; full-tank reveal |
+| 9 | Enforcement hierarchy (wall vs. sign); where the fish lives (4-step reveal, split around the training slide); autocomplete mock | Profile page down the tube; water turns poisoned; ☢️ ✉️ 💣 + the P.S. email |
+| 10 | Curtains over the dials | Fish map with a piece cut out; row of fish versions (one derpy nerf) |
 | 13 | | Gradient returns (full treatment; earned wonder) |

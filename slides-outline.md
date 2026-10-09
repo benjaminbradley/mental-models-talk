@@ -113,14 +113,7 @@ apprenticeship of conversations with feedback (RLHF/post-training). Technical te
 
 ## Station 4 - Talking to the fish (and how far to trust it)
 
-### Slide: It doesn't remember you
-
-**Visual:** *(illustrate)* Pre-captured local-model (ollama) exchange: introduce yourself,
-then ask your name in a separate call; it has no idea.
-
-**Text, Narration, Notes:** moved to `deck/slides/04-talking-to-the-fish.md` (SSOT for on-screen text and speaker notes).
-
-### Slide: Describe-and-draw exercise -- "B plays the fish" (PENDING: keep or cut)
+### Slide: Describe-and-draw exercise -- "B plays the fish" (HIDDEN for now)
 
 **Visual:** *(illustrate)* Instructions for the pair exercise. Printed source
 figure visible only to the "A" partner (candidate: architectural floor plan --
@@ -128,14 +121,14 @@ something with spatial relationships that are hard to convey in words alone).
 
 **Text, Narration, Notes:** moved to `deck/slides/04-talking-to-the-fish.md` (SSOT for on-screen text and speaker notes).
 
-### Slide: Debrief -- the tacit bound (PENDING, with the exercise)
+### Slide: Debrief -- the tacit bound (HIDDEN, with the exercise)
 
 **Visual:** Reveal the source figure alongside a few audience drawings (if
 willing to share). The gap between intent and result is the lesson.
 
 **Text, Narration, Notes:** moved to `deck/slides/04-talking-to-the-fish.md` (SSOT for on-screen text and speaker notes).
 
-### Slide: Specification -- plain vs. specified
+### Slide: Say what you want & how you want it (specification)
 
 **Visual:** *(illustrate)* Side-by-side output comparison. Left: a plain prompt
 ("give me a list of sushi restaurants"). Right: a fully specified prompt (near
@@ -143,24 +136,15 @@ willing to share). The gap between intent and result is the lesson.
 
 **Text, Narration, Notes:** moved to `deck/slides/04-talking-to-the-fish.md` (SSOT for on-screen text and speaker notes).
 
-### Slide: Knowledge-domain elicitation
+### Slide: The lazy genie
 
-**Visual:** *(illustrate)* Three-way output comparison. Left: plain prompt.
-Center: role-prompted ("you are a residential contractor"). Right:
-knowledge-domain-prompted ("what domains of knowledge are relevant here? for each,
-what does a non-expert overlook?"). The full knowledge-domain response drops in as a
-fragment to show how much more it generated.
+**Visual:** *(new)* An original blue genie rising from a gold lamp, arms folded, half-lidded.
+The wish "I want to be rich for the rest of my life"; click: a sack of gold; click: a lit time
+bomb. (Spec: `metaphor-imagery.md` § The lazy genie.)
 
 **Text, Narration, Notes:** moved to `deck/slides/04-talking-to-the-fish.md` (SSOT for on-screen text and speaker notes).
 
-### Slide: Reliability levers
-
-**Visual:** *(illustrate)* Side-by-side comparison: same query with and without a
-"think about the criteria" preamble. Show the output quality difference.
-
-**Text, Narration, Notes:** moved to `deck/slides/04-talking-to-the-fish.md` (SSOT for on-screen text and speaker notes).
-
-### Slides: Meta-prompting + pink elephant (after the reliability levers)
+### Slides: Meta-prompting + pink elephant (after the genie)
 
 **Visual:** *(illustrate)* A simulated chat, built up bubble by bubble: planning a team
 outing, the fish rejects mini golf; asked for a research prompt, it writes "...don't look at
@@ -169,52 +153,34 @@ same request with "use Theory of Mind," and the mini golf disappears.
 
 **Text, Narration, Notes:** moved to `deck/slides/04-talking-to-the-fish.md` (SSOT for on-screen text and speaker notes).
 
-### Slide: Map vs. territory -- the territory
+### Slide: Brilliant here, hopeless there (jaggedness intro)
 
-**Visual:** *(new)* The territory -- a vivid, illustrated aerial/topographic landscape
-of knowledge domains. Labeled regions: Poetry & Verse, Spatial Reasoning, Counting &
-Tracking, Recent Events, Everyday Cooking / Regional Cooking, plus background fill
-(History, Law, Medicine). Full color, textured, alive. Centered on screen.
+**Visual:** *(illustrate)* Two outputs only, cropped from the captures: the Shakespearean verse
+and the wrong letter count. "Why is it so good at some things, and so bad at others?"
+
+**Text, Narration, Notes:** moved to `deck/slides/04-talking-to-the-fish.md` (SSOT for on-screen text and speaker notes).
+
+### Slide: Your brain has specialists
+
+**Visual:** *(new)* A simplified brain with labeled hubs (language; movement; numbers; space;
+seeing); everything but language fades: the fish learned only from language.
+(Spec: `metaphor-imagery.md` § Slide layout.)
+
+**Text, Narration, Notes:** moved to `deck/slides/04-talking-to-the-fish.md` (SSOT for on-screen text and speaker notes).
+
+### Slides: Map vs. territory (two maps at a time)
+
+**Visual:** *(new)* Territory alone ("real knowledge, as a landscape") -> territory + your map
+-> territory + the fish's map -> your map + the fish's map. Never more than two maps on screen.
 (Image spec: `metaphor-imagery.md` § The three-layer map/territory.)
 
 **Text, Narration, Notes:** moved to `deck/slides/04-talking-to-the-fish.md` (SSOT for on-screen text and speaker notes).
 
-### Slide: Map vs. territory -- the human map
+### Slides: Jaggedness walkthrough (fish first, then the map)
 
-**Visual:** Territory slides right. Human map appears left for side-by-side comparison.
-The human map: same territory shape, rendered as a hand-drawn cartographic map (pen
-strokes, cross-hatching, handwritten labels). Variable ink confidence: firm strokes in
-experienced regions, sketchy/dotted in unfamiliar areas, honest blanks with "here be
-dragons" shading. Clear experience-worn paths connecting high-detail regions.
-(Image spec: `metaphor-imagery.md` § The human map.)
-
-**Animation:** Territory slides right; human map enters from left. Side by side.
-
-**Text, Narration, Notes:** moved to `deck/slides/04-talking-to-the-fish.md` (SSOT for on-screen text and speaker notes).
-
-### Slide: Map vs. territory -- the fish map
-
-**Visual:** Human map slides right. Fish map appears left. All three now visible:
-fish map | human map | territory. The fish map: same territory shape, same cartographic
-medium (pen strokes, labels). But: every line is bold and confident (no dotted lines,
-no question marks, no "here be dragons"). Some regions have rich detail, others are
-sparser -- but the sparse regions don't signal their own sparsity. No connected
-experience paths. Compare to territory: Poetry region is accurate; Spatial Reasoning
-is confident but wrong; Recent Events is filled in from pattern; Regional Cooking
-drifts toward mainstream.
-(Image spec: `metaphor-imagery.md` § The fish map, § Jaggedness cases.)
-
-**Animation:** Human map slides right; fish map enters from left. All three visible
-for comparison.
-
-**Text, Narration, Notes:** moved to `deck/slides/04-talking-to-the-fish.md` (SSOT for on-screen text and speaker notes).
-
-### Slides: Jaggedness walkthrough (per-case)
-
-**Visual:** For each case, two beats: (1) zoomed/highlighted comparison of the region
-on the human map vs. the fish map; (2) pre-captured screencap showing the example.
-Map first (audience predicts), then the capture; swapping means reordering slide pairs.
-(Image specs and case details: `metaphor-imagery.md` § Per-case walkthrough.)
+**Visual:** For each case, the capture first, then the region zoomed on your map vs. the fish's:
+Poetry; Counting & Tracking; Spatial (capture only); Everyday Cooking vs. Family Recipes.
+(Case details: `metaphor-imagery.md` § Per-case walkthrough.)
 
 **Text, Narration, Notes:** moved to `deck/slides/04-talking-to-the-fish.md` (SSOT for on-screen text and speaker notes).
 
@@ -249,6 +215,14 @@ agenda draft, logistics checklist -- each independently verifiable).
 
 ## Station 6 - The bowl and the water
 
+### Slide: It doesn't remember you
+
+**Visual:** *(illustrate)* Simulated chat (two separate calls: "Hi, I'm Benjamin" / "What's my
+name?" -> "We haven't been introduced yet...") beside the bare fish; each exchange falls away.
+Caption: "When talking directly to the LLM, every response is brand-new."
+
+**Text, Narration, Notes:** moved to `deck/slides/06-bowl-and-water.md` (SSOT for on-screen text and speaker notes).
+
 ### Slide: The bowl remembers the conversation
 
 **Visual:** *(new)* The bare fish (from station 4); the bowl and water appear around it; the
@@ -271,11 +245,33 @@ above the waterline does not.
 
 **Text, Narration, Notes:** moved to `deck/slides/06-bowl-and-water.md` (SSOT for on-screen text and speaker notes).
 
+### Slide: Many kinds of tanks (moved from station 9)
+
+**Visual:** *(illustrate)* Five tiles of client examples: web apps; desktop & mobile apps; coding
+agents; open-source clients; personal agents (OpenClaw, Hermes; OpenAI Dots, Meta Muse).
+
+**Text, Narration, Notes:** moved to `deck/slides/06-bowl-and-water.md` (SSOT for on-screen text and speaker notes).
+
+### Slide: Which shelf does it pull from? (elicitation, in the bowl)
+
+**Visual:** *(extend)* The question in the bowl's water; a role prompt adds one line; a
+knowledge-domain prompt fills the water with eight domains before the answer.
+
+**Text, Narration, Notes:** moved to `deck/slides/06-bowl-and-water.md` (SSOT for on-screen text and speaker notes).
+
+### Slide: Make it show its work (in the bowl)
+
+**Visual:** *(extend)* Steps, criteria and doubts written into the water before the answer;
+each technique's line appears whole, one at a time.
+
+**Text, Narration, Notes:** moved to `deck/slides/06-bowl-and-water.md` (SSOT for on-screen text and speaker notes).
+
 ### Slide: Notes on the glass (instructions)
 
 **Visual:** *(extend)* Introduced by a need: a behavior you keep re-asking for
 (e.g. "always use metric"). Your sticky note goes up on the inside of the glass (custom
-instructions). Then a second note appears from the tank's maker (system instructions: baked
+instructions; a real one: "Separate documents by how fast their contents change, not just by
+topic."). Then a second note appears from the tank's maker (system instructions: baked
 in, often unreadable). Both are in the water before you type. Project instructions are
 omitted as too detailed. (Imagery: `metaphor-imagery.md` § The bowl and the fish.)
 
@@ -290,10 +286,10 @@ documents) inside the glass. That's a Custom GPT / Gem / Project in this metapho
 
 ### Slide: Restart vs. repair -- cat food in the water
 
-**Visual:** *(new)* Cat food in the water (`metaphor-imagery.md`): the conversation floats
-in the bowl; cat food gets in and every answer comes out with "meow" in it. Path A
-(polluted) -- A+B, then "not B," then C, the cat food still there. Path B (fresh) -- the
-fish moved to a new bowl with A+D.
+**Visual:** *(new)* Cat food in the water (`metaphor-imagery.md`): escape rooms and mini golf
+both in the water as two color-coded kinds of flakes; the answer mixes them ("an escape room,
+then go-karts!"); "forget the mini golf" doesn't help; the fish moves to a fresh bowl.
+Labeled `context management`.
 
 **Text, Narration, Notes:** moved to `deck/slides/06-bowl-and-water.md` (SSOT for on-screen text and speaker notes).
 
@@ -301,12 +297,26 @@ fish moved to a new bowl with A+D.
 
 ## Station 7 - First fittings: reaching out to know
 
-### Slide: The fish has never used a tube
+### Slide: Tools
+
+**Visual:** *(new)* Tiles: web browser, email, calendar, files, code. "A tool is anything
+outside the fish that it can reach for." In the pictures, every tool connects with a tube.
+
+**Text, Narration, Notes:** moved to `deck/slides/07-first-fittings.md` (SSOT for on-screen text and speaker notes).
+
+### Slide: The fish has never used a tool
 
 **Visual:** *(extend)* A tube attaches to the bowl; the fish looks at it quizzically. Then the
 station 3 training story returns with a third step: tool-use training (the fish practicing
 with fittings, with ✓/✗ feedback; term chip: tool use / function calling). Then the fish is
 back in the tank, using the tube.
+
+**Text, Narration, Notes:** moved to `deck/slides/07-first-fittings.md` (SSOT for on-screen text and speaker notes).
+
+### Slide: The books ended (moved from the station 4 walkthrough)
+
+**Visual:** *(illustrate)* The World Series (older local model, invented) and World Cup
+(current model, notices the date) captures: the felt limit for web search.
 
 **Text, Narration, Notes:** moved to `deck/slides/07-first-fittings.md` (SSOT for on-screen text and speaker notes).
 
@@ -324,7 +334,7 @@ highlighted. The visual is TBD (a literal ladder was rejected); placeholder for 
 
 ### Slide: The notepad -- memory (and oversharing)
 
-**Visual:** *(extend)* The notepad fitting attaches to the bowl. Then *(illustrate)* Mockup of an inflated/incorrect memory entry. Example:
+**Visual:** *(extend)* The notepad connects to the bowl by a tube; the fish writes these notes. Then *(illustrate)* Mockup of an inflated/incorrect memory entry. Example:
 a resume-drafting session where the model stored exaggerated claims as persistent
 "facts" about the user.
 
@@ -346,13 +356,13 @@ correct answer appears from the script output.
 
 ### Slide: Agency -- the fish acts
 
-**Visual:** *(extend)* The fish reaching through the tubes fitting, actively
-doing things in the outside world. Plus: *(illustrate)* the operator to-do list: a checklist
-whose items get ticked off one by one as the fish does them.
+**Visual:** *(extend)* A tube from the bowl branching to named tools (browser, email,
+calendar, files). Plus: *(illustrate)* your project's to-do list for the team outing (book the
+escape room, email the team, add it to the calendar), ticked off one by one.
 
 **Text, Narration, Notes:** moved to `deck/slides/08-the-tank.md` (SSOT for on-screen text and speaker notes).
 
-### Slide: Provider tools vs. MCPs
+### Slide: Provider tools vs. MCPs (HIDDEN: too much detail; MCP is a one-liner on the take-home)
 
 **Visual:** *(new)* Proprietary tools: tubes ending in custom-shaped fittings,
 each made for one vendor's tank. MCP: one standard fitting everyone recognizes that fits any
@@ -384,39 +394,33 @@ last.
 
 ## Station 9 - Blast radius: security & data
 
-### Slide: Many kinds of tanks
-
-**Visual:** *(illustrate)* Four tiles of client examples: web apps; desktop & mobile apps;
-coding agents (Claude Code and other vendors' equivalents); open-source clients (OpenClaw,
-Hermes, Open WebUI, ...). Bridges the station 8 tank to hosting: some tanks let you choose the
-fish.
-
-**Text, Narration, Notes:** moved to `deck/slides/09-blast-radius.md` (SSOT for on-screen text and speaker notes).
-
-### Slide: Where does your data go? (was "Where does the fish live?")
+### Slides: Where does your data go? (two slides, split around the training slide)
 
 **Visual:** *(new)* Four-step reveal of where the tank (client) and the fish (model)
 live (`metaphor-imagery.md` § Where does the fish live?): (1) frontier: tank and fish in a
 corporate cloud with vendor names above it, joined to you by an uncuttable cord; (2) your tank
 + their fish (in a company uniform), cord still attached; (3) your tank on your desk + your
 fish in a padlocked private cloud, lower down; (4) everything on a beefy local PC, drawn below
-the clouds. An unlocked padlock on both frontier cords = credential exposure; short examples
+the clouds. Steps 1-2 on the first slide; the training slide; steps 3-4 on the second, where the
+tank also moves up into the private cloud. An unlocked padlock on both frontier cords = credential exposure; short examples
 beside each step (BYOK; open-weight models on your hardware; Ollama, LM Studio).
 
 **Text, Narration, Notes:** moved to `deck/slides/09-blast-radius.md` (SSOT for on-screen text and speaker notes).
 
 ### Slide: Training data opt-out
 
-**Visual:** A "Data controls" toggle mockup (train on my chats: OFF), then *(illustrate)*
-a screenshot of autocomplete search suggestions -- typed text coming back as suggestions, an
-analogy for training data (not captured yet; placeholder).
+**Visual:** *(illustrate)* A generic search box with "who called me from" typed (bold) and
+suggestions completing it with fictional 555 phone numbers; then the "Data controls" toggle
+mockup (train on my chats: OFF). Sits between hosting steps 2 and 3.
 
 **Text, Narration, Notes:** moved to `deck/slides/09-blast-radius.md` (SSOT for on-screen text and speaker notes).
 
 ### Slide: Prompt injection = poisoned water
 
-**Visual:** *(extend)* The tank; a tube reaches out to a web page (☠️ on the page icon), and
-the page's text in the water carries a hidden instruction. The water turns murky (`--murk`, plus
+**Visual:** *(extend)* The tank; a tube reaches up to a mocked professional-network profile
+(top right; made-up name, stand-in logo) whose bio carries the flan instruction (the real
+LinkedIn incident); the page shrinks and goes down the tube, and its text in the water carries
+the instruction. The water turns murky (`--murk`, plus
 a light cross-hatch for colorblind viewers); the fish cheerfully agrees to it.
 
 **Animation:** Clean water gradually darkens as the page text arrives. The fish does not notice.
@@ -427,7 +431,8 @@ a light cross-hatch for colorblind viewers); the fish cheerfully agrees to it.
 
 **Visual:** *(extend)* Three effect icons on the poisoned water: ☢️ destruction,
 ✉️ exfiltration (an envelope leaving through a tube), and 💣 sleeper/incubation (a bomb
-tucked into the notepad, i.e. memory).
+tucked into the notepad, i.e. memory), with its source: an invoice email whose P.S. below the
+signature tells the assistant to "remember" a new payment address.
 
 **Text, Narration, Notes:** moved to `deck/slides/09-blast-radius.md` (SSOT for on-screen text and speaker notes).
 
@@ -461,7 +466,7 @@ handout.
 
 **Visual:** *(illustrate)* A product settings-panel mockup with several refusal
 dials -- e.g. hacking, chemistry, politics -- each set somewhere by someone, framing refusals
-as design decisions.
+as design decisions. On "...and the dials are not public," curtains close over the controls.
 
 **Text, Narration, Notes:** moved to `deck/slides/10-restore-agency.md` (SSOT for on-screen text and speaker notes).
 
@@ -487,11 +492,18 @@ talking points. Optional build: highlight that one thinking-trace line.
 
 **Text, Narration, Notes:** moved to `deck/slides/10-restore-agency.md` (SSOT for on-screen text and speaker notes).
 
+### Slide: What else is missing? (unknown unknowns)
+
+**Visual:** *(extend)* The fish's map with a patch of History cut out (dotted cut line, scissors
+partway round), cropped to the top row. "You can't ask about what you don't know is missing."
+
+**Text, Narration, Notes:** moved to `deck/slides/10-restore-agency.md` (SSOT for on-screen text and speaker notes).
+
 ### Slide: Frontier instability
 
 **Visual:** *(extend)* A row of fish with slight variations (fin shape, color),
-each labeled with a version number; one in the middle has goofy eyes (a nerf: a version that
-got worse at something).
+each labeled with a version number; one in the middle is a derpy nerf (mismatched googly
+eyes, tongue out, a fin on backwards, tilted): a version that got worse at something.
 
 **Animation:** The fish appear left to right as the version numbers tick up.
 
@@ -505,7 +517,8 @@ got worse at something).
 
 **Visual:** *(illustrate)* Side by side: a generic, stock product (e.g., a stock
 laptop) vs. a personalized, intentional version (e.g., a modded "cyberdeck" or
-custom-built machine). Same category, vastly different intention.
+custom-built machine). Same category, vastly different intention. The stock laptop is captioned
+"Let the model decide / 'use best practices' = the default response".
 
 **Text, Narration, Notes:** moved to `deck/slides/11-intention.md` (SSOT for on-screen text and speaker notes).
 
@@ -526,7 +539,8 @@ under a "You're absolutely right!" bubble.
 **"Professional Looking Report"**. Basic business styling that reads as
 "professional" at a glance: navy/gray palette, serif title, thin horizontal rule,
 a placeholder logo block, "Prepared for: Leadership Team" / "Prepared by: Strategy
-& Insights". The publish date reads **"Octoober 13, 2026"**.
+& Insights". The publish date reads **"Octoober 13, 2026"**. It closes on: Accountability is
+the new bottleneck.
 
 **Text, Narration, Notes:** moved to `deck/slides/12-accountability.md` (SSOT for on-screen text and speaker notes).
 
@@ -579,7 +593,7 @@ excuse (for now; emoji stand-ins 🐕📄).
 **Visual:** *(extend)* Full-treatment return of the station 2 magic/gradient
 imagery. The light-touch gradient from station 2 is now fully rendered -- richer,
 earned: the binary split dissolves again, then the gradient fills with the vocabulary chips
-from tonight (context window, MCP, prompt injection, ...). Flagged for review.
+from tonight (context window, meta-prompting, prompt injection, ...). Flagged for review.
 
 **Animation:** The gradient visual from station 2 returns, fuller and more
 detailed than before.

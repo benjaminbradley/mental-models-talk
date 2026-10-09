@@ -3,8 +3,8 @@
 <div class="versus">
 <div class="lean fragment">
 <h3>Checking &lt; doing: lean in</h3>
-<p>"Summarize this spreadsheet."</p>
-<p class="small">Open the spreadsheet and check the totals.</p>
+<p>"Write a script that renames these files."</p>
+<p class="small">Run it. Did it work?</p>
 </div>
 <div class="beware fragment">
 <h3>Checking &ge; doing: beware</h3>
@@ -20,7 +20,9 @@ Note:
 
 The most useful thing I can give you today -- one rule that works regardless of your stance: lean in where checking is cheaper than doing. Beware where it isn't.
 
-A spreadsheet summary: easy to check, just open the file. A document summary: harder -- you'd have to read the whole thing. The value isn't in the output; it's in the ratio between checking and doing.
+The two classic cases. Code: easy to check -- run it, see if it works (or run the tests). That's a big part of why programmers adopted these tools first. A document summary: hard to check -- you'd have to read the whole thing, which is the work you were trying to skip. The value isn't in the output; it's in the ratio between checking and doing.
+
+Caveat worth saying out loud: code is only cheap to check if you can run it and tell whether it worked. For someone who can't, it moves to the "beware" side. The asymmetry depends on who is checking. (Another easy one: a spreadsheet summary -- open the file and check the totals.)
 
 Stabilization moment: after the disorientation of station 4, one durable, stance-neutral tool. Connects to the map: verification means leaving the map to check the territory.
 

@@ -39,9 +39,10 @@ explanations. To be trimmed and prioritized later (a real card fits far fewer th
   The whole conversation is re-read every turn; you cannot "take out the salt."
 - **Projects / RAG** - pull the right reference material into context on demand.
   Custom GPTs / Gems / Projects are products built on the instruction hierarchy.
-- **Tool use** - provider-specific tools (one vendor only) vs. MCP (industry-standard
-  connectors, any compatible platform). The model reads a tool's description to decide
-  when and how to use it.
+- **Tool use** - web search, email, calendar, files, code: the model decides when to reach
+  for a tool by reading the tool's description.
+- **MCP** (Model Context Protocol) - an industry-standard way to connect a tool once and use
+  it from any compatible app.
 - **Browser & computer use** - it can operate the same interfaces you do.
 - **Multimodal** - vision (drag in a photo or screenshot), image generation, voice
   conversation. Know the difference: transcription (speech-to-text) vs. native voice

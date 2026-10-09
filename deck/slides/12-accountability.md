@@ -14,6 +14,7 @@
 <p>It looks professional.</p>
 <p class="fragment">What would you check?</p>
 <p class="fragment">How long would that take?</p>
+<p class="fragment lede">Accountability is the new bottleneck.</p>
 </div>
 </div>
 
@@ -21,6 +22,8 @@ Note:
 Put it on screen. "Take a minute. The fish produced this. It looks professional. Would you put your name on it?" Pause; let someone find the date ("Octoober").
 
 (Click.) "What else would you check?" (Click.) "How long would that take?"
+
+(Click.) The fish can make this in seconds. Checking it, and deciding to put your name on it, still takes a person. Accountability is the new bottleneck.
 
 The error is deliberately small and findable in seconds once anyone looks: the lesson is that polish suppresses looking, not that the error was hard to find. The self-describing title is the wink -- everything on the page is surface. If the room finds it instantly, pivot: "That's the cover. The report behind it is 30 pages."
 

@@ -1,3 +1,45 @@
+# It doesn't remember you
+
+<div class="split">
+<div class="scene" style="flex: 0 0 780px">
+<svg viewBox="0 0 600 560" role="img" aria-label="The bare goldfish, no bowl. Each message arrives, the fish answers, and then the message and the answer fall away and are gone">
+  <g class="goldfish awake">
+    <use href="#fish-body" x="190" y="330" width="220" height="143"/>
+    <use class="eyes-open" href="#fish-eyes-open" x="190" y="330" width="220" height="143"/>
+  </g>
+  <g class="fragment drop" data-fragment-index="2">
+    <text class="msg you fragment" data-fragment-index="0" x="40" y="140">You: Hi, I'm Benjamin</text>
+    <text class="msg fish-says fragment" data-fragment-index="1" x="40" y="190">Fish: Hi Benjamin, how are you today?</text>
+  </g>
+  <g class="fragment drop" data-fragment-index="5">
+    <text class="msg you fragment" data-fragment-index="3" x="40" y="140">You: What's my name?</text>
+    <text class="msg fish-says fragment" data-fragment-index="4" x="40" y="190">Fish: We haven't been introduced yet,</text>
+    <text class="msg fish-says fragment" data-fragment-index="4" x="40" y="230">but I'm happy to meet you!</text>
+  </g>
+</svg>
+</div>
+<div>
+<div class="chat">
+<p class="user fragment" data-fragment-index="0"><span class="who">You</span>Hi, I'm Benjamin</p>
+<p class="fish fragment" data-fragment-index="1"><span class="who">LLM</span>Hi Benjamin, how are you today?</p>
+<p class="user fragment" data-fragment-index="3"><span class="who">You</span>What's my name?</p>
+<p class="fish fragment" data-fragment-index="4"><span class="who">LLM</span>We haven't been introduced yet, but I'm happy to meet you!</p>
+</div>
+<p class="lede fragment" data-fragment-index="6" style="margin-top: 40px">When talking directly to the LLM, every response is brand-new.</p>
+</div>
+</div>
+
+Note:
+Talking directly to the fish -- no app, no bowl. (Simulated: in practice even a bare local model runner keeps the history for you.)
+
+(Click.) Introduce yourself. (Click.) It's delighted to meet you. (Click.) Watch the fish: it answered, and the message is gone. Nothing stays.
+
+(Click.) Ask it your name. (Click.) It has no idea. (Click.) Gone again.
+
+(Click.) Each message reaches the fish on its own; it has no memory of the last thing you said. So how does every chat app remember you?
+
+---
+
 # The bowl remembers the conversation
 
 <div class="split">
@@ -25,7 +67,7 @@
 </div>
 
 Note:
-Callback to station 4: talking to the bare fish, it couldn't remember your name. (Click.) Now give it a bowl. The bowl is the app you actually use -- the client. It keeps the conversation and pours the whole thing back into the water every time you send a message.
+Just now, talking to the bare fish, it couldn't remember your name. (Click.) Now give it a bowl. The bowl is the app you actually use -- the client. It keeps the conversation and pours the whole thing back into the water every time you send a message.
 
 (Click through the messages.) Each message is added to the water, in order. Now it "remembers" your name -- not because the fish remembers anything, but because the bowl handed it the whole conversation again.
 
@@ -125,6 +167,7 @@ Callback planted for station 10: choosing well means choosing the fish AND the b
 <div>
 <p>Inside the water: exists.</p>
 <p>Outside the water: does not.</p>
+<p class="small">The conversation, attached files, instructions: <span class="term">context</span></p>
 <p class="fragment"><span class="term">context window</span> = how much water the bowl holds</p>
 </div>
 </div>
@@ -140,26 +183,164 @@ Methods: context engineering (what you pour in), document hygiene.
 
 ---
 
+# Many kinds of tanks
+
+<div class="tiles">
+<div><span class="emoji">🌐</span><b>Web apps</b><span class="small">ChatGPT, Claude, Gemini in the browser</span></div>
+<div class="fragment"><span class="emoji">📱</span><b>Desktop &amp; mobile apps</b><span class="small">the same vendors' apps</span></div>
+<div class="fragment"><span class="emoji">⌨️</span><b>Coding agents</b><span class="small">Claude Code, Codex, Gemini CLI, ...</span></div>
+<div class="fragment"><span class="emoji code">&lt;/&gt;</span><b>Open-source clients</b><span class="small">Open WebUI, LibreChat, ...</span></div>
+<div class="fragment"><span class="emoji">🦾</span><b>Personal agents</b><span class="small">OpenClaw, Hermes (open source); Dots (OpenAI), Muse (Meta)</span></div>
+</div>
+
+<p class="lede fragment">All tanks: <span class="term">client</span> <span class="term">harness</span>. Some let you choose the fish.</p>
+
+Note:
+The bowl -- the tank -- comes in many shapes. Web apps in the browser.
+
+(Click.) Desktop and mobile apps -- often the same vendor's tank, in a different form.
+
+(Click.) Coding agents: Claude Code and its cousins from the other vendors -- a tank with a lot of tools, aimed at your files and terminal.
+
+(Click.) Open-source clients: Open WebUI and many more. You can see how the tank is built, and most let you pick which fish goes in it.
+
+(Click.) Personal agents: a tank with lots of tools that runs on your behalf -- OpenClaw and Hermes in open source; OpenAI's Dots and Meta's Muse are the big vendors' versions of the same idea. (Brand-new; verify the names before the talk.)
+
+(Click.) They're all tanks -- the client, sometimes called the harness. Big vendors sell a fish already installed in their tank; plenty of tanks let you choose the fish. Different tanks, same rule: the fish works with whatever is in the water. So what should you pour in?
+
+Product names: verify before the talk (they change fast).
+
+---
+
+# Which shelf does it pull from?
+
+<div class="split">
+<div class="scene">
+<svg viewBox="0 0 600 560" role="img" aria-label="The bowl with your question in the water. Then one extra line appears: 'You are a residential contractor.' Then, instead, the fish fills the water with eight knowledge domains before answering, with the electrical panel highlighted">
+  <use href="#bowl-back" x="0" y="0" width="600" height="560"/>
+  <use href="#bowl-water" x="0" y="0" width="600" height="560"/>
+  <g class="goldfish awake">
+    <use href="#fish-body" x="380" y="398" width="150" height="98"/>
+    <use class="eyes-open" href="#fish-eyes-open" x="380" y="398" width="150" height="98"/>
+  </g>
+  <use href="#bowl-front" x="0" y="0" width="600" height="560"/>
+  <text class="msg you" x="100" y="180" style="font-size: 25px">You: Backyard in-law cottage for</text>
+  <text class="msg you" x="100" y="210" style="font-size: 25px">my mom: top 5 things to consider?</text>
+  <g class="fragment fade-out" data-fragment-index="1">
+    <text class="msg you elicit-line fragment" data-fragment-index="0" x="100" y="252" style="font-size: 22px">+ "You are a residential contractor."</text>
+  </g>
+  <g class="fragment" data-fragment-index="1" style="font-size: 22px">
+    <text class="msg fish-says" x="100" y="252" style="font-size: 23px">Fish: First, the domains --</text>
+    <text class="msg fish-says" x="100" y="278" style="font-size: 22px">1. Zoning &amp; local rules</text>
+    <text class="msg fish-says" x="100" y="302" style="font-size: 22px">2. Foundation &amp; soil</text>
+    <text class="msg fish-says elicit-hit" x="100" y="326" style="font-size: 22px">3. Electrical: panel capacity!</text>
+    <text class="msg fish-says" x="100" y="350" style="font-size: 22px">4. Plumbing &amp; sewer</text>
+    <text class="msg fish-says" x="100" y="374" style="font-size: 22px">5. Heating &amp; cooling</text>
+    <text class="msg fish-says" x="100" y="398" style="font-size: 22px">6. Permits &amp; inspections</text>
+    <text class="msg fish-says" x="100" y="422" style="font-size: 22px">7. Site access &amp; staging</text>
+    <text class="msg fish-says" x="115" y="446" style="font-size: 22px">8. Materials &amp; lead times</text>
+  </g>
+</svg>
+</div>
+<div>
+<p><b>Plain:</b> a sensible, generic top 5.</p>
+<p class="fragment" data-fragment-index="0"><b>Role:</b> one line in the water. A few new items. <span class="term">role prompting</span></p>
+<p class="fragment" data-fragment-index="1"><b>Domains:</b> "What domains of knowledge are relevant? For each, what does a non-expert overlook?" The fish fills the water before it answers. <span class="term">knowledge-domain elicitation</span></p>
+<p class="lede fragment" data-fragment-index="2">It knew all of this. It just didn't use it unprompted.</p>
+</div>
+</div>
+
+<div class="overlay fragment" data-fragment-index="3"><img src="illustrations/knowledge-elicitation--3knowledge-domain-haiku4.5.png" alt="The full knowledge-domain response: eight domains, each with the one thing a non-expert overlooks, before the top 5 list"></div>
+
+Note:
+Same question, three ways: a backyard in-law cottage for my mom, top 5 things to consider, one line each. It read the whole library -- but which shelf does it pull from? Whatever is in the water is what it works with.
+
+Plain: sensible, generic.
+
+(Click.) Role prompt: one extra line in the water -- "you are a residential contractor." It shapes the answer: septic capacity, site access, privacy and noise appear.
+
+(Click.) Knowledge-domain prompt: instead of assigning one role, ask "what domains of knowledge are relevant here? For each, what does a non-expert overlook?" Now the fish pours eight domains into the water before it answers -- and everything it writes becomes part of what it reads next. The electrical panel shows up: a $2-5K surprise nobody asked about.
+
+(Click.) "It holds worlds of knowledge but does not apply them unprompted." (Click.) The real response, to show how much it generated before getting to the top 5.
+
+Captures (Haiku 4.5): `illustrations/knowledge-elicitation--{1plain,2role,3knowledge-domain}-haiku4.5.png`.
+Methods: role prompting, knowledge-domain elicitation (a generalized form of role prompting).
+
+---
+
+# Make it show its work
+
+<div class="split">
+<div class="scene">
+<svg viewBox="0 0 600 560" role="img" aria-label="The bowl with your question in the water. The fish writes its steps, then its criteria, then what it's unsure about, into the water before the answer">
+  <use href="#bowl-back" x="0" y="0" width="600" height="560"/>
+  <use href="#bowl-water" x="0" y="0" width="600" height="560"/>
+  <g class="goldfish awake">
+    <use href="#fish-body" x="350" y="405" width="170" height="110"/>
+    <use class="eyes-open" href="#fish-eyes-open" x="350" y="405" width="170" height="110"/>
+  </g>
+  <use href="#bowl-front" x="0" y="0" width="600" height="560"/>
+  <text class="msg you" x="100" y="180" style="font-size: 25px">You: Rank these 3 venues</text>
+  <text class="msg you" x="100" y="210" style="font-size: 25px">for our team outing.</text>
+  <g class="fragment" data-fragment-index="0">
+    <text class="msg fish-says" x="100" y="256" style="font-size: 24px">Fish: Step 1: list them.</text>
+    <text class="msg fish-says" x="100" y="288" style="font-size: 24px">Step 2: compare each one.</text>
+  </g>
+  <text class="msg fish-says fragment" data-fragment-index="1" x="100" y="330" style="font-size: 24px">Criteria: budget, travel, size.</text>
+  <text class="msg fish-says fragment" data-fragment-index="2" x="100" y="372" style="font-size: 24px">Unsure: open on Tuesdays?</text>
+  <text class="msg fish-says fragment" data-fragment-index="3" x="100" y="414" style="font-size: 24px">Answer: Venue B.</text>
+</svg>
+</div>
+<div>
+<ul>
+<li class="fragment" data-fragment-index="0"><b>Chain-of-thought:</b> "Show your work."</li>
+<li class="fragment" data-fragment-index="1"><b>Extended thinking:</b> "Think about what criteria matter here, then answer."</li>
+<li class="fragment" data-fragment-index="2"><b>Self-reflection:</b> "How confident are you? What might you be wrong about?"</li>
+</ul>
+<p class="lede fragment" data-fragment-index="3">Whatever it writes first lands in the water, and shapes the answer.</p>
+</div>
+</div>
+
+Note:
+"The fish will never tell you it's unsure. So how do you make it more reliable?" Let them answer.
+
+Same mechanism as the last slide: anything the fish writes lands in the water, and it reads all of it before the next word. So get the useful things into the water before the answer.
+
+(Click.) Chain-of-thought: ask it to show its work -- the steps go into the water, and you can check them.
+(Click.) Extended thinking: direct it to think about specific things first. Thinking levels (low/medium/high) trade speed for depth; over-thinking is real.
+(Click.) Self-reflection: ask it to grade its confidence, flag what it's unsure about, or search when it doesn't know.
+(Click.) Then the answer -- shaped by everything above it.
+
+Contrast with decomposition (station 5): there, *you* split the job so you check several small answers. Here, the fish writes out the steps of one answer, so you can check the steps.
+
+These reduce the problem; they don't remove your obligation to verify. And notice: every one of these only works if you know to ask for it.
+
+TODO capture (optional): the same ranking query with vs. without a "think about the criteria" preamble.
+
+---
+
 # Notes on the glass
 
 <div class="split">
 <div class="scene">
-<svg viewBox="0 0 600 560" role="img" aria-label="The bowl with a yellow sticky note inside the glass reading 'Always use metric'; then a second, grey note from the bowl's maker, covered in small unreadable writing">
+<svg viewBox="0 0 600 560" role="img" aria-label="The bowl with a yellow sticky note inside the glass reading 'Separate documents by how fast their contents change, not just by topic'; then a second, grey note from the bowl's maker, covered in small unreadable writing">
   <use href="#bowl-back" x="0" y="0" width="600" height="560"/>
   <use href="#bowl-water" x="0" y="0" width="600" height="560"/>
   <g class="goldfish awake">
     <use href="#fish-body" x="250" y="345" width="220" height="143"/>
     <use class="eyes-open" href="#fish-eyes-open" x="250" y="345" width="220" height="143"/>
   </g>
-  <g class="fragment" transform="rotate(-5 170 230)">
-    <rect x="130" y="165" width="170" height="140" style="fill: var(--yellow); stroke: var(--ink); stroke-width: 6"/>
-    <text class="note-text" x="112" y="215" style="font-size: 34px">Always use</text>
-    <text class="note-text" x="112" y="260" style="font-size: 34px">metric!</text>
+  <g class="fragment" transform="rotate(-5 228 245)">
+    <rect x="112" y="150" width="236" height="190" style="fill: var(--yellow); stroke: var(--ink); stroke-width: 6"/>
+    <text class="note-text" x="126" y="192" style="font-size: 28px">Separate documents</text>
+    <text class="note-text" x="126" y="228" style="font-size: 28px">by how fast their</text>
+    <text class="note-text" x="126" y="264" style="font-size: 28px">contents change,</text>
+    <text class="note-text" x="126" y="300" style="font-size: 28px">not just by topic.</text>
   </g>
-  <g class="fragment" transform="rotate(4 400 230)">
-    <rect x="320" y="160" width="190" height="150" style="fill: #d9dde3; stroke: var(--ink); stroke-width: 6"/>
-    <text class="note-text" x="335" y="195" style="font-size: 26px">From the maker:</text>
-    <path d="M 335 220 h 160 M 335 245 h 150 M 335 270 h 160 M 335 295 h 110" style="stroke: var(--ink); stroke-width: 4; opacity: 0.5"/>
+  <g class="fragment" transform="rotate(4 430 240)">
+    <rect x="362" y="170" width="160" height="140" style="fill: #d9dde3; stroke: var(--ink); stroke-width: 6"/>
+    <text class="note-text" x="372" y="203" style="font-size: 24px">From the maker:</text>
+    <path d="M 374 228 h 136 M 374 252 h 126 M 374 276 h 136 M 374 300 h 96" style="stroke: var(--ink); stroke-width: 4; opacity: 0.5"/>
   </g>
   <use href="#bowl-front" x="0" y="0" width="600" height="560"/>
 </svg>
@@ -174,11 +355,11 @@ Methods: context engineering (what you pour in), document hygiene.
 Note:
 Start from the need: "How many of you have typed the same reminder into a chat over and over? Use metric. Be brief. Don't use bullet points."
 
-(Click.) Stick a note on the inside of the glass. It's in the water before you type a word, every conversation. That's custom instructions -- your persistent preferences.
+(Click.) Stick a note on the inside of the glass. It's in the water before you type a word, every conversation. That's custom instructions -- your persistent preferences. This one is a real one of mine: "Separate documents by how fast their contents change, not just by topic."
 
 (Click.) And there's already a note there you didn't write: the one from the bowl's maker. System instructions -- baked in by the vendor, usually invisible to you, and you can't take it down. It shapes tone, refusals, what the fish will and won't do. (Callback at station 10: it's someone's product.)
 
-Memory (station 7) will turn out to be another kind of note.
+You (or the maker) write these notes; the fish only reads them. Memory (station 7) is different: the fish writes those notes itself.
 
 ---
 
@@ -224,49 +405,61 @@ A Custom GPT, a Gem, a Project: a bowl someone else set up for you, with their n
 # Cat food in the water
 
 <div class="scene wide">
-<svg viewBox="0 0 1500 600" role="img" aria-label="Left: a bowl where cat food has gotten into the water; the fish's answers now include 'meow', and a note asking it to ignore the cat food doesn't remove the flakes. Right: the fish moved to a fresh bowl of clean water">
+<svg viewBox="0 0 1500 600" role="img" aria-label="Left: two kinds of cat food in the water -- purple square flakes for escape rooms and green round flakes for mini golf. The fish's answer mixes both: an escape room, then go-karts. Asking it to forget the mini golf leaves the green flakes in the water. Right: the fish moved to a fresh bowl with only escape-room flakes">
   <use href="#bowl-back" x="0" y="10" width="600" height="560"/>
   <use href="#bowl-water" x="0" y="10" width="600" height="560"/>
-  <g style="fill: #8a5a2b; stroke: var(--ink); stroke-width: 4">
-    <circle cx="150" cy="390" r="12"/><circle cx="210" cy="450" r="10"/><circle cx="510" cy="390" r="11"/><circle cx="160" cy="470" r="9"/><circle cx="230" cy="510" r="10"/><circle cx="300" cy="525" r="12"/>
+  <g style="stroke: var(--ink); stroke-width: 4">
+    <g style="fill: var(--escape)"><rect x="140" y="425" width="22" height="22"/><rect x="214" y="478" width="20" height="20"/><rect x="170" y="500" width="20" height="20"/><rect x="262" y="440" width="20" height="20"/></g>
+    <g style="fill: var(--golf)"><circle cx="195" cy="450" r="11"/><circle cx="250" cy="505" r="10"/><circle cx="120" cy="470" r="10"/><circle cx="290" cy="485" r="11"/></g>
   </g>
   <g class="goldfish awake">
-    <use href="#fish-body" x="250" y="355" width="220" height="143"/>
-    <use class="eyes-open" href="#fish-eyes-open" x="250" y="355" width="220" height="143"/>
+    <use href="#fish-body" x="310" y="400" width="190" height="124"/>
+    <use class="eyes-open" href="#fish-eyes-open" x="310" y="400" width="190" height="124"/>
   </g>
   <use href="#bowl-front" x="0" y="10" width="600" height="560"/>
-  <text class="msg you" x="130" y="200">You: Plan a team outing.</text>
-  <text class="msg fish-says" x="130" y="245">Fish: Escape rooms! Meow.</text>
-  <text class="msg you fragment" data-fragment-index="1" x="130" y="290">You: Ignore the cat food!</text>
-  <text class="msg fish-says fragment" data-fragment-index="1" x="130" y="335">Fish: Sure, meow.</text>
+  <text class="msg you" x="100" y="185" style="font-size: 24px">You: Plan a team outing.</text>
+  <text class="msg fish-says" x="100" y="225" style="font-size: 24px">Fish: <tspan class="esc">Escape rooms</tspan> or <tspan class="golf">mini golf</tspan>?</text>
+  <text class="msg you" x="100" y="265" style="font-size: 24px">You: <tspan class="esc">Escape rooms</tspan>.</text>
+  <text class="msg fish-says" x="100" y="305" style="font-size: 24px">Fish: An <tspan class="esc">escape room</tspan>, then <tspan class="golf">go-karts</tspan>!</text>
+  <text class="msg you fragment" data-fragment-index="1" x="100" y="350" style="font-size: 24px">You: Forget the <tspan class="golf">mini golf</tspan>!</text>
+  <text class="msg fish-says fragment" data-fragment-index="1" x="100" y="390" style="font-size: 24px">Fish: Sure! <tspan class="golf">Putt-putt</tspan> after?</text>
   <g class="fragment" data-fragment-index="2">
     <path d="M 640 300 H 840" style="stroke: var(--ink); stroke-width: 10; fill: none" stroke-linecap="round"/>
     <path d="M 815 275 L 845 300 L 815 325" style="stroke: var(--ink); stroke-width: 10; fill: none" stroke-linecap="round" stroke-linejoin="round"/>
     <text class="tag" x="740" y="270" text-anchor="middle">new chat</text>
     <use href="#bowl-back" x="880" y="10" width="600" height="560"/>
     <use href="#bowl-water" x="880" y="10" width="600" height="560"/>
+    <g style="stroke: var(--ink); stroke-width: 4; fill: var(--escape)"><rect x="1030" y="440" width="22" height="22"/><rect x="1120" y="480" width="22" height="22"/></g>
     <g class="goldfish awake">
-      <use href="#fish-body" x="1130" y="355" width="220" height="143"/>
-      <use class="eyes-open" href="#fish-eyes-open" x="1130" y="355" width="220" height="143"/>
+      <use href="#fish-body" x="1190" y="400" width="190" height="124"/>
+      <use class="eyes-open" href="#fish-eyes-open" x="1190" y="400" width="190" height="124"/>
     </g>
     <use href="#bowl-front" x="880" y="10" width="600" height="560"/>
-    <text class="msg you" x="1010" y="200">You: Plan a team outing.</text>
-    <text class="msg fish-says" x="1010" y="245">Fish: Escape rooms!</text>
+    <text class="msg you" x="990" y="185" style="font-size: 24px">You: Plan an <tspan class="esc">escape-room</tspan></text>
+    <text class="msg you" x="990" y="220" style="font-size: 24px">outing for the team.</text>
+    <text class="msg fish-says" x="990" y="265" style="font-size: 24px">Fish: Here are three</text>
+    <text class="msg fish-says" x="990" y="300" style="font-size: 24px"><tspan class="esc">escape rooms</tspan> nearby!</text>
   </g>
 </svg>
 </div>
 
+<p class="lede fragment" data-fragment-index="3">Keep the water clean: <span class="term">context management</span></p>
+
 Note:
-Something got into the water that doesn't belong -- call it cat food. A wrong assumption, an off-topic tangent, the wrong document pasted in. Now every answer comes out with a little "meow" in it.
+Remember the team outing from station 4? We talked about escape rooms and mini golf. Both are in the water now -- two kinds of cat food (color-coded; also square vs. round flakes).
+
+You said escape rooms. But the mini golf is still floating in there, and the next answer comes out mixed: "an escape room, then go-karts!" Go-karts live next door to mini golf. A little "meow" in every answer.
 
 The whole conversation is poured back in every turn; the fish re-reads all of it each time. So you can't take the cat food out.
 
-(Click.) "Ignore the cat food!" doesn't remove it. It just adds more words about cat food to the water. (Same trap as the pink elephant.)
+(Click.) "Forget the mini golf!" doesn't remove it. It adds more mini golf to the water -- and here comes putt-putt. (Same trap as the pink elephant.)
 
 (Click.) It's easier to move the fish to a fresh bowl -- a new chat -- and carry over only the good parts.
 
+(Click.) That's context management: deciding what's in the water.
+
 Iteration lives here too: the first answer is raw material, not a finished product. Refine it, have the fish critique itself. But iterating only pays off in clean water. Practical test: "Is there cat food in this water?" If yes, restart.
 
-Methods: restart vs. repair, iteration, critique loops. Personal: felt from real experience.
+Methods: restart vs. repair, iteration, critique loops, context management. Personal: felt from real experience.
 
 Bridge out: "The water holds only what you pour in. What about everything the fish doesn't have -- anything after the books ended, or the sources it claimed?"

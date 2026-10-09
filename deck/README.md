@@ -50,8 +50,10 @@ shows: `../metaphor-imagery.md`.
 
 - **Parts library:** `art/parts.svg` holds reusable `<symbol>`s (fish body, eye states,
   bowl layers, rectangular tank layers, ...). Layer order for a container scene: `*-back`,
-  `*-water`, then contents (fish, messages, notes), then `*-front`. Tubes are a thick ink path
-  with a thinner `--rock` path on top; attachments are white rounded boxes with an emoji icon. `index.html` inlines it at load, so any slide can place a part with
+  `*-water`, then contents (fish, messages, notes), then `*-front`. Tubes (the drawing for
+  "tool"; the on-screen word is always "tool") are a thick ink path with a thinner `--rock` path
+  on top, drawn *before* the bowl/tank (and before any attachment) so they run behind it; every
+  attachment connects through one. Attachments are white rounded boxes with an emoji icon. `index.html` inlines it at load, so any slide can place a part with
   `<use href="#part-id" x=".." y=".." width=".." height=".."/>`.
 - **Palette:** tokens in `theme/talk.css` `:root`. Raw colors (`--orange`, `--sky`, ...)
   feed semantic roles (`--fish`, `--water`, `--glass`, ...); artwork uses the roles. Parts
@@ -70,7 +72,8 @@ shows: `../metaphor-imagery.md`.
   fades in its `<use class="murk-hatch" href="#tank-murk">` cross-hatch (always-murky scenes just
   place `tank-murk` after `tank-water`).
 - **Fish variants:** `fish-uniform` (company cap and badge: someone else's fish) and
-  `fish-face-goofy` (a nerfed version; use instead of `fish-eyes-open`) layer on `fish-body` at the
+  `fish-face-goofy` (a derpy nerfed version: mismatched googly eyes, tongue, a backwards fin;
+  use instead of `fish-eyes-open`) layer on `fish-body` at the
   same x/y/width/height. A scene recolors one fish with an inline `style="--fish: ...; --fish-deep: ..."`
   on its `.goldfish` group.
 - **Slide markup:** wrap the SVG in `<div class="scene">` with no blank lines inside
@@ -80,7 +83,7 @@ shows: `../metaphor-imagery.md`.
   inlines an SVG file after Reveal starts (inline, not `<img>`, so it can use the theme's
   colors and fonts). Add `data-zoom="<region id>"` (or several, comma-separated, for their union) to crop a map to one region (ids in
   `../tools/build-maps.mjs`; the per-case walkthrough images are these crops).
-- **Maps (station 4):** `art/maps/{territory,human,fish}.svg` are generated. Edit
+- **Maps (station 4; the cut-out map at station 10):** `art/maps/{territory,human,fish,fish-cut}.svg` are generated. Edit
   `../tools/build-maps.mjs` (region shapes, features, per-map ink profiles), then run
   `make maps` from the repo root.
   Output is deterministic, so diffs show only real changes. Colors are `--land-*`, `--sea`,
@@ -106,6 +109,12 @@ shows: `../metaphor-imagery.md`.
   toggles, dials); `<!-- .slide: class="center-slide" -->` centers a text-only slide.
 - **QR codes:** `make qr URL=... OUT=deck/art/qr-<name>.svg` writes a static SVG; commit it and
   place it with `<img>` (closing slide: `art/qr-slides.svg`).
+- **Messages that fall away:** `class="fragment drop"` on a `<g>` keeps it visible until its
+  step, then it falls and fades (the bare fish forgetting an exchange, station 6). Nest that
+  exchange's own appearing fragments inside it.
+- **Fragments on list items:** write `<li class="fragment">` in HTML when the line contains
+  inline markup (bold, a term chip): a trailing `<!-- .element -->` attaches to the last inline
+  element, not the whole line.
 - **Hidden slides:** `<!-- .slide: data-visibility="hidden" -->` keeps a slide in the file but out
   of the deck (available for anything pending a keep/cut decision).
 

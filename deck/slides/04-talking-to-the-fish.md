@@ -1,18 +1,4 @@
-# It doesn't remember you
-
-<div class="placeholder">TODO: capture -- two separate calls to a local model (ollama): "Hi, I'm Benji, nice to meet you" ... then "What's my name?"</div>
-
-Note:
-Talking directly to the fish -- no app, no bowl. This is a model running on my own laptop.
-
-Introduce yourself. It's delighted to meet you. Then ask it your name. It has no idea. Each message reaches the fish on its own; it has no memory of the last thing you said.
-
-Capture note: use two one-shot calls (`ollama run <model> "<prompt>"`). The interactive `ollama run` session keeps the history for you -- that's the bowl's job, and the bowl arrives at station 6.
-
-Plant: "remembering the conversation" is not the fish. Hold that thought.
-
----
-
+<!-- .slide: data-visibility="hidden" -->
 # B plays the fish
 
 <div class="placeholder">TODO: the source figure for partner A (candidate: a simple floor plan; printed handout, not shown on screen until the debrief)</div>
@@ -20,7 +6,7 @@ Plant: "remembering the conversation" is not the fish. Hold that thought.
 Pair up. A describes. B plays the fish: draw exactly what you hear. No peeking, no questions.
 
 Note:
-PENDING keep/cut (open-questions Q3); shown for now. To hide it and the debrief, add `<!-- .slide: data-visibility="hidden" -->` above each title.
+HIDDEN for now (open-questions Q3). To bring it and the debrief back, delete the `data-visibility="hidden"` line above each title.
 
 Find a partner. One of you gets a picture -- describe it in words only. Your partner plays the fish: they draw exactly what they hear and may not ask questions. No looking at each other's paper. The describer does not see the result until it's finished.
 
@@ -30,6 +16,7 @@ Fallback without printouts: "give directions to your house without using any lan
 
 ---
 
+<!-- .slide: data-visibility="hidden" -->
 # What went wrong? Whose fault was it?
 
 <div class="placeholder">TODO: the source figure, beside a few audience drawings (if people are willing to share)</div>
@@ -45,7 +32,7 @@ Beat. "B wasn't allowed to ask questions. The fish is -- if you invite it: 'ask 
 
 ---
 
-# Say what you actually want
+# Say what you want & how you want it
 
 <div class="shots">
 <figure><div class="placeholder">TODO: capture -- "give me a list of sushi restaurants"</div><figcaption>Plain prompt</figcaption></figure>
@@ -64,51 +51,71 @@ Methods: specification, explicit output formats, few-shot examples.
 
 ---
 
-# Which shelf does it pull from?
+# The lazy genie
 
-<div class="shots">
-<figure><img src="illustrations/knowledge-elicitation--1plain-haiku4.5.png" alt="Plain prompt: top 5 considerations for building a backyard in-law cottage; generic answers about zoning, utilities, foundation, accessibility, budget"><figcaption>Plain</figcaption></figure>
-<figure><img src="illustrations/knowledge-elicitation--2role-haiku4.5.png" alt="The same question prefixed with 'You are a residential contractor'; three new items highlighted: septic capacity, site access, privacy and noise"><figcaption>Role prompt</figcaption></figure>
-<figure><img src="illustrations/knowledge-elicitation--3knowledge-domain-haiku4.5-trimmed.png" alt="The same question asking which domains of knowledge are relevant; the top 5 now include checking the electrical panel's spare capacity, highlighted"><figcaption>Knowledge-domain prompt</figcaption></figure>
+<div class="scene wide">
+<svg viewBox="0 0 1500 720" role="img" aria-label="A lazy blue genie in a purple turban rises from a golden lamp, arms folded, eyes half shut. Your wish: 'I want to be rich for the rest of my life.' Then a sack of gold appears, and next to it a lit time bomb">
+  <text class="msg you" x="40" y="70" style="font-size: 44px">You: "I want to be rich for the rest of my life."</text>
+  <!-- smoke tail and body -->
+  <g class="genie" style="stroke: var(--ink); stroke-width: 9" stroke-linejoin="round" stroke-linecap="round">
+    <path style="fill: var(--genie)" d="M 400 600 C 480 595, 515 530, 470 488 C 440 460, 448 432, 478 410 L 552 410 C 530 440, 532 470, 552 500 C 596 566, 506 632, 400 600 Z"/>
+    <path style="fill: var(--genie)" d="M 478 414 C 438 360, 405 330, 405 285 C 405 252, 440 240, 515 240 C 590 240, 625 252, 625 285 C 625 330, 592 360, 552 414 Z"/>
+    <!-- folded arms -->
+    <rect x="418" y="300" width="194" height="52" rx="26" style="fill: var(--genie)"/>
+    <circle cx="430" cy="326" r="20" style="fill: var(--genie)"/><circle cx="600" cy="326" r="20" style="fill: var(--genie)"/>
+    <!-- head -->
+    <circle cx="515" cy="175" r="66" style="fill: var(--genie)"/>
+    <!-- turban -->
+    <path style="fill: var(--purple)" d="M 450 160 C 440 80, 590 80, 580 160 C 560 140, 470 140, 450 160 Z"/>
+    <circle cx="515" cy="128" r="12" style="fill: var(--red)"/>
+    <!-- half-lidded eyes: can't be bothered -->
+    <circle cx="490" cy="185" r="15" style="fill: #fff"/><circle cx="540" cy="185" r="15" style="fill: #fff"/>
+    <path style="fill: var(--genie)" d="M 475 185 A 15 15 0 0 1 505 185 Z M 525 185 A 15 15 0 0 1 555 185 Z"/>
+    <circle cx="490" cy="192" r="4" style="fill: var(--ink); stroke: none"/><circle cx="540" cy="192" r="4" style="fill: var(--ink); stroke: none"/>
+    <path d="M 500 218 Q 515 213 530 218" style="fill: none"/>
+  </g>
+  <!-- lamp -->
+  <g style="stroke: var(--ink); stroke-width: 9" stroke-linejoin="round" stroke-linecap="round">
+    <path d="M 120 632 C 70 632, 66 580, 130 600" style="fill: none"/>
+    <path style="fill: var(--yellow)" d="M 300 612 L 400 586 L 408 604 L 306 642 Z"/>
+    <path style="fill: var(--yellow)" d="M 118 630 C 118 572, 318 572, 318 630 C 318 664, 118 664, 118 630 Z"/>
+    <circle cx="218" cy="574" r="16" style="fill: var(--yellow)"/>
+    <ellipse cx="218" cy="672" rx="74" ry="14" style="fill: var(--yellow)"/>
+  </g>
+  <text class="msg fish-says fragment" data-fragment-index="0" x="620" y="160" style="font-size: 40px">Genie: "Granted." *yawn*</text>
+  <!-- a sack of gold -->
+  <g class="fragment" data-fragment-index="0" style="stroke: var(--ink); stroke-width: 9" stroke-linejoin="round" stroke-linecap="round">
+    <path style="fill: #b07a3c" d="M 800 640 C 760 560, 800 480, 870 450 L 850 410 L 950 410 L 930 450 C 1000 480, 1040 560, 1000 640 C 960 670, 840 670, 800 640 Z"/>
+    <path d="M 852 452 H 948" style="fill: none"/>
+    <text x="900" y="595" text-anchor="middle" style="font: 800 110px 'Helvetica Neue', sans-serif; fill: var(--yellow); stroke: var(--ink); stroke-width: 5; paint-order: stroke">$</text>
+    <ellipse cx="770" cy="660" rx="34" ry="12" style="fill: var(--yellow)"/><ellipse cx="1036" cy="664" rx="34" ry="12" style="fill: var(--yellow)"/>
+  </g>
+  <!-- ...and a time bomb -->
+  <g class="fragment" data-fragment-index="1" style="stroke: var(--ink); stroke-width: 9" stroke-linejoin="round" stroke-linecap="round">
+    <path d="M 1250 470 C 1260 420, 1300 400, 1330 410" style="fill: none"/>
+    <rect x="1222" y="462" width="56" height="40" rx="6" style="fill: #5b6170"/>
+    <circle cx="1250" cy="580" r="98" style="fill: #2b2b33"/>
+    <rect x="1186" y="556" width="128" height="52" rx="8" style="fill: #111"/>
+    <path d="M 1330 410 l 14 -26 l 6 24 l 24 -10 l -14 22 l 26 8 l -26 8" style="fill: var(--yellow); stroke-width: 6"/>
+  </g>
+  <text class="fragment" data-fragment-index="1" x="1250" y="596" text-anchor="middle" style="font: 800 34px ui-monospace, Menlo, monospace; fill: var(--red)">00:59</text>
+</svg>
 </div>
 
-<div class="overlay fragment"><img src="illustrations/knowledge-elicitation--3knowledge-domain-haiku4.5.png" alt="The full knowledge-domain response: eight domains, each with the one thing a non-expert overlooks, before the top 5 list"></div>
+<p class="lede fragment">It granted exactly what you said.</p>
 
 Note:
-Same question, three ways: a backyard in-law cottage for my mom, top 5 things to consider, one line each.
+Time to summon a cousin of the fish: the lazy genie. It grants your wish to the letter, with the least effort it can get away with.
 
-It read the whole library -- but which shelf does it pull from?
+"I want to be rich for the rest of my life."
 
-- Plain: sensible, generic.
-- Role prompt ("you are a residential contractor"): shapes the answer -- septic capacity, site access, privacy and noise appear (highlighted).
-- Knowledge-domain prompt: instead of assigning one role, ask "what domains of knowledge are relevant here? For each, what does a non-expert overlook?" The electrical panel shows up (highlighted) -- a $2-5K surprise nobody asked about.
+(Click.) "Granted." A sack of gold. (Click.) ...and a time bomb. The rest of your life just got a lot shorter. You'll be rich for all of it.
 
-(Click: the full response drops in.) This is how much it generated before getting to the top 5: eight domains, each with the thing a non-expert overlooks. It knew all of this the whole time.
+(Click.) It did exactly what you said. You just didn't say what you wanted -- or how you wanted it.
 
-Beat. "It holds worlds of knowledge but does not apply them unprompted."
+The fish isn't malicious and isn't lazy on purpose -- but a vague ask leaves the gaps to be filled, and they get filled with the most common, least effortful answer. Same lesson as the sushi: say what you want, and how you want it.
 
-Demo: three-way comparison (pre-captured, Haiku 4.5).
-Methods: role prompting, knowledge-domain elicitation (a generalized form of role prompting).
-
----
-
-# Make it show its work
-
-- **Chain-of-thought:** "Show your work." <!-- .element: class="fragment" -->
-- **Extended thinking:** "Think about what criteria matter here, then answer." <!-- .element: class="fragment" -->
-- **Self-reflection:** "How confident are you? What might you be wrong about?" <!-- .element: class="fragment" -->
-
-<div class="placeholder fragment">TODO: capture -- the same ranking query with vs. without a "think about the criteria" preamble</div>
-
-Note:
-"The fish will never tell you it's unsure. So how do you make it more reliable?" Let them answer.
-
-Three levers:
-- Chain-of-thought: ask it to show its work, so you can check the steps.
-- Extended thinking: direct it to think about specific things before answering. Thinking levels (low/medium/high) trade speed for depth; over-thinking is real. Here's the same query with and without a "think about the criteria" preamble.
-- Self-reflection: ask it to grade its confidence, flag what it's unsure about, or search when it doesn't know.
-
-These reduce the problem; they don't remove your obligation to verify. And notice: every one of these only works if you know to ask for it.
+Tone: quick and funny; one beat, then on.
 
 ---
 
@@ -147,7 +154,97 @@ Same request, one extra sentence: think about what the other reader knows. The m
 
 The pink elephant is the station's mascot for "it has the knowledge; you have to know to ask." Method: meta-prompting (and Theory of Mind: the next reader, fish or human, doesn't have this chat's context).
 
-Bridge: the levers and meta-prompting all depend on knowing what to ask. And when it grades itself -- can you trust the grade? To answer that, we need to look at how its knowledge is shaped.
+Bridge: meta-prompting depends on knowing what to ask. But the fish isn't equally good at everything -- and it won't tell you where it's weak.
+
+---
+
+# Brilliant here, hopeless there
+
+<div class="shots">
+<figure><img src="illustrations/jaggedness-A3-iambic-pentameter--output.png" alt="A polished verse in iambic pentameter: 'O cracked and shattered screen of mine, once bright, thy glassy face now fractured, dark with pain...'"><figcaption>Shakespearean verse, in seconds</figcaption></figure>
+<figure class="fragment"><img src="illustrations/jaggedness-B1-letters--output.png" alt="The model says 'Suffering Succotash' has 4 S's, listing a fourth S that isn't there"><figcaption>The S's in "Suffering Succotash" (there are 3)</figcaption></figure>
+</div>
+
+<p class="lede fragment" style="margin-top: 50px">Why is it so good at some things, and so bad at others?</p>
+
+Note:
+Two answers from the same fish. Left: Shakespearean verse about fixing a broken phone -- polished, in seconds.
+
+(Click.) Right: "How many S's are in Suffering Succotash?" It says four, and shows its work, including an S that isn't there. There are three. A seven-year-old gets this right.
+
+(Click.) Let them answer. "Why is it brilliant at the hard thing and hopeless at the easy one?"
+
+This is the felt puzzle of the whole section; the brain and the maps answer it. Plant: the letters come back at station 8.
+
+---
+
+# Your brain has specialists
+
+<div class="scene wide">
+<svg viewBox="0 0 1500 740" role="img" aria-label="A simplified side view of a human brain, front to the left, with rough hubs labeled: language for speaking (Broca's area) and for understanding (Wernicke's area), joined by a pathway; movement; numbers and counting; space and navigation, including the hippocampus deep inside; and seeing. Then everything except the language areas fades">
+  <g class="brain" style="stroke: var(--ink); stroke-width: 9" stroke-linejoin="round" stroke-linecap="round">
+    <path style="fill: color-mix(in srgb, var(--pink) 25%, var(--paper))" d="M 790 520 L 830 660 L 778 670 L 748 530 Z"/>
+    <path style="fill: color-mix(in srgb, var(--pink) 32%, var(--paper))" d="M 850 486 C 910 486, 990 498, 980 556 C 970 606, 870 606, 830 576 C 810 556, 818 496, 850 486 Z"/>
+    <path style="fill: color-mix(in srgb, var(--pink) 22%, var(--paper))" d="M 290 436 C 230 316, 310 166, 500 126 C 670 91, 890 126, 980 246 C 1040 326, 1020 436, 960 476 C 930 496, 890 506, 860 501 C 820 546, 730 576, 630 561 C 550 551, 500 516, 450 496 C 390 486, 320 486, 290 436 Z"/>
+  </g>
+  <g style="stroke: var(--ink); fill: none" stroke-linecap="round" opacity="0.3">
+    <path style="stroke-width: 5" d="M 360 300 C 400 260, 440 300, 480 250 M 400 200 C 440 180, 470 220, 520 180 M 700 150 C 740 190, 790 150, 830 190 M 760 260 C 800 300, 840 270, 880 320 M 520 470 C 560 490, 600 470, 640 500"/>
+  </g>
+  <g class="nonlang">
+    <path d="M 655 120 C 635 205, 615 275, 605 385" style="stroke: var(--orange); stroke-width: 34; fill: none; opacity: 0.85" stroke-linecap="round"/>
+    <g style="stroke: var(--ink); stroke-width: 7">
+      <ellipse cx="820" cy="236" rx="58" ry="36" style="fill: var(--purple)"/>
+      <ellipse cx="905" cy="322" rx="48" ry="42" style="fill: var(--green)"/>
+      <ellipse cx="672" cy="492" rx="66" ry="20" style="fill: var(--green); opacity: 0.7; stroke-dasharray: 14 10"/>
+      <ellipse cx="972" cy="396" rx="36" ry="56" style="fill: var(--sky)"/>
+    </g>
+  </g>
+  <g style="stroke: var(--ink); stroke-width: 7; fill: none" stroke-linecap="round">
+    <path d="M 450 436 C 530 386, 630 376, 750 386"/>
+    <path d="M 680 116 C 660 196, 640 266, 630 386"/>
+  </g>
+  <g style="stroke: var(--ink); stroke-width: 7">
+    <ellipse cx="462" cy="398" rx="58" ry="40" style="fill: var(--pink)"/>
+    <ellipse cx="760" cy="428" rx="62" ry="38" style="fill: var(--pink)"/>
+  </g>
+  <path d="M 506 372 C 590 320, 680 330, 728 398" style="stroke: var(--red); stroke-width: 8; fill: none; stroke-dasharray: 16 12" stroke-linecap="round"/>
+  <!-- labels -->
+  <g style="stroke: var(--ink); stroke-width: 4">
+    <path d="M 406 412 L 330 462"/><path d="M 820 440 L 1090 528"/>
+  </g>
+  <text class="tag" x="20" y="490">Language: speaking</text>
+  <text class="tag" x="20" y="528" style="font-size: 24px">(Broca's area)</text>
+  <text class="tag" x="1100" y="540">Language: understanding</text>
+  <text class="tag" x="1100" y="578" style="font-size: 24px">(Wernicke's area)</text>
+  <g class="nonlang">
+    <g style="stroke: var(--ink); stroke-width: 4">
+      <path d="M 650 130 L 560 50"/><path d="M 850 206 L 940 120"/><path d="M 948 300 L 1090 250"/><path d="M 1008 396 L 1090 400"/><path d="M 606 504 L 480 620"/>
+    </g>
+    <text class="tag" x="420" y="40">Movement</text>
+    <text class="tag" x="950" y="110">Numbers &amp; counting</text>
+    <text class="tag" x="1100" y="260">Space &amp; navigation</text>
+    <text class="tag" x="1100" y="410">Seeing</text>
+    <text class="tag" x="250" y="650">Finding your way</text>
+    <text class="tag" x="250" y="686" style="font-size: 24px">(hippocampus, deep inside)</text>
+  </g>
+</svg>
+<span class="fragment brain-cue" data-fragment-index="0"></span>
+</div>
+
+<p class="lede fragment" data-fragment-index="0">The fish learned everything from language.</p>
+
+Note:
+Why is it brilliant at verse and hopeless at counting letters? Here's one way to see it.
+
+Your brain has specialists. (A big simplification: real brains work as networks, and these are rough hubs, not boxes.) Language: speaking up front, understanding further back, joined by a pathway. And separate machinery for movement, for numbers and counting, for space and finding your way, for seeing.
+
+(Click.) The fish learned everything from language -- text, and only text. So it's as if it only had the language part. When you ask it to do something your brain does with other parts -- count letters, picture where the ball is, follow money -- it has to do it in words. Sometimes that works. Often it doesn't.
+
+Accuracy guard: an LLM is not a model of Broca's area, and it does pick up some counting and spatial ability from text. The claim is about how it learned (only from language), not about brain anatomy.
+
+Colors match the map coming next: pink = Poetry & Verse, purple = Counting, green = Spatial.
+
+Bridge: "Let's draw what that does to its knowledge -- as a map."
 
 ---
 
@@ -155,11 +252,11 @@ Bridge: the levers and meta-prompting all depend on knowing what to ask. And whe
 # The territory
 
 <div class="maps">
-<figure class="map" data-id="map-territory"><div data-svg="art/maps/territory.svg" data-label="The territory: a colorful landscape of knowledge domains"></div><figcaption>The territory (reality)</figcaption></figure>
+<figure class="map" data-id="map-territory"><div data-svg="art/maps/territory.svg" data-label="The territory: a colorful landscape of knowledge domains"></div><figcaption>The territory = real knowledge, as a landscape</figcaption></figure>
 </div>
 
 Note:
-Let's look at what the fish knows as a map. First -- this is reality. The landscape of knowledge. It's big, it's complex, and nobody holds a complete picture of it. But it's out there, and you can go check it.
+Let's draw what the fish knows as a map. First -- this is the territory: real knowledge, drawn as a landscape. The landscape of knowledge. It's big, it's complex, and nobody holds a complete picture of it. But it's out there, and you can go check it.
 
 Brief -- establish the referent, don't dwell. They need "reality exists; maps represent it," not the region names.
 
@@ -169,10 +266,9 @@ Brief -- establish the referent, don't dwell. They need "reality exists; maps re
 # Your map
 
 <div class="maps two">
-<figure class="map" data-id="map-human"><div data-svg="art/maps/human.svg" data-label="A human's hand-drawn map: firm along worn paths from home, sketchy with question marks elsewhere, and a hatched unknown region"></div><figcaption>Your map (calibrated by contact)</figcaption></figure>
 <figure class="map" data-id="map-territory"><div data-svg="art/maps/territory.svg" data-label="The territory"></div><figcaption>The territory</figcaption></figure>
+<figure class="map" data-id="map-human"><div data-svg="art/maps/human.svg" data-label="A human's hand-drawn map: firm along worn paths from home, sketchy with question marks elsewhere, and a hatched unknown region"></div><figcaption>Your map (calibrated by contact)</figcaption></figure>
 </div>
-
 Note:
 Here's your map of that same landscape. Imperfect -- but calibrated by contact. You've walked some of this ground, and the paths between places you've been are well-worn. Where you haven't been, you know you haven't: honest gaps, "here be dragons." When you're not sure, you know you're not sure.
 
@@ -183,26 +279,55 @@ The audience should nod: this is how everyone relates to knowledge. The worn pat
 <!-- .slide: data-auto-animate -->
 # The fish's map
 
-<div class="maps three">
-<figure class="map" data-id="map-fish"><div data-svg="art/maps/fish.svg" data-label="The fish's map: every line bold and confident, detail dense in some regions and sparse or wrong in others"></div><figcaption>The fish's map (from books)</figcaption></figure>
-<figure class="map" data-id="map-human"><div data-svg="art/maps/human.svg" data-label="Your map"></div><figcaption>Your map</figcaption></figure>
+<div class="maps two">
 <figure class="map" data-id="map-territory"><div data-svg="art/maps/territory.svg" data-label="The territory"></div><figcaption>The territory</figcaption></figure>
+<figure class="map" data-id="map-fish"><div data-svg="art/maps/fish.svg" data-label="The fish's map: every line bold and confident, every landmark in some regions and only a few in others, some of them wrong"></div><figcaption>The fish's map (from books)</figcaption></figure>
 </div>
 
 Note:
-Drawn entirely from books, never surveyed. "Notice anything?" Pause -- let them find it before naming it.
+Now the fish's map of the same territory. Drawn entirely from books, never surveyed. "Notice anything?" Pause -- let them find it before naming it.
 
-Every line drawn with the same confident hand. No question marks, no "here be dragons." Where the books were thin there's less detail -- but the fish doesn't flag that as uncertainty. It just drew fewer features, with full confidence.
-
-What to spot (vs. the territory): the river runs the wrong way (Spatial); 3 lakes where there are 5 (Counting); a mainstream house in Regional Cooking; invented landmarks in Recent Events. Poetry is dense and right.
+What to spot (vs. the territory): Poetry has every landmark (6 of 6) -- and so does Everyday Cooking. Counting has 3 of the 6 lakes. Spatial has 2 of 6 mountains, and the river runs the wrong way. Family Recipes has one real landmark and a mainstream house that isn't there. Recent Events has invented landmarks. Each region has the same six landmarks in the territory, so you can read the coverage at a glance.
 
 Hallucination: familiar word -- use it, then deepen it. Not a perceptual glitch: the fish is always doing the same thing, completing patterns from its training. When the patterns line up with reality it looks like knowledge; when they don't, it looks like hallucination. It can't tell the difference, because it's doing the same thing either way.
 
-Training-story callback: the map's content is anatomy (the library); the uniform confident ink is temperament (the apprenticeship).
-
 Jaggedness: brilliant at poetry, hopeless at counting. Errors don't follow difficulty; they follow the density and quality of the books.
 
-Pivotal image -- give it time. Discovery, not lecture.
+---
+
+<!-- .slide: data-auto-animate -->
+# Your map vs. the fish's map
+
+<div class="maps two">
+<figure class="map" data-id="map-human"><div data-svg="art/maps/human.svg" data-label="Your map"></div><figcaption>Your map</figcaption></figure>
+<figure class="map" data-id="map-fish"><div data-svg="art/maps/fish.svg" data-label="The fish's map"></div><figcaption>The fish's map</figcaption></figure>
+</div>
+
+Note:
+Side by side: yours and the fish's. Look at the ink.
+
+Yours: firm where you've walked, sketchy and question-marked where you haven't, "here be dragons" where you've never been. You know where you're unsure.
+
+The fish's: every line drawn with the same confident hand. No question marks, no "here be dragons." Where the books were thin there's less detail -- but the fish doesn't flag that as uncertainty. It just drew fewer features, with full confidence.
+
+Training-story callback: the map's content is anatomy (the library); the uniform confident ink is temperament (the apprenticeship).
+
+Pivotal image -- give it time. Discovery, not lecture. Then walk a few regions: the fish first, then the map explains it.
+
+---
+
+# Poetry & Verse: the fish
+
+<div class="shots tall">
+<figure><img src="illustrations/jaggedness-A3-iambic-pentameter.png" alt="Prompt: write 2 Shakespearean verses about repairing a broken phone. Response: a polished verse in iambic pentameter"></figure>
+</div>
+
+Note:
+Pattern for each region: the fish first (react), then the map explains it.
+
+You saw this verse at the start of the section; here's what I asked for: "Write 2 Shakespearean verses about repairing a broken phone." Seconds. A human poet: a couple of hours, if they're good.
+
+Accurate and fast. Why? Next slide.
 
 ---
 
@@ -214,37 +339,38 @@ Pivotal image -- give it time. Discovery, not lecture.
 </div>
 
 Note:
-Walkthrough pattern for each case: map first (what do you predict?), then the capture. By the third or fourth case they should be predicting.
+Here the fish's map is *denser* than yours: every landmark is there. Most people don't write verse daily; the books are full of it. That's why it was good.
 
-Here the fish's map is *denser* than yours -- most people don't write verse daily; the books are full of it. Prediction: it'll be good. Is it?
-
-Order note: map-first is the current default; flipping to example-first (react, then the map explains) only means swapping slide pairs.
-If time is tight, the strongest three are Poetry, Spatial, Cooking.
+If time is tight, the strongest regions are Poetry, Counting and Family Recipes.
 
 ---
 
-# Poetry & Verse: the fish
+# Counting & Tracking: the fish
 
 <div class="shots tall">
-<figure><img src="illustrations/jaggedness-A3-iambic-pentameter.png" alt="Prompt: write 2 Shakespearean verses about repairing a broken phone. Response: a polished verse in iambic pentameter"></figure>
+<figure><img src="illustrations/jaggedness-B4-quantity-tracking.png" alt="A word problem: $30 split among wife and two kids; kids buy hotdogs and ride tickets; wife buys a $9 margarita and shares half. The model tracks the kids into debt and decides the wife's margarita cost her only $4.50 because she shared it"></figure>
 </div>
 
 Note:
-"Write 2 Shakespearean verses about repairing a broken phone." Seconds. A human poet: a couple of hours, if they're good.
+The letters at the start were one counting failure; here's a different kind -- keeping track of quantities. $30 split four ways, hotdogs, ride tickets, a $9 margarita shared.
 
-Accurate and fast, exactly where the books were dense.
+Watch the margarita: the wife paid $9, but because she shared half, the fish decides it only cost her $4.50. It tracked the words "shares half" instead of the money. Every step is stated with the same confident formatting.
+
+(The kids going into debt is the puzzle's own fault -- $7.50 doesn't cover $9 -- and the fish does catch that.)
 
 ---
 
-# Spatial Reasoning: the map
+# Counting & Tracking: the map
 
 <div class="maps two">
-<figure class="map"><div data-svg="art/maps/human.svg" data-zoom="spatial" data-label="Spatial Reasoning on your map: well-worn paths"></div><figcaption>Your map</figcaption></figure>
-<figure class="map"><div data-svg="art/maps/fish.svg" data-zoom="spatial" data-label="Spatial Reasoning on the fish's map: sparse, confident, and the river runs the wrong way"></div><figcaption>The fish's map</figcaption></figure>
+<figure class="map"><div data-svg="art/maps/human.svg" data-zoom="counting" data-label="Counting and Tracking on your map"></div><figcaption>Your map</figcaption></figure>
+<figure class="map"><div data-svg="art/maps/fish.svg" data-zoom="counting" data-label="Counting and Tracking on the fish's map: three lakes where the territory has five"></div><figcaption>The fish's map</figcaption></figure>
 </div>
 
 Note:
-You navigate space every waking minute -- worn paths everywhere. The fish learned space from text descriptions of space: sparse, and the river runs the wrong way. Same bold ink.
+Everyone counts; trivially familiar ground for you. The fish drew three of the six lakes -- boldly, with no sign that half are missing.
+
+Plant: remember this region. It comes back at station 8, with the letters.
 
 ---
 
@@ -259,80 +385,11 @@ Read the puzzle aloud; let the room solve it (the ball).
 
 The fish lays out the order correctly -- cube, spring/cup, ball, toy -- removes the toy, and *still* answers "the spring." Its own working contradicts its answer, and it doesn't notice. Confident, and wrong, in territory a child crosses daily.
 
----
-
-# Counting & Tracking: the map
-
-<div class="maps two">
-<figure class="map"><div data-svg="art/maps/human.svg" data-zoom="counting" data-label="Counting and Tracking on your map"></div><figcaption>Your map</figcaption></figure>
-<figure class="map"><div data-svg="art/maps/fish.svg" data-zoom="counting" data-label="Counting and Tracking on the fish's map: three lakes where the territory has five"></div><figcaption>The fish's map</figcaption></figure>
-</div>
-
-Note:
-Everyone counts; trivially familiar ground. The fish drew three lakes where the territory has five -- boldly.
-
-Plant: remember this region. It comes back at station 8 (strawberry).
+(No map slide for this one: by now the room can predict it -- two of six mountains, and the river runs the wrong way.)
 
 ---
 
-# Counting & Tracking: the fish
-
-<div class="shots tall">
-<figure><img src="illustrations/jaggedness-B4-quantity-tracking.png" alt="A word problem: $30 split among wife and two kids; kids buy hotdogs and ride tickets; wife buys a $9 margarita and shares half. The model tracks the kids into debt and decides the wife's margarita cost her only $4.50 because she shared it"></figure>
-</div>
-
-Note:
-$30 split four ways, hotdogs, ride tickets, a $9 margarita shared.
-
-Watch the margarita: the wife paid $9, but because she shared half, the fish decides it only cost her $4.50. It tracked the words "shares half" instead of the money. Every step is stated with the same confident formatting.
-
-(The kids going into debt is the puzzle's own fault -- $7.50 doesn't cover $9 -- and the fish does catch that.)
-
----
-
-# Recent Events: the map
-
-<div class="maps two">
-<figure class="map"><div data-svg="art/maps/human.svg" data-zoom="recent" data-label="Recent Events on your map: recently walked"></div><figcaption>Your map</figcaption></figure>
-<figure class="map"><div data-svg="art/maps/fish.svg" data-zoom="recent" data-label="Recent Events on the fish's map: filled in from pattern, with invented landmarks"></div><figcaption>The fish's map</figcaption></figure>
-</div>
-
-Note:
-You've walked this recently -- it's the news. The books ended before this territory existed, so the fish filled it in from pattern: invented landmarks, same ink.
-
-Plant: this region comes back at station 7 (web search).
-
----
-
-# Recent Events: the fish
-
-<div class="shots">
-<figure><img src="illustrations/confabulation-C4-current-events--world-series.png" alt="A terminal: 'Who won the 2026 World Series?' An older local model answers that the Phillies beat the Rays for their third title in four years, at Marlins Park"><figcaption>An older model, run locally</figcaption></figure>
-<figure class="fragment"><img src="illustrations/confabulation-C4-current-events--world-cup.png" alt="'Who won the world cup in 2026?' A current model starts to say the tournament hasn't occurred, notices today's date is after it, and offers to search"><figcaption>A current model</figcaption></figure>
-</div>
-
-Note:
-First: an older model running locally (ollama). "Who won the 2026 World Series?" A crisp, specific, entirely invented answer -- Phillies over the Rays, at Marlins Park. A true hallucination: filled in from pattern.
-
-(Click.) Second: a current model (Haiku), asked about the 2026 World Cup. It *starts* down the same road -- "the tournament hasn't occurred" -- then notices today's date is after it and pushes toward a web search instead.
-
-Two lessons: (1) temperament is changing -- newer fish are trained to notice the edge of the map more often; (2) the anatomy isn't: the books still ended, and the fix it reaches for is a fitting (web search), which is where station 7 picks up.
-
----
-
-# Everyday vs. Regional Cooking: the map
-
-<div class="maps two">
-<figure class="map"><div data-svg="art/maps/human.svg" data-zoom="regional,everyday" data-label="Cooking on your map: a home in Everyday Cooking with worn paths into Regional Cooking"></div><figcaption>Your map</figcaption></figure>
-<figure class="map"><div data-svg="art/maps/fish.svg" data-zoom="regional,everyday" data-label="Cooking on the fish's map: Everyday well populated; Regional sparse, with a mainstream house drifted in"></div><figcaption>The fish's map</figcaption></figure>
-</div>
-
-Note:
-One domain, split by source density. Everyday cooking: both maps well populated. Regional / family cooking: your map has a path if you grew up with it; the fish's is sparse, and what is there drifts toward the mainstream.
-
----
-
-# Everyday vs. Regional Cooking: the fish
+# Everyday Cooking vs. Family Recipes: the fish
 
 <div class="shots">
 <figure><img src="illustrations/source-density-D1-French.png" alt="'Can you provide a recipe for a French omelette?' A detailed recipe for omelette baveuse"><figcaption>Well documented</figcaption></figure>
@@ -351,6 +408,18 @@ French omelette: thousands of books, nailed in detail.
 (Click.) I had to check: Bradley Smoker does publish recipes, and none of them is a meat pie. The fish built a plausible bridge between two things it had read about.
 
 (Optional aside: a current model asked the same question said it had no recipe and guessed it was a family dish -- temperament varies between fish; the thin region is anatomy. Capture kept in `illustrations/source-density-D1-Bradley--refusal.png`, not on screen.)
+
+---
+
+# Everyday Cooking vs. Family Recipes: the map
+
+<div class="maps two">
+<figure class="map"><div data-svg="art/maps/human.svg" data-zoom="family,everyday" data-label="Cooking on your map: a home in Everyday Cooking with worn paths into Family Recipes"></div><figcaption>Your map</figcaption></figure>
+<figure class="map"><div data-svg="art/maps/fish.svg" data-zoom="family,everyday" data-label="Cooking on the fish's map: Everyday Cooking complete; Family Recipes almost empty, with a mainstream house drifted in"></div><figcaption>The fish's map</figcaption></figure>
+</div>
+
+Note:
+One domain, split by source density. Everyday cooking: both maps well populated -- the fish has all six landmarks. Family recipes: your map has a path if you grew up with them; the fish's has one real landmark, plus a house that isn't there (the smoker brand it drifted to).
 
 Close the walkthrough: the errors track source-text density, not difficulty. And the map gives no sign of which regions are reliable -- so when is it safe to use at all? (Station 5.)
 

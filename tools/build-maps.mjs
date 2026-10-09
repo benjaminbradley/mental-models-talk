@@ -7,7 +7,7 @@
 //   the same bold ink, plus a few invented ones.
 // Deterministic (seeded): rerunning produces identical files. Colors are CSS custom properties
 // (deck/theme/talk.css), so the maps must be inlined into the page (the deck's data-svg loader).
-// Usage: node tools/build-maps.mjs   -> deck/art/maps/{territory,human,fish}.svg
+// Usage: node tools/build-maps.mjs   -> deck/art/maps/{territory,human,fish,fish-cut}.svg
 // Spec: metaphor-imagery.md § The three-layer map/territory. Guide: deck/README.md § Artwork.
 import rough from 'roughjs';
 import { mkdir, writeFile } from 'node:fs/promises';
@@ -58,22 +58,24 @@ const REGIONS = [
   { id: 'spatial', r: 1, c: 0, label: ['Spatial', 'Reasoning'], color: 'green' },
   { id: 'counting', r: 1, c: 1, label: ['Counting &', 'Tracking'], color: 'purple' },
   { id: 'medicine', r: 1, c: 2, label: ['Medicine'], color: 'red' },
-  { id: 'regional', r: 2, c: 0, label: ['Regional', 'Cooking'], color: 'yellow' },
+  { id: 'family', r: 2, c: 0, label: ['Family', 'Recipes'], color: 'yellow' },
   { id: 'everyday', r: 2, c: 1, label: ['Everyday', 'Cooking'], color: 'yellow' },
   { id: 'recent', r: 2, c: 2, label: ['Recent', 'Events'], color: 'teal' },
 ];
 
-// Territory landmarks per region: [type, count]. The territory is detailed everywhere.
+// Territory landmarks per region: [type, count]. The territory is detailed everywhere, and
+// every focus region has the same number of landmarks, so each map's coverage reads at a glance
+// (6 of 6 = solid; 2 of 6 = thin).
 const FEATURES = {
-  poetry: [['tree', 9]],
-  history: [['house', 4], ['mountain', 3]],
+  poetry: [['tree', 6]],
+  history: [['house', 3], ['mountain', 3]],
   law: [['house', 6]],
-  spatial: [['mountain', 5]],
-  counting: [['lake', 5]],
+  spatial: [['mountain', 6]],
+  counting: [['lake', 6]],
   medicine: [['tree', 3], ['house', 3]],
-  regional: [['pine', 6]],
+  family: [['pine', 6]],
   everyday: [['house', 3], ['tree', 3]],
-  recent: [['lake', 2], ['house', 3]],
+  recent: [['lake', 2], ['house', 4]],
 };
 const OUTER_COUNT = 16; // faint landmarks in the landscape beyond the focus regions
 const RIVER = { // spatial region
@@ -269,7 +271,7 @@ LABEL_POS.recent[0] += 30;
 // Every real landmark, with a stable id. Maps pick from this list.
 const LANDMARKS = [];
 for (const g of REGIONS) {
-  const box = labelBox(g, LABEL_POS[g.id], 34), placed = [];
+  const box = labelBox(g, LABEL_POS[g.id], 44), placed = []; // roomy: the fish/human labels are larger
   for (const [type, n] of FEATURES[g.id]) {
     for (const p of scatter(base.polys[g.id], n, `terr-${g.id}-${type}`, { box, line: g.id === 'spatial' ? RIVER.territory : null, points: placed })) {
       placed.push(p); LANDMARKS.push({ id: `${g.id}-${LANDMARKS.length}`, region: g.id, type, p });
@@ -328,7 +330,7 @@ function territory() {
 
 // ---- human map: what lies along the paths of experience ---------------------------------
 // How many landmarks (nearest home first) this person has walked to, per region.
-const WALKED = { everyday: 6, regional: 4, counting: 4, spatial: 4, recent: 3, history: 1, poetry: 1, medicine: 1, law: 0, outer: 2 };
+const WALKED = { everyday: 6, family: 4, counting: 4, spatial: 4, recent: 3, history: 1, poetry: 1, medicine: 1, law: 0, outer: 2 };
 const NEAR_PATH = 36; // landmarks this close to a path are known too
 
 function humanPaths() {
@@ -443,21 +445,22 @@ function human() {
 
 // ---- fish map: drawn from books ---------------------------------------------------------
 // keep = share of the real landmarks the books covered; invent = confident landmarks that
-// are not in the territory (the few exceptions).
+// are not in the territory (the few exceptions). Aligned with the station 4 examples: the easy
+// cases (Poetry, Everyday Cooking) are complete; the hard ones are visibly thin.
 const FISH = {
-  poetry: { keep: 0.85 },
-  history: { keep: 0.75 },
-  law: { keep: 0.8 },
-  medicine: { keep: 0.7 },
-  everyday: { keep: 0.8 },
-  spatial: { keep: 0.4 },                                   // plus a river on the wrong course
-  counting: { keep: 0.6 },                                  // 3 of the 5 lakes
-  regional: { keep: 0.34, invent: [['house', 1]] },         // drifts toward the mainstream
+  poetry: { keep: 1 },                                      // 6 of 6: the sonnet
+  history: { keep: 0.83 },
+  law: { keep: 0.83 },
+  medicine: { keep: 0.83 },
+  everyday: { keep: 1 },                                    // 6 of 6: the French omelette
+  spatial: { keep: 0.34 },                                  // 2 of 6, plus a river on the wrong course
+  counting: { keep: 0.5 },                                  // 3 of the 6 lakes
+  family: { keep: 0.17, invent: [['house', 1]] },           // 1 of 6; a mainstream house drifts in
   recent: { keep: 0.34, invent: [['house', 1], ['tree', 1]] }, // filled in from pattern
   outer: { keep: 0.45 },
 };
 
-function fish() {
+function fish(opts = {}) {
   const ink = { stroke: 'var(--ink)', strokeWidth: 5, roughness: 0.35, bowing: 0.3 };
   let out = sheet({ ...ink, strokeWidth: 3 });
   out += shape('linearPath', [COAST], ink);
@@ -472,20 +475,51 @@ function fish() {
     const g = REGIONS.find((r) => r.id === region);
     const placed = real.map((l) => l.p); // invented landmarks never sit on a real one
     for (const [type, n] of f.invent ?? []) {
-      for (const p of scatter(base.polys[region], n, `fish-${region}-${type}`, { box: labelBox(g, LABEL_POS[region], 38), points: placed, spacing: 44 })) {
+      for (const p of scatter(base.polys[region], n, `fish-${region}-${type}`, { box: labelBox(g, LABEL_POS[region], 44), points: placed, spacing: 44 })) {
         placed.push(p); out += glyph(type, p, ink, false);
       }
     }
   }
   out += river(RIVER.fish, ink, false);
   const lab = { size: 38, css: `${FONT_HAND};font-weight:700;font-size:38px;fill:var(--ink);stroke:var(--parchment);stroke-width:6;paint-order:stroke` };
+  if (opts.cut) out += cutOut(); // under the labels: the region keeps its name, its contents are gone
   for (const g of REGIONS) out += label(g, LABEL_POS[g.id], lab);
-  return svgDoc('fish', out);
+  return svgDoc(opts.cut ? 'fish-cut' : 'fish', out);
+}
+
+// ---- fish map with a piece cut out (station 10: guardrails as unknown unknowns) ---------
+// A patch of History blanked out, outlined by a dotted cut line, with scissors partway round:
+// the solid stretch behind the scissors is already cut; the dotted stretch ahead is not yet.
+function cutOut() {
+  const [cx, cy] = [LABEL_POS.history[0] + 14, LABEL_POS.history[1] - 8], rx = 86, ry = 66;
+  const rand = rng('cut-blob'), n = 40, start = -0.75 * Math.PI; // scissors land bottom-right
+  const pts = Array.from({ length: n }, (_, i) => {
+    const a = start + (i / n) * Math.PI * 2, k = 0.9 + rand() * 0.14;
+    return [cx + Math.cos(a) * rx * k, cy + Math.sin(a) * ry * k];
+  });
+  const loop = [...pts, pts[0]];
+  const half = Math.round(n * 0.55);
+  const dash = { stroke: 'var(--ink)', strokeWidth: 4, roughness: 0.4, dash: '4 12' };
+  const cutEdge = { stroke: 'var(--ink)', strokeWidth: 4, roughness: 0.4 };
+  let out = shape('polygon', [pts], { stroke: 'none', fill: 'var(--parchment)', fillStyle: 'solid', roughness: 0.3 });
+  out += shape('linearPath', [loop.slice(0, half + 1)], cutEdge);
+  out += shape('linearPath', [loop.slice(half)], dash);
+  // scissors at the transition, blades pointing along the uncut (dotted) direction
+  const [x, y] = pts[half], [nx, ny] = pts[(half + 1) % n];
+  const deg = (Math.atan2(ny - y, nx - x) * 180) / Math.PI;
+  out += `<g transform="translate(${x.toFixed(0)} ${y.toFixed(0)}) rotate(${deg.toFixed(0)}) scale(0.75)" style="stroke:var(--ink);stroke-width:5;stroke-linejoin:round">`
+    + `<path d="M -14 10 C 10 -4, 44 -14, 76 -12 C 52 -2, 22 8, -6 16 Z" style="fill:#fff"/>`
+    + `<path d="M -14 -10 C 10 4, 44 14, 76 12 C 52 2, 22 -8, -6 -16 Z" style="fill:#fff"/>`
+    + `<path d="M -10 -12 L -26 -22 M -10 12 L -26 22" style="fill:none;stroke-width:8"/>`
+    + `<circle cx="-40" cy="-28" r="16" style="fill:var(--red)"/><circle cx="-40" cy="28" r="16" style="fill:var(--red)"/>`
+    + `<circle cx="-40" cy="-28" r="6" style="fill:var(--parchment)"/><circle cx="-40" cy="28" r="6" style="fill:var(--parchment)"/>`
+    + `<circle cx="0" cy="0" r="5" style="fill:var(--ink)"/></g>`;
+  return out;
 }
 
 await mkdir(OUT, { recursive: true });
-for (const [name, build] of [['territory', territory], ['human', human], ['fish', fish]]) {
-  seedCounter = hash(name) % 100000; // per-map seed stream, stable across runs
+for (const [name, build] of [['territory', territory], ['human', human], ['fish', fish], ['fish-cut', () => fish({ cut: true })]]) {
+  seedCounter = hash(name.replace('-cut', '')) % 100000; // per-map seed stream, stable across runs (fish-cut matches fish)
   const svg = build();
   await writeFile(join(OUT, `${name}.svg`), svg);
   console.log(`deck/art/maps/${name}.svg  ${(svg.length / 1024).toFixed(0)} KB`);

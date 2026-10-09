@@ -32,7 +32,7 @@ Then the spine claim, plainly: "Here's the claim this whole talk hangs on: anyth
 
 Beat. "So if it speaks our language this well -- is it like us?" End on the question; the goldfish is the answer.
 
-Spine: introduced here; felt from the inside at describe-and-draw (station 4); made literal at station 8; closed at station 12.
+Spine: introduced here; felt at station 4 (say what you want; the lazy genie); made literal at station 8; closed at station 12.
 
 ---
 

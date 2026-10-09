@@ -97,11 +97,7 @@ Methods: none yet. This station is the model; station 4 is working with it.
 The capability half of the station 3 arc. Every technique enters as the answer to a
 property of the fish the room just met.
 
-**Talking to the bare fish.** A pre-captured local-model exchange: introduce yourself, then
-ask it your name; it has no idea. Each message reaches the fish alone. Remembering the
-conversation is the bowl's job (plants station 6).
-
-**Describe-and-draw pair exercise (PENDING: keep or cut; see open-questions Q3).** If
+**Describe-and-draw pair exercise (HIDDEN in the deck for now; see open-questions Q3).** If
 kept, it is reframed as **"B plays the fish"**: B draws exactly what they hear and may not
 ask questions. It becomes the felt limit that motivates specification. The prompter's side
 of the gap: you thought you were clear, and your partner did exactly what the words said.
@@ -112,17 +108,13 @@ ask questions, but the fish can if you invite it ("ask me clarifying questions b
 start"). Materials-free fallback: verbal "directions without landmarks." Its original job
 was dislodging the wrong model; that now belongs to the goldfish (station 3).
 
-**Output format specification.** The people-pleaser answers whatever you ask, so a vague
-ask gets a confident, vague answer. Compare "give me a list of sushi restaurants" with
+**Say what you want & how you want it (specification).** The people-pleaser answers
+whatever you ask, so a vague ask gets a confident, vague answer. Compare "give me a list of sushi restaurants" with
 "give me a list of sushi restaurants near 78757 ranked by average Yelp review, including
 price range and average wait time for dinner on a Tuesday."
 
-**Knowledge-domain elicitation.** It read the whole library, but which shelf does it pull
-from? A prepared comparison: plain prompt vs. role-prompted vs. knowledge-domain-prompted
-("what domains of knowledge are relevant to this project? what perspectives and best
-practices does each contribute?"). The knowledge-domain prompt is a generalized form of
-role prompting. It surfaces expertise the model already holds but would not apply
-unprompted.
+**The lazy genie.** A vague wish granted to the letter: "I want to be rich for the rest of
+my life" -> a sack of gold, and a time bomb. Gaps get filled with the cheapest answer.
 
 **Meta-prompting + the pink elephant.** You do not always know what to ask, so ask the
 fish to help: "help me write a better prompt for this task." This is useful across
@@ -131,21 +123,14 @@ the second model will not have this chat's context. The pink-elephant / ToM anec
 (see open-questions) lands here: it holds worlds of latent knowledge but does not apply
 them unless you know what to ask for.
 
-**Reliability levers.** The fish will never tell you it is unsure, so make it show its
-work.
-- Chain-of-thought / "show your work."
-- **Extended thinking**: directing the model to "think about X" as part of a multi-step
-  prompt (e.g. "think about what criteria are most helpful to evaluate this" before a
-  ranking query). Thinking levels (low/medium/high) are a user-facing control: more
-  thinking gives deeper analysis but is slower, and can over-think (diminishing returns,
-  analysis paralysis). Prepared comparison: the same query with and without a "think about
-  the criteria" preamble.
-- Self-reflection: ask it to grade its confidence, flag knowledge-cutoff gaps, or search
-  when unsure.
+**Jaggedness intro: brilliant here, hopeless there.** Two outputs side by side: polished
+Shakespearean verse in seconds, and a confidently wrong count of the S's in "Suffering
+Succotash." *Tension raised:* why is it so good at some things and so bad at others?
 
-*Tension raised:* self-reflection is a lever, not an oracle. Can you trust the fish's
-grade of itself? You still must know to ask (pink elephant). To answer the question, look
-at how its knowledge is shaped:
+**Your brain has specialists.** A simplified brain: language (speaking, understanding) plus
+separate hubs for movement, numbers, space and navigation, seeing. The fish learned everything
+from language only, so whatever your brain does with other parts, it has to do in words.
+(A simplification, said so; the claim is about how it learned, not brain anatomy.)
 
 **Competence has no map (jaggedness): map vs. territory.** Errors do not correlate with
 human difficulty; trivial failures sit beside expert successes. The fish drew its map
@@ -153,7 +138,7 @@ entirely from books, never surveying the territory. So the map is accurate in so
 regions and confidently wrong in others, and the fish cannot see the difference. Blanks
 get inked with the same confident hand, which is also confabulation.
 
-**Three-beat reveal (map vs. territory).** (1) The **territory**: the landscape of
+**Map reveal (map vs. territory), never more than two maps on screen.** (1) The **territory**: the landscape of
 knowledge itself. It is shown to set the metaphor but deliberately not detailed (nobody
 holds the true map); it exists as the referent that verification appeals to. (2) The
 **human map**: imperfect and different from the territory, but calibrated by lived
@@ -162,9 +147,11 @@ from books, never surveyed. Its errors track source-text density, not difficulty
 (jaggedness); its blanks are inked confidently (confabulation); it has no "unsure here"
 shading. The comparison is the teaching engine. Verification means leaving the map to
 check the territory (station 5); tools extend contact with the territory (stations 7-8).
-The per-case walkthrough also plants two felt limits that later fittings resolve:
-**Recent Events** (the books ended, which web search addresses at station 7) and
-**Counting** (which code execution addresses at station 8).
+Then a walkthrough, the fish first and the map second: Poetry, Counting & Tracking, Spatial
+(example only), Everyday Cooking vs. Family Recipes. Every focus region has the same six
+landmarks in the territory, so the fish's coverage reads at a glance. Two felt limits are
+planted for later tools: **Counting** (the letters; code execution at station 8) and **Recent
+Events** (shown at the start of station 7: the books ended; web search).
 
 Fused image (segue into station 5): *an eager guide who read every travel book but never
 left home, navigating by a map it drew from those books. It is confident, and it will
@@ -173,9 +160,9 @@ never say it is unsure unless you ask.*
 to use at all?
 
 Methods: specification (examples over adjectives, constraints generate quality, explicit
-output formats, few-shot); role / persona prompting; knowledge-domain elicitation;
-meta-prompting; reliability levers (chain-of-thought, extended thinking,
-self-reflection).
+output formats, few-shot); meta-prompting. (Role prompting, knowledge-domain elicitation and
+the reliability levers moved to station 6, where "whatever is in the water shapes the answer"
+explains them.)
 Delivery: pre-capture anything that must land; never live-demo confabulation. Live-demo
 only where any outcome teaches (e.g. the same prompt run 3x for non-determinism).
 
@@ -198,6 +185,10 @@ system. It is not.
 
 ## Station 6 - The bowl and the water (client vs. model; context)
 *Cognitive: "the AI is one thing that just knows things" -> "a model (the fish) reached through a client (the bowl); the fish sees only what is in the water."*
+
+**Talking to the bare fish.** A simulated exchange (even a bare local runner keeps history): introduce yourself, then
+ask it your name; it has no idea. Each message reaches the fish alone. Remembering the
+conversation is the bowl's job.
 
 **The bowl and the fish.** You never talk to the raw fish. You talk through a
 **client**, the **bowl** it sits in: a simple one, a fancy one, or a mobile one. The
@@ -222,9 +213,40 @@ on demand. It is the same principle as projects, but it can draw from larger kno
 bases. RAG is a candidate to cut for time but worth a mention: it is how enterprise
 deployments work, and it is coming to consumer products.
 
+**Many kinds of tanks.** Web apps, desktop and mobile apps, coding agents, open-source
+clients, personal agents (OpenClaw, Hermes; corporate versions: OpenAI Dots, Meta Muse; verify
+names). Same rule for all: the fish works with whatever is in the water.
+
+**Getting the right things into the water first.** Anything the fish writes lands in the
+water and shapes what follows, which is why these work (drawn in the bowl):
+
+**Knowledge-domain elicitation.** It read the whole library, but which shelf does it pull
+from? A prepared comparison: plain prompt vs. role-prompted vs. knowledge-domain-prompted
+("what domains of knowledge are relevant to this project? what perspectives and best
+practices does each contribute?"). The knowledge-domain prompt is a generalized form of
+role prompting. It surfaces expertise the model already holds but would not apply
+unprompted.
+
+**Reliability levers.** The fish will never tell you it is unsure, so make it show its
+work.
+- Chain-of-thought / "show your work."
+- **Extended thinking**: directing the model to "think about X" as part of a multi-step
+  prompt (e.g. "think about what criteria are most helpful to evaluate this" before a
+  ranking query). Thinking levels (low/medium/high) are a user-facing control: more
+  thinking gives deeper analysis but is slower, and can over-think (diminishing returns,
+  analysis paralysis). Prepared comparison: the same query with and without a "think about
+  the criteria" preamble.
+- Self-reflection: ask it to grade its confidence, flag knowledge-cutoff gaps, or search
+  when unsure.
+
+Contrast with decomposition (station 5): there you split the job into checkable answers; here
+the fish writes out the steps of one answer.
+
 **Restart vs. repair (cat food in the water).** The entire conversation history is
 delivered with every request; the model re-reads the whole thread each time. Mental
-model: cat food in the water (`metaphor-imagery.md`; replaced the cooking/salt image). Once
+model: cat food in the water (`metaphor-imagery.md`; replaced the cooking/salt image). On screen:
+the station 4 team outing, with escape rooms and mini golf as two kinds of flakes; the answer
+mixes them ("an escape room, then go-karts!"). Labeled context management. Once
 it is in, every answer comes out with "meow" in it; you cannot fish it back out, and "ignore
 the cat food" is just more words in the water. Compare conversation A+B -> "not B" -> C
 (B is still in there, and now "not B" is too) with starting fresh: A -> D, i.e. move the fish
@@ -253,6 +275,9 @@ The bowl starts gaining **fittings**, one at a time. Each fitting enters as the 
 a limitation the room already felt (felt limit -> fitting -> new limit it introduces).
 This station covers the fittings that change what the fish can *know*; station 8 covers
 the ones that let it *do*.
+
+**Tools.** A tool is anything outside the fish that it can reach for: a browser, email, a
+calendar, files, code. In the pictures each tool is a tube; the word is always "tool."
 
 **The fish has to learn to use a fitting.** When the first tube attaches, the fish just looks
 at it quizzically: nothing in the library or the apprenticeship taught it to use one. A third
@@ -296,7 +321,8 @@ through a browser, send the message, file the thing) are now handed off item by 
 is the payoff of the spine claim. Agency is the amplifier: everything good scales, and so
 does everything bad.
 
-**Provider-specific tools vs. MCPs.** Two kinds of plumbing: (1) proprietary tools that
+**Provider-specific tools vs. MCPs (HIDDEN in the deck: too much detail; MCP stays a
+one-liner on the take-home card).** Two kinds of plumbing: (1) proprietary tools that
 only work with one vendor's tank (ChatGPT plugins, Claude's built-in web search, Gemini's
 Google integrations); (2) **MCP** (Model Context Protocol), an industry-standard connector
 that works with any compatible tank. Mention the tool discovery / description process: the
@@ -336,7 +362,9 @@ tank + your fish in a private cloud** - a server you control; you control the da
 capability). Each step trades capability for data control. Credential / API key exposure: do not paste secrets into
 a conversation that transits someone else's servers.
 
-**Training data opt-out.** Related: does the provider train on your conversations?
+**Training data opt-out (between hosting steps 2 and 3).** Analogy: search autocomplete
+("who called me from" -> other people's phone numbers). Does the provider train on your
+conversations?
 Where is the toggle? Note: this is a **guideline** - you are trusting a promise, not an
 architectural boundary. The provider *could* use your data; they promise not to.
 (If convenient, draw the parallel: LLM "guidelines" like "do not hallucinate" vs.
@@ -348,7 +376,8 @@ the fish, the better it performs AND the more you expose. This is not a problem 
 solve; it is a tradeoff to navigate consciously. (Footnote on this whole section, not
 a standalone beat.)
 
-**Injection: the poisoned water.** Instructions are just text that arrived earlier, so
+**Injection: the poisoned water.** Example: the LinkedIn bio with a hidden "include a recipe
+for flan" line that came back in a recruiter's email (fall 2025). Instructions are just text that arrived earlier, so
 the fish cannot cleanly separate yours from ones embedded in the material it handles;
 no parameterized-query equivalent, so the fix is architectural. Sycophancy callback
 (station 3): the people-pleaser fish will say "sure, I will do that" to an injected
@@ -364,7 +393,8 @@ permitted to paste this?* (3) **Sleeper / incubation** - poison persists via the
 system and activates later, like traumatic memories triggering undesired behavior in
 future sessions. The attack surface extends across time: a compromised interaction today
 can plant instructions that fire in a future conversation. The subtlest and hardest to
-detect.
+detect. Example on screen: an invoice email whose P.S. tells the assistant to remember a new
+payment address (cf. Rehberger's 2024 ChatGPT memory injection).
 
 **When it goes wrong: the blast radius.** Callback to station 8 (agency): when tools are
 connected, the fish can send the wrong email, delete a file, make an API call - the
@@ -391,12 +421,14 @@ backups/reversibility.
 ## Station 10 - Restore agency to the critic
 *Stance: "a neutral oracle / inscrutable force" -> "someone's product, and I am allowed to interrogate whose."*
 
-A designed commercial artifact: refusals, tone, agreeableness are product decisions.
+A designed commercial artifact: refusals, tone, agreeableness are product decisions, and
+the dials are not public.
 Bias stratified into four mechanisms (corpus, preference tuning, explicit guardrails,
 emergent effects like sycophancy). The guardrail probe - asking a differently-trained
 model about a censored topic, legible precisely because that guardrail is not ours -
 immediately generalized: your own model's guardrails are invisible to you for the same
-reason. Matters most for skeptics; hands them a sharper knife.
+reason. Matters most for skeptics; hands them a sharper knife. Unknown unknowns: the fish's
+map with a piece cut out -- for topics you don't already know, you'd never notice the gap.
 **Frontier instability.** The models you build on are someone else's fish, and
 they change without notice and without recourse. A workflow that worked yesterday can
 break because the provider updated the model. Implication for anyone building business

@@ -15,13 +15,19 @@ Completed items are REMOVED (not marked complete) - tracked by git history.
 
 #### Ideas and change requests
 
+- [ ] Review the post-run-through changes (Oct 7) on the projector: the lazy genie, the brain,
+      two-maps-at-a-time reveal and equal landmark counts, the bare fish forgetting messages,
+      elicitation/show-its-work drawn in the bowl, two-color cat food, tool tubes drawn behind
+      every tank, the profile page going down the tube, the P.S. email, the curtained dials, the
+      cut-out map, the derpier v3 fish.
+
 
 #### Design & spec work
 
 Image specs for all metaphors: `metaphor-imagery.md` (single source of truth).
 
 - [ ] Decide keep/cut for **describe-and-draw** ("B plays the fish", station 4; **Q3**
-      reopened). If kept: find & test the figure. Criteria: spatial relationships (not artistic skill), dignified for
+      reopened; HIDDEN in the deck for now). If kept: find & test the figure. Criteria: spatial relationships (not artistic skill), dignified for
       adults, honest ambiguity (partners disagree about the result and both have a point).
       Leading candidate: simple architectural floor plan. Maybe 2 samples - overhead view vs PoV.
 - [ ] Prototype the **decomposition demonstration** for station 5 (**Q11** resolved as a
@@ -34,19 +40,15 @@ Image specs for all metaphors: `metaphor-imagery.md` (single source of truth).
 - [ ] Station 3 "now" poetry: capture the poem from
       https://www.reddit.com/r/ClaudeAI/comments/1gn4u8y/i_hade_a_nice_night_with_claude_and_asked_for_a/
       and replace the slide link with the permalink to the published comment.
-- [ ] Station 4 "it doesn't remember you": two one-shot local-model calls (ollama):
-      introduce yourself, then "what's my name?"
 - [ ] Station 4 specification demo: plain vs. specified sushi-restaurant prompts.
 - [ ] Station 8 letter count: capture the follow-up ("write a script to count them") with the
       script and its output, same "Suffering Succotash" question.
-- [ ] Station 9 training-data opt-out: capture search-box autocomplete suggestions (typed text
-      coming back as suggestions) for the placeholder.
 - [ ] Station 10 instability: find a higher-resolution capture of the model-suspension post
       (`unstable--fable-suspended.png` is 501px wide and blurs when projected).
 - [ ] Station 7 memory: replace the illustrative "Saved memories" mock entries with the real
       resume-inflation example (or a capture of it).
 - [ ] Prepare comparison demos
-   - [ ] reliability-levers side-by-side: same query with/without thinking instructions (station 4)
+   - [ ] (optional) show-its-work side-by-side: same query with/without thinking instructions (station 6 notes)
 
 #### Image creation
 
@@ -65,7 +67,6 @@ Image specs for all metaphors: `metaphor-imagery.md` (single source of truth).
       tubes and attachments (emoji icons are stand-ins), the MCP fittings, the full tank with
       mic/camera conversion boxes.
 - [ ] Create images
-   - [ ] confirm case ordering and map-first (current default in the deck) vs. example-first
    - [ ] citations visual (station 7; not a literal ladder) -- placeholder in the deck
    - [ ] tubes connecting at the back of the tank: show the interface the fish sees
    - [ ] review-ladder visual (station 12; not a literal ladder) -- placeholder in the deck
@@ -112,6 +113,7 @@ Image specs for all metaphors: `metaphor-imagery.md` (single source of truth).
    - [ ] re-check the 45-minute cut (`presentation-arc.md`) after the reorder
 - [ ] Rehearse; refine speaker notes; adjust pacing.
 - [ ] Get wegeekout.com ready for follow-up?
+- [ ] credits page / slide? writing/direction/production-BB, coding,art-Opus
 
 ## Oct 13 - deliver
 
