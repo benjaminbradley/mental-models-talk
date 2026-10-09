@@ -35,6 +35,9 @@ This creates `slides/02-demystify.md` from a template and appends it to `manifes
 - **Source of truth:** the station files own everything concrete: on-screen text, examples,
   slide order, visual composition, speaker notes. Upstream docs stay at concept level (see
   `../README.md` § Documents).
+- **Contact:** on anything published or web-based (slides, Pages), use the contact form
+  (https://wegeekout.com/contact-me/), never the email address; the email may appear only on
+  the printed take-home card.
 - The first heading of each slide is its title (the phone shows the next slide's title).
 - Speaker notes: everything after a line starting `Note:` until the next `---`.
   Narration goes first (key phrases, not a script), then `Tone:` / `Timing:` lines as useful.

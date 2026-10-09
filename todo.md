@@ -76,7 +76,7 @@ Image specs for all metaphors: `metaphor-imagery.md` (single source of truth).
 
 #### Full review
 
-- [ ] Full review pass on `slides-outline.md` (after all above are done)
+- [ ] Full review pass on the deck (after all above are done)
 
 ### Other pre-talk work
 
@@ -90,6 +90,8 @@ Image specs for all metaphors: `metaphor-imagery.md` (single source of truth).
 
 - [ ] Station 1 harms: replace the emoji tiles with photos (datacenter, water, labor,
       provenance, power).
+- [ ] Station 10 guardrail probe: optionally highlight the "limited verifiable historical
+      information" line in the thinking trace.
 - [ ] Station 1 harms: keep the closed box visible in the corner on later slides (persistent
       reminder), not only on its own slide.
 
