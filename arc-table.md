@@ -36,7 +36,7 @@ activity (pair/group/individual); *demo* = live or pre-captured demonstration;
 | 5 | When is it safe to use? | disoriented -> holding one durable tool | stabilization | verification asymmetry | *socratic:* when IS it safe? |
 | 5 | Sort your own work *(hidden)* | | | | *exercise:* individual, then pair |
 | 5 | Decompose before you start | | | decomposition | *demo* |
-| 6 | It doesn't remember you | "one thing that just knows" -> "model + client; sees only the water" | | | |
+| 6 | It doesn't remember you | "one thing that just knows" -> "model + app; sees only the water" | | | |
 | 6 | The bowl and the fish | | | | *shout-out:* fish or bowl? |
 | 6 | The context window | | | context engineering; document hygiene | |
 | 6 | Which shelf does it pull from? | | | role prompting; knowledge-domain elicitation | |

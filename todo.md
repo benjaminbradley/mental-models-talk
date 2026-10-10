@@ -120,7 +120,7 @@ What each metaphor image means: `metaphor-imagery.md`; how each slide composes i
    - [ ] assess station 4 density -- after the reorder it carries the (pending) exercise, four technique families, and the map/territory reveal + walkthrough; confirm it fits or identify what to defer
    - [ ] re-check the 45-minute cut (`presentation-arc.md`) after the reorder
 - [ ] Rehearse; refine speaker notes; adjust pacing.
-- [ ] Verify current product names on the slides (client tiles and personal agents at
+- [ ] Verify current product names on the slides (app tiles and personal agents at
       station 6, vendor names at station 9).
 - [ ] Get wegeekout.com ready for follow-up?
 - [ ] credits page / slide? writing/direction/production-BB, coding,art-Opus

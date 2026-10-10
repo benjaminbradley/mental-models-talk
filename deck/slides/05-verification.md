@@ -56,6 +56,8 @@ Useful regardless of stance -- skeptics and enthusiasts both have work. The exer
 
 # Decompose before you start
 
+<p class="fragment"><span class="term">task decomposition</span></p>
+
 <div class="versus decompose">
 <div class="beware">
 <h3>One big ask</h3>

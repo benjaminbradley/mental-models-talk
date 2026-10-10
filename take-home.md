@@ -31,18 +31,18 @@ card fits far fewer than this).
 - **Ask it to search** - "tell me about X" answers from training data (and any sources it
   lists may be invented); "search for info on X" uses web search and returns real links.
   Click one: the links are real, its summary of them may not be.
-- **Decomposition** - break a complex task into sub-tasks before starting, so each
+- **Decomposition / task decomposition** - break a complex task into sub-tasks before starting, so each
   piece can be verified independently. Distinct from iteration (which refines after).
-- **Context engineering** - curate what is in the window; garbage in, garbage out.
+- **Context engineering / context management** - curate what is in the window; garbage in, garbage out.
 - **Memory & instruction hierarchy** - provider instructions (invisible) -> your custom
   instructions -> memory -> your prompt. Know the stack.
 - **Memory audit** - review what the model has stored about you; delete what should
   not persist. It may store things you did not intend.
 - **Restart vs. repair** - a derailed thread is often cheaper to abandon than to fix.
   The whole conversation is re-read every turn; you cannot fish the cat food back out.
-- **Custom GPTs / Gems** - a client someone else set up, with their instructions inside.
+- **Custom GPTs / Gems** - an app someone else set up, with their instructions inside.
 - **RAG** - the system pulls the right reference material into context on demand.
-- **Tool use** - web search, email, calendar, files, code: the model decides when to reach
+- **Tool use / tool calling** (also: function calling) - web search, email, calendar, files, code: the model decides when to reach
   for a tool by reading the tool's description.
 - **MCP** (Model Context Protocol) - an industry-standard way to connect a tool once and use
   it from any compatible app.
@@ -66,23 +66,23 @@ card fits far fewer than this).
 - **Language is the interface** - anything you can specify clearly enough in language,
   it can do.
 - **The tacit bound** - test: could you teach it to a competent stranger over the phone?
-- **Jaggedness** - competence has no map; brilliant and clueless sit side by side.
-- **Confabulation** - confident, fluent, and wrong; fluency and accuracy are independent.
+- **Jaggedness / the jagged frontier** - competence has no map; brilliant and clueless sit side by side.
+- **Confabulation / hallucination** - confident, fluent, and wrong; fluency and accuracy are independent.
 - **Temperament vs. anatomy** - trained traits (confidence, agreeableness) vary by model
   and are changing; structural traits (no grounding, jagged competence) stay.
 - **Verification asymmetry** - lean on it where checking is cheaper than doing; beware
   where it is not.
 - **Context is a bounded window** - what is in it exists; it can be poisoned, including
   by you.
-- **Client vs. model** - the bowl vs. the fish; the interface is not the intelligence, and
-  each client wires up different capabilities.
-- **Injection** - instructions are just text that arrived earlier; it cannot tell yours
+- **App vs. model** - the bowl vs. the fish; the app (also called the client or harness) is
+  not the intelligence, and each app wires up different capabilities.
+- **Prompt injection** - instructions are just text that arrived earlier; it cannot tell yours
   from the material's.
 - **The lethal trifecta** - private data + untrusted content + outbound channel = exploitable.
 - **The enforcement hierarchy** - architecture (a wall: it cannot reach it) >
   guidelines (a sign: human or model discipline). If a guideline is your only protection,
   you have a vulnerability, not a control.
-- **Agency is the amplifier** - a chatbot says; an agent does. Bound the blast radius;
+- **Agents: agency is the amplifier** - a chatbot says; an agent does. Bound the blast radius;
   least privilege.
 - **Hosting matters** - local, private cloud, or frontier cloud; each tier trades
   capability for data control. Know where your data goes. Do not paste credentials
@@ -102,7 +102,7 @@ card fits far fewer than this).
   only after they are gone.
 - **Blast radius and recovery** - if everything goes wrong, what would you lose?
   Backups, version control, sandbox environments are architectural safety nets.
-- **Draft vs. send** - human-in-the-loop is a deliberate design choice, not an
+- **Draft vs. send / human in the loop** - human-in-the-loop is a deliberate design choice, not an
   afterthought. The accountability question in one toggle.
 - **Accountability is the new bottleneck** - do you stand behind it? The review ladder
   ends in a person.

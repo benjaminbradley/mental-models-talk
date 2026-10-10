@@ -61,13 +61,13 @@ Talking directly to the fish -- no app, no bowl. (Simulated: in practice even a 
 </svg>
 </div>
 <div>
-<p class="fragment" data-fragment-index="0">The bowl = <span class="term">the client</span> (the app)</p>
+<p class="fragment" data-fragment-index="0">The bowl = <b>the app</b></p>
 <p class="fragment">The water = <span class="term">the context</span> (everything the fish can see)</p>
 </div>
 </div>
 
 Note:
-Just now, talking to the bare fish, it couldn't remember your name. (Click.) Now give it a bowl. The bowl is the app you actually use -- the client. It keeps the conversation and pours the whole thing back into the water every time you send a message.
+Just now, talking to the bare fish, it couldn't remember your name. (Click.) Now give it a bowl. The bowl is the app you actually use. It keeps the conversation and pours the whole thing back into the water every time you send a message.
 
 (Click through the messages.) Each message is added to the water, in order. Now it "remembers" your name -- not because the fish remembers anything, but because the bowl handed it the whole conversation again.
 
@@ -121,10 +121,10 @@ The fish didn't change. The bowl did.
 </svg>
 </div>
 
-The fish = <span class="term">the model</span> &nbsp; The bowl = <span class="term">the client</span>
+The fish = <span class="term">the model</span> &nbsp; The bowl = <b>the app</b>
 
 Note:
-You never talk to the raw fish. You always talk through a client -- the bowl it sits in. ChatGPT, Claude, Gemini: the app is the bowl; the model inside is the fish. A simple bowl, a fancy tank, a travel jar -- different clients, same fish. (Product names: verify before the talk.)
+You never talk to the raw fish. You always talk through an app -- the bowl it sits in. ChatGPT, Claude, Gemini: the app is the bowl; the model inside is the fish. A simple bowl, a fancy tank, a travel jar -- different apps, same fish. (Product names: verify before the talk.)
 
 When something goes wrong, the first diagnostic question: is that the fish or the bowl?
 
@@ -174,6 +174,7 @@ Callback planted for station 10: choosing well means choosing the fish AND the b
 <li>instructions</li>
 </ul>
 <p class="fragment"><span class="term">context window</span> = how much water the bowl holds</p>
+<p class="fragment">Choosing what goes in: <span class="term">context engineering</span></p>
 </div>
 </div>
 
@@ -269,9 +270,9 @@ Methods: role prompting, knowledge-domain elicitation (a generalized form of rol
 </div>
 <div>
 <ul>
-<li class="fragment" data-fragment-index="0"><b>Chain-of-thought:</b> "Show your work."</li>
-<li class="fragment" data-fragment-index="1"><b>Extended thinking:</b> "Think about what criteria matter here, then answer."</li>
-<li class="fragment" data-fragment-index="2"><b>Self-reflection:</b> "How confident are you? What might you be wrong about?"</li>
+<li class="fragment" data-fragment-index="0"><span class="term">chain-of-thought</span> "Show your work."</li>
+<li class="fragment" data-fragment-index="1"><span class="term">extended thinking</span> "Think about what criteria matter here, then answer."</li>
+<li class="fragment" data-fragment-index="2"><span class="term">self-reflection</span> "How confident are you? What might you be wrong about?"</li>
 </ul>
 <p class="lede fragment" data-fragment-index="3">Whatever it writes first lands in the water, and shapes the answer.</p>
 </div>

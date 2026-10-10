@@ -84,7 +84,7 @@ Exercise: evaluate the artifact. Socratic: "How would you check?" Cognitive shif
 </div>
 </div>
 
-<p class="lede">Draft = the fish works. <span class="fragment">Send = you own it.</span></p>
+<p class="lede">Draft = the fish works. <span class="fragment">Send = you own it. <span class="term">human in the loop</span></span></p>
 
 Note:
 Callback to station 8: the difference between "draft this email" and "send this email" is the entire accountability question in one toggle.

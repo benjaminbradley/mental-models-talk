@@ -39,7 +39,7 @@ Beat. "B wasn't allowed to ask questions. The fish is -- if you invite it: 'ask 
 <figure class="fragment"><img src="illustrations/specify--local-sushi-details.png" alt="'Give me a list of sushi restaurants near 78757, ranked by average Yelp review, with price range and average wait time for dinner on a Tuesday.' A ranked shortlist near that ZIP code, each with a Yelp rating, price per person and a Tuesday-dinner wait estimate"><figcaption>Specified prompt</figcaption></figure>
 </div>
 
-Examples beat adjectives. Constraints generate quality. <!-- .element: class="fragment lede" -->
+<p class="lede fragment">Examples beat adjectives. Constraints generate quality. <span class="term">prompt engineering</span></p>
 
 Note:
 The people-pleaser answers whatever you ask -- so a vague ask gets a confident, vague answer.
@@ -145,7 +145,7 @@ The new chat has never heard of mini golf. Now the very first thing it reads is 
 <p class="fish fragment"><span class="who">Fish</span>Prompt: "Research <b class="esc">escape rooms</b> in Austin for a team outing."</p>
 </div>
 
-"Help me write a better prompt for this task." <!-- .element: class="fragment lede" -->
+<p class="lede fragment">"Help me write a better prompt for this task." <span class="term">meta-prompting</span></p>
 
 Note:
 Same request, one extra sentence: think about what the other reader knows. The mini golf is gone.
@@ -165,7 +165,7 @@ Bridge: meta-prompting depends on knowing what to ask. But the fish isn't equall
 <figure class="fragment"><img src="illustrations/jaggedness-B1-letters--output.png" alt="The model says 'Suffering Succotash' has 4 S's, listing a fourth S that isn't there"><figcaption>The S's in "Suffering Succotash" (there are 3)</figcaption></figure>
 </div>
 
-<p class="lede fragment" style="margin-top: 50px">Why is it so good at some things, and so bad at others?</p>
+<p class="lede fragment" style="margin-top: 50px">Why is it so good at some things, and so bad at others? <span class="term">jagged frontier</span></p>
 
 Note:
 Two answers from the same fish. Left: Shakespearean verse about fixing a broken phone -- polished, in seconds.
@@ -283,13 +283,14 @@ The audience should nod: this is how everyone relates to knowledge. The worn pat
 <figure class="map" data-id="map-territory"><div data-svg="art/maps/territory.svg" data-label="The territory"></div><figcaption>The territory</figcaption></figure>
 <figure class="map" data-id="map-fish"><div data-svg="art/maps/fish.svg" data-label="The fish's map: every line bold and confident, every landmark in some regions and only a few in others, some of them wrong"></div><figcaption>The fish's map (from books)</figcaption></figure>
 </div>
+<p class="fragment"><span class="term">hallucination</span> <span class="term">confabulation</span></p>
 
 Note:
 Now the fish's map of the same territory. Drawn entirely from books, never surveyed. "Notice anything?" Pause -- let them find it before naming it.
 
 What to spot (vs. the territory): Poetry has every landmark (6 of 6) -- and so does Everyday Cooking. Counting has 2 of the 6 lakes. Spatial has 2 of 6 mountains, and the river runs the wrong way. Family Recipes has one real landmark and a mainstream house that isn't there. Recent Events has invented landmarks. Each region has the same six landmarks in the territory, so you can read the coverage at a glance.
 
-Hallucination: familiar word -- use it, then deepen it. Not a perceptual glitch: the fish is always doing the same thing, completing patterns from its training. When the patterns line up with reality it looks like knowledge; when they don't, it looks like hallucination. It can't tell the difference, because it's doing the same thing either way.
+(Click.) Hallucination: familiar word -- use it, then deepen it. (Confabulation is the more precise term: filling a gap with a confident, plausible story.) Not a perceptual glitch: the fish is always doing the same thing, completing patterns from its training. When the patterns line up with reality it looks like knowledge; when they don't, it looks like hallucination. It can't tell the difference, because it's doing the same thing either way.
 
 Jaggedness: brilliant at poetry, hopeless at counting. Errors don't follow difficulty; they follow the density and quality of the books.
 

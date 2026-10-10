@@ -120,14 +120,14 @@ which refines after; that lives at station 6).
 *Tension raised:* we have been treating the fish as the whole system. It is not.
 Methods: verification asymmetry; decomposition.
 
-## Station 6 - The bowl and the water (client vs. model; context)
-*Cognitive: "the AI is one thing that just knows things" -> "a model reached through a client; the model sees only what is in the context."*
+## Station 6 - The bowl and the water (app vs. model; context)
+*Cognitive: "the AI is one thing that just knows things" -> "a model reached through an app; the model sees only what is in the context."*
 
-- **The bare model remembers nothing;** remembering the conversation is the client's job.
-- **Client vs. model:** vendors sell them bundled, so people conflate them; they are
+- **The bare model remembers nothing;** remembering the conversation is the app's job.
+- **App vs. model** (the app is also called the client or harness): vendors sell them bundled, so people conflate them; they are
   separable. Diagnostic: "is that the fish or the bowl?" (reasoning failures are usually
-  the model; missing capabilities are usually the client). Callback at station 10:
-  benchmarks test the model, not your client.
+  the model; missing capabilities are usually the app). Callback at station 10:
+  benchmarks test the model, not your app.
 - **Context:** bounded; what is in it exists to the model, what is outside does not.
   Context engineering and document hygiene.
 - **Whatever is in the context shapes the answer,** which is why these work:
@@ -137,7 +137,7 @@ Methods: verification asymmetry; decomposition.
   decomposition: there you split the job; here the model writes out the steps of one answer.
 - **Instructions, introduced by a need** (a behavior you keep re-asking for): your custom
   instructions and the provider's system instructions are both in the context before you
-  type. A Custom GPT / Gem is a client someone else set up. RAG pulls documents into the
+  type. A Custom GPT / Gem is an app someone else set up. RAG pulls documents into the
   context on demand.
 - **Restart vs. repair:** the whole history is re-read on every turn, so a mistake in the
   context cannot be taken back out, and "ignore that" only adds more words. A poisoned
@@ -193,9 +193,9 @@ its slide is hidden).
 ## Station 9 - Blast radius: security & data
 *Cognitive/stance: "a handy tool" -> "a system with a blast radius I have to bound."*
 
-- **Many kinds of clients,** all following the same rule; they need not live in the same
+- **Many kinds of apps,** all following the same rule; they need not live in the same
   place as the model.
-- **Hosting: where do the client and the model live?** Four tiers from frontier cloud to
+- **Hosting: where do the app and the model live?** Four tiers from frontier cloud to
   fully local; each trades capability for data control. Credentials: never paste secrets
   into a conversation that transits someone else's servers.
 - **Training-data opt-out** is a guideline (a promise), not an architectural boundary.

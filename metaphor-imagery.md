@@ -31,7 +31,7 @@ Artwork approach: `open-questions-and-ideas.md` Q16.
 | The lazy genie | a vague wish granted to the letter, cheapest way | 4 |
 | Brain with specialist hubs, all but language fading | the fish learned from language alone | 4 |
 | Territory / your map / the fish's map | knowledge itself / calibrated human knowledge / the model's knowledge | 4 |
-| The bowl | the client | 6 |
+| The bowl | the app (client, harness) | 6 |
 | The water; its level | the context; the context window | 6 |
 | Words floating in the water | the conversation so far, all re-read each turn | 6 |
 | Sticky notes inside the glass | instructions: yours (custom), the maker's (system) | 6 |
@@ -43,9 +43,9 @@ Artwork approach: `open-questions-and-ideas.md` Q16.
 | Alarm clock | scheduled tasks | 8 |
 | Recipe cards | skills / reusable playbooks | 8 |
 | Camera/ears, microphone | multimodal input, voice | 8 |
-| The tank | the client with all its tools | 8 |
+| The tank | the app with all its tools | 8 |
 | Custom-shaped vs. standard fittings | provider tools vs. MCP | 8 (hidden) |
-| Clouds, cords, padlocks, a fish in a uniform | where client and model live; whose fish it is | 9 |
+| Clouds, cords, padlocks, a fish in a uniform | where app and model live; whose fish it is | 9 |
 | Murky water | injected / poisoned context | 9 |
 | Effect icons | destruction, exfiltration, sleeper (in the notepad) | 9 |
 | Wall vs. "please keep out" sign | architecture vs. guideline | 9 |
@@ -104,7 +104,7 @@ The image grows piece by piece: fish -> fish + bowl (water only) -> fish + tank.
 attachment arrives on the beat where the room has just felt the limit it addresses; the
 full assembly appears only as the station 8 recap.
 
-- **Bowl = client.** Different bowls are different clients around the same fish (simple
+- **Bowl = the app** (technical terms: client, harness). Different bowls are different apps around the same fish (simple
   chat, full workspace, phone). Diagnostic: "is that the fish or the bowl?"
 - **Water = context.** It has a visible level (the context window); what is submerged
   exists to the fish, what is above does not. Everything that reaches the fish arrives in
@@ -142,7 +142,7 @@ notepad (memory) that fires in a later conversation.
 
 ## Where does the fish live? (station 9)
 
-The tank (client) and the fish (model) can live in different places, revealed in four steps
+The tank (app) and the fish (model) can live in different places, revealed in four steps
 from the frontier cloud (both on the vendor's servers) to everything on your own computer.
 
 - **Distance = how far your words travel;** the cord to the frontier cloud cannot be cut.

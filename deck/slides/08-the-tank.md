@@ -2,7 +2,7 @@
 
 <div class="shots">
 <figure><img src="illustrations/jaggedness-B1-letters.png" alt="'How many S's are in Suffering Succotash?' The model answers 4, listing a fourth S that isn't there"><figcaption>Asked directly</figcaption></figure>
-<figure class="fragment"><img src="illustrations/tool-use--letter-counting.png" alt="'Write a script to count letters and count the S's in Suffering Succotash.' The model creates a file, runs a command, and reports: total S's: 3 (Suffering 1, Succotash 2)"><figcaption>"Write a script to count them"</figcaption></figure>
+<figure class="fragment"><img src="illustrations/tool-use--letter-counting.png" alt="'Write a script to count letters and count the S's in Suffering Succotash.' The model creates a file, runs a command, and reports: total S's: 3 (Suffering 1, Succotash 2)"><figcaption>"Write a script to count them" <span class="term">code execution</span></figcaption></figure>
 </div>
 
 Note:
@@ -250,7 +250,7 @@ Brief. Methods: scheduled tasks, skills/playbooks.
 </svg>
 </div>
 
-<p class="lede fragment" data-fragment-index="2">The tools decide what the fish can reach.</p>
+<p class="lede fragment" data-fragment-index="2">The tools decide what the fish can reach. <span class="term">multimodal</span></p>
 
 Note:
 Pull back: the bowl has become a tank. Water: the context. Notes on the glass: instructions. Tubes: tools -- search, email, connections to other services. The notepad: memory. The alarm clock. Recipe cards.
