@@ -1,3 +1,4 @@
+<!-- .slide: data-bookmark="It's a product" -->
 # Who decided it should refuse that?
 
 <div class="mock dials">

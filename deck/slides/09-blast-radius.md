@@ -1,3 +1,4 @@
+<!-- .slide: data-bookmark="Where your data goes" -->
 # Many kinds of tanks
 
 <div class="tiles">

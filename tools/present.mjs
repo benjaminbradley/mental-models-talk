@@ -55,7 +55,7 @@ function readJson(req) {
   });
 }
 
-const ACTIONS = new Set(['next', 'prev', 'first', 'last']);
+const ACTIONS = new Set(['next', 'prev', 'first', 'last', 'goto']);
 
 async function handleRelay(req, res, url) {
   if (url.searchParams.get('t') !== token) { res.writeHead(403).end('Forbidden'); return; }
@@ -89,7 +89,12 @@ async function handleRelay(req, res, url) {
       broadcast('remote', 'state', data);
     } else {
       if (!ACTIONS.has(data.action)) { res.writeHead(400).end('Bad action'); return; }
-      broadcast('deck', 'cmd', { action: data.action });
+      const cmd = { action: data.action };
+      if (data.action === 'goto') {
+        if (!Number.isInteger(data.h) || data.h < 0) { res.writeHead(400).end('Bad goto'); return; }
+        cmd.h = data.h; cmd.v = Number.isInteger(data.v) ? data.v : 0;
+      }
+      broadcast('deck', 'cmd', cmd);
     }
     res.writeHead(204).end();
     return;

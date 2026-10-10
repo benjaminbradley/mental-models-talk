@@ -68,7 +68,13 @@
       progress: true,
       transition: 'fade',
       plugins: [RevealMarkdown, RevealNotes],
-    }).then(inlineSvgs);
+    }).then(() => {
+      inlineSvgs();
+      // Section bookmarks (overview bar + phone remote); see README § Bookmarks.
+      const b = document.createElement('script');
+      b.src = 'bookmarks.js';
+      document.head.appendChild(b);
+    });
 
     // Remote control client: inert unless the URL has ?remote=<token>.
     if (new URLSearchParams(location.search).has('remote')) {

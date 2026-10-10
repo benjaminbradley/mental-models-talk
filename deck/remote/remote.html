@@ -12,6 +12,7 @@
     <span id="count">– / –</span>
     <button id="timer" type="button" title="Tap to reset">0:00</button>
   </header>
+  <nav id="sections" aria-label="Sections"></nav>
   <main>
     <h1 id="title"></h1>
     <p id="next"></p>
@@ -39,6 +40,28 @@
       $('next').textContent = s.nextTitle ? `Next: ${s.nextTitle}` : 'Last slide';
       $('notes').innerHTML = s.notesHtml || '<em>No notes</em>';
       $('notes').scrollTop = 0;
+      renderSections(s);
+    }
+
+    // Section bookmarks: a row of chips; tap one to jump the deck there.
+    let lastMarks = '';
+    function renderSections(s) {
+      const marks = s.bookmarks || [];
+      let active = -1;
+      marks.forEach((m, i) => { if (m.h <= s.h) active = i; });
+      const key = JSON.stringify(marks) + active;
+      if (key === lastMarks) return;
+      lastMarks = key;
+      $('sections').innerHTML = '';
+      marks.forEach((m, i) => {
+        const b = document.createElement('button');
+        b.type = 'button';
+        b.textContent = m.name;
+        if (i === active) b.className = 'active';
+        b.onclick = () => send('goto', { h: m.h, v: m.v });
+        $('sections').appendChild(b);
+        if (i === active) b.scrollIntoView({ inline: 'center', block: 'nearest' });
+      });
     }
 
     function connect() {
@@ -54,10 +77,10 @@
     }
     connect();
 
-    const send = (action) => fetch(`/cmd?t=${q}`, {
+    const send = (action, extra) => fetch(`/cmd?t=${q}`, {
       method: 'POST',
       headers: { 'Content-Type': 'application/json' },
-      body: JSON.stringify({ action }),
+      body: JSON.stringify({ action, ...extra }),
     }).catch(() => {});
     $('nextbtn').onclick = () => send('next');
     $('prev').onclick = () => send('prev');

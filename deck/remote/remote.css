@@ -33,3 +33,11 @@ footer button {
 #prev { flex: 1; }
 #nextbtn { flex: 2; background: #d6402f; }
 footer button:active { filter: brightness(1.3); }
+#sections {
+  display: flex; gap: 8px; overflow-x: auto; padding: 4px 16px 10px; -webkit-overflow-scrolling: touch;
+}
+#sections button {
+  flex: 0 0 auto; border: 1px solid #555; border-radius: 999px; background: #222; color: #ddd;
+  font: inherit; font-size: 15px; padding: 8px 14px; touch-action: manipulation;
+}
+#sections button.active { background: #d6402f; border-color: #d6402f; color: #fff; }

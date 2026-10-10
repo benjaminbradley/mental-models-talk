@@ -58,6 +58,7 @@ Spine: introduced here; felt at station 4 (say what you want; the lazy genie); m
 
 ---
 
+<!-- .slide: data-bookmark="Meet the goldfish" -->
 # Meet the goldfish
 
 <div class="scene">

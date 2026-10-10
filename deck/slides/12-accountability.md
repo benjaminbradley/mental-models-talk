@@ -1,3 +1,4 @@
+<!-- .slide: data-bookmark="Accountability" -->
 # "The AI did it"
 
 <div class="split">

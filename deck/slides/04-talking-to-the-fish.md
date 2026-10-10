@@ -248,7 +248,7 @@ Bridge: "Let's draw what that does to its knowledge -- as a map."
 
 ---
 
-<!-- .slide: data-auto-animate -->
+<!-- .slide: data-auto-animate data-bookmark="The territory" -->
 # The territory
 
 <div class="maps">

@@ -511,3 +511,17 @@ section:has(.rename-cue.visible) .mdfile-name .name-project { display: inline; }
 .reveal .dials .curtain.l { left: 0; border-radius: 0 0 0 10px; }
 .reveal .dials .curtain.r { right: 0; border-radius: 0 0 10px 0; }
 .reveal .dials:has(.curtain-cue.visible) .curtain { width: 51%; border-width: 5px; }
+
+/* ---- Section bookmarks: a button row shown while the overview is open (bookmarks.js) -- */
+.bookmark-bar {
+  position: fixed; top: 0; left: 0; right: 0; z-index: 100; display: none;
+  flex-wrap: wrap; gap: 8px; justify-content: center; padding: 10px 16px;
+  background: color-mix(in srgb, var(--ink) 88%, transparent);
+}
+.bookmark-bar.show { display: flex; }
+.bookmark-bar button {
+  border: 2px solid var(--paper); border-radius: 999px; background: transparent; color: var(--paper);
+  font: 700 16px "Helvetica Neue", Helvetica, Arial, sans-serif; padding: 6px 14px; cursor: pointer;
+}
+.bookmark-bar button:hover { background: color-mix(in srgb, var(--paper) 20%, transparent); }
+.bookmark-bar button.active { background: var(--yellow); border-color: var(--yellow); color: var(--ink); }

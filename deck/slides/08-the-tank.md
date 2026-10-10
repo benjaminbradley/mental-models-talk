@@ -1,3 +1,4 @@
+<!-- .slide: data-bookmark="The tank" -->
 # Counting letters: the fish writes a tool
 
 <div class="shots">

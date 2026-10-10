@@ -1,3 +1,4 @@
+<!-- .slide: data-bookmark="When is it safe?" -->
 # When is it safe to use?
 
 <div class="versus">

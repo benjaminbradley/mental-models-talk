@@ -26,6 +26,10 @@
       title: titleOf(Reveal.getCurrentSlide()),
       nextTitle: titleOf(nextSlide()),
       notesHtml: Reveal.getSlideNotes() || '',
+      // section bookmarks (see bookmarks.js), computed here so they're in the very first state
+      bookmarks: all.filter((s) => s.dataset.bookmark).map((s) => {
+        const i = Reveal.getIndices(s); return { name: s.dataset.bookmark, h: i.h, v: i.v || 0 };
+      }),
     };
     fetch(`/state?t=${q}`, {
       method: 'POST',
@@ -39,12 +43,14 @@
     prev: () => Reveal.prev(),
     first: () => Reveal.slide(0, 0),
     last: () => { const s = Reveal.getSlides(); Reveal.slide(s.length - 1, 0); },
+    goto: (d) => window.deckGoto ? window.deckGoto(d.h, d.v) : Reveal.slide(d.h, d.v || 0),
   };
 
   const es = new EventSource(`/events?t=${q}&role=deck`);
   es.addEventListener('cmd', (e) => {
-    const fn = actions[JSON.parse(e.data).action];
-    if (fn) fn();
+    const d = JSON.parse(e.data);
+    const fn = actions[d.action];
+    if (fn) fn(d);
   });
   es.addEventListener('open', postState);
 
