@@ -20,7 +20,7 @@ Exercise: individual reflection. Do not collect or share answers; this is privat
 
 **Scan to check out (anonymous)**
 
-<div class="placeholder">TODO: exit-survey QR code (polls not yet designed; same graphic as the entry poll)</div>
+<div class="placeholder">TODO: exit-survey QR code (polls not yet designed; same graphic as the entry poll: art/qr-poll.svg)</div>
 
 Note:
 "One more scan before you go -- same survey; let's see if anything moved."

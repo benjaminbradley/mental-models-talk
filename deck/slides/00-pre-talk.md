@@ -5,7 +5,7 @@ Speaker name · affiliation
 
 **Scan to check in (anonymous)**
 
-<div class="placeholder">TODO: entry-survey QR code (polls not yet designed)</div>
+<div class="placeholder">TODO: entry-survey QR code (polls not yet designed; make qr URL=... OUT=deck/art/qr-poll.svg)</div>
 
 Note:
 On screen as people walk in and settle. No narration.

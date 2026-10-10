@@ -102,7 +102,7 @@ Method: HITL (human in the loop) as a deliberate pattern.
 
 # Who checks the fish?
 
-<div class="placeholder">TODO: review-ladder visual (not a literal ladder) -- four levels of review building up, ending in a person</div>
+<div class="placeholder">TODO: review-ladder visual: B&amp;W artists vs. a rainbow artist, ending in a person (inline SVG; spec in SLIDES-TODO.md item 1)</div>
 
 1. Self-review: same blind spots <!-- .element: class="fragment" -->
 2. Another fish: shared blind spots <!-- .element: class="fragment" -->

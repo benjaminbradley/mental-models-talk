@@ -264,4 +264,4 @@ Pull back: the bowl has become a tank. Water: the context. Notes on the glass: i
 
 A recap, not an introduction: everything except the mic and camera arrived on its own felt limit. Microphone is a candidate to cut. Bridge out: every tool widens the blast radius (station 9).
 
-Every tool connects through a tube, drawn behind the tank. TODO (art): show the interface the fish sees from inside the water where a tube connects.
+Every tool connects through a tube, drawn behind the tank. TODO (art; inline SVG in this slide, no file): show the interface the fish sees from inside the water where a tube connects.

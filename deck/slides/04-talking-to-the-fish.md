@@ -1,7 +1,7 @@
 <!-- .slide: data-visibility="hidden" -->
 # B plays the fish
 
-<div class="placeholder">TODO: the source figure for partner A (candidate: a simple floor plan; printed handout, not shown on screen until the debrief)</div>
+<div class="placeholder">TODO: the source figure for partner A (candidate: a simple floor plan; printed handout, not shown on screen until the debrief): illustrations/describe-draw--floor-plan.png</div>
 
 Pair up. A describes. B plays the fish: draw exactly what you hear. No peeking, no questions.
 
@@ -19,7 +19,7 @@ Fallback without printouts: "give directions to your house without using any lan
 <!-- .slide: data-visibility="hidden" -->
 # What went wrong? Whose fault was it?
 
-<div class="placeholder">TODO: the source figure, beside a few audience drawings (if people are willing to share)</div>
+<div class="placeholder">TODO: the source figure (illustrations/describe-draw--floor-plan.png), beside a few audience drawings (if people are willing to share)</div>
 
 Note:
 "What went wrong?" Let them answer. "Whose fault -- the describer or the drawer?"
