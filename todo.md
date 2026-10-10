@@ -22,6 +22,14 @@ Completed items are REMOVED (not marked complete) - tracked by git history.
       cut-out map, the derpier v3 fish.
 
 
+#### Hidden slides: re-evaluate if there's time
+
+In the deck with `data-visibility="hidden"`; bring back by deleting that line above the title.
+
+- [ ] Station 4: "B plays the fish" + "What went wrong? Whose fault was it?" (describe-and-draw; **Q3**, see below)
+- [ ] Station 5: "Sort your own work" (verification-asymmetry exercise; hidden for time)
+- [ ] Station 8: "Two kinds of plumbing" (provider tools vs. MCP; MCP stays on the take-home card)
+
 #### Design & spec work
 
 What each metaphor image means: `metaphor-imagery.md`; how each slide composes it: the deck.
@@ -35,6 +43,9 @@ What each metaphor image means: `metaphor-imagery.md`; how each slide composes i
       decomposed sub-tasks.
 
 #### Pre-capture demos & transcripts
+
+- [ ] Station 7 citations: capture "Tell me about Austin's moonlight towers" vs. "Search for info
+      on Austin's moonlight towers" in the same app (filenames in the slide's placeholders).
 
 - [ ] Station 3 "then" poetry: find a pre-2020-ish example of a computer's bad poem.
 - [ ] Station 3 "now" poetry: capture the poem from
@@ -67,10 +78,8 @@ What each metaphor image means: `metaphor-imagery.md`; how each slide composes i
       tubes and attachments (emoji icons are stand-ins), the MCP fittings, the full tank with
       mic/camera conversion boxes.
 - [ ] Create images
-   - [ ] citations visual (station 7; not a literal ladder) -- placeholder in the deck
    - [ ] tubes connecting at the back of the tank: show the interface the fish sees
    - [ ] review-ladder visual (station 12; not a literal ladder) -- placeholder in the deck
-   - [ ] "the dog ate my homework" image (station 12; emoji stand-ins for now)
    - [ ] attachments as drawn parts instead of emoji (notepad, alarm clock, recipe cards,
          mic/camera, effect icons)
 

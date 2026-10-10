@@ -1,3 +1,22 @@
+<!-- .slide: class="center-slide" -->
+
+# A note on vocabulary
+
+<p class="lede">The pictures carry the idea.</p>
+<p class="fragment">The <span class="term">yellow tags</span> are the real terms, if you want to look them up later.</p>
+<p class="fragment small">The important ones are on your take-home card.</p>
+
+Note:
+Quick orientation before we start: I'll use a lot of pictures -- a goldfish, a bowl, maps. The pictures carry the idea.
+
+(Click.) Whenever a picture stands for a real concept, the real term shows up beside it in a yellow tag like this one. You don't need to memorize them; they're the words to search for later.
+
+(Click.) The important ones are on the take-home card, so you can leave the note-taking to the card.
+
+Timing: 20 seconds. Sets up the convention once so it never needs explaining again.
+
+---
+
 # Who learns whose language?
 
 <div class="lang-row">
@@ -121,7 +140,7 @@ Tone: productive disorientation -- instincts about people (confident = knowledge
 </div>
 
 Note:
-Two phases. The yellow tags are the real vocabulary, if you want to look it up later.
+Two phases. (Yellow tags: the real vocabulary.)
 
 First, it read the entire library -- every book, every website. That's **pretraining**, and the library is its **training data**: where its knowledge comes from, including how uneven it is. That's anatomy -- structural, durable.
 

@@ -28,6 +28,7 @@ Stabilization moment: after the disorientation of station 4, one durable, stance
 
 ---
 
+<!-- .slide: data-visibility="hidden" -->
 # Sort your own work
 
 <div class="versus">
@@ -40,6 +41,8 @@ Stabilization moment: after the disorientation of station 4, one durable, stance
 3. Compare with a partner. Do you agree?
 
 Note:
+HIDDEN for now (time; see todo.md § Hidden slides). To bring it back, delete the `data-visibility="hidden"` line above the title.
+
 Take a minute. List five things you actually do. For each, ask: would checking the result be cheaper than doing it myself? Sort them on that spectrum. Then challenge your partner -- do they agree with your sorting?
 
 Exercise: individual then pair.

@@ -28,8 +28,9 @@ card fits far fewer than this).
   Thinking levels (low/medium/high) trade speed for depth; over-thinking is real.
 - **Ask it to check itself** - it can grade its confidence, flag knowledge-cutoff gaps,
   or search when unsure - but only if you ask, and the self-check is itself fallible.
-- **Verified citations** - "with sources" can be fabricated; "with verified sources"
-  (tool-checked) is the real thing - know the difference.
+- **Ask it to search** - "tell me about X" answers from training data (and any sources it
+  lists may be invented); "search for info on X" uses web search and returns real links.
+  Click one: the links are real, its summary of them may not be.
 - **Decomposition** - break a complex task into sub-tasks before starting, so each
   piece can be verified independently. Distinct from iteration (which refines after).
 - **Context engineering** - curate what is in the window; garbage in, garbage out.
@@ -56,6 +57,8 @@ card fits far fewer than this).
 - **Iteration / critique loops** - first output is raw material; refine it, or have it
   critique itself.
 - **Model selection** - models differ; benchmarks mislead; keep your own private probes.
+- **Evals** - re-run the same test over time; the same model can score differently from
+  day to day, and a new version can get worse at what you rely on.
 
 ## Principles (durable mental models)
 
@@ -71,7 +74,6 @@ card fits far fewer than this).
   where it is not.
 - **Context is a bounded window** - what is in it exists; it can be poisoned, including
   by you.
-- **Attaching is not understanding** - a document in context is not comprehension.
 - **Client vs. model** - the bowl vs. the fish; the interface is not the intelligence, and
   each client wires up different capabilities.
 - **Injection** - instructions are just text that arrived earlier; it cannot tell yours

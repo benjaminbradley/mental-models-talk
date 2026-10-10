@@ -380,7 +380,7 @@ section:has(.box-cue.visible) .harms {
 .reveal .probe:has(.probe-cue.visible) .behind { opacity: 1; }
 .reveal .probe:has(.probe-cue.visible) .front { opacity: 0; }
 
-/* ---- Station 12: report cover, drafts folder, the excuse --------------------------- */
+/* ---- Station 12: report cover, drafts folder ---------------------------------------- */
 /* A "professional" cover page: navy/grey, serif title, thin rule, logo block. */
 .reveal .cover {
   flex: 0 0 600px; height: 780px; box-sizing: border-box; padding: 70px 60px;
@@ -409,9 +409,6 @@ section:has(.box-cue.visible) .harms {
   padding: 24px 34px; background: #fff; border: 6px solid var(--ink); border-radius: 14px;
   box-shadow: 0 20px 50px rgb(0 0 0 / 0.3);
 }
-.reveal .excuse { text-align: center; }
-.reveal .excuse .emoji { font-size: 220px; }
-.reveal .excuse p { font-size: 64px; font-style: italic; font-weight: 800; margin: 10px 0 40px; }
 
 /* ---- Station 13: centered slides, the full gradient, closing ----------------------- */
 .reveal .slides section.center-slide { text-align: center; }

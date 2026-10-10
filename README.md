@@ -39,6 +39,8 @@ upstream doc only if the change alters something at that doc's level:
 
 `handoff.md`, when it exists, is a temporary resume bridge for continuing in a fresh chat;
 read it (and this README) first.
+`SLIDES-TODO.md`, when it exists, holds large slide items broken out with enough detail for a
+fresh session to finish them.
 
 History ("moved from", "replaces") belongs in git, and status ("hidden", "candidate",
 "verify names") belongs in the deck or `todo.md`, not in the upstream docs.

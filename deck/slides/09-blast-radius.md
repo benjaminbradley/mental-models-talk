@@ -1,3 +1,34 @@
+# Many kinds of tanks
+
+<div class="tiles">
+<div><span class="emoji">🌐</span><b>Web apps</b><span class="small">ChatGPT, Claude, Gemini in the browser</span></div>
+<div class="fragment"><span class="emoji">📱</span><b>Desktop &amp; mobile apps</b><span class="small">the same vendors' apps</span></div>
+<div class="fragment"><span class="emoji">⌨️</span><b>Coding agents</b><span class="small">Claude Code, Codex, Gemini CLI, ...</span></div>
+<div class="fragment"><span class="emoji code">&lt;/&gt;</span><b>Open-source clients</b><span class="small">Open WebUI, LibreChat, ...</span></div>
+<div class="fragment"><span class="emoji">🦾</span><b>Personal agents</b><span class="small">OpenClaw, Hermes (open source); Dots (OpenAI), Muse (Meta)</span></div>
+</div>
+
+<p class="lede fragment">All tanks: <span class="term">client</span> <span class="term">harness</span>. Some let you choose the fish.</p>
+
+Note:
+The bowl -- the tank -- comes in many shapes. Web apps in the browser.
+
+(Click.) Desktop and mobile apps -- often the same vendor's tank, in a different form.
+
+(Click.) Coding agents: Claude Code and its cousins from the other vendors -- a tank with a lot of tools, aimed at your files and terminal.
+
+(Click.) Open-source clients: Open WebUI and many more. You can see how the tank is built, and most let you pick which fish goes in it.
+
+(Click.) Personal agents: a tank with lots of tools that runs on your behalf -- OpenClaw and Hermes in open source; OpenAI's Dots and Meta's Muse are the big vendors' versions of the same idea. (Brand-new; verify the names before the talk.)
+
+(Click.) They're all tanks -- the client, sometimes called the harness. Big vendors sell a fish already installed in their tank; plenty of tanks let you choose the fish. Different tanks, same rule: the fish works with whatever is in the water.
+
+Bridge: "And they don't all live in the same place. Where do the tank and the fish actually live -- and where do your words go?"
+
+Product names: verify before the talk (they change fast).
+
+---
+
 # Where does your data go?
 
 <div class="scene wide tall">
@@ -58,7 +89,7 @@
 </div>
 
 Note:
-We've seen many kinds of tanks (station 6). Now: where do the tank and the fish live -- and where do your words go? They don't have to live in the same place. The cord is how far your words travel.
+Where do the tank and the fish live -- and where do your words go? They don't have to live in the same place. The cord is how far your words travel.
 
 1. Frontier, the default: tank and fish both live in their cloud -- ChatGPT, Claude, Gemini as you use them. Everything you say travels up the cord to their servers and may be stored. Most capable fish. And the cord can't be cut. The open padlock: whatever goes up this cord is readable on their side. Practical rule: don't paste passwords or API keys into a conversation that travels to someone else's servers.
 

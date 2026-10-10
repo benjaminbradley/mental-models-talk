@@ -183,35 +183,6 @@ Methods: context engineering (what you pour in), document hygiene.
 
 ---
 
-# Many kinds of tanks
-
-<div class="tiles">
-<div><span class="emoji">🌐</span><b>Web apps</b><span class="small">ChatGPT, Claude, Gemini in the browser</span></div>
-<div class="fragment"><span class="emoji">📱</span><b>Desktop &amp; mobile apps</b><span class="small">the same vendors' apps</span></div>
-<div class="fragment"><span class="emoji">⌨️</span><b>Coding agents</b><span class="small">Claude Code, Codex, Gemini CLI, ...</span></div>
-<div class="fragment"><span class="emoji code">&lt;/&gt;</span><b>Open-source clients</b><span class="small">Open WebUI, LibreChat, ...</span></div>
-<div class="fragment"><span class="emoji">🦾</span><b>Personal agents</b><span class="small">OpenClaw, Hermes (open source); Dots (OpenAI), Muse (Meta)</span></div>
-</div>
-
-<p class="lede fragment">All tanks: <span class="term">client</span> <span class="term">harness</span>. Some let you choose the fish.</p>
-
-Note:
-The bowl -- the tank -- comes in many shapes. Web apps in the browser.
-
-(Click.) Desktop and mobile apps -- often the same vendor's tank, in a different form.
-
-(Click.) Coding agents: Claude Code and its cousins from the other vendors -- a tank with a lot of tools, aimed at your files and terminal.
-
-(Click.) Open-source clients: Open WebUI and many more. You can see how the tank is built, and most let you pick which fish goes in it.
-
-(Click.) Personal agents: a tank with lots of tools that runs on your behalf -- OpenClaw and Hermes in open source; OpenAI's Dots and Meta's Muse are the big vendors' versions of the same idea. (Brand-new; verify the names before the talk.)
-
-(Click.) They're all tanks -- the client, sometimes called the harness. Big vendors sell a fish already installed in their tank; plenty of tanks let you choose the fish. Different tanks, same rule: the fish works with whatever is in the water. So what should you pour in?
-
-Product names: verify before the talk (they change fast).
-
----
-
 # Which shelf does it pull from?
 
 <div class="split">

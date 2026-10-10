@@ -127,7 +127,7 @@ Methods: verification asymmetry; decomposition.
 - **Client vs. model:** vendors sell them bundled, so people conflate them; they are
   separable. Diagnostic: "is that the fish or the bowl?" (reasoning failures are usually
   the model; missing capabilities are usually the client). Callback at station 10:
-  benchmarks test the model, not your client. Every kind of client follows the same rule.
+  benchmarks test the model, not your client.
 - **Context:** bounded; what is in it exists to the model, what is outside does not.
   Context engineering and document hygiene.
 - **Whatever is in the context shapes the answer,** which is why these work:
@@ -144,8 +144,7 @@ Methods: verification asymmetry; decomposition.
   thread is often cheaper to abandon than to repair. Iteration and critique loops live
   here: refine in place only while the thread is clean.
 
-Vulnerability half: context can be poisoned, including by your own missteps; attaching a
-document is not understanding it.
+Vulnerability half: context can be poisoned, including by your own missteps.
 *Tension raised:* the context holds only what you pour in. What about everything the fish
 does not have, like anything after its training ended, or the sources it claimed?
 Methods: context engineering, role prompting, knowledge-domain elicitation,
@@ -158,20 +157,22 @@ RAG, document hygiene, restart vs. repair, iteration, critique loops.
 Tools arrive one at a time, each answering a limit the room already felt. This station:
 tools that change what the fish can *know*; station 8: tools that let it *do*.
 
+- **Web search, then citations.** Felt limit: training data ends (Recent Events). Web
+  search arrives first, as the answer to that limit, and only then generalizes into "a
+  tool." How you ask decides whether the fish answers from its map or searches the
+  territory: "tell me about" invites an answer from training data (and sources it can
+  fabricate; the appearance of sourcing manufactures unearned trust), "search for" points
+  it at the tool and returns real links, which still need checking. New limit: what comes
+  back is untrusted material poured into the context (sets up injection, station 9).
 - **A tool is anything outside the model it can reach for.** The model reads a tool's
   description to decide when to use it. Using one is itself trained: tool-use training
   joins the station 3 training story as a third step.
-- **Web search + verified citations.** Felt limits: training data ends (Recent Events),
-  and invented sources. Three levels: no sources, sources (fabricable, and the appearance
-  of sourcing manufactures unearned trust), verified sources (checked through tools). The
-  danger is the gap between the second and third. New limit: what comes back is untrusted
-  material poured into the context (sets up injection, station 9).
 - **Memory.** Felt limit: each conversation starts empty. Memory is another thing in the
   context before you type. New limit: it may store things you did not intend, so audit
   it. Also sets up the sleeper attack (station 9).
 
 *Tension raised:* now it can read and remember. Can it *do* anything?
-Methods: tool use; tool discovery; web search; verified citations; memory; memory audit.
+Methods: web search; asking for a search (citations); tool use; tool discovery; memory; memory audit.
 
 ## Station 8 - The tank: reaching out to *do*
 *Cognitive: "a chatbot that says things" -> "a system that does things."*
@@ -192,6 +193,8 @@ its slide is hidden).
 ## Station 9 - Blast radius: security & data
 *Cognitive/stance: "a handy tool" -> "a system with a blast radius I have to bound."*
 
+- **Many kinds of clients,** all following the same rule; they need not live in the same
+  place as the model.
 - **Hosting: where do the client and the model live?** Four tiers from frontier cloud to
   fully local; each trades capability for data control. Credentials: never paste secrets
   into a conversation that transits someone else's servers.
@@ -225,10 +228,11 @@ Bias has four mechanisms: corpus, preference tuning, explicit guardrails, emerge
 legible precisely because it is not ours, so your own model's guardrails are invisible to
 you for the same reason. Unknown unknowns: gaps you would never notice in territory you do
 not already know. Frontier instability: you are building on someone else's model, which
-changes without notice or recourse; a risk to name, not one the talk solves. This station
-matters most for skeptics: it hands them a sharper knife.
-Methods: model selection (benchmarks mislead; keep private probes); awareness of
-frontier instability.
+changes without notice or recourse, even day to day; evals (re-running the same test over
+time) tell you when it moved, but nothing stops it moving. A risk to name, not one the talk
+solves. This station matters most for skeptics: it hands them a sharper knife.
+Methods: model selection (benchmarks mislead; keep private probes); evals (re-test over
+time); awareness of frontier instability.
 
 ## Station 11 - The practitioner: intention is the input
 *"The tool is the story" -> "I am the variable; what I bring is the bottleneck."*

@@ -170,16 +170,54 @@ The cure is the same as the probe: more than one fish, a few private test prompt
 </div>
 
 <div class="shots">
-<figure class="fragment"><img src="illustrations/unstable--fable-suspended.png" alt="Post from @ClaudeDevs: 'As a result of a US government directive, we are suspending access to Claude Fable 5 for all users. You can continue to use all other Claude models.'"></figure>
-<figure class="fragment"><img src="illustrations/unstable--silently-restricted-acct.png" alt="Reddit post: 'Anthropic silently restricted my paid account >> no notice, no explanation, no response to support tickets'"></figure>
+<figure class="fragment"><img src="illustrations/instability--opus5.5-livenerf.webp" alt="A line chart titled 'Claude Opus 5.5 vs. its own launch week': the same model's daily score on a frozen 78-question panel bounces between about 53% and 69% from day to day, with wide confidence bars, around a dashed 58.4% baseline"><figcaption><a href="https://github.com/ninjahawk/livenerf">LiveNerf: the same model, the same 78 questions, every day</a></figcaption></figure>
 </div>
 
 Note:
 The fish is someone else's fish, and it changes. (Click through the versions.) Every few months, a new one. Usually better. (v3:) Sometimes a version gets worse at the thing you relied on -- people call it a nerf.
 
-A workflow that worked yesterday can break because the provider updated the model. You weren't asked.
+(Click.) And it's not only between versions. Someone runs the *same* model on the *same* 78 questions every day. Look at the line: it bounces between the mid-50s and the high-60s, day to day. Same fish, same questions. (Read the line, not the one labeled point.)
 
-(Click.) Or the fish disappears: a whole model suspended for everyone, overnight.
+A workflow that worked yesterday can break because the provider changed something -- the model, the settings, the load. You weren't asked, and you weren't told.
+
+Felt need for the next slide: so how would you even know?
+
+---
+
+# How would you know? Test it again.
+
+<div class="tiles">
+<div class="fragment"><span class="emoji">🆕</span><b>New model</b><span class="small">score it on a standard test</span><span class="term">benchmarks</span></div>
+<div class="fragment"><span class="emoji">🔁</span><b>Same model, next week</b><span class="small">re-run the same test</span><span class="term">evals</span></div>
+<div class="fragment"><span class="emoji">🔒</span><b>Your own work</b><span class="small">keep a few private test prompts</span><span class="term">private probes</span></div>
+</div>
+
+<p class="lede fragment">A test you run once is a review. A test you re-run is a smoke alarm.</p>
+
+Note:
+How would you know the fish changed? You test it -- and you keep testing it.
+
+(Click.) Benchmarks are how new models get compared at launch: a standard set of questions, a score. (Callback, station 6: benchmarks test the fish, not your bowl.)
+
+(Click.) But the same kind of test, re-run on the same model over time, catches drift. That's what the chart on the last slide is: an eval, run daily. The term is "evals" (evaluations).
+
+(Click.) You can do a small version yourself: a handful of private test prompts from your own work, with answers you know. Run them when a new version ships -- or when something feels off. (Same cure as the guardrail probe: more than one fish, your own probes.)
+
+(Click.) Felt need -> answer: it changes without notice; you notice by re-testing.
+
+Framing guard: descriptive. Evals don't make the fish stable; they tell you when it moved.
+
+---
+
+# Or it disappears
+
+<div class="shots">
+<figure><img src="illustrations/unstable--fable-suspended.png" alt="Post from @ClaudeDevs: 'As a result of a US government directive, we are suspending access to Claude Fable 5 for all users. You can continue to use all other Claude models.'"></figure>
+<figure class="fragment"><img src="illustrations/unstable--silently-restricted-acct.png" alt="Reddit post: 'Anthropic silently restricted my paid account >> no notice, no explanation, no response to support tickets'"></figure>
+</div>
+
+Note:
+Sometimes it's not a dip. The fish disappears: a whole model suspended for everyone, overnight.
 
 (Click.) Or your account changes quietly: tools stop working, no notice, no explanation.
 

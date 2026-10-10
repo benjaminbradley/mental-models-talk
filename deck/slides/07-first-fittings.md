@@ -1,3 +1,83 @@
+# The books ended
+
+<div class="shots">
+<figure><img src="illustrations/confabulation-C4-current-events--world-series.png" alt="A terminal: 'Who won the 2026 World Series?' An older local model answers that the Phillies beat the Rays for their third title in four years, at Marlins Park"><figcaption>An older model, run locally</figcaption></figure>
+<figure class="fragment"><img src="illustrations/confabulation-C4-current-events--world-cup.png" alt="'Who won the world cup in 2026?' A current model starts to say the tournament hasn't occurred, notices today's date is after it, and offers to search"><figcaption>A current model</figcaption></figure>
+</div>
+
+Note:
+Remember Recent Events on the fish's map? The books ended before that territory existed.
+
+First: an older model running locally (ollama). "Who won the 2026 World Series?" A crisp, specific, entirely invented answer -- Phillies over the Rays, at Marlins Park. A true hallucination: filled in from pattern.
+
+(Click.) Second: a current model (Haiku), asked about the 2026 World Cup. It *starts* down the same road -- "the tournament hasn't occurred" -- then notices today's date is after it and pushes toward a web search instead.
+
+Two lessons: (1) temperament is changing -- newer fish are trained to notice the edge of the map more often; (2) the anatomy isn't: the books still ended, and the fix it reaches for is a tool: web search. That's next.
+
+---
+
+# Looking things up
+
+<div class="split">
+<div class="scene">
+<svg viewBox="0 0 800 600" role="img" aria-label="The fish swims up to the tube and uses it; the tube runs up out of the bowl to the web">
+  <g style="fill: none" stroke-linecap="round" stroke-linejoin="round">
+    <path d="M 400 250 V 60 Q 400 20 440 20 H 640" style="stroke: var(--ink); stroke-width: 48"/>
+    <path d="M 400 250 V 60 Q 400 20 440 20 H 640" style="stroke: var(--rock); stroke-width: 30"/>
+  </g>
+  <use href="#bowl-back" x="0" y="40" width="600" height="560"/>
+  <use href="#bowl-water" x="0" y="40" width="600" height="560"/>
+  <g style="stroke: var(--ink); stroke-width: 8">
+    <circle cx="715" cy="40" r="70" style="fill: var(--sky)"/>
+    <path d="M 645 40 H 785 M 715 -30 V 110 M 715 -30 C 670 0, 670 80, 715 110 M 715 -30 C 760 0, 760 80, 715 110" style="fill: none"/>
+  </g>
+  <g class="goldfish awake">
+    <use href="#fish-body" x="160" y="235" width="250" height="163"/>
+    <use class="eyes-open" href="#fish-eyes-open" x="160" y="235" width="250" height="163"/>
+  </g>
+  <use href="#bowl-front" x="0" y="40" width="600" height="560"/>
+</svg>
+</div>
+<div>
+<p>The books ended. The web didn't.</p>
+<p><span class="term">web search</span> <span class="term">tool use</span></p>
+<p class="fragment small">Whatever comes back from a tool lands in the water.</p>
+</div>
+</div>
+
+Note:
+You just saw it: the books ended. Wouldn't it be nice if it could look things up? That's our first tool: web search. We draw it as a tube from the bowl out to the web. The fish reaches for it -- it decides when.
+
+(Click.) New limit, planted for station 9: whatever comes back from a tool is poured into the water. The fish reads it just like it reads you.
+
+---
+
+# "Tell me about" vs. "Search for"
+
+<div class="shots">
+<figure><div class="placeholder">TODO: capture -- "Tell me about Austin's moonlight towers": answered from the fish's own map, no search (illustrations/citations--tell-me-about.png)</div><figcaption>"Tell me about X": from the map</figcaption></figure>
+<figure class="fragment"><div class="placeholder">TODO: capture -- "Search for info on Austin's moonlight towers": web search, real links (illustrations/citations--search-for-info.png)</div><figcaption>"Search for info on X": checks the territory</figcaption></figure>
+</div>
+
+<p class="lede fragment">How you ask decides whether it looks. <span class="term">citations</span></p>
+
+Note:
+Same question, two verbs, same app. Austin's moonlight towers.
+
+"Tell me about..." invites the fish to answer from its map -- the books. Fluent, confident, and only as good as the books were dense. Ask it for sources this way and it can produce things that *look* like sources: the appearance of sourcing manufactures unearned trust.
+
+(Click.) "Search for info on..." points it at the tool. It goes out to the territory, and what comes back lands in the water with real links you can click.
+
+(Click.) How you ask decides whether it looks. In most apps the fish decides when to search -- so if facts matter, say "search," and check that it did.
+
+Still your job: the links are real, but its summary of them can still be wrong. Click one.
+
+Captures to make (same app, same day): see the placeholders. Earlier local-model captures for the old three-rung version are in the top-level `illustrations/citations-ladder--*` (candidates).
+
+Bridge: "Web search was our first tool. Let's zoom out: what's a tool?"
+
+---
+
 # Tools
 
 <div class="tiles">
@@ -9,14 +89,14 @@
 </div>
 
 <p class="lede">A tool is anything outside the fish that it can reach for.</p>
-<p class="fragment">In the pictures, every tool connects to the bowl with a tube. <span class="term">tool use</span></p>
+<p class="fragment">Every tool connects to the bowl with a tube. <span class="term">tool use</span> <span class="term">tool calling</span></p>
 
 Note:
-You use tools all day: a calculator when the mental math gets hard, a map when you don't know the way, a phone when you need someone else.
+Web search was the first one. Let's zoom out. You use tools all day: a calculator when the mental math gets hard, a map when you don't know the way, a phone when you need someone else.
 
 Same idea for the fish. A tool is anything outside the fish that it can reach for: a web browser to search and read pages, your email, your calendar, your files, a place to write and run code.
 
-(Click.) In the pictures from here on, every tool connects to the bowl with a tube -- the word is "tool"; the tube is just how we draw it.
+(Click.) Like the web search tube: every tool connects to the bowl with a tube -- the word is "tool"; the tube is just how we draw it. (Also called tool calling or function calling.)
 
 Tool discovery: the fish reads each tool's description to decide when and how to use it. That's why descriptions matter, and why a badly described tool misbehaves.
 
@@ -44,7 +124,7 @@ Bridge: "But the fish didn't come out of the library knowing how to use any of t
 </div>
 
 Note:
-The bowl gets its first tool -- drawn as a tube to the outside world. And the fish... just looks at it.
+Rewind to the fish straight out of the library and the apprenticeship -- the original fish, before anyone trained it on tools. Give its bowl a tube to the outside world, and the fish... just looks at it.
 
 Nothing in the library or the apprenticeship taught it what a tool is for. So it needs another round of training.
 
@@ -111,114 +191,6 @@ Note:
 Back to the training story from station 3. Step 1, the library; step 2, the apprenticeship. (Click.) Step 3: practice with tools. The fish tries using tools, and gets scored on whether it used them well -- when to reach for a tool, what to ask it, what to do with what comes back.
 
 Every tool you'll see from here on is something the fish was trained to reach for. It decides when to use one, based on the tool's description. Nothing comes in through a tool unless the fish reached for it.
-
----
-
-# The books ended
-
-<div class="shots">
-<figure><img src="illustrations/confabulation-C4-current-events--world-series.png" alt="A terminal: 'Who won the 2026 World Series?' An older local model answers that the Phillies beat the Rays for their third title in four years, at Marlins Park"><figcaption>An older model, run locally</figcaption></figure>
-<figure class="fragment"><img src="illustrations/confabulation-C4-current-events--world-cup.png" alt="'Who won the world cup in 2026?' A current model starts to say the tournament hasn't occurred, notices today's date is after it, and offers to search"><figcaption>A current model</figcaption></figure>
-</div>
-
-Note:
-Remember Recent Events on the fish's map? The books ended before that territory existed.
-
-First: an older model running locally (ollama). "Who won the 2026 World Series?" A crisp, specific, entirely invented answer -- Phillies over the Rays, at Marlins Park. A true hallucination: filled in from pattern.
-
-(Click.) Second: a current model (Haiku), asked about the 2026 World Cup. It *starts* down the same road -- "the tournament hasn't occurred" -- then notices today's date is after it and pushes toward a web search instead.
-
-Two lessons: (1) temperament is changing -- newer fish are trained to notice the edge of the map more often; (2) the anatomy isn't: the books still ended, and the fix it reaches for is a tool: web search. That's next.
-
----
-
-# Looking things up
-
-<div class="split">
-<div class="scene">
-<svg viewBox="0 0 800 600" role="img" aria-label="The fish swims up to the tube and uses it; the tube runs up out of the bowl to the web">
-  <g style="fill: none" stroke-linecap="round" stroke-linejoin="round">
-    <path d="M 400 250 V 60 Q 400 20 440 20 H 640" style="stroke: var(--ink); stroke-width: 48"/>
-    <path d="M 400 250 V 60 Q 400 20 440 20 H 640" style="stroke: var(--rock); stroke-width: 30"/>
-  </g>
-  <use href="#bowl-back" x="0" y="40" width="600" height="560"/>
-  <use href="#bowl-water" x="0" y="40" width="600" height="560"/>
-  <g style="stroke: var(--ink); stroke-width: 8">
-    <circle cx="715" cy="40" r="70" style="fill: var(--sky)"/>
-    <path d="M 645 40 H 785 M 715 -30 V 110 M 715 -30 C 670 0, 670 80, 715 110 M 715 -30 C 760 0, 760 80, 715 110" style="fill: none"/>
-  </g>
-  <g class="goldfish awake">
-    <use href="#fish-body" x="160" y="235" width="250" height="163"/>
-    <use class="eyes-open" href="#fish-eyes-open" x="160" y="235" width="250" height="163"/>
-  </g>
-  <use href="#bowl-front" x="0" y="40" width="600" height="560"/>
-</svg>
-</div>
-<div>
-<p>The books ended. The web didn't.</p>
-<p><span class="term">web search</span></p>
-<p class="fragment small">Whatever comes back from a tool lands in the water.</p>
-</div>
-</div>
-
-Note:
-You just saw it: the books ended. Wouldn't it be nice if it could look things up? That's the first tool: web search. The fish reaches for it -- it decides when.
-
-(Click.) New limit, planted for station 9: whatever comes back from a tool is poured into the water. The fish reads it just like it reads you.
-
----
-
-# Three ways to ask for facts
-
-<div class="placeholder">TODO: citations visual (not a literal ladder) -- three levels of sourcing, with the gap between the 2nd and 3rd marked as the dangerous one</div>
-
-1. "Tell me about X." <!-- .element: class="fragment" -->
-2. "...with sources." <!-- .element: class="fragment" -->
-3. "...with verified sources." <!-- .element: class="fragment" -->
-
-Note:
-Three levels of sourcing. Each of the next three slides is one of them, same question: Austin's moonlight towers.
-
-The danger lives in the gap between the second and the third: unverified sourcing is more dangerous than no sourcing at all.
-
----
-
-# 1. "Tell me about X"
-
-<div class="shots tall">
-<figure><img src="illustrations/citations-ladder--hallucinated-facts-gemma4.png" alt="A local model (gemma4) asked about Austin's moonlight towers decides in its thinking that they aren't a recognized landmark, then describes moonlit skyline views over Lady Bird Lake"></figure>
-</div>
-
-Note:
-No sources: you're trusting the fish. A small local model (gemma4, no tools). Its own thinking says "Moonlight Towers is not a widely recognized landmark name" -- they're real, a 19th-century Austin landmark -- so it reinterprets the question and writes a lovely paragraph about moonlit skyline views. Confident, fluent, and about something that isn't the moonlight towers.
-
----
-
-# 2. "...with sources"
-
-<div class="shots tall">
-<figure><img src="illustrations/citations-ladder--hallucinated-sources-gemma3.png" alt="A local model (gemma3) describes the moonlight towers as historic water tanks and lists three official-looking source URLs on austintexas.gov and atlasobscura.com"></figure>
-</div>
-
-Note:
-Ask for sources (gemma3, no tools). It now says the towers are historic *water tanks* -- wrong -- and backs it with three specific, official-looking URLs. The fish can't check them; it has no tools. It produced what sources look like.
-
-Here's where it gets dangerous: the appearance of sourcing manufactures unearned trust. Most people won't click.
-
----
-
-# 3. "...with verified sources"
-
-<div class="shots tall">
-<figure><img src="illustrations/citations-ladder--verified-facts-sources-haiku4.png" alt="A model with web search gives accurate details (165-foot towers bought in 1894, 15 still operating) with three real sources and notes on a minor discrepancy between them"></figure>
-</div>
-
-Note:
-Now a fish with a tool (Haiku, with web search), asked to verify. Accurate details -- 165 feet, bought in 1894, 15 still standing -- three real sources, and it even reports where the sources disagree.
-
-The difference isn't asking more nicely. It's touching the territory: the fish used a tool and checked.
-
-Demo: three rungs, pre-captured. Opens the "tools change what the fish can know" thread.
 
 ---
 
