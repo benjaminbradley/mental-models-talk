@@ -58,7 +58,7 @@ Cognitive shift: "neutral oracle" -> "someone's product." Stance: critical agenc
 <svg viewBox="0 0 300 200" role="img" aria-label="A picket fence">
   <g style="stroke: var(--ink); stroke-width: 7; fill: #fff" stroke-linejoin="round">
     <path d="M 20 80 H 280 V 104 H 20 Z M 20 140 H 280 V 164 H 20 Z"/>
-    <path d="M 35 190 V 40 L 55 18 L 75 40 V 190 Z M 110 190 V 40 L 130 18 L 150 40 V 190 Z M 185 190 V 40 L 205 18 L 225 40 V 190 Z"/>
+    <path d="M 40 190 V 40 L 60 18 L 80 40 V 190 Z M 130 190 V 40 L 150 18 L 170 40 V 190 Z M 220 190 V 40 L 240 18 L 260 40 V 190 Z"/>
   </g>
 </svg>
 <b>What the vendor blocked</b><span class="term">guardrails</span>
@@ -170,7 +170,7 @@ The cure is the same as the probe: more than one fish, a few private test prompt
 </div>
 
 <div class="shots">
-<figure class="fragment"><img src="illustrations/instability--opus5.5-livenerf.webp" alt="A line chart titled 'Claude Opus 5.5 vs. its own launch week': the same model's daily score on a frozen 78-question panel bounces between about 53% and 69% from day to day, with wide confidence bars, around a dashed 58.4% baseline"><figcaption><a href="https://github.com/ninjahawk/livenerf">LiveNerf: the same model, the same 78 questions, every day</a></figcaption></figure>
+<figure class="fragment"><img style="max-height: 470px; width: auto" src="illustrations/instability--opus5.5-livenerf.webp" alt="A line chart titled 'Claude Opus 5.5 vs. its own launch week': the same model's daily score on a frozen 78-question panel bounces between about 53% and 69% from day to day, with wide confidence bars, around a dashed 58.4% baseline"><figcaption><a href="https://github.com/ninjahawk/livenerf">LiveNerf: the same model, the same 78 questions, every day</a></figcaption></figure>
 </div>
 
 Note:

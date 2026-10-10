@@ -175,6 +175,7 @@
 .reveal .shots .placeholder { min-height: 560px; }
 .reveal .lede { font-size: 1.1em; font-weight: 800; }
 .reveal .small { font-size: 0.7em; }
+.reveal .big-q { font-size: 1.4em; margin: 1em 0; }  /* station 13: the two closing questions */
 .reveal .footnote { font-size: 24px; font-style: italic; margin: 6px 0 0; color: #4a5368; }
 /* a poem typed out as text (station 3 "then") */
 .reveal .poem { text-align: left; background: #fff; border: 6px solid var(--ink); border-radius: 16px; padding: 30px 44px; font: 36px/1.5 Georgia, serif; }
@@ -296,11 +297,11 @@ section:has(.box-cue.visible) .harms {
 /* ---- Operator to-do list as a Markdown file (station 8) ----------------------------- */
 /* A file tab with its name, then raw Markdown lines; .rename-cue swaps HUMAN- for PROJECT-. */
 .reveal .mdfile { border: 6px solid var(--ink); border-radius: 12px; background: #fff; overflow: hidden; }
-.reveal .mdfile-name { background: var(--ink); color: var(--paper); font: 700 34px ui-monospace, Menlo, Consolas, monospace; padding: 10px 24px; }
+.reveal .mdfile-name { background: var(--ink); color: var(--paper); font: 700 30px ui-monospace, Menlo, Consolas, monospace; padding: 10px 24px; }
 .reveal .mdfile-name .name-project { display: none; color: var(--yellow); }
 section:has(.rename-cue.visible) .mdfile-name .name-human { display: none; }
 section:has(.rename-cue.visible) .mdfile-name .name-project { display: inline; }
-.reveal .mdfile-body { font: 500 40px/1.6 ui-monospace, Menlo, Consolas, monospace; padding: 20px 28px; white-space: nowrap; }
+.reveal .mdfile-body { font: 500 32px/1.6 ui-monospace, Menlo, Consolas, monospace; padding: 20px 28px; white-space: nowrap; }
 .reveal .mdfile-body .md-h { font-weight: 800; color: var(--blue); }
 .reveal .mdfile-body .fragment { color: var(--green-deep); font-weight: 900; }
 

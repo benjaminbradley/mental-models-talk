@@ -97,8 +97,8 @@ The fish didn't change. The bowl did.
   </g>
   <use href="#tank-front" x="620" y="170" width="560" height="348"/>
   <g style="stroke: var(--ink); stroke-width: 9" stroke-linejoin="round">
-    <rect x="636" y="132" width="528" height="40" rx="10" style="fill: var(--blue)"/>
-    <rect x="860" y="108" width="80" height="26" rx="8" style="fill: var(--blue)"/>
+    <rect x="636" y="164" width="528" height="40" rx="10" style="fill: var(--blue)"/>
+    <rect x="860" y="140" width="80" height="26" rx="8" style="fill: var(--blue)"/>
   </g>
   <text class="tag" x="900" y="610" text-anchor="middle">a full workspace</text>
   <!-- travel jar: a phone app -->

@@ -58,7 +58,7 @@ Product names: verify before the talk (they change fast).
   <text class="icon" x="75" y="790" text-anchor="middle" style="font-size: 90px">🧑</text>
   <!-- open padlock: whatever goes up this cord is readable on their side -->
   <g style="stroke: var(--ink); stroke-width: 8" stroke-linejoin="round" stroke-linecap="round">
-    <path d="M 102 560 V 528 A 25 25 0 0 0 52 528 V 538" style="fill: none"/>
+    <path d="M 102 560 V 520 A 25 25 0 0 1 152 520 V 534" style="fill: none"/>
     <rect x="40" y="558" width="74" height="56" rx="8" style="fill: var(--yellow)"/>
   </g>
   <text class="tag" x="225" y="885" text-anchor="middle">Frontier</text>
@@ -75,7 +75,7 @@ Product names: verify before the talk (they change fast).
     <use href="#tank-front" x="620" y="684" width="240" height="149"/>
     <text class="icon" x="535" y="790" text-anchor="middle" style="font-size: 90px">🧑</text>
     <g style="stroke: var(--ink); stroke-width: 8" stroke-linejoin="round" stroke-linecap="round">
-      <path d="M 822 472 V 440 A 25 25 0 0 0 772 440 V 450" style="fill: none"/>
+      <path d="M 822 472 V 432 A 25 25 0 0 1 872 432 V 446" style="fill: none"/>
       <rect x="760" y="470" width="74" height="56" rx="8" style="fill: var(--yellow)"/>
     </g>
     <text class="tag" x="420" y="470" style="font-size: 23px">• BYOK (bring</text>
@@ -172,7 +172,7 @@ Brief: sets up the enforcement hierarchy. Bridge: "So far: where your words go. 
   <text class="icon" x="75" y="790" text-anchor="middle" style="font-size: 90px">🧑</text>
   <!-- open padlock: whatever goes up this cord is readable on their side -->
   <g style="stroke: var(--ink); stroke-width: 8" stroke-linejoin="round" stroke-linecap="round">
-    <path d="M 102 560 V 528 A 25 25 0 0 0 52 528 V 538" style="fill: none"/>
+    <path d="M 102 560 V 520 A 25 25 0 0 1 152 520 V 534" style="fill: none"/>
     <rect x="40" y="558" width="74" height="56" rx="8" style="fill: var(--yellow)"/>
   </g>
   <text class="tag" x="225" y="885" text-anchor="middle">Frontier</text>
@@ -189,7 +189,7 @@ Brief: sets up the enforcement hierarchy. Bridge: "So far: where your words go. 
     <use href="#tank-front" x="620" y="684" width="240" height="149"/>
     <text class="icon" x="535" y="790" text-anchor="middle" style="font-size: 90px">🧑</text>
     <g style="stroke: var(--ink); stroke-width: 8" stroke-linejoin="round" stroke-linecap="round">
-      <path d="M 822 472 V 440 A 25 25 0 0 0 772 440 V 450" style="fill: none"/>
+      <path d="M 822 472 V 432 A 25 25 0 0 1 872 432 V 446" style="fill: none"/>
       <rect x="760" y="470" width="74" height="56" rx="8" style="fill: var(--yellow)"/>
     </g>
     <text class="tag" x="420" y="470" style="font-size: 23px">• BYOK (bring</text>
@@ -288,7 +288,7 @@ Socratic: "What could go wrong?" Cognitive shift: "handy tool" -> "blast radius 
     <rect x="880" y="-30" width="290" height="270" rx="16" style="fill: #fff; stroke: var(--ink); stroke-width: 7"/>
     <path d="M 884 26 V -14 Q 884 -26 896 -26 H 1154 Q 1166 -26 1166 -14 V 26 Z" style="fill: var(--blue)"/>
     <rect x="896" y="-18" width="36" height="36" rx="6" style="fill: #fff"/>
-    <text x="914" y="10" text-anchor="middle" style="font: 800 26px 'Helvetica Neue', Arial, sans-serif; fill: var(--blue)">in</text>
+    <text x="914" y="10" text-anchor="middle" style="font: 800 22px 'Helvetica Neue', Arial, sans-serif; fill: var(--blue)">LI</text>
     <circle cx="920" cy="72" r="26" style="fill: var(--rock); stroke: var(--ink); stroke-width: 4"/>
     <text x="956" y="66" style="font: 800 24px 'Helvetica Neue', Arial, sans-serif; fill: var(--ink)">Pat Example</text>
     <text x="956" y="92" style="font: 400 19px 'Helvetica Neue', Arial, sans-serif; fill: var(--ink)">VP, Platform</text>

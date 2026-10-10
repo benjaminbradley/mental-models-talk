@@ -18,8 +18,8 @@ Tone: light. The laugh is the on-ramp to the serious point on the next slide.
 
 # Who gets held accountable?
 
-<div class="shots short">
-<figure><img src="illustrations/accountability--ibm-manual.jpeg" alt="A photo of a slide from a 1979 IBM presentation: 'A computer can never be held accountable. Therefore a computer must never make a management decision.'"><figcaption><a href="https://knowyourmeme.com/memes/a-computer-can-never-be-held-accountable">An IBM training slide, 1979 (via Know Your Meme)</a></figcaption></figure>
+<div class="shots tall">
+<figure><img style="max-height: 680px" src="illustrations/accountability--ibm-manual.jpeg" alt="A photo of a slide from a 1979 IBM presentation: 'A computer can never be held accountable. Therefore a computer must never make a management decision.'"><figcaption><a href="https://knowyourmeme.com/memes/a-computer-can-never-be-held-accountable">An IBM training slide, 1979 (via Know Your Meme)</a></figcaption></figure>
 </div>
 
 <p class="lede fragment">The operator acts. Accountability does not transfer.</p>

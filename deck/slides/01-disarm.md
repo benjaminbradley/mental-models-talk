@@ -20,7 +20,7 @@ Tone: matter-of-fact, not dismissive. Named, not hidden. Do not linger or editor
 
 ---
 
-# The contract
+# My goal
 
 1. This talk's focus: how LLMs work, and how to work with them safely and effectively <!-- .element: class="fragment" -->
 2. For newbies: awareness of potential <!-- .element: class="fragment" -->

@@ -17,7 +17,7 @@ activity (pair/group/individual); *demo* = live or pre-captured demonstration;
 |----|------|-----------|--------|------------|-------------|
 | 1 | Entry poll | | | | *poll:* stance + usage baseline |
 | 1 | The real problems, named out loud | | guarded -> permission to engage | | |
-| 1 | The contract: literacy, not conversion | | | | |
+| 1 | My goal: literacy, not conversion | | | | |
 | 2 | Magic -> gradient | "magic, not for me" -> "learnable discipline" | | | |
 | 3 | A note on vocabulary (the yellow tags) | | | | |
 | 3 | Who learns whose language? | | | | |
