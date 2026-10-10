@@ -22,9 +22,9 @@ Tone: matter-of-fact, not dismissive. Named, not hidden. Do not linger or editor
 
 # The contract
 
-1. This talk is about how LLMs work, and how to work with them safely and effectively. <!-- .element: class="fragment" -->
-2. If you're new to this -- hopefully it opens your eyes to their potential. <!-- .element: class="fragment" -->
-3. If you're skeptical or opposed -- hopefully it helps you understand your enemy better. <!-- .element: class="fragment" -->
+1. This talk's focus: how LLMs work, and how to work with them safely and effectively <!-- .element: class="fragment" -->
+2. For newbies: awareness of potential <!-- .element: class="fragment" -->
+3. Skeptical / opposed? Understand the target <!-- .element: class="fragment" -->
 
 Note:
 Read each line, then: "The goal is literacy, not conversion. A better-informed critic is a completely valid outcome. I am not selling you anything."

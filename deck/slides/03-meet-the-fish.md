@@ -2,7 +2,7 @@
 
 <div class="lang-row">
 <span class="emoji">🧑</span><span class="bubble binary">01001000 01101001</span><span class="arrow">→</span><span class="emoji">💻</span>
-<span class="what"><b>Then:</b> people learned computer language.<br>Strict. Only about numbers.</span>
+<span class="what"><b>Before:</b> people learned computer language.<br>Strict. Only about numbers.</span>
 </div>
 <div class="lang-row fragment">
 <span class="emoji">💻</span><span class="bubble emoji">💡 ⚖️ 🧠 ❤️</span><span class="arrow">→</span><span class="emoji">🧑</span>
