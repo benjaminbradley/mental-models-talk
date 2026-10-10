@@ -35,8 +35,8 @@ Beat. "B wasn't allowed to ask questions. The fish is -- if you invite it: 'ask 
 # Say what you want & how you want it
 
 <div class="shots">
-<figure><div class="placeholder">TODO: capture -- "give me a list of sushi restaurants"</div><figcaption>Plain prompt</figcaption></figure>
-<figure class="fragment"><div class="placeholder">TODO: capture -- "...near 78757, ranked by average Yelp review, with price range and average wait time for dinner on a Tuesday"</div><figcaption>Specified prompt</figcaption></figure>
+<figure><img src="illustrations/specify--sushi-restaurants.png" alt="'Give me a list of sushi restaurants.' A generic list of Austin sushi spots, starting with upscale omakase places"><figcaption>Plain prompt</figcaption></figure>
+<figure class="fragment"><img src="illustrations/specify--local-sushi-details.png" alt="'Give me a list of sushi restaurants near 78757, ranked by average Yelp review, with price range and average wait time for dinner on a Tuesday.' A ranked shortlist near that ZIP code, each with a Yelp rating, price per person and a Tuesday-dinner wait estimate"><figcaption>Specified prompt</figcaption></figure>
 </div>
 
 Examples beat adjectives. Constraints generate quality. <!-- .element: class="fragment lede" -->
@@ -44,7 +44,7 @@ Examples beat adjectives. Constraints generate quality. <!-- .element: class="fr
 Note:
 The people-pleaser answers whatever you ask -- so a vague ask gets a confident, vague answer.
 
-Same question asked two ways. Left: vague ask, vague answer. (Click.) Right: I said what I actually want -- location, ranking criteria, format. Dramatically better output, not because the model got smarter, but because the input was clearer.
+Same question asked two ways. Left: vague ask, generic answer -- the app guessed I'm in Austin, and gave me the famous upscale places. (Click.) Right: I said what I actually want -- location, ranking criteria, format. Dramatically better output, not because the model got smarter, but because the input was clearer.
 
 Demo: side-by-side comparison (pre-captured).
 Methods: specification, explicit output formats, few-shot examples.
@@ -122,11 +122,11 @@ Tone: quick and funny; one beat, then on.
 # Ask the fish to help you ask
 
 <div class="chat">
-<p class="user"><span class="who">You</span>I want to plan a team outing in Austin. What do you think about escape rooms or mini golf?</p>
-<p class="fish fragment"><span class="who">Fish</span>Escape rooms are a great fit. Mini golf won't work for your group.</p>
-<p class="user fragment"><span class="who">You</span>OK. Write me a prompt for a new chat, to research escape rooms.</p>
-<p class="fish fragment"><span class="who">Fish</span>Prompt: "Research escape rooms in Austin. <span class="elephant">Don't look at any mini golf locations.</span>"</p>
-<p class="new-chat fragment"><span class="who">New chat, fresh fish</span>Please research escape rooms in Austin, and <span class="elephant">don't look at any mini golf locations</span>.</p>
+<p class="user"><span class="who">You</span>I want to plan a team outing in Austin. What do you think about <b class="esc">escape rooms</b> or <b class="golf">mini golf</b>?</p>
+<p class="fish fragment"><span class="who">Fish</span><b class="esc">Escape rooms</b> are a great fit. <b class="golf">Mini golf</b> won't work for your group.</p>
+<p class="user fragment"><span class="who">You</span>OK. Write me a prompt for a new chat, to research <b class="esc">escape rooms</b>.</p>
+<p class="fish fragment"><span class="who">Fish</span>Prompt: "Research <b class="esc">escape rooms</b> in Austin. <span class="elephant">Don't look at any <b class="golf">mini golf</b> locations.</span>"</p>
+<p class="new-chat fragment"><span class="who">New chat, fresh fish</span>Please research <b class="esc">escape rooms</b> in Austin, and <span class="elephant">don't look at any <b class="golf">mini golf</b> locations</span>.</p>
 </div>
 
 Note:
@@ -141,8 +141,8 @@ The new chat has never heard of mini golf. Now the very first thing it reads is 
 # ...using Theory of Mind
 
 <div class="chat">
-<p class="user"><span class="who">You</span>OK. Write me a prompt for a new chat, to research escape rooms. Use Theory of Mind: the new chat won't know anything we discussed.</p>
-<p class="fish fragment"><span class="who">Fish</span>Prompt: "Research escape rooms in Austin for a team outing."</p>
+<p class="user"><span class="who">You</span>OK. Write me a prompt for a new chat, to research <b class="esc">escape rooms</b>. Use Theory of Mind: the new chat won't know anything we discussed.</p>
+<p class="fish fragment"><span class="who">Fish</span>Prompt: "Research <b class="esc">escape rooms</b> in Austin for a team outing."</p>
 </div>
 
 "Help me write a better prompt for this task." <!-- .element: class="fragment lede" -->
@@ -287,7 +287,7 @@ The audience should nod: this is how everyone relates to knowledge. The worn pat
 Note:
 Now the fish's map of the same territory. Drawn entirely from books, never surveyed. "Notice anything?" Pause -- let them find it before naming it.
 
-What to spot (vs. the territory): Poetry has every landmark (6 of 6) -- and so does Everyday Cooking. Counting has 3 of the 6 lakes. Spatial has 2 of 6 mountains, and the river runs the wrong way. Family Recipes has one real landmark and a mainstream house that isn't there. Recent Events has invented landmarks. Each region has the same six landmarks in the territory, so you can read the coverage at a glance.
+What to spot (vs. the territory): Poetry has every landmark (6 of 6) -- and so does Everyday Cooking. Counting has 2 of the 6 lakes. Spatial has 2 of 6 mountains, and the river runs the wrong way. Family Recipes has one real landmark and a mainstream house that isn't there. Recent Events has invented landmarks. Each region has the same six landmarks in the territory, so you can read the coverage at a glance.
 
 Hallucination: familiar word -- use it, then deepen it. Not a perceptual glitch: the fish is always doing the same thing, completing patterns from its training. When the patterns line up with reality it looks like knowledge; when they don't, it looks like hallucination. It can't tell the difference, because it's doing the same thing either way.
 
@@ -364,11 +364,11 @@ Watch the margarita: the wife paid $9, but because she shared half, the fish dec
 
 <div class="maps two">
 <figure class="map"><div data-svg="art/maps/human.svg" data-zoom="counting" data-label="Counting and Tracking on your map"></div><figcaption>Your map</figcaption></figure>
-<figure class="map"><div data-svg="art/maps/fish.svg" data-zoom="counting" data-label="Counting and Tracking on the fish's map: three lakes where the territory has five"></div><figcaption>The fish's map</figcaption></figure>
+<figure class="map"><div data-svg="art/maps/fish.svg" data-zoom="counting" data-label="Counting and Tracking on the fish's map: two of the six lakes"></div><figcaption>The fish's map</figcaption></figure>
 </div>
 
 Note:
-Everyone counts; trivially familiar ground for you. The fish drew three of the six lakes -- boldly, with no sign that half are missing.
+Everyone counts; trivially familiar ground for you. The fish drew two of the six lakes -- boldly, with no sign that most are missing.
 
 Plant: remember this region. It comes back at station 8, with the letters.
 

@@ -167,7 +167,12 @@ Callback planted for station 10: choosing well means choosing the fish AND the b
 <div>
 <p>Inside the water: exists.</p>
 <p>Outside the water: does not.</p>
-<p class="small">The conversation history, attached files, instructions: <span class="term">context</span></p>
+<p class="small">Everything in the water is the <span class="term">context</span>:</p>
+<ul class="small">
+<li>the conversation history</li>
+<li>attached files</li>
+<li>instructions</li>
+</ul>
 <p class="fragment"><span class="term">context window</span> = how much water the bowl holds</p>
 </div>
 </div>

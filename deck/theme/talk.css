@@ -175,6 +175,14 @@
 .reveal .shots .placeholder { min-height: 560px; }
 .reveal .lede { font-size: 1.1em; font-weight: 800; }
 .reveal .small { font-size: 0.7em; }
+.reveal .footnote { font-size: 24px; font-style: italic; margin: 6px 0 0; color: #4a5368; }
+/* a poem typed out as text (station 3 "then") */
+.reveal .poem { text-align: left; background: #fff; border: 6px solid var(--ink); border-radius: 16px; padding: 30px 44px; font: 36px/1.5 Georgia, serif; }
+.reveal .poem p { margin: 0; }
+.reveal .poem .poem-title { font-style: italic; font-weight: 700; margin-bottom: 18px; }
+/* a term chip drawn inside SVG artwork */
+.reveal .scene .svg-term rect { fill: var(--yellow); stroke: var(--ink); stroke-width: 4; }
+.reveal .scene .svg-term text { font: 700 26px ui-monospace, Menlo, Consolas, monospace; fill: var(--ink); }
 /* An image that drops in over the slide (e.g. the full transcript behind a trimmed one). */
 .reveal .overlay { position: absolute; top: 40px; right: 40px; z-index: 5; }
 .reveal .overlay img { max-height: 980px; box-shadow: 0 20px 60px rgb(0 0 0 / 0.35); }
@@ -188,6 +196,10 @@
 .reveal .versus h3 { margin-top: 0; }
 .reveal .versus .lean { border-color: var(--green-deep); background: color-mix(in srgb, var(--green) 10%, #fff); }
 .reveal .versus .beware { border-color: var(--red); background: color-mix(in srgb, var(--red) 8%, #fff); }
+.reveal .versus .timebars { display: block; width: 100%; max-width: 420px; height: auto; margin: 0 auto 10px; }
+/* decompose: a prompt bubble and a symbolic answer */
+.reveal .versus .prompt { font-size: 32px; padding: 14px 22px; border: 4px solid var(--ink); border-radius: 18px; background: var(--glass); }
+.reveal .versus .output { font: italic 30px/1.4 Georgia, serif; color: #4a5368; }
 
 /* ---- The gradient (station 2; returns at 13) --------------------------------------- */
 /* Two camps split by a hard line; the cue fragment dissolves the line into a gradient. */
@@ -255,6 +267,9 @@ section:has(.box-cue.visible) .harms {
 .reveal .chat .who { display: block; font-size: 0.7em; font-weight: 800; opacity: 0.7; }
 .reveal .chat .new-chat { align-self: stretch; max-width: none; border-style: dashed; background: var(--paper); }
 .reveal .chat .elephant { color: var(--accent); font-weight: 800; }
+/* escape rooms vs. mini golf: the same colors as the cat food at station 6 */
+.reveal .chat .esc { color: var(--escape); font-weight: 800; text-decoration: underline; }
+.reveal .chat .golf { color: var(--golf); font-weight: 800; font-style: italic; text-decoration: underline dotted; }
 
 /* ---- Who speaks whose language (station 3) ----------------------------------------- */
 .reveal .lang-row { display: flex; align-items: center; gap: 30px; margin: 20px 0; }
@@ -278,15 +293,16 @@ section:has(.box-cue.visible) .harms {
 .reveal .scene.wide svg { height: auto; width: 100%; max-height: 760px; }
 .reveal .scene-caption { text-align: center; margin-top: 10px; }
 
-/* ---- Operator to-do checklist (station 8) ------------------------------------------ */
-.reveal .checklist { list-style: none; margin-left: 0; font-size: 48px; }
-.reveal .checklist li { display: flex; align-items: center; gap: 24px; }
-.reveal .checklist .box {
-  display: inline-flex; align-items: center; justify-content: center;
-  width: 64px; height: 64px; border: 6px solid var(--ink); border-radius: 10px; background: #fff;
-  flex: 0 0 auto;
-}
-.reveal .checklist .box .fragment { color: var(--green-deep); font-weight: 900; font-size: 56px; }
+/* ---- Operator to-do list as a Markdown file (station 8) ----------------------------- */
+/* A file tab with its name, then raw Markdown lines; .rename-cue swaps HUMAN- for PROJECT-. */
+.reveal .mdfile { border: 6px solid var(--ink); border-radius: 12px; background: #fff; overflow: hidden; }
+.reveal .mdfile-name { background: var(--ink); color: var(--paper); font: 700 34px ui-monospace, Menlo, Consolas, monospace; padding: 10px 24px; }
+.reveal .mdfile-name .name-project { display: none; color: var(--yellow); }
+section:has(.rename-cue.visible) .mdfile-name .name-human { display: none; }
+section:has(.rename-cue.visible) .mdfile-name .name-project { display: inline; }
+.reveal .mdfile-body { font: 500 40px/1.6 ui-monospace, Menlo, Consolas, monospace; padding: 20px 28px; white-space: nowrap; }
+.reveal .mdfile-body .md-h { font-weight: 800; color: var(--blue); }
+.reveal .mdfile-body .fragment { color: var(--green-deep); font-weight: 900; }
 
 /* ---- Mock UI cards (memory entries, etc.) ------------------------------------------ */
 .reveal .mock {

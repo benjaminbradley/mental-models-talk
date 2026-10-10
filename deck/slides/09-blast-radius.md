@@ -400,7 +400,7 @@ Framing guard: these happen to be one vendor's tool because that's where the sto
 # A wall or a sign?
 
 <div class="scene wide">
-<svg viewBox="0 0 1800 760" role="img" aria-label="Top: a tank's tube runs toward your files but ends at a brick wall. Bottom: the tube runs right past a 'Please keep out' sign and reaches the files">
+<svg viewBox="0 0 1920 760" role="img" aria-label="Top: a tank's tube runs toward your files but ends at a brick wall. Bottom: the tube runs right past a 'Please keep out' sign and reaches the files">
   <!-- row 1: a wall -->
   <g style="fill: none" stroke-linecap="round"><path d="M 380 190 H 1110" style="stroke: var(--ink); stroke-width: 40"/><path d="M 380 190 H 1110" style="stroke: var(--rock); stroke-width: 24"/></g>
   <use href="#tank-back" x="20" y="40" width="380" height="236"/>
@@ -416,8 +416,9 @@ Framing guard: these happen to be one vendor's tool because that's where the sto
     <path d="M 1300 110 h 110 l 40 40 v 150 h -150 Z" style="fill: #fff"/>
     <path d="M 1410 110 v 40 h 40 M 1325 180 h 100 M 1325 215 h 100 M 1325 250 h 70" style="fill: none"/>
   </g>
-  <text class="tag" x="1500" y="170">A wall</text>
-  <text class="tag" x="1500" y="215" style="font-size: 24px">it <tspan style="font-style: italic">cannot</tspan> reach</text>
+  <text class="tag" x="1490" y="170">A wall /</text>
+  <g class="svg-term"><rect x="1625" y="136" width="216" height="46" rx="10"/><text x="1733" y="168" text-anchor="middle">architecture</text></g>
+  <text class="tag" x="1490" y="215" style="font-size: 24px">it <tspan style="font-style: italic">cannot</tspan> reach</text>
   <!-- row 2: a sign -->
   <g class="fragment">
     <g style="fill: none" stroke-linecap="round"><path d="M 380 580 H 1310" style="stroke: var(--ink); stroke-width: 40"/><path d="M 380 580 H 1310" style="stroke: var(--rock); stroke-width: 24"/></g>
@@ -436,8 +437,9 @@ Framing guard: these happen to be one vendor's tool because that's where the sto
     </g>
     <text class="note-text" x="1175" y="463" text-anchor="middle" style="font-size: 36px">Please</text>
     <text class="note-text" x="1175" y="503" text-anchor="middle" style="font-size: 36px">keep out</text>
-    <text class="tag" x="1500" y="560">A sign</text>
-    <text class="tag" x="1500" y="605" style="font-size: 24px">it's <tspan style="font-style: italic">asked</tspan> not to</text>
+    <text class="tag" x="1490" y="560">A sign /</text>
+    <g class="svg-term"><rect x="1617" y="526" width="170" height="46" rx="10"/><text x="1702" y="558" text-anchor="middle">guideline</text></g>
+    <text class="tag" x="1490" y="605" style="font-size: 24px">it's <tspan style="font-style: italic">asked</tspan> not to</text>
   </g>
 </svg>
 </div>

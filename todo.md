@@ -38,22 +38,14 @@ What each metaphor image means: `metaphor-imagery.md`; how each slide composes i
       reopened; HIDDEN in the deck for now). If kept: find & test the figure. Criteria: spatial relationships (not artistic skill), dignified for
       adults, honest ambiguity (partners disagree about the result and both have a point).
       Leading candidate: simple architectural floor plan. Maybe 2 samples - overhead view vs PoV.
-- [ ] Prototype the **decomposition demonstration** for station 5 (**Q11** resolved as a
-      prototyping task). Leading candidate: "plan a team offsite" monolithic prompt vs.
-      decomposed sub-tasks.
 
 #### Pre-capture demos & transcripts
 
 - [ ] Station 7 citations: capture "Tell me about Austin's moonlight towers" vs. "Search for info
       on Austin's moonlight towers" in the same app (filenames in the slide's placeholders).
 
-- [ ] Station 3 "then" poetry: find a pre-2020-ish example of a computer's bad poem.
-- [ ] Station 3 "now" poetry: capture the poem from
-      https://www.reddit.com/r/ClaudeAI/comments/1gn4u8y/i_hade_a_nice_night_with_claude_and_asked_for_a/
-      and replace the slide link with the permalink to the published comment.
-- [ ] Station 4 specification demo: plain vs. specified sushi-restaurant prompts.
-- [ ] Station 8 letter count: capture the follow-up ("write a script to count them") with the
-      script and its output, same "Suffering Succotash" question.
+- [ ] Station 3 "now" poetry: optionally replace the slide link with the permalink to the
+      published reddit comment (the capture is a tall phone screenshot; small when projected).
 - [ ] Station 10 instability: find a higher-resolution capture of the model-suspension post
       (`unstable--fable-suspended.png` is 501px wide and blurs when projected).
 - [ ] Station 7 memory: replace the illustrative "Saved memories" mock entries with the real
@@ -96,6 +88,11 @@ What each metaphor image means: `metaphor-imagery.md`; how each slide composes i
 - [ ] Draft the one-page takeaway card (source: `take-home.md`).
 
 ### Enhancements (low priority)
+
+- [ ] Station 4 "Counting & Tracking: the fish": mark up / highlight the capture to show exactly
+      where the errors are (the $4.50 margarita).
+- [ ] Station 4 "Spatial Reasoning: the fish": same -- highlight the contradiction between its
+      own ordering and its answer.
 
 - [ ] Station 1 harms: replace the emoji tiles with photos (datacenter, water, labor,
       provenance, power).

@@ -2,7 +2,7 @@
 
 <div class="shots">
 <figure><img src="illustrations/jaggedness-B1-letters.png" alt="'How many S's are in Suffering Succotash?' The model answers 4, listing a fourth S that isn't there"><figcaption>Asked directly</figcaption></figure>
-<figure class="fragment"><div class="placeholder">TODO: capture -- same question, "write a script to count them": the script and its output (3)</div><figcaption>"Write a script to count them"</figcaption></figure>
+<figure class="fragment"><img src="illustrations/tool-use--letter-counting.png" alt="'Write a script to count letters and count the S's in Suffering Succotash.' The model creates a file, runs a command, and reports: total S's: 3 (Suffering 1, Succotash 2)"><figcaption>"Write a script to count them"</figcaption></figure>
 </div>
 
 Note:
@@ -51,12 +51,16 @@ Demo: pre-captured (or live; any outcome teaches). Method: code execution.
 </svg>
 </div>
 <div>
-<p>Your project's to-do list:</p>
-<ul class="checklist">
-<li><span class="box"><span class="fragment">✓</span></span>Book the escape room 🌐</li>
-<li><span class="box"><span class="fragment">✓</span></span>Email the team ✉️</li>
-<li><span class="box"><span class="fragment">✓</span></span>Add it to the calendar 📅</li>
-</ul>
+<div class="mdfile">
+<div class="mdfile-name"><span class="name-human">HUMAN-TODO.md</span><span class="name-project">PROJECT-TODO.md</span></div>
+<div class="mdfile-body">
+<div class="md-h"># Team outing</div>
+<div>- [<span class="fragment">x</span>] Book the escape room 🌐</div>
+<div>- [<span class="fragment">x</span>] Email the team ✉️</div>
+<div>- [<span class="fragment">x</span>] Add it to the calendar 📅</div>
+</div>
+</div>
+<span class="fragment rename-cue"></span>
 <p><span class="term">tool use</span> <span class="term">agent</span></p>
 </div>
 </div>
@@ -64,9 +68,11 @@ Demo: pre-captured (or live; any outcome teaches). Method: code execution.
 Note:
 Tools let the fish act. This is where the spine claim from station 3 becomes literal: anything you can specify clearly enough, the system can now do.
 
-Back to the team outing. Here's your to-do list, and here are the fish's tools from station 7: browser, email, calendar, files.
+Back to the team outing. Here's your to-do list -- a plain file, HUMAN-TODO.md: the things a human has to do. And here are the fish's tools from station 7: browser, email, calendar, files.
 
 (Click through.) Book the escape room -- through the browser. Email the team. Add it to the calendar. Things you used to do yourself, handed off item by item. That's the operator to-do list -- and it is powerful and dangerous for the same reason. Agency is the amplifier: everything good scales, and so does everything bad.
+
+(Click.) And the file gets a new name: it's not the human's to-do list anymore. PROJECT-TODO.md -- the project's list, and the fish works through it alongside you.
 
 Spine payoff #2. Cognitive shift: "chatbot that says" -> "system that does." Methods: tool use, tool discovery.
 

@@ -26,7 +26,7 @@
 //   (Law).
 // - Fish map: uniform bold ink, and a subset of the real landmarks at their real positions
 //   (missing = thin training data), aligned with the examples: all 6 in Poetry and Everyday
-//   Cooking; 5 of 6 in History, Law, Medicine; Spatial 2 of 6, Counting 3 of 6 lakes, Family
+//   Cooking; 5 of 6 in History, Law, Medicine; Spatial 2 of 6, Counting 2 of 6 lakes, Family
 //   Recipes 1 of 6, Recent Events 2 of 6. The only non-matching marks: Spatial's river on the
 //   wrong course, one mainstream house in Family Recipes (drift), two invented landmarks in Recent
 //   Events (filled from pattern).
@@ -479,7 +479,7 @@ const FISH = {
   medicine: { keep: 0.83 },
   everyday: { keep: 1 },                                    // 6 of 6: the French omelette
   spatial: { keep: 0.34 },                                  // 2 of 6, plus a river on the wrong course
-  counting: { keep: 0.5 },                                  // 3 of the 6 lakes
+  counting: { keep: 0.34 },                                 // 2 of the 6 lakes
   family: { keep: 0.17, invent: [['house', 1]] },           // 1 of 6; a mainstream house drifts in
   recent: { keep: 0.34, invent: [['house', 1], ['tree', 1]] }, // filled in from pattern
   outer: { keep: 0.45 },

@@ -38,14 +38,17 @@ For most of computing history, if you wanted to talk to a computer, *you* learne
 # Computers can speak our language
 
 <div class="shots">
-<figure><div class="placeholder">TODO: "then" -- a computer's bad poetry, ~2020 or earlier (see todo.md)</div><figcaption>Then</figcaption></figure>
-<figure class="fragment"><div class="placeholder">TODO: "now" -- the poem from reddit.com/r/ClaudeAI/comments/1gn4u8y, with 😢 and a link to the published comment</div><figcaption><a href="https://www.reddit.com/r/ClaudeAI/comments/1gn4u8y/i_hade_a_nice_night_with_claude_and_asked_for_a/">The first AI-generated poem to bring a tear to my eye</a> <span class="emoji">😢</span></figcaption></figure>
+<figure><div class="poem">
+<p class="poem-title">The pudding god and the magical dragon</p>
+<p>The mighty pudding god will devour you.<br>Is in the form of this magical dragon cris<br>And in the form of this magical dragon biss<br>You will be given a magical egg</p>
+</div><figcaption>Then: GPT-2, 2020 (<a href="https://www.aiweirdness.com/rhyming-is-hard-20-05-26/">"Rhyming is hard," AI Weirdness</a>)</figcaption></figure>
+<figure class="fragment"><img src="illustrations/computers-english--claude-poetry.webp" alt="A poem titled 'Under Trees': 'The trees do not optimize their rustling, the wind does not justify its dance... I am allowed to simply be here, like the trees on any given day.'"><figcaption><a href="https://www.reddit.com/r/ClaudeAI/comments/1gn4u8y/i_hade_a_nice_night_with_claude_and_asked_for_a/">The first AI-generated poem to bring a tear to my eye</a> <span class="emoji">😢</span></figcaption></figure>
 </div>
 
 Anything you can specify clearly enough in language, a computer can now do. <!-- .element: class="fragment lede" -->
 
 Note:
-Until about 2020 we made fun of computers' bad poetry. (Click.) Now they write good poems in seconds -- this is the first AI-generated poem to bring a tear to my eye.
+Until about 2020 we made fun of computers' bad poetry. This is GPT-2, in 2020, trying to rhyme: "The pudding god and the magical dragon." (Read a line or two. "Cris." "Biss.") (Click.) Now they write good poems in seconds -- this is the first AI-generated poem to bring a tear to my eye.
 
 Then the spine claim, plainly: "Here's the claim this whole talk hangs on: anything you can specify clearly enough in language, a computer can now do."
 
@@ -111,7 +114,8 @@ Tone: productive disorientation -- instincts about people (confident = knowledge
     <path d="M 510 60 Q 550 44 590 60 L 590 150 Q 550 134 510 150 Z"/>
   </g>
 </svg>
-<figcaption>1. Read the library<br><span class="term">pretraining</span> <span class="term">training data = the books</span><br>anatomy: what it knows</figcaption>
+<p class="footnote">* Not just published books: other text data sets, too.</p>
+<figcaption>1. Read the library<br><span class="term">pretraining</span> <span class="term">training data = the books*</span><br>anatomy: what it knows</figcaption>
 </figure>
 <figure class="fragment">
 <svg viewBox="0 0 600 470" role="img" aria-label="The goldfish practicing conversations; each reply gets a score paddle, a green check or a red cross">
@@ -142,7 +146,7 @@ Tone: productive disorientation -- instincts about people (confident = knowledge
 Note:
 Two phases. (Yellow tags: the real vocabulary.)
 
-First, it read the entire library -- every book, every website. That's **pretraining**, and the library is its **training data**: where its knowledge comes from, including how uneven it is. That's anatomy -- structural, durable.
+First, it read the entire library -- every book, every website. (The asterisk: "books" is shorthand. The library is every big text data set its makers could gather -- web pages, forums, code, transcripts -- not just published books.) That's **pretraining**, and the library is its **training data**: where its knowledge comes from, including how uneven it is. That's anatomy -- structural, durable.
 
 (Click.) Then an apprenticeship: practice conversations, with people scoring each reply -- thumbs up, thumbs down. That's **RLHF**, reinforcement learning from human feedback (one kind of post-training). It's where it learned its manners -- the helpfulness, the confidence, the eagerness to please. That's temperament -- trained, model-specific, and it varies between fish.
 
