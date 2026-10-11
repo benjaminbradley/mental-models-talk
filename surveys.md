@@ -5,8 +5,8 @@ and the closing slide (`deck/slides/13-open.md`). Owned by the benjintern Google
 
 | Form | Edit link | Responder link |
 |---|---|---|
-| Entry ("Check-in") | [edit](https://docs.google.com/forms/d/1v0U-5ZOtf_ncYCv2RiqISwOTTC9NGQmIfoOKDqkNnFI/edit) | TBD (after publishing) |
-| Exit ("Check-out") | [edit](https://docs.google.com/forms/d/1HiW2shKMlKknX-owv-S0OWg5bZAoJ78ds3zTjgW0ZHc/edit) | TBD (after publishing) |
+| Entry ("Check-in") | [edit](https://docs.google.com/forms/d/1v0U-5ZOtf_ncYCv2RiqISwOTTC9NGQmIfoOKDqkNnFI/edit) | [respond](https://docs.google.com/forms/d/e/1FAIpQLSfF28Iji3sPDIDnakAKSCLOr8hzNO1ywnFKYc4uQl37aO1VGw/viewform) (QR: `deck/art/qr-entry.svg`) |
+| Exit ("Check-out") | [edit](https://docs.google.com/forms/d/1HiW2shKMlKknX-owv-S0OWg5bZAoJ78ds3zTjgW0ZHc/edit) | [respond](https://docs.google.com/forms/d/e/1FAIpQLSd4VQeimVG-IZqlwJIgf_ISR8pJfJ4_4lQ-IGlQ3P_D4-XCeg/viewform) (QR: `deck/art/qr-exit.svg`) |
 
 ## Goals
 
@@ -42,10 +42,11 @@ Confirmation: "Thanks! See you at the end for a quick check-out."
 
 ## Exit form (~2 minutes)
 
-1. How often do you use AI chat tools...? *(required; same options as entry)*
-2. How well do you understand how to work with LLMs effectively? *(required grid; rows
+1. How well do you understand how to work with LLMs effectively? *(required grid; rows
    Before today / Now; columns 1 - Very little, 2, 3, 4, 5 - Very well)*
-3. How well do you understand the safety concerns around using LLMs? *(required grid; same)*
+2. How well do you understand the safety concerns around using LLMs? *(required grid; same)*
+3. How often do you use AI chat tools...? *(required; same options as entry; placed after the
+   grids so the exit form doesn't open looking identical to the entry form)*
 4. If someone asked what you got out of this talk, what would you tell them? *(paragraph, optional)*
 5. Was anything confusing, or do you still have unanswered questions? *(paragraph, optional)*
 6. Anything else you'd like to say to me about the talk? *(paragraph, optional)*

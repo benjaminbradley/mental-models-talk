@@ -20,7 +20,7 @@ Exercise: individual reflection. Do not collect or share answers; this is privat
 
 **Scan to check out (anonymous)**
 
-<div class="placeholder">TODO: exit-survey QR code (make qr URL=... OUT=deck/art/qr-exit.svg; URL in surveys.md)</div>
+<a href="https://docs.google.com/forms/d/e/1FAIpQLSd4VQeimVG-IZqlwJIgf_ISR8pJfJ4_4lQ-IGlQ3P_D4-XCeg/viewform" target="_blank" rel="noopener"><img class="poll-qr" src="art/qr-exit.svg" alt="QR code for the anonymous exit survey"></a>
 
 Note:
 "One more scan before you go -- two minutes, anonymous. It's how this talk gets better."
@@ -82,7 +82,7 @@ Framing guard: earned wonder, not advocacy. "Anyone can choose" preserves agency
 # Thank you
 
 <div class="closing">
-<figure><img src="art/qr-slides.svg" alt="QR code for the slides URL"><figcaption>Slides</figcaption></figure>
+<figure><a href="https://benjaminbradley.github.io/mental-models-talk/" target="_blank" rel="noopener"><img src="art/qr-slides.svg" alt="QR code for the slides URL"></a><figcaption>Slides</figcaption></figure>
 <div>
 <p><b>Benjamin Bradley</b></p>
 <p>Slides: <a href="https://benjaminbradley.github.io/mental-models-talk/">benjaminbradley.github.io/mental-models-talk</a></p>

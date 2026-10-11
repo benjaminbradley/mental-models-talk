@@ -5,7 +5,7 @@ Speaker name · affiliation
 
 **Scan to check in (anonymous)**
 
-<div class="placeholder">TODO: entry-survey QR code (make qr URL=... OUT=deck/art/qr-entry.svg; URL in surveys.md)</div>
+<a href="https://docs.google.com/forms/d/e/1FAIpQLSfF28Iji3sPDIDnakAKSCLOr8hzNO1ywnFKYc4uQl37aO1VGw/viewform" target="_blank" rel="noopener"><img class="poll-qr" src="art/qr-entry.svg" alt="QR code for the anonymous entry survey"></a>
 
 Note:
 On screen as people walk in and settle. No narration.

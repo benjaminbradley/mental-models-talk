@@ -43,11 +43,9 @@ When specific slides are mentioned, add the direct URL for a server running on h
    - [ ] re-check the 45-minute cut (`presentation-arc.md`) after the reorder
 - [ ] Rehearse; refine speaker notes; adjust pacing.
 
-- [ ] Finish entry & exit surveys (design and forms done: see `surveys.md`)
-   - [ ] Publish both forms; add the responder links to `surveys.md`
-   - [ ] Generate two QR SVGs: `make qr URL=... OUT=deck/art/qr-entry.svg` and `.../qr-exit.svg`
-   - [ ] Replace the QR placeholders in `deck/slides/00-pre-talk.md` and `13-open.md`
-   - [ ] Test-scan both QR codes from a phone at projector distance; submit a test response, then delete it
+- [ ] Test the survey QR codes (forms, links and QRs: `surveys.md`): scan both from a phone at
+      projector distance (first slide and "Before you go" near the end), submit a test response
+      to each, then delete the test responses in Forms
 
 - [ ] Draft the one-page takeaway card (source: `take-home.md`).
 - [ ] Print the one-page takeaway card.
