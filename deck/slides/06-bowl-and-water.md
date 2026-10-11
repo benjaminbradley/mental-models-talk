@@ -26,7 +26,7 @@
 <p class="user fragment" data-fragment-index="3"><span class="who">You</span>What's my name?</p>
 <p class="fish fragment" data-fragment-index="4"><span class="who">LLM</span>We haven't been introduced yet, but I'm happy to meet you!</p>
 </div>
-<p class="lede fragment" data-fragment-index="6" style="margin-top: 40px">When talking directly to the LLM, every response is brand-new.</p>
+<p class="lede fragment" data-fragment-index="6" style="margin-top: 40px">Raw LLM: every response starts from zero</p>
 </div>
 </div>
 
@@ -168,7 +168,7 @@ Callback planted for station 10: choosing well means choosing the fish AND the b
 <div>
 <p>Inside the water: exists.</p>
 <p>Outside the water: does not.</p>
-<p class="small">Everything in the water is the <span class="term">context</span>:</p>
+<p class="small">In the water = the <span class="term">context</span>:</p>
 <ul class="small">
 <li>the conversation history</li>
 <li>attached files</li>
@@ -224,7 +224,7 @@ Methods: context engineering (what you pour in), document hygiene.
 <p><b>Plain:</b> a sensible, generic top 5.</p>
 <p class="fragment" data-fragment-index="0"><b>Role:</b> one line in the water. A few new items. <span class="term">role prompting</span></p>
 <p class="fragment" data-fragment-index="1"><b>Domains:</b> "What domains of knowledge are relevant? For each, what does a non-expert overlook?" The fish fills the water before it answers. <span class="term">knowledge-domain elicitation</span></p>
-<p class="lede fragment" data-fragment-index="2">It knew all of this. It just didn't use it unprompted.</p>
+<p class="lede fragment" data-fragment-index="2">It knew all this. Didn't use it unprompted.</p>
 </div>
 </div>
 
@@ -275,7 +275,7 @@ Methods: role prompting, knowledge-domain elicitation (a generalized form of rol
 <li class="fragment" data-fragment-index="1"><span class="term">extended thinking</span> "Think about what criteria matter here, then answer."</li>
 <li class="fragment" data-fragment-index="2"><span class="term">self-reflection</span> "How confident are you? What might you be wrong about?"</li>
 </ul>
-<p class="lede fragment" data-fragment-index="3">Whatever it writes first lands in the water, and shapes the answer.</p>
+<p class="lede fragment" data-fragment-index="3">What it writes first lands in the water &rarr; shapes the answer</p>
 </div>
 </div>
 
@@ -322,7 +322,7 @@ These reduce the problem; they don't remove your obligation to verify. And notic
 </svg>
 </div>
 <div>
-<p>Tired of saying the same thing every time?</p>
+<p>Repeating yourself every time?</p>
 <p class="fragment">Your note: <span class="term">custom instructions</span></p>
 <p class="fragment">The maker's note: <span class="term">system instructions</span></p>
 </div>
@@ -365,7 +365,7 @@ You (or the maker) write these notes; the fish only reads them. Memory (station 
 </svg>
 </div>
 <div>
-<p>Someone else's notes and documents, already in the water.</p>
+<p>Someone else's notes &amp; docs, already in the water</p>
 <p><span class="term">Custom GPT</span> <span class="term">Gem</span> <span class="term">Project</span></p>
 <p class="fragment small">Pulling in the right documents on demand: <span class="term"><b>RAG</b>: retrieval-augmented generation</span></p>
 </div>

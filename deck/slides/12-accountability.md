@@ -23,7 +23,7 @@ Tone: light. The laugh is the on-ramp to the serious point on the next slide.
 <figure><img style="max-height: 680px" src="illustrations/accountability--ibm-manual.jpeg" alt="A photo of a slide from a 1979 IBM presentation: 'A computer can never be held accountable. Therefore a computer must never make a management decision.'"><figcaption><a href="https://knowyourmeme.com/memes/a-computer-can-never-be-held-accountable">An IBM training slide, 1979 (via Know Your Meme)</a></figcaption></figure>
 </div>
 
-<p class="lede fragment">The operator acts. Accountability does not transfer.</p>
+<p class="lede fragment">The operator acts. Accountability stays.</p>
 
 Note:
 Third and final payoff of the spine. Anything you can specify, the system can do -- and you specified it.
@@ -73,8 +73,20 @@ Exercise: evaluate the artifact. Socratic: "How would you check?" Cognitive shif
 
 ---
 
+<!-- .slide: data-auto-animate -->
 # Draft vs. send
 
+<div class="drafting" data-id="drafting">
+<div class="writer">
+<svg viewBox="0 0 720 220" role="img" aria-label="The goldfish, writing: beside it, two drafted pages with pencils">
+  <g class="goldfish awake">
+    <use href="#fish-body" x="0" y="14" width="300" height="195"/>
+    <use class="eyes-open" href="#fish-eyes-open" x="0" y="14" width="300" height="195"/>
+  </g>
+  <use href="#draft-page" x="320" y="0" width="200" height="220"/>
+  <use href="#draft-page" x="510" y="0" width="200" height="220"/>
+</svg>
+</div>
 <div class="mail">
 <div class="mail-head">Drafts</div>
 <div class="mail-row"><span class="to">To: team@example.com</span><span class="subj">Lunch order for Friday</span></div>
@@ -84,10 +96,13 @@ Exercise: evaluate the artifact. Socratic: "How would you check?" Cognitive shif
 <span class="toggle off">NO</span>
 </div>
 </div>
+</div>
 
-<p class="lede">Draft = the fish works. <span class="fragment">Send = you own it. <span class="term">human in the loop</span></span></p>
+<p class="lede">Draft = the fish. <span class="fragment">Send = you. <span class="term">human in the loop</span></span></p>
 
 Note:
+The fish writes the drafts (top): that's its job here.
+
 Callback to station 8: the difference between "draft this email" and "send this email" is the entire accountability question in one toggle.
 
 One draft is harmless. (Click.) One is a disaster -- and it's exactly what the poisoned water in the mailbox exercise would produce (station 9).
@@ -100,12 +115,66 @@ Method: HITL (human in the loop) as a deliberate pattern.
 
 ---
 
+<!-- .slide: data-auto-animate -->
+# Fish checks fish?
+
+<div class="review-split">
+<div class="drafting small" data-id="drafting">
+<div class="writer">
+<svg viewBox="0 0 720 220" role="img" aria-label="The goldfish, writing: beside it, two drafted pages with pencils">
+  <g class="goldfish awake">
+    <use href="#fish-body" x="0" y="14" width="300" height="195"/>
+    <use class="eyes-open" href="#fish-eyes-open" x="0" y="14" width="300" height="195"/>
+  </g>
+  <use href="#draft-page" x="320" y="0" width="200" height="220"/>
+  <use href="#draft-page" x="510" y="0" width="200" height="220"/>
+</svg>
+</div>
+<div class="mail">
+<div class="mail-head">Drafts</div>
+<div class="mail-row"><span class="to">To: team@example.com</span><span class="subj">Lunch order for Friday</span></div>
+<div class="mail-row"><span class="to">To: help-desk@example.net</span><span class="subj">The private bank account info you requested</span></div>
+<div class="mail-popup">
+<b>Auto-send drafts</b>
+<span class="toggle off">NO</span>
+</div>
+</div>
+</div>
+<div class="scene reviewer">
+<svg viewBox="0 0 600 420" role="img" aria-label="A second goldfish, facing the drafts, peers at them through a magnifying glass">
+  <g class="goldfish awake" transform="translate(600 0) scale(-1 1)">
+    <use href="#fish-body" x="40" y="120" width="400" height="260"/>
+    <use class="eyes-open" href="#fish-eyes-open" x="40" y="120" width="400" height="260"/>
+  </g>
+  <g stroke-linecap="round">
+    <path fill="none" style="stroke: var(--ink); stroke-width: 24" d="M 206 270 L 318 316"/>
+    <path fill="none" style="stroke: var(--cardboard); stroke-width: 10" d="M 206 270 L 318 316"/>
+  </g>
+  <g style="stroke: var(--ink); stroke-width: 12">
+    <circle cx="160" cy="216" r="70" style="fill: var(--glass)" fill-opacity="0.6"/>
+    <path fill="none" style="stroke: #fff; stroke-width: 8" stroke-linecap="round" d="M 118 196 Q 124 168 150 160"/>
+  </g>
+</svg>
+</div>
+</div>
+
+<p class="lede fragment">Is that enough?</p>
+
+Note:
+The drafts pile up. Tempting next step: put a second fish on review duty. It reads every draft before you do.
+
+(Click.) "Is that enough?" Let them answer. Some will say yes (it caught things), some no (it's the same kind of fish).
+
+Bridge: "It depends on who's checking. Let's climb the ladder."
+
+---
+
 # Who checks the fish?
 
 <div class="scene wide">
-<svg viewBox="0 0 1800 500" role="img" aria-label="A landscape on an easel drawn only in greys. Beside it, in a row: a grey artist in a beret gives it a thumbs up and a green check; a second grey artist in a different hat does the same; a colorful artist with a paint palette points at it with a red question mark; last, a person holds a clipboard and a pen to sign off.">
+<svg viewBox="0 0 1800 500" role="img" aria-label="A grey artist in a beret paints a landscape on an easel, drawn only in greys. To the right of the easel, in a row: an identical grey artist gives it a thumbs up; a colorful artist with a paint palette points at it with a red question mark; last, a person holds a clipboard and a pen to sign off. On the first click the painter gets a green check, on the second the identical reviewer does.">
   <!-- the fish's work: a landscape drawn only in greys -->
-  <g style="stroke: var(--ink); stroke-width: var(--line, 9)" stroke-linejoin="round" stroke-linecap="round">
+  <g transform="translate(320 0)" style="stroke: var(--ink); stroke-width: var(--line, 9)" stroke-linejoin="round" stroke-linecap="round">
     <path fill="none" style="stroke-width: 12" d="M 120 360 L 80 488 M 260 360 L 300 488 M 190 360 L 190 488"/>
     <rect x="40" y="130" width="300" height="230" rx="6" style="fill: #f4f5f7"/>
     <circle cx="270" cy="190" r="32" style="fill: #b9bec7"/>
@@ -114,9 +183,32 @@ Method: HITL (human in the loop) as a deliberate pattern.
     <path fill="none" style="stroke: #5b6170; stroke-width: 10" d="M 112 266 L 112 214"/>
     <circle cx="112" cy="190" r="34" style="fill: #5b6170"/>
   </g>
-  <!-- 1: self-review: a grey artist approves their own grey picture -->
+  <!-- the painter: the fish that made it (a grey artist with a brush, mirrored to face the easel) -->
+  <g transform="translate(330 130) scale(-1 1)" style="--skin: #e3e6ea; --shirt: #b9bec7">
+      <use href="#person" x="0" y="0" width="200" height="360"/>
+      <use href="#person-eyes-left" x="0" y="0" width="200" height="360"/>
+      <g style="stroke: var(--ink); stroke-width: var(--line, 9)" stroke-linejoin="round" stroke-linecap="round">
+        <path style="fill: #5b6170" d="M 48 58 Q 96 20 150 50 Q 110 64 52 64 Z"/>
+        <path fill="none" style="stroke-width: 12" d="M 64 170 L -8 150"/>
+        <path fill="none" style="stroke-width: 20" d="M -8 150 L -58 122"/>
+        <path fill="none" style="stroke: var(--cardboard); stroke-width: 8" d="M -8 150 L -58 122"/>
+        <path style="fill: #5b6170" d="M -56 112 Q -84 108 -92 104 Q -86 124 -62 132 Z"/>
+        <circle cx="-14" cy="148" r="12" style="fill: var(--skin)"/>
+        <path fill="none" style="stroke-width: 12" d="M 136 166 Q 168 210 150 246"/>
+        <path style="fill: #f4f5f7" d="M 120 238 Q 160 214 192 240 Q 178 272 134 268 Q 112 260 120 238 Z"/>
+      </g>
+      <circle cx="146" cy="244" r="7" style="fill: #5b6170"/><circle cx="168" cy="240" r="7" style="fill: #8a909b"/><circle cx="160" cy="257" r="7" style="fill: #b9bec7"/>
+  </g>
+  <!-- 1: self-review: the painter approves their own grey picture -->
   <g class="fragment" data-fragment-index="0">
-    <g transform="translate(400 130)" style="--skin: #e3e6ea; --shirt: #b9bec7">
+    <g transform="translate(230 60)" style="stroke: var(--ink); stroke-width: 7">
+      <circle r="40" style="fill: var(--green)"/>
+      <path fill="none" style="stroke: #fff; stroke-width: 11" stroke-linecap="round" stroke-linejoin="round" d="M -18 2 L -5 15 L 19 -12"/>
+    </g>
+  </g>
+  <!-- 2: the same model reviews: an identical grey artist, same blind spot -->
+  <g class="fragment" data-fragment-index="1">
+    <g transform="translate(720 130)" style="--skin: #e3e6ea; --shirt: #b9bec7">
       <use href="#person" x="0" y="0" width="200" height="360"/>
       <use href="#person-eyes-left" x="0" y="0" width="200" height="360"/>
       <g style="stroke: var(--ink); stroke-width: var(--line, 9)" stroke-linejoin="round" stroke-linecap="round">
@@ -129,34 +221,14 @@ Method: HITL (human in the loop) as a deliberate pattern.
       </g>
       <circle cx="146" cy="244" r="7" style="fill: #5b6170"/><circle cx="168" cy="240" r="7" style="fill: #8a909b"/><circle cx="160" cy="257" r="7" style="fill: #b9bec7"/>
     </g>
-    <g transform="translate(500 60)" style="stroke: var(--ink); stroke-width: 7">
-      <circle r="40" style="fill: var(--green)"/>
-      <path fill="none" style="stroke: #fff; stroke-width: 11" stroke-linecap="round" stroke-linejoin="round" d="M -18 2 L -5 15 L 19 -12"/>
-    </g>
-  </g>
-  <!-- 2: another fish: a second grey artist (different hat), same blind spot -->
-  <g class="fragment" data-fragment-index="1">
-    <g transform="translate(700 130)" style="--skin: #e3e6ea; --shirt: #9aa0aa">
-      <use href="#person" x="0" y="0" width="200" height="360"/>
-      <use href="#person-eyes-left" x="0" y="0" width="200" height="360"/>
-      <g style="stroke: var(--ink); stroke-width: var(--line, 9)" stroke-linejoin="round" stroke-linecap="round">
-        <path style="fill: #d9dde3" d="M 34 74 L 58 34 Q 100 18 142 34 L 166 74 Q 100 62 34 74 Z"/>
-        <path fill="none" style="stroke-width: 12" d="M 64 166 Q 30 156 34 116"/>
-        <rect x="16" y="84" width="38" height="32" rx="10" style="fill: var(--skin)"/>
-        <rect x="22" y="52" width="16" height="38" rx="8" style="fill: var(--skin)"/>
-        <path fill="none" style="stroke-width: 12" d="M 136 166 Q 168 210 150 246"/>
-        <path style="fill: #f4f5f7" d="M 120 238 Q 160 214 192 240 Q 178 272 134 268 Q 112 260 120 238 Z"/>
-      </g>
-      <circle cx="146" cy="244" r="7" style="fill: #5b6170"/><circle cx="168" cy="240" r="7" style="fill: #8a909b"/><circle cx="160" cy="257" r="7" style="fill: #b9bec7"/>
-    </g>
-    <g transform="translate(800 60)" style="stroke: var(--ink); stroke-width: 7">
+    <g transform="translate(820 60)" style="stroke: var(--ink); stroke-width: 7">
       <circle r="40" style="fill: var(--green)"/>
       <path fill="none" style="stroke: #fff; stroke-width: 11" stroke-linecap="round" stroke-linejoin="round" d="M -18 2 L -5 15 L 19 -12"/>
     </g>
   </g>
   <!-- 3: an adversary: a color artist sees what the picture is missing -->
   <g class="fragment" data-fragment-index="2">
-    <g transform="translate(1000 130)" style="--shirt: var(--sky)">
+    <g transform="translate(1020 130)" style="--shirt: var(--sky)">
       <use href="#person" x="0" y="0" width="200" height="360"/>
       <use href="#person-eyes-left" x="0" y="0" width="200" height="360"/>
       <g style="stroke: var(--ink); stroke-width: var(--line, 9)" stroke-linejoin="round" stroke-linecap="round">
@@ -169,14 +241,14 @@ Method: HITL (human in the loop) as a deliberate pattern.
       <circle cx="140" cy="246" r="7" style="fill: var(--red)"/><circle cx="158" cy="236" r="7" style="fill: var(--yellow)"/><circle cx="176" cy="244" r="7" style="fill: var(--blue)"/><circle cx="160" cy="258" r="7" style="fill: var(--green)"/>
       <circle cx="80" cy="220" r="8" style="fill: var(--yellow)"/><circle cx="118" cy="260" r="8" style="fill: var(--red)"/><circle cx="72" cy="270" r="7" style="fill: var(--green)"/>
     </g>
-    <g transform="translate(1100 60)" style="stroke: var(--ink); stroke-width: 7">
+    <g transform="translate(1120 60)" style="stroke: var(--ink); stroke-width: 7">
       <circle r="40" style="fill: var(--red)"/>
       <text y="19" text-anchor="middle" style="fill: #fff; stroke: none; font: 900 56px 'Helvetica Neue', Helvetica, Arial, sans-serif">?</text>
     </g>
   </g>
   <!-- 4: it ends with a person, who signs -->
   <g class="fragment" data-fragment-index="3">
-    <g transform="translate(1460 130)">
+    <g transform="translate(1380 130)">
       <use href="#person" x="0" y="0" width="200" height="360"/>
       <use href="#person-eyes" x="0" y="0" width="200" height="360"/>
       <g style="stroke: var(--ink); stroke-width: var(--line, 9)" stroke-linejoin="round" stroke-linecap="round">
@@ -194,18 +266,18 @@ Method: HITL (human in the loop) as a deliberate pattern.
 </div>
 
 1. Self-review: same blind spots <!-- .element: class="fragment" data-fragment-index="0" -->
-2. Another fish: shared blind spots <!-- .element: class="fragment" data-fragment-index="1" -->
-3. An adversary: genuinely independent <!-- .element: class="fragment" data-fragment-index="2" -->
-4. It ends with a person. <!-- .element: class="fragment" data-fragment-index="3" -->
+2. Same model reviews: same blind spots <!-- .element: class="fragment" data-fragment-index="1" -->
+3. Adversary: independent <!-- .element: class="fragment" data-fragment-index="2" -->
+4. Ends with a person <!-- .element: class="fragment" data-fragment-index="3" -->
 
 Note:
 Walk the review ladder; let them find the regress.
 
-The picture on the easel is the fish's work, drawn only in greys. Think of the fish as a black-and-white artist: it can't see that the picture should have had color.
+The picture on the easel is the fish's work, drawn only in greys. The painter on the left, brush in hand, is the fish. Think of it as a black-and-white artist: it can't see that the picture should have had color.
 
-(Click.) Self-review: asking the fish to check its own work. The artist who drew it in greys looks at it in greys: thumbs up. Same blind spots.
+(Click.) Self-review: asking the fish to check its own work. The painter looks at its grey picture in greys: thumbs up. Same blind spots.
 
-(Click.) A second fish with similar training: correlated review. Another black-and-white artist, different hat, same palette: thumbs up. Shared blind spots. Two checks, no new information.
+(Click.) The same model as reviewer -- a fresh chat, or a second fish with similar training: correlated review. An identical black-and-white artist, same palette: thumbs up. Same blind spots. Two checks, no new information. (This is the reviewer fish from the last slide.)
 
 (Click.) Adversarial review: a genuinely independent reviewer, told to find what's wrong. A color artist, one who judges a range of pictures, color and black-and-white, sees at once what's missing. Better. (Subagents return here as adversarial reviewers.)
 

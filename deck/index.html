@@ -59,6 +59,25 @@
       }
     }
 
+    // Live-only slides (<!-- .slide: class="live-only" -->): shown when presenting locally
+    // (localhost, a LAN address, file://, or ?remote=), hidden on the published site.
+    // ?live forces them on. Runs after RevealMarkdown has applied the slide classes and
+    // before Reveal removes data-visibility="hidden" slides. See README § Live-only slides.
+    const LiveOnly = {
+      id: 'live-only',
+      init(deck) {
+        const q = new URLSearchParams(location.search);
+        const h = location.hostname;
+        const local = q.has('live') || q.has('remote') || location.protocol === 'file:' || h === ''
+          || h === 'localhost' || h === '[::1]' || h.endsWith('.local')
+          || /^(127|10)\./.test(h) || /^192\.168\./.test(h) || /^172\.(1[6-9]|2\d|3[01])\./.test(h);
+        if (!local) {
+          deck.getRevealElement().querySelectorAll('section.live-only')
+            .forEach((s) => s.setAttribute('data-visibility', 'hidden'));
+        }
+      },
+    };
+
     Reveal.initialize({
       hash: true,
       width: 1920,
@@ -67,9 +86,13 @@
       controls: true,
       progress: true,
       transition: 'fade',
-      plugins: [RevealMarkdown, RevealNotes],
+      plugins: [RevealMarkdown, LiveOnly, RevealNotes], // order matters: LiveOnly reads Markdown's output
     }).then(() => {
       inlineSvgs();
+      // Overview: Enter opens the selected slide (Reveal has no default for this).
+      Reveal.addKeyBinding({ keyCode: 13, key: 'Enter', description: 'Open selected slide (overview)' }, () => {
+        if (Reveal.isOverview()) Reveal.toggleOverview(false);
+      });
       // Section bookmarks (overview bar + phone remote); see README § Bookmarks.
       const b = document.createElement('script');
       b.src = 'bookmarks.js';

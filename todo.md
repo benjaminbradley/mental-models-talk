@@ -15,7 +15,7 @@ When specific slides are mentioned, add the direct URL for a server running on h
 
 ### Finish the slides
 
-- [ ] credits page / slide? writing/direction/production/composition-BB, coding,art,consultation-Opus
+- [ ] credits page / slide? composition/direction/production/writing-BB, art/coding/consultation/writing-Claude Opus 5.5
 
 #### Evaluate - finished / needed / defer: Pre-capture demos & transcripts
 

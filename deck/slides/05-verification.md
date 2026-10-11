@@ -12,11 +12,11 @@
 <h3>Checking &ge; doing: beware</h3>
 <div class="scene"><svg class="timebars" viewBox="0 0 420 250" role="img" aria-label="Time: checking takes as long as doing, or longer"><text class="icon" x="40" y="70" text-anchor="middle" style="font-size: 54px">🕐</text><path d="M 90 200 H 400" style="stroke: var(--ink); stroke-width: 5" stroke-linecap="round"/><rect x="120" y="90" width="100" height="110" rx="6" style="fill: var(--blue); stroke: var(--ink); stroke-width: 5"/><rect x="270" y="30" width="100" height="170" rx="6" style="fill: var(--yellow); stroke: var(--ink); stroke-width: 5"/><text class="tag" x="170" y="240" text-anchor="middle">doing</text><text class="tag" x="320" y="240" text-anchor="middle">checking</text></svg></div>
 <p>"Summarize this 40-page document."</p>
-<p class="small">To check it, you'd have to read the whole thing.</p>
+<p class="small">Checking = reading it all</p>
 </div>
 </div>
 
-Lean in where checking is cheaper than doing. <!-- .element: class="fragment lede" -->
+Lean in where checking is cheaper <!-- .element: class="fragment lede" -->
 
 Note:
 "When IS it safe to use this?" Let them answer.

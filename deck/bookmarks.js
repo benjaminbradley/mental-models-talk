@@ -7,6 +7,7 @@
       .map((s) => { const i = Reveal.getIndices(s); return { name: s.dataset.bookmark, h: i.h, v: i.v || 0 }; });
   }
   window.deckBookmarks = list;
+  // The phone remote jumps straight into the slide (it leaves the overview).
   window.deckGoto = (h, v) => { if (Reveal.isOverview()) Reveal.toggleOverview(false); Reveal.slide(h, v || 0); };
 
   const bar = document.createElement('nav');
@@ -26,7 +27,8 @@
       b.type = 'button';
       b.textContent = m.name;
       if (i === active) b.className = 'active';
-      b.addEventListener('click', () => window.deckGoto(m.h, m.v));
+      // In the overview, a bookmark only moves the selection; Enter (or a click on the slide) opens it.
+      b.addEventListener('click', () => { b.blur(); Reveal.slide(m.h, m.v); });
       bar.appendChild(b);
     });
   }

@@ -39,6 +39,9 @@ This creates `slides/02-demystify.md` from a template and appends it to `manifes
 - **Contact:** on anything published or web-based (slides, Pages), use the contact form
   (https://wegeekout.com/contact-me/), never the email address; the email may appear only on
   the printed take-home card.
+- **On-screen text is short:** keywords and key phrases, quick to read from the back of the
+  room. Full sentences belong in the narration (notes). Exceptions: quotations, simulated chats
+  and prompts, and screenshots.
 - The first heading of each slide is its title (the phone shows the next slide's title).
 - Speaker notes: everything after a line starting `Note:` until the next `---`.
   Narration goes first (key phrases, not a script), then `Tone:` / `Timing:` lines as useful.
@@ -126,10 +129,16 @@ shows: `../metaphor-imagery.md`.
   element, not the whole line.
 - **Section bookmarks:** add `data-bookmark="Short name"` to a slide's `<!-- .slide: ... -->`
   comment (create one above the title if it has none). Bookmarked slides appear as a button row
-  at the top of the overview (Esc / O) and as chips on the phone remote; both jump straight there.
-  `bookmarks.js` reads them; nothing else to register.
+  at the top of the overview (Esc / O) and as chips on the phone remote. In the overview a
+  bookmark moves the selection (Enter opens the selected slide); the remote jumps straight into
+  the slide. `bookmarks.js` reads them; nothing else to register.
 - **Hidden slides:** `<!-- .slide: data-visibility="hidden" -->` keeps a slide in the file but out
   of the deck (available for anything pending a keep/cut decision).
+- **Live-only slides:** `<!-- .slide: class="live-only" -->` marks a slide that belongs to the
+  live session only (e.g. audience shout-out prompts). It shows when the deck runs locally
+  (`make present`, localhost, a LAN address, `file://`) and is hidden on the published site
+  (GitHub Pages); add `?live` to the URL to force it on. Implemented by the `LiveOnly` plugin in
+  `index.html`. `grep -rn 'live-only' deck/slides` lists them.
 
 ## Visual check
 

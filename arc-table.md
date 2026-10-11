@@ -7,7 +7,8 @@ visuals) in `deck/slides/`, and which images appear where in `metaphor-imagery.m
 
 **Reading conventions:** empty Cognitive/Stance cells carry forward from the row above.
 Capability lists methods introduced at that beat (additive, not carry-forward).
-*(hidden)* = in the deck but hidden pending a keep/cut decision.
+*(hidden)* = in the deck but hidden pending a keep/cut decision. *(live only)* = shown when
+presenting, hidden on the published deck.
 
 **Interaction types:** *poll* = anonymous audience survey; *exercise* = structured
 activity (pair/group/individual); *demo* = live or pre-captured demonstration;
@@ -16,7 +17,8 @@ activity (pair/group/individual); *demo* = live or pre-captured demonstration;
 | St | Beat | Cognitive | Stance | Capability | Interaction |
 |----|------|-----------|--------|------------|-------------|
 | 1 | Entry poll | | | | *poll:* usage + curiosity |
-| 1 | The real problems, named out loud | | guarded -> permission to engage | | |
+| 1 | Shout-outs: popcorn style, no hands *(live only)* | | | | *shout-out:* warm-up questions |
+| 1 | The real problems, named out loud (the elephant in the room) | | guarded -> permission to engage | | |
 | 1 | My goal: literacy, not conversion | | | | |
 | 2 | Magic -> gradient | "magic, not for me" -> "learnable discipline" | | | |
 | 3 | A note on vocabulary (the yellow tags) | | | | |
@@ -74,6 +76,7 @@ activity (pair/group/individual); *demo* = live or pre-captured demonstration;
 | 12 | A computer can never be held accountable (spine payoff #3) | | | | |
 | 12 | Would you put your name on this? | | | | *exercise:* evaluate artifact; *socratic:* how would you check? |
 | 12 | Draft vs. send | | | HITL as deliberate pattern | |
+| 12 | Fish checks fish? (a second fish reviews the drafts) | | | | *socratic:* is that enough? |
 | 12 | Who checks the fish? (review ladder) | | | review ladder; adversarial subagents | |
 | 12 | Turtles all the way down (the regress) | | | | |
 | 13 | What would change your mind? | closed conclusion -> live question | open | | *exercise:* individual reflection |

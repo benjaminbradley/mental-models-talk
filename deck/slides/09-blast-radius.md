@@ -304,8 +304,8 @@ Socratic: "What could go wrong?" Cognitive shift: "handy tool" -> "blast radius 
 <span class="fragment murk-cue" data-fragment-index="0"></span>
 </div>
 <div>
-<p>Instructions are just text that arrived earlier.</p>
-<p class="fragment" data-fragment-index="1">The fish can't tell yours from someone else's.</p>
+<p>Instructions = text that arrived earlier</p>
+<p class="fragment" data-fragment-index="1">Yours or someone else's? The fish can't tell.</p>
 <p class="fragment" data-fragment-index="1"><span class="term">prompt injection</span></p>
 </div>
 </div>
@@ -386,7 +386,7 @@ What happens when the water is poisoned? Three things.
 <img class="fragment" src="illustrations/blast-radius--deleted-db.png" alt="Reddit post: 'I asked Claude Code to fix my UI. It deleted my database in the process.' It ran a database reset command">
 </div>
 
-Worst case: how would you recover? What would you lose? <!-- .element: class="fragment lede" -->
+Worst case: recover how? Lose what? <!-- .element: class="fragment lede" -->
 
 Note:
 Real stories, from the last year. (Click through; tell one or two briefly.) "Do not remove any data" -- a sign, not a wall. A cleanup that took the whole home directory. A UI fix that reset the database.
@@ -463,7 +463,7 @@ Methods: least privilege, the enforcement hierarchy. The capstone mental model f
 
 # Exercise: find the trifecta
 
-An AI assistant can read your email -- including attachments -- and send mail for you. What could go wrong?
+AI assistant: reads your email (+ attachments), sends mail for you. What could go wrong?
 
 <div class="trio">
 <div><span class="emoji">📬</span><b>Private data?</b><span class="fragment answer">your inbox</span></div>

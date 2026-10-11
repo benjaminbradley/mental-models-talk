@@ -23,6 +23,8 @@ Artwork approach: `open-questions-and-ideas.md` Q16.
 
 | Image | Stands for | Introduced |
 |---|---|---|
+| Elephant | the real problems: the elephant in the room, named out loud | 1 |
+| Popcorn; a raised hand under a "no" sign | shout-outs: call answers out, no hands needed | 1 |
 | Cardboard box, closed | the real problems: named, set aside, not adjudicated | 1 |
 | Driver's ed, not a sales event | literacy, not conversion | 1 |
 | Binary split -> gradient | magic as a caste vs. skill refined by effort | 2 (light touch); full treatment 13 |
@@ -54,7 +56,9 @@ Artwork approach: `open-questions-and-ideas.md` Q16.
 | Curtained dials | product decisions that are not public | 10 |
 | Fish map with a piece cut out | unknown unknowns | 10 |
 | Row of versioned fish, one nerfed | frontier instability | 10 |
-| B&W artists vs. a rainbow artist | correlated vs. independent review: a reviewer cannot see a blind spot it shares | 12 |
+| Drafted pages with pencils | drafts: the fish's work before a person sends it | 12 |
+| A second fish with a magnifying glass | a model reviewing a model's work | 12 |
+| A B&W painter (the fish) and an identical B&W reviewer vs. a rainbow artist | correlated vs. independent review: a reviewer cannot see a blind spot it shares | 12 |
 | Turtles | the review regress: every check is a task someone specified, ending in a person | 12 |
 
 ## The gradient (stations 2, 13)
@@ -180,7 +184,7 @@ control.
 
 | Station | New images | Extended images |
 |---------|-----------|-----------------|
-| 1 | The real problems in a cardboard box; driver's ed, not a sales event | |
+| 1 | Shout-outs (popcorn, no hands); the elephant; the real problems in a cardboard box; driver's ed, not a sales event | |
 | 2 | The gradient (light touch) | |
 | 3 | The goldfish (awake, asleep); training story (library; scored conversations) | |
 | 4 | The lazy genie; the brain; territory and two maps | |
@@ -189,5 +193,5 @@ control.
 | 8 | (Provider vs. MCP fittings: hidden) | Tubes carrying actions out; alarm clock, recipe cards; the full tank |
 | 9 | Where the fish lives; wall vs. sign; autocomplete | Poisoned water; effect icons |
 | 10 | Curtained dials | Cut-out fish map; versioned fish |
-| 12 | B&W artists vs. a rainbow artist; turtles all the way down | |
+| 12 | Drafted pages; a reviewer fish; B&W painter and reviewer vs. a rainbow artist; turtles all the way down | |
 | 13 | | The gradient returns (full treatment) |

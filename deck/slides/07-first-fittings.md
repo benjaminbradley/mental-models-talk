@@ -42,7 +42,7 @@ Two lessons: (1) temperament is changing -- newer fish are trained to notice the
 <div>
 <p>The books ended. The web didn't.</p>
 <p><span class="term">web search</span> <span class="term">tool use</span></p>
-<p class="fragment small">Whatever comes back from a tool lands in the water.</p>
+<p class="fragment small">Tool results land in the water</p>
 </div>
 </div>
 
@@ -60,7 +60,7 @@ You just saw it: the books ended. Wouldn't it be nice if it could look things up
 <figure class="fragment"><div class="placeholder">TODO: capture -- "Search for info on Austin's moonlight towers": web search, real links (illustrations/citations--search-for-info.png)</div><figcaption>"Search for info on X": checks the territory</figcaption></figure>
 </div>
 
-<p class="lede fragment">How you ask decides whether it looks. <span class="term">citations</span></p>
+<p class="lede fragment">How you ask &rarr; whether it looks <span class="term">citations</span></p>
 
 Note:
 Same question, two verbs, same app. Austin's moonlight towers.
@@ -89,8 +89,8 @@ Bridge: "Web search was our first tool. Let's zoom out: what's a tool?"
 <div><span class="emoji code">&lt;/&gt;</span><b>Code</b><span class="small">write it, run it</span></div>
 </div>
 
-<p class="lede">A tool is anything outside the fish that it can reach for.</p>
-<p class="fragment">Every tool connects to the bowl with a tube. <span class="term">tool use</span> <span class="term">tool calling</span></p>
+<p class="lede">Tool = anything outside the fish it can reach</p>
+<p class="fragment">Every tool: a tube to the bowl <span class="term">tool use</span> <span class="term">tool calling</span></p>
 
 Note:
 Web search was the first one. Let's zoom out. You use tools all day: a calculator when the mental math gets hard, a map when you don't know the way, a phone when you need someone else.
@@ -240,7 +240,7 @@ Every tool you'll see from here on is something the fish was trained to reach fo
 <li>Lives in Austin</li>
 </ul>
 </div>
-<p class="scene-caption">The fish writes these notes about you. Are they accurate?</p>
+<p class="scene-caption">The fish's notes about you. Accurate?</p>
 <p class="scene-caption"><span class="term">memory</span></p>
 </div>
 </div>

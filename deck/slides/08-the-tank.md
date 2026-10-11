@@ -251,7 +251,7 @@ Brief. Methods: scheduled tasks, skills/playbooks.
 </svg>
 </div>
 
-<p class="lede fragment" data-fragment-index="2">The tools decide what the fish can reach. <span class="term">multimodal</span></p>
+<p class="lede fragment" data-fragment-index="2">Tools decide the fish's reach <span class="term">multimodal</span></p>
 
 Note:
 Pull back: the bowl has become a tank. Water: the context. Notes on the glass: instructions. Tubes: tools -- search, email, connections to other services. The notepad: memory. The alarm clock. Recipe cards.

@@ -102,7 +102,7 @@ Methods: specification, explicit output formats, few-shot examples.
 </svg>
 </div>
 
-<p class="lede fragment">It granted exactly what you said.</p>
+<p class="lede fragment">Exactly what you said</p>
 
 Note:
 Time to summon a cousin of the fish: the lazy genie. It grants your wish to the letter, with the least effort it can get away with.
@@ -165,7 +165,7 @@ Bridge: meta-prompting depends on knowing what to ask. But the fish isn't equall
 <figure class="fragment"><img src="illustrations/jaggedness-B1-letters--output.png" alt="The model says 'Suffering Succotash' has 4 S's, listing a fourth S that isn't there"><figcaption>The S's in "Suffering Succotash" (there are 3)</figcaption></figure>
 </div>
 
-<p class="lede fragment" style="margin-top: 50px">Why is it so good at some things, and so bad at others? <span class="term">jagged frontier</span></p>
+<p class="lede fragment" style="margin-top: 50px">So good here, so bad there: why? <span class="term">jagged frontier</span></p>
 
 Note:
 Two answers from the same fish. Left: Shakespearean verse about fixing a broken phone -- polished, in seconds.
@@ -231,7 +231,7 @@ This is the felt puzzle of the whole section; the brain and the maps answer it. 
 <span class="fragment brain-cue" data-fragment-index="0"></span>
 </div>
 
-<p class="lede fragment" data-fragment-index="0">The fish learned everything from language.</p>
+<p class="lede fragment" data-fragment-index="0">The fish: language only</p>
 
 Note:
 Why is it brilliant at verse and hopeless at counting letters? Here's one way to see it.

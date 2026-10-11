@@ -1,4 +1,37 @@
+<!-- .slide: class="live-only center-slide" -->
+# Shout-outs
+
+<div class="shout-out">
+<figure><span class="emoji">🍿</span><figcaption>popcorn style</figcaption></figure>
+<figure><span class="no-hands"><span class="emoji">✋</span><svg viewBox="0 0 100 100" aria-hidden="true"><circle cx="50" cy="50" r="42" fill="none" style="stroke: var(--ink); stroke-width: 15"/><path d="M 21 21 L 79 79" style="stroke: var(--ink); stroke-width: 15"/><circle cx="50" cy="50" r="42" fill="none" style="stroke: var(--red); stroke-width: 9"/><path d="M 21 21 L 79 79" style="stroke: var(--red); stroke-width: 9"/></svg></span><figcaption>no hands needed</figcaption></figure>
+</div>
+
+Note:
+Live sessions only (hidden on the published deck). Sets the rule for every shout-out later on.
+
+"Some slides ask you to call out answers. Popcorn style: no raising hands, no waiting to be called on. Just say it. Several people at once is fine."
+
+Warm-up, quick and low-stakes. Start with yes/no, then easy one-word picks:
+
+- Do you like the weather here today?
+- Did you have coffee this morning?
+- Coffee or tea?
+- Cats or dogs?
+- Favorite color?
+- Favorite show, movie, or song right now?
+- Best thing you ate this week?
+
+Two or three is plenty; stop while it's fun. If the room is quiet, answer the first one yourself.
+
+Tone: playful. Wrong answers don't exist here.
+
+Timing: 1-2 minutes.
+
+---
+
 # The real problems
+
+<div class="elephant" role="img" aria-label="An elephant: the elephant in the room">🐘</div>
 
 <div class="harms">
 <svg class="box-back" viewBox="0 0 1340 560" aria-hidden="true">
@@ -21,12 +54,12 @@
 </div>
 <span class="fragment box-cue"></span>
 
-<p class="lede fragment box-close-cue">This is driver's ed, not Toyotathon.</p>
+<p class="lede fragment box-close-cue">Driver's ed, not Toyotathon.</p>
 
 Note:
 Click per harm; then two more clicks: the harms drop into a cardboard box in the corner, then the box closes and the line appears. (Icons are stand-ins; photos are a planned enhancement, see todo.md. The box does not yet persist onto later slides.)
 
-Say: "Before we talk about how any of this works, let's name what's wrong with it." Name each harm briefly as it appears.
+Say: "Before we talk about how any of this works, let's name the elephant in the room: what's wrong with it." Name each harm briefly as it appears.
 
 (Click.) The harms go into the box: "These are real problems. I am not going to tell you they aren't. But that is not what this talk is about."
 
@@ -38,7 +71,7 @@ Tone: matter-of-fact, not dismissive. Named, not hidden: the box is closed, not 
 
 # My goal
 
-1. This talk's focus: how LLMs work, and how to work with them safely and effectively <!-- .element: class="fragment" -->
+1. Focus: how LLMs work; using them safely & well <!-- .element: class="fragment" -->
 2. For newbies: awareness of potential <!-- .element: class="fragment" -->
 3. Skeptical / opposed? Understand the target <!-- .element: class="fragment" -->
 

@@ -282,6 +282,17 @@ section:has(.box-cue.visible) .harms > div:nth-of-type(even) { transform: transl
 section:has(.box-close-cue.visible) .harms > div:nth-of-type(n) { transform: translateY(160px); }
 section:has(.box-close-cue.visible) .harms .flap { transform: none; transition-delay: 0.5s; }
 
+/* Station 1: the elephant in the room, big in the lower right (clear of the tiles and the box). */
+.reveal .elephant { position: absolute; top: 600px; right: 60px; font-size: 380px; line-height: 1; }
+
+/* ---- Station 1 shout-outs (live-only): popcorn, and a raised hand under a "no" sign ---- */
+.reveal .shout-out { display: flex; justify-content: center; gap: 180px; margin-top: 60px; }
+.reveal .shout-out figure { margin: 0; text-align: center; }
+.reveal .shout-out .emoji { font-size: 300px; display: block; }
+.reveal .shout-out figcaption { font-weight: 800; font-size: 56px; margin-top: 20px; }
+.reveal .shout-out .no-hands { position: relative; display: block; }
+.reveal .shout-out .no-hands svg { position: absolute; inset: -30px; width: calc(100% + 60px); height: calc(100% + 60px); }
+
 /* ---- Chat transcripts (simulated conversations) ------------------------------------ */
 .reveal .chat { display: flex; flex-direction: column; gap: 14px; font-size: 34px; }
 .reveal .chat p { margin: 0; padding: 14px 24px; border-radius: 18px; max-width: 80%; border: 4px solid var(--ink); }
@@ -449,6 +460,13 @@ section:has(.rename-cue.visible) .mdfile-name .name-project { display: inline; }
 .reveal .cover hr { border: 0; border-top: 2px solid #1f2a44; width: 100%; margin: 36px 0; }
 .reveal .split .cover p { margin: 0 0 0.4em; color: #4a5368; }
 .reveal .split .cover .date { margin-top: auto; }
+/* Station 12: the writer fish above its drafts; the next slide shrinks both (zoom keeps
+   layout and auto-animate in step) to the left half, beside a reviewer fish. */
+.reveal .drafting .writer { display: flex; justify-content: center; padding-right: 320px; } /* clear of the auto-send popup */
+.reveal .drafting .writer svg { height: 200px; width: auto; }
+.reveal .drafting.small { zoom: 0.55; flex: 0 0 auto; }
+.reveal .review-split { display: flex; align-items: center; justify-content: center; gap: 40px; margin-top: 30px; }
+.reveal .review-split .reviewer svg { height: 520px; }
 .reveal .mail {
   position: relative; width: 1500px; margin: 10px auto 50px; border: 6px solid var(--ink);
   border-radius: 14px; background: #fff; font-size: 34px; box-shadow: 0 10px 0 var(--ink);

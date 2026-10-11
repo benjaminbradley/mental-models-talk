@@ -2,9 +2,9 @@
 
 # A note on vocabulary
 
-<p class="lede">The pictures carry the idea.</p>
-<p class="fragment">The <span class="term">yellow tags</span> are the real terms, if you want to look them up later.</p>
-<p class="fragment small">The important ones are on your take-home card.</p>
+<p class="lede">Pictures: the idea</p>
+<p class="fragment"><span class="term">yellow tags</span>: the real terms, to look up later</p>
+<p class="fragment small">Key ones: on your take-home card</p>
 
 Note:
 Quick orientation before we start: I'll use a lot of pictures -- a goldfish, a bowl, maps. The pictures carry the idea.
@@ -45,7 +45,7 @@ For most of computing history, if you wanted to talk to a computer, *you* learne
 <figure class="fragment"><img src="illustrations/computers-english--claude-poetry.webp" alt="A poem titled 'Under Trees': 'The trees do not optimize their rustling, the wind does not justify its dance... I am allowed to simply be here, like the trees on any given day.'"><figcaption><a href="https://www.reddit.com/r/ClaudeAI/comments/1gn4u8y/i_hade_a_nice_night_with_claude_and_asked_for_a/">The first AI-generated poem to bring a tear to my eye</a> <span class="emoji">😢</span></figcaption></figure>
 </div>
 
-Anything you can specify clearly enough in language, a computer can now do. <!-- .element: class="fragment lede" -->
+Specify it clearly in language &rarr; a computer can now do it <!-- .element: class="fragment lede" -->
 
 Note:
 Until about 2020 we made fun of computers' bad poetry. This is GPT-2, in 2020, trying to rhyme: "The pudding god and the magical dragon." (Read a line or two. "Cris." "Biss.") (Click.) Now they write good poems in seconds -- this is the first AI-generated poem to bring a tear to my eye.
@@ -75,7 +75,7 @@ Spine: introduced here; felt at station 4 (say what you want; the lazy genie); m
 </svg>
 </div>
 
-It has read every book ever written. It has never been outside. And all it wants to do is practice talking. <!-- .element: class="fragment" -->
+Read every book. Never been outside. Just wants to talk. <!-- .element: class="fragment" -->
 
 Note:
 Meet the goldfish. It has read every book ever written -- every textbook, every novel, every Reddit thread. Astonishingly well-read. But it has never been outside: no lived experience.

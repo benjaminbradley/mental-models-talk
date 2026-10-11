@@ -160,5 +160,19 @@
       <circle cx="76" cy="92" r="7" style="fill: var(--ink)"/>
       <circle cx="106" cy="92" r="7" style="fill: var(--ink)"/>
     </symbol>
+    <!-- A drafted page with a pencil lying across it (station 12: drafts the fish wrote). -->
+    <symbol id="draft-page" viewBox="0 0 200 220">
+      <g style="stroke: var(--ink); stroke-width: var(--line, 9)" stroke-linejoin="round" stroke-linecap="round">
+        <path style="fill: #fff" d="M 20 14 H 128 L 160 46 V 206 H 20 Z"/>
+        <path fill="none" d="M 128 14 V 46 H 160"/>
+        <path fill="none" style="stroke-width: 6" d="M 44 76 H 136 M 44 106 H 136 M 44 136 H 96"/>
+        <g transform="rotate(-38 120 166)">
+          <rect x="74" y="152" width="100" height="28" style="fill: var(--yellow)"/>
+          <rect x="174" y="152" width="22" height="28" rx="4" style="fill: var(--pink)"/>
+          <path style="fill: var(--rock)" d="M 74 152 L 42 166 L 74 180 Z"/>
+          <path style="fill: var(--ink); stroke-width: 4" d="M 52 162 L 42 166 L 52 170 Z"/>
+        </g>
+      </g>
+    </symbol>
   </defs>
 </svg>

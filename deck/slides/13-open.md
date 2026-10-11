@@ -2,8 +2,8 @@
 
 # What would change your mind?
 
-<p class="fragment big-q">Enthusiast: what would show you're over-trusting it?</p>
-<p class="fragment big-q">Skeptic: what would show it's useful for something you care about?</p>
+<p class="fragment big-q">Enthusiast: signs you're over-trusting it?</p>
+<p class="fragment big-q">Skeptic: signs it's useful for what you care about?</p>
 
 Note:
 One last question, asked symmetrically. (Click.) If you're enthusiastic about this technology: what would you have to see to conclude you're over-trusting it? (Click.) If you're skeptical or opposed: what would you have to see to conclude it's genuinely useful for something you care about?
@@ -62,7 +62,7 @@ Exit survey: before/now self-ratings + open feedback (design in `surveys.md`). D
 <span class="fragment spells-cue"></span>
 </div>
 
-<p class="lede fragment">It's powerful and dangerous. And anyone can choose to study it.</p>
+<p class="lede fragment">Powerful. Dangerous. Anyone can study it.</p>
 
 Note:
 CANDIDATE: cut if it reads as a sales pitch in rehearsal. Comes only after accountability has landed. (Visual flagged for review: a richer version of the station 2 gradient, populated with the vocabulary from tonight.)

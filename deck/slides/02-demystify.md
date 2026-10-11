@@ -20,7 +20,7 @@
 <span class="fragment gradient-cue"></span>
 </div>
 
-But magic is a discipline, not a caste. <!-- .element: class="fragment lede" -->
+Magic: a discipline, not a caste. <!-- .element: class="fragment lede" -->
 
 Note:
 Pop culture frames it as binary: you're a wizard or you're not. (Click: the line dissolves into a gradient.) Almost everyone is somewhere on it already. Every technology that looked like magic turned out to be a skill, a discipline you learn through effort. Frame for the next hour: this is learnable, and skill is proportional to effort.

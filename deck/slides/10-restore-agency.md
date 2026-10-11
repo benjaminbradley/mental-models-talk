@@ -96,7 +96,7 @@ Present descriptively, not prescriptively. Do not adjudicate which biases are ju
 <span class="fragment probe-cue"></span>
 </div>
 
-A differently-trained model reveals your model's invisible guardrails. <!-- .element: class="fragment lede" -->
+A different model reveals your model's invisible guardrails <!-- .element: class="fragment lede" -->
 
 Note:
 The guardrail probe. Ask a differently-trained model about something it won't touch, and the refusal is obvious to *us* -- precisely because that guardrail isn't ours.
@@ -117,7 +117,7 @@ Bridge: "We spotted that one because we know the history. What about the gaps we
 <figure class="map" style="width: 1500px"><div data-svg="art/maps/fish-cut.svg" data-zoom="poetry,law" data-label="The fish's map with a patch of History cut out: a dotted cut line, half cut, with scissors partway around, and nothing left inside"></div></figure>
 </div>
 
-<p class="lede fragment">You can't ask about what you don't know is missing.</p>
+<p class="lede fragment">Can't ask about what you don't know is missing</p>
 
 Note:
 Tiananmen was easy to spot -- for us. We know that history, so the gap jumps out. That's a known unknown.
@@ -193,7 +193,7 @@ Felt need for the next slide: so how would you even know?
 <div class="fragment"><span class="emoji">🔒</span><b>Your own work</b><span class="small">keep a few private test prompts</span><span class="term">private probes</span></div>
 </div>
 
-<p class="lede fragment">A test you run once is a review. A test you re-run is a smoke alarm.</p>
+<p class="lede fragment">Run once: a review. Re-run: a smoke alarm.</p>
 
 Note:
 How would you know the fish changed? You test it -- and you keep testing it.

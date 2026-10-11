@@ -18,7 +18,7 @@
 </div>
 <div>
 <p>It will agree with you.</p>
-<p class="fragment">Some skills fade when the fish does them for you.</p>
+<p class="fragment">Skills you hand off can fade</p>
 <p class="fragment"><span class="term">sycophancy</span> <span class="term">skill atrophy</span></p>
 </div>
 </div>
