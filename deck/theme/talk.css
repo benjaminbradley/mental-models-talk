@@ -24,6 +24,8 @@
   --purple: #8a5cc9;
   --teal: #1fa99a;
   --green-deep: #237a42;
+  --cardboard: #c99a5f;          /* the box the real problems go into (station 1) */
+  --cardboard-deep: #8f6234;
   --murk: #6f7a3a;     /* poisoned water (station 9) */
   --genie: color-mix(in srgb, var(--blue) 45%, var(--sky)); /* the lazy genie (station 4) */
   --escape: var(--purple);    /* cat food: escape-room flakes and words (station 6) */
@@ -245,21 +247,40 @@
 .gradient-scene .bar .dots { position: absolute; inset: 0; }
 .gradient-scene .bar .dots span { position: absolute; font-size: 56px; transform: translate(-50%, -50%); }
 
-/* ---- Station 1 harms: tiles drop in, then close into a box in the corner ----------- */
+/* ---- Station 1 harms: tiles drop in, go into a cardboard box that shrinks to the corner
+   (.box-cue), then the box's flaps close (.box-close-cue). The box is two SVGs that share one
+   geometry: .box-back (the dark opening) behind the tiles, .box-front (front face, flaps) in front. */
 .harms {
-  display: flex; gap: 30px; justify-content: center; margin-top: 30px;
-  border: 6px solid transparent; border-radius: 16px; padding: 20px;
-  transform-origin: top right; transition: transform 1s ease, border-color 1s ease, background 1s ease;
+  position: relative;
+  display: flex; gap: 30px; justify-content: center; margin-top: 30px; padding: 20px;
+  transform-origin: top right; transition: transform 1s ease 0.8s;
 }
 .harms > div {
+  position: relative; z-index: 1;
   width: 300px; padding: 24px 10px; text-align: center; border: 6px solid var(--ink);
   border-radius: 12px; background: #fff; font-weight: 800; font-size: 36px;
+  transition: margin 0.8s ease, transform 0.8s ease;
 }
 .harms > div .emoji { display: block; font-size: 110px; margin-bottom: 12px; }
-section:has(.box-cue.visible) .harms {
-  transform: translate(-10px, -300px) scale(0.32);
-  border-color: var(--ink); background: var(--rock);
+.harms > svg {
+  position: absolute; left: 50%; top: -77px; width: 1340px; margin-left: -670px;
+  overflow: visible; opacity: 0; transition: opacity 0.6s ease;
 }
+.harms > .box-back { z-index: 0; }
+.harms > .box-front { z-index: 2; }
+/* Flaps are drawn closed (lying over the opening); open = flipped over their hinge line:
+   the back flap stands up behind the tiles, the front flap hangs down over the front. */
+.harms .flap { transform-box: view-box; transition: transform 0.9s ease; }
+.harms .flap-back { transform-origin: 0 160px; transform: scaleY(-4.5); }
+.harms .flap-front { transform-origin: 0 230px; transform: scaleY(-3.5); }
+section:has(.box-cue.visible) .harms { transform: translate(77px, -334px) scale(0.3); gap: 0; }
+section:has(.box-cue.visible) .harms > svg { opacity: 1; }
+section:has(.box-cue.visible) .harms > div + div { margin-left: -127px; }
+section:has(.box-cue.visible) .harms > div:nth-of-type(odd) { transform: translateY(-44px) rotate(-4deg); }
+section:has(.box-cue.visible) .harms > div:nth-of-type(even) { transform: translateY(-8px) rotate(4deg); }
+/* closing: the tiles sink below the rim, then the flaps fold shut */
+section:has(.box-close-cue.visible) .harms > div:nth-of-type(n) { transform: translateY(160px); }
+section:has(.box-close-cue.visible) .harms .flap { transform: none; transition-delay: 0.5s; }
 
 /* ---- Chat transcripts (simulated conversations) ------------------------------------ */
 .reveal .chat { display: flex; flex-direction: column; gap: 14px; font-size: 34px; }

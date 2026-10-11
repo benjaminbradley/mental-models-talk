@@ -23,10 +23,12 @@ Artwork approach: `open-questions-and-ideas.md` Q16.
 
 | Image | Stands for | Introduced |
 |---|---|---|
+| Cardboard box, closed | the real problems: named, set aside, not adjudicated | 1 |
+| Driver's ed, not a sales event | literacy, not conversion | 1 |
 | Binary split -> gradient | magic as a caste vs. skill refined by effort | 2 (light touch); full treatment 13 |
 | The goldfish | the model: a well-read, eager people-pleaser with no lived experience | 3 |
 | Library of books; reading | training data; pretraining (anatomy) | 3 |
-| Practice conversations scored with check/cross paddles | post-training / RLHF (temperament) | 3 |
+| Practice conversations scored with check/cross paddles held by a human rater | post-training / RLHF (temperament) | 3 |
 | Fish asleep / awake | it does nothing until addressed | 3 |
 | The lazy genie | a vague wish granted to the letter, cheapest way | 4 |
 | Brain with specialist hubs, all but language fading | the fish learned from language alone | 4 |
@@ -178,6 +180,7 @@ control.
 
 | Station | New images | Extended images |
 |---------|-----------|-----------------|
+| 1 | The real problems in a cardboard box; driver's ed, not a sales event | |
 | 2 | The gradient (light touch) | |
 | 3 | The goldfish (awake, asleep); training story (library; scored conversations) | |
 | 4 | The lazy genie; the brain; territory and two maps | |

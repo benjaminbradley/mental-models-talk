@@ -151,20 +151,35 @@ Nothing in the library or the apprenticeship taught it what a tool is for. So it
 <figcaption>1. Read the library<br><span class="term">pretraining</span></figcaption>
 </figure>
 <figure>
-<svg viewBox="0 0 600 470" role="img" aria-label="Step 2: the fish's replies scored with check and cross paddles">
+<svg viewBox="0 0 600 470" role="img" aria-label="Step 2: a person compares two of the fish's replies, holding up a check under one and a cross under the other">
   <g class="goldfish awake">
-    <use href="#fish-body" x="0" y="170" width="300" height="195"/>
-    <use class="eyes-open" href="#fish-eyes-open" x="0" y="170" width="300" height="195"/>
+    <use href="#fish-body" x="-10" y="190" width="240" height="156"/>
+    <use class="eyes-open" href="#fish-eyes-open" x="-10" y="190" width="240" height="156"/>
   </g>
+  <!-- two candidate replies, side by side: A and B -->
   <g style="stroke: var(--ink); stroke-width: 7; fill: #fff" stroke-linejoin="round">
-    <path d="M 300 70 h 170 a 24 24 0 0 1 24 24 v 50 a 24 24 0 0 1 -24 24 h -140 l -40 40 l 10 -40 a 24 24 0 0 1 -24 -24 v -50 a 24 24 0 0 1 24 -24 Z"/>
-    <path transform="translate(0 460) scale(1 -1)" d="M 300 70 h 170 a 24 24 0 0 1 24 24 v 50 a 24 24 0 0 1 -24 24 h -140 l -40 40 l 10 -40 a 24 24 0 0 1 -24 -24 v -50 a 24 24 0 0 1 24 -24 Z"/>
+    <path d="M 244 14 h 136 a 22 22 0 0 1 22 22 v 66 a 22 22 0 0 1 -22 22 h -96 l -46 34 l 10 -34 h -4 a 22 22 0 0 1 -22 -22 v -66 a 22 22 0 0 1 22 -22 Z"/>
+    <path d="M 436 14 h 136 a 22 22 0 0 1 22 22 v 66 a 22 22 0 0 1 -22 22 h -96 l -46 34 l 10 -34 h -4 a 22 22 0 0 1 -22 -22 v -66 a 22 22 0 0 1 22 -22 Z"/>
   </g>
+  <g style="stroke: var(--ink); stroke-width: 7" stroke-linecap="round">
+    <path d="M 246 52 h 130 M 246 86 h 90 M 438 52 h 130 M 438 86 h 110"/>
+  </g>
+  <!-- the human rater: holds up the check under A and the cross under B -->
   <g style="stroke: var(--ink); stroke-width: 7" stroke-linejoin="round" stroke-linecap="round">
-    <path d="M 555 190 V 250"/><rect x="515" y="96" width="80" height="94" rx="12" style="fill: var(--green)"/>
-    <path d="M 535 145 l 15 18 l 28 -38" style="stroke: #fff; stroke-width: 10; fill: none"/>
-    <path d="M 555 410 V 465"/><rect x="515" y="316" width="80" height="94" rx="12" style="fill: var(--red)"/>
-    <path d="M 538 340 l 34 46 M 572 340 l -34 46" style="stroke: #fff; stroke-width: 10"/>
+    <path d="M 310 238 V 282 M 505 238 V 282"/>
+    <rect x="272" y="156" width="76" height="84" rx="12" style="fill: var(--green)"/>
+    <path d="M 292 199 l 14 17 l 26 -36" style="stroke: #fff; stroke-width: 10; fill: none"/>
+    <rect x="467" y="156" width="76" height="84" rx="12" style="fill: var(--red)"/>
+    <path d="M 489 178 l 32 42 M 521 178 l -32 42" style="stroke: #fff; stroke-width: 10"/>
+  </g>
+  <g style="stroke: var(--ink); stroke-width: 10; fill: none" stroke-linecap="round">
+    <path d="M 384 332 Q 326 332 312 290"/>
+    <path d="M 426 332 Q 488 332 503 290"/>
+  </g>
+  <use href="#person" x="333" y="210" width="144" height="259"/>
+  <use href="#person-eyes" x="333" y="210" width="144" height="259"/>
+  <g style="stroke: var(--ink); stroke-width: 6; fill: var(--skin)">
+    <circle cx="310" cy="284" r="11"/><circle cx="505" cy="284" r="11"/>
   </g>
 </svg>
 <figcaption>2. Apprenticeship<br><span class="term">RLHF</span></figcaption>
