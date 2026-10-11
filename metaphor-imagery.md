@@ -52,6 +52,8 @@ Artwork approach: `open-questions-and-ideas.md` Q16.
 | Curtained dials | product decisions that are not public | 10 |
 | Fish map with a piece cut out | unknown unknowns | 10 |
 | Row of versioned fish, one nerfed | frontier instability | 10 |
+| B&W artists vs. a rainbow artist | correlated vs. independent review: a reviewer cannot see a blind spot it shares | 12 |
+| Turtles | the review regress: every check is a task someone specified, ending in a person | 12 |
 
 ## The gradient (stations 2, 13)
 
@@ -184,4 +186,5 @@ control.
 | 8 | (Provider vs. MCP fittings: hidden) | Tubes carrying actions out; alarm clock, recipe cards; the full tank |
 | 9 | Where the fish lives; wall vs. sign; autocomplete | Poisoned water; effect icons |
 | 10 | Curtained dials | Cut-out fish map; versioned fish |
+| 12 | B&W artists vs. a rainbow artist; turtles all the way down | |
 | 13 | | The gradient returns (full treatment) |

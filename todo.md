@@ -71,7 +71,6 @@ What each metaphor image means: `metaphor-imagery.md`; how each slide composes i
       mic/camera conversion boxes.
 - [ ] Create images
    - [ ] tubes connecting at the back of the tank: show the interface the fish sees
-   - [ ] review-ladder visual (station 12; not a literal ladder) -- placeholder in the deck
    - [ ] attachments as drawn parts instead of emoji (notepad, alarm clock, recipe cards,
          mic/camera, effect icons)
 
@@ -103,7 +102,7 @@ What each metaphor image means: `metaphor-imagery.md`; how each slide composes i
 
 ## Week of Sep 28 - Oct 2 - assembly complete
 
-- [ ] Review for audience interaction -- add intro question at the beginning to initiate pairs.
+- [ ] Review for audience interaction opportunities - add notes on slides (ask audience questions - socratic style, yeah!)
 - [ ] Print the one-page takeaway card.
 - [ ] Lock the materials list (`materials.md`).
 
@@ -123,7 +122,7 @@ What each metaphor image means: `metaphor-imagery.md`; how each slide composes i
 - [ ] Verify current product names on the slides (app tiles and personal agents at
       station 6, vendor names at station 9).
 - [ ] Get wegeekout.com ready for follow-up?
-- [ ] credits page / slide? writing/direction/production-BB, coding,art-Opus
+- [ ] credits page / slide? writing/direction/production/composition-BB, coding,art,consultation-Opus
 
 ## Oct 13 - deliver
 

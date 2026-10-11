@@ -81,6 +81,9 @@ shows: `../metaphor-imagery.md`.
   use instead of `fish-eyes-open`) layer on `fish-body` at the
   same x/y/width/height. A scene recolors one fish with an inline `style="--fish: ...; --fish-deep: ..."`
   on its `.goldfish` group.
+- **People:** `person` (a body with no arms, so each scene draws its own pose) plus `person-eyes`
+  or `person-eyes-left` on top, at the same x/y/width/height. Recolor with `--skin` and `--shirt`
+  on an ancestor (the grey artists at station 12 override both).
 - **Slide markup:** wrap the SVG in `<div class="scene">` with no blank lines inside
   (a blank line ends the HTML block in Markdown). Give the `<svg>` `role="img"` and an
   `aria-label`.

@@ -37,6 +37,7 @@
   --cheek: var(--pink);
   --water: var(--sky);
   --glass: #e6f4f7;
+  --skin: color-mix(in srgb, var(--orange) 30%, var(--paper));  /* people (station 12) */
   --line: 9;
 
   /* maps (station 4): tools/build-maps.mjs output reads these */
@@ -525,3 +526,7 @@ section:has(.rename-cue.visible) .mdfile-name .name-project { display: inline; }
 }
 .bookmark-bar button:hover { background: color-mix(in srgb, var(--paper) 20%, transparent); }
 .bookmark-bar button.active { background: var(--yellow); border-color: var(--yellow); color: var(--ink); }
+
+/* Station 12: turtles all the way down (a stack of shells, each labeled with one check). */
+.reveal .scene.turtles svg { height: 860px; }
+.reveal .scene .shell-label { font: 800 38px "Helvetica Neue", Helvetica, Arial, sans-serif; fill: var(--ink); }

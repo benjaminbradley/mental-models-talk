@@ -75,6 +75,7 @@ activity (pair/group/individual); *demo* = live or pre-captured demonstration;
 | 12 | Would you put your name on this? | | | | *exercise:* evaluate artifact; *socratic:* how would you check? |
 | 12 | Draft vs. send | | | HITL as deliberate pattern | |
 | 12 | Who checks the fish? (review ladder) | | | review ladder; adversarial subagents | |
+| 12 | Turtles all the way down (the regress) | | | | |
 | 13 | What would change your mind? | closed conclusion -> live question | open | | *exercise:* individual reflection |
 | 13 | Exit poll | | | | *poll:* stance movement + model accuracy |
 | 13 | Coda: the birth of magic | | | | |
