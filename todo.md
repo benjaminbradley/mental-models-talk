@@ -82,6 +82,8 @@ In the deck with `data-visibility="hidden"`; bring back by deleting that line ab
       information" line in the thinking trace.
 - [ ] Station 1 harms: keep the closed box visible in the corner on later slides (persistent
       reminder), not only on its own slide. Or bring it back on the final "muggle/magic slide" - magic is dangerous, and has a price.
+- [ ] Who decided it should refuse that: on the first click, show a screenshot of people complaining that fable is too touchy and refuses basic chemistry questions
+- [ ] Two warnings: add example or visual of a skill most people have lost since we no longer use it (hunting? running?)
 
 ## Oct 13 - deliver
 

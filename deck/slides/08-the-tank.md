@@ -176,7 +176,7 @@ HIDDEN: too much detail for this talk; MCP stays as a one-liner on the take-home
 </div>
 <div>
 <p class="fragment" data-fragment-index="0">Alarm clock: <span class="term">scheduled tasks</span></p>
-<p class="fragment" data-fragment-index="1">Recipe cards: <span class="term">skills</span></p>
+<p class="fragment" data-fragment-index="1">Standard Operating Procedures (SOPs), workflows: <span class="term">skills</span></p>
 </div>
 </div>
 Note:

@@ -1,5 +1,5 @@
 <!-- .slide: data-bookmark="It doesn't remember you" -->
-# It doesn't remember you
+# By itself, it doesn't remember you
 
 <div class="split">
 <div class="scene" style="flex: 0 0 780px">
@@ -341,7 +341,7 @@ You (or the maker) write these notes; the fish only reads them. Memory (station 
 
 ---
 
-# A tank someone else set up
+# A tank someone already set up
 
 <div class="split">
 <div class="scene">

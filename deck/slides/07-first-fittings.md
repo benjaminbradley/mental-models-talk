@@ -210,7 +210,7 @@ Every tool you'll see from here on is something the fish was trained to reach fo
 
 ---
 
-# The notepad
+# Remember things with a notepad
 
 <div class="split">
 <div class="scene">

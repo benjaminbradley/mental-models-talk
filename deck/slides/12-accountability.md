@@ -2,7 +2,7 @@
 # "The AI did it"
 
 <div class="split">
-<div class="shots tall"><figure><img src="illustrations/accountability--autocorrect-fail.png" alt="A text thread with Mother: she asks to book a haircut; the reply, mangled by autocorrect, reads 'No idiot I'm booked solid'; follow-ups: 'It's suppose to say no I DONT', 'Sorry mother lol!!!! Stupid Auto Spell'"><figcaption>"Damn you, autocorrect!"</figcaption></figure></div>
+<div class="shots tall"><figure><img src="illustrations/accountability--autocorrect-fail.png" alt="A text thread with Mother: she asks to book a haircut; the reply, mangled by autocorrect, reads 'No idiot I'm booked solid'; follow-ups: 'It's suppose to say no I DONT', 'Sorry mother lol!!!! Stupid Auto Spell'"><figcaption>Autocorrect fails</figcaption></figure></div>
 <div>
 <p class="lede fragment">"A bad workman blames his tools."</p>
 </div>
@@ -98,7 +98,7 @@ Exercise: evaluate the artifact. Socratic: "How would you check?" Cognitive shif
 </div>
 </div>
 
-<p class="lede">Draft = the fish. <span class="fragment">Send = you. <span class="term">human in the loop</span></span></p>
+<p class="lede">It can draft emails. <span class="fragment">You choose to send them. <span class="term">human in the loop</span></span></p>
 
 Note:
 The fish writes the drafts (top): that's its job here.
