@@ -386,7 +386,7 @@ What happens when the water is poisoned? Three things.
 <img class="fragment" src="illustrations/blast-radius--deleted-db.png" alt="Reddit post: 'I asked Claude Code to fix my UI. It deleted my database in the process.' It ran a database reset command">
 </div>
 
-Worst case: recover how? Lose what? <!-- .element: class="fragment lede" -->
+Worst case: how would you recover? What would you lose? <!-- .element: class="fragment lede" -->
 
 Note:
 Real stories, from the last year. (Click through; tell one or two briefly.) "Do not remove any data" -- a sign, not a wall. A cleanup that took the whole home directory. A UI fix that reset the database.

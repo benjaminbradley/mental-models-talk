@@ -193,7 +193,7 @@ Felt need for the next slide: so how would you even know?
 <div class="fragment"><span class="emoji">🔒</span><b>Your own work</b><span class="small">keep a few private test prompts</span><span class="term">private probes</span></div>
 </div>
 
-<p class="lede fragment">Run once: a review. Re-run: a smoke alarm.</p>
+<p class="lede fragment">A test you run once is a review. A test you re-run is a smoke alarm.</p>
 
 Note:
 How would you know the fish changed? You test it -- and you keep testing it.

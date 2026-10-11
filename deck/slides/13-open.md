@@ -2,8 +2,8 @@
 
 # What would change your mind?
 
-<p class="fragment big-q">Enthusiast: signs you're over-trusting it?</p>
-<p class="fragment big-q">Skeptic: signs it's useful for what you care about?</p>
+<p class="fragment big-q">Enthusiast: what would show you're over-trusting it?</p>
+<p class="fragment big-q">Skeptic: what would show it's useful for something you care about?</p>
 
 Note:
 One last question, asked symmetrically. (Click.) If you're enthusiastic about this technology: what would you have to see to conclude you're over-trusting it? (Click.) If you're skeptical or opposed: what would you have to see to conclude it's genuinely useful for something you care about?

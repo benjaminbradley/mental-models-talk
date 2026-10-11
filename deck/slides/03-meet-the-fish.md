@@ -4,7 +4,7 @@
 
 <p class="lede">Pictures: the idea</p>
 <p class="fragment"><span class="term">yellow tags</span>: the real terms, to look up later</p>
-<p class="fragment small">Key ones: on your take-home card</p>
+<p class="fragment small">Key terms: on your take-home card</p>
 
 Note:
 Quick orientation before we start: I'll use a lot of pictures -- a goldfish, a bowl, maps. The pictures carry the idea.

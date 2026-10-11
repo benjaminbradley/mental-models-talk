@@ -90,7 +90,7 @@ Bridge: "Web search was our first tool. Let's zoom out: what's a tool?"
 </div>
 
 <p class="lede">Tool = anything outside the fish it can reach</p>
-<p class="fragment">Every tool: a tube to the bowl <span class="term">tool use</span> <span class="term">tool calling</span></p>
+<p class="fragment">Every tool: attached to the bowl <span class="term">tool use</span> <span class="term">tool calling</span></p>
 
 Note:
 Web search was the first one. Let's zoom out. You use tools all day: a calculator when the mental math gets hard, a map when you don't know the way, a phone when you need someone else.
