@@ -123,11 +123,8 @@ as the talk's primary anthropomorphic carrier.
 
 ## Bookmarks
 
-- **Entry & exit polls / surveys.** Definitely include. Anonymous. Entry poll at station 1
-  (stance + usage), exit poll at station 13. Design later. Note: "literacy, not conversion"
-  makes standard satisfaction surveys actively misleading - a session that leaves people
-  accurately unimpressed should not score as a failure. Measure model accuracy / stance
-  movement, not satisfaction. (Delivery idea: Google Forms + QR codes on slides.)
+- **Entry & exit polls / surveys.** Resolved: see `surveys.md` (goals, design decisions,
+  questions). Stance and objective model-accuracy items were dropped there.
 
 ## Candidate metaphors
 

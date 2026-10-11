@@ -15,7 +15,7 @@ activity (pair/group/individual); *demo* = live or pre-captured demonstration;
 
 | St | Beat | Cognitive | Stance | Capability | Interaction |
 |----|------|-----------|--------|------------|-------------|
-| 1 | Entry poll | | | | *poll:* stance + usage baseline |
+| 1 | Entry poll | | | | *poll:* usage + curiosity |
 | 1 | The real problems, named out loud | | guarded -> permission to engage | | |
 | 1 | My goal: literacy, not conversion | | | | |
 | 2 | Magic -> gradient | "magic, not for me" -> "learnable discipline" | | | |
@@ -77,5 +77,5 @@ activity (pair/group/individual); *demo* = live or pre-captured demonstration;
 | 12 | Who checks the fish? (review ladder) | | | review ladder; adversarial subagents | |
 | 12 | Turtles all the way down (the regress) | | | | |
 | 13 | What would change your mind? | closed conclusion -> live question | open | | *exercise:* individual reflection |
-| 13 | Exit poll | | | | *poll:* stance movement + model accuracy |
+| 13 | Exit poll | | | | *poll:* before/now understanding + feedback |
 | 13 | Coda: the birth of magic | | | | |

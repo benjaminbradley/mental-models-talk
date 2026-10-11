@@ -20,12 +20,12 @@ Exercise: individual reflection. Do not collect or share answers; this is privat
 
 **Scan to check out (anonymous)**
 
-<div class="placeholder">TODO: exit-survey QR code (polls not yet designed; same graphic as the entry poll: art/qr-poll.svg)</div>
+<div class="placeholder">TODO: exit-survey QR code (make qr URL=... OUT=deck/art/qr-exit.svg; URL in surveys.md)</div>
 
 Note:
-"One more scan before you go -- same survey; let's see if anything moved."
+"One more scan before you go -- two minutes, anonymous. It's how this talk gets better."
 
-Poll: stance movement + model accuracy. Compare entry vs. exit. Don't frame it as conversion: measure whether people's models got more accurate, whichever direction their stance moved. "Literacy, not conversion" applies to the measurement too.
+Exit survey: before/now self-ratings + open feedback (design in `surveys.md`). Don't frame it as conversion: "literacy, not conversion" applies to the measurement too.
 
 ---
 

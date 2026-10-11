@@ -43,10 +43,11 @@ When specific slides are mentioned, add the direct URL for a server running on h
    - [ ] re-check the 45-minute cut (`presentation-arc.md`) after the reorder
 - [ ] Rehearse; refine speaker notes; adjust pacing.
 
-- [ ] Design entry & exit polls (Google Forms + QR codes; measure model accuracy / stance
-      movement, not satisfaction). Phone-based (projector confirmed, QR on screen works).
-      Generate the QR SVGs with `make qr URL=... OUT=deck/art/qr-poll.svg` and replace the
-      placeholders in `deck/slides/00-pre-talk.md` and `13-open.md`.
+- [ ] Finish entry & exit surveys (design and forms done: see `surveys.md`)
+   - [ ] Publish both forms; add the responder links to `surveys.md`
+   - [ ] Generate two QR SVGs: `make qr URL=... OUT=deck/art/qr-entry.svg` and `.../qr-exit.svg`
+   - [ ] Replace the QR placeholders in `deck/slides/00-pre-talk.md` and `13-open.md`
+   - [ ] Test-scan both QR codes from a phone at projector distance; submit a test response, then delete it
 
 - [ ] Draft the one-page takeaway card (source: `take-home.md`).
 - [ ] Print the one-page takeaway card.
@@ -99,7 +100,7 @@ In the deck with `data-visibility="hidden"`; bring back by deleting that line ab
 
 ## After initial presentation
 
-- [ ] Review entry/exit polls, summarize for notes
+- [ ] Review entry/exit surveys per the analysis plan in `surveys.md`, summarize for notes
 - [ ] Capture feedback / lessons
 - [ ] Move Organizer reply below & other event-specific info to history/presentations.md
 - [ ] station 11 alt example -- default vs custom
