@@ -23,14 +23,6 @@ When specific slides are mentioned, add the direct URL for a server running on h
       on Austin's moonlight towers" in the same app (filenames in the slide's placeholders).
 - [ ] Station 3 "now" poetry: optionally replace the slide link with the permalink to the
       published reddit comment (the capture is a tall phone screenshot; small when projected).
-- [ ] Station 10 instability: find a higher-resolution capture of the model-suspension post
-      (`unstable--fable-suspended.png` is 501px wide and blurs when projected).
-- [ ] Station 7 memory: replace the illustrative "Saved memories" mock entries with the real
-      resume-inflation example (or a capture of it).
-- [ ] Prepare comparison demos
-   - [ ] (optional) show-its-work side-by-side: same query with/without thinking instructions (station 6 notes)
-- [ ] Verify current product names on the slides (app tiles and personal agents at
-      station 6, vendor names at station 9).
 
 ### Prep for presentation
 

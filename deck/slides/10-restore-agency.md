@@ -213,7 +213,10 @@ Framing guard: descriptive. Evals don't make the fish stable; they tell you when
 # Or it disappears
 
 <div class="shots">
-<figure><img src="illustrations/unstable--fable-suspended.png" alt="Post from @ClaudeDevs: 'As a result of a US government directive, we are suspending access to Claude Fable 5 for all users. You can continue to use all other Claude models.'"></figure>
+<figure><blockquote class="quote-card">
+<p>As a result of a US government directive, we are suspending access to Claude Fable 5 for all users. You can continue to use all other Claude models.</p>
+<footer>@ClaudeDevs, June 12, 2026 &middot; <a href="https://www.anthropic.com/news/fable-mythos-access">statement</a></footer>
+</blockquote></figure>
 <figure class="fragment"><img src="illustrations/unstable--silently-restricted-acct.png" alt="Reddit post: 'Anthropic silently restricted my paid account >> no notice, no explanation, no response to support tickets'"></figure>
 </div>
 

@@ -4,7 +4,7 @@
 <div class="tiles">
 <div><span class="emoji">🌐</span><b>Web apps</b><span class="small">ChatGPT, Claude, Gemini in the browser</span></div>
 <div class="fragment"><span class="emoji">📱</span><b>Desktop &amp; mobile apps</b><span class="small">the same vendors' apps</span></div>
-<div class="fragment"><span class="emoji">⌨️</span><b>Coding agents</b><span class="small">Claude Code, Codex, Gemini CLI, ...</span></div>
+<div class="fragment"><span class="emoji">⌨️</span><b>Coding agents</b><span class="small">Claude Code, Codex, Antigravity CLI, ...</span></div>
 <div class="fragment"><span class="emoji code">&lt;/&gt;</span><b>Open-source apps</b><span class="small">Open WebUI, LibreChat, ...</span></div>
 <div class="fragment"><span class="emoji">🦾</span><b>Personal agents</b><span class="small">OpenClaw, Hermes (open source); Dots (OpenAI), Muse (Meta)</span></div>
 </div>

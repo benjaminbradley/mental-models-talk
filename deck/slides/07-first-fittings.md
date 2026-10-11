@@ -235,8 +235,8 @@ Every tool you'll see from here on is something the fish was trained to reach fo
 <div class="mock">
 <h4>Saved memories</h4>
 <ul>
-<li>Prefers metric units</li>
-<li class="bad">Has led large engineering teams</li>
+<li>Has completed several Anthropic skilljar classes.</li>
+<li class="bad">Has designed and implemented RAG systems</li>
 <li>Lives in Austin</li>
 </ul>
 </div>

@@ -336,6 +336,19 @@ section:has(.rename-cue.visible) .mdfile-name .name-project { display: inline; }
 .reveal .mock ul { list-style: none; margin: 0; }
 .reveal .mock li { padding: 10px 0; border-top: 2px solid var(--rock); }
 .reveal .mock li.bad { background: color-mix(in srgb, var(--red) 12%, #fff); }
+/* .quote-card: a quoted post set as text (crisp at any size), not a screenshot. */
+.reveal blockquote.quote-card {
+  position: relative; margin: 0; padding: 56px 40px 28px 40px; text-align: left;
+  border: 6px solid var(--ink); border-radius: 14px; background: #fff;
+  box-shadow: 0 10px 0 var(--ink); font-style: normal;
+}
+.reveal blockquote.quote-card::before {
+  content: "\201C"; position: absolute; top: -34px; left: 24px;
+  font: 900 150px/1 Georgia, serif; color: var(--accent);
+}
+.reveal blockquote.quote-card p { margin: 0; font-size: 38px; line-height: 1.35; font-weight: 700; }
+.reveal blockquote.quote-card footer { margin-top: 22px; font-size: 26px; opacity: 0.75; }
+.reveal blockquote.quote-card footer::before { content: "\2014\00a0"; }
 .reveal .split { display: flex; align-items: center; gap: 50px; }
 .reveal .split .scene svg { height: 760px; }
 .reveal .split > div:last-child { flex: 1 1 0; }

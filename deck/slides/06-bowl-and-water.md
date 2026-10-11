@@ -293,8 +293,6 @@ Contrast with decomposition (station 5): there, *you* split the job so you check
 
 These reduce the problem; they don't remove your obligation to verify. And notice: every one of these only works if you know to ask for it.
 
-TODO capture (optional): the same ranking query with vs. without a "think about the criteria" preamble (illustrations/show-work--with-vs-without-thinking.png).
-
 ---
 
 # Notes on the glass
