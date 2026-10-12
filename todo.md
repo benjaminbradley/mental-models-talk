@@ -13,25 +13,6 @@ When specific slides are mentioned, add the direct URL for a server running on h
 
 ## Now - critical
 
-### Finish the slides
-
-
-#### Evaluate - finished / needed / defer: Pre-capture demos & transcripts
-
-- [ ] Station 7 citations: capture "Tell me about Austin's moonlight towers" vs. "Search for info
-      on Austin's moonlight towers" in the same app (filenames in the slide's placeholders).
-- [ ] Station 3 "now" poetry: optionally replace the slide link with the permalink to the
-      published reddit comment (the capture is a tall phone screenshot; small when projected).
-
-### Prep for presentation
-
-- [ ] Full run-through for real timing
-   - [ ] measure overall timing
-   - [ ] compare estimated timing vs. actual timing
-   - [ ] assess whether stations 7/8/9 compress (**Q6**)
-   - [ ] identify any trims needed
-   - [ ] assess station 4 density -- after the reorder it carries the (pending) exercise, four technique families, and the map/territory reveal + walkthrough; confirm it fits or identify what to defer
-   - [ ] re-check the 45-minute cut (`presentation-arc.md`) after the reorder
 - [ ] Rehearse; refine speaker notes; adjust pacing.
 
 - [ ] Draft the one-page takeaway card (source: `take-home.md`).
@@ -41,13 +22,39 @@ When specific slides are mentioned, add the direct URL for a server running on h
 - [ ] Lock the materials list (`materials.md`) & acquire them.
 - [ ] Hotspot test: Test the phone remote with the laptop on the phone's hotspot, on the projector's extended display, and accept the macOS firewall prompt for `node` (see `deck/README.md`). Fragments and phone lock/unlock are already verified.
 
+- [ ] Complete or drop: Station 7 citations: capture "Tell me about Austin's moonlight towers" vs. "Search for info
+      on Austin's moonlight towers" in the same app (filenames in the slide's placeholders).
+
 - [ ] Publish the deck to GitHub Pages (https://benjaminbradley.github.io/mental-models-talk/, already on the take-home card and closing slide). Pages currently serves a placeholder page: in `.github/workflows/pages.yml` switch `path: placeholder` back to `path: deck` and delete `placeholder/`, then check the Pages URL for slides, images and no console errors.
+
+## Oct 13 - deliver
+
+- [ ] Deliver the talk. Entry poll at the open, exit poll at the close.
+- [ ] Bring: USB-C adapter (in case venue's is flaky), slide control remote, printed materials.
 
 ## Now optional
 
 ### Slide review/improvements
 
 - [ ] Review for audience interaction opportunities - add notes on slides (ask audience questions - socratic style, yeah!)
+
+### Enhancements (low priority)
+
+- [ ] tubes connecting at the back of the tank: show the interface the fish sees
+- [ ] 05-verification or Accountability / turtles: Checking code - writing tests to verify the code, and calculating code coverage to verify the tests - building familiarity and trust with your harness & rubrics - shifts & shrinks the verification surface
+- [ ] attachments as drawn parts instead of emoji (notepad, alarm clock, recipe cards,
+         mic/camera, effect icons)
+- [ ] Station 4 "Counting & Tracking: the fish": mark up / highlight the capture to show exactly
+      where the errors are (the $4.50 margarita).
+- [ ] Station 4 "Spatial Reasoning: the fish": same -- highlight the contradiction between its
+      own ordering and its answer.
+- [ ] Station 1 harms: replace the emoji tiles with photos (datacenter, water, labor,
+      provenance, power, noise).
+- [ ] Station 10 guardrail probe: optionally highlight the "limited verifiable historical
+      information" line in the thinking trace.
+- [ ] Station 1 harms: keep the closed box visible in the corner on later slides (persistent
+      reminder), not only on its own slide. Or bring it back on the final "muggle/magic slide" - magic is dangerous, and has a price.
+- [ ] Who decided it should refuse that: on the first click, show a screenshot of people complaining that fable is too touchy and refuses basic chemistry questions
 
 ### Hidden slides: re-evaluate if there's time
 
@@ -64,37 +71,7 @@ Orphaned assets (no visible slide uses them; delete once the slides above are de
 - [ ] `deck/illustrations/knowledge-elicitation--1plain-haiku4.5.png`, `--2role-haiku4.5.png`,
       `--3knowledge-domain-haiku4.5.png`, `--3knowledge-domain-haiku4.5-trimmed.png` (station 6
       "Which shelf" captures; the slide draws the answer instead; the notes still cite them)
-- [ ] `deck/illustrations/unstable--fable-suspended.png` (the suspension is set as a quote card on "The fish changes without notice")
-- [ ] `person-eyes-left` symbol in `deck/art/parts.svg` (was the human artists on "Who checks the fish?"; now fish)
-- [ ] `.chat .pink-elephant` in `deck/theme/talk.css` (used only by the hidden station 4 chat slides)
-- [ ] `deck/slides/11-intention.md` (no longer in `manifest.js`: Intention moved to station 8, the two warnings split into stations 10 and 12)
-
-- [ ] Decide keep/cut for **describe-and-draw** ("B plays the fish", station 4; **Q3**
-      reopened; HIDDEN in the deck for now). If kept: find & test the figure. Criteria: spatial relationships (not artistic skill), dignified for
-      adults, honest ambiguity (partners disagree about the result and both have a point).
-      Leading candidate: simple architectural floor plan. Maybe 2 samples - overhead view vs PoV.
-
-### Enhancements (low priority)
-
-- [ ] tubes connecting at the back of the tank: show the interface the fish sees
-- [ ] attachments as drawn parts instead of emoji (notepad, alarm clock, recipe cards,
-         mic/camera, effect icons)
-- [ ] Station 4 "Counting & Tracking: the fish": mark up / highlight the capture to show exactly
-      where the errors are (the $4.50 margarita).
-- [ ] Station 4 "Spatial Reasoning: the fish": same -- highlight the contradiction between its
-      own ordering and its answer.
-- [ ] Station 1 harms: replace the emoji tiles with photos (datacenter, water, labor,
-      provenance, power, noise).
-- [ ] Station 10 guardrail probe: optionally highlight the "limited verifiable historical
-      information" line in the thinking trace.
-- [ ] Station 1 harms: keep the closed box visible in the corner on later slides (persistent
-      reminder), not only on its own slide. Or bring it back on the final "muggle/magic slide" - magic is dangerous, and has a price.
-- [ ] Who decided it should refuse that: on the first click, show a screenshot of people complaining that fable is too touchy and refuses basic chemistry questions
-
-## Oct 13 - deliver
-
-- [ ] Deliver the talk. Entry poll at the open, exit poll at the close.
-- [ ] Bring: USB-C adapter (in case venue's is flaky), slide control remote, printed materials.
+- [ ] `deck/illustrations/computers-english--claude-poetry.webp` (the tall phone capture; station 3 now uses `computers-english--claude-poetry-thumbnail.png`)
 
 ## After initial presentation
 
