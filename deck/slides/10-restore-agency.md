@@ -1,4 +1,11 @@
-<!-- .slide: data-bookmark="It's a product" -->
+<!-- .slide: class="center-slide section-intro" data-bookmark="It's a product" -->
+# Rental, not purchase
+
+Note:
+Section: it's a product. You didn't create it, and you don't control it. Someone else decides what it will and won't do, and they can change it at any time.
+
+---
+
 # Who decided it should refuse that?
 
 <div class="mock dials">
@@ -86,6 +93,42 @@ Bias is not one thing -- it's four, and each has a different fix (or no fix).
 (Click.) And all four are different for every model: different library, different raters, different vendor, different emergent quirks. No fish is neutral; each is biased in its own way.
 
 Present descriptively, not prescriptively. Do not adjudicate which biases are justified.
+
+
+---
+
+# It will agree with you
+
+<div class="split">
+<div class="scene">
+<svg viewBox="0 0 900 600" role="img" aria-label="The goldfish nodding eagerly, saying 'You're absolutely right!'">
+  <g style="stroke: var(--ink); stroke-width: 7; fill: #fff" stroke-linejoin="round">
+    <path d="M 330 30 h 520 a 30 30 0 0 1 30 30 v 90 a 30 30 0 0 1 -30 30 h -400 l -60 60 l 10 -60 h -70 a 30 30 0 0 1 -30 -30 v -90 a 30 30 0 0 1 30 -30 Z"/>
+  </g>
+  <text class="msg fish-says" x="590" y="122" text-anchor="middle" style="font-size: 44px">You're absolutely right!</text>
+  <g class="goldfish awake">
+    <g class="nod">
+      <use href="#fish-body" x="40" y="220" width="560" height="364"/>
+      <use class="eyes-open" href="#fish-eyes-open" x="40" y="220" width="560" height="364"/>
+    </g>
+  </g>
+</svg>
+</div>
+<div>
+<p>Even when you're wrong.</p>
+<p class="fragment">Ask it to argue the other side. Ask a different fish.</p>
+<p class="fragment"><span class="term">sycophancy</span></p>
+</div>
+</div>
+
+Note:
+The clearest example of "what nobody designed": it will agree with you. The people-pleaser fish doesn't push back well -- that's its temperament (station 3), shaped by raters who rewarded pleasant answers. If you rely on it for critical feedback, you're asking the fish to bite the hand that feeds it.
+
+(Click.) Workarounds: ask it to argue the other side; ask a different fish.
+
+(Click.) The word is sycophancy.
+
+Tone: honest, not alarming. Keep it brief.
 
 ---
 
@@ -175,7 +218,11 @@ The cure is the same as the probe: more than one fish, a few private test prompt
 </div>
 
 <div class="shots">
-<figure class="fragment"><img style="max-height: 470px; width: auto" src="illustrations/instability--opus5.5-livenerf.webp" alt="A line chart titled 'Claude Opus 5.5 vs. its own launch week': the same model's daily score on a frozen 78-question panel bounces between about 53% and 69% from day to day, with wide confidence bars, around a dashed 58.4% baseline"><figcaption><a href="https://github.com/ninjahawk/livenerf">LiveNerf: the same model, the same 78 questions, every day</a></figcaption></figure>
+<figure class="fragment"><img style="max-height: 470px; width: auto; max-width: 100%" src="illustrations/instability--opus5.5-livenerf.webp" alt="A line chart titled 'Claude Opus 5.5 vs. its own launch week': the same model's daily score on a frozen 78-question panel bounces between about 53% and 69% from day to day, with wide confidence bars, around a dashed 58.4% baseline"><figcaption><a href="https://github.com/ninjahawk/livenerf">LiveNerf: the same model, the same 78 questions, every day</a></figcaption></figure>
+<figure class="fragment" style="flex: 0 0 640px; align-self: center"><blockquote class="quote-card">
+<p>As a result of a US government directive, we are suspending access to Claude Fable 5 for all users. You can continue to use all other Claude models.</p>
+<footer>@ClaudeDevs, June 12, 2026 &middot; <a href="https://www.anthropic.com/news/fable-mythos-access">statement</a></footer>
+</blockquote></figure>
 </div>
 
 Note:
@@ -184,6 +231,8 @@ The fish is someone else's fish, and it changes. (Click through the versions.) E
 (Click.) And it's not only between versions. Someone runs the *same* model on the *same* 78 questions every day. Look at the line: it bounces between the mid-50s and the high-60s, day to day. Same fish, same questions. (Read the line, not the one labeled point.)
 
 A workflow that worked yesterday can break because the provider changed something -- the model, the settings, the load. You weren't asked, and you weren't told.
+
+(Click.) Or the fish disappears entirely: a whole model suspended for everyone, overnight (June 2026, by government directive; access came back about three weeks later). If you're building business processes on top of this, you're building on a service you don't control. A risk to name, not a problem this talk solves. It feeds "it's a product": you're a customer, not a partner. (Same vendor as the earlier captures only because those were at hand; this applies to all of them.)
 
 Felt need for the next slide: so how would you even know?
 
@@ -212,23 +261,3 @@ How would you know the fish changed? You test it -- and you keep testing it.
 
 Framing guard: descriptive. Evals don't make the fish stable; they tell you when it moved.
 
----
-
-# Or it disappears
-
-<div class="shots">
-<figure><blockquote class="quote-card">
-<p>As a result of a US government directive, we are suspending access to Claude Fable 5 for all users. You can continue to use all other Claude models.</p>
-<footer>@ClaudeDevs, June 12, 2026 &middot; <a href="https://www.anthropic.com/news/fable-mythos-access">statement</a></footer>
-</blockquote></figure>
-<figure class="fragment"><img src="illustrations/unstable--silently-restricted-acct.png" alt="Reddit post: 'Anthropic silently restricted my paid account >> no notice, no explanation, no response to support tickets'"></figure>
-</div>
-
-Note:
-Sometimes it's not a dip. The fish disappears: a whole model suspended for everyone, overnight.
-
-(Click.) Or your account changes quietly: tools stop working, no notice, no explanation.
-
-You have no recourse. If you're building business processes on top of this, you're building on a service you don't control. A risk to name, not a problem this talk solves. It feeds "it's a product": you're a customer, not a partner.
-
-Framing guard: same vendor as the earlier captures only because those were at hand; this applies to all of them.

@@ -42,6 +42,7 @@ Timing: 1-2 minutes.
 </svg>
 <div class="fragment"><span class="emoji">⚡</span>energy</div>
 <div class="fragment"><span class="emoji">💧</span>water</div>
+<div class="fragment"><span class="emoji">🔊</span>noise</div>
 <div class="fragment"><span class="emoji">👷</span>labor</div>
 <div class="fragment"><span class="emoji">📚</span>provenance</div>
 <div class="fragment"><span class="emoji">👑</span>concentration of power</div>
@@ -57,7 +58,7 @@ Timing: 1-2 minutes.
 <p class="lede fragment box-close-cue">Driver's ed, not Toyotathon.</p>
 
 Note:
-Click per harm; then two more clicks: the harms drop into a cardboard box in the corner, then the box closes and the line appears. (Icons are stand-ins; photos are a planned enhancement, see todo.md. The box does not yet persist onto later slides.)
+Click per harm (six: energy, water, noise -- data-center noise for the neighbors --, labor, provenance, concentration of power); then two more clicks: the harms drop into a cardboard box in the corner, then the box closes and the line appears. (Icons are stand-ins; photos are a planned enhancement, see todo.md. The box does not yet persist onto later slides.)
 
 Say: "Before we talk about how any of this works, let's name the elephant in the room: what's wrong with it." Name each harm briefly as it appears.
 

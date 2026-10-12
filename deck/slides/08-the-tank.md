@@ -1,4 +1,11 @@
-<!-- .slide: data-bookmark="The tank" -->
+<!-- .slide: class="center-slide section-intro" data-bookmark="The tank" -->
+# From talking to doing
+
+Note:
+Section: the tank. Tools that act, not just look things up: a chatbot says; an agent does.
+
+---
+
 # Counting letters: the fish writes a tool
 
 <div class="shots">
@@ -55,10 +62,10 @@ Demo: pre-captured (or live; any outcome teaches). Method: code execution.
 <div class="mdfile">
 <div class="mdfile-name"><span class="name-human">HUMAN-TODO.md</span><span class="name-project">PROJECT-TODO.md</span></div>
 <div class="mdfile-body">
-<div class="md-h"># Team outing</div>
-<div>- [<span class="fragment">x</span>] Book the escape room 🌐</div>
-<div>- [<span class="fragment">x</span>] Email the team ✉️</div>
-<div>- [<span class="fragment">x</span>] Add it to the calendar 📅</div>
+<div class="md-h"># Plan launch</div>
+<div>- [<span class="fragment">x</span>] Schedule launch 📅</div>
+<div>- [<span class="fragment">x</span>] Set up mailing list 🌐</div>
+<div>- [<span class="fragment">x</span>] Send announce email ✉️</div>
 </div>
 </div>
 <span class="fragment rename-cue"></span>
@@ -69,9 +76,9 @@ Demo: pre-captured (or live; any outcome teaches). Method: code execution.
 Note:
 Tools let the fish act. This is where the spine claim from station 3 becomes literal: anything you can specify clearly enough, the system can now do.
 
-Back to the team outing. Here's your to-do list -- a plain file, HUMAN-TODO.md: the things a human has to do. And here are the fish's tools from station 7: browser, email, calendar, files.
+Say you're launching a software project. Here's your to-do list -- a plain file, HUMAN-TODO.md: the things a human has to do. And here are the fish's tools from station 7: browser, email, calendar, files.
 
-(Click through.) Book the escape room -- through the browser. Email the team. Add it to the calendar. Things you used to do yourself, handed off item by item. That's the operator to-do list -- and it is powerful and dangerous for the same reason. Agency is the amplifier: everything good scales, and so does everything bad.
+(Click through.) Schedule the launch -- on the calendar. Set up the mailing list -- through the browser. Send the announcement email. Things you used to do yourself, handed off item by item. That's the operator to-do list -- and it is powerful and dangerous for the same reason. Agency is the amplifier: everything good scales, and so does everything bad.
 
 (Click.) And the file gets a new name: it's not the human's to-do list anymore. PROJECT-TODO.md -- the project's list, and the fish works through it alongside you.
 
@@ -274,6 +281,31 @@ Pull back: the bowl has become a tank. Water: the context. Notes on the glass: i
 
 (Click.) The tools decide what the fish can reach. Big vendors sell a fish already installed in a tank, which is why people conflate them -- but they are separable.
 
-A recap, not an introduction: everything except the mic and camera arrived on its own felt limit. Microphone is a candidate to cut. Bridge out: every tool widens the blast radius (station 9).
+A recap, not an introduction: everything except the mic and camera arrived on its own felt limit. Microphone is a candidate to cut. Bridge out: "It can do a lot now. So what's left for you?"
 
 Every tool connects through a tube, drawn behind the tank. TODO (art; inline SVG in this slide, no file): show the interface the fish sees from inside the water where a tube connects.
+
+---
+
+# Intention is the input
+
+<div class="shots short">
+<figure><img src="illustrations/intention--macbook.jpg" alt="A stock laptop on a cafe table"><figcaption>Let the model decide / "use best practices" = the default response</figcaption></figure>
+<figure class="fragment" data-fragment-index="0"><img src="illustrations/intention--cyberdeck-rpimag.png" alt="A homemade 'cyberdeck': a computer built into a rugged case, with a custom keyboard, toggle switches and a status display"><figcaption>Someone knew what they wanted</figcaption></figure>
+</div>
+
+<p class="lede intention-lede">If it can do anything you specify, what's left? <span class="fragment" data-fragment-index="1">What you specify.</span></p>
+<svg class="genie-mini fragment" data-fragment-index="1" viewBox="60 90 580 610" role="img" aria-label="The lazy genie from station 4, small, rising from its lamp"><use href="#genie-lamp" x="60" y="90" width="580" height="610"/></svg>
+
+Note:
+Socratic first: "If it can do anything you specify -- what's left?" Let them answer.
+
+A stock laptop: perfectly good, the default. That's what you get when you let the model decide, or ask it to "use best practices": the default response. (Click.) Same category: a cyberdeck somebody built because they knew exactly what they wanted. The difference isn't the tools. It's the intention.
+
+(Click.) What's left is what you bring -- and the lazy genie is back, in the corner: it grants exactly what you specify, nothing more. What's left is what you bring: your intention, your taste, your judgment. "Use best practices" is a fine default, but the judgment calls -- what matters, how you want it -- are your real input, and they can't be delegated. Station 4 callback: specification (the lazy genie). And the tank we just built: you delegated the doing, not the deciding.
+
+The human-side mirror of the spine claim. Cognitive shift: "the tool is the story" -> "I am the variable." Method: knowing what you want.
+
+Framing guard: descriptive, not a nudge to adopt. Someone who chooses not to use it at all is also exercising intention.
+
+Bridge out: it does anything you specify -- and anything that gets specified to it. Every tool widens the blast radius (station 9).

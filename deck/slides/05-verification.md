@@ -1,4 +1,11 @@
-<!-- .slide: data-bookmark="When is it safe?" -->
+<!-- .slide: class="center-slide section-intro" data-bookmark="When is it safe?" -->
+# Check the work
+
+Note:
+Section: when is it safe to use? The one durable tool: how expensive is it to check the answer?
+
+---
+
 # When is it safe to use?
 
 <div class="versus">

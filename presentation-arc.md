@@ -43,7 +43,7 @@ non-determinism).
 *Stance: guarded suspicion -> permission to engage.*
 
 Name the real problems out loud first (energy and water footprint, labor, training-data
-provenance, concentration of power) and say plainly the talk does not
+provenance, concentration of power, noise) and say plainly the talk does not
 adjudicate them. Then the contract: you should be able to reason about this accurately,
 including against it; nothing is being sold. Motivate through agency, not fear (refusing
 what you do not understand is weak refusal), never "adapt or be left behind," which is
@@ -65,7 +65,7 @@ Capability precondition: skill exists here at all.
   introduced here. *Tension:* if it speaks our language this well, is it like us?
 - **The goldfish:** read everything, never left the bowl. A people-pleaser: its
   unwarranted confidence is eagerness to please, not intent to deceive. Seeds three
-  callbacks: sycophancy (stations 9, 11), eager compliance with injected instructions
+  callbacks: sycophancy (stations 9, 10), eager compliance with injected instructions
   (station 9), and why self-review shares the model's own blind spots (station 12).
   *Tension:* why is it like this?
 - **Temperament vs. anatomy, via the training story:** pretraining gives knowledge and
@@ -91,9 +91,6 @@ the room just met.
   cannot tell you it misunderstood), yet an astonishing amount *is* specifiable. Debrief method: invite clarifying questions.
 - **Specification:** the people-pleaser answers whatever you ask, so a vague ask gets a
   confident, vague answer; gaps get filled with the cheapest answer.
-- **Meta-prompting:** when you do not know what to ask, ask the fish to help. It holds
-  latent knowledge it does not apply unless asked; a prompt written for another model
-  needs Theory of Mind, because that model lacks this chat's context.
 - **Jaggedness:** errors do not track human difficulty; trivial failures sit beside
   expert successes. *Tension:* why is it so good at some things and so bad at others?
   Because it learned everything from language alone.
@@ -106,8 +103,7 @@ the room just met.
 
 *Tension raised:* the map gives no sign of which regions are reliable, so when is it safe
 to use at all?
-Methods: specification (examples over adjectives, constraints, output formats, few-shot);
-meta-prompting.
+Methods: specification (examples over adjectives, constraints, output formats, few-shot).
 
 ## Station 5 - Equip: the verification asymmetry
 *Stance: disoriented -> holding one durable, stance-neutral tool.*
@@ -141,13 +137,17 @@ Methods: verification asymmetry; decomposition.
   context cannot be taken back out, and "ignore that" only adds more words. A poisoned
   thread is often cheaper to abandon than to repair. Iteration and critique loops live
   here: refine in place only while the thread is clean.
+- **Handoffs with Theory of Mind:** ask the fish to write the handoff for a fresh chat
+  (meta-prompting), written for a reader who lacks this chat's context; anything you name,
+  even to exclude it, lands in the new water.
 
 Vulnerability half: context can be poisoned, including by your own missteps.
 *Tension raised:* the context holds only what you pour in. What about everything the fish
 does not have, like anything after its training ended, or the sources it claimed?
 Methods: context engineering, role prompting, knowledge-domain elicitation,
 chain-of-thought, extended thinking, self-reflection, instruction hierarchy, Custom GPTs,
-RAG, document hygiene, restart vs. repair, iteration, critique loops.
+RAG, document hygiene, restart vs. repair, iteration, critique loops, meta-prompting
+(handoffs, Theory of Mind).
 
 ## Station 7 - First tools: reaching out to *know*
 *Cognitive: "it knows what it knows" -> "tools extend what it can see and remember, and each brings a new limit."*
@@ -188,6 +188,14 @@ Methods: web search; asking for a search (citations); tool use; tool discovery; 
 Methods: code execution, scheduled tasks, skills, multimodal; MCP (card only, while
 its slide is hidden).
 
+**Closing beat: intention is the input.** The human-side mirror of the spine: if anything
+you can specify can be done, the scarce input is what you bring (intention, taste,
+judgment). "Use best practices" is the default response; the judgment calls are your real
+input and cannot be delegated. Framing guard: descriptive, not a nudge to adopt;
+stance-neutral (a refuser also exercises intention by choosing not to use it). Say
+"intention is the input" (avoid "intention economy").
+Methods: knowing what you want; you delegated the doing, not the deciding.
+
 ## Station 9 - Blast radius: security & data
 *Cognitive/stance: "a handy tool" -> "a system with a blast radius I have to bound."*
 
@@ -199,6 +207,8 @@ its slide is hidden).
   fully local; each trades capability for data control. Credentials: never paste secrets
   into a conversation that transits someone else's servers.
 - **Training-data opt-out** is a guideline (a promise), not an architectural boundary.
+- **Your account is theirs too:** access can change without notice; export and back up
+  what matters.
 - **Confidentiality vs. capability** (a footnote, not a beat): more context means better
   output and more exposure. A tradeoff to navigate, not a problem to solve.
 - **Injection:** instructions are just text that arrived earlier; the model cannot cleanly
@@ -229,31 +239,22 @@ Bias has four mechanisms: corpus, preference tuning, explicit guardrails, emerge
 legible precisely because it is not ours, so your own model's guardrails are invisible to
 you for the same reason. Unknown unknowns: gaps you would never notice in territory you do
 not already know. Frontier instability: you are building on someone else's model, which
-changes without notice or recourse, even day to day; evals (re-running the same test over
+changes without notice or recourse, even day to day, or is suspended outright; evals (re-running the same test over
 time) tell you when it moved, but nothing stops it moving. A risk to name, not one the talk
-solves. This station matters most for skeptics: it hands them a sharper knife.
+solves. Sycophancy gets its own beat as the clearest emergent bias: it will agree with
+you, so ask it to argue the other side, or ask a different fish. This station matters most
+for skeptics: it hands them a sharper knife.
 Methods: model selection (benchmarks mislead; keep private probes); evals (re-test over
 time); awareness of frontier instability.
-
-## Station 11 - The practitioner: intention is the input
-*"The tool is the story" -> "I am the variable; what I bring is the bottleneck."*
-
-The human-side mirror of the spine: if anything you can specify can be done, the scarce
-input is what you bring (intention, taste, judgment). "Use best practices" is the default
-response; the judgment calls are your real input and cannot be delegated. It amplifies what
-you bring; it will agree with you (sycophancy); atrophy is real but specific (you find out
-which capacities were load-bearing only after they are gone). Feeds accountability: the
-intention was yours, so is the ownership.
-Framing guard: descriptive, not a nudge to adopt; stance-neutral (a refuser also exercises
-intention by choosing not to use it). Say "intention is the input" (avoid "intention economy").
-Methods: knowing what you want; you delegated the doing, not the deciding.
 
 ## Station 12 - Land: accountability is the new bottleneck
 *Stance: "who is responsible for this?" -> "I am."*
 
 Where enthusiast and skeptic converge: whatever your stance, you own what you sign. A
 polished, subtly-wrong artifact: would you put your name on it, and what would checking
-cost? Human-in-the-loop as a deliberate pattern: draft vs. send is the whole
+cost? Skill atrophy is real but specific: you can only judge what you can still do, and you
+find out which capacities were load-bearing only after they are gone. Human-in-the-loop as a
+deliberate pattern: draft vs. send is the whole
 accountability question in one toggle. The review ladder and its regress: self-review
 shares blind spots, agent review is correlated, adversarial review needs a genuinely
 independent adversary, and it terminates in a person. When judgment itself is automated,

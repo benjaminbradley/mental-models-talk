@@ -32,7 +32,7 @@ Artwork approach: `open-questions-and-ideas.md` Q16.
 | Library of books; reading | training data; pretraining (anatomy) | 3 |
 | Practice conversations scored with check/cross paddles held by a human rater | post-training / RLHF (temperament) | 3 |
 | Fish asleep / awake | it does nothing until addressed | 3 |
-| The lazy genie | a vague wish granted to the letter, cheapest way | 4 (returns small at 11) |
+| The lazy genie | a vague wish granted to the letter, cheapest way | 4 (returns small at 8) |
 | Brain with specialist hubs, all but language fading | the fish learned from language alone | 4 |
 | Territory / your map / the fish's map | knowledge itself / calibrated human knowledge / the model's knowledge | 4 |
 | The bowl | the app (client, harness) | 6 |
@@ -40,7 +40,7 @@ Artwork approach: `open-questions-and-ideas.md` Q16.
 | Words floating in the water | the conversation so far, all re-read each turn | 6 |
 | Sticky notes inside the glass | instructions: yours (custom), the maker's (system) | 6 |
 | A tank someone else set up | Custom GPT / Gem | 6 |
-| Cat food in the water | something in the context that cannot be taken back out | 6 |
+| Too much salt in the soup (drawn as flakes in the water) | something in the context that cannot be taken back out | 6 |
 | Tube | a tool (the on-screen word is always "tool") | 7 |
 | Tool-use training (third training step) | tool use is itself trained | 7 |
 | Notepad | memory (the fish writes it) | 7 |
@@ -133,10 +133,10 @@ full assembly appears only as the station 8 recap.
   vendor's tank vs. one standard fitting that fits any compatible tank. Stays in the
   water/plumbing world (a hose coupling, not an electrical plug).
 
-## Cat food in the water (station 6)
+## Too much salt in the soup (station 6)
 
 Something that does not belong gets into the water and stays: every later answer is
-flavored by it. You cannot fish it back out, and "please ignore the cat food" only adds more
+flavored by it. You cannot take the salt back out, and "please ignore the salt" only adds more
 words to the water. Moving the fish to a fresh bowl with only the good words carried over
 (a new chat) beats cleaning the old one. The whole history is re-read every turn, so an
 early mistake persists.
@@ -189,11 +189,10 @@ control.
 | 2 | The gradient (light touch) | |
 | 3 | The goldfish (awake, asleep); training story (library; scored conversations) | |
 | 4 | The lazy genie; the brain; territory and two maps | |
-| 6 | The bowl and water; sticky notes; a pre-set-up tank; cat food | The bare fish forgetting each exchange; water level; techniques drawn in the water |
+| 6 | The bowl and water; sticky notes; a pre-set-up tank; salt in the soup; a HANDOFF.md | The bare fish forgetting each exchange; water level; techniques drawn in the water |
 | 7 | Tools | Tool-use training step; first tubes; notepad |
-| 8 | (Provider vs. MCP fittings: hidden) | Tubes carrying actions out; alarm clock, recipe cards; the full tank |
+| 8 | (Provider vs. MCP fittings: hidden) | Tubes carrying actions out; alarm clock, recipe cards; the full tank; the lazy genie (small) |
 | 9 | Where the fish lives; wall vs. sign; its own account; autocomplete | Fish or tank (the three containers); mini tanks with attachments; poisoned water; effect icons |
 | 10 | Curtained dials | Cut-out fish map; versioned fish |
-| 11 | | The lazy genie (small) |
 | 12 | Drafted pages; a reviewer fish; B&W painter and reviewer fish vs. a rainbow artist fish; turtles all the way down | |
 | 13 | | The gradient returns (full treatment) |

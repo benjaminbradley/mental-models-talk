@@ -1,7 +1,7 @@
 <!-- .slide: data-bookmark="Start" -->
 # Mental Models for Working with LLMs
 
-Benjamin Bradley · October 2025
+Benjamin Bradley · October 2026
 
 **Scan to check in: 2 quick questions (anonymous)**
 

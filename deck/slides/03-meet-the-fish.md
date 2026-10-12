@@ -42,13 +42,13 @@ For most of computing history, if you wanted to talk to a computer, *you* learne
 <p class="poem-title">The pudding god and the magical dragon</p>
 <p>The mighty pudding god will devour you.<br>Is in the form of this magical dragon cris<br>And in the form of this magical dragon biss<br>You will be given a magical egg</p>
 </div><figcaption>Then: GPT-2, 2020 (<a href="https://www.aiweirdness.com/rhyming-is-hard-20-05-26/">"Rhyming is hard," AI Weirdness</a>)</figcaption></figure>
-<figure class="fragment"><img src="illustrations/computers-english--claude-poetry.webp" alt="A poem titled 'Under Trees': 'The trees do not optimize their rustling, the wind does not justify its dance... I am allowed to simply be here, like the trees on any given day.'"><figcaption><a href="https://www.reddit.com/r/ClaudeAI/comments/1gn4u8y/i_hade_a_nice_night_with_claude_and_asked_for_a/">The first AI-generated poem to bring a tear to my eye</a> <span class="emoji">😢</span></figcaption></figure>
+<figure class="fragment"><img src="illustrations/computers-english--claude-poetry.webp" alt="A poem titled 'Under Trees': 'The trees do not optimize their rustling, the wind does not justify its dance... I am allowed to simply be here, like the trees on any given day.'"><figcaption><a href="https://www.reddit.com/r/ClaudeAI/comments/1gn4u8y/i_hade_a_nice_night_with_claude_and_asked_for_a/">The first AI-generated poem to bring a tear to my eye</a> (Nov. 2024) <span class="emoji">😢</span></figcaption></figure>
 </div>
 
 Specify it clearly in language &rarr; a computer can now do it <!-- .element: class="fragment lede" -->
 
 Note:
-Until about 2020 we made fun of computers' bad poetry. This is GPT-2, in 2020, trying to rhyme: "The pudding god and the magical dragon." (Read a line or two. "Cris." "Biss.") (Click.) Now they write good poems in seconds -- this is the first AI-generated poem to bring a tear to my eye.
+Until about 2020 we made fun of computers' bad poetry. This is GPT-2, in 2020, trying to rhyme: "The pudding god and the magical dragon." (Read a line or two. "Cris." "Biss.") (Click.) Now they write good poems in seconds -- this is the first AI-generated poem to bring a tear to my eye (November 2024).
 
 Then the spine claim, plainly: "Here's the claim this whole talk hangs on: anything you can specify clearly enough in language, a computer can now do."
 
@@ -58,7 +58,14 @@ Spine: introduced here; felt at station 4 (say what you want; the lazy genie); m
 
 ---
 
-<!-- .slide: data-bookmark="Meet the goldfish" -->
+<!-- .slide: class="center-slide section-intro" data-bookmark="Meet the goldfish" -->
+# What are we talking to?
+
+Note:
+Section: meet the goldfish. What is actually on the other end of the chat box -- and how did it get that way?
+
+---
+
 # Meet the goldfish
 
 <div class="scene">

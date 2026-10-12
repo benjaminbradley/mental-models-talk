@@ -55,7 +55,19 @@ In the deck with `data-visibility="hidden"`; bring back by deleting that line ab
 
 - [ ] Station 4: "B plays the fish" + "What went wrong? Whose fault was it?" (describe-and-draw; **Q3**, see below)
 - [ ] Station 5: "Sort your own work" (verification-asymmetry exercise; hidden for time)
-- [ ] Station 8: "Two kinds of plumbing" (provider tools vs. MCP; MCP stays on the take-home card)
+- [ ] Station 8: "Two kinds of plumbing" (provider tools vs. MCP; MCP is now a line on the Tools slide and on the take-home card)
+- [ ] Station 4: "Ask the fish to help you ask" + "...using Theory of Mind" (folded into station 6 "Too much salt in the soup": HANDOFF.md, Theory of Mind, meta-prompting)
+- [ ] Station 9: "Is that the fish or the tank?" (hidden for now)
+
+Orphaned assets (no visible slide uses them; delete once the slides above are decided):
+
+- [ ] `deck/illustrations/knowledge-elicitation--1plain-haiku4.5.png`, `--2role-haiku4.5.png`,
+      `--3knowledge-domain-haiku4.5.png`, `--3knowledge-domain-haiku4.5-trimmed.png` (station 6
+      "Which shelf" captures; the slide draws the answer instead; the notes still cite them)
+- [ ] `deck/illustrations/unstable--fable-suspended.png` (the suspension is set as a quote card on "The fish changes without notice")
+- [ ] `person-eyes-left` symbol in `deck/art/parts.svg` (was the human artists on "Who checks the fish?"; now fish)
+- [ ] `.chat .pink-elephant` in `deck/theme/talk.css` (used only by the hidden station 4 chat slides)
+- [ ] `deck/slides/11-intention.md` (no longer in `manifest.js`: Intention moved to station 8, the two warnings split into stations 10 and 12)
 
 - [ ] Decide keep/cut for **describe-and-draw** ("B plays the fish", station 4; **Q3**
       reopened; HIDDEN in the deck for now). If kept: find & test the figure. Criteria: spatial relationships (not artistic skill), dignified for
@@ -72,13 +84,13 @@ In the deck with `data-visibility="hidden"`; bring back by deleting that line ab
 - [ ] Station 4 "Spatial Reasoning: the fish": same -- highlight the contradiction between its
       own ordering and its answer.
 - [ ] Station 1 harms: replace the emoji tiles with photos (datacenter, water, labor,
-      provenance, power).
+      provenance, power, noise).
 - [ ] Station 10 guardrail probe: optionally highlight the "limited verifiable historical
       information" line in the thinking trace.
 - [ ] Station 1 harms: keep the closed box visible in the corner on later slides (persistent
       reminder), not only on its own slide. Or bring it back on the final "muggle/magic slide" - magic is dangerous, and has a price.
 - [ ] Who decided it should refuse that: on the first click, show a screenshot of people complaining that fable is too touchy and refuses basic chemistry questions
-- [ ] Two warnings: add example or visual of a skill most people have lost since we no longer use it (hunting? running?)
+- [ ] Station 12 "Skills you hand off can fade": the 🧭 / GPS example is a stand-in; consider a drawn visual or a stronger example of a skill most people have lost
 
 ## Oct 13 - deliver
 
@@ -92,6 +104,7 @@ In the deck with `data-visibility="hidden"`; bring back by deleting that line ab
 - [ ] Move Organizer reply below & other event-specific info to history/presentations.md
 - [ ] station 11 alt example -- default vs custom
 - [ ] consider a reusable recording or write-up -- or publish to GitHub Pages?
+  - [ ] clean up open questions file - when useful, move resolved/completed items to history subdir (something like ADRs), otherwise when items are fully & clearly represented in current work, remove them from open questions.
   - [ ] clean up repo - move planning docs into a doc/ subdir with its own README describing the planning/creation process - check github history for document creation order - relative timeline is more important than specific timestamps.
   - [ ] main README should link to the presentation on github pages, and on credits page(?), presentation should link back to the github repo
   - [ ] move most of CLAUDE.md contents to AGENTS.md - leave claude-specific + @AGENTS loader in CLAUDE

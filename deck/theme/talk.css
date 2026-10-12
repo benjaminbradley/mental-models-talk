@@ -28,8 +28,8 @@
   --cardboard-deep: #8f6234;
   --murk: #6f7a3a;     /* poisoned water (station 9) */
   --genie: color-mix(in srgb, var(--blue) 45%, var(--sky)); /* the lazy genie (station 4) */
-  --escape: var(--purple);    /* cat food: escape-room flakes and words (station 6) */
-  --golf: var(--green-deep);  /* cat food: mini-golf flakes and words */
+  --escape: var(--purple);    /* salt in the soup: escape-room flakes and words (station 6) */
+  --golf: var(--green-deep);  /* salt in the soup: mini-golf flakes and words */
 
   /* semantic roles: artwork refers to these, not to raw colors */
   --bg: var(--paper);
@@ -257,7 +257,7 @@
 }
 .harms > div {
   position: relative; z-index: 1;
-  width: 300px; padding: 24px 10px; text-align: center; border: 6px solid var(--ink);
+  width: 270px; padding: 24px 10px; text-align: center; border: 6px solid var(--ink);
   border-radius: 12px; background: #fff; font-weight: 800; font-size: 36px;
   transition: margin 0.8s ease, transform 0.8s ease;
 }
@@ -282,7 +282,7 @@
 /* box-cue: shrink into the upper right corner, above the title line */
 section:has(.box-cue.visible) .harms { transform: translate(47px, -180px) scale(0.3); gap: 0; }
 section:has(.box-cue.visible) .harms > svg { opacity: 1; }
-section:has(.box-cue.visible) .harms > div + div { margin-left: -127px; }
+section:has(.box-cue.visible) .harms > div + div { margin-left: -140px; }
 section:has(.box-cue.visible) .harms > div:nth-of-type(odd) { transform: translateY(-44px) rotate(-4deg); }
 section:has(.box-cue.visible) .harms > div:nth-of-type(even) { transform: translateY(-8px) rotate(4deg); }
 /* closing: the tiles sink below the rim, then the flaps fold shut */
@@ -326,7 +326,7 @@ section:has(.box-close-cue.visible) .harms .flap { transform: none; transition-d
 .reveal .chat .who { display: block; font-size: 0.7em; font-weight: 800; opacity: 0.7; }
 .reveal .chat .new-chat { align-self: stretch; max-width: none; border-style: dashed; background: var(--paper); }
 .reveal .chat .pink-elephant { color: var(--accent); font-weight: 800; }
-/* escape rooms vs. mini golf: the same colors as the cat food at station 6 */
+/* escape rooms vs. mini golf: the same colors as the salt-in-the-soup flakes at station 6 */
 .reveal .chat .esc { color: var(--escape); font-weight: 800; text-decoration: underline; }
 .reveal .chat .golf { color: var(--golf); font-weight: 800; font-style: italic; text-decoration: underline dotted; }
 
@@ -549,7 +549,7 @@ section:has(.rename-cue.visible) .mdfile-name .name-project { display: inline; }
 .reveal .scene .nonlang { transition: opacity 1s ease; }
 .reveal .scene:has(.brain-cue.visible) .nonlang { opacity: 0.15; }
 
-/* ---- Station 6: messages that fall away; elicitation; cat food -------------------- */
+/* ---- Station 6: messages that fall away; elicitation; salt in the soup----------------- */
 /* .fragment.drop: visible from the start; at its step it falls and fades (a message the bare
    fish has already forgotten). Put it on a <g> wrapping that exchange's own fragments. */
 .reveal .slides section .fragment.drop { opacity: 1; visibility: inherit; transition: opacity 0.9s ease, transform 0.9s ease; }
@@ -671,3 +671,10 @@ section:has(.cut-cue.visible) .trifecta-risk .risk-destroy { display: inline; }
 .reveal .genie-mini { position: absolute; right: 20px; bottom: -20px; height: 190px; width: auto; overflow: visible; }
 .reveal .closing .credits { margin-top: 30px; font-size: 28px; }
 .reveal .closing .credits p { margin: 0 0 0.3em; }
+
+/* Section intro slides: one short phrase, big, with an accent rule (bookmarks land here). */
+.reveal .slides section.section-intro h1 { font-size: 140px; margin: 0; }
+.reveal .slides section.section-intro h1::after {
+  content: ""; display: block; width: 220px; height: 16px; margin: 40px auto 0;
+  border-radius: 8px; background: var(--fish);
+}

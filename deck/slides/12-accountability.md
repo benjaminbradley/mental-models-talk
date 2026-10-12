@@ -1,4 +1,11 @@
-<!-- .slide: data-bookmark="Accountability" -->
+<!-- .slide: class="center-slide section-intro" data-bookmark="Accountability" -->
+# Your name on it
+
+Note:
+Section: accountability. The tool can do the work; it can't take the responsibility.
+
+---
+
 # "The AI did it"
 
 <div class="split">
@@ -70,6 +77,29 @@ Put it on screen. "Take a minute. The fish produced this. It looks professional.
 The error is deliberately small and findable in seconds once anyone looks: the lesson is that polish suppresses looking, not that the error was hard to find. The self-describing title is the wink -- everything on the page is surface. If the room finds it instantly, pivot: "That's the cover. The report behind it is 30 pages."
 
 Exercise: evaluate the artifact. Socratic: "How would you check?" Cognitive shift: "who's responsible?" -> "I am." Stance: convergence -- this is where the enthusiast and the skeptic meet.
+
+
+---
+
+# Skills you hand off can fade
+
+<div class="split">
+<div class="scene" style="flex: 0 0 640px"><span class="emoji" style="font-size: 300px" role="img" aria-label="A compass">🧭</span></div>
+<div>
+<p>Can you still get across town without GPS?</p>
+<p class="fragment">Some skills are load-bearing. You find out which after they're gone.</p>
+<p class="fragment"><span class="term">skill atrophy</span></p>
+</div>
+</div>
+
+Note:
+Before we hand off the checking, a warning: atrophy is real, but specific. "Who here could still get across town without GPS?" (Show of hands, or shout-out.)
+
+(Click.) Some capacities are load-bearing, and you only find out which after they're gone. Not everything atrophies -- but the things that do are the ones you stopped exercising because the fish could do them.
+
+(Click.) Skill atrophy. Tie it to this slide's neighbor: to decide whether to put your name on something, you need the skill to check it. Keep exercising the skills you'll need to judge the fish's work.
+
+Tone: honest, not alarming. Keep it brief.
 
 ---
 

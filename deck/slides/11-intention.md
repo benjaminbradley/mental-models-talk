@@ -1,4 +1,3 @@
-<!-- .slide: data-bookmark="Intention" -->
 # Two warnings
 
 <div class="split">
@@ -24,35 +23,10 @@
 </div>
 
 Note:
-Two warnings. First: it will agree with you. The people-pleaser fish doesn't push back well -- that's its temperament (station 3), and it's on the dial from station 10. If you rely on it for critical feedback, you're asking the fish to bite the hand that feeds it. Ask it to argue the other side; ask a different fish.
+Two warnings before we talk about responsibility. First: it will agree with you. The people-pleaser fish doesn't push back well -- that's its temperament (station 3), and it's on the dial from station 10. If you rely on it for critical feedback, you're asking the fish to bite the hand that feeds it. Ask it to argue the other side; ask a different fish.
 
 (Click.) Second: atrophy is real, but specific. Some capacities are load-bearing, and you only find out which after they're gone. Not everything atrophies -- but the things that do are the ones you stopped exercising because the fish could do them.
 
 Tone: honest, not alarming. Keep it brief.
 
-Bridge: both warnings are about what *you* bring. "So if it can do anything you specify -- what's left?"
-
----
-
-# Intention is the input
-
-<div class="shots short">
-<figure><img src="illustrations/intention--macbook.jpg" alt="A stock laptop on a cafe table"><figcaption>Let the model decide / "use best practices" = the default response</figcaption></figure>
-<figure class="fragment" data-fragment-index="0"><img src="illustrations/intention--cyberdeck-rpimag.png" alt="A homemade 'cyberdeck': a computer built into a rugged case, with a custom keyboard, toggle switches and a status display"><figcaption>Someone knew what they wanted</figcaption></figure>
-</div>
-
-<p class="lede intention-lede">If it can do anything you specify, what's left? <span class="fragment" data-fragment-index="1">What you specify.</span></p>
-<svg class="genie-mini fragment" data-fragment-index="1" viewBox="60 90 580 610" role="img" aria-label="The lazy genie from station 4, small, rising from its lamp"><use href="#genie-lamp" x="60" y="90" width="580" height="610"/></svg>
-
-Note:
-Socratic first: "If it can do anything you specify -- what's left?" Let them answer.
-
-A stock laptop: perfectly good, the default. That's what you get when you let the model decide, or ask it to "use best practices": the default response. (Click.) Same category: a cyberdeck somebody built because they knew exactly what they wanted. The difference isn't the tools. It's the intention.
-
-(Click.) What's left is what you bring -- and the lazy genie is back, in the corner: it grants exactly what you specify, nothing more. What's left is what you bring: your intention, your taste, your judgment. "Use best practices" is a fine default, but the judgment calls -- what matters, how you want it -- are your real input, and they can't be delegated. Station 4 callback: specification. Station 8 callback: you delegated the doing, not the deciding.
-
-The human-side mirror of the spine claim. Cognitive shift: "the tool is the story" -> "I am the variable." Method: knowing what you want.
-
-Framing guard: descriptive, not a nudge to adopt. Someone who chooses not to use it at all is also exercising intention.
-
-Bridge into accountability: the intention was yours, so is the ownership.
+Bridge: both warnings are about what *you* bring -- and you're the one who answers for the result. Into accountability.

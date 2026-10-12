@@ -1,4 +1,12 @@
-<!-- .slide: data-bookmark="Where your data goes" -->
+<!-- .slide: class="center-slide section-intro" data-bookmark="Where your data goes" -->
+# Blast radius
+
+Note:
+Section: security and data. Where does it live, what can it reach, and what's the worst that could happen?
+
+---
+
+<!-- .slide: data-visibility="hidden" -->
 # Is that the fish or the tank?
 
 <div class="scene wide">
@@ -48,6 +56,8 @@
 The fish = <span class="term">the model</span> &nbsp; The tank = <b>the app</b>
 
 Note:
+HIDDEN for now (keep/cut pending).
+
 Now that the fish has a whole tank around it: you never talk to the raw fish. You always talk through an app -- the tank it sits in. ChatGPT, Claude, Gemini: the app is the tank; the model inside is the fish. A simple bowl, a fancy aquarium, a travel jar -- different apps, same fish. (Product names: verify before the talk.)
 
 When something goes wrong, the first diagnostic question: is that the fish or the tank?
@@ -73,7 +83,7 @@ Bridge: "And tanks come in a lot more shapes than these three."
 <p class="lede fragment">All tanks are apps. The technical words: <span class="term">client</span> <span class="term">harness</span></p>
 
 Note:
-The tank comes in many more shapes. Web apps in the browser.
+You never talk to the raw fish; you always talk through an app -- the tank. And tanks come in many shapes. Web apps in the browser.
 
 (Click.) Desktop and mobile apps -- often the same vendor's tank, in a different form.
 
@@ -324,6 +334,24 @@ Back to where things live.
 Each step trades capability for control. Footnote, not a beat: the more context you give the fish, the better it does AND the more you expose -- a tradeoff to navigate, not a problem to solve.
 
 Socratic: "What could go wrong?" Cognitive shift: "handy tool" -> "blast radius to bound." Stance: sober caution. Methods: hosting awareness, credential hygiene.
+
+
+---
+
+# Your account can change, too
+
+<div class="shots">
+<figure><img style="width: 1400px; max-width: 100%; max-height: none" src="illustrations/unstable--silently-restricted-acct.png" alt="Reddit post: 'Anthropic silently restricted my paid account >> no notice, no explanation, no response to support tickets'"></figure>
+</div>
+
+<p class="lede fragment" style="text-align: center; margin-top: 40px">Export and back up what matters, regularly</p>
+
+Note:
+Wherever it lives, it's their service and your data. Your account can change quietly: tools stop working, history becomes unreachable -- no notice, no explanation, no response to support tickets. You have no recourse.
+
+(Click.) So treat the chat history, projects and files in there like anything else you can't afford to lose: export them on a schedule, and keep the important documents somewhere you control. Most apps have a data export in settings; use it before you need it.
+
+Framing guard: same vendor as the other captures only because it was at hand; this applies to all of them.
 
 ---
 

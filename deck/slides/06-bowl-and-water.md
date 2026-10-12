@@ -1,4 +1,11 @@
-<!-- .slide: data-bookmark="It doesn't remember you" -->
+<!-- .slide: class="center-slide section-intro" data-bookmark="It doesn't remember you" -->
+# Context
+
+Note:
+Section: context. The model remembers nothing; everything it knows about you right now is what's in the water.
+
+---
+
 # By itself, it doesn't remember you
 
 <div class="split">
@@ -62,13 +69,12 @@ Talking directly to the fish -- no app, no bowl. (Simulated: in practice even a 
 </svg>
 </div>
 <div>
-<p class="fragment" data-fragment-index="0">The bowl = <b>the app</b></p>
-<p class="fragment">The water = <span class="term">the context</span> (everything the fish can see)</p>
+<p class="fragment" data-fragment-index="0">The water = <span class="term">the context</span> (everything the fish can see)</p>
 </div>
 </div>
 
 Note:
-Just now, talking to the bare fish, it couldn't remember your name. (Click.) Now give it a bowl. The bowl is the app you actually use. It keeps the conversation and pours the whole thing back into the water every time you send a message.
+Just now, talking to the bare fish, it couldn't remember your name. (Click.) Now give it a bowl. The bowl is the app you actually use (say it; it's no longer on screen). The water is the context: everything the fish can see. The bowl keeps the conversation and pours the whole thing back into the water every time you send a message.
 
 (Click through the messages.) Each message is added to the water, in order. Now it "remembers" your name -- not because the fish remembers anything, but because the bowl handed it the whole conversation again.
 
@@ -323,7 +329,7 @@ A Custom GPT, a Gem, a Project: a bowl someone else set up for you, with their n
 # Too much salt in the soup
 
 <div class="scene wide">
-<svg viewBox="0 0 1500 600" role="img" aria-label="Left: two kinds of cat food in the water -- purple square flakes for escape rooms and green round flakes for mini golf. The fish's answer mixes both: an escape room, then go-karts. Asking it to forget the mini golf leaves the green flakes in the water. Right: the fish moved to a fresh bowl with only escape-room flakes">
+<svg viewBox="0 0 1500 600" role="img" aria-label="Left: two kinds of flakes (salt in the soup) in the water -- purple square flakes for escape rooms and green round flakes for mini golf. The fish's answer mixes both: an escape room, then go-karts. Asking it to forget the mini golf leaves the green flakes in the water. Right: a new chat -- under the arrow, a HANDOFF.md page labeled Theory of Mind -- and the fish in a fresh bowl with only escape-room flakes">
   <use href="#bowl-back" x="0" y="10" width="600" height="560"/>
   <use href="#bowl-water" x="0" y="10" width="600" height="560"/>
   <!-- flakes are clipped to the bowl's interior (bowl coordinates, hence y - 10) -->
@@ -359,26 +365,43 @@ A Custom GPT, a Gem, a Project: a bowl someone else set up for you, with their n
     <text class="msg fish-says" x="990" y="265" style="font-size: 24px">Fish: Here are three</text>
     <text class="msg fish-says" x="990" y="300" style="font-size: 24px"><tspan class="esc">escape rooms</tspan> nearby!</text>
   </g>
+  <g class="fragment" data-fragment-index="3">
+    <!-- what carries over: a handoff the old fish writes for the new one -->
+    <g style="stroke: var(--ink); stroke-width: 6" stroke-linejoin="round">
+      <path d="M 702 345 h 54 l 20 20 v 72 h -74 Z" style="fill: #fff"/>
+      <path d="M 756 345 v 20 h 20 M 714 385 h 50 M 714 403 h 50 M 714 421 h 34" style="fill: none"/>
+    </g>
+    <text x="740" y="482" text-anchor="middle" style="font: 700 26px ui-monospace, Menlo, Consolas, monospace; fill: var(--ink)">HANDOFF.md</text>
+    <g class="svg-term"><rect x="600" y="502" width="280" height="44" rx="10"/><text x="740" y="533" text-anchor="middle">Theory of Mind</text></g>
+  </g>
 </svg>
 </div>
 
-<p class="lede fragment" data-fragment-index="3">Keep the water clean: <span class="term">context management</span></p>
+<p class="lede fragment" data-fragment-index="4">Keep the water clean: <span class="term">context management</span> <span class="term">meta-prompting</span></p>
 
 Note:
-Remember the team outing from station 4? We talked about escape rooms and mini golf. Both are in the water now -- two kinds of cat food (color-coded; also square vs. round flakes).
+Planning a team outing. We've been chatting about escape rooms and mini golf. Both are in the water now -- two kinds of salt in the soup (color-coded flakes; also square vs. round).
 
-You said escape rooms. But the mini golf is still floating in there, and the next answer comes out mixed: "an escape room, then go-karts!" Go-karts live next door to mini golf. A little "meow" in every answer.
+You said escape rooms. But the mini golf is still floating in there, and the next answer comes out mixed: "an escape room, then go-karts!" Go-karts live next door to mini golf.
 
-The whole conversation is poured back in every turn; the fish re-reads all of it each time. So you can't take the cat food out.
+The whole conversation is poured back in every turn; the fish re-reads all of it each time. So you can't take the salt back out.
 
-(Click.) "Forget the mini golf!" doesn't remove it. It adds more mini golf to the water -- and here comes putt-putt. (Same trap as the pink elephant.)
+(Click.) "Forget the mini golf!" doesn't remove it. It adds more mini golf to the water -- and here comes putt-putt. Don't think of a pink elephant: whatever is in the words is in the fish's head.
 
-(Click.) It's easier to move the fish to a fresh bowl -- a new chat -- and carry over only the good parts.
+(Click.) It's easier to start a fresh chat and carry over only the good parts.
 
-(Click.) That's context management: deciding what's in the water.
+(Click.) And the fish can help: ask it to write a handoff -- a HANDOFF.md -- for a new session. Asking the fish to write a prompt for you is meta-prompting.
 
-Iteration lives here too: the first answer is raw material, not a finished product. Refine it, have the fish critique itself. But iterating only pays off in clean water. Practical test: "Is there cat food in this water?" If yes, restart.
+The catch: the first draft it writes will say something like "Research escape rooms. Don't look at any mini golf locations." The new fish has never heard of mini golf -- and now it's the first thing it reads. So ask with Theory of Mind: "Write this for a reader who knows nothing about our conversation."
 
-Methods: restart vs. repair, iteration, critique loops, context management. Personal: felt from real experience.
+Theory of Mind: understanding that someone else's head holds different knowledge than yours. Kids get it around age four: a doll hides a marble in a basket and leaves; you move it to a box; where will the doll look? The basket -- she didn't see the move. The fresh fish is that doll. It saw none of this chat. Write for what it knows, not what you know. (Same rule for human handoffs: a new teammate, an email to someone who wasn't in the meeting.)
+
+Practice it (if time): "What would you put in the handoff? What would you leave out?" Shout-out answers: the decision (escape rooms), the constraints (date, budget, group size). Leave out: everything you rejected -- don't mention the mini golf at all.
+
+(Click.) That's context management -- deciding what's in the water -- with meta-prompting as the helper.
+
+Iteration lives here too: the first answer is raw material, not a finished product. Refine it, have the fish critique itself. But iterating only pays off in clean water. Practical test: "Is there too much salt in this soup?" If yes, restart.
+
+Methods: restart vs. repair, iteration, critique loops, context management, meta-prompting with Theory of Mind (handoffs). Personal: felt from real experience.
 
 Bridge out: "The water holds only what you pour in. What about everything the fish doesn't have -- anything after the books ended, or the sources it claimed?"

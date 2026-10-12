@@ -30,7 +30,7 @@ activity (pair/group/individual); *demo* = live or pre-captured demonstration;
 | 4 | B plays the fish *(hidden)* | "instincts transfer" -> "instincts mislead; output depends on what I ask" | productive disorientation | invite clarifying questions | *exercise:* pair, describe-and-draw; *socratic:* what went wrong? whose fault? |
 | 4 | Say what you want & how | | | specification; output formats; few-shot | *demo:* plain vs. specified |
 | 4 | The lazy genie | | | | |
-| 4 | Ask the fish to help you ask (pink elephant, Theory of Mind) | | | meta-prompting | |
+| 4 | Ask the fish to help you ask (pink elephant, Theory of Mind) *(hidden)* | | | | |
 | 4 | Brilliant here, hopeless there | | | | *socratic:* why so good at some things, so bad at others? |
 | 4 | Your brain has specialists | | | | |
 | 4 | Map vs. territory reveal | | | | *socratic:* notice anything? |
@@ -44,7 +44,7 @@ activity (pair/group/individual); *demo* = live or pre-captured demonstration;
 | 6 | Which shelf does it pull from? | | | role prompting; knowledge-domain elicitation | |
 | 6 | Make it show its work | | | chain-of-thought; extended thinking; self-reflection | *socratic:* how do you make it more reliable? |
 | 6 | Notes on the glass; a tank someone else set up | | | custom/system instructions; Custom GPTs / Gems; RAG | |
-| 6 | Restart vs. repair (cat food) | | | restart vs. repair; iteration; critique loops; context management | |
+| 6 | Restart vs. repair (too much salt in the soup; a HANDOFF.md written with Theory of Mind) | | | restart vs. repair; iteration; critique loops; context management; meta-prompting | *socratic:* what goes in the handoff? |
 | 7 | The books ended; looking things up | "knows what it knows" -> "tools extend what it can see" | | web search | |
 | 7 | "Tell me about" vs. "Search for" | | | asking for a search; citations | *demo:* two ways to ask |
 | 7 | Tools | | | tool use; tool discovery | |
@@ -55,10 +55,12 @@ activity (pair/group/individual); *demo* = live or pre-captured demonstration;
 | 8 | Provider tools vs. MCP *(hidden)* | | | MCP; provider tools | |
 | 8 | Alarm clock + recipe cards | | | scheduled tasks; skills | |
 | 8 | The tank (recap) | | | multimodal | |
-| 9 | Is that the fish or the tank? | "handy tool" -> "blast radius to bound" | sober caution | | *shout-out:* fish or tank? |
-| 9 | Many kinds of tanks | | | | |
+| 8 | Intention is the input | "tool is the story" -> "I am the variable" | | knowing what you want | *socratic:* if it can do anything you specify, what's left? |
+| 9 | Is that the fish or the tank? *(hidden)* | | | | *shout-out:* fish or tank? |
+| 9 | Many kinds of tanks | "handy tool" -> "blast radius to bound" | sober caution | | |
 | 9 | Where does your data go? (hosting) | | | hosting awareness; credential hygiene | *socratic:* what could go wrong? |
 | 9 | Do they train on your conversations? | | | | |
+| 9 | Your account can change, too | | | backups / exports | |
 | 9 | Prompt injection = poisoned water | | | | |
 | 9 | What poisoned water can do | | | | |
 | 9 | When it goes wrong (blast radius) | | | backups; version control; sandboxes | *socratic:* how do you protect yourself? |
@@ -67,16 +69,15 @@ activity (pair/group/individual); *demo* = live or pre-captured demonstration;
 | 9 | Find the trifecta | | | | *exercise:* small groups |
 | 10 | It's a product | "neutral oracle" -> "someone's product" | critical agency | | *socratic:* who decided it should refuse that? |
 | 10 | Four sources of bias | | | | |
+| 10 | It will agree with you (sycophancy) | | | ask it to argue the other side | |
 | 10 | The guardrail probe | | | model selection | |
 | 10 | What else is missing? (unknown unknowns) | | | | |
-| 10 | The fish changes without notice | | | | |
+| 10 | The fish changes without notice (or is suspended) | | | | |
 | 10 | How would you know? (evals) | | | evals; benchmarks; private probes | |
-| 10 | Or it disappears | | | | |
-| 11 | Two warnings: sycophancy, atrophy | "tool is the story" -> "I am the variable" | | | |
-| 11 | Intention is the input | | | knowing what you want | *socratic:* if it can do anything you specify, what's left? |
 | 12 | "The AI did it" (autocorrect; a bad workman) | "who's responsible?" -> "I am" | convergence | | |
 | 12 | A computer can never be held accountable (spine payoff #3) | | | | |
 | 12 | Would you put your name on this? | | | | *exercise:* evaluate artifact; *socratic:* how would you check? |
+| 12 | Skills you hand off can fade (atrophy) | | | | *socratic:* across town without GPS? |
 | 12 | Draft vs. send | | | HITL as deliberate pattern | |
 | 12 | Fish checks fish? (a second fish reviews the drafts) | | | | *socratic:* is that enough? |
 | 12 | Who checks the fish? (review ladder) | | | review ladder; adversarial subagents | |

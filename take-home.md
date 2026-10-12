@@ -39,13 +39,13 @@ card fits far fewer than this).
 - **Memory audit** - review what the model has stored about you; delete what should
   not persist. It may store things you did not intend.
 - **Restart vs. repair** - a derailed thread is often cheaper to abandon than to fix.
-  The whole conversation is re-read every turn; you cannot fish the cat food back out.
+  The whole conversation is re-read every turn; like too much salt in the soup, you cannot take it back out.
 - **Custom GPTs / Gems** - an app someone else set up, with their instructions inside.
 - **RAG** - the system pulls the right reference material into context on demand.
 - **Tool use / tool calling** (also: function calling) - web search, email, calendar, files, code: the model decides when to reach
   for a tool by reading the tool's description.
 - **MCP** (Model Context Protocol) - an industry-standard way to connect a tool once and use
-  it from any compatible app.
+  it from any compatible app: like USB, one plug that fits everything.
 - **Code execution** - for counting, math, and data, ask it to write and run a script
   instead of answering from memory.
 - **Multimodal** - vision (drag in a photo or screenshot), voice conversation. Know the difference: transcription (speech-to-text) vs. native voice
@@ -88,7 +88,8 @@ card fits far fewer than this).
 - **Hosting matters** - local, private cloud, or frontier cloud; each tier trades
   capability for data control. Know where your data goes. Do not paste credentials
   into a conversation that transits someone else's servers. A training-data opt-out is a
-  promise, not a wall.
+  promise, not a wall. Your account can change without notice too: export and back up
+  what matters.
 - **It is a product** - refusals, tone, agreeableness are design decisions with
   commercial interests behind them. Bias has four sources: what it read, what humans
   rewarded, what the vendor blocked, and emergent effects like sycophancy.

@@ -1,4 +1,12 @@
-<!-- .slide: class="center-slide" data-bookmark="Change your mind?" -->
+<!-- .slide: class="center-slide section-intro" data-bookmark="Change your mind?" -->
+# Open questions
+
+Note:
+Section: closing. Literacy, not conversion: we end on questions, not answers.
+
+---
+
+<!-- .slide: class="center-slide" -->
 
 # What would change your mind?
 

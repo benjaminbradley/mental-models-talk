@@ -1,4 +1,11 @@
-<!-- .slide: data-bookmark="Tools" -->
+<!-- .slide: class="center-slide section-intro" data-bookmark="Tools" -->
+# Reaching beyond the bowl
+
+Note:
+Section: tools. Everything the fish can do that isn't in its books comes through a tube.
+
+---
+
 # The books ended
 
 <div class="shots">
@@ -21,7 +28,7 @@ Two lessons: (1) temperament is changing -- newer fish are trained to notice the
 
 <div class="split">
 <div class="scene">
-<svg viewBox="0 0 800 600" role="img" aria-label="The fish swims up to the tube and uses it; the tube runs up out of the bowl to the web">
+<svg viewBox="0 0 800 600" role="img" aria-label="The fish swims up to the tube and uses it; the tube runs up out of the bowl to the web. Then a web page appears in the water">
   <g style="fill: none" stroke-linecap="round" stroke-linejoin="round">
     <path d="M 400 250 V 60 Q 400 20 440 20 H 640" style="stroke: var(--ink); stroke-width: 48"/>
     <path d="M 400 250 V 60 Q 400 20 440 20 H 640" style="stroke: var(--rock); stroke-width: 30"/>
@@ -36,20 +43,27 @@ Two lessons: (1) temperament is changing -- newer fish are trained to notice the
     <use href="#fish-body" x="160" y="235" width="250" height="163"/>
     <use class="eyes-open" href="#fish-eyes-open" x="160" y="235" width="250" height="163"/>
   </g>
+  <!-- a web page, poured into the water -->
+  <g class="fragment" data-fragment-index="0" style="stroke: var(--ink); stroke-width: 6" stroke-linejoin="round">
+    <rect x="140" y="420" width="150" height="110" rx="10" style="fill: #fff"/>
+    <path d="M 140 448 H 290" style="fill: none"/>
+    <circle cx="158" cy="434" r="5" style="fill: var(--red); stroke: none"/><circle cx="174" cy="434" r="5" style="fill: var(--yellow); stroke: none"/><circle cx="190" cy="434" r="5" style="fill: var(--green); stroke: none"/>
+    <path d="M 158 470 H 272 M 158 490 H 272 M 158 510 H 236" style="fill: none; stroke-width: 5"/>
+  </g>
   <use href="#bowl-front" x="0" y="40" width="600" height="560"/>
 </svg>
 </div>
 <div>
 <p>The books ended. The web didn't.</p>
 <p><span class="term">web search</span> <span class="term">tool use</span></p>
-<p class="fragment small">Tool results land in the water</p>
+<p class="fragment small" data-fragment-index="0">Tool results land in the water</p>
 </div>
 </div>
 
 Note:
 You just saw it: the books ended. Wouldn't it be nice if it could look things up? That's our first tool: web search. We draw it as a tube from the bowl out to the web. The fish reaches for it -- it decides when.
 
-(Click.) New limit, planted for station 9: whatever comes back from a tool is poured into the water. The fish reads it just like it reads you.
+(Click.) The page it fetched lands in the water. New limit, planted for station 9: whatever comes back from a tool is poured into the water. The fish reads it just like it reads you.
 
 ---
 
@@ -91,6 +105,7 @@ Bridge: "Web search was our first tool. Let's zoom out: what's a tool?"
 
 <p class="lede">Tool = anything outside the fish it can reach</p>
 <p class="fragment">Every tool: attached to the bowl <span class="term">tool use</span> <span class="term">tool calling</span></p>
+<p class="fragment">A standard plug for tools, like USB: <span class="term"><b>MCP</b>: Model Context Protocol</span></p>
 
 Note:
 Web search was the first one. Let's zoom out. You use tools all day: a calculator when the mental math gets hard, a map when you don't know the way, a phone when you need someone else.
@@ -98,6 +113,8 @@ Web search was the first one. Let's zoom out. You use tools all day: a calculato
 Same idea for the fish. A tool is anything outside the fish that it can reach for: a web browser to search and read pages, your email, your calendar, your files, a place to write and run code.
 
 (Click.) Like the web search tube: every tool connects to the bowl with a tube -- the word is "tool"; the tube is just how we draw it. (Also called tool calling or function calling.)
+
+(Click.) And there's a standard way to plug tools in: MCP, the Model Context Protocol. Think USB: before it, every device needed its own cable; now one plug fits everything. Build a tool's connector once and any MCP-compatible app can use it -- that's why you'll see "MCP server" in a lot of tool lists. (Its full slide, "Two kinds of plumbing", is hidden; MCP is on the take-home card.)
 
 Tool discovery: the fish reads each tool's description to decide when and how to use it. That's why descriptions matter, and why a badly described tool misbehaves.
 

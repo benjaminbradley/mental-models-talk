@@ -94,6 +94,7 @@ Tone: quick and funny; one beat, then on.
 
 ---
 
+<!-- .slide: data-visibility="hidden" -->
 # Ask the fish to help you ask
 
 <div class="chat">
@@ -105,6 +106,8 @@ Tone: quick and funny; one beat, then on.
 </div>
 
 Note:
+HIDDEN: folded into station 6 "Too much salt in the soup" (the HANDOFF.md note, Theory of Mind, meta-prompting).
+
 You don't always know what to ask -- so ask the fish. Meta-prompting: ask the model to help you write a better prompt. You can even write a prompt in one model to run in another.
 
 But here's the trap. (A real story, simplified.) Click through the conversation.
@@ -113,6 +116,7 @@ The new chat has never heard of mini golf. Now the very first thing it reads is 
 
 ---
 
+<!-- .slide: data-visibility="hidden" -->
 # ...using Theory of Mind
 
 <div class="chat">
@@ -223,7 +227,15 @@ Bridge: "Let's draw what that does to its knowledge -- as a map."
 
 ---
 
-<!-- .slide: data-auto-animate data-bookmark="The territory" -->
+<!-- .slide: class="center-slide section-intro" data-bookmark="The territory" -->
+# Uneven ground
+
+Note:
+Section: the map and the territory. Why it's brilliant at some things and hopeless at others -- and why it can't tell you which is which.
+
+---
+
+<!-- .slide: data-auto-animate -->
 # The territory
 
 <div class="maps">
@@ -384,18 +396,6 @@ French omelette: thousands of books, nailed in detail.
 (Click.) Name it. Hallucination: familiar word -- use it, then deepen it. (Confabulation is the more precise term: filling a gap with a confident, plausible story.) Not a perceptual glitch: the fish is always doing the same thing, completing patterns from its training. When the patterns line up with reality it looks like knowledge; when they don't, it looks like hallucination. It can't tell the difference, because it's doing the same thing either way.
 
 (Optional aside: a current model asked the same question said it had no recipe and guessed it was a family dish -- temperament varies between fish; the thin region is anatomy. Capture kept in `illustrations/source-density-D1-Bradley--refusal.png`, not on screen.)
-
----
-
-# Everyday Cooking vs. Family Recipes: the map
-
-<div class="maps two">
-<figure class="map"><div data-svg="art/maps/human.svg" data-zoom="family,everyday" data-label="Cooking on your map: a home in Everyday Cooking with worn paths into Family Recipes"></div><figcaption>Your map</figcaption></figure>
-<figure class="map"><div data-svg="art/maps/fish.svg" data-zoom="family,everyday" data-label="Cooking on the fish's map: Everyday Cooking complete; Family Recipes almost empty, with a mainstream house drifted in"></div><figcaption>The fish's map</figcaption></figure>
-</div>
-
-Note:
-One domain, split by source density. Everyday cooking: both maps well populated -- the fish has all six landmarks. Family recipes: your map has a path if you grew up with them; the fish's has one real landmark, plus a house that isn't there (the smoker brand it drifted to).
 
 Close the walkthrough: the errors track source-text density, not difficulty. And the map gives no sign of which regions are reliable -- so when is it safe to use at all? (Station 5.)
 

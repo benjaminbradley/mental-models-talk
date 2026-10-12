@@ -127,6 +127,9 @@ shows: `../metaphor-imagery.md`.
 - **Fragments on list items:** write `<li class="fragment">` in HTML when the line contains
   inline markup (bold, a term chip): a trailing `<!-- .element -->` attaches to the last inline
   element, not the whole line.
+- **Section intros:** each section opens with a one-phrase slide
+  (`<!-- .slide: class="center-slide section-intro" data-bookmark="..." -->`); it carries the
+  section's bookmark.
 - **Section bookmarks:** add `data-bookmark="Short name"` to a slide's `<!-- .slide: ... -->`
   comment (create one above the title if it has none). Bookmarked slides appear as a button row
   at the top of the overview (Esc / O) and as chips on the phone remote. In the overview a
