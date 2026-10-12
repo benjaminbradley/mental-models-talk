@@ -3,19 +3,19 @@
 
 <div class="split">
 <div class="scene" style="flex: 0 0 780px">
-<svg viewBox="0 0 600 560" role="img" aria-label="The bare goldfish, no bowl. Each message arrives, the fish answers, and then the message and the answer fall away and are gone">
+<svg viewBox="0 0 600 560" role="img" aria-label="The bare goldfish, no bowl, with the messages below it. Each message arrives, the fish answers, and then the message and the answer fall away from the fish and are gone">
   <g class="goldfish awake">
-    <use href="#fish-body" x="190" y="330" width="220" height="143"/>
-    <use class="eyes-open" href="#fish-eyes-open" x="190" y="330" width="220" height="143"/>
+    <use href="#fish-body" x="190" y="40" width="220" height="143"/>
+    <use class="eyes-open" href="#fish-eyes-open" x="190" y="40" width="220" height="143"/>
   </g>
   <g class="fragment drop" data-fragment-index="2">
-    <text class="msg you fragment" data-fragment-index="0" x="40" y="140">You: Hi, I'm Benjamin</text>
-    <text class="msg fish-says fragment" data-fragment-index="1" x="40" y="190">Fish: Hi Benjamin, how are you today?</text>
+    <text class="msg you fragment" data-fragment-index="0" x="40" y="270">You: Hi, I'm Benjamin</text>
+    <text class="msg fish-says fragment" data-fragment-index="1" x="40" y="320">Fish: Hi Benjamin, how are you today?</text>
   </g>
   <g class="fragment drop" data-fragment-index="5">
-    <text class="msg you fragment" data-fragment-index="3" x="40" y="140">You: What's my name?</text>
-    <text class="msg fish-says fragment" data-fragment-index="4" x="40" y="190">Fish: We haven't been introduced yet,</text>
-    <text class="msg fish-says fragment" data-fragment-index="4" x="40" y="230">but I'm happy to meet you!</text>
+    <text class="msg you fragment" data-fragment-index="3" x="40" y="270">You: What's my name?</text>
+    <text class="msg fish-says fragment" data-fragment-index="4" x="40" y="320">Fish: We haven't been introduced yet,</text>
+    <text class="msg fish-says fragment" data-fragment-index="4" x="40" y="360">but I'm happy to meet you!</text>
   </g>
 </svg>
 </div>

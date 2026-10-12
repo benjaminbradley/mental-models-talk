@@ -43,7 +43,8 @@ Confirmation: "Thanks! See you at the end for a quick check-out."
 ## Exit form (~2 minutes)
 
 1. How well do you understand how to work with LLMs effectively? *(required grid; rows
-   Before today / Now; columns 1 - Very little, 2, 3, 4, 5 - Very well)*
+   Before today / Now; columns 0 - None, 1 - A little, 2 - Some, 3 - Very well;
+   four columns so the grid fits a phone screen)*
 2. How well do you understand the safety concerns around using LLMs? *(required grid; same)*
 3. How often do you use AI chat tools...? *(required; same options as entry; placed after the
    grids so the exit form doesn't open looking identical to the entry form)*

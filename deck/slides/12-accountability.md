@@ -181,7 +181,7 @@ Bridge: "It depends on who's checking. Let's climb the ladder."
 # Who checks the fish?
 
 <div class="scene wide">
-<svg viewBox="0 0 1800 500" role="img" aria-label="A grey goldfish in a beret paints a landscape on an easel, drawn only in greys. To the right of the easel, in a row: an identical grey artist fish approves it; a colorful artist fish with a paint palette flags it with a red question mark; last, a person holds a clipboard and a pen to sign off. On the first click the painter gets a green check, on the second the identical reviewer does.">
+<svg viewBox="-60 0 1440 500" role="img" aria-label="A grey goldfish in a beret paints a landscape on an easel, drawn only in greys. To the right of the easel, in a row: an identical grey artist fish approves it; a colorful artist fish with a paint palette flags it with a red question mark. On the first click the painter gets a green check, on the second the identical reviewer does.">
   <!-- the fish's work: a landscape drawn only in greys -->
   <g transform="translate(320 0)" style="stroke: var(--ink); stroke-width: var(--line, 9)" stroke-linejoin="round" stroke-linecap="round">
     <path fill="none" style="stroke-width: 12" d="M 120 360 L 80 488 M 260 360 L 300 488 M 190 360 L 190 488"/>
@@ -245,29 +245,12 @@ Bridge: "It depends on who's checking. Let's climb the ladder."
       <text y="19" text-anchor="middle" style="fill: #fff; stroke: none; font: 900 56px 'Helvetica Neue', Helvetica, Arial, sans-serif">?</text>
     </g>
   </g>
-  <!-- 4: it ends with a person, who signs -->
-  <g class="fragment" data-fragment-index="3">
-    <g transform="translate(1380 130)">
-      <use href="#person" x="0" y="0" width="200" height="360"/>
-      <use href="#person-eyes" x="0" y="0" width="200" height="360"/>
-      <g style="stroke: var(--ink); stroke-width: var(--line, 9)" stroke-linejoin="round" stroke-linecap="round">
-        <path style="fill: var(--ink)" d="M 54 82 Q 56 40 100 40 Q 146 40 148 82 Q 128 62 100 62 Q 72 62 54 82 Z"/>
-        <path fill="none" style="stroke-width: 12" d="M 66 168 Q 40 200 70 226"/>
-        <rect x="56" y="186" width="80" height="100" rx="6" style="fill: #fff"/>
-        <path fill="none" style="stroke-width: 5" d="M 70 214 h 52 M 70 234 h 52"/>
-        <path fill="none" style="stroke: var(--blue); stroke-width: 5" d="M 70 264 q 10 -14 18 0 t 18 0 t 16 -4"/>
-        <path fill="none" style="stroke-width: 12" d="M 136 168 Q 170 210 140 246"/>
-        <path style="fill: var(--yellow)" d="M 134 252 L 176 200 L 188 210 L 146 262 L 128 268 Z"/>
-      </g>
-    </g>
-  </g>
 </svg>
 </div>
 
 1. Self-review: same blind spots <!-- .element: class="fragment" data-fragment-index="0" -->
 2. Same model reviews: same blind spots <!-- .element: class="fragment" data-fragment-index="1" -->
 3. Adversary: independent <!-- .element: class="fragment" data-fragment-index="2" -->
-4. Ends with a person <!-- .element: class="fragment" data-fragment-index="3" -->
 
 Note:
 Walk the review ladder; let them find the regress.
@@ -280,11 +263,9 @@ The picture on the easel is the fish's work, drawn only in greys. The painter on
 
 (Click.) Adversarial review: a genuinely independent reviewer, told to find what's wrong. A color-artist fish -- a different fish, one who judges a range of pictures, color and black-and-white, sees at once what's missing. Better. (Subagents return here as adversarial reviewers.)
 
-(Click.) But it terminates in a person -- the only non-fish in the row -- who signs. And human review rubber-stamps when it's tired.
-
 Methods: the review ladder, adversarial subagents.
 
-Bridge: "So who checks the color artist?"
+Bridge: "So who checks the color artist?" (The answer -- a person -- lands on the next slide.)
 
 ---
 

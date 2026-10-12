@@ -70,7 +70,6 @@ Framing guard: earned wonder, not advocacy. "Anyone can choose" preserves agency
 
 <div class="closing">
 <figure><a href="https://docs.google.com/forms/d/e/1FAIpQLSd4VQeimVG-IZqlwJIgf_ISR8pJfJ4_4lQ-IGlQ3P_D4-XCeg/viewform" target="_blank" rel="noopener"><img src="art/qr-exit.svg" alt="QR code for the anonymous exit survey"></a><figcaption>Check out (anonymous)</figcaption></figure>
-<figure><a href="https://benjaminbradley.github.io/mental-models-talk/" target="_blank" rel="noopener"><img src="art/qr-slides.svg" alt="QR code for the slides URL"></a><figcaption>Slides</figcaption></figure>
 <div>
 <p><b>Benjamin Bradley</b></p>
 <p>Slides: <a href="https://benjaminbradley.github.io/mental-models-talk/">benjaminbradley.github.io/mental-models-talk</a></p>
@@ -81,12 +80,13 @@ Framing guard: earned wonder, not advocacy. "Anyone can choose" preserves agency
 <p>Art, coding, consultation, writing: Claude Opus 5.5</p>
 </div>
 </div>
+<figure><a href="https://benjaminbradley.github.io/mental-models-talk/" target="_blank" rel="noopener"><img src="art/qr-slides.svg" alt="QR code for the slides URL"></a><figcaption>Slides</figcaption></figure>
 </div>
 
 Note:
 Leave this up during questions. The take-home card has the same links.
 
-"One more scan before you go -- two minutes, anonymous. It's how this talk gets better." Point at the left code.
+"One more scan before you go -- two minutes, anonymous. It's how this talk gets better." Point at the left code (the right one is the slides).
 
 Exit survey: before/now self-ratings + open feedback (design in `surveys.md`). Don't frame it as conversion: "literacy, not conversion" applies to the measurement too.
 

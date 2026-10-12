@@ -273,10 +273,14 @@
 .harms .flap { transform-box: view-box; transition: transform 0.9s ease; }
 .harms .flap-back { transform-origin: 0 160px; transform: scaleY(-4.5); }
 .harms .flap-front { transform-origin: 0 230px; transform: scaleY(-3.5); }
-/* The slide is pinned to full height (not vertically centered) so the box's corner position
-   does not shift with the slide's content height. */
-.reveal .slides section:has(> .harms) { height: 100%; }
-section:has(.box-cue.visible) .harms { transform: translate(40px, -60px) scale(0.3); gap: 0; }
+/* The tiles and box are absolutely positioned in a slide pinned to the top (not vertically
+   centered), so the box's corner position never depends on the slide's content height.
+   The title keeps its usual spot via padding; the lede is pushed below the tiles. */
+.reveal .slides section:has(> .harms) { top: 0 !important; padding-top: 30px; }
+.reveal .slides section > .harms { position: absolute; top: 160px; left: 0; right: 0; }
+.reveal .slides section:has(> .harms) .lede { margin-top: 340px; }
+/* box-cue: shrink into the upper right corner, above the title line */
+section:has(.box-cue.visible) .harms { transform: translate(47px, -180px) scale(0.3); gap: 0; }
 section:has(.box-cue.visible) .harms > svg { opacity: 1; }
 section:has(.box-cue.visible) .harms > div + div { margin-left: -127px; }
 section:has(.box-cue.visible) .harms > div:nth-of-type(odd) { transform: translateY(-44px) rotate(-4deg); }

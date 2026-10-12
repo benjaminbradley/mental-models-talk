@@ -59,7 +59,7 @@ Artwork approach: `open-questions-and-ideas.md` Q16.
 | Row of versioned fish, one nerfed | frontier instability | 10 |
 | Drafted pages with pencils | drafts: the fish's work before a person sends it | 12 |
 | A second fish with a magnifying glass | a model reviewing a model's work | 12 |
-| A B&W painter fish and an identical B&W reviewer fish vs. a rainbow artist fish; a person signs | correlated vs. independent review: a reviewer cannot see a blind spot it shares | 12 |
+| A B&W painter fish and an identical B&W reviewer fish vs. a rainbow artist fish | correlated vs. independent review: a reviewer cannot see a blind spot it shares | 12 |
 | Turtles | the review regress: every check is a task someone specified, ending in a person | 12 |
 
 ## The gradient (stations 2, 13)
