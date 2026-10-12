@@ -70,6 +70,8 @@ Cognitive shift: "neutral oracle" -> "someone's product." Stance: critical agenc
 </div>
 </div>
 
+<p class="lede fragment" style="text-align: center">Different for every model</p>
+
 Note:
 Bias is not one thing -- it's four, and each has a different fix (or no fix).
 
@@ -80,6 +82,8 @@ Bias is not one thing -- it's four, and each has a different fix (or no fix).
 (Click.) What the vendor blocked: the fence. Explicit guardrails -- and whose politics decided where the line goes.
 
 (Click.) What nobody designed: sycophancy, excessive caution, risk aversion. Emergent behavior the training produced; nobody chose it. Two masks because it can help or hurt.
+
+(Click.) And all four are different for every model: different library, different raters, different vendor, different emergent quirks. No fish is neutral; each is biased in its own way.
 
 Present descriptively, not prescriptively. Do not adjudicate which biases are justified.
 

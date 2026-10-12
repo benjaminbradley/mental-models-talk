@@ -129,8 +129,8 @@
 .goldfish .swim { transform-box: fill-box; transform-origin: center; }
 
 .goldfish .bubbles circle { animation: rise 2.4s ease-in infinite; }
-.goldfish .bubbles circle:nth-child(2) { animation-delay: 0.8s; }
-.goldfish .bubbles circle:nth-child(3) { animation-delay: 1.6s; }
+.goldfish .bubbles circle:nth-child(2) { --delay: 0.8s; }
+.goldfish .bubbles circle:nth-child(3) { --delay: 1.6s; }
 
 @keyframes bob {
   0%, 100% { transform: translateY(0) rotate(0deg); }
@@ -273,7 +273,10 @@
 .harms .flap { transform-box: view-box; transition: transform 0.9s ease; }
 .harms .flap-back { transform-origin: 0 160px; transform: scaleY(-4.5); }
 .harms .flap-front { transform-origin: 0 230px; transform: scaleY(-3.5); }
-section:has(.box-cue.visible) .harms { transform: translate(77px, -334px) scale(0.3); gap: 0; }
+/* The slide is pinned to full height (not vertically centered) so the box's corner position
+   does not shift with the slide's content height. */
+.reveal .slides section:has(> .harms) { height: 100%; }
+section:has(.box-cue.visible) .harms { transform: translate(40px, -60px) scale(0.3); gap: 0; }
 section:has(.box-cue.visible) .harms > svg { opacity: 1; }
 section:has(.box-cue.visible) .harms > div + div { margin-left: -127px; }
 section:has(.box-cue.visible) .harms > div:nth-of-type(odd) { transform: translateY(-44px) rotate(-4deg); }
@@ -283,14 +286,32 @@ section:has(.box-close-cue.visible) .harms > div:nth-of-type(n) { transform: tra
 section:has(.box-close-cue.visible) .harms .flap { transform: none; transition-delay: 0.5s; }
 
 /* Station 1: the elephant in the room, big in the lower right (clear of the tiles and the box). */
-.reveal .elephant { position: absolute; top: 600px; right: 60px; font-size: 380px; line-height: 1; }
+.reveal div.elephant { position: absolute; top: 600px; right: 60px; font-size: 380px; line-height: 1; }
 
 /* ---- Station 1 shout-outs (live-only): popcorn, and a raised hand under a "no" sign ---- */
-.reveal .shout-out { display: flex; justify-content: center; gap: 180px; margin-top: 60px; }
+.reveal .shout-out { display: flex; justify-content: center; align-items: flex-end; gap: 180px; margin-top: 60px; }
 .reveal .shout-out figure { margin: 0; text-align: center; }
 .reveal .shout-out .emoji { font-size: 300px; display: block; }
 .reveal .shout-out figcaption { font-weight: 800; font-size: 56px; margin-top: 20px; }
 .reveal .shout-out .no-hands { position: relative; display: block; }
+.reveal .shout-out .popcorn { display: block; }
+.reveal .shout-out .popcorn svg { display: block; width: 300px; height: 380px; overflow: visible; }
+/* five kernels pop up out of the box, one after another, and fall back in */
+.reveal .shout-out .pops use { transform-box: view-box; transform-origin: 0 0; opacity: 0; animation: pop 2.5s ease-out var(--delay, 0s) infinite; }
+.reveal .shout-out .pops g:nth-child(1) { --dx: -50px; --dy: -110px; --r: -200deg; --delay: 0s; }
+.reveal .shout-out .pops g:nth-child(2) { --dx: -18px; --dy: -150px; --r: 160deg; --delay: 0.5s; }
+.reveal .shout-out .pops g:nth-child(3) { --dx: 6px; --dy: -190px; --r: -120deg; --delay: 1s; }
+.reveal .shout-out .pops g:nth-child(4) { --dx: 30px; --dy: -150px; --r: 220deg; --delay: 1.5s; }
+.reveal .shout-out .pops g:nth-child(5) { --dx: 55px; --dy: -100px; --r: -180deg; --delay: 2s; }
+@keyframes pop {
+  0% { opacity: 1; transform: translate(0, 40px) rotate(0deg); }
+  45% { opacity: 1; transform: translate(var(--dx), var(--dy)) rotate(var(--r)); }
+  90% { opacity: 1; transform: translate(calc(var(--dx) * 0.4), 40px) rotate(calc(var(--r) * 2)); }
+  100% { opacity: 0; transform: translate(calc(var(--dx) * 0.4), 40px) rotate(calc(var(--r) * 2)); }
+}
+@media (prefers-reduced-motion: reduce) {
+  .reveal .shout-out .pops use { animation: none; opacity: 1; transform: translate(var(--dx), var(--dy)); }
+}
 .reveal .shout-out .no-hands svg { position: absolute; inset: -30px; width: calc(100% + 60px); height: calc(100% + 60px); }
 
 /* ---- Chat transcripts (simulated conversations) ------------------------------------ */
@@ -300,7 +321,7 @@ section:has(.box-close-cue.visible) .harms .flap { transform: none; transition-d
 .reveal .chat .fish { align-self: flex-start; background: #fff; }
 .reveal .chat .who { display: block; font-size: 0.7em; font-weight: 800; opacity: 0.7; }
 .reveal .chat .new-chat { align-self: stretch; max-width: none; border-style: dashed; background: var(--paper); }
-.reveal .chat .elephant { color: var(--accent); font-weight: 800; }
+.reveal .chat .pink-elephant { color: var(--accent); font-weight: 800; }
 /* escape rooms vs. mini golf: the same colors as the cat food at station 6 */
 .reveal .chat .esc { color: var(--escape); font-weight: 800; text-decoration: underline; }
 .reveal .chat .golf { color: var(--golf); font-weight: 800; font-style: italic; text-decoration: underline dotted; }
@@ -466,7 +487,10 @@ section:has(.rename-cue.visible) .mdfile-name .name-project { display: inline; }
 .reveal .drafting .writer svg { height: 200px; width: auto; }
 .reveal .drafting.small { zoom: 0.55; flex: 0 0 auto; }
 .reveal .review-split { display: flex; align-items: center; justify-content: center; gap: 40px; margin-top: 30px; }
-.reveal .review-split .reviewer svg { height: 520px; }
+.reveal .review-split .reviewer { flex-direction: column; align-items: center; }
+.reveal .review-split .reviewer svg { height: 420px; }
+.reveal .review-split .mock.guidelines { margin: 10px 0 0; padding: 16px 30px; font-size: 32px; }
+.reveal .review-split .mock.guidelines li { padding: 6px 0; margin: 0; }
 .reveal .mail {
   position: relative; width: 1500px; margin: 10px auto 50px; border: 6px solid var(--ink);
   border-radius: 14px; background: #fff; font-size: 34px; box-shadow: 0 10px 0 var(--ink);
@@ -497,9 +521,11 @@ section:has(.rename-cue.visible) .mdfile-name .name-project { display: inline; }
 .gradient-scene .spells .term:nth-child(3n) { transition-delay: 0.3s; }
 /* entry/exit survey QR codes (slides 00 and 13; URLs in surveys.md) */
 .reveal .slides img.poll-qr { display: block; width: 460px; height: 460px; margin: 20px auto 0; border-radius: 12px; }
-.reveal .closing { display: flex; align-items: center; justify-content: center; gap: 80px; text-align: left; }
+.reveal .closing { display: flex; align-items: center; justify-content: center; gap: 50px; text-align: left; font-size: 34px; }
+.reveal .closing a { white-space: nowrap; }
+.reveal .closing figcaption { max-width: 380px; }
 .reveal .closing figure { margin: 0; text-align: center; }
-.reveal .slides .closing img { width: 420px; height: 420px; border-radius: 12px; }
+.reveal .slides .closing img { width: 380px; height: 380px; margin: 0; border-radius: 12px; }
 .reveal .closing figcaption { font-weight: 800; font-size: 34px; margin-top: 10px; }
 .reveal .closing a { color: var(--blue); }
 .reveal .closing p { margin: 0 0 0.6em; }
@@ -584,3 +610,60 @@ section:has(.rename-cue.visible) .mdfile-name .name-project { display: inline; }
 /* Station 12: turtles all the way down (a stack of shells, each labeled with one check). */
 .reveal .scene.turtles svg { height: 860px; }
 .reveal .scene .shell-label { font: 800 38px "Helvetica Neue", Helvetica, Arial, sans-serif; fill: var(--ink); }
+
+/* ---- Station 3: training, with a sample completion under each phase ---------------- */
+.reveal .shots.training svg { display: block; height: 400px; width: auto; margin: 0 auto; }
+.reveal .shots.training figcaption { font-size: 30px; margin-top: 6px; }
+.reveal .shots.training .footnote { font-size: 20px; }
+.reveal .completion {
+  margin: 18px auto 0; padding: 14px 24px 12px; max-width: 860px; text-align: left;
+  border: 4px solid var(--ink); border-radius: 14px; background: #fff; font-size: 30px;
+}
+.reveal .completion .term { font-size: 22px; margin: 0 0 6px; }
+.reveal .completion p { margin: 4px 0; font-weight: 700; }
+.reveal .completion .out { color: var(--orange-deep); font-style: italic; }
+.reveal .completion p + p { border-top: 2px solid var(--rock); padding-top: 6px; }
+
+/* ---- Station 8: the alarm clock rings and wakes the fish (.wake-cue) ---------------- */
+.alarm-scene .alarm { transform-box: fill-box; transform-origin: 50% 40%; }
+.alarm-scene .ring { opacity: 0; }
+.alarm-scene:has(.wake-cue.visible) .alarm { animation: alarm-shake 0.18s linear 0.6s 8; }
+.alarm-scene:has(.wake-cue.visible) .ring { animation: alarm-ring 0.36s steps(1) 0.6s 4; }
+/* the fish wakes once the alarm has rung for a moment */
+.alarm-scene .goldfish { transition: --fish 0.8s ease 1.2s, --fish-deep 0.8s ease 1.2s; }
+.alarm-scene .goldfish .eyes-open, .alarm-scene .goldfish .eyes-closed, .alarm-scene .goldfish .zzz { transition: opacity 0.3s ease 1.2s; }
+@keyframes alarm-shake {
+  0%, 100% { transform: rotate(0deg); }
+  25% { transform: rotate(-12deg); }
+  75% { transform: rotate(12deg); }
+}
+@keyframes alarm-ring { 0% { opacity: 1; } 50% { opacity: 0; } }
+@media (prefers-reduced-motion: reduce) {
+  .alarm-scene .alarm, .alarm-scene .ring { animation: none !important; }
+}
+
+/* Station 9 "Many kinds of tanks": a mini tank under a tile's text, showing its attachments. */
+.reveal .tiles svg.mini-tank { height: 230px; width: auto; margin-top: auto; overflow: visible; }
+
+/* Station 9: the sleeper example, popped up big and centered over the slide */
+.reveal .mock.email.big {
+  position: absolute; left: 50%; top: 50%; width: 1200px; margin: 0; transform: translate(-50%, -40%);
+  z-index: 5; font-size: 40px; padding: 30px 44px; box-shadow: 0 10px 0 var(--ink), 0 30px 80px rgb(0 0 0 / 0.35);
+}
+.reveal .mock.email.big .mail-meta { font-size: 30px; }
+.reveal .mock.email.big p { margin: 0 0 14px; }
+
+/* Station 9 trifecta: the .cut-cue greys out "a way out" and the risk label changes. */
+.reveal .trio > div { transition: opacity 0.6s ease, filter 0.6s ease; }
+section:has(.cut-cue.visible) .trio .way-out { opacity: 0.35; filter: grayscale(1); }
+.reveal .trifecta-risk { margin-top: 40px; text-align: center; }
+.reveal .trifecta-risk span { color: var(--red); }
+.reveal .trifecta-risk .risk-destroy { display: none; }
+section:has(.cut-cue.visible) .trifecta-risk .risk-exfil { display: none; }
+section:has(.cut-cue.visible) .trifecta-risk .risk-destroy { display: inline; }
+
+/* Station 11: the lazy genie returns, small, in the lower right (clear of the captions). */
+.reveal .intention-lede { margin-top: 40px; padding-right: 220px; }
+.reveal .genie-mini { position: absolute; right: 20px; bottom: -20px; height: 190px; width: auto; overflow: visible; }
+.reveal .closing .credits { margin-top: 30px; font-size: 28px; }
+.reveal .closing .credits p { margin: 0 0 0.3em; }

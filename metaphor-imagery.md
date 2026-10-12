@@ -32,7 +32,7 @@ Artwork approach: `open-questions-and-ideas.md` Q16.
 | Library of books; reading | training data; pretraining (anatomy) | 3 |
 | Practice conversations scored with check/cross paddles held by a human rater | post-training / RLHF (temperament) | 3 |
 | Fish asleep / awake | it does nothing until addressed | 3 |
-| The lazy genie | a vague wish granted to the letter, cheapest way | 4 |
+| The lazy genie | a vague wish granted to the letter, cheapest way | 4 (returns small at 11) |
 | Brain with specialist hubs, all but language fading | the fish learned from language alone | 4 |
 | Territory / your map / the fish's map | knowledge itself / calibrated human knowledge / the model's knowledge | 4 |
 | The bowl | the app (client, harness) | 6 |
@@ -44,7 +44,7 @@ Artwork approach: `open-questions-and-ideas.md` Q16.
 | Tube | a tool (the on-screen word is always "tool") | 7 |
 | Tool-use training (third training step) | tool use is itself trained | 7 |
 | Notepad | memory (the fish writes it) | 7 |
-| Alarm clock | scheduled tasks | 8 |
+| Alarm clock (rings; the sleeping fish wakes) | scheduled tasks | 8 |
 | Recipe cards | skills / reusable playbooks | 8 |
 | Camera/ears, microphone | multimodal input, voice | 8 |
 | The tank | the app with all its tools | 8 |
@@ -53,12 +53,13 @@ Artwork approach: `open-questions-and-ideas.md` Q16.
 | Murky water | injected / poisoned context | 9 |
 | Effect icons | destruction, exfiltration, sleeper (in the notepad) | 9 |
 | Wall vs. "please keep out" sign | architecture vs. guideline | 9 |
+| The fish's own account behind a wall; you send one file over | separate accounts: a wall in practice | 9 |
 | Curtained dials | product decisions that are not public | 10 |
 | Fish map with a piece cut out | unknown unknowns | 10 |
 | Row of versioned fish, one nerfed | frontier instability | 10 |
 | Drafted pages with pencils | drafts: the fish's work before a person sends it | 12 |
 | A second fish with a magnifying glass | a model reviewing a model's work | 12 |
-| A B&W painter (the fish) and an identical B&W reviewer vs. a rainbow artist | correlated vs. independent review: a reviewer cannot see a blind spot it shares | 12 |
+| A B&W painter fish and an identical B&W reviewer fish vs. a rainbow artist fish; a person signs | correlated vs. independent review: a reviewer cannot see a blind spot it shares | 12 |
 | Turtles | the review regress: every check is a task someone specified, ending in a person | 12 |
 
 ## The gradient (stations 2, 13)
@@ -113,7 +114,7 @@ attachment arrives on the beat where the room has just felt the limit it address
 full assembly appears only as the station 8 recap.
 
 - **Bowl = the app** (technical terms: client, harness). Different bowls are different apps around the same fish (simple
-  chat, full workspace, phone). Diagnostic: "is that the fish or the bowl?"
+  chat, full workspace, phone). Diagnostic, once the tank is fitted (station 9): "is that the fish or the tank?"
 - **Water = context.** It has a visible level (the context window); what is submerged
   exists to the fish, what is above does not. Everything that reaches the fish arrives in
   the water, including whatever a tool returns.
@@ -191,7 +192,8 @@ control.
 | 6 | The bowl and water; sticky notes; a pre-set-up tank; cat food | The bare fish forgetting each exchange; water level; techniques drawn in the water |
 | 7 | Tools | Tool-use training step; first tubes; notepad |
 | 8 | (Provider vs. MCP fittings: hidden) | Tubes carrying actions out; alarm clock, recipe cards; the full tank |
-| 9 | Where the fish lives; wall vs. sign; autocomplete | Poisoned water; effect icons |
+| 9 | Where the fish lives; wall vs. sign; its own account; autocomplete | Fish or tank (the three containers); mini tanks with attachments; poisoned water; effect icons |
 | 10 | Curtained dials | Cut-out fish map; versioned fish |
-| 12 | Drafted pages; a reviewer fish; B&W painter and reviewer vs. a rainbow artist; turtles all the way down | |
+| 11 | | The lazy genie (small) |
+| 12 | Drafted pages; a reviewer fish; B&W painter and reviewer fish vs. a rainbow artist fish; turtles all the way down | |
 | 13 | | The gradient returns (full treatment) |

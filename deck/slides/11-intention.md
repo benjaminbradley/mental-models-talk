@@ -38,17 +38,18 @@ Bridge: both warnings are about what *you* bring. "So if it can do anything you 
 
 <div class="shots short">
 <figure><img src="illustrations/intention--macbook.jpg" alt="A stock laptop on a cafe table"><figcaption>Let the model decide / "use best practices" = the default response</figcaption></figure>
-<figure class="fragment"><img src="illustrations/intention--cyberdeck-rpimag.png" alt="A homemade 'cyberdeck': a computer built into a rugged case, with a custom keyboard, toggle switches and a status display"><figcaption>Someone knew what they wanted</figcaption></figure>
+<figure class="fragment" data-fragment-index="0"><img src="illustrations/intention--cyberdeck-rpimag.png" alt="A homemade 'cyberdeck': a computer built into a rugged case, with a custom keyboard, toggle switches and a status display"><figcaption>Someone knew what they wanted</figcaption></figure>
 </div>
 
-<p class="lede" style="margin-top: 40px">If it can do anything you specify, what's left? <span class="fragment">What you specify.</span></p>
+<p class="lede intention-lede">If it can do anything you specify, what's left? <span class="fragment" data-fragment-index="1">What you specify.</span></p>
+<svg class="genie-mini fragment" data-fragment-index="1" viewBox="60 90 580 610" role="img" aria-label="The lazy genie from station 4, small, rising from its lamp"><use href="#genie-lamp" x="60" y="90" width="580" height="610"/></svg>
 
 Note:
 Socratic first: "If it can do anything you specify -- what's left?" Let them answer.
 
 A stock laptop: perfectly good, the default. That's what you get when you let the model decide, or ask it to "use best practices": the default response. (Click.) Same category: a cyberdeck somebody built because they knew exactly what they wanted. The difference isn't the tools. It's the intention.
 
-(Click.) What's left is what you bring: your intention, your taste, your judgment. "Use best practices" is a fine default, but the judgment calls -- what matters, how you want it -- are your real input, and they can't be delegated. Station 4 callback: specification. Station 8 callback: you delegated the doing, not the deciding.
+(Click.) What's left is what you bring -- and the lazy genie is back, in the corner: it grants exactly what you specify, nothing more. What's left is what you bring: your intention, your taste, your judgment. "Use best practices" is a fine default, but the judgment calls -- what matters, how you want it -- are your real input, and they can't be delegated. Station 4 callback: specification. Station 8 callback: you delegated the doing, not the deciding.
 
 The human-side mirror of the spine claim. Cognitive shift: "the tool is the story" -> "I am the variable." Method: knowing what you want.
 

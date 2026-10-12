@@ -76,65 +76,6 @@ The fish didn't change. The bowl did.
 
 ---
 
-# Is that the fish or the bowl?
-
-<div class="scene wide">
-<svg viewBox="0 0 1800 640" role="img" aria-label="The same goldfish in three containers: a round bowl, a lidded aquarium and a travel jar with a handle">
-  <!-- round bowl: a simple chat app -->
-  <use href="#bowl-back" x="0" y="20" width="560" height="523"/>
-  <use href="#bowl-water" x="0" y="20" width="560" height="523"/>
-  <g class="goldfish awake">
-    <use href="#fish-body" x="170" y="300" width="230" height="150"/>
-    <use class="eyes-open" href="#fish-eyes-open" x="170" y="300" width="230" height="150"/>
-  </g>
-  <use href="#bowl-front" x="0" y="20" width="560" height="523"/>
-  <text class="tag" x="280" y="610" text-anchor="middle">a simple chat app</text>
-  <!-- lidded aquarium: a full workspace -->
-  <use href="#tank-back" x="620" y="170" width="560" height="348"/>
-  <use href="#tank-water" x="620" y="170" width="560" height="348"/>
-  <g class="goldfish awake">
-    <use href="#fish-body" x="800" y="320" width="200" height="130"/>
-    <use class="eyes-open" href="#fish-eyes-open" x="800" y="320" width="200" height="130"/>
-  </g>
-  <use href="#tank-front" x="620" y="170" width="560" height="348"/>
-  <g style="stroke: var(--ink); stroke-width: 9" stroke-linejoin="round">
-    <rect x="636" y="164" width="528" height="40" rx="10" style="fill: var(--blue)"/>
-    <rect x="860" y="140" width="80" height="26" rx="8" style="fill: var(--blue)"/>
-  </g>
-  <text class="tag" x="900" y="610" text-anchor="middle">a full workspace</text>
-  <!-- travel jar: a phone app -->
-  <clipPath id="jar-inside"><rect x="1330" y="150" width="340" height="400" rx="60"/></clipPath>
-  <rect x="1330" y="150" width="340" height="400" rx="60" style="fill: var(--glass)"/>
-  <g clip-path="url(#jar-inside)">
-    <rect x="1300" y="230" width="400" height="360" style="fill: var(--water)" opacity="0.85"/>
-    <path d="M 1300 230 Q 1350 216 1400 230 T 1500 230 T 1600 230 T 1700 230" style="stroke: var(--ink); stroke-width: 9; fill: none"/>
-  </g>
-  <g class="goldfish awake">
-    <use href="#fish-body" x="1400" y="330" width="200" height="130"/>
-    <use class="eyes-open" href="#fish-eyes-open" x="1400" y="330" width="200" height="130"/>
-  </g>
-  <g style="stroke: var(--ink); stroke-width: 9; fill: none" stroke-linejoin="round" stroke-linecap="round">
-    <rect x="1330" y="150" width="340" height="400" rx="60"/>
-    <rect x="1316" y="100" width="368" height="56" rx="14" style="fill: var(--red)"/>
-    <path d="M 1670 230 C 1760 230, 1760 400, 1670 400"/>
-  </g>
-  <text class="tag" x="1500" y="610" text-anchor="middle">a phone app</text>
-</svg>
-</div>
-
-The fish = <span class="term">the model</span> &nbsp; The bowl = <b>the app</b>
-
-Note:
-You never talk to the raw fish. You always talk through an app -- the bowl it sits in. ChatGPT, Claude, Gemini: the app is the bowl; the model inside is the fish. A simple bowl, a fancy tank, a travel jar -- different apps, same fish. (Product names: verify before the talk.)
-
-When something goes wrong, the first diagnostic question: is that the fish or the bowl?
-
-Shout-out (fast and fun): "It gave me a wrong fact" (fish). "It can't search the web" (bowl). "It's too agreeable" (fish -- temperament). "It doesn't remember our last conversation" (bowl). The "bowl!" answers foreshadow the fittings coming in stations 7-8.
-
-Callback planted for station 10: choosing well means choosing the fish AND the bowl; benchmarks test the fish, not your bowl.
-
----
-
 # The water is the context window
 
 <div class="split">
@@ -198,8 +139,8 @@ Methods: context engineering (what you pour in), document hygiene.
   <use href="#bowl-back" x="0" y="0" width="600" height="560"/>
   <use href="#bowl-water" x="0" y="0" width="600" height="560"/>
   <g class="goldfish awake">
-    <use href="#fish-body" x="380" y="398" width="150" height="98"/>
-    <use class="eyes-open" href="#fish-eyes-open" x="380" y="398" width="150" height="98"/>
+    <use href="#fish-body" x="380" y="335" width="150" height="98"/>
+    <use class="eyes-open" href="#fish-eyes-open" x="380" y="335" width="150" height="98"/>
   </g>
   <use href="#bowl-front" x="0" y="0" width="600" height="560"/>
   <text class="msg you" x="100" y="180" style="font-size: 25px">You: Backyard in-law cottage for</text>
@@ -228,7 +169,6 @@ Methods: context engineering (what you pour in), document hygiene.
 </div>
 </div>
 
-<div class="overlay fragment" data-fragment-index="3"><img src="illustrations/knowledge-elicitation--3knowledge-domain-haiku4.5.png" alt="The full knowledge-domain response: eight domains, each with the one thing a non-expert overlooks, before the top 5 list"></div>
 
 Note:
 Same question, three ways: a backyard in-law cottage for my mom, top 5 things to consider, one line each. It read the whole library -- but which shelf does it pull from? Whatever is in the water is what it works with.
@@ -239,7 +179,7 @@ Plain: sensible, generic.
 
 (Click.) Knowledge-domain prompt: instead of assigning one role, ask "what domains of knowledge are relevant here? For each, what does a non-expert overlook?" Now the fish pours eight domains into the water before it answers -- and everything it writes becomes part of what it reads next. The electrical panel shows up: a $2-5K surprise nobody asked about.
 
-(Click.) "It holds worlds of knowledge but does not apply them unprompted." (Click.) The real response, to show how much it generated before getting to the top 5.
+(Click.) "It holds worlds of knowledge but does not apply them unprompted." (The real response, if asked: eight domains, each with what a non-expert overlooks, before it got to the top 5 -- capture below; not on screen.)
 
 Captures (Haiku 4.5): `illustrations/knowledge-elicitation--{1plain,2role,3knowledge-domain}-haiku4.5.png`.
 Methods: role prompting, knowledge-domain elicitation (a generalized form of role prompting).
@@ -254,8 +194,8 @@ Methods: role prompting, knowledge-domain elicitation (a generalized form of rol
   <use href="#bowl-back" x="0" y="0" width="600" height="560"/>
   <use href="#bowl-water" x="0" y="0" width="600" height="560"/>
   <g class="goldfish awake">
-    <use href="#fish-body" x="350" y="405" width="170" height="110"/>
-    <use class="eyes-open" href="#fish-eyes-open" x="350" y="405" width="170" height="110"/>
+    <use href="#fish-body" x="296" y="414" width="140" height="91"/>
+    <use class="eyes-open" href="#fish-eyes-open" x="296" y="414" width="140" height="91"/>
   </g>
   <use href="#bowl-front" x="0" y="0" width="600" height="560"/>
   <text class="msg you" x="100" y="180" style="font-size: 25px">You: Rank these 3 venues</text>
@@ -386,9 +326,10 @@ A Custom GPT, a Gem, a Project: a bowl someone else set up for you, with their n
 <svg viewBox="0 0 1500 600" role="img" aria-label="Left: two kinds of cat food in the water -- purple square flakes for escape rooms and green round flakes for mini golf. The fish's answer mixes both: an escape room, then go-karts. Asking it to forget the mini golf leaves the green flakes in the water. Right: the fish moved to a fresh bowl with only escape-room flakes">
   <use href="#bowl-back" x="0" y="10" width="600" height="560"/>
   <use href="#bowl-water" x="0" y="10" width="600" height="560"/>
-  <g style="stroke: var(--ink); stroke-width: 4">
-    <g style="fill: var(--escape)"><rect x="140" y="425" width="22" height="22"/><rect x="214" y="478" width="20" height="20"/><rect x="170" y="500" width="20" height="20"/><rect x="262" y="440" width="20" height="20"/></g>
-    <g style="fill: var(--golf)"><circle cx="195" cy="450" r="11"/><circle cx="250" cy="505" r="10"/><circle cx="120" cy="470" r="10"/><circle cx="290" cy="485" r="11"/></g>
+  <!-- flakes are clipped to the bowl's interior (bowl coordinates, hence y - 10) -->
+  <g transform="translate(0 10)" clip-path="url(#bowl-inside)" style="stroke: var(--ink); stroke-width: 4">
+    <g style="fill: var(--escape)"><rect x="140" y="415" width="22" height="22"/><rect x="214" y="468" width="20" height="20"/><rect x="170" y="485" width="20" height="20"/><rect x="262" y="430" width="20" height="20"/></g>
+    <g style="fill: var(--golf)"><circle cx="195" cy="440" r="11"/><circle cx="250" cy="492" r="10"/><circle cx="125" cy="455" r="10"/><circle cx="290" cy="475" r="11"/></g>
   </g>
   <g class="goldfish awake">
     <use href="#fish-body" x="310" y="400" width="190" height="124"/>
@@ -407,7 +348,7 @@ A Custom GPT, a Gem, a Project: a bowl someone else set up for you, with their n
     <text class="tag" x="740" y="270" text-anchor="middle">new chat</text>
     <use href="#bowl-back" x="880" y="10" width="600" height="560"/>
     <use href="#bowl-water" x="880" y="10" width="600" height="560"/>
-    <g style="stroke: var(--ink); stroke-width: 4; fill: var(--escape)"><rect x="1030" y="440" width="22" height="22"/><rect x="1120" y="480" width="22" height="22"/></g>
+    <g transform="translate(880 10)" clip-path="url(#bowl-inside)" style="stroke: var(--ink); stroke-width: 4; fill: var(--escape)"><rect x="150" y="430" width="22" height="22"/><rect x="240" y="470" width="22" height="22"/></g>
     <g class="goldfish awake">
       <use href="#fish-body" x="1190" y="400" width="190" height="124"/>
       <use class="eyes-open" href="#fish-eyes-open" x="1190" y="400" width="190" height="124"/>

@@ -15,7 +15,6 @@ When specific slides are mentioned, add the direct URL for a server running on h
 
 ### Finish the slides
 
-- [ ] credits page / slide? composition/direction/production/writing-BB, art/coding/consultation/writing-Claude Opus 5.5
 
 #### Evaluate - finished / needed / defer: Pre-capture demos & transcripts
 
@@ -34,10 +33,6 @@ When specific slides are mentioned, add the direct URL for a server running on h
    - [ ] assess station 4 density -- after the reorder it carries the (pending) exercise, four technique families, and the map/territory reveal + walkthrough; confirm it fits or identify what to defer
    - [ ] re-check the 45-minute cut (`presentation-arc.md`) after the reorder
 - [ ] Rehearse; refine speaker notes; adjust pacing.
-
-- [ ] Test the survey QR codes (forms, links and QRs: `surveys.md`): scan both from a phone at
-      projector distance (first slide and "Before you go" near the end), submit a test response
-      to each, then delete the test responses in Forms
 
 - [ ] Draft the one-page takeaway card (source: `take-home.md`).
 - [ ] Print the one-page takeaway card.

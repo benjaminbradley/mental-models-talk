@@ -81,7 +81,8 @@ card fits far fewer than this).
 - **The lethal trifecta** - private data + untrusted content + outbound channel = exploitable.
 - **The enforcement hierarchy** - architecture (a wall: it cannot reach it) >
   guidelines (a sign: human or model discipline). If a guideline is your only protection,
-  you have a vulnerability, not a control.
+  you have a vulnerability, not a control. A wall in practice: give the agent its own account
+  and share into it on purpose.
 - **Agents: agency is the amplifier** - a chatbot says; an agent does. Bound the blast radius;
   least privilege.
 - **Hosting matters** - local, private cloud, or frontier cloud; each tier trades

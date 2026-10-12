@@ -141,27 +141,36 @@ Method: HITL (human in the loop) as a deliberate pattern.
 </div>
 </div>
 <div class="scene reviewer">
-<svg viewBox="0 0 600 420" role="img" aria-label="A second goldfish, facing the drafts, peers at them through a magnifying glass">
+<svg viewBox="0 0 600 420" role="img" aria-label="A second goldfish, facing the drafts, peers at them through a magnifying glass held out in front of it">
   <g class="goldfish awake" transform="translate(600 0) scale(-1 1)">
     <use href="#fish-body" x="40" y="120" width="400" height="260"/>
     <use class="eyes-open" href="#fish-eyes-open" x="40" y="120" width="400" height="260"/>
   </g>
+  <!-- the magnifying glass, out in front of the fish's nose, handle at 45 degrees -->
   <g stroke-linecap="round">
-    <path fill="none" style="stroke: var(--ink); stroke-width: 24" d="M 206 270 L 318 316"/>
-    <path fill="none" style="stroke: var(--cardboard); stroke-width: 10" d="M 206 270 L 318 316"/>
+    <path fill="none" style="stroke: var(--ink); stroke-width: 24" d="M 146 226 L 190 270"/>
+    <path fill="none" style="stroke: var(--cardboard); stroke-width: 10" d="M 146 226 L 190 270"/>
   </g>
   <g style="stroke: var(--ink); stroke-width: 12">
-    <circle cx="160" cy="216" r="70" style="fill: var(--glass)" fill-opacity="0.6"/>
-    <path fill="none" style="stroke: #fff; stroke-width: 8" stroke-linecap="round" d="M 118 196 Q 124 168 150 160"/>
+    <circle cx="96" cy="176" r="70" style="fill: var(--glass)" fill-opacity="0.6"/>
+    <path fill="none" style="stroke: #fff; stroke-width: 8" stroke-linecap="round" d="M 54 156 Q 60 128 86 120"/>
   </g>
 </svg>
+<div class="mock guidelines">
+<h4>Review guidelines</h4>
+<ul>
+<li>&#x2713; Polite response</li>
+<li>&#x2713; Complete answers</li>
+<li>&#x2713; Don't share secrets</li>
+</ul>
+</div>
 </div>
 </div>
 
 <p class="lede fragment">Is that enough?</p>
 
 Note:
-The drafts pile up. Tempting next step: put a second fish on review duty. It reads every draft before you do.
+The drafts pile up. Tempting next step: put a second fish on review duty, with a few guidelines to check against -- polite, complete, no secrets. It reads every draft before you do. (The bank-account draft should trip the third one... if the reviewer catches it.)
 
 (Click.) "Is that enough?" Let them answer. Some will say yes (it caught things), some no (it's the same kind of fish).
 
@@ -172,7 +181,7 @@ Bridge: "It depends on who's checking. Let's climb the ladder."
 # Who checks the fish?
 
 <div class="scene wide">
-<svg viewBox="0 0 1800 500" role="img" aria-label="A grey artist in a beret paints a landscape on an easel, drawn only in greys. To the right of the easel, in a row: an identical grey artist gives it a thumbs up; a colorful artist with a paint palette points at it with a red question mark; last, a person holds a clipboard and a pen to sign off. On the first click the painter gets a green check, on the second the identical reviewer does.">
+<svg viewBox="0 0 1800 500" role="img" aria-label="A grey goldfish in a beret paints a landscape on an easel, drawn only in greys. To the right of the easel, in a row: an identical grey artist fish approves it; a colorful artist fish with a paint palette flags it with a red question mark; last, a person holds a clipboard and a pen to sign off. On the first click the painter gets a green check, on the second the identical reviewer does.">
   <!-- the fish's work: a landscape drawn only in greys -->
   <g transform="translate(320 0)" style="stroke: var(--ink); stroke-width: var(--line, 9)" stroke-linejoin="round" stroke-linecap="round">
     <path fill="none" style="stroke-width: 12" d="M 120 360 L 80 488 M 260 360 L 300 488 M 190 360 L 190 488"/>
@@ -183,22 +192,18 @@ Bridge: "It depends on who's checking. Let's climb the ladder."
     <path fill="none" style="stroke: #5b6170; stroke-width: 10" d="M 112 266 L 112 214"/>
     <circle cx="112" cy="190" r="34" style="fill: #5b6170"/>
   </g>
-  <!-- the painter: the fish that made it (a grey artist with a brush, mirrored to face the easel) -->
-  <g transform="translate(330 130) scale(-1 1)" style="--skin: #e3e6ea; --shirt: #b9bec7">
-      <use href="#person" x="0" y="0" width="200" height="360"/>
-      <use href="#person-eyes-left" x="0" y="0" width="200" height="360"/>
-      <g style="stroke: var(--ink); stroke-width: var(--line, 9)" stroke-linejoin="round" stroke-linecap="round">
-        <path style="fill: #5b6170" d="M 48 58 Q 96 20 150 50 Q 110 64 52 64 Z"/>
-        <path fill="none" style="stroke-width: 12" d="M 64 170 L -8 150"/>
-        <path fill="none" style="stroke-width: 20" d="M -8 150 L -58 122"/>
-        <path fill="none" style="stroke: var(--cardboard); stroke-width: 8" d="M -8 150 L -58 122"/>
-        <path style="fill: #5b6170" d="M -56 112 Q -84 108 -92 104 Q -86 124 -62 132 Z"/>
-        <circle cx="-14" cy="148" r="12" style="fill: var(--skin)"/>
-        <path fill="none" style="stroke-width: 12" d="M 136 166 Q 168 210 150 246"/>
-        <path style="fill: #f4f5f7" d="M 120 238 Q 160 214 192 240 Q 178 272 134 268 Q 112 260 120 238 Z"/>
+  <!-- the painter: the fish that made it (a grey artist fish in a beret, brush toward the easel) -->
+  <g transform="translate(90 300)" style="--fish: #b9bec7; --fish-deep: #8a909b; --cheek: #d5d9e0">
+      <use href="#fish-body" x="0" y="0" width="260" height="169"/>
+      <use href="#fish-eyes-open" x="0" y="0" width="260" height="169"/>
+      <g style="stroke: var(--ink); stroke-width: 7" stroke-linejoin="round" stroke-linecap="round">
+        <ellipse cx="196" cy="30" rx="44" ry="14" transform="rotate(14 196 30)" style="fill: #5b6170"/>
+        <circle cx="192" cy="14" r="7" style="fill: #5b6170"/>
+        <path fill="none" style="stroke-width: 18" d="M 160 140 L 250 112"/>
+        <path fill="none" style="stroke: var(--cardboard); stroke-width: 7" d="M 160 140 L 250 112"/>
+        <path style="fill: #5b6170" d="M 248 104 Q 270 98 280 96 Q 272 114 254 120 Z"/>
       </g>
-      <circle cx="146" cy="244" r="7" style="fill: #5b6170"/><circle cx="168" cy="240" r="7" style="fill: #8a909b"/><circle cx="160" cy="257" r="7" style="fill: #b9bec7"/>
-  </g>
+    </g>
   <!-- 1: self-review: the painter approves their own grey picture -->
   <g class="fragment" data-fragment-index="0">
     <g transform="translate(230 60)" style="stroke: var(--ink); stroke-width: 7">
@@ -208,18 +213,15 @@ Bridge: "It depends on who's checking. Let's climb the ladder."
   </g>
   <!-- 2: the same model reviews: an identical grey artist, same blind spot -->
   <g class="fragment" data-fragment-index="1">
-    <g transform="translate(720 130)" style="--skin: #e3e6ea; --shirt: #b9bec7">
-      <use href="#person" x="0" y="0" width="200" height="360"/>
-      <use href="#person-eyes-left" x="0" y="0" width="200" height="360"/>
-      <g style="stroke: var(--ink); stroke-width: var(--line, 9)" stroke-linejoin="round" stroke-linecap="round">
-        <path style="fill: #5b6170" d="M 48 58 Q 96 20 150 50 Q 110 64 52 64 Z"/>
-        <path fill="none" style="stroke-width: 12" d="M 64 166 Q 30 156 34 116"/>
-        <rect x="16" y="84" width="38" height="32" rx="10" style="fill: var(--skin)"/>
-        <rect x="22" y="52" width="16" height="38" rx="8" style="fill: var(--skin)"/>
-        <path fill="none" style="stroke-width: 12" d="M 136 166 Q 168 210 150 246"/>
-        <path style="fill: #f4f5f7" d="M 120 238 Q 160 214 192 240 Q 178 272 134 268 Q 112 260 120 238 Z"/>
+    <g transform="translate(960 300) scale(-1 1)" style="--fish: #b9bec7; --fish-deep: #8a909b; --cheek: #d5d9e0">
+      <use href="#fish-body" x="0" y="0" width="260" height="169"/>
+      <use href="#fish-eyes-open" x="0" y="0" width="260" height="169"/>
+      <g style="stroke: var(--ink); stroke-width: 7" stroke-linejoin="round" stroke-linecap="round">
+        <ellipse cx="196" cy="30" rx="44" ry="14" transform="rotate(14 196 30)" style="fill: #5b6170"/>
+        <circle cx="192" cy="14" r="7" style="fill: #5b6170"/>
+        <path style="fill: #f4f5f7" d="M 72 150 Q 110 130 144 152 Q 132 180 88 178 Q 64 168 72 150 Z"/>
+        <circle cx="94" cy="156" r="6" style="fill: #5b6170"/><circle cx="114" cy="150" r="6" style="fill: #8a909b"/><circle cx="110" cy="166" r="6" style="fill: #b9bec7"/>
       </g>
-      <circle cx="146" cy="244" r="7" style="fill: #5b6170"/><circle cx="168" cy="240" r="7" style="fill: #8a909b"/><circle cx="160" cy="257" r="7" style="fill: #b9bec7"/>
     </g>
     <g transform="translate(820 60)" style="stroke: var(--ink); stroke-width: 7">
       <circle r="40" style="fill: var(--green)"/>
@@ -228,18 +230,15 @@ Bridge: "It depends on who's checking. Let's climb the ladder."
   </g>
   <!-- 3: an adversary: a color artist sees what the picture is missing -->
   <g class="fragment" data-fragment-index="2">
-    <g transform="translate(1020 130)" style="--shirt: var(--sky)">
-      <use href="#person" x="0" y="0" width="200" height="360"/>
-      <use href="#person-eyes-left" x="0" y="0" width="200" height="360"/>
-      <g style="stroke: var(--ink); stroke-width: var(--line, 9)" stroke-linejoin="round" stroke-linecap="round">
-        <path style="fill: var(--purple)" d="M 48 58 Q 96 20 150 50 Q 110 64 52 64 Z"/>
-        <path fill="none" style="stroke-width: 12" d="M 64 170 L -20 150"/>
-        <circle cx="-26" cy="148" r="12" style="fill: var(--skin)"/>
-        <path fill="none" style="stroke-width: 12" d="M 136 166 Q 168 210 150 246"/>
-        <path style="fill: #f6e7c8" d="M 120 238 Q 160 214 192 240 Q 178 272 134 268 Q 112 260 120 238 Z"/>
+    <g transform="translate(1260 300) scale(-1 1)" style="">
+      <use href="#fish-body" x="0" y="0" width="260" height="169"/>
+      <use href="#fish-eyes-open" x="0" y="0" width="260" height="169"/>
+      <g style="stroke: var(--ink); stroke-width: 7" stroke-linejoin="round" stroke-linecap="round">
+        <ellipse cx="196" cy="30" rx="44" ry="14" transform="rotate(14 196 30)" style="fill: var(--purple)"/>
+        <circle cx="192" cy="14" r="7" style="fill: var(--purple)"/>
+        <path style="fill: #f6e7c8" d="M 72 150 Q 110 130 144 152 Q 132 180 88 178 Q 64 168 72 150 Z"/>
+        <circle cx="90" cy="158" r="6" style="fill: var(--red)"/><circle cx="108" cy="148" r="6" style="fill: var(--yellow)"/><circle cx="126" cy="156" r="6" style="fill: var(--blue)"/><circle cx="108" cy="168" r="6" style="fill: var(--green)"/>
       </g>
-      <circle cx="140" cy="246" r="7" style="fill: var(--red)"/><circle cx="158" cy="236" r="7" style="fill: var(--yellow)"/><circle cx="176" cy="244" r="7" style="fill: var(--blue)"/><circle cx="160" cy="258" r="7" style="fill: var(--green)"/>
-      <circle cx="80" cy="220" r="8" style="fill: var(--yellow)"/><circle cx="118" cy="260" r="8" style="fill: var(--red)"/><circle cx="72" cy="270" r="7" style="fill: var(--green)"/>
     </g>
     <g transform="translate(1120 60)" style="stroke: var(--ink); stroke-width: 7">
       <circle r="40" style="fill: var(--red)"/>
@@ -273,15 +272,15 @@ Bridge: "It depends on who's checking. Let's climb the ladder."
 Note:
 Walk the review ladder; let them find the regress.
 
-The picture on the easel is the fish's work, drawn only in greys. The painter on the left, brush in hand, is the fish. Think of it as a black-and-white artist: it can't see that the picture should have had color.
+The picture on the easel is the fish's work, drawn only in greys. The painter on the left, a grey fish in a beret with a brush, is the fish. Think of it as a black-and-white artist: it can't see that the picture should have had color.
 
 (Click.) Self-review: asking the fish to check its own work. The painter looks at its grey picture in greys: thumbs up. Same blind spots.
 
-(Click.) The same model as reviewer -- a fresh chat, or a second fish with similar training: correlated review. An identical black-and-white artist, same palette: thumbs up. Same blind spots. Two checks, no new information. (This is the reviewer fish from the last slide.)
+(Click.) The same model as reviewer -- a fresh chat, or a second fish with similar training: correlated review. An identical black-and-white artist fish, same grey palette: approved. Same blind spots. Two checks, no new information. (This is the reviewer fish from the last slide.)
 
-(Click.) Adversarial review: a genuinely independent reviewer, told to find what's wrong. A color artist, one who judges a range of pictures, color and black-and-white, sees at once what's missing. Better. (Subagents return here as adversarial reviewers.)
+(Click.) Adversarial review: a genuinely independent reviewer, told to find what's wrong. A color-artist fish -- a different fish, one who judges a range of pictures, color and black-and-white, sees at once what's missing. Better. (Subagents return here as adversarial reviewers.)
 
-(Click.) But it terminates in a person, who signs. And human review rubber-stamps when it's tired.
+(Click.) But it terminates in a person -- the only non-fish in the row -- who signs. And human review rubber-stamps when it's tired.
 
 Methods: the review ladder, adversarial subagents.
 

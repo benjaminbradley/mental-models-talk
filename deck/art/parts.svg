@@ -174,5 +174,34 @@
         </g>
       </g>
     </symbol>
+    <!-- The lazy genie rising from its lamp (station 4; a small one returns at station 11). -->
+    <symbol id="genie-lamp" viewBox="60 90 580 610">
+      <!-- smoke tail and body -->
+      <g class="genie" style="stroke: var(--ink); stroke-width: 9" stroke-linejoin="round" stroke-linecap="round">
+        <path style="fill: var(--genie)" d="M 400 600 C 480 595, 515 530, 470 488 C 440 460, 448 432, 478 410 L 552 410 C 530 440, 532 470, 552 500 C 596 566, 506 632, 400 600 Z"/>
+        <path style="fill: var(--genie)" d="M 478 414 C 438 360, 405 330, 405 285 C 405 252, 440 240, 515 240 C 590 240, 625 252, 625 285 C 625 330, 592 360, 552 414 Z"/>
+        <!-- folded arms -->
+        <rect x="418" y="300" width="194" height="52" rx="26" style="fill: var(--genie)"/>
+        <circle cx="430" cy="326" r="20" style="fill: var(--genie)"/><circle cx="600" cy="326" r="20" style="fill: var(--genie)"/>
+        <!-- head -->
+        <circle cx="515" cy="175" r="66" style="fill: var(--genie)"/>
+        <!-- turban -->
+        <path style="fill: var(--purple)" d="M 450 160 C 440 80, 590 80, 580 160 C 560 140, 470 140, 450 160 Z"/>
+        <circle cx="515" cy="128" r="12" style="fill: var(--red)"/>
+        <!-- half-lidded eyes: can't be bothered -->
+        <circle cx="490" cy="185" r="15" style="fill: #fff"/><circle cx="540" cy="185" r="15" style="fill: #fff"/>
+        <path style="fill: var(--genie)" d="M 475 185 A 15 15 0 0 1 505 185 Z M 525 185 A 15 15 0 0 1 555 185 Z"/>
+        <circle cx="490" cy="192" r="4" style="fill: var(--ink); stroke: none"/><circle cx="540" cy="192" r="4" style="fill: var(--ink); stroke: none"/>
+        <path d="M 500 218 Q 515 213 530 218" style="fill: none"/>
+      </g>
+      <!-- lamp -->
+      <g style="stroke: var(--ink); stroke-width: 9" stroke-linejoin="round" stroke-linecap="round">
+        <path d="M 120 632 C 70 632, 66 580, 130 600" style="fill: none"/>
+        <path style="fill: var(--yellow)" d="M 300 612 L 400 586 L 408 604 L 306 642 Z"/>
+        <path style="fill: var(--yellow)" d="M 118 630 C 118 572, 318 572, 318 630 C 318 664, 118 664, 118 630 Z"/>
+        <circle cx="218" cy="574" r="16" style="fill: var(--yellow)"/>
+        <ellipse cx="218" cy="672" rx="74" ry="14" style="fill: var(--yellow)"/>
+      </g>
+    </symbol>
   </defs>
 </svg>

@@ -125,9 +125,7 @@ Methods: verification asymmetry; decomposition.
 
 - **The bare model remembers nothing;** remembering the conversation is the app's job.
 - **App vs. model** (the app is also called the client or harness): vendors sell them bundled, so people conflate them; they are
-  separable. Diagnostic: "is that the fish or the bowl?" (reasoning failures are usually
-  the model; missing capabilities are usually the app). Callback at station 10:
-  benchmarks test the model, not your app.
+  separable.
 - **Context:** bounded; what is in it exists to the model, what is outside does not.
   Context engineering and document hygiene.
 - **Whatever is in the context shapes the answer,** which is why these work:
@@ -194,7 +192,9 @@ its slide is hidden).
 *Cognitive/stance: "a handy tool" -> "a system with a blast radius I have to bound."*
 
 - **Many kinds of apps,** all following the same rule; they need not live in the same
-  place as the model.
+  place as the model. Diagnostic, once the tank is fully fitted: "is that the fish or the
+  tank?" (reasoning failures are usually the model; missing capabilities are usually the
+  app). Callback at station 10: benchmarks test the model, not your app.
 - **Hosting: where do the app and the model live?** Four tiers from frontier cloud to
   fully local; each trades capability for data control. Credentials: never paste secrets
   into a conversation that transits someone else's servers.
@@ -213,10 +213,11 @@ its slide is hidden).
   lose? Backups, version control, sandboxes.
 - **The enforcement hierarchy:** architecture (it *cannot* reach it) > guideline (it is
   asked not to). If a guideline is your only protection for something that matters, you
-  have a vulnerability, not a control.
+  have a vulnerability, not a control. In practice: the agent gets its own account, and
+  you share into it deliberately.
 - Small-group exercise: the room finds the trifecta in a realistic assistant setup.
 
-Methods: hosting awareness, credential hygiene, least privilege, enforcement hierarchy,
+Methods: hosting awareness, credential hygiene, least privilege, separate accounts, enforcement hierarchy,
 backups/reversibility.
 
 ## Station 10 - Restore agency to the critic
@@ -266,12 +267,12 @@ Methods: the review ladder; HITL as deliberate pattern; subagents as adversarial
 
 Asked symmetrically: enthusiasts, what would show you are over-trusting it? Refusers, what
 would show it is genuinely useful for something you care about? Whoever can name nothing
-learns their stance is an identity, not an assessment. Exit poll.
+learns their stance is an identity, not an assessment.
 
 **Coda: the birth of magic** (callback to station 2): someone can now speak a few arcane
 words and command unseen forces; anyone can choose to study it. Framing guard: earned
 wonder after accountability has landed, not advocacy; "anyone can choose" includes the
-choice not to. Cut it if it reads as a sales pitch in rehearsal.
+choice not to. Cut it if it reads as a sales pitch in rehearsal. Exit poll on the closing slide.
 
 ---
 

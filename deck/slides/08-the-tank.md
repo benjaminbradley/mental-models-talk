@@ -139,8 +139,8 @@ HIDDEN: too much detail for this talk; MCP stays as a one-liner on the take-home
 # The fish sleeps; the tank doesn't have to
 
 <div class="split">
-<div class="scene">
-<svg viewBox="0 0 900 740" role="img" aria-label="The tank with three tools connected by tubes above it: a notepad, an alarm clock and a box of recipe cards">
+<div class="scene alarm-scene">
+<svg viewBox="0 0 900 740" role="img" aria-label="The tank with the fish asleep in it and a notepad connected by a tube above it. An alarm clock is connected, rings, and the fish wakes up. Then a box of recipe cards is connected">
   <g style="fill: none" stroke-linecap="round" stroke-linejoin="round">
     <path d="M 195 150 V 330" style="stroke: var(--ink); stroke-width: 48"/>
     <path d="M 195 150 V 330" style="stroke: var(--rock); stroke-width: 30"/>
@@ -155,9 +155,15 @@ HIDDEN: too much detail for this talk; MCP stays as a one-liner on the take-home
   </g>
   <use href="#tank-back" x="0" y="180" width="900" height="560"/>
   <use href="#tank-water" x="0" y="180" width="900" height="560"/>
-  <g class="goldfish awake">
-    <use href="#fish-body" x="330" y="440" width="280" height="182"/>
-    <use class="eyes-open" href="#fish-eyes-open" x="330" y="440" width="280" height="182"/>
+  <g class="goldfish">
+    <g class="zzz label" style="font-size: 54px">
+      <text x="610" y="450">z</text><text x="650" y="410">z</text><text x="695" y="370">Z</text>
+    </g>
+    <g class="swim">
+      <use href="#fish-body" x="330" y="440" width="280" height="182"/>
+      <use class="eyes-closed" href="#fish-eyes-closed" x="330" y="440" width="280" height="182"/>
+      <use class="eyes-open" href="#fish-eyes-open" x="330" y="440" width="280" height="182"/>
+    </g>
   </g>
   <use href="#tank-front" x="0" y="180" width="900" height="560"/>
   <g>
@@ -166,13 +172,17 @@ HIDDEN: too much detail for this talk; MCP stays as a one-liner on the take-home
   </g>
   <g class="fragment" data-fragment-index="0">
     <rect x="365" y="0" width="170" height="150" rx="20" style="fill: #fff; stroke: var(--ink); stroke-width: 9"/>
-    <text class="icon" x="450" y="105" text-anchor="middle" style="font-size: 90px">⏰</text>
+    <g class="alarm"><text class="icon" x="450" y="105" text-anchor="middle" style="font-size: 90px">⏰</text></g>
+    <g class="ring" style="fill: none; stroke: var(--ink); stroke-width: 8" stroke-linecap="round">
+      <path d="M 340 30 q -22 45 0 90 M 316 14 q -32 61 0 122 M 560 30 q 22 45 0 90 M 584 14 q 32 61 0 122"/>
+    </g>
   </g>
   <g class="fragment" data-fragment-index="1">
     <rect x="620" y="0" width="170" height="150" rx="20" style="fill: #fff; stroke: var(--ink); stroke-width: 9"/>
     <text class="icon" x="705" y="105" text-anchor="middle" style="font-size: 90px">🗂️</text>
   </g>
 </svg>
+<span class="fragment wake-cue" data-fragment-index="0"></span>
 </div>
 <div>
 <p class="fragment" data-fragment-index="0">Alarm clock: <span class="term">scheduled tasks</span></p>
@@ -182,7 +192,9 @@ HIDDEN: too much detail for this talk; MCP stays as a one-liner on the take-home
 Note:
 The bowl is turning into a tank: everything connects to it through a tube, and whatever it brings lands in the water. The notepad is already there.
 
-(Click.) Remember: the fish sleeps until you talk to it. Unless the tank has an alarm clock -- scheduled tasks: daily briefings, monitoring, periodic reports. It works while you sleep.
+The fish is asleep when the slide opens. Remember: the fish sleeps until you talk to it.
+
+(Click.) Unless the tank has an alarm clock. It rings, the fish wakes up -- nobody typed anything. Scheduled tasks: daily briefings, monitoring, periodic reports. It works while you sleep.
 
 (Click.) And if you're tired of re-specifying the same constraints every time (station 4) -- recipe cards. Skills: packaged instructions for recurring tasks, pulled into the water when the task comes up.
 

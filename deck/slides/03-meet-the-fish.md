@@ -90,7 +90,7 @@ Tone: productive disorientation -- instincts about people (confident = knowledge
 
 # How the fish got this way
 
-<div class="shots">
+<div class="shots training">
 <figure>
 <svg viewBox="0 0 600 470" role="img" aria-label="The goldfish wearing reading glasses, perched on a tall stack of books, reading an open book">
   <g style="stroke: var(--ink); stroke-width: 8" stroke-linejoin="round">
@@ -117,6 +117,7 @@ Tone: productive disorientation -- instincts about people (confident = knowledge
 </svg>
 <p class="footnote">* Not just published books: other text data sets, too.</p>
 <figcaption>1. Read the library<br><span class="term">pretraining</span> <span class="term">training data = the books*</span><br>anatomy: what it knows</figcaption>
+<div class="completion fragment"><span class="term">base model</span><p>The quick brown fox <span class="out">jumps over the lazy dog.</span></p><p>What is the capital of France? <span class="out">What is the capital of Germany? What is the capital of...</span></p></div>
 </figure>
 <figure class="fragment">
 <svg viewBox="0 0 600 470" role="img" aria-label="The goldfish's practice conversations: two of its replies side by side, and a person below them holding up a green check paddle under one reply and a red cross paddle under the other">
@@ -150,7 +151,8 @@ Tone: productive disorientation -- instincts about people (confident = knowledge
     <circle cx="310" cy="284" r="11"/><circle cx="505" cy="284" r="11"/>
   </g>
 </svg>
-<figcaption>2. Apprenticeship with feedback<br><span class="term"><b>RLHF</b>: reinforcement learning from human feedback</span><br>temperament: how it acts</figcaption>
+<figcaption>2. Apprenticeship with feedback<br><span class="term">post-training</span> <span class="term"><b>RLHF</b>: reinforcement learning from human feedback</span><br>temperament: how it acts</figcaption>
+<div class="completion fragment"><span class="term">chat model</span><p>What is the capital of France? <span class="out">The capital of France is Paris.</span></p></div>
 </figure>
 </div>
 
@@ -159,7 +161,13 @@ Two phases. (Yellow tags: the real vocabulary.)
 
 First, it read the entire library -- every book, every website. (The asterisk: "books" is shorthand. The library is every big text data set its makers could gather -- web pages, forums, code, transcripts -- not just published books.) That's **pretraining**, and the library is its **training data**: where its knowledge comes from, including how uneven it is. That's anatomy -- structural, durable.
 
-(Click.) Then an apprenticeship: practice conversations, with people scoring each reply -- thumbs up, thumbs down. That's **RLHF**, reinforcement learning from human feedback (one kind of post-training). It's where it learned its manners -- the helpfulness, the confidence, the eagerness to please. That's temperament -- trained, model-specific, and it varies between fish.
+(Click.) What comes out of the library alone is a **base model**: a text continuer. Give it the start of something and it writes what usually comes next. "The quick brown fox" -- "jumps over the lazy dog." Ask it a question and it may not answer it at all: in its books, a question is often followed by more questions (a quiz, an FAQ list). It isn't being difficult; it's continuing the page.
+
+(Click.) Then an apprenticeship: practice conversations, with people scoring each reply -- thumbs up, thumbs down. That's **post-training**; the best-known kind is **RLHF**, reinforcement learning from human feedback. It's where it learned its manners -- the helpfulness, the confidence, the eagerness to please. That's temperament -- trained, model-specific, and it varies between fish.
+
+(Click.) After the apprenticeship it's a **chat model**: it has learned the question-and-answer pattern. Same question, now it answers.
+
+(If asked, for accuracy: post-training is several steps, not one. The Q&A format is mostly taught first by showing it example conversations to copy -- "supervised fine-tuning" or "instruction tuning" -- and RLHF then polishes which answers it prefers. The slide folds both into "apprenticeship"; the term chip names the umbrella, post-training, plus the best-known step.)
 
 Why it matters: it answers "how much of this is fixable?" Anatomy is structural; temperament is model-specific and changing.
 

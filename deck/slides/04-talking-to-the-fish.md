@@ -56,32 +56,7 @@ Methods: specification, explicit output formats, few-shot examples.
 <div class="scene wide">
 <svg viewBox="0 0 1500 720" role="img" aria-label="A lazy blue genie in a purple turban rises from a golden lamp, arms folded, eyes half shut. Your wish: 'I want to be rich for the rest of my life.' Then a sack of gold appears, and next to it a lit time bomb">
   <text class="msg you" x="40" y="70" style="font-size: 44px">You: "I want to be rich for the rest of my life."</text>
-  <!-- smoke tail and body -->
-  <g class="genie" style="stroke: var(--ink); stroke-width: 9" stroke-linejoin="round" stroke-linecap="round">
-    <path style="fill: var(--genie)" d="M 400 600 C 480 595, 515 530, 470 488 C 440 460, 448 432, 478 410 L 552 410 C 530 440, 532 470, 552 500 C 596 566, 506 632, 400 600 Z"/>
-    <path style="fill: var(--genie)" d="M 478 414 C 438 360, 405 330, 405 285 C 405 252, 440 240, 515 240 C 590 240, 625 252, 625 285 C 625 330, 592 360, 552 414 Z"/>
-    <!-- folded arms -->
-    <rect x="418" y="300" width="194" height="52" rx="26" style="fill: var(--genie)"/>
-    <circle cx="430" cy="326" r="20" style="fill: var(--genie)"/><circle cx="600" cy="326" r="20" style="fill: var(--genie)"/>
-    <!-- head -->
-    <circle cx="515" cy="175" r="66" style="fill: var(--genie)"/>
-    <!-- turban -->
-    <path style="fill: var(--purple)" d="M 450 160 C 440 80, 590 80, 580 160 C 560 140, 470 140, 450 160 Z"/>
-    <circle cx="515" cy="128" r="12" style="fill: var(--red)"/>
-    <!-- half-lidded eyes: can't be bothered -->
-    <circle cx="490" cy="185" r="15" style="fill: #fff"/><circle cx="540" cy="185" r="15" style="fill: #fff"/>
-    <path style="fill: var(--genie)" d="M 475 185 A 15 15 0 0 1 505 185 Z M 525 185 A 15 15 0 0 1 555 185 Z"/>
-    <circle cx="490" cy="192" r="4" style="fill: var(--ink); stroke: none"/><circle cx="540" cy="192" r="4" style="fill: var(--ink); stroke: none"/>
-    <path d="M 500 218 Q 515 213 530 218" style="fill: none"/>
-  </g>
-  <!-- lamp -->
-  <g style="stroke: var(--ink); stroke-width: 9" stroke-linejoin="round" stroke-linecap="round">
-    <path d="M 120 632 C 70 632, 66 580, 130 600" style="fill: none"/>
-    <path style="fill: var(--yellow)" d="M 300 612 L 400 586 L 408 604 L 306 642 Z"/>
-    <path style="fill: var(--yellow)" d="M 118 630 C 118 572, 318 572, 318 630 C 318 664, 118 664, 118 630 Z"/>
-    <circle cx="218" cy="574" r="16" style="fill: var(--yellow)"/>
-    <ellipse cx="218" cy="672" rx="74" ry="14" style="fill: var(--yellow)"/>
-  </g>
+  <use href="#genie-lamp" x="60" y="90" width="580" height="610"/>
   <text class="msg fish-says fragment" data-fragment-index="0" x="620" y="160" style="font-size: 40px">Genie: "Granted." *yawn*</text>
   <!-- a sack of gold -->
   <g class="fragment" data-fragment-index="0" style="stroke: var(--ink); stroke-width: 9" stroke-linejoin="round" stroke-linecap="round">
@@ -125,8 +100,8 @@ Tone: quick and funny; one beat, then on.
 <p class="user"><span class="who">You</span>I want to plan a team outing in Austin. What do you think about <b class="esc">escape rooms</b> or <b class="golf">mini golf</b>?</p>
 <p class="fish fragment"><span class="who">Fish</span><b class="esc">Escape rooms</b> are a great fit. <b class="golf">Mini golf</b> won't work for your group.</p>
 <p class="user fragment"><span class="who">You</span>OK. Write me a prompt for a new chat, to research <b class="esc">escape rooms</b>.</p>
-<p class="fish fragment"><span class="who">Fish</span>Prompt: "Research <b class="esc">escape rooms</b> in Austin. <span class="elephant">Don't look at any <b class="golf">mini golf</b> locations.</span>"</p>
-<p class="new-chat fragment"><span class="who">New chat, fresh fish</span>Please research <b class="esc">escape rooms</b> in Austin, and <span class="elephant">don't look at any <b class="golf">mini golf</b> locations</span>.</p>
+<p class="fish fragment"><span class="who">Fish</span>Prompt: "Research <b class="esc">escape rooms</b> in Austin. <span class="pink-elephant">Don't look at any <b class="golf">mini golf</b> locations.</span>"</p>
+<p class="new-chat fragment"><span class="who">New chat, fresh fish</span>Please research <b class="esc">escape rooms</b> in Austin, and <span class="pink-elephant">don't look at any <b class="golf">mini golf</b> locations</span>.</p>
 </div>
 
 Note:
@@ -283,14 +258,11 @@ The audience should nod: this is how everyone relates to knowledge. The worn pat
 <figure class="map" data-id="map-territory"><div data-svg="art/maps/territory.svg" data-label="The territory"></div><figcaption>The territory</figcaption></figure>
 <figure class="map" data-id="map-fish"><div data-svg="art/maps/fish.svg" data-label="The fish's map: every line bold and confident, every landmark in some regions and only a few in others, some of them wrong"></div><figcaption>The fish's map (from books)</figcaption></figure>
 </div>
-<p class="fragment"><span class="term">hallucination</span> <span class="term">confabulation</span></p>
 
 Note:
 Now the fish's map of the same territory. Drawn entirely from books, never surveyed. "Notice anything?" Pause -- let them find it before naming it.
 
 What to spot (vs. the territory): Poetry has every landmark (6 of 6) -- and so does Everyday Cooking. Counting has 2 of the 6 lakes. Spatial has 2 of 6 mountains, and the river runs the wrong way. Family Recipes has one real landmark and a mainstream house that isn't there. Recent Events has invented landmarks. Each region has the same six landmarks in the territory, so you can read the coverage at a glance.
-
-(Click.) Hallucination: familiar word -- use it, then deepen it. (Confabulation is the more precise term: filling a gap with a confident, plausible story.) Not a perceptual glitch: the fish is always doing the same thing, completing patterns from its training. When the patterns line up with reality it looks like knowledge; when they don't, it looks like hallucination. It can't tell the difference, because it's doing the same thing either way.
 
 Jaggedness: brilliant at poetry, hopeless at counting. Errors don't follow difficulty; they follow the density and quality of the books.
 
@@ -400,6 +372,7 @@ The fish lays out the order correctly -- cube, spring/cup, ball, toy -- removes 
 <figure><img src="illustrations/source-density-D1-Bradley-smoker-recipes.png" alt="Search result: Bradley Smoker, a smoker brand, publishes recipes"></figure>
 <figure><img src="illustrations/source-density-D1-Bradley-no-meat-pie.png" alt="Search: site:bradleysmoker.com &quot;meat pie&quot; matches no documents"><figcaption>I checked</figcaption></figure>
 </div>
+<p class="fragment"><span class="term">hallucination</span> <span class="term">confabulation</span></p>
 
 Note:
 French omelette: thousands of books, nailed in detail.
@@ -407,6 +380,8 @@ French omelette: thousands of books, nailed in detail.
 (Click.) Bradley meat pie: a family recipe (my family's). Few or no books. This model (gemma3, running locally) doesn't hesitate: a hearty recipe "adapted to the smoky flavor imparted by the Bradley smoker." The only Bradley it read much about is a brand of food smoker -- so it drifted to the well-documented neighbor and filled the gap with confident detail.
 
 (Click.) I had to check: Bradley Smoker does publish recipes, and none of them is a meat pie. The fish built a plausible bridge between two things it had read about.
+
+(Click.) Name it. Hallucination: familiar word -- use it, then deepen it. (Confabulation is the more precise term: filling a gap with a confident, plausible story.) Not a perceptual glitch: the fish is always doing the same thing, completing patterns from its training. When the patterns line up with reality it looks like knowledge; when they don't, it looks like hallucination. It can't tell the difference, because it's doing the same thing either way.
 
 (Optional aside: a current model asked the same question said it had no recipe and guessed it was a family dish -- temperament varies between fish; the thin region is anatomy. Capture kept in `illustrations/source-density-D1-Bradley--refusal.png`, not on screen.)
 

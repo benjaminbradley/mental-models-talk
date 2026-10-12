@@ -86,7 +86,7 @@ shows: `../metaphor-imagery.md`.
   on its `.goldfish` group.
 - **People:** `person` (a body with no arms, so each scene draws its own pose) plus `person-eyes`
   or `person-eyes-left` on top, at the same x/y/width/height. Recolor with `--skin` and `--shirt`
-  on an ancestor (the grey artists at station 12 override both).
+  on an ancestor. Fish recolor the same way with `--fish`/`--fish-deep` (the grey artist fish at station 12).
 - **Slide markup:** wrap the SVG in `<div class="scene">` with no blank lines inside
   (a blank line ends the HTML block in Markdown). Give the `<svg>` `role="img"` and an
   `aria-label`.

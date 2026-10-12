@@ -25,7 +25,7 @@ activity (pair/group/individual); *demo* = live or pre-captured demonstration;
 | 3 | Who learns whose language? | | | | |
 | 3 | Computers speak our language (spine claim) | "smart person / search" -> "runs on language" | curiosity | | |
 | 3 | The goldfish: well-read people-pleaser | -> "well-read people-pleaser, no lived experience" | | | *socratic:* how would you know when it's wrong? |
-| 3 | Training story: temperament vs. anatomy | | | | |
+| 3 | Training story: temperament vs. anatomy (base model vs. chat model) | | | | |
 | 3 | It sleeps until you talk to it | | | | |
 | 4 | B plays the fish *(hidden)* | "instincts transfer" -> "instincts mislead; output depends on what I ask" | productive disorientation | invite clarifying questions | *exercise:* pair, describe-and-draw; *socratic:* what went wrong? whose fault? |
 | 4 | Say what you want & how | | | specification; output formats; few-shot | *demo:* plain vs. specified |
@@ -39,7 +39,7 @@ activity (pair/group/individual); *demo* = live or pre-captured demonstration;
 | 5 | Sort your own work *(hidden)* | | | | *exercise:* individual, then pair |
 | 5 | Decompose before you start | | | decomposition | *demo* |
 | 6 | It doesn't remember you | "one thing that just knows" -> "model + app; sees only the water" | | | |
-| 6 | The bowl and the fish | | | | *shout-out:* fish or bowl? |
+| 6 | The bowl remembers the conversation | | | | |
 | 6 | The context window | | | context engineering; document hygiene | |
 | 6 | Which shelf does it pull from? | | | role prompting; knowledge-domain elicitation | |
 | 6 | Make it show its work | | | chain-of-thought; extended thinking; self-reflection | *socratic:* how do you make it more reliable? |
@@ -55,13 +55,15 @@ activity (pair/group/individual); *demo* = live or pre-captured demonstration;
 | 8 | Provider tools vs. MCP *(hidden)* | | | MCP; provider tools | |
 | 8 | Alarm clock + recipe cards | | | scheduled tasks; skills | |
 | 8 | The tank (recap) | | | multimodal | |
-| 9 | Many kinds of tanks | "handy tool" -> "blast radius to bound" | sober caution | | |
+| 9 | Is that the fish or the tank? | "handy tool" -> "blast radius to bound" | sober caution | | *shout-out:* fish or tank? |
+| 9 | Many kinds of tanks | | | | |
 | 9 | Where does your data go? (hosting) | | | hosting awareness; credential hygiene | *socratic:* what could go wrong? |
 | 9 | Do they train on your conversations? | | | | |
 | 9 | Prompt injection = poisoned water | | | | |
 | 9 | What poisoned water can do | | | | |
 | 9 | When it goes wrong (blast radius) | | | backups; version control; sandboxes | *socratic:* how do you protect yourself? |
 | 9 | A wall or a sign? | | | least privilege; enforcement hierarchy | |
+| 9 | A wall in practice: its own account | | | separate accounts | |
 | 9 | Find the trifecta | | | | *exercise:* small groups |
 | 10 | It's a product | "neutral oracle" -> "someone's product" | critical agency | | *socratic:* who decided it should refuse that? |
 | 10 | Four sources of bias | | | | |
@@ -80,5 +82,5 @@ activity (pair/group/individual); *demo* = live or pre-captured demonstration;
 | 12 | Who checks the fish? (review ladder) | | | review ladder; adversarial subagents | |
 | 12 | Turtles all the way down (the regress) | | | | |
 | 13 | What would change your mind? | closed conclusion -> live question | open | | *exercise:* individual reflection |
-| 13 | Exit poll | | | | *poll:* before/now understanding + feedback |
 | 13 | Coda: the birth of magic | | | | |
+| 13 | Thank you, Q&A; exit poll | | | | *poll:* before/now understanding + feedback |

@@ -16,19 +16,6 @@ Exercise: individual reflection. Do not collect or share answers; this is privat
 
 ---
 
-# Before you go
-
-**Scan to check out (anonymous)**
-
-<a href="https://docs.google.com/forms/d/e/1FAIpQLSd4VQeimVG-IZqlwJIgf_ISR8pJfJ4_4lQ-IGlQ3P_D4-XCeg/viewform" target="_blank" rel="noopener"><img class="poll-qr" src="art/qr-exit.svg" alt="QR code for the anonymous exit survey"></a>
-
-Note:
-"One more scan before you go -- two minutes, anonymous. It's how this talk gets better."
-
-Exit survey: before/now self-ratings + open feedback (design in `surveys.md`). Don't frame it as conversion: "literacy, not conversion" applies to the measurement too.
-
----
-
 # An advanced technology that anyone can learn
 
 <div class="gradient-scene full">
@@ -79,18 +66,28 @@ Framing guard: earned wonder, not advocacy. "Anyone can choose" preserves agency
 
 <!-- .slide: class="center-slide" -->
 
-# Thank you
+# Thank you - Q &amp; A
 
 <div class="closing">
+<figure><a href="https://docs.google.com/forms/d/e/1FAIpQLSd4VQeimVG-IZqlwJIgf_ISR8pJfJ4_4lQ-IGlQ3P_D4-XCeg/viewform" target="_blank" rel="noopener"><img src="art/qr-exit.svg" alt="QR code for the anonymous exit survey"></a><figcaption>Check out (anonymous)</figcaption></figure>
 <figure><a href="https://benjaminbradley.github.io/mental-models-talk/" target="_blank" rel="noopener"><img src="art/qr-slides.svg" alt="QR code for the slides URL"></a><figcaption>Slides</figcaption></figure>
 <div>
 <p><b>Benjamin Bradley</b></p>
 <p>Slides: <a href="https://benjaminbradley.github.io/mental-models-talk/">benjaminbradley.github.io/mental-models-talk</a></p>
 <p>Contact: <a href="https://wegeekout.com/contact-me/">wegeekout.com/contact-me</a></p>
+<div class="credits">
+<p><b>Credits</b></p>
+<p>Composition, direction, production, writing: Benjamin Bradley</p>
+<p>Art, coding, consultation, writing: Claude Opus 5.5</p>
+</div>
 </div>
 </div>
 
 Note:
 Leave this up during questions. The take-home card has the same links.
+
+"One more scan before you go -- two minutes, anonymous. It's how this talk gets better." Point at the left code.
+
+Exit survey: before/now self-ratings + open feedback (design in `surveys.md`). Don't frame it as conversion: "literacy, not conversion" applies to the measurement too.
 
 Never put the email address on this slide or anything published (it's on the printed card only).
