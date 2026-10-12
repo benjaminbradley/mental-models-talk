@@ -90,7 +90,6 @@ Orphaned assets (no visible slide uses them; delete once the slides above are de
 - [ ] Station 1 harms: keep the closed box visible in the corner on later slides (persistent
       reminder), not only on its own slide. Or bring it back on the final "muggle/magic slide" - magic is dangerous, and has a price.
 - [ ] Who decided it should refuse that: on the first click, show a screenshot of people complaining that fable is too touchy and refuses basic chemistry questions
-- [ ] Station 12 "Skills you hand off can fade": the 🧭 / GPS example is a stand-in; consider a drawn visual or a stronger example of a skill most people have lost
 
 ## Oct 13 - deliver
 

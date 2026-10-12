@@ -84,11 +84,11 @@ Framing guard: earned wonder, not advocacy. "Anyone can choose" preserves agency
 <p>Contact: <a href="https://wegeekout.com/contact-me/">wegeekout.com/contact-me</a></p>
 <div class="credits">
 <p><b>Credits</b></p>
-<p>Composition, direction, production, writing: Benjamin Bradley</p>
-<p>Art, coding, consultation, writing: Claude Opus 5.5</p>
+<p>Benjamin Bradley: Composition, direction, production, writing</p>
+<p>Claude Opus 5.5: Art, coding, consultation, writing</p>
 </div>
 </div>
-<figure><a href="https://benjaminbradley.github.io/mental-models-talk/" target="_blank" rel="noopener"><img src="art/qr-slides.svg" alt="QR code for the slides URL"></a><figcaption>Slides</figcaption></figure>
+<figure><a href="https://benjaminbradley.github.io/mental-models-talk/" target="_blank" rel="noopener"><img src="art/qr-slides.svg" alt="QR code for the slides URL"></a><figcaption>Slides &amp; Contact</figcaption></figure>
 </div>
 
 Note:

@@ -87,7 +87,7 @@ Exercise: evaluate the artifact. Socratic: "How would you check?" Cognitive shif
 <div class="scene" style="flex: 0 0 640px"><span class="emoji" style="font-size: 300px" role="img" aria-label="A compass">🧭</span></div>
 <div>
 <p>Can you still get across town without GPS?</p>
-<p class="fragment">Some skills are load-bearing. You find out which after they're gone.</p>
+<p class="fragment">Can you hunt your own food?</p>
 <p class="fragment"><span class="term">skill atrophy</span></p>
 </div>
 </div>
