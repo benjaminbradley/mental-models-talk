@@ -1,9 +1,9 @@
 <!-- .slide: data-bookmark="Start" -->
 # Mental Models for Working with LLMs
 
-Speaker name · affiliation
+Benjamin Bradley · October 2025
 
-**Scan to check in (anonymous)**
+**Scan to check in: 2 quick questions (anonymous)**
 
 <a href="https://docs.google.com/forms/d/e/1FAIpQLSfF28Iji3sPDIDnakAKSCLOr8hzNO1ywnFKYc4uQl37aO1VGw/viewform" target="_blank" rel="noopener"><img class="poll-qr" src="art/qr-entry.svg" alt="QR code for the anonymous entry survey"></a>
 

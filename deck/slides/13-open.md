@@ -69,7 +69,7 @@ Framing guard: earned wonder, not advocacy. "Anyone can choose" preserves agency
 # Thank you - Q &amp; A
 
 <div class="closing">
-<figure><a href="https://docs.google.com/forms/d/e/1FAIpQLSd4VQeimVG-IZqlwJIgf_ISR8pJfJ4_4lQ-IGlQ3P_D4-XCeg/viewform" target="_blank" rel="noopener"><img src="art/qr-exit.svg" alt="QR code for the anonymous exit survey"></a><figcaption>Check out (anonymous)</figcaption></figure>
+<figure><a href="https://docs.google.com/forms/d/e/1FAIpQLSd4VQeimVG-IZqlwJIgf_ISR8pJfJ4_4lQ-IGlQ3P_D4-XCeg/viewform" target="_blank" rel="noopener"><img src="art/qr-exit.svg" alt="QR code for the anonymous exit survey"></a><figcaption>Feedback survey (anonymous)</figcaption></figure>
 <div>
 <p><b>Benjamin Bradley</b></p>
 <p>Slides: <a href="https://benjaminbradley.github.io/mental-models-talk/">benjaminbradley.github.io/mental-models-talk</a></p>

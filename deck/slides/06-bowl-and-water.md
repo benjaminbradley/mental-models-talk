@@ -320,7 +320,7 @@ A Custom GPT, a Gem, a Project: a bowl someone else set up for you, with their n
 
 ---
 
-# Cat food in the water
+# Too much salt in the soup
 
 <div class="scene wide">
 <svg viewBox="0 0 1500 600" role="img" aria-label="Left: two kinds of cat food in the water -- purple square flakes for escape rooms and green round flakes for mini golf. The fish's answer mixes both: an escape room, then go-karts. Asking it to forget the mini golf leaves the green flakes in the water. Right: the fish moved to a fresh bowl with only escape-room flakes">

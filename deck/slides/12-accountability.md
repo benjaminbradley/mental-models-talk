@@ -45,7 +45,7 @@ Bridge: "So let's practice. Would you put your name on this?"
 <div class="split">
 <div class="cover">
 <div class="logo">LOGO</div>
-<h2>Professional Looking Report</h2>
+<h2>Professional Report</h2>
 <hr>
 <p>Prepared for: Leadership Team</p>
 <p>Prepared by: Strategy &amp; Insights</p>
