@@ -86,6 +86,8 @@ Orphaned assets (no visible slide uses them; delete once the slides above are de
 
 ## Future possibilities
 
+- [ ] Consider for inclusion or sequel:
+  - [ ] Subagents
 - [ ] re-imagine the talk experience as an improv comedy show: what would it look like to map the step1/step2 features in the presentation's narrative into an analogous setup/reveal joke rhythm? would a scripted show make more sense than improv?
 
 ## Organizer reply (EFF-Austin, received)
