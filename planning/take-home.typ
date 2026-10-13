@@ -1,7 +1,7 @@
 // Take-home card: print layout for take-home.md (the content source of truth).
-// Build: typst compile take-home.typ   (writes take-home.pdf)
+// Build (from repo root): typst compile planning/take-home.typ planning/take-home.pdf
 // Two-sided: page 1 = front, page 2 = back.
-// QR codes: deck/art/qr-slides.svg, deck/art/qr-contact.svg (regenerate with `make qr`).
+// QR codes: ../deck/art/qr-slides.svg, ../deck/art/qr-contact.svg (regenerate with `make qr`).
 
 // ---- Layout knobs ---------------------------------------------------------
 // Half letter (5.5 x 8.5 in). For a full letter sheet, use "us-letter" and
@@ -9,7 +9,7 @@
 #let paper = (width: 5.5in, height: 8.5in)
 #let base = 9.2pt
 
-// Deck palette (deck/theme/talk.css), one color per section.
+// Deck palette (../deck/theme/talk.css), one color per section.
 #let ink = rgb("#161412")
 #let c-mindset = rgb("#e0362c")   // --red
 #let c-prompt = rgb("#d1520f")    // --orange-deep
@@ -124,7 +124,7 @@
   )
   #grid(
     columns: (1fr, 1fr), column-gutter: 1.2em,
-    qr("deck/art/qr-slides.svg", "Slides", "benjaminbradley.github.io/\nmental-models-talk"),
-    qr("deck/art/qr-contact.svg", "Contact", [wegeekout.com/\ contact-me \ #email]),
+    qr("../deck/art/qr-slides.svg", "Slides", "benjaminbradley.github.io/\nmental-models-talk"),
+    qr("../deck/art/qr-contact.svg", "Contact", [wegeekout.com/\ contact-me \ #email]),
   )
 ]

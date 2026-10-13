@@ -28,7 +28,7 @@ make station NN=02 SLUG=demystify
 ```
 
 This creates `slides/02-demystify.md` from a template and appends it to `manifest.js`
-(the ordered list of files). Number files to match stations in `../presentation-arc.md`.
+(the ordered list of files). Number files to match stations in `../planning/presentation-arc.md`.
 
 ## Conventions
 
@@ -52,8 +52,8 @@ This creates `slides/02-demystify.md` from a template and appends it to `manifes
 
 ## Artwork
 
-Decision and rationale: `../open-questions-and-ideas.md` Q16. Specs for what each image
-shows: `../metaphor-imagery.md`.
+Decision and rationale: `../planning/open-questions-and-ideas.md` Q16. Specs for what each image
+shows: `../planning/metaphor-imagery.md`.
 
 - **Parts library:** `art/parts.svg` holds reusable `<symbol>`s (fish body, eye states,
   bowl layers, rectangular tank layers, ...). Layer order for a container scene: `*-back`,
@@ -108,7 +108,7 @@ shows: `../metaphor-imagery.md`.
   drops an image in over the slide (e.g. a full transcript behind a trimmed one).
 - **Technical terms:** `<span class="term">pretraining</span>` puts the real term beside the
   metaphor (yellow monospace chip); use it everywhere a metaphor stands for a real concept, and for
-  common industry terms the slide teaches. Use the take-home card's wording (`../take-home.md`).
+  common industry terms the slide teaches. Use the take-home card's wording (`../planning/take-home.md`).
 - **Simulated chats:** `<div class="chat">` with `<p class="user">` / `<p class="fish">` bubbles
   (`<span class="who">` for the speaker); `<p class="new-chat">` for a fresh conversation.
 - **Ledes with an inline fragment:** `<!-- .element: class="..." -->` attaches to the element just

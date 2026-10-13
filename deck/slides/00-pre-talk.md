@@ -11,4 +11,4 @@ Note:
 On screen as people walk in and settle. No narration.
 QR code must be large enough to scan from the back of the room (10-30 attendees, tables).
 The entry survey captures usage + curiosity before any content lands.
-Survey design: see `surveys.md`.
+Survey design: see `planning/surveys.md`.

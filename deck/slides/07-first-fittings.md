@@ -88,7 +88,7 @@ Same question, two verbs, same app. Austin's moonlight towers.
 
 Still your job: the links are real, but its summary of them can still be wrong. Click one.
 
-HIDDEN for now (captures not made; see todo.md § Hidden slides). To bring it back, delete the `data-visibility="hidden"` line above the title.
+HIDDEN for now (captures not made; see planning/todo.md § Hidden slides). To bring it back, delete the `data-visibility="hidden"` line above the title.
 
 Captures to make (same app, same day): see the placeholders. Earlier local-model captures for the old three-rung version are in the top-level `illustrations/citations-ladder--*` (candidates).
 

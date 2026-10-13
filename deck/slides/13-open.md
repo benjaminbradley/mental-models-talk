@@ -96,6 +96,6 @@ Leave this up during questions. The take-home card has the same links.
 
 "One more scan before you go -- two minutes, anonymous. It's how this talk gets better." Point at the left code (the right one is the slides).
 
-Exit survey: before/now self-ratings + open feedback (design in `surveys.md`). Don't frame it as conversion: "literacy, not conversion" applies to the measurement too.
+Exit survey: before/now self-ratings + open feedback (design in `planning/surveys.md`). Don't frame it as conversion: "literacy, not conversion" applies to the measurement too.
 
 Never put the email address on this slide or anything published (it's on the printed card only).

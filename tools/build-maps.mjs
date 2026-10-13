@@ -8,9 +8,9 @@
 // Deterministic (seeded): rerunning produces identical files. Colors are CSS custom properties
 // (deck/theme/talk.css), so the maps must be inlined into the page (the deck's data-svg loader).
 // Usage: node tools/build-maps.mjs   -> deck/art/maps/{territory,human,fish,fish-cut}.svg
-// Spec: metaphor-imagery.md § The map and the territory. Guide: deck/README.md § Artwork.
+// Spec: planning/metaphor-imagery.md § The map and the territory. Guide: deck/README.md § Artwork.
 //
-// Encoding (how the metaphor-imagery.md properties are drawn; open to change):
+// Encoding (how the planning/metaphor-imagery.md properties are drawn; open to change):
 // - Not an island: the named regions are a highlighted patch inside a landscape that runs off
 //   every edge (faint borders and out-of-focus landmarks continue outward). Water is local: a
 //   stretch of coast in one corner and a lake, never a surrounding sea.
