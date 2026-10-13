@@ -24,7 +24,7 @@
 // ---- Styles ---------------------------------------------------------------
 #set document(title: "Mental Models for Using LLMs - Take-Home")
 #set page(width: paper.width, height: paper.height, margin: (x: 0.4in, top: 0.4in, bottom: 0.4in))
-#set text(font: ("Arial", "Liberation Sans"), size: base, fill: ink, hyphenate: false)
+#set text(font: ("Georgia"), size: base, fill: ink, hyphenate: false)
 #set par(leading: 0.42em, justify: false)
 
 // `/ Term: phrase` lines render as: **Term** - phrase, with a hanging indent.
@@ -101,13 +101,13 @@
 ]
 
 #section("Security & privacy", c-security)[
-  / Prompt injection: instructions are just text that arrived earlier; it can't tell yours from others'.
-  / The lethal trifecta: private data + untrusted content + outbound channel = exploitable.
-  / The enforcement hierarchy: architecture (an enforceable wall) > guidelines (a sign without enforcement).
-  / Least privilege: only grant access to what is needed; give the agent its own account and share only intended documents.
-  / Hosting matters: know where your data goes. Do not paste credentials into a conversation.
-  / Blast radius and recovery: what are you risking loss of? Keep backups; sandbox environments are architectural safety nets.
-  / Draft vs. send / human in the loop: decide where you want to require human approval.
+  / Prompt injection: someone else's instructions
+  / The lethal trifecta: private data + untrusted content + outbound channel
+  / Enforcement hierarchy: Architecture is a wall. Guidelines are a suggestion.
+  / Least privilege: only grant required access; give the agent its own account.
+  / Hosting matters: know where your data goes. No credentials in chat.
+  / Blast radius and recovery: what could you lose, how would you recover?
+  / Draft vs. send / human in the loop: what do you want to approve first?
 ]
 
 // Links footer, pinned to the bottom of the back page.
