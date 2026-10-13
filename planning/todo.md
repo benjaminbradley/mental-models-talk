@@ -3,7 +3,7 @@
 Actionable tasks (verbs). Design *questions* and their options live in
 `open-questions-and-ideas.md` as stable IDs (Q1, Q2, ...); a task that is really a
 decision references the ID instead of restating it. Candidate metaphors and content ideas
-also live there. The take-home card content lives in `take-home.md`.
+also live there. The take-home card content lives in `take-home.typ`.
 
 Sections are the timeline weeks (talk: Oct 13). "Now" = anything before the first named week.
 
@@ -15,7 +15,7 @@ When specific slides are mentioned, add the direct URL for a server running on h
 
 - [ ] Rehearse; refine speaker notes; adjust pacing.
 
-- [ ] Draft the one-page takeaway card (source: `take-home.md`).
+- [ ] Draft the one-page takeaway card (`take-home.typ`).
   - [ ] decide on sizing (1/4 or 1/2 letter?)
   - [ ] finalize design/PDF
 - [ ] get pricing estimates

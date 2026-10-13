@@ -26,8 +26,8 @@ deck holds the specifics (examples, wording, slide order, composition).
 | `planning/metaphor-imagery.md` | The visual vocabulary: what each metaphor stands for, rules that hold everywhere, which station adds what | a metaphor or one of its rules changes | slide layouts, SVG part ids, encoding values, status |
 | `deck/slides/*.md` | Everything concrete: on-screen text, examples, slide order, visual composition, speaker notes, hidden slides, placeholders for unbuilt visuals | every revision | n/a |
 | `planning/surveys.md` | Entry/exit survey goals, design decisions, question wording, form links, analysis plan | survey questions or settings change | slide placement of the QR codes |
-| `planning/take-home.md` | The participant card: the talk's methods and principles as memory-jogging phrases | a method or principle is added, removed, or renamed in the talk | anything not taught in the talk (outside its short "Beyond the talk" list) |
-| `planning/take-home.typ` | Print layout of the card (page size, typography, QR codes); compile with `typst compile planning/take-home.typ planning/take-home.pdf` | content in `planning/take-home.md` changes, or the print format does | the content itself beyond a mirror of `planning/take-home.md` |
+| `planning/take-home.md` | Rules for the participant card: scope, item format, required links | the card's purpose or format rules change | the card's content |
+| `planning/take-home.typ` | The participant card itself: the talk's methods and principles as one-line memory-jogging phrases, plus print layout and QR codes | a method or principle is added, removed, or renamed in the talk, or the print format changes | anything not taught in the talk |
 | `planning/open-questions-and-ideas.md` | Unresolved design questions (stable IDs Q1, Q2, ...), resolved-decision log, candidate metaphors, unplaced stories | constantly | n/a |
 | `planning/todo.md` | Tasks, status, things to verify, by timeline week (talk: Oct 13) | constantly | n/a |
 | `planning/materials.md` | Physical and technical materials to bring or provide | rarely | n/a |
@@ -38,7 +38,7 @@ upstream doc only if the change alters something at that doc's level:
 
 - New example, wording, or visual detail in a beat -> the deck only.
 - Beat added, cut, reordered, or hidden -> the deck + `planning/arc-table.md` (any pending keep/cut decision goes in `planning/todo.md` or open-questions).
-- Method moves between stations, or a station's purpose shifts -> the deck + `planning/arc-table.md` + `planning/presentation-arc.md` (+ `planning/take-home.md` if a method or principle is added, removed, or renamed).
+- Method moves between stations, or a station's purpose shifts -> the deck + `planning/arc-table.md` + `planning/presentation-arc.md` (+ `planning/take-home.typ` if a method or principle is added, removed, or renamed).
 - New metaphor, or a change to what one means -> `planning/metaphor-imagery.md` + the deck.
 
 `handoff.md`, when it exists, is a temporary resume bridge for continuing in a fresh chat;

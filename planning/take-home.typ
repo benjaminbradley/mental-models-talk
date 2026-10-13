@@ -1,5 +1,5 @@
-// Take-home card: print layout for take-home.md (the content source of truth).
-// Build (from repo root): typst compile planning/take-home.typ planning/take-home.pdf
+// Take-home card: content and print layout. Scope rules: take-home.md.
+// Build (from repo root): typst compile --root . planning/take-home.typ
 // Two-sided: page 1 = front, page 2 = back.
 // QR codes: ../deck/art/qr-slides.svg, ../deck/art/qr-contact.svg (regenerate with `make qr`).
 
@@ -52,52 +52,52 @@
 ]
 
 #section("Mindset", c-mindset)[
-  / Language is the interface: anything you could teach a competent stranger over the phone, it can do.
-  / Intention is the input: it amplifies what you bring; taste and intention are your contributions.
-  / Accountability is the new bottleneck: do you stand behind the work?
+  / Language is the interface: if you can teach it by phone, it can do it
+  / Intention is the input: it amplifies what you bring
+  / Accountability is the new bottleneck: do you stand behind it?
 ]
 
 #section("Prompt engineering", c-prompt)[
-  / Specification: state the intention, requirements/criteria, priorities/constraints; provide examples and output format.
-  / Role / persona prompting: "you are a [role]" or "what knowledge domains are relevant, and what does each contribute?"
-  / Few-shot: show two or three examples of what "good" looks like.
-  / Meta-prompting: it can help you write prompts. When creating a prompt for a new session, use Theory of Mind.
-  / Chain-of-thought / show your work: ask it to reason step by step; you also get to check the steps.
-  / Extended thinking: say "think about X" to elicit additional details.
-  / Iteration / critique loops: first output is raw material; refine it, or have it critique itself.
+  / Specification: intent, criteria, constraints, examples, output format
+  / Role / persona prompting: "you are a [role]"; which experts apply?
+  / Few-shot: show two or three examples of "good"
+  / Meta-prompting: have it help write the prompt (theory of mind)
+  / Chain-of-thought / show your work: reason step by step; check the steps
+  / Extended thinking: "think about X" draws out more detail
+  / Iteration / critique loops: first output is raw material; refine it
 ]
 
 #section("Quality & confidence", c-quality)[
-  / Jaggedness / the jagged frontier: competence has no map; brilliant and clueless sit side by side.
-  / Confabulation / hallucination: confident, fluent, and wrong; fluency and accuracy are independent.
-  / Verification asymmetry: lean on it where checking is cheaper than doing; beware where it is not.
-  / It will agree with you (sycophancy): ask it for critical feedback.
-  / Ask it to check itself: it can grade its own confidence, flag knowledge-cutoff gaps, or search when unsure.
-  / (Task) decomposition: break a complex task into sub-tasks, and verify each piece.
-  / Memory audit: review what the model has stored about you.
+  / The jagged frontier: brilliant and clueless, side by side
+  / Confabulation / hallucination: fluent is not the same as accurate
+  / Verification asymmetry: use it where checking beats doing
+  / Sycophancy: it will agree with you; ask for critical feedback
+  / Ask it to check itself: rate confidence, flag cutoff gaps, search
+  / Task decomposition: break it down; verify each piece
+  / Memory audit: review what it has stored about you
 ]
 
 #section("Reliability", c-reliab)[
-  / Frontier instability: the models change without notice; a workflow that worked yesterday can break tomorrow.
-  / Frontier control: your account can be locked without notice too; export and back up what matters.
-  / Evals / evaluations: re-run the same tests over time; a model can get worse at what you rely on.
+  / Frontier instability: models change without notice; workflows break
+  / Frontier control: accounts get locked; export and back up
+  / Evals / evaluations: re-run the same tests; models can get worse
 ]
 
 #pagebreak()
 
 // ---- Back -----------------------------------------------------------------
 #section("Context & capability", c-context)[
-  / Context engineering / context management: select and manage what is in the bowl.
-  / Restart vs. repair: when the conversation history is messy, consider starting a new session.
-  / Tool use / tool calling (also\: function calling): adding external capabilities like web search, email, files.
-  / MCP (Model Context Protocol): like USB, an industry-standard way to connect a tool.
-  / Code execution: for counting, math, and data.
-  / Custom GPTs / Gems: an app someone else set up, with their instructions and data inside.
-  / RAG (Retrieval-Augmented Generation): the system pulls the right reference material into context on demand.
-  / Scheduled / recurring tasks: set up automated runs: daily briefs, monitoring, periodic reports.
-  / Skills / reusable playbooks: packaged instructions for recurring tasks.
-  / Memory & instruction hierarchy: provider instructions (invisible) #sym.arrow your custom instructions #sym.arrow memory #sym.arrow your prompt.
-  / Subagents / delegation: helps with context management and running multiple tasks at the same time.
+  / Context engineering: choose and manage what is in the bowl
+  / Restart vs. repair: messy history? start a new session
+  / Tool use / function calling: web search, email, files, and more
+  / MCP (Model Context Protocol): a USB-like standard for tools
+  / Code execution: for counting, math, and data
+  / Custom GPTs / Gems: someone else's instructions and data, packaged
+  / RAG (retrieval-augmented generation): reference material on demand
+  / Scheduled tasks: daily briefs, monitoring, periodic reports
+  / Skills / playbooks: packaged instructions for recurring tasks
+  / Instruction hierarchy: provider #sym.arrow your settings #sym.arrow memory #sym.arrow prompt
+  / Subagents / delegation: parallel tasks, each with a clean context
 ]
 
 #section("Security & privacy", c-security)[

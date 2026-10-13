@@ -59,5 +59,5 @@ https://wegeekout.com/contact-me/"
 
 - Per grid: distribution of "now minus before" deltas, overall and by usage level.
 - Q4 (recall probe): compare what people report taking away against the talk's methods
-  (`take-home.md`); mismatches show what didn't land.
+  (`take-home.typ`); mismatches show what didn't land.
 - Q5 and entry Q2: feed unanswered questions and curiosities into the next revision.

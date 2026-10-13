@@ -108,7 +108,7 @@ shows: `../planning/metaphor-imagery.md`.
   drops an image in over the slide (e.g. a full transcript behind a trimmed one).
 - **Technical terms:** `<span class="term">pretraining</span>` puts the real term beside the
   metaphor (yellow monospace chip); use it everywhere a metaphor stands for a real concept, and for
-  common industry terms the slide teaches. Use the take-home card's wording (`../planning/take-home.md`).
+  common industry terms the slide teaches. Use the take-home card's wording (`../planning/take-home.typ`).
 - **Simulated chats:** `<div class="chat">` with `<p class="user">` / `<p class="fish">` bubbles
   (`<span class="who">` for the speaker); `<p class="new-chat">` for a fresh conversation.
 - **Ledes with an inline fragment:** `<!-- .element: class="..." -->` attaches to the element just

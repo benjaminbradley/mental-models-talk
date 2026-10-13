@@ -31,7 +31,7 @@ Pages (`.github/workflows/pages.yml`), publishing `deck/`.
 
 `README.md` § Documents is authoritative: what each doc owns and how a change flows. In short:
 make each edit in the lowest doc that owns it (usually `deck/slides/*.md`), and touch upstream
-docs (`planning/arc-table.md`, `planning/presentation-arc.md`, `planning/metaphor-imagery.md`, `planning/take-home.md`) only when the
+docs (`planning/arc-table.md`, `planning/presentation-arc.md`, `planning/metaphor-imagery.md`, `planning/take-home.typ`) only when the
 change alters something at their level. Don't copy specifics (examples, wording, layout) upward,
 and don't write history or status notes into upstream docs.
 
