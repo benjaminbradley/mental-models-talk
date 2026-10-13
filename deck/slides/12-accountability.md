@@ -61,16 +61,14 @@ Bridge: "So let's practice. Would you put your name on this?"
 <div>
 <p>The fish made it.</p>
 <p>It looks professional.</p>
-<p class="fragment">What would you check?</p>
-<p class="fragment">How long would that take?</p>
+<p>What would you check?</p>
+<p>How long would that take?</p>
 <p class="fragment lede">Accountability is the new bottleneck.</p>
 </div>
 </div>
 
 Note:
-Put it on screen. "Take a minute. The fish produced this. It looks professional. Would you put your name on it?" Pause; let someone find the date ("Octoober").
-
-(Click.) "What else would you check?" (Click.) "How long would that take?"
+Put it on screen. "Take a minute. The fish produced this. It looks professional. Would you put your name on it?" Pause; let someone find the date ("Octoober"). "What else would you check? How long would that take?"
 
 (Click.) The fish can make this in seconds. Checking it, and deciding to put your name on it, still takes a person. Accountability is the new bottleneck.
 
