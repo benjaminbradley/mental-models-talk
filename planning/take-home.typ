@@ -1,6 +1,6 @@
 // Take-home card: content and print layout. Scope rules: take-home.md.
 // Build (from repo root): typst compile --root . planning/take-home.typ
-// Two-sided: page 1 = front, page 2 = back.
+// One page, black and white.
 // QR codes: ../deck/art/qr-slides.svg, ../deck/art/qr-contact.svg (regenerate with `make qr`).
 
 // ---- Layout knobs ---------------------------------------------------------
@@ -9,55 +9,48 @@
 #let paper = (width: 5.5in, height: 8.5in)
 #let base = 9.2pt
 
-// Deck palette (../deck/theme/talk.css), one color per section.
-#let ink = rgb("#161412")
-#let c-mindset = rgb("#e0362c")   // --red
-#let c-prompt = rgb("#d1520f")    // --orange-deep
-#let c-quality = rgb("#8a5cc9")   // --purple
-#let c-context = rgb("#2a63c9")   // --blue
-#let c-security = rgb("#237a42")  // --green-deep
-#let c-reliab = rgb("#1fa99a")    // --teal
+
+#let ink = black
 
 // Built from parts so the address is not a literal string in the public repo.
 #let email = ("education", "wegeekout.com").join("@")
 
 // ---- Styles ---------------------------------------------------------------
 #set document(title: "Mental Models for Using LLMs - Take-Home")
-#set page(width: paper.width, height: paper.height, margin: (x: 0.4in, top: 0.4in, bottom: 0.4in))
+#set page(width: paper.width, height: paper.height, margin: 0.25in)
 #set text(font: ("Georgia"), size: base, fill: ink, hyphenate: false)
 #set par(leading: 0.42em, justify: false)
 
 // `/ Term: phrase` lines render as: **Term** - phrase, with a hanging indent.
 #show terms: it => {
   for item in it.children {
-    block(above: 0.62em, below: 0em, par(hanging-indent: 1em)[
+    block(above: 0.42em, below: 0em, par(hanging-indent: 1em)[
       #text(weight: "bold")[#item.term] #h(0.15em)--#h(0.15em) #item.description
     ])
   }
 }
 
-#let section(title, color, body) = block(above: 1.05em, below: 0em, breakable: true)[
-  #block(below: 0.35em, sticky: true)[
-    #text(size: base * 1.3, weight: "bold", fill: color)[#upper(title)]
-    #box(width: 1fr, inset: (left: 0.4em), line(length: 100%, stroke: 0.6pt + color))
+#let section(title, body) = block(above: 0.8em, below: 0em, breakable: true)[
+  #block(below: 0.25em, sticky: true)[
+    #box(width: 1fr, inset: (right: 0.4em), line(length: 100%, stroke: 0.6pt + ink))
+    #text(size: base * 1.1, weight: "bold")[#upper(title)]
+    #box(width: 1fr, inset: (left: 0.4em), line(length: 100%, stroke: 0.6pt + ink))
   ]
   #body
 ]
 
-// ---- Front ----------------------------------------------------------------
-#block(below: 0.55em, text(size: base * 2.1, weight: "bold")[Mental Models for Using LLMs])
-#text(size: base * 1.05, fill: ink.lighten(30%))[
-  Terms and phrases from the talk, to jog your memory. Each one is a search term
-  if you want to go deeper.
+#block(below: 0.6em, text(size: base * 1.6, weight: "bold")[Mental Models for Using LLMs])
+#text(size: base * 1.05)[
+  Terms from the talk to jog your memory; each is a search term for going deeper.
 ]
 
-#section("Mindset", c-mindset)[
+#section("Mindset")[
   / Language is the interface: if you can teach it by phone, it can do it
   / Intention is the input: it amplifies what you bring
   / Accountability is the new bottleneck: do you stand behind it?
 ]
 
-#section("Prompt engineering", c-prompt)[
+#section("Prompt engineering")[
   / Specification: intent, criteria, constraints, examples, output format
   / Role / persona prompting: "you are a [role]"; which experts apply?
   / Few-shot: show two or three examples of "good"
@@ -67,7 +60,7 @@
   / Iteration / critique loops: first output is raw material; refine it
 ]
 
-#section("Quality & confidence", c-quality)[
+#section("Quality & confidence")[
   / The jagged frontier: brilliant and clueless, side by side
   / Confabulation / hallucination: fluent is not the same as accurate
   / Verification asymmetry: use it where checking beats doing
@@ -77,16 +70,13 @@
   / Memory audit: review what it has stored about you
 ]
 
-#section("Reliability", c-reliab)[
+#section("Reliability")[
   / Frontier instability: models change without notice; workflows break
   / Frontier control: accounts get locked; export and back up
   / Evals / evaluations: re-run the same tests; models can get worse
 ]
 
-#pagebreak()
-
-// ---- Back -----------------------------------------------------------------
-#section("Context & capability", c-context)[
+#section("Context & capability")[
   / Context engineering: choose and manage what is in the bowl
   / Restart vs. repair: messy history? start a new session
   / Tool use / function calling: web search, email, files, and more
@@ -100,7 +90,7 @@
   / Subagents / delegation: parallel tasks, each with a clean context
 ]
 
-#section("Security & privacy", c-security)[
+#section("Security & privacy")[
   / Prompt injection: someone else's instructions
   / The lethal trifecta: private data + untrusted content + outbound channel
   / Enforcement hierarchy: Architecture is a wall. Guidelines are a suggestion.
@@ -110,13 +100,13 @@
   / Draft vs. send / human in the loop: what do you want to approve first?
 ]
 
-// Links footer, pinned to the bottom of the back page.
-#place(bottom, float: false)[
-  #line(length: 100%, stroke: 0.6pt + ink.lighten(50%))
-  #v(0.4em)
+// Links footer, right after the content.
+#block(above: 0.8em, breakable: false)[
+  #line(length: 100%, stroke: 0.6pt + ink)
+  #v(0.3em)
   #let qr(path, label, url) = grid(
-    columns: (0.85in, 1fr), column-gutter: 0.7em, align: horizon,
-    image(path, width: 0.85in),
+    columns: (0.65in, 1fr), column-gutter: 0.7em, align: horizon,
+    image(path, width: 0.65in),
     [
       #text(weight: "bold", size: base * 1.15)[#label] \
       #text(size: base * 0.9)[#url]
