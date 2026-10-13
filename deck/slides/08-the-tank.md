@@ -223,7 +223,7 @@ Brief. Methods: scheduled tasks, skills/playbooks, subagents.
 
 ---
 
-# The tank
+# Multi-media fish tank
 
 <div class="scene wide">
 <svg viewBox="0 -110 1500 810" role="img" aria-label="The fully fitted tank: the fish, the conversation in the water, notes on the glass, tubes out the top and side, and tools above it, every one connected by a tube; a microphone and a camera feed in through tubes with conversion boxes">

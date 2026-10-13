@@ -1,5 +1,5 @@
 <!-- .slide: class="center-slide section-intro" data-bookmark="Where your data goes" -->
-# Blast radius
+# What can go wrong?
 
 Note:
 Section: security and data. Where does it live, what can it reach, and what's the worst that could happen?
