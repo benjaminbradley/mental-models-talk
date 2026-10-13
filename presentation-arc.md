@@ -180,12 +180,13 @@ Methods: web search; asking for a search (citations); tool use; tool discovery; 
 - **Agency (spine payoff #2):** the things you used to do yourself are handed off item by
   item. Agency is the amplifier: everything good scales, and so does everything bad.
 - **Provider tools vs. MCP** (pending; MCP stays on the take-home card).
-- **Scheduled tasks** (felt limit: it sleeps until woken) and **skills** (felt limit:
-  re-specifying the same constraints every time).
+- **Scheduled tasks** (felt limit: it sleeps until woken), **skills** (felt limit:
+  re-specifying the same constraints every time), and **subagents** (felt limit: one tank's
+  water fills up; another tank can take part of the job).
 - **The full system as recap,** plus multimodal input and voice as quick extras. Every tool
   widens the blast radius (bridge to station 9).
 
-Methods: code execution, scheduled tasks, skills, multimodal; MCP (card only, while
+Methods: code execution, scheduled tasks, skills, subagents, multimodal; MCP (card only, while
 its slide is hidden).
 
 **Closing beat: intention is the input.** The human-side mirror of the spine: if anything

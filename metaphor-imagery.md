@@ -46,6 +46,7 @@ Artwork approach: `open-questions-and-ideas.md` Q16.
 | Notepad | memory (the fish writes it) | 7 |
 | Alarm clock (rings; the sleeping fish wakes) | scheduled tasks | 8 |
 | Recipe cards | skills / reusable playbooks | 8 |
+| A miniature tank with its own little fish, on a tube | subagents (delegation to a fresh context) | 8 |
 | Camera/ears, microphone | multimodal input, voice | 8 |
 | The tank | the app with all its tools | 8 |
 | Custom-shaped vs. standard fittings | provider tools vs. MCP | 8 (hidden) |
@@ -122,7 +123,7 @@ full assembly appears only as the station 8 recap.
   Your note = custom instructions; the maker's note = system instructions (you cannot take
   it down and often cannot read it). The fish only reads these; it writes the notepad.
 - **Tubes = tools.** The fish initiates every one: no arrows pointing in; it reaches out and
-  pulls the result back. Every attachment (notepad, alarm clock, recipe cards, camera,
+  pulls the result back. Every attachment (notepad, alarm clock, recipe cards, a smaller tank, camera,
   microphone, web, email, files) connects through a tube into the tank, so the
   water-is-context rule holds. Station 7: tubes bring information in; station 8: they carry
   actions out.
@@ -191,7 +192,7 @@ control.
 | 4 | The lazy genie; the brain; territory and two maps | |
 | 6 | The bowl and water; sticky notes; a pre-set-up tank; salt in the soup; a HANDOFF.md | The bare fish forgetting each exchange; water level; techniques drawn in the water |
 | 7 | Tools | Tool-use training step; first tubes; notepad |
-| 8 | (Provider vs. MCP fittings: hidden) | Tubes carrying actions out; alarm clock, recipe cards; the full tank; the lazy genie (small) |
+| 8 | (Provider vs. MCP fittings: hidden) | Tubes carrying actions out; alarm clock, recipe cards, a small tank; the full tank; the lazy genie (small) |
 | 9 | Where the fish lives; wall vs. sign; its own account; autocomplete | Fish or tank (the three containers); mini tanks with attachments; poisoned water; effect icons |
 | 10 | Curtained dials | Cut-out fish map; versioned fish |
 | 12 | Drafted pages; a reviewer fish; B&W painter and reviewer fish vs. a rainbow artist fish; turtles all the way down | |

@@ -147,7 +147,7 @@ HIDDEN: too much detail for this talk; MCP stays as a one-liner on the take-home
 
 <div class="split">
 <div class="scene alarm-scene">
-<svg viewBox="0 0 900 740" role="img" aria-label="The tank with the fish asleep in it and a notepad connected by a tube above it. An alarm clock is connected, rings, and the fish wakes up. Then a box of recipe cards is connected">
+<svg viewBox="0 0 1180 740" role="img" aria-label="The tank with the fish asleep in it and a notepad connected by a tube above it. An alarm clock is connected, rings, and the fish wakes up. Then a box of recipe cards is connected. Then a tube from the side of the tank connects a miniature tank with a little fish in it">
   <g style="fill: none" stroke-linecap="round" stroke-linejoin="round">
     <path d="M 195 150 V 330" style="stroke: var(--ink); stroke-width: 48"/>
     <path d="M 195 150 V 330" style="stroke: var(--rock); stroke-width: 30"/>
@@ -160,8 +160,19 @@ HIDDEN: too much detail for this talk; MCP stays as a one-liner on the take-home
     <path d="M 705 150 V 330" style="stroke: var(--ink); stroke-width: 48"/>
     <path d="M 705 150 V 330" style="stroke: var(--rock); stroke-width: 30"/>
   </g>
+  <g class="fragment" data-fragment-index="2" style="fill: none" stroke-linecap="round" stroke-linejoin="round">
+    <path d="M 800 540 H 960" style="stroke: var(--ink); stroke-width: 48"/>
+    <path d="M 800 540 H 960" style="stroke: var(--rock); stroke-width: 30"/>
+  </g>
   <use href="#tank-back" x="0" y="180" width="900" height="560"/>
   <use href="#tank-water" x="0" y="180" width="900" height="560"/>
+  <g class="fragment" data-fragment-index="2">
+    <use href="#tank-back" x="895" y="440" width="285" height="177"/>
+    <use href="#tank-water" x="895" y="440" width="285" height="177"/>
+    <use href="#fish-body" x="985" y="512" width="105" height="68"/>
+    <use href="#fish-eyes-open" x="985" y="512" width="105" height="68"/>
+    <use href="#tank-front" x="895" y="440" width="285" height="177" style="--line: 26"/>
+  </g>
   <g class="goldfish">
     <g class="zzz label" style="font-size: 54px">
       <text x="610" y="450">z</text><text x="650" y="410">z</text><text x="695" y="370">Z</text>
@@ -194,6 +205,7 @@ HIDDEN: too much detail for this talk; MCP stays as a one-liner on the take-home
 <div>
 <p class="fragment" data-fragment-index="0">Alarm clock: <span class="term">scheduled tasks</span></p>
 <p class="fragment" data-fragment-index="1">Standard Operating Procedures (SOPs), workflows: <span class="term">skills</span></p>
+<p class="fragment" data-fragment-index="2">Another tank: <span class="term">subagents</span></p>
 </div>
 </div>
 Note:
@@ -205,7 +217,9 @@ The fish is asleep when the slide opens. Remember: the fish sleeps until you tal
 
 (Click.) And if you're tired of re-specifying the same constraints every time (station 4) -- recipe cards. Skills: packaged instructions for recurring tasks, pulled into the water when the task comes up.
 
-Brief. Methods: scheduled tasks, skills/playbooks.
+(Click.) One more tool: another tank, with its own fish. Subagents: the fish hands a piece of the job to a helper fish in a fresh tank, and only the result comes back through the tube. The helper's tank stays clean, so the main tank's water doesn't fill up with the details -- and several helpers can work at once.
+
+Brief. Methods: scheduled tasks, skills/playbooks, subagents.
 
 ---
 

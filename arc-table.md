@@ -53,7 +53,7 @@ activity (pair/group/individual); *demo* = live or pre-captured demonstration;
 | 8 | The fish writes a tool (letter count) | "chatbot that says" -> "system that does" | | code execution | *demo* |
 | 8 | The fish can act (spine payoff #2) | | | | |
 | 8 | Provider tools vs. MCP *(hidden)* | | | MCP; provider tools | |
-| 8 | Alarm clock + recipe cards | | | scheduled tasks; skills | |
+| 8 | Alarm clock + recipe cards + a small tank | | | scheduled tasks; skills; subagents | |
 | 8 | The tank (recap) | | | multimodal | |
 | 8 | Intention is the input | "tool is the story" -> "I am the variable" | | knowing what you want | *socratic:* if it can do anything you specify, what's left? |
 | 9 | Is that the fish or the tank? *(hidden)* | | | | *shout-out:* fish or tank? |
