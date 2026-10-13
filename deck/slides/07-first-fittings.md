@@ -67,6 +67,7 @@ You just saw it: the books ended. Wouldn't it be nice if it could look things up
 
 ---
 
+<!-- .slide: data-visibility="hidden" -->
 # "Tell me about" vs. "Search for"
 
 <div class="shots">
@@ -86,6 +87,8 @@ Same question, two verbs, same app. Austin's moonlight towers.
 (Click.) How you ask decides whether it looks. In most apps the fish decides when to search -- so if facts matter, say "search," and check that it did.
 
 Still your job: the links are real, but its summary of them can still be wrong. Click one.
+
+HIDDEN for now (captures not made; see todo.md § Hidden slides). To bring it back, delete the `data-visibility="hidden"` line above the title.
 
 Captures to make (same app, same day): see the placeholders. Earlier local-model captures for the old three-rung version are in the top-level `illustrations/citations-ladder--*` (candidates).
 

@@ -2,8 +2,7 @@
 
 Reveal.js 5.x slides written in Markdown, one file per station. Vendored under
 `vendor/reveal.js/` (version in `VERSION`; committed on purpose so the deck works offline
-and needs no build step). Published to GitHub Pages by `.github/workflows/pages.yml`
-(temporarily publishing `placeholder/` instead until the slides are complete; see `todo.md`).
+and needs no build step). Published to GitHub Pages by `.github/workflows/pages.yml`.
 
 ## Run
 
@@ -142,6 +141,11 @@ shows: `../metaphor-imagery.md`.
   (`make present`, localhost, a LAN address, `file://`) and is hidden on the published site
   (GitHub Pages); add `?live` to the URL to force it on. Implemented by the `LiveOnly` plugin in
   `index.html`. `grep -rn 'live-only' deck/slides` lists them.
+
+- **How-to pop-up:** on the published site only, `howto.js` shows a "How to view these slides"
+  card (keys, overview + section bookmarks, speaker notes) on a visitor's first load, remembered
+  in `localStorage`; `H` or the "How to navigate" corner button reopens it. Locally it never loads
+  (same local/published test as live-only slides); add `?howto` to preview it.
 
 ## Visual check
 

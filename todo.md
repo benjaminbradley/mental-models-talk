@@ -22,10 +22,7 @@ When specific slides are mentioned, add the direct URL for a server running on h
 - [ ] Lock the materials list (`materials.md`) & acquire them.
 - [ ] Hotspot test: Test the phone remote with the laptop on the phone's hotspot, on the projector's extended display, and accept the macOS firewall prompt for `node` (see `deck/README.md`). Fragments and phone lock/unlock are already verified.
 
-- [ ] Complete or drop: Station 7 citations: capture "Tell me about Austin's moonlight towers" vs. "Search for info
-      on Austin's moonlight towers" in the same app (filenames in the slide's placeholders).
-
-- [ ] Publish the deck to GitHub Pages (https://benjaminbradley.github.io/mental-models-talk/, already on the take-home card and closing slide). Pages currently serves a placeholder page: in `.github/workflows/pages.yml` switch `path: placeholder` back to `path: deck` and delete `placeholder/`, then check the Pages URL for slides, images and no console errors.
+- [ ] Check the published deck at https://benjaminbradley.github.io/mental-models-talk/ (slides, images, how-to pop-up, no console errors).
 
 ## Oct 13 - deliver
 
@@ -65,6 +62,7 @@ In the deck with `data-visibility="hidden"`; bring back by deleting that line ab
 - [ ] Station 8: "Two kinds of plumbing" (provider tools vs. MCP; MCP is now a line on the Tools slide and on the take-home card)
 - [ ] Station 4: "Ask the fish to help you ask" + "...using Theory of Mind" (folded into station 6 "Too much salt in the soup": HANDOFF.md, Theory of Mind, meta-prompting)
 - [ ] Station 9: "Is that the fish or the tank?" (hidden for now)
+- [ ] Station 7: "Tell me about" vs. "Search for" (captures not made: "Tell me about Austin's moonlight towers" vs. "Search for info on Austin's moonlight towers" in the same app; filenames in the slide's placeholders)
 
 Orphaned assets (no visible slide uses them; delete once the slides above are decided):
 

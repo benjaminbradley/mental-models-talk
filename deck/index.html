@@ -59,6 +59,16 @@
       }
     }
 
+    // Presenting locally (localhost, a LAN address, file://, ?remote=) vs. the published site.
+    // ?live forces local behavior. Read by LiveOnly below and by howto.js.
+    window.DECK_IS_LOCAL = (() => {
+      const q = new URLSearchParams(location.search);
+      const h = location.hostname;
+      return q.has('live') || q.has('remote') || location.protocol === 'file:' || h === ''
+        || h === 'localhost' || h === '[::1]' || h.endsWith('.local')
+        || /^(127|10)\./.test(h) || /^192\.168\./.test(h) || /^172\.(1[6-9]|2\d|3[01])\./.test(h);
+    })();
+
     // Live-only slides (<!-- .slide: class="live-only" -->): shown when presenting locally
     // (localhost, a LAN address, file://, or ?remote=), hidden on the published site.
     // ?live forces them on. Runs after RevealMarkdown has applied the slide classes and
@@ -66,12 +76,7 @@
     const LiveOnly = {
       id: 'live-only',
       init(deck) {
-        const q = new URLSearchParams(location.search);
-        const h = location.hostname;
-        const local = q.has('live') || q.has('remote') || location.protocol === 'file:' || h === ''
-          || h === 'localhost' || h === '[::1]' || h.endsWith('.local')
-          || /^(127|10)\./.test(h) || /^192\.168\./.test(h) || /^172\.(1[6-9]|2\d|3[01])\./.test(h);
-        if (!local) {
+        if (!window.DECK_IS_LOCAL) {
           deck.getRevealElement().querySelectorAll('section.live-only')
             .forEach((s) => s.setAttribute('data-visibility', 'hidden'));
         }
@@ -86,6 +91,8 @@
       controls: true,
       progress: true,
       transition: 'fade',
+      // Keep the normal slide view on phones (swipe); Reveal's auto scroll view renders this deck blank.
+      scrollActivationWidth: null,
       plugins: [RevealMarkdown, LiveOnly, RevealNotes], // order matters: LiveOnly reads Markdown's output
     }).then(() => {
       inlineSvgs();
@@ -97,6 +104,10 @@
       const b = document.createElement('script');
       b.src = 'bookmarks.js';
       document.head.appendChild(b);
+      // "How to view these slides" pop-up, published site only; see README § How-to pop-up.
+      const h = document.createElement('script');
+      h.src = 'howto.js';
+      document.head.appendChild(h);
     });
 
     // Remote control client: inert unless the URL has ?remote=<token>.

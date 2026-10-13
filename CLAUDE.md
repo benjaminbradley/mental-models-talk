@@ -25,8 +25,7 @@ make qr URL=... OUT=deck/art/qr-x.svg  # static QR code SVG for a slide
 
 There is no build, lint, or test step. The deck is static and needs no build; vendored Reveal.js
 (`deck/vendor/`) is committed on purpose so it runs offline. Pushing to `main` deploys to GitHub
-Pages (`.github/workflows/pages.yml`); it temporarily deploys `placeholder/` instead of `deck/`
-until the slides are complete (removal tracked in `todo.md`).
+Pages (`.github/workflows/pages.yml`), publishing `deck/`.
 
 ## Doc structure (single source of truth)
 

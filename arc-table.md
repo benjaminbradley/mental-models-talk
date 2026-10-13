@@ -46,7 +46,7 @@ activity (pair/group/individual); *demo* = live or pre-captured demonstration;
 | 6 | Notes on the glass; a tank someone else set up | | | custom/system instructions; Custom GPTs / Gems; RAG | |
 | 6 | Restart vs. repair (too much salt in the soup; a HANDOFF.md written with Theory of Mind) | | | restart vs. repair; iteration; critique loops; context management; meta-prompting | *socratic:* what goes in the handoff? |
 | 7 | The books ended; looking things up | "knows what it knows" -> "tools extend what it can see" | | web search | |
-| 7 | "Tell me about" vs. "Search for" | | | asking for a search; citations | *demo:* two ways to ask |
+| 7 | "Tell me about" vs. "Search for" *(hidden)* | | | asking for a search; citations | *demo:* two ways to ask |
 | 7 | Tools | | | tool use; tool discovery | |
 | 7 | Tool-use training | | | | |
 | 7 | The notepad (memory) | | | memory; memory audit | |
