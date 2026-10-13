@@ -25,6 +25,7 @@ deck holds the specifics (examples, wording, slide order, composition).
 | `deck/slides/*.md` | Everything concrete: on-screen text, examples, slide order, visual composition, speaker notes, hidden slides, placeholders for unbuilt visuals | every revision | n/a |
 | `surveys.md` | Entry/exit survey goals, design decisions, question wording, form links, analysis plan | survey questions or settings change | slide placement of the QR codes |
 | `take-home.md` | The participant card: the talk's methods and principles as memory-jogging phrases | a method or principle is added, removed, or renamed in the talk | anything not taught in the talk (outside its short "Beyond the talk" list) |
+| `take-home.typ` | Print layout of the card (page size, typography, QR codes); compile with `typst compile take-home.typ` | content in `take-home.md` changes, or the print format does | the content itself beyond a mirror of `take-home.md` |
 | `open-questions-and-ideas.md` | Unresolved design questions (stable IDs Q1, Q2, ...), resolved-decision log, candidate metaphors, unplaced stories | constantly | n/a |
 | `todo.md` | Tasks, status, things to verify, by timeline week (talk: Oct 13) | constantly | n/a |
 | `materials.md` | Physical and technical materials to bring or provide | rarely | n/a |

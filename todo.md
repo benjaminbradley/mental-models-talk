@@ -16,8 +16,6 @@ When specific slides are mentioned, add the direct URL for a server running on h
 - [ ] Rehearse; refine speaker notes; adjust pacing.
 
 - [ ] Draft the one-page takeaway card (source: `take-home.md`).
-  - [x] review current take-home, clear out irrelevant terms
-  - [ ] first mock-up (typst?)
   - [ ] decide on sizing (1/4 or 1/2 letter?)
   - [ ] finalize design/PDF
 - [ ] get pricing estimates
@@ -86,7 +84,7 @@ Orphaned assets (no visible slide uses them; delete once the slides above are de
 - [ ] station 11 alt example -- default vs custom
 - [ ] consider a reusable recording or write-up -- or publish to GitHub Pages?
   - [ ] clean up open questions file - when useful, move resolved/completed items to history subdir (something like ADRs), otherwise when items are fully & clearly represented in current work, remove them from open questions.
-  - [ ] clean up repo - move planning docs into a doc/ subdir with its own README describing the planning/creation process - check github history for document creation order - relative timeline is more important than specific timestamps.
+  - [ ] add a planning/README.md describing the planning/creation process - check github history for document creation order - relative timeline is more important than specific timestamps.
   - [ ] main README should link to the presentation on github pages, and on credits page(?), presentation should link back to the github repo
   - [ ] move most of CLAUDE.md contents to AGENTS.md - leave claude-specific + @AGENTS loader in CLAUDE
 - [ ] Add to portfolio on wegeekout.com
