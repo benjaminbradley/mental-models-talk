@@ -16,7 +16,13 @@ When specific slides are mentioned, add the direct URL for a server running on h
 - [ ] Rehearse; refine speaker notes; adjust pacing.
 
 - [ ] Draft the one-page takeaway card (source: `take-home.md`).
-- [ ] Print the one-page takeaway card.
+  - [x] review current take-home, clear out irrelevant terms
+  - [ ] first mock-up (typst?)
+  - [ ] decide on sizing (1/4 or 1/2 letter?)
+  - [ ] finalize design/PDF
+- [ ] get pricing estimates
+- [ ] submit print order for the one-page takeaway card.
+- [ ] pick up (& cut?) print order
 
 - [ ] Review final logistics -- slide control remote? Adapter for projector (USB-C)?
 - [ ] Lock the materials list (`materials.md`) & acquire them.
@@ -41,6 +47,7 @@ When specific slides are mentioned, add the direct URL for a server running on h
 - [ ] 05-verification or Accountability / turtles: Checking code - writing tests to verify the code, and calculating code coverage to verify the tests - building familiarity and trust with your harness & rubrics - shifts & shrinks the verification surface
 - [ ] attachments as drawn parts instead of emoji (notepad, alarm clock, recipe cards,
          mic/camera, effect icons)
+- [ ] Say what you want & how you want it: Highlight the detail level in the prompt
 - [ ] Station 4 "Counting & Tracking: the fish": mark up / highlight the capture to show exactly
       where the errors are (the $4.50 margarita).
 - [ ] Station 4 "Spatial Reasoning: the fish": same -- highlight the contradiction between its
@@ -87,7 +94,7 @@ Orphaned assets (no visible slide uses them; delete once the slides above are de
 ## Future possibilities
 
 - [ ] Consider for inclusion or sequel:
-  - [ ] Subagents
+  - [ ] Explain that thinking is just hidden self-talk
 - [ ] re-imagine the talk experience as an improv comedy show: what would it look like to map the step1/step2 features in the presentation's narrative into an analogous setup/reveal joke rhythm? would a scripted show make more sense than improv?
 
 ## Organizer reply (EFF-Austin, received)
