@@ -295,9 +295,40 @@ Pull back: the bowl has become a tank. Water: the context. Notes on the glass: i
 
 (Click.) The tools decide what the fish can reach. Big vendors sell a fish already installed in a tank, which is why people conflate them -- but they are separable.
 
-A recap, not an introduction: everything except the mic and camera arrived on its own felt limit. Microphone is a candidate to cut. Bridge out: "It can do a lot now. So what's left for you?"
+A recap, not an introduction: everything except the mic and camera arrived on its own felt limit. Microphone is a candidate to cut. Bridge: "And tanks come in a lot more shapes than this one."
 
 Every tool connects through a tube, drawn behind the tank. TODO (art; inline SVG in this slide, no file): show the interface the fish sees from inside the water where a tube connects.
+
+---
+
+# Many kinds of tanks
+
+<div class="tiles">
+<div><span class="emoji">🌐</span><b>Web apps</b><span class="small">ChatGPT, Claude, Gemini in the browser</span></div>
+<div class="fragment"><span class="emoji">📱</span><b>Desktop &amp; mobile apps</b><span class="small">the same vendors' apps</span></div>
+<div class="fragment"><span class="emoji">⌨️</span><b>Coding agents</b><span class="small">Claude Code, Codex, Antigravity CLI, ...</span><svg class="mini-tank" viewBox="-20 -20 400 330" role="img" aria-label="A small tank with the fish in it and a computer connected by a tube"><g style="fill: none; stroke: var(--ink); stroke-width: 26" stroke-linecap="round"><path d="M 180 60 V 150"/></g><g style="fill: none; stroke: var(--rock); stroke-width: 14" stroke-linecap="round"><path d="M 180 60 V 150"/></g><use href="#tank-back" x="20" y="110" width="320" height="199"/><use href="#tank-water" x="20" y="110" width="320" height="199"/><g class="goldfish awake"><use href="#fish-body" x="115" y="195" width="130" height="85"/><use class="eyes-open" href="#fish-eyes-open" x="115" y="195" width="130" height="85"/></g><use href="#tank-front" x="20" y="110" width="320" height="199"/><rect x="116" y="-16" width="128" height="104" rx="16" style="fill: #fff; stroke: var(--ink); stroke-width: 7"/><text x="180" y="64" text-anchor="middle" style="font-size: 76px">💻</text></svg></div>
+<div class="fragment"><span class="emoji code">&lt;/&gt;</span><b>Open-source apps</b><span class="small">Open WebUI, LibreChat, ...</span></div>
+<div class="fragment"><span class="emoji">🦾</span><b>Personal agents</b><span class="small">OpenClaw, Hermes (open source); Dots (OpenAI), Muse (Meta)</span><svg class="mini-tank" viewBox="-20 -20 400 330" role="img" aria-label="A small tank with the fish in it, connected by tubes to an alarm clock and a chat window"><g style="fill: none; stroke: var(--ink); stroke-width: 26" stroke-linecap="round"><path d="M 110 60 V 150"/><path d="M 250 60 V 150"/></g><g style="fill: none; stroke: var(--rock); stroke-width: 14" stroke-linecap="round"><path d="M 110 60 V 150"/><path d="M 250 60 V 150"/></g><use href="#tank-back" x="20" y="110" width="320" height="199"/><use href="#tank-water" x="20" y="110" width="320" height="199"/><g class="goldfish awake"><use href="#fish-body" x="115" y="195" width="130" height="85"/><use class="eyes-open" href="#fish-eyes-open" x="115" y="195" width="130" height="85"/></g><use href="#tank-front" x="20" y="110" width="320" height="199"/><rect x="46" y="-16" width="128" height="104" rx="16" style="fill: #fff; stroke: var(--ink); stroke-width: 7"/><text x="110" y="64" text-anchor="middle" style="font-size: 76px">⏰</text><rect x="186" y="-16" width="128" height="104" rx="16" style="fill: #fff; stroke: var(--ink); stroke-width: 7"/><text x="250" y="64" text-anchor="middle" style="font-size: 76px">💬</text></svg></div>
+</div>
+
+<p class="lede fragment">All tanks are apps. The technical words: <span class="term">client</span> <span class="term">harness</span></p>
+
+Note:
+You never talk to the raw fish; you always talk through an app -- the tank. And tanks come in many shapes. Web apps in the browser.
+
+(Click.) Desktop and mobile apps -- often the same vendor's tank, in a different form.
+
+(Click.) Coding agents: Claude Code and its cousins from the other vendors -- a tank with a lot of tools, plumbed straight into a computer: your files and terminal.
+
+(Click.) Open-source apps: Open WebUI and many more. You can see how the tank is built, and most let you pick which fish goes in it.
+
+(Click.) Personal agents: a tank with lots of tools that runs on your behalf -- an alarm clock so it wakes on its own, and a line to wherever you chat with it (Telegram, Discord, text messages) -- OpenClaw and Hermes in open source; OpenAI's Dots and Meta's Muse are the big vendors' versions of the same idea. (Brand-new; verify the names before the talk.)
+
+(Click.) They're all tanks: apps. If you want the technical words, an app around a model is a client, or a harness. Big vendors sell a fish already installed in their tank; plenty of tanks let you choose the fish. Different tanks, same rule: the fish works with whatever is in the water.
+
+Bridge out: "It can do a lot now. So what's left for you?"
+
+Product names: verify before the talk (they change fast).
 
 ---
 

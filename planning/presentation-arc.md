@@ -185,6 +185,8 @@ Methods: web search; asking for a search (citations); tool use; tool discovery; 
   water fills up; another tank can take part of the job).
 - **The full system as recap,** plus multimodal input and voice as quick extras. Every tool
   widens the blast radius (bridge to station 9).
+- **Many kinds of apps,** all following the same rule: the model works with whatever is in
+  its context.
 
 Methods: code execution, scheduled tasks, skills, subagents, multimodal; MCP (card only, while
 its slide is hidden).
@@ -200,9 +202,8 @@ Methods: knowing what you want; you delegated the doing, not the deciding.
 ## Station 9 - Blast radius: security & data
 *Cognitive/stance: "a handy tool" -> "a system with a blast radius I have to bound."*
 
-- **Many kinds of apps,** all following the same rule; they need not live in the same
-  place as the model. Diagnostic, once the tank is fully fitted: "is that the fish or the
-  tank?" (reasoning failures are usually the model; missing capabilities are usually the
+- **Apps need not live in the same place as the model.** Diagnostic, once the tank is
+  fully fitted: "is that the fish or the tank?" (reasoning failures are usually the model; missing capabilities are usually the
   app). Callback at station 10: benchmarks test the model, not your app.
 - **Hosting: where do the app and the model live?** Four tiers from frontier cloud to
   fully local; each trades capability for data control. Credentials: never paste secrets

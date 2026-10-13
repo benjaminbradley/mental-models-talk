@@ -55,10 +55,10 @@ activity (pair/group/individual); *demo* = live or pre-captured demonstration;
 | 8 | Provider tools vs. MCP *(hidden)* | | | MCP; provider tools | |
 | 8 | Alarm clock + recipe cards + a small tank | | | scheduled tasks; skills; subagents | |
 | 8 | The tank (recap) | | | multimodal | |
+| 8 | Many kinds of tanks | | | | |
 | 8 | Intention is the input | "tool is the story" -> "I am the variable" | | knowing what you want | *socratic:* if it can do anything you specify, what's left? |
 | 9 | Is that the fish or the tank? *(hidden)* | | | | *shout-out:* fish or tank? |
-| 9 | Many kinds of tanks | "handy tool" -> "blast radius to bound" | sober caution | | |
-| 9 | Where does your data go? (hosting) | | | hosting awareness; credential hygiene | *socratic:* what could go wrong? |
+| 9 | Where does your data go? (hosting) | "handy tool" -> "blast radius to bound" | sober caution | hosting awareness; credential hygiene | *socratic:* what could go wrong? |
 | 9 | Do they train on your conversations? | | | | |
 | 9 | Your account can change, too | | | backups / exports | |
 | 9 | Prompt injection = poisoned water | | | | |
