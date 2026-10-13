@@ -1,5 +1,5 @@
 <!-- .slide: class="center-slide section-intro" data-bookmark="Accountability" -->
-# Your name on it
+# Accountability
 
 Note:
 Section: accountability. The tool can do the work; it can't take the responsibility.
