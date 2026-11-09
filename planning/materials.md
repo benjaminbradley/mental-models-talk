@@ -18,27 +18,16 @@ Update as exercises are locked.
 
 ## To prepare / bring
 
-- Printed describe-and-draw source figure(s) for the "A" partners (station 4; only if
-  the exercise is kept, Q3).
-  Print enough for half the audience (~15 copies).
-- Anonymous entry & exit poll -- phone-based (Google Forms + QR codes on screen).
-  Anonymity is the point (a show of hands measures conformity). See polls bookmark in
-  `open-questions-and-ideas.md`.
 - Printed one-page takeaway card -- the self-diagnostic, the verification asymmetry,
   and the lethal trifecta. The only thing that persists after the room empties.
   Print enough for full audience (~30 copies).
-- Station 9 mailbox exercise: no handout; the scenario is on screen.
-- Station 12 handout -- a plausible, polished, subtly-wrong artifact for the
-  "would you sign it?" exercise (~30 copies, or display on screen).
-- Timer / clock the facilitator can see.
 - Laptop with slides loaded + HDMI cable. Bring own USB-C adapter as backup
   (venue's can be finicky).
-- Slide control remote (clicker).
+- Slide control remote (phone).
+
+## Deferred
+
+- Printed describe-and-draw source figure(s) for the "A" partners (station 4; only if
+  the exercise is kept, Q3).
+  Print enough for half the audience (~15 copies).
 - Laser pointer
-
-## Still unknown
-
-- Do participants have their own devices? (Affects poll method -- if no phones,
-  need paper slips for polls.)
-- Network access at venue? (Affects whether live demos are feasible as backup;
-  all demos should be pre-captured regardless.)

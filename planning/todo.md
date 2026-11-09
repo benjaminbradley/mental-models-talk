@@ -5,35 +5,43 @@ Actionable tasks (verbs). Design *questions* and their options live in
 decision references the ID instead of restating it. Candidate metaphors and content ideas
 also live there. The take-home card content lives in `take-home.typ`.
 
-Sections are the timeline weeks (talk: Oct 13). "Now" = anything before the first named week.
-
 Completed items are REMOVED (not marked complete) - tracked by git history.
 
 When specific slides are mentioned, add the direct URL for a server running on http://localhost:8765/?remote=X
 
-## Now - critical
+## Now - prioritized
 
-- [ ] Rehearse; refine speaker notes; adjust pacing.
+- [x] Hotspot test: Test the phone remote with the laptop on the phone's hotspot, on the projector's extended display, and accept the macOS firewall prompt for `node` (see `deck/README.md`). Fragments and phone lock/unlock are already verified.
+  RESULTS: Hotspot test worked fine at home.
+  On the WiFi net on-site, did NOT work - traffic between devices was blocked. But laptop was connected via long cable to projector, so remote was not needed after all.
 
-- [ ] Draft the one-page takeaway card (`take-home.typ`).
-  - [ ] decide on sizing (1/4 or 1/2 letter?)
-  - [ ] finalize design/PDF
-- [ ] get pricing estimates
-- [ ] submit print order for the one-page takeaway card.
-- [ ] pick up (& cut?) print order
+- [ ] Review entry/exit surveys per the analysis plan in `surveys.md`, summarize for notes
+- [ ] Capture feedback / lessons
+- [ ] Add check-out survey QR code to take-home card
+- [ ] in the future, record the questions after the event (via audio recording)
+- [ ] Move Organizer reply below & other event-specific info to history/presentations.md
+  - initial presentation at EFF-Austin was a great success.
+  - podium had laptop stand and mic, so no clicker was needed
+  - laptop display went into sleep mode after (10min?) timeout - caffeinate did not affect this - need to handle for future presentations - esp. during before/after talk, so QR codes stay on screen
+  - resolution/etc was fine on projector
+  - hotspot test WAS successful at home beforehand
+  - local wifi did NOT work to connect remote w/ slides - communication between devices seemed to be prohibited
+  - 28 take-home cards handed out, approximate attendee count
 
-- [ ] Review final logistics -- slide control remote? Adapter for projector (USB-C)?
-- [ ] Lock the materials list (`materials.md`) & acquire them.
-- [ ] Hotspot test: Test the phone remote with the laptop on the phone's hotspot, on the projector's extended display, and accept the macOS firewall prompt for `node` (see `deck/README.md`). Fragments and phone lock/unlock are already verified.
+- [ ] record audio and add to slides on github with audio autoplay/manual/off setting
+- [ ] clean up open questions file - when useful, move resolved/completed items to history subdir (something like ADRs), otherwise when items are fully & clearly represented in current work, remove them from open questions.
+- [ ] add a planning/README.md describing the planning/creation process - check github history for document creation order - relative timeline is more important than specific timestamps. Move Sources section from main README to planning/README
+- [ ] main README should link to the presentation on github pages, and on credits page(?), presentation should link back to the github repo
+- [ ] move most of CLAUDE.md contents to AGENTS.md - leave claude-specific + @AGENTS loader in CLAUDE
+- [ ] Add to portfolio on wegeekout.com
 
-- [ ] Check the published deck at https://benjaminbradley.github.io/mental-models-talk/ (slides, images, how-to pop-up, no console errors).
+## Improvements
 
-## Oct 13 - deliver
-
-- [ ] Deliver the talk. Entry poll at the open, exit poll at the close.
-- [ ] Bring: USB-C adapter (in case venue's is flaky), slide control remote, printed materials.
-
-## Now optional
+- [ ] Add context rot (term/meaning/implications) before the handoff reveal
+- [ ] Explain that "thinking" is just hidden self-talk
+- [ ] tubes connecting at the back of the tank: show the interface the fish sees
+- [ ] Station 4 "Counting & Tracking: the fish": mark up / highlight the capture to show exactly where the errors are (the $4.50 margarita).
+- [ ] Station 4 "Spatial Reasoning: the fish": same -- highlight the contradiction between its own ordering and its answer.
 
 ### Slide review/improvements
 
@@ -41,22 +49,15 @@ When specific slides are mentioned, add the direct URL for a server running on h
 
 ### Enhancements (low priority)
 
-- [ ] tubes connecting at the back of the tank: show the interface the fish sees
 - [ ] 05-verification or Accountability / turtles: Checking code - writing tests to verify the code, and calculating code coverage to verify the tests - building familiarity and trust with your harness & rubrics - shifts & shrinks the verification surface
-- [ ] attachments as drawn parts instead of emoji (notepad, alarm clock, recipe cards,
-         mic/camera, effect icons)
+- [ ] attachments as drawn parts instead of emoji (notepad, alarm clock, recipe cards, mic/camera, effect icons)
 - [ ] Say what you want & how you want it: Highlight the detail level in the prompt
-- [ ] Station 4 "Counting & Tracking: the fish": mark up / highlight the capture to show exactly
-      where the errors are (the $4.50 margarita).
-- [ ] Station 4 "Spatial Reasoning: the fish": same -- highlight the contradiction between its
-      own ordering and its answer.
-- [ ] Station 1 harms: replace the emoji tiles with photos (datacenter, water, labor,
-      provenance, power, noise).
-- [ ] Station 10 guardrail probe: optionally highlight the "limited verifiable historical
-      information" line in the thinking trace.
+- [ ] Station 1 harms: replace the emoji tiles with photos (datacenter, water, labor, provenance, power, noise).
+- [ ] Station 10 guardrail probe: optionally highlight the "limited verifiable historical information" line in the thinking trace.
 - [ ] Station 1 harms: keep the closed box visible in the corner on later slides (persistent
       reminder), not only on its own slide. Or bring it back on the final "muggle/magic slide" - magic is dangerous, and has a price.
 - [ ] Who decided it should refuse that: on the first click, show a screenshot of people complaining that fable is too touchy and refuses basic chemistry questions
+- [ ] station 11 alt example -- default vs custom
 
 ### Hidden slides: re-evaluate if there's time
 
@@ -76,23 +77,10 @@ Orphaned assets (no visible slide uses them; delete once the slides above are de
       "Which shelf" captures; the slide draws the answer instead; the notes still cite them)
 - [ ] `deck/illustrations/computers-english--claude-poetry.webp` (the tall phone capture; station 3 now uses `computers-english--claude-poetry-thumbnail.png`)
 
-## After initial presentation
-
-- [ ] Review entry/exit surveys per the analysis plan in `surveys.md`, summarize for notes
-- [ ] Capture feedback / lessons
-- [ ] Move Organizer reply below & other event-specific info to history/presentations.md
-- [ ] station 11 alt example -- default vs custom
-- [ ] consider a reusable recording or write-up -- or publish to GitHub Pages?
-  - [ ] clean up open questions file - when useful, move resolved/completed items to history subdir (something like ADRs), otherwise when items are fully & clearly represented in current work, remove them from open questions.
-  - [ ] add a planning/README.md describing the planning/creation process - check github history for document creation order - relative timeline is more important than specific timestamps.
-  - [ ] main README should link to the presentation on github pages, and on credits page(?), presentation should link back to the github repo
-  - [ ] move most of CLAUDE.md contents to AGENTS.md - leave claude-specific + @AGENTS loader in CLAUDE
-- [ ] Add to portfolio on wegeekout.com
-
 ## Future possibilities
 
 - [ ] Consider for inclusion or sequel:
-  - [ ] Explain that thinking is just hidden self-talk
+  - [ ] what does running in a (strict) sandbox mean?
 - [ ] re-imagine the talk experience as an improv comedy show: what would it look like to map the step1/step2 features in the presentation's narrative into an analogous setup/reveal joke rhythm? would a scripted show make more sense than improv?
 
 ## Organizer reply (EFF-Austin, received)
