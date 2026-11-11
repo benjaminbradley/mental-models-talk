@@ -11,23 +11,9 @@ When specific slides are mentioned, add the direct URL for a server running on h
 
 ## Now - prioritized
 
-- [x] Hotspot test: Test the phone remote with the laptop on the phone's hotspot, on the projector's extended display, and accept the macOS firewall prompt for `node` (see `deck/README.md`). Fragments and phone lock/unlock are already verified.
-  RESULTS: Hotspot test worked fine at home.
-  On the WiFi net on-site, did NOT work - traffic between devices was blocked. But laptop was connected via long cable to projector, so remote was not needed after all.
-
-- [ ] Review entry/exit surveys per the analysis plan in `surveys.md`, summarize for notes
-- [ ] Capture feedback / lessons
 - [ ] Add check-out survey QR code to take-home card
-- [ ] in the future, record the questions after the event (via audio recording)
-- [ ] Move Organizer reply below & other event-specific info to history/presentations.md
-  - initial presentation at EFF-Austin was a great success.
-  - podium had laptop stand and mic, so no clicker was needed
-  - laptop display went into sleep mode after (10min?) timeout - caffeinate did not affect this - need to handle for future presentations - esp. during before/after talk, so QR codes stay on screen
-  - resolution/etc was fine on projector
-  - hotspot test WAS successful at home beforehand
-  - local wifi did NOT work to connect remote w/ slides - communication between devices seemed to be prohibited
-  - 28 take-home cards handed out, approximate attendee count
-
+- [ ] Exit survey: leave time on the closing slide for the check-out (4 of ~28 responded); consider a 5-point grid so experienced users can show movement (see `history/2026-10-13-eff-austin/survey-summary.md`)
+- [ ] Review the middle stations' transitions -- exit feedback: "got a little disorganized in the middle"
 - [ ] record audio and add to slides on github with audio autoplay/manual/off setting
 - [ ] clean up open questions file - when useful, move resolved/completed items to history subdir (something like ADRs), otherwise when items are fully & clearly represented in current work, remove them from open questions.
 - [ ] add a planning/README.md describing the planning/creation process - check github history for document creation order - relative timeline is more important than specific timestamps. Move Sources section from main README to planning/README
@@ -37,9 +23,16 @@ When specific slides are mentioned, add the direct URL for a server running on h
 
 ## Improvements
 
+- [ ] Plumbing from strangers (station 8 or 9): installing a skill, plugin, or MCP server
+      means taking on someone else's code and instructions; also hallucinated package names
+      that attackers register ("slopsquatting"). Requested via entry survey (security).
+- [ ] Scam literacy (station 9): the fish works for attackers too -- phishing without typos,
+      voice-cloned "family emergency" calls. Method: verify out-of-band (call back on a known
+      number, family code word); ties to "don't trust what arrives in the water".
 - [ ] Add context rot (term/meaning/implications) before the handoff reveal
 - [ ] Explain that "thinking" is just hidden self-talk
 - [ ] tubes connecting at the back of the tank: show the interface the fish sees
+- [ ] agents?
 - [ ] Station 4 "Counting & Tracking: the fish": mark up / highlight the capture to show exactly where the errors are (the $4.50 margarita).
 - [ ] Station 4 "Spatial Reasoning: the fish": same -- highlight the contradiction between its own ordering and its answer.
 
@@ -82,26 +75,3 @@ Orphaned assets (no visible slide uses them; delete once the slides above are de
 - [ ] Consider for inclusion or sequel:
   - [ ] what does running in a (strict) sandbox mean?
 - [ ] re-imagine the talk experience as an improv comedy show: what would it look like to map the step1/step2 features in the presentation's narrative into an analogous setup/reveal joke rhythm? would a scripted show make more sense than improv?
-
-## Organizer reply (EFF-Austin, received)
-
-Venue & equipment:
-- Projector: yes, HDMI + USB-C (with adapter). Can be finicky but organizer is practiced.
-- Wireless mic: yes, available on-site.
-- Tables: yes, writable surfaces -- participants can write at them.
-
-Audience:
-- Size: 10-30 (varies month to month; at least ~10 since new space, up to ~30).
-- Politically diverse across the spectrum. Smart people, hard questions.
-- Strong feelings about AI in both directions -- morally opposed AND uncritical enthusiasts
-  are both possible. Most attendees are nuanced.
-- Small groups / pair work: encouraged, done regularly.
-
-Format:
-- Organizer does EFF-Austin intro (what EFF-Austin is, upcoming events, news), then
-  introduces Benji's bio and hands off.
-- Audience participation / interaction strongly encouraged.
-
-Note: organizer described the talk as "educating people on how to use AI as a coding tool"
--- the actual scope is broader (mental models for working with LLMs generally). Worth
-clarifying in pre-talk coordination, or the intro will set wrong expectations.

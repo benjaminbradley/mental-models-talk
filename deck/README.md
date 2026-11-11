@@ -159,11 +159,18 @@ headless Chrome (one at a time; parallel runs sometimes render blank):
 
 ## Presenting checklist
 
-- Laptop: `caffeinate -d` (or disable sleep); `make present`; open the deck URL in the
-  projector-side browser, fullscreen. Accept the macOS firewall prompt for `node` the first time.
+- Laptop: `make present`; open the deck URL in the projector-side browser, fullscreen.
+  Accept the macOS firewall prompt for `node` the first time.
+- Keep the display awake for the whole session, including before and after the talk, when
+  the QR-code slides must stay up. At the first delivery the display slept after ~10 min
+  with plain `caffeinate` (no `-d`, which only prevents system sleep). Use `caffeinate -d`
+  (prevents display sleep); if that's not enough, set System Settings > Lock Screen: screen
+  saver and "turn display off" (on power adapter) to Never. Test idle for 15+ minutes on
+  the presenting setup beforehand.
 - Phone: disable auto-lock (the wake-lock API doesn't work over plain http); join the same
   network (use the phone's hotspot if the venue isolates clients); scan the terminal QR.
 - Port 8765 is used by default because 8000 is taken on this machine (Colima). If the phone
   gets a strange 404 while the laptop works, check `lsof -nP -iTCP:<port> -sTCP:LISTEN` for another listener.
+- Audio-record the Q&A after the talk (phone voice memo is fine) to capture the questions.
 - Fallbacks, in order: clicker -> `S` speaker view on the laptop -> printed notes
   (`?print-pdf` with `showNotes: 'separate-page'`).

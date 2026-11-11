@@ -32,6 +32,7 @@ deck holds the specifics (examples, wording, slide order, composition).
 | `planning/todo.md` | Tasks, status, things to verify, by timeline week (talk: Oct 13) | constantly | n/a |
 | `planning/materials.md` | Physical and technical materials to bring or provide | rarely | n/a |
 | `deck/README.md` | Deck authoring: how to run, conventions, artwork parts, presenting checklist | when conventions change | talk content |
+| `history/<date>-<venue>/` | Per-delivery record: organizer details, how it went, raw survey exports, survey summary | after each delivery | lessons that change the talk (those go to the deck or `planning/`) |
 
 **How a change flows.** Make each edit in the lowest doc that owns it, and update an
 upstream doc only if the change alters something at that doc's level:
